@@ -17,7 +17,8 @@ You can either
 
 -->      
 In case you want to build and compile your own `firmware.bin` file (one the files are available), you can follow the instructions of @[jojos38](https://github.com/jojos38) [Tutorial: How to build Anycubic Marlin sourcecode into a firmware.bin](https://www.reddit.com/r/anycubic/comments/y2waxu/tutorial_how_to_build_anycubic_marlin_source_code/).
-  
+
+<!--  
 ## Update Procedure
 
 To update the firmware of your printer, copy the file `firmware.bin` onto the microSD card.  
@@ -874,7 +875,7 @@ There are a few compiled versions and also mods of the original firmwares availa
 - @[sjorge](https://github.com/sjorge) offers a [modified Kobra **Neo** firmware](https://github.com/sjorge/Kobra_Neo_Fw)  
 - @[TheUnlimited64](https://github.com/TheUnlimited64) offers a [modified Kobra **Neo** firmware with activated *Linear Advance*](https://github.com/TheUnlimited64/Kobra_Neo_Firmware).  
   *Attention: It has to be mentioned though that Linear Advance doesn't seem to work reliably as the extruder stops extruding randomly, so it's not safe to use! If you want to take advantage of this kind of feature, I'd suggest to use [Klipper](firmware/fw_klipper.md) which offers Pressure Advance (and resonance compensation aka "Input Shaper" as well).* 
-
+-->
 
 ---
 
