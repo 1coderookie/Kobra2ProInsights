@@ -1,6 +1,6 @@
 <link rel=”manifest” href=”docs/manifest.webmanifest”>
 
-# Printers
+# Printer
 The Anycubic [**Kobra 2 Pro**](https://www.anycubic.com/products/kobra-2-pro) is a FDM bedslinger style printer.  
 It comes pre-assembled, you only have to mount a few parts like the 'upstanding' frame onto the base frame.  
   
