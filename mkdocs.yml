@@ -1,0 +1,151 @@
+# Project information
+site_name: KobraGoNeo Insights
+site_url: https://1coderookie.github.io/KobraGoNeoInsights/
+site_author: Ulf Dieckmann
+site_description: Comprehensive information about Anycubic Kobra Go and Kobra Neo.
+
+# Repository
+repo_name: 1coderookie/KobraGoNeoInsights
+repo_url: https://github.com/1coderookie/KobraGoNeoInsights
+
+# Copyright
+copyright: Copyright &copy; 2023 Ulf Dieckmann [ 3dneo (at) quantentunnel.de ] | <a href="https://www.flaticon.com/free-icons/3d-printer" title="3d printer icons">3d printer icon created by Freepik - Flaticon</a> <br> If you find this page useful, please consider recommending it to others. This will make the community aware of this page and help other users. Thank you! 
+
+# CSS Stylesheet
+# extra_css:
+#   - stylesheets/extra.css
+
+# Configuration
+theme:
+  logo: assets/favicon.png
+  favicon: assets/favicon.png
+  name: material
+  custom_dir: overrides
+  
+  # 404 page
+  static_templates:
+    - 404.html
+    #- 404.md
+    
+  features:
+    # - announce.dismiss
+    # - content.action.edit
+    # - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    - navigation.expand
+    - navigation.footer
+    # - navigation.indexes
+    # - navigation.instant
+    - navigation.path
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: brown
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: brown
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+        
+    
+# Plugins
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - minify:
+      minify_html: true
+        
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+
+# Page tree / navigation
+nav: 
+  - Home: 'index.md'
+  - The Printers: 'printers.md'
+  - Hardware: 
+    - Introduction: 'hardware/hw_index.md'
+    - Frame: 'hardware/frame.md'
+    - Axes: 'hardware/axes.md'
+    - Bed: 'hardware/bed.md'
+    - Printhead: 'hardware/printhead.md'
+    - Mainboard: 'hardware/mainboard.md'
+    - Power Supply Unit: 'hardware/powersupply.md'
+    - Control Panel: 'hardware/control_panel.md'
+    - Filament Sensor: 'hardware/filament_sensor.md'
+    - Spare Parts: 'hardware/spare_parts.md'
+    - Other: 'hardware/other.md'
+  - Firmware: 
+    - Introduction: 'firmware/introduction.md'
+    - Stock Firmware (Marlin Based): 'firmware/fw_marlin.md'
+    - Klipper (MOD): 'firmware/fw_klipper.md'
+  - Profiles & Slicers: 'profiles.md'
+  - Calibration: 'calibration.md'
+  - Troubleshooting: 'troubleshooting.md'
+  - Printserver: 'printserver.md'
+  - Tools: 'tools.md'
+  - Further Sources: 'further_sources.md'
+        
