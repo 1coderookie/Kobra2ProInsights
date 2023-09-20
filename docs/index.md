@@ -1,10 +1,10 @@
 <link rel=”manifest” href=”docs/manifest.webmanifest”>
 
 # Welcome  
-to my infopage about Anycubic's **Kobra Go** and **Kobra Neo**.   
+to my infopage about Anycubic's **Kobra 2 Pro**.   
   
-Here you'll find specific information about both models as well as more general kind of information.  
-I created this page to make it easier for users of these printers to get started, as well as to provide specific information on e.g. how to maintain the printers.  
+Here you'll find specific information about this specific Kobra 2 model as well as more general kind of information.  
+I created this page to make it easier for users of this printers to get started, as well as to provide specific information on e.g. how to maintain the printer.  
   
 Please make sure to **mind the (expandable) textboxes** as they contain valuable information!  
 Depending on the color of the box, it's either a tip, information, instruction, question or warning you'll find in there:    
@@ -23,7 +23,7 @@ Depending on the color of the box, it's either a tip, information, instruction, 
 
 ??? question "Question"
 
-    Like "Have a **Go** and wanna contribute?"
+    Like "Have a **Kobra 2 Pro** and wanna contribute?"
 
 !!! warning "Warning"
 
@@ -51,6 +51,9 @@ Depending on the color of the box, it's either a tip, information, instruction, 
   
 ??? info "Thanks To The Supporters And Contributers!"
 
+    Nobody contributed yet, be the first one to do so! ;) 
+
+    <!--
     - *Thanks a lot to **Anthony** for donating a spare part printhead of the **Go** and the **Neo** for further investigations!*  
     - *Thanks a lot to **Harry**, **karwin**, **Lingfei**, **Nostrilhar**, **quarrelsome_napkin**, **SaintIsaiah** and **Zim** for supporting my work with a donation to [my ko-fi account](https://ko-fi.com/U6U5NPB51)!*
     - *Thanks to all the **stargazers** at GitHub for starring this repository!*
@@ -71,6 +74,7 @@ Depending on the color of the box, it's either a tip, information, instruction, 
     - Thanks to **[the-transponster](https://www.reddit.com/user/the-transponster)** for allowing me to use the picture of his clumped hotend!
     - Thanks to **[Yoriko_Rayne_](https://www.reddit.com/user/Yoriko_Rayne_)** for allowing me to use the picture of how to use the ABL height gauge!  
     - Thanks to **[zimmystor](https://www.reddit.com/user/zimmystor)** for taking pictures of his MicroSwiss bowden drive upgrade at his Go!
+    -->
     
 ---
     
