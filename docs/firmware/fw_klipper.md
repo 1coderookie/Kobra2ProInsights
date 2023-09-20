@@ -1,7 +1,12 @@
 <link rel=”manifest” href=”docs/manifest.webmanifest”>
 
 # Klipper (MOD)  
-  
+
+As I just got this printer, I didn't yet attempted to install Klipper or check if it's actually possible.  
+So bear with me and maybe come back another time.  
+If you already installed Klipper on this specific printer, please reach out by sending me an email.  
+
+<!---   
 Can you run [Klipper](https://www.klipper3d.org/) on the stock mainboard of the **Go** and **Neo**?  
 Oh yes, you can!  
 
@@ -341,7 +346,7 @@ Fluidd is kinda similar to Mainsail, so it's a great alternative if you don't wa
 The following screenshot shows the dashboard overview of Fluidd (without a camera for monitoring the printer being used).  
 
 ![Fluid UI](../assets/images/fluidd_screenshot.png)
-    
+-->    
 
 ---
 
