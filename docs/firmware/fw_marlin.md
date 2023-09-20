@@ -1,9 +1,9 @@
 <link rel=”manifest” href=”docs/manifest.webmanifest”>
 
 # Stock Firmware (Marlin Based) 
-The official stock firmware for the **Kobra 2 Pro** is based on the [Marlin firmware](https://marlinfw.org/) v2.0.x.  
+The official stock firmware for the **Kobra 2 Pro** is based on the [Marlin firmware](https://marlinfw.org/) v2.?.?.  
 
-There isn't a firmware downloadable at [Anycubic's firmware & software page](https://www.anycubic.com/pages/firmware-software) yet though.  
+There isn't a `firmware.bin` file available at [Anycubic's firmware & software page](https://www.anycubic.com/pages/firmware-software) yet.  
 Neither is a GitHub repository for the **Kobra 2 Pro** available yet at [Anycubic's GitHub account](https://github.com/ANYCUBIC-3D) which would contain the specific files for compiling it yourself.  
 <!--
 You can either  
