@@ -1,8 +1,11 @@
 <link rel=”manifest” href=”docs/manifest.webmanifest”>
 
 # Stock Firmware (Marlin Based) 
-The official stock firmware for both models is based on the [Marlin firmware](https://marlinfw.org/) v2.0.x.  
-  
+The official stock firmware for the **Kobra 2 Pro** is based on the [Marlin firmware](https://marlinfw.org/) v2.0.x.  
+
+There isn't a firmware downloadable at [Anycubic's firmware & software page](https://www.anycubic.com/pages/firmware-software) yet though.  
+Neither is a GitHub repository for the **Kobra 2 Pro** available yet at [Anycubic's GitHub account](https://github.com/ANYCUBIC-3D) which would contain the specific files for compiling it yourself.  
+<!--
 You can either  
 
 - download the necessary `firmware.bin` file at [Anycubic's firmware & software page](https://www.anycubic.com/pages/firmware-software) for the 
@@ -11,8 +14,9 @@ You can either
 - download the source code from their specific GitHub repositories to compile your own:  
     - [Kobra Go GitHub repository](https://github.com/ANYCUBIC-3D/Kobra_Go)  
     - [Kobra Neo GitHub repository](https://github.com/ANYCUBIC-3D/Kobra_Neo)  
-     
-In case you want to build and compile your own `firmware.bin` file, you can follow the instructions of @[jojos38](https://github.com/jojos38) [Tutorial: How to build Anycubic Marlin sourcecode into a firmware.bin](https://www.reddit.com/r/anycubic/comments/y2waxu/tutorial_how_to_build_anycubic_marlin_source_code/).
+
+-->      
+In case you want to build and compile your own `firmware.bin` file (one the files are available), you can follow the instructions of @[jojos38](https://github.com/jojos38) [Tutorial: How to build Anycubic Marlin sourcecode into a firmware.bin](https://www.reddit.com/r/anycubic/comments/y2waxu/tutorial_how_to_build_anycubic_marlin_source_code/).
   
 ## Update Procedure
 
