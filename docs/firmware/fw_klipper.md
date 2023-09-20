@@ -2,7 +2,7 @@
 
 # Klipper (MOD)  
 
-As I just got this printer, I didn't yet attempted to install Klipper or check if it's actually possible.  
+As I just got this printer, I didn't yet attempt to install Klipper or check if it's actually possible.  
 So bear with me and maybe come back another time.  
 If you already installed Klipper on this specific printer, please reach out by sending me an email.  
 
