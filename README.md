@@ -1,7 +1,7 @@
 
 
 ## Please visit the GitHub pages:  
-# [KobraGoNeo Insights](https://1coderookie.github.io/KobraGoNeoInsights/)
+# [Kobra2Pro Insights](https://1coderookie.github.io/Kobra2ProInsights/)
 
 ---
 
