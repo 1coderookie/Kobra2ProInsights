@@ -1,10 +1,15 @@
 <link rel=”manifest” href=”docs/manifest.webmanifest”>
 
-# Stock Firmware (Marlin Based) 
-The official stock firmware for the **Kobra 2 Pro** is based on the [Marlin firmware](https://marlinfw.org/) v2.?.?.  
+# Stock Firmware ("Kobra OS") 
+The official stock firmware for the **Kobra 2 Pro** is called "Kobra OS".  
+
+However, it *seems* that it's somewhat Klipper-based, as the setting for the g-code flavour in the PrusaSlicer profile offered from Anycubic for this machine is set to Klipper.  
 
 There isn't a `firmware.bin` file available at [Anycubic's firmware & software page](https://www.anycubic.com/pages/firmware-software) yet.  
 Neither is a GitHub repository for the **Kobra 2 Pro** available yet at [Anycubic's GitHub account](https://github.com/ANYCUBIC-3D) which would contain the specific files for compiling it yourself.  
+
+So at this point it seems that Anycubic chose the way of using a closed source system with the need of using their upcoming APP and cloud service (which isn't yet online and available at the time of writing this) for updating the firmware and monitoring the printer and for maybe getting a somewhat 'deeper' access to it.  
+
 <!--
 You can either  
 
@@ -15,8 +20,9 @@ You can either
     - [Kobra Go GitHub repository](https://github.com/ANYCUBIC-3D/Kobra_Go)  
     - [Kobra Neo GitHub repository](https://github.com/ANYCUBIC-3D/Kobra_Neo)  
 
--->      
+      
 In case you want to build and compile your own `firmware.bin` file (one the files are available), you can follow the instructions of @[jojos38](https://github.com/jojos38) [Tutorial: How to build Anycubic Marlin sourcecode into a firmware.bin](https://www.reddit.com/r/anycubic/comments/y2waxu/tutorial_how_to_build_anycubic_marlin_source_code/).
+-->  
 
 <!--  
 ## Update Procedure
