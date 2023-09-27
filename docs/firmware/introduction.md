@@ -1,7 +1,7 @@
 <link rel=”manifest” href=”docs/manifest.webmanifest”>
 
 # Introduction
-At the time of writing this (September 2023), nothing is really known about the stock firmware "Kobra OS". Hopefully this will change in the future..  
+At the time of writing this (September 2023), nothing is really known about the stock firmware "Kobra OS" as it seems that Anycubic decided to make this system closed source. Hopefully this will change in the future..  
 
 However, here you'll find further information about the [stock firmware](fw_kobraOS.md) of the **Kobra 2 Pro** - like how to install updates, information about specific settings and known restrictions once there is anything known to share.  
 
