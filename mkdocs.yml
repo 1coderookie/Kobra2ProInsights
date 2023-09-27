@@ -140,7 +140,7 @@ nav:
     - Other: 'hardware/other.md'
   - Firmware: 
     - Introduction: 'firmware/introduction.md'
-    - Stock Firmware (Marlin Based): 'firmware/fw_marlin.md'
+    - Stock Firmware ("Kobra OS"): 'firmware/fw_kobraOS.md'
     - Klipper (MOD): 'firmware/fw_klipper.md'
   - Profiles & Slicers: 'profiles.md'
   - Calibration: 'calibration.md'
