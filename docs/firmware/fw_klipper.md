@@ -2,9 +2,11 @@
 
 # Klipper (MOD)  
 
-As I just got this printer, I didn't yet attempt to install Klipper or check if it's actually possible.  
-So bear with me and maybe come back another time.  
-If you already installed Klipper on this specific printer, please reach out by sending me an email.  
+At this time nothing is known yet if it's possible to install the 'regular' Klipper to this machine.  
+  
+It seems that local access to the machine isn't even possible and there aren't any firmware files being released from where one could get the pin assignments for configuring Klipper.    
+
+If you come across anything new about this topic, *please* reach out via email (see footer)!  
 
 <!---   
 Can you run [Klipper](https://www.klipper3d.org/) on the stock mainboard of the **Go** and **Neo**?  
