@@ -125,7 +125,7 @@ markdown_extensions:
 # Page tree / navigation
 nav: 
   - Home: 'index.md'
-  - The Printers: 'printers.md'
+  - The Printer: 'printer.md'
   - Hardware: 
     - Introduction: 'hardware/hw_index.md'
     - Frame: 'hardware/frame.md'
