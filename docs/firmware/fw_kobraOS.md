@@ -3,7 +3,6 @@
 # Stock Firmware ("Kobra OS") 
 The official stock firmware for the **Kobra 2 Pro** is called "Kobra OS".  
 
-However, it *seems* that it's somewhat Klipper-based, as the setting for the g-code flavour in the PrusaSlicer profile offered from Anycubic for this machine is set to Klipper.  
 
 There isn't a `firmware.bin` file available at [Anycubic's firmware & software page](https://www.anycubic.com/pages/firmware-software) yet.  
 Neither is a GitHub repository for the **Kobra 2 Pro** available yet at [Anycubic's GitHub account](https://github.com/ANYCUBIC-3D) which would contain the specific files for compiling it yourself.  
