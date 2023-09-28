@@ -4,80 +4,31 @@
 
 | Specifications |
 |:---------------|
-| **Go**: Bowden Drive |
-| **Neo**: Direct Drive |
+| **Feeder system**: Direct drive, dual gear |
 | **Thermistor**: 24V, 100k NTC, ATC Semitec 104GT-2/104NT-4-R025H42G type, capsuled, dimensions 3x6mm, ~150cm wire length, two pinned JST XH 2.54 connector |
 | **Heater Cartridge**: 24V, 40W, ~14.5Ohm, dimensions 6x18mm, ~150cm wire length, two pinned JST VH 3.96 connector |
-| **Nozzle**: E3D V6 type |
-| **Heater Block**: E3D V5 type |
-| **Heatbreak**: <br> **Go**: M6 thread (to fit in the V5 heater block), overall length ??mm, 6mm OD / 4mm ID, PTFE tube <br> **Neo**: M6 thread (to fit in the V5 heater block), overall length ~24.6mm, 7mm OD / 4mm ID, PTFE tube |  
-| **PTFE tube**: <br> **Go**: ~400mm bowden, ~4mm OD / ~2mm ID bore <br> **Neo**: ~41-44mm inliner for the heatbreak, ~4mm OD / ~2mm ID bore <br> *The PTFE tube at both printers can/should be repaced with a "Capricorn XS" tube (for 1.75mm filament).* |  
-| **Silicone Sock**: E3D V5 type |
-| **Part Cooling Fan**: <br> **Go**: 24V, 0.08A, 40x40x10mm, model "Coolcox BF4010H24S" <br> **Neo**: <br> - older versions: 24V, 0.08A, 45x45x10mm, model "Coolcox BF4510H24S" <br> - newer versions: 24V, 0.10A, 45x45x10mm, model "HSC BCY4510D24E" |
-| **Heatsink Cooling Fan**: 24V, 0.03A, 40x40x10mm, model "Coolcox CC4010L24S" (both printer models)  |
+| **Nozzle**: proprietary Volcano-style nozzle (*not* compatible with Volcano!) |
+| **Heater Block**: ??? type |
+| **Heatbreak**: M6 thread (to fit in the heater block), overall length ??mm, ?mm OD / ?mm ID, PTFE tube inliner |  
+| **PTFE tube**: <br> **Hotend**: ??mm inliner for the heatbreak, ~4mm OD / ~2mm ID bore <br> **Between filament runout sensor and printhead**: ~???mm <br> *Both PTFE tubes can/should be replaced with a "Capricorn XS" tube (for 1.75mm filament).* |  
+| **Silicone Sock**: ?? type |
+| **Part Cooling Fan**: 24V, ?A, ?x?x?mm, model "???"  |
+| **Heatsink Cooling Fan**: 24V, ?A, ?x?x?mm, model "???"  |
 | **ABL sensor**: PNP-NO type (imho!), connection: brown = VCC 24VDC; blue = GND; black = LEVEL/signal |  
 
 ---
 
-The printheads of the **Go** and the **Neo** aren't identical because of the different type of extruder they're using:  
+The printhead of the **Kobra 2 Pro** includes the direct drive feeder gear system, the hotend, the heatsink and part cooling fans, the ABL sensor and the motion sensor for measuring the vibrances.   
 
-- the **Go** uses a bowden drive feeder system while 
-- the **Neo** uses a direct drive feeder system.   
-  
-If you look at both printheads from the front and compare their size, you'll notice that the one of the **Go** is a bit smaller (and lighter) and more square than the wider (and heavier) and more rectangular shaped one of the **Neo**.  
+![Printhead](../assets/images/head_K2Pro_web.jpg)  
+
+It is the same as the one being used at the *Kobra 2 Plus* and *Kobra 2 Max* - it is *not* the same as the one being used in the regular *Kobra 2*.  
 
 The printhead itself is running along the [x-axis gantry](axes.md#x-axis-gantry).  
   
----  
+The following picture shows the printhead including the wiring and the longer PTFE bowden which is mounted between the head itself and the filament runout sensor at the left hand side of the x-axis gantry. This tube acts as a guide and protection for the filament as it is fed from the left hand side of the printer.  
   
-## Go
-The following picture shows a new printhead for the **Go** as it comes as a spare part.  
-  
-![New Go print head spare part](../assets/images/head_go_spare_web.jpg)
-
-The following picture shows a close up view of the printhead of the **Go** from the front view. At the bottom you can see the nozzle in the center and the orange tip of the ABL sensor at the left side.  
-  
-![Go printhead front view](../assets/images/head_go_front_web.jpg)    
-  
-The following picture shows the head of **Go** from the backside.  
-
-![Go printhead backside view](../assets/images/head_go_back_web.jpg)  
-
----
-
-### Disassembling
-  
-Disassembling the printhead isn't really complicated. Just make sure you're careful and put the screws in a place and order that makes it easy for you to reassemble everything later. The following steps are just a rough guide through so that you know what you'll be confrontated with. I'd recommend to take a picture of each step, so that you can look at them later when reassembling - just in case you don't know how to proceed at a certain point or if you're not sure where certain screws belong.    
-  
-!!! warning  
-
-    - If you need to disassemble the printhead for e.g. changing the hotend, *unload the filament first!* 
-    - For changing the nozzle or disassembling the heatbreak from the heater block, you have to *heat up the parts first!* <br> The main reason for that is to melt the filament which most likely entered little gaps there. Usually it's said that it should be around 200°C but that's probably not sufficient because (in my opinion) it depends on the material of the filament. So my suggestion is to heat up the extruder about 5-10°C more than the temperature you're printing with, then you should be on the safe side. <br> So either do that using the pre-heat function of the printer or by using a sufficient heat gut. However - don't burn yourself by touching the hot metal parts!
-    - Before starting to tinker *turn off the printer* and *unplug it from the power outlet!*
-    - *Use the sufficient tools!* <br> So please don't try to loosen the nozzle with a pair of pliers for example, use e.g. a wrench for that. <br> I also strongly recommend to *not* use a pair of pliers for the heater block, also for that you should use a wrench (if you don't have one of that size, use an adjustable one). A wrench has a smooth surface and therefore won't scratch the surface or even put dents into the block.  
-    - Make sure you *don't lose a screw* and make sure you'll *know where the screws belong* later when you want to reassemble everything again. <br> You might will be able to remember the belonging screws and positions if your tinkering lasts only an hour, but if anything crosses your plan and therefore you have to pause tinkering, you maybe won't remember one week later. So maybe start sorting the screws and take notes where they belong and/or take pictures right away from the start.
-    - *Be patient and careful.* Generally speaking, if you unscrew something and it doesn't come off easy, don't start pulling too hard as you might have overseen a screw or clip, so better watch twice. 
-    - *Don't harm or rip off any wires* as it may cause severe damage to your mainboard or might be complicated to fix later on.  
-
-Whatever you want to do, like if you want to change the hotend, the heater block, the heatbreak, a fan or even want to disassemble the whole feeder system, you have to remove the plastic cover of the printhead first.  
-It's secured by two hexagon socket screws at the top of the metal back plate and a plastic clip at each side at the lower bottom. Be gentle and careful to not break one of the clips - the best way to get them out of their fittings is to gently push together the whole plastic cover at the bottom sides.   
-  
-After the plastic cover is gone, you can see the fan and the fanduct inside the plastic cover, the proximity sensor at the left side, the aluminum cooling element of the hotend/heatbreak in the middle and the heater block down at the bottom.
-  
-![Head no cover](../assets/images/head_go_no-cover_web.jpg)   
-  
-*You'll find further disassembling instructions for the ABL sensor, the feeder gear system and the hotend in the specific sections.*  
-  
----  
-  
-## Neo  
-The following picture shows a new printhead for the **Neo** as it comes as a spare part.  
-  
-![New Neo print head spare part](../assets/images/head_neo-spare_web.jpg)
-
-The following picture shows a close up view of the printhead of the **Neo** from the front view. At the bottom you can see the blue silicone sock of the heater block with the nozzle in the center and the orange tip of the ABL sensor at the right side.  
-  
-![Neo printhead front view](../assets/images/head_neo-front_web.jpg) 
+![Printhead wider view](../assets/images/head_K2Pro_wide_web.jpg) 
   
 
 ---
@@ -126,16 +77,11 @@ The following picture shows the whole metal plate where the feeder construction 
 
 ---
 
-### MOD: Voron StealthBurner
-
-[Zdeněk Krupička](https://www.printables.com/de/@ZdenekKrupick_612132) remixed an adapter for being able to use a [Voron StealthBurner](https://vorondesign.com/voron_stealthburner) printhead at the **Neo** while still using the stock ABL sensor: [Voron StealthBurner adapter for Anycubic Kobra Neo ](https://www.printables.com/de/model/553841-voron-stealthburner-adapter-for-anycubic-kobra-neo).  
-  
----
-
 ## ABL Sensor
-Both printers come with an inductive proximity sensor for automatic bed levelling (ABL) which detects the metal of the spring steel PEI plate.  
-The ABL sensor is the part with that round orange tip, you can see a picture of it in the following sections for the specific printer model. At the **Go** it's located at the left hand side of the hotend, at the **Neo** it's located at the right hand side of the hotend when looking at the printhead from the front.  
+The printer comes with an inductive proximity sensor for automatic bed levelling (ABL) which detects the metal of the spring steel PEI plate.  
+The ABL sensor is the part with that round orange tip whic is located at the ??? hand side when looking at the printhead from the front.  
 
+<!--
 The sensor itself seems to be the same as the one being used at the regular Kobra, so if you need a replacement and can't find it for the Go/Neo, look out for the one of the Kobra as well (you'll have to extend the wiring then though!).  
 In a German 3d forum someone measured the sensor of the regular Kobra and it gives +24VDC on the black signal wire when the LED lights up, so imho that's a PNP-NO type then (as the level is HIGH then).  
 The connections are:  
@@ -151,77 +97,8 @@ The following picture shows the height gauge that sometimes comes with the print
 ![ABL height gauge](../assets/images/abl-gauge_web.jpg)
 
 The procedure about how to adjust the position will be described for the specific printer model in the following sections as well. 
-  
+-->  
 
----  
-  
-### Go
-The following picture shows the location of the ABL sensor at the printhead of the **Go**, looking at it from a bottom view angle - the ABL sensor is the part at the left side with the round orange tip.   
-  
-![Orange tip of the ABL sensor at the right side](../assets/images/head_go_bottom_web.jpg)
-    
-The ABL sensor itself is mounted in a plastic bracket which is the mounted to the metal backplate. You can adjust the height of the position by loosening the screw at the left side of the clamp which then allows you to move the sensor.  
-  
-![ABL sensor](../assets/images/head_go_ABL-bracket-side_web.jpg)
-  
----  
-    
-#### Leveling The ABL Sensor
-
-Check if you need to level your ABL sensor in relation to the nozzle (which should be done after every maintenance at the hotend as well as when you got the printer brandnew from the manufacturer).  
-
-!!! warning "Attention"  
-
-    After adjusting the height of the ABL sensor, adjust your Z offset before starting to print!  
-
-The following picture shows a sensor that should/has to be leveled (don't mind the tiny rest of filament at the tip of the nozzle which touches the paper instead of the nozzle itself though, I chipped it away before leveling everything).        
-
-![This sensor needs to be leveld](../assets/images/head_neo_ABL2level_web.jpg)  
-
-As I didn't get the plastic heihght gauge from Anycubic with my printers, I used the bigger one of those two-sided open ended wrenches. Check the parts that came with your printer, maybe you got the gauge shown in the following picture.  
-
-![ABL height gauge](../assets/images/abl-gauge_web.jpg)
-
-If you didn't get this tool, you can also print yourself one: [ABL height gauge](https://cdn.shopify.com/s/files/1/0245/5519/2380/files/Height_gauge.rar?v=1667814312).  
-
-See the expandable textbox below for further instructions about the leveling procedure.  
-
-??? example "Leveling Procedure"
-
-    - Take the [height gauge](https://cdn.shopify.com/s/files/1/0245/5519/2380/files/Height_gauge.rar?v=1667814312) from Anycubic.  
-      If you don't have the height gauge, take a sheet of paper and the bigger two-sided open-end wrench that came with your printer.  
-      If you also don't have that, take something with a flat surface that is 1.95mm thick as this is the thickness of the wrench that came with the printer (2mm will be fine also I guess).
-    - Put on the spring steel plate on the heater bed and place the printhead about the center of the bed.
-    - If you're using the height gauge, put it under the printhead and lower the head by turning the z axis rod manually. The nozzle should then touch the lower/thinner part of the gauge while the proximity sensor should touch the higher/thicker part of it as the following picture illustrates.  
-      ![ABL height gauge how-to](../assets/images/ABL-height-gauge_web.jpeg)  
-    - If you don't have/use the height gauge, place a sheet of paper under the printhead now. Then lower the head to make the nozzle touch the sheet of paper. You should still be able to move the paper but you should feel a minimum amount of resistance as a sign that the nozzle is touching it. <br> Now place the wrench flat under the ABL sensor. The sensor should touch the wrench.  
-    - If you need to adjust the height of the sensor, loosen the screw at the left side of the clamp that holds the sensor in place. <br> ![Screw clamp](../assets/images/head_go_ABL-bracket-side_web.jpg) <br> Move the sensor and tighten up the screw again once you found the correct position.  
-    - After completing the beforementioned steps, take the parts away from the bed, set your Z offset to zero (0) if you didn't do it yet and home all axes. Then execute the ABL process and dial in your z-offset.          
-
----
-
-#### Dismounting The ABL Sensor
-
-See the expandable textbox below for further instructions.  
-
-??? example "Dismounting Procedure"  
-
-    If you want to change the ABL sensor, you have to completely dismount the bracket/clamp that holds the sensor from the metal backplate. I'm not really sure about it as I didn't do it myself yet, but if the bracket is shaped like a U then that should be the way to go. Here you can see the two screws that hold it in place, looking at the metal plate from the back. <br> ![Screws at the back](../assets/images/head_go_abl-mount-back_web.jpg)  
-
-
-??? example "Remounting Procedure"
-
-    For remounting, just put everything back together by proceeding the steps of dismounting in reverse. Make sure you're using the right screws and don't forget any of them.  
-    Don't overtighten the screws though - as my father (R.I.P.) used to say: "After tight comes loose!" (roughly translated ;) ).  
-
-!!! warning "Attention"
-
-    If you dis- and remounted the ABL sensor, make sure to level the ABL sensor again and control your Z offset!  
-
-  
----  
-    
-### Neo
 The following picture shows the location of the ABL sensor at the printhead of the **Neo**, looking at it from a bottom view angle - the ABL sensor is the part at the right side with the round orange tip.   
   
 ![Orange tip of the ABL sensor at the right side](../assets/images/head_neo-bottom_web.jpg)
@@ -292,8 +169,7 @@ See the expandable textbox below for further instructions.
 ---  
   
 ## Extruder / Feeder Gear System
-The **Go** uses a bowden drive extruder/feeder, while the **Neo** is using a direct drive extruder/feeder.  
-The main difference here (from a hardware perspective) is that at the the **Go** the feeder gearbox and the extruder motor are mounted to the left side of the x-axis gantry and are connected to the printhead/hotend with a PTFE bowden tube which leads the filament, while at the **Neo** these components are part of the whole printhead.  
+The **Kobra 2 Pro** is using a direct drive, double gear extruder/feeder.  
 
 ??? tip "Can't Load New Filament?!"
 
@@ -303,99 +179,7 @@ The main difference here (from a hardware perspective) is that at the the **Go**
     If you did so and were able to insert the filament but it seems that it's getting stuck lower down in the hotend, then you might hit the end of the nozzle with an edge of your filament. It helps when you cut the filament in a 45° angle and bend the part you're manually feeding into the hotend so that it's pretty straight.  
     If you still can't get your filament loaded, it's most likely that the PTFE tube inside of the hotend is clogged or deformed or that you have a clog in or above the nozzle somewhere. To clean, inspect and maintain it, you need to disassemble the hotend. Check the section ["Disassembling The Hotend"](#disassembling-the-hotend) further down below for more information.   
   
----
-  
-### Go
-  
-The following picture shows the bowden drive feeder system of the **Go**. The feeder gear box is mounted onto the extruder motor with the holding bracket in between. It's located on the left backhand side next to the z-axis lead screw. It's connected with the white PTFE bowden tube (which leads the filament) to the printhead. The bowden tube is about 40cm long.  
 
-![Head and feeder system](../assets/images/head_GO_feeder-head_web.jpg)  
-
-A closer view of the feeder gear box mounted onto the extruder motor:  
-
-![Feeder gear system](../assets/images/head_GO_feeder-system_web.jpg)  
-
-The following picture shows the feeder gear box itself.  
-
-![Closeup feeder gear box](../assets/images/head_GO_feeder-gear_web.jpg)  
-
-The next picture shows the position of the different screws being used.  
-
-![Screw positions](../assets/images/head_Go_gearbox_screw-positions_web.jpg)
-
-The mounting dimensions of the outer screws which hold the gear box onto the motor (marked with *green* circles) are NEMA17 specific 31mm. The screw on the bottom left corner here also holds the lever in place.  
-The *yellow* circle marks the screw which is used for mounting the cover of the box onto the box itself.  
-The *red* circle marks the position of the screw for adjusting the feeder gear (spring) tension - you can reach that screw form the right sied which is marked with a red arrow.  
-
-The following picture shows the dimensions of the gear box and the lever itself, just in case one wants to get a replacement from a different manufacturer (like a metal gear box).  
-
-![Gear box dimensions](../assets/images/head_Go_gearbox_dimensions_web.jpg)  
-
-The gear is about 9.2mm outer diameter, approximately 11mm thick and has 31 teeth. There are two set screws for holding it in place when mounted onto the 5mm motor shaft, which therefore is flatted on one side.   
-
-
-??? tip "Feeder Gear Pressure"
-
-    When adjusting the pressure of the feeder gear, make sure you don't tighten it up too much as it could squeeze and deform the filament. On the other hand it shouldn't be too loose though as it should transport the filament reliably.  
-    When pulling out the filament of the extruder system, you should notice little dents on the surface of the filament from the teeth of the feeder gear, the filament itself shouldn't be squeezed and deformed though, it should still be "round" so to say. You don't want the feeder gear to "bite" too much into the filament as well though, as this may lead to inconsistentites of the filament flow. I personally like to extrude a bit so that the gear actually has to pull it in. Then I do a cold pull and check the marks of the gear on the filament itself. If you can see and feel little marks of the teeth of the gear on the surface of the filament, then it should be ok. If you don't feel and see any marks, then it's too loose. PLA is pretty hard, so the pressure can/should be a bit higher as well, but if the marks are pretty deep, then it already might be too much. If the filament is already a bit squeezed and kinda flat, then it's definitely way too much pressure (you'll most likely experience some weird artefacts, inconcisties and patterns at your prints as well then). 
-    The filament should be fed reliably, which especially comes into account while retracting. So keep an eye on the shaft of the motor by looking at the back of the motor - if you notice that it's slipping while retracting, you definitely need to increase the tension.  
-    As a rule of thumb you can keep in mind that the pressure should be higher when using hard filament like PLA and lower when using soft filament like TPU.    
-
----
-
-#### Disassembling The Feeder Gear
-
-You can disassemble the feeder gear box for maintenance of if you experience broken parts.  
-
-See the expandable textbox below for further instructions.  
-
-??? example "Disassembling Procedure"  
-
-    - Disassemble the feeder gear box by removing the screw of the gear box cover which is marked with a yellow circle in the following picture. You also have to remove the one screw in the lower right corner (marked with a green circle) for taking off the cover then. You don't have to dismount the whole gear box from the motr itself though.  
-    - If you just want to remove the lever, you'd need to remove the green marked screw in the lower left corner. <br> ![Gear box marked screws](../assets/images/head_Go_gearbox_screw-positions_web.jpg)  
-    - After removing the cover of the gear box, you'll then be able to access the metal sleeve where the bowden tube runs through. <br> ![Gear box disassembled](../assets/images/head_Go_gearbox_disass_web.jpg)  
-
-  
-??? example "Reassembling Procedure"
-
-    For reassembling, just put everything back together by proceeding the steps of disassembling in reverse. Make sure you're using the right screws and don't forget any of them.  
-    Don't overtighten the screws though - as my father (R.I.P.) used to say: "After tight comes loose!" (roughly translated ;) ).  
-
----
-
-#### MOD: Bowden Drive Upgrade
-
-As the stock extruder/feeder system is mounted onto the extruder motor directly, it's possible to upgrade to a better one. The following pictures show a MicroSwiss bowden drive feeder system.  
-
-| MicroSwiss frontview | MicroSwiss sideview |
-|:---------------------|:---------------------|
-| ![MicroSwiss 1](../assets/images/head_GO_MicroSwissBowden1_web.jpeg) | ![MicroSwiss 2](../assets/images/head_GO_MicroSwissBowden2_web.jpeg) |
-
-
----
-
-#### MOD: Direct Drive Conversion
-
-??? note "General Advice When Converting To A Direct Drive"
-
-    If you're going to mod to a direct drive using the stock hardware, consider using a pancake stepper motor then (if it's not already being used at the **Go**, I'm not sure about that right now) for reducing the weight.  
-    Also keep in mind to lower your retraction distance then!  
-    It might be smart to flash the firmware of the **Neo** then as well.  
-
-- Reddit member [xpeng121](https://www.reddit.com/user/xpeng121/) posted his mod for the Kobra **Go** to a ***direct drive extruder*** using the stock parts: [Kobra Go direct drive mod. Yes it's Neo now...](https://www.reddit.com/r/anycubic/comments/10howol/kobra_go_direct_drive_mod_yes_its_neo_now/)
-- The belonging bracket designed by user [Clay_47](https://www.printables.com/de/@Clay_47_396870) can be found here: [DIRECT Extruder Anycubic Kobra Go](https://www.printables.com/de/model/366079-anycubic-kobra-go)
-
-- User [Justad](https://www.thingiverse.com/Justad) made a [mount for a Bondtech BMG BMG-M](https://www.thingiverse.com/thing:5954007).
-
-- Reddit member [OriginalNames687](https://www.reddit.com/user/OriginalName687/) posted his solution for mounting a **MicroSwiss NG Direct Drive** here: [Micro Swiss NG Direct Drive Extruder on Kobra Go (Instructions in comments)](https://www.reddit.com/r/anycubic/comments/14ucd09/micro_swiss_ng_direct_drive_extruder_on_kobra_go/) 
-
-- Reddit member [MeckeMecke](https://www.reddit.com/user/MeckeMecke) posted his solution of using an **E3D Revo CR hotend** plus an **Orbiter V.2** pancake motor here: [Kobra Go with E3D Revo CR & Orbiter V.2](https://www.reddit.com/r/anycubic/comments/15s44m7/kobra_go_with_e3d_revo_cr_orbiter_v2/)  
-  The following picture shows this impressive mod:  
-  ![Revo Orbiter DD mod](../assets/images/head_go_dd-mod-revo_web.jpeg)
-  
----  
-  
-### Neo
 The following picture shows the extruder/feeder of the **Neo** with the mounted plastic cover of the printhead.  
   
 ![Direct drive of the Neo](../assets/images/head_neo_directdrive_web.jpg)
@@ -462,7 +246,13 @@ If that doesn't work, see the expandable textbox below for further instructions 
 ---  
   
 ## Hotend 
-In the following, the specific hotends will be shown. Before jumping to the specific section, mind the notes in the expandable textboxes as well.  
+
+The assembled hotend is shown in the following picture.  
+  
+![Hotend](../assets/images/head_neo_hotend-new_web.jpg)  
+    
+
+
   
 !!! warning
 
@@ -477,6 +267,12 @@ In the following, the specific hotends will be shown. Before jumping to the spec
     *This is a serious potential of a fire hazard!*    
     See the following picture of a user where the cartridge heater slipped out of the heater block.  
     ![Slipped out cartridge heater](../assets/images/head_glowing-cartridge_web.jpg)  
+
+??? info "Spare Part Hotend"
+
+    - At the time of writing there isn't a spare part hotend available yet. The hotend *might* be the same as the one being used in the regular Kobra 2.    
+    - If the old thermistor and/or cartridge heater are still good and the wires aren't harmed, you don't have to look around for getting new ones! Just take the existing ones out of the old heater block and install them into the new one.    
+    - However, scroll down and check out the "Disassembling" section below to see how to dis- and reassemble it. *Maybe you don't need new parts, so try to clean up everything first and reassemble it before ordering new parts right away.*    
   
 ??? tip "Can't Load New Filament?!"
 
@@ -508,19 +304,7 @@ In the following, the specific hotends will be shown. Before jumping to the spec
     - Also check if you need to re-level the ABL sensor in relation to the nozzle due to a probably different position of the hotend now.  
     - Execute an ABL and take care of your Z-offset, most likely the position of your nozzle will be different due to a different position of the whole hotend.  
   
----  
-   
-### Go
   
-The hotend of the **Go** is shown in the next pictures.  
-The bowden tube from the feeder gear to the hotend is about 40cm long.  
-The first picture shows the hotend completely assembled as it comes as a spare part (I don't own the **Go**, so I had to buy a spare part hotend for taking these pictures), the second picture shows the hotend being dismounted from the aluminum heatsink.  
-
-![Hotend](../assets/images/head_go_hotend_web.jpg)  
-  
-![Hotend disassembled](../assets/images/head_go_hotend-dis_web.jpg)
-
-
 ---
 
 #### Disassembling The Hotend
@@ -528,70 +312,7 @@ If you need to dismount the hotend from the printhead to change it or if you nee
 
 !!! warning  
 
-    - When pulling out the hotend at the **Neo**, *make sure the PTFE tube placed in the heatbreak comes out, too!*  
-    - Inspect the PTFE tube if it's burned, deformed  or clogged - if so, get a new one as a replacement (I'd recommend using a Capricorn bowden tube). Make sure the filament runs through the tube nice and easy and without any friction.   
-    - When pulling out the hotend, *be careful to not break any wires or rip them off from the sensor and heater catridge* - so better unscrew the tiny hex screws a bit and take out the thermistor and the heating cartridge first as mentioned above. 
-    - Check the wires and contacts if they aren't harmed and if everything is ok. 
-    - ***Never try to unscrew the heatbreak and/or the nozzle from the heater block while the parts are cold!*** 
-      Melted filament or some kind of screw lock glue might make it hard or even impossible to unscrew these parts and you risk to shear them off!  
-
-!!! danger  
-
-    *If you can see bare wire shining through the isolation of the wires of either the thermistor or the cartridge heater, I'd strongly recommend to replace the component to not risk a shortcut and therefore a broken mainboard!*   
-  
-??? example "Disassembling Procedure"
- 
-    - When you look at the hotend, you'll see two bigger hexagon socket screws at the top left and right corner of the cooling element and two tiny hexagon grub screws at the lower end. <br> ![Screws](../assets/images/head_go_hotend-screws_web.jpg) <br> The ones at the bottom secure the heatbreak and therefore the whole hotend, the ones at the top hold the heatsink in place.  
-    - Before you start to disassemble the hotend, heat it up to about 220-230°C first. Once it reached the temperature, turn off the printer.  
-    - Loosen up the grub screws at the heater block which hold the thermistor and the cartridge heater in place and pull both parts out of the heater block. <br> ![Screws heater block](../assets/images/head_block-screws-close_web.jpg) <br> Be careful to not rip any wires!  
-    - Loosen the nozzle and the heatbreak. You can already take out the nozzle completely and unscrew the heater block from the heatbreak as well - just make sure you don't burn yourself. 
-    - Now loosen the two grub screws located at the bottom part of the heatsink and pull out the heatbreak. <br> ![Extruder disassembled](../assets/images/head_go_hotend-dis_web.jpg)   
-    - If you want to take off the heatsink as well, unscrew the two grub screws located at the top part. <br> ![Hotend dismounted](../assets/images/head_go_extruder-dismounted_web.jpg)
-    - Unscrew the nut at the top of the heatsik where the long PTFE tube runs through that leads the filament.   
-
-??? example "Reassembling Procedure" 
-  
-    - Screw the heatbreak into the heater block to the corresponding depth and screw in the nozzle from the other side until they touch. Don't tighten up the nozzle yet!    
-    - Put back the cleaned or renewed PTFE tube into the heatsink element, let the tube stick out about 5cm at the bottom, don't tighten up the nut yet.  
-    - Then push the heatbreak back into the heatsink part - make sure you push it deep enough until the little 'ring' of the heatbreak touches the heatsink part. The PTFE tube should touch the bottom of the heatbreak - because you let it stick out more than necessary, it should therefore come up a bit out of the cooling element at the top.
-    - Watch out to put the hotend in place the right way: the 'bigger' part of the heater block should be located at the front. Everything should be aligned. 
-    - Then tighten up the tiny grub screws to secure the heatbreak, so that the hotend doesn't turn or wiggle anymore (but don't overtighten the screws though). Tighten up the nut of the PTFE tube then.
-    - Mount the whole hotend/cooling element back on the metal plate by using the two bigger hexagon socket screws.  
-    - Put the thermistor and the heater cartridge back in place and secure them by *carefully* tighten the tiny hex screw - *don't overtighten them as you could harm the thermistor and the heater cartridge!*  
-    - Turn on the printer and heat up the nozzle to ~230-240°C. Once the temperature is reached, tighten up the nozzle with about 1.5NM force. Make sure to hold the heater block in place and strictly avoid any movement of it! Don't touch or harm any wires!  
-    - Reassemble the fan and the plastic cover. 
-
----
-
-#### MOD: Different Hotend
-
-- Reddit member [MeckeMecke](https://www.reddit.com/user/MeckeMecke) used an **E3D Revo CR** as a drop-in replacement before he made his direct drive conversion mod for using an **E3D Revo CR hotend** plus an **Orbiter V.2** pancake motor. See his comments here: [Kobra Go with E3D Revo CR & Orbiter V.2](https://www.reddit.com/r/anycubic/comments/15s44m7/kobra_go_with_e3d_revo_cr_orbiter_v2/)  
-
- 
-  
----  
-  
-### Neo  
-  
-The hotend of the **Neo** is shown in the following picture.  
-  
-![Hotend](../assets/images/head_neo_hotend-new_web.jpg)  
-    
-
-??? info "Spare Part Hotend"
-
-    - If you need a new hotend because your heater block or the heatbreak needs to be changed, you can get yourself the spare part hotend for the regular *Kobra* as shown in the picture below. <br> ![Hotend Kobra](../assets/images/head_hotend-kobra-sparepart_web.jpg) <br> If you look at the picture of it and compare it with the one from the **Neo** I've shown above, you'll notice that the shape of the heatbreak is the same. <br> You can *not* use the thermistor and the cartridge heater that come with it thought, as the wires aren't long enough - at least not without tinkering.   
-    - If the old thermistor and/or cartridge heater are still good and the wires aren't harmed, you don't have to look around for getting new ones! Just take the existing ones out of the old heater block and install them into the new one.    
-    - However, scroll down and check out the "Disassembling" section below to see how to dis- and reassemble it. *Maybe you don't need new parts, so try to clean up everything first and reassemble it before ordering new parts right away.*  
-
----
-
-#### Disassembling The Hotend
-If you need to dismount the hotend from the printhead to change it or if you need to disassemble it, check out the expandable textbox below for further instructions. 
-
-!!! warning  
-
-    - When pulling out the hotend at the **Neo**, *make sure the PTFE tube placed in the heatbreak comes out, too!*  
+    - When pulling out the hotend, *make sure the PTFE tube placed in the heatbreak comes out, too!*  
     - Inspect the PTFE tube if it's burned, deformed  or clogged - if so, get a new one as a replacement (I'd recommend using a Capricorn bowden tube). Make sure the filament runs through the tube nice and easy and without any friction.   
     - When pulling out the hotend, *be careful to not break any wires or rip them off from the sensor and heater catridge* - so better unscrew the tiny hex screws a bit and take out the thermistor and the heating cartridge first as mentioned above. 
     - Check the wires and contacts if they aren't harmed and if everything is ok. 
@@ -656,33 +377,11 @@ The following pictures show each hotend being disassembled. You can clearly see 
 
 ## Heatbreak
 
-The stock heatbreaks aren't the worst out there, but they aren't the best either. So you might reach the point that you want to upgrade to one from the aftermarket.  
+The stock heatbreak is a proprietary Volcano-style one made by Anycubic. It is **not** compatible with regular E3D Volcano type nozzles!   aren't the worst out there, but they aren't the best either. So you might reach the point that you want to upgrade to one from the aftermarket.  
 
 ??? info "Spare Part Heatbreak"
 
     If you need a new heatbreak, you should be able to use whichever V5 compatible heatbreak you'd like to use, you just have to *pay attention to the dimensions*. It should be about the same length as the stock one, so don't buy anything significantly shorter or longer. Make sure to pay attention to the surface at the top part - that should be even and smooth, so don't get yourself the ones with the thread on the outside.   
-
----
-
-### Go
-
-The heatbreak of the **Go** is plugged into the heatsink and secured by two screws.  
-It has a M6 thread to fit the V5 type heater block.  
-As I didn't disassemble yet the only spare part hotend of the **Go** I got myself for taking these pictures, I can't tell you the overall length. However, the length from that 'ring' until the end of it is ~17mm. 
-The outer diameter diameter is 6mm.  
-
-The following picture shows the heatbreak of the **Go** as it's screwed into the heater block.  
-
-![Heatbreak Go](../assets/images/head_go_stock-heatbreak_web.jpg)
-
----
-
-##### MOD: Different Heatbreak
-As nobody reached out to me yet, I can't show or suggest any solutions of alternative hotends for the **Go** - sorry about that. From my perspective (I don't own the **Go** though!) it should be possible to replace the existing hotend with one from the aftermarket though, if you pay attention to the specific dimensions.  
-
----
-
-### Neo
 
 The heatbreak of the **Neo** is plugged into the heatsink of the direct drive and secured by two screws.  
 To fit the V5 type heater block, it has an M6 thread.  
