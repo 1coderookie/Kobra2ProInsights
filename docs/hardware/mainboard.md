@@ -2,14 +2,14 @@
 
 # Mainboard
 
-## TriGorilla Spe A V1.0.0 (Stock) 
+## TriGorilla_Spe_A_V1.0.0 (Stock) 
   
 The stock mainboard is labeled as "Trigorilla_Spe_V1.0.0".   
 
 It is a 32bit 24V mainboard with an ARM Cortex-A7 which runs at 1.2GHz and offers 8GB of internal storage capacity.  
-The mainboard comes with TMC2209 silent stepper drivers (at least that's what Anycubic states - I didn't take off the heatsinks to check if these really are genuine TMC2209 chips) which are *soldered* onto the board (they can't be swapped out!).  
+The mainboard comes with four TMC2209 silent stepper drivers (at least that's what Anycubic states - I didn't take off the heatsinks to check if these really are genuine TMC2209 chips) which are *soldered* onto the board (they can't be swapped out!).  
 It offers three USB-A connectors labeled as "U-EXT1", "U-EXT2" and "U-FRIMWARE" (yes, typo included ;) ).  
-It also offers a built in WiFi chip with an external antenna.  
+It also offers a built in Realtek WiFi chip ([RTL8723DU](https://www.realtek.com/en/products/communications-network-ics/item/rtl8723du)) with an external antenna.  
 
 ![Mainboard TriGorilla front](../assets/images/mainboard_K2Pro_front_web.jpg)  
   
