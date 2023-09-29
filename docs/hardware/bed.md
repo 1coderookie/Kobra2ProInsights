@@ -10,6 +10,8 @@
 | **Thermistor**: 24V, 100k NTC "EPCOS" type, AWG22 wire, two pinned JST XH 2.54 connector |
 | **PCB Heating Coil**: 24V, ~180W, ~3.2Ohm resistance, AWG14 wire |
 | **Bedmount**: 9x18mm rigid spacers/bushings, 4x25mm countersunk head screws |
+| **Silicone Block**: ?x?mm |
+| **Tool height gauge sensor (z-offset)**: ??? |
 
 ---
 
