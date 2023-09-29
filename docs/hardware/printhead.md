@@ -4,15 +4,15 @@
 
 | Specifications |
 |:---------------|
-| **Feeder system**: Direct drive, dual gear |
+| **Feeder system**: Direct drive, dual gear, 4:1 ratio |
 | **Thermistor**: 24V, 100k NTC, ATC Semitec 104GT-2/104NT-4-R025H42G type, capsuled, dimensions 3x6mm, ~150cm wire length, two pinned JST XH 2.54 connector |
 | **Heater Cartridge**: 24V, 40W, ~14.5Ohm, dimensions 6x18mm, ~150cm wire length, two pinned JST VH 3.96 connector |
-| **Nozzle**: proprietary Volcano-style nozzle (*not* compatible with Volcano!) |
-| **Heater Block**: ??? type |
+| **Nozzle**: proprietary Volcano-like nozzle (*not* compatible with Volcano!) |
+| **Heater Block**: Volcano-like type |
 | **Heatbreak**: M6 thread (to fit in the heater block), overall length ??mm, ?mm OD / ?mm ID, PTFE tube inliner |  
 | **PTFE tube**: <br> **Hotend**: ??mm inliner for the heatbreak, ~4mm OD / ~2mm ID bore <br> **Between filament runout sensor and printhead**: ~???mm <br> *Both PTFE tubes can/should be replaced with a "Capricorn XS" tube (for 1.75mm filament).* |  
 | **Silicone Sock**: ?? type |
-| **Part Cooling Fan**: 24V, ?A, ?x?x?mm, model "???"  |
+| **Part Cooling Fan**: 24V, 0.14A, 50x50x20mm, model "Coolcox BF5020H24D"  |
 | **Heatsink Cooling Fan**: 24V, ?A, ?x?x?mm, model "???"  |
 | **ABL sensor**: PNP-NO type (imho!), connection: brown = VCC 24VDC; blue = GND; black = LEVEL/signal |  
 
@@ -26,7 +26,7 @@ It is the same as the one being used at the *Kobra 2 Plus* and *Kobra 2 Max* - i
 
 The printhead itself is running along the [x-axis gantry](axes.md#x-axis-gantry).  
   
-The following picture shows the printhead including the wiring and the longer PTFE bowden which is mounted between the head itself and the filament runout sensor at the left hand side of the x-axis gantry. This tube acts as a guide and protection for the filament as it is fed from the left hand side of the printer.  
+The following picture shows the printhead with the plastic housing including the wiring and the longer PTFE bowden, which is mounted between the head itself and the filament runout sensor at the left hand side of the x-axis gantry. This tube acts as a guide and protection for the filament as it is fed from the left hand side of the printer.  
   
 ![Printhead wider view](../assets/images/head_K2Pro_wide_web.jpg) 
   
@@ -81,8 +81,7 @@ The following picture shows the whole metal plate where the feeder construction 
 The printer comes with an inductive proximity sensor for automatic bed levelling (ABL) which detects the metal of the spring steel PEI plate.  
 The ABL sensor is the part with that round orange tip whic is located at the ??? hand side when looking at the printhead from the front.  
 
-<!--
-The sensor itself seems to be the same as the one being used at the regular Kobra, so if you need a replacement and can't find it for the Go/Neo, look out for the one of the Kobra as well (you'll have to extend the wiring then though!).  
+The sensor itself seems to be the same as the one being used at the regular Kobra, so if you need a replacement and can't find it for this specific model, look out for the one of the Kobra as well.  
 In a German 3d forum someone measured the sensor of the regular Kobra and it gives +24VDC on the black signal wire when the LED lights up, so imho that's a PNP-NO type then (as the level is HIGH then).  
 The connections are:  
 
@@ -99,7 +98,7 @@ The following picture shows the height gauge that sometimes comes with the print
 The procedure about how to adjust the position will be described for the specific printer model in the following sections as well. 
 -->  
 
-The following picture shows the location of the ABL sensor at the printhead of the **Neo**, looking at it from a bottom view angle - the ABL sensor is the part at the right side with the round orange tip.   
+The following picture shows the location of the ABL sensor at the printhead, looking at it from a bottom view angle - the ABL sensor is the part at the right side with the round orange tip.   
   
 ![Orange tip of the ABL sensor at the right side](../assets/images/head_neo-bottom_web.jpg)
     
@@ -169,7 +168,7 @@ See the expandable textbox below for further instructions.
 ---  
   
 ## Extruder / Feeder Gear System
-The **Kobra 2 Pro** is using a direct drive, double gear extruder/feeder.  
+The **Kobra 2 Pro** is using a direct drive, double gear extruder/feeder system (4:1 ratio).  
 
 ??? tip "Can't Load New Filament?!"
 
@@ -744,10 +743,17 @@ Note the dent from the screw and the deformed thermistor due to an overtightened
 ---  
   
 ## Nozzle
-Anycubic ships the printheads with a 0.4mm **E3D V6 type** brass nozzle for 1.75mm filament.  
-  
-![E3D nozzle](../assets/images/head_nozzle-e3d_web.jpg)  
+Anycubic ships the printheads with a *proprietary* Volcano-like brass nozzle (0.4mm for 1.75mm filament).  
 
+!!! warning "Not Compatible With Original E3D Volcano Type!"  
+
+    This nozzle is **not compatible** with the original E3D Volcano type nozzles!  
+    The end of the nozzle's throat is slightly changed by Anycubic and fits into the specific heatbreak, so you can't just use a Volcano-style nozzle!  
+    You either have to buy spare part nozzles from Anycubic or have to change the setup of the hotend (heatbreak and nozzle).  
+  
+![Anycubic's proprietary Volcano-like nozzle](../assets/images/head_nozzle-e3d_web.jpg)  
+
+<!--
 So if you're looking for replacement nozzles, make sure to get yourself the correct type: it's a E3D **V6** type of nozzle!  
 I highly recommend to only use high quality nozzles, like the [**original E3D V6 nozzles**](https://e3d-online.com/products/v6-nozzles) (see the infobox below as well)!  
 
@@ -761,12 +767,7 @@ If you're planning on printing on much higher speeds and need a higher flowrate 
 
 *Whichever kind of nozzle you decide to get - always make sure to choose an E3D ***V6*** type of nozzle!*  
 
-!!! warning "MK8 Nozzles DON'T Fit!"
-
-    Because some people in various forums and in Youtube videos obviously claim that it's a MK8 nozzle which is being used, I wanna point this out once again: **MK8 is NOT the correct type of nozzle!**  
-    Even though MK8 nozzles have a M6 thread and therefore fit in the heater block, the thread is too short! The end of the nozzle won't touch the heatbreak as it's supposed to - and this will create severe problems (e.g.: clogs, burnt filament, leaking filament out of the threads of the heater block).  
-    So just get yourself the correct type of nozzle, which is an E3D **V6** type!  
-    
+-->  
     
 !!! warning "Nozzles: Handle With Care!" 
 
@@ -855,46 +856,24 @@ If you need to change the nozzle, mind the warnings from above and check out the
 
 ## Part Cooling Fan  
 
-The part cooling fans of the **Go** and the **Neo** are different.  
+The part cooling fan is a 24V, 0.14A, 50x50x20mm blower, model "Coolcox BF5020H24D".  
 
----
-
-### Go
-
-The **Go** uses a 24V, 0.08A, 40x40x10mm fan, model "Coolcox BF4010H24S".  
+According to the [specifications of the manufacturer](https://www.coolcox.com/products/pdf/BF5020_a.pdf), the bearing type of this fan is a 2-ball bearing. The current is listed as 0.08A, even though the label at the fan itself states 0.14A. The fanspeed is listed with 5000rpm, Anycubic states at the product page 7000rpm though. The air flow is listed with 6.0 CFM and the noise level is listed with 34.0 dBA.  
 
 | Coolcox front side | Coolcox backside label |
 |:-------------------|:-----------------------|
-| ![Go: Coolcox BF4010H24S front](../assets/images/head_go_part-cooling-fan-front_web.jpg) | ![Go: Coolcox BF4010H24S label](../assets/images/head_go_part-cooling-fan-coolcox_web.jpg) |  
+| ![Coolcox BF5020H24D front](../assets/images/head_K2Pro_part-cooling-fan-front_web.jpg) | ![Coolcox BF5020H24D label](../assets/images/head_K2Pro_part-cooling-fan-coolcox_web.jpg) |  
 
----
-
-### Neo
-The **Neo** uses a 24V, 0.08A (early versions) or 0.10A (later versions), 45x45x10 type of fan.  
-
-The first versions of the **Neo** have been supplied with the model "Coolcox BF4510H24S", which draws 0.08A.  
-
-| Coolcox front side | Coolcox backside label |
-|:-------------------|:-----------------------|
-| ![Neo: Coolcox BF4510H24S front](../assets/images/head_neo_part-fan-coolcox-front_web.jpg) | ![Neo: Coolcox BF4510H24S label](../assets/images/head_neo_fan-parts_web.jpg) |  
-
-At the newer versions of the **Neo**, it seems that Anycubic changed the model of the fan being used. The change probably took place somewhat in the middle of 2023.  
-The fan which is now being used is a "HSC BCY4510D24E", which draws 0.10A.  
-
-| HSC front side | HSC backside label |
-|:-------------------|:-----------------------|
-| ![Neo: HSC BCY4510D24E](../assets/images/head_neo_part-fan-HSC-front_web.jpg) | ![Neo: HSC BCY4510D24E](../assets/images/head_partcoolingfan_HSC_web.jpg) |  
-
-  
-
-!!! warning "Issues With The PWM Control"  
-
-    It seems that the newer version of the fan, the HSC one, does have some issues with PWM control. It has been reported by @ProXinous that the fan doesn't work properly using lower speed settings that 100%. The both of us then did several tests and investigated this problem further, and it seems that this type of fan just isn't capable of working being PWM controlled. We're still investigating this issue, but for now there doesn't seem to be a solution other than swapping out that fan and using a different model. I'll update this warning note as soon as new insights have been gathered.    
 
 ---
 
 ## Fan Duct
 
+The fan duct for the 5020 part cooling blower fan has two outlets at the sides as the following picture shows.  
+
+![Part cooling fan duct](../assets/images/head_K2Pro_part-cooling-fanduct_web.jpg)  
+
+<!--
 As the stock fan ducts aren't very good in doing their job of part cooling, it's highly recommended to print a better one. This can be done as soon as you can print - you don't need to look out for perfect quality at this point yet. If you're only printing PLA right now, also that is ok for using it for the first enhanced fan duct.  
 Due to the way better part cooling then, it'll massively improve the quality of the printed parts as well as puts you into position to successfully print stronger materials like PETG.  
 
@@ -904,37 +883,15 @@ Signs of improper cooling are e.g. weird molten-like patterns and prints that do
 
 In the following I'll list some of the fan duct models for the **Go** and the **Neo** I came across.  
 The list is kinda outdated right now tho, I need to look around and add the models that were made since I searched the last time. Until then, maybe just do a little research on your own at Thingiverse and Printables.. ;)
+-->
 
----  
-  
-### Go  
-
-***I highly recommend to print one of the fan ducts which replace the stock fan duct. It's a huge improvement!***  
-It's advisable to (at least) print them from PETG if you're able to do that. If not, printing them from PLA is better than not printing them at all of course. It might happen though that a fan duct printed from PLA will sooner or later sag or deform due to the heat it's being exposed to. This shouldn't be much of an issue as long as you're printing PLA with e.g. a bed temperature of 60°, but if you're about to print PETG for axample, using a bed temperature of 80° (plus a higher hotend temperature), the fan duct will most like start to deform and sag.
-
-- [MW-Mechanical](https://www.printables.com/de/social/455820-mw-mechanical) created an [Upgraded fan duct (exposed print head setup) for Anycubic Kobra Go](https://www.printables.com/de/model/338244-upgraded-fan-duct-exposed-print-head-setup-for-any) which is supposed to achieve better part cooling.
-- [Gallapagos](https://www.thingiverse.com/gallapagos/designs) created a [Monomonster](https://www.thingiverse.com/thing:5741047) for the **Go** using a 5015 style blower fan.
-
-  
----  
-    
-### Neo  
-
-***I highly recommend to print one of the fan ducts which replace the stock fan duct. It's a huge improvement!***  
-It's advisable to (at least) print them from PETG if you're able to do that. If not, printing them from PLA is better than not printing them at all of course. It might happen though that a fan duct printed from PLA will sooner or later sag or deform due to the heat it's being exposed to. This shouldn't be much of an issue as long as you're printing PLA with e.g. a bed temperature of 60°, but if you're about to print PETG for axample, using a bed temperature of 80° (plus a higher hotend temperature), the fan duct will most like start to deform and sag.  
-  
-- [Gregg Bennett](https://www.printables.com/de/social/221278-greg-bennett/about) created an [extension for the stock fan duct](https://www.printables.com/de/model/399159-air-duct-anycubic-kobra-neo-httpsyoutubeso7tb6e8yh) of the **Neo** which has to be mounted onto it and leads the airflow closer to the printed object underneath the nozzle. Based on my personal experience, I'd suggest to maybe print this one with the stock setup first, mount it and then print another, even better fan duct design.   
-- [Martin](https://www.printables.com/de/social/443043-martin) created a [replacement for the stock fan duct ](https://www.printables.com/de/model/378928-anycubic-kobra-neo-fan-duct) of the **Neo** which is supposed to achieve better part cooling due to air flow from three sides.  
-  He also created a [fan duct for a 5015 radial fan](https://www.printables.com/en/model/426167-kobra-neo-fan-duct-for-5015-fan/files) which replaces the stock parts.  
-- [Marius Avasiloaie](https://www.printables.com/de/@MariusAvasiloaie) created a [360° circular fan duct](https://www.printables.com/de/model/498457-anycubic-kobra-neo-fan-duct) as a replacement of the original fan duct.
-- [Kaan Okcu](https://www.printables.com/de/@KaanOkcu_682657) created a [180° fan duct](https://www.printables.com/de/model/470004-anycubic-kobra-neo-fan-duct) which replaces the stock fan duct.  
 
 ---
 
 ## Heatsink Cooling Fan  
-Both printers use the same type of heatsink/coldend cooling fan: 24V, 0.03A, 40x40x10mm, model "Coolcox CC4010L24S".  
+The heatsink/coldend cooling fan being used is a 24V, 0.?A, ?0x?0x?0mm, model "Coolcox ??".  
 
-![Coolcox CC4010L24S](../assets/images/head_neo_fan-heatsink_web.jpg)
+![Coolcox ???](../assets/images/head_K2Pro_fan-heatsink_web.jpg)
 
 
 
