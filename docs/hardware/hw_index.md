@@ -12,9 +12,9 @@ Because you're entering the hardware part right now, there is something I really
 *Check the whole frame if everything is square, rectangular and perpendicular, check all screws, bolts, belts, wheels, electrical connectors - really just everything.*  
 *And (really important): also disassemble the lead screw system, clean it and lubricate it and pay attention to vertical alignment when reassembling!*   
   
-You might think now "Why should I waste my time with that? I assembled the **Go** by myself / I got the preassembled **Neo** and why should I even disassemble the lead screw system?!?" - and I understand that.  
+You might think now "Why should I waste my time with that? I got the machine preassembled and why should I even disassemble the lead screw system?!?" - and I understand that.  
 Sure, you want to dive right into the beautiful ocean of 3D printing. And you will. But as with jumping into the unknown ocean from a cliff high above, you need to assure that everything is safe. And in this case with your new 3D printer it's actually not only that.  
-The point is: even if you got the preassembled **Neo**, not everything might be assembled and mounted correctly. Some bolts or screws might not be tight enough or might be overtightened. The wheels might be too loose or too tight, same with the belts.  
+The point is: even if you got the machine preassembled, not everything might be assembled and mounted correctly. Some bolts or screws might not be tight enough or might be overtightened. The wheels might be too loose or too tight, same with the belts.  
 And about the lead screw: just touch it. Does it feel kinda wet and oily, or does it feel more sticky and resinous instead? I'd bet it's more the last. And especially this will lead to a pretty quick wear out (in this case of the anti-backlash nut) and weird artifacts on your prints (due to the inconsistent movement) which will drive you crazy after hours of calibration prints.  
 
 So - lean back, read the specific chapters and then grab your tools.  
