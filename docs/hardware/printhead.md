@@ -423,8 +423,8 @@ The steel one is about 27mm long, the copper bi-metal one is about 27.5mm long (
 
 ## PTFE Tube  
 There are two PTFE tubes located at this machine:  
-- a longer PTFE bowden tube which is located between the printehad and the filament runout sensor and
-- a short PTFE tube inside of the heatbreak/hotend.  
+- a longer PTFE bowden tube which is located between the printehad and the filament runout sensor, called "reverse bowden", and
+- a short PTFE tube inside of the heatbreak/hotend, called "PTFE inliner".  
 
 Both PTFE tubes have the outer diameter of ~4mm and the inner diameter of ~2mm as they're meant to be used for 1.75mm filament.  
 
@@ -440,17 +440,31 @@ Both PTFE tubes have the outer diameter of ~4mm and the inner diameter of ~2mm a
     If you need a new PTFE bowden tube, I'd recommend to get the 4mm "Capricorn XS" tube for 1.75mm filament at the length of 1m. Then just cut the belonging length and replace the old bowden tube. You can also get it in a set with a cutter.  
     ![Capricorn XS](../assets/images/head_capricornXS_web.jpg)    
 
+
 ---
 
-### PTFE Tube At The Outside  
-The PTFE tube at the outside, between the printhead and the filament runout sensor, is about ??mm long.  
+### Reverse Bowden  
+The reverse bowden tube, which is the PTFE tube between the printhead and the filament runout sensor, is about ??mm long.  
 It acts as a guidance and protection for the fed filament and is clipped onto the wiring of the printhead.    
 
+??? info "Thoughts About The Reverse Bowden"
+
+    You might change the position of the filament spool and ask yourself if you then should also change the position of the reverse bowden accordingly or just get rid of it.  
+    
+    I personally don't like reverse bowden tubes that much, as I find it easier to e.g. load and unload filament and also perform cold pulls without a reverse bowden tube in place.  
+    Besides that, I personally think that friction might be added when using a reverse bowden.  
+    I also think that it might happen that there's different tension on the filament when the extruder moves around and when e.g. it's pushing back filament in certain positions, which imho might lead to differencies of the filament volume per extruder steps. This especially might come into place and cause issues when printing softer material like TPU.    
+    
+    Reverse bowden tubes do have some advantages though, as they constrain the distance between their mounting point at the frame and the extruder. When the extruder is pushing back filament, the risk of tangling filament which then might be caught by the moving printhead therefore is reduced.  
+    
+    However, I personally would recommend to change the stock reverse bowden tube with a better Capricorn XS tibe, as they have a lower overall friction due to their special coating/recipe.  
+    
+    If you're interested in this topic, maybe read this article written by Thomas Sanladerer (and/or watch his video about it): [Should you use a Reverse Bowden](https://toms3d.org/2022/09/06/should-you-use-a-reverse-bowden/). 
 
 ---
 
-### PTFE Tube In The Hotend
-The PTFE tube which is located in the hotend/heatbreak is about ??mm long.  
+### PTFE Inliner
+The short PTFE tube which is located in the hotend/heatbreak is about ??mm long.  
 Here the PTFE tube only is an inliner for the heatbreak.   
 
 When you need to cut a new inliner and you're not sure about the correct length, the best would be to actually disassemble the hotend, so that you can install the heatbreak only. Push it into the heatsink as far as you can. Then push the replacement tube into the heatbreak from the bottom, until you can't stick it in any further. Then either cut along the end of the heatbreak or mark that spot and cut it perpendicular afterwards. Then the length should fit - at least it should fit better than the stock inliner.  
