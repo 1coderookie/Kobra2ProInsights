@@ -421,12 +421,16 @@ The steel one is about 27mm long, the copper bi-metal one is about 27.5mm long (
 
 ---
 
-## PTFE tube  
-Both printers use a PTFE tube for 1.75mm filament. The outer diameter is ~4mm, the inner diameter of the stock tube is ~2mm.  
+## PTFE Tube  
+There are two PTFE tubes located at this machine:  
+- a longer PTFE bowden tube which is located between the printehad and the filament runout sensor and
+- a short PTFE tube inside of the heatbreak/hotend.  
+
+Both PTFE tubes have the outer diameter of ~4mm and the inner diameter of ~2mm as they're meant to be used for 1.75mm filament.  
 
 !!! warning "Pay Attention When Installing A New PTFE Tube" 
 
-    When installing a new PTFE tube (either at the **Go** as a bowden or at the **Neo** as an inliner for the heatbreak), make sure it runs down through the heat break to the end of the nozzle and touches it.  
+    When installing a new PTFE tube inliner in the heatbreak/hotend, make sure it runs down through the heatbreak to the end of the nozzle and touches it.  
     *Pay special attention to make a clean and perpendicular cut at a 90° angle to avoid any small gaps between the nozzle and the end of the tube!*  
     You can use a special cutter that comes in certain sets with a Capricorn XS tube, print one of the many available cutting guides or just cut along the end of the heatbreak, using it as a guide for the knife.  
       
@@ -438,29 +442,26 @@ Both printers use a PTFE tube for 1.75mm filament. The outer diameter is ~4mm, t
 
 ---
 
-### Go  
-The PTFE tube at the **Go** is about 400mm long as it's a bowden drive system.  
+### PTFE Tube At The Outside  
+The PTFE tube at the outside, between the printhead and the filament runout sensor, is about ??mm long.  
+It acts as a guidance and protection for the fed filament and is clipped onto the wiring of the printhead.    
 
-When installing a new bowden tube or cutting off a bit at the end to get rid of a deformed and/or clogged part, make sure to always cut it perpendicular and that it reaches all the way down to the nozzle.  
 
 ---
 
-### Neo
-The PTFE tube at the **Neo** is about 41-44mm long as it's a direct drive system. Here the PTFE tube only is an inliner for the heatbreak.  
-
-*At all of the eight printheads with the stock hotends I examined, the PTFE tubes not only were too short, they also were all of a different length and none of them was cut perpendicular which will cause clogging issues later when printing.* So pay attention to that.  
-
-The one replacement tube for the stock hotend setup I cut with the heatbreak being pushed into the heatsink completely was about ~43.7mm long. As I replaced the stock hotend parts right away, I only made a few prints with that setup for test purposes though.  
+### PTFE Tube In The Hotend
+The PTFE tube which is located in the hotend/heatbreak is about ??mm long.  
+Here the PTFE tube only is an inliner for the heatbreak.   
 
 When you need to cut a new inliner and you're not sure about the correct length, the best would be to actually disassemble the hotend, so that you can install the heatbreak only. Push it into the heatsink as far as you can. Then push the replacement tube into the heatbreak from the bottom, until you can't stick it in any further. Then either cut along the end of the heatbreak or mark that spot and cut it perpendicular afterwards. Then the length should fit - at least it should fit better than the stock inliner.  
 
 ---
   
 ## Heater Block
-Both printers use an E3D **V5** type heater block.  
+The machine uses a Volcano-style heater block.  
 Both the thermistor and the cartidge heater have to be plugged into the specific holes and should be fixed with at tiny grub screw (HEX 1.5).  
   
-![Heater block V5](../assets/images/head_block-screws-close_web.jpg)  
+![Heater block](../assets/images/head_K2Pro_block-screws-close_web.jpg)  
 
 !!! danger "Check The Grub Screws From Time To Time"
 
@@ -472,7 +473,7 @@ Both the thermistor and the cartidge heater have to be plugged into the specific
 
 
 ---
-
+<!--
 ### MOD: Different Heater Block
 
 !!! warning "Execute A PID Tuning"
@@ -495,25 +496,25 @@ There are also ceramic heater blocks on the market which come with M6 threads - 
 However, as they come with an inbuilt heating element and an inbuilt thermistor, make sure to get yourself the correct type regarding the specs.  
 Also pay attention to the length of the wires of these units and the connectors they're coming with - it might be necessary to do a bit of a tinkering to get these ones installed.  
 Last but not least check the height of these units and compare it to the V5 heater block setup - most likely it will be necessary to adjust the position of your fan duct and the settings as well.   
- 
+--> 
     
 ---   
   
 ## Silicone Sock
 The silicone sock that comes with the hotend insulates the heater block. Therefore it should stay in place and shouldn't come off, as it *might* cause the "thermal runaway" error.  
   
-The following pictures shows a V5 heater block compatible silicone sock from the aftermarket on the left side and the stock sock on the right side.     
+The following pictures shows a Volcano-type heater block compatible silicone sock from the aftermarket on the left side and the stock sock on the right side.     
   
-![Silicone socks top view](../assets/images/silisocks_top_web.jpg)   
+![Silicone socks top view](../assets/images/silisocks_K2Pro_top_web.jpg)   
   
 Additionaly, the ones from the aftermarket also cover and therefore insulate the base of the nozzle - something that the stock ones don't do at all.  
   
-![Silicone socks bottom view](../assets/images/silisocks_bottom_web.jpg)  
+![Silicone socks bottom view](../assets/images/silisocks_K2Pro_bottom_web.jpg)  
   
 ??? info "Spare Part Silicone Sock"  
 
-    The sock which comes with the printhead isn't the best one to use (in my opinion) as it seems to come off pretty easily. There are compatible V5 silicone socks at the aftermarket which I personally use and which I can highly recommend. They have a bigger lip which slips over the heater block and covers a bigger area of the top than the one which comes with the printer. Therefore they stay in place much better when they heat up and become more flexible.    
-    If you read the above and still don't know what you should look or search for, search for "silicone sock V5" for example as these socks are for a V5 heater block. You can get them pretty much everywhere, so if you use to shop at Amazon or ebay for example, you'll find many offers which are pretty much the same at the end. <br> Just make sure that you're **not** getting the ones for a V6 or a volcano heater block! You can also diffenrentiate them by already looking at the shape: the wrong ones for the V6 are more flat on one side, the *correct ones* for the V5 are more *cubic* as you can see at the pictures above.  
+    The sock which comes with the printhead isn't the best one to use (in my opinion) as it seems to come off pretty easily. There are compatible Volcano style silicone socks at the aftermarket which I personally use and which I can highly recommend. They have a bigger lip which slips over the heater block and covers a bigger area of the top than the one which comes with the printer. Therefore they stay in place much better when they heat up and become more flexible.    
+    If you read the above and still don't know what you should look or search for, search for "silicone sock Volcano" for example as these socks are for a Volcano style heater block. You can get them pretty much everywhere, so if you use to shop at Amazon or ebay for example, you'll find many offers which are pretty much the same at the end.    
   
 ---  
   
