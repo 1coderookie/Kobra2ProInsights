@@ -454,10 +454,11 @@ It acts as a guidance and protection for the fed filament and is clipped onto th
     I personally don't like reverse bowden tubes that much, as I find it easier to e.g. load and unload filament and also perform cold pulls without a reverse bowden tube in place.  
     Besides that, I personally think that friction might be added when using a reverse bowden.  
     I also think that it might happen that there's different tension on the filament when the extruder moves around and when e.g. it's pushing back filament in certain positions, which imho might lead to differencies of the filament volume per extruder steps. This especially might come into place and cause issues when printing softer material like TPU.    
+    *I might be completely wrong with my assumptions though, so don't take my thoughts on this as being correct!* Either just use the reverse bowden when changing the position of your spool or do some research about this topic on your own. I didn't really dive into this topic any further yet, but I most likely will do so anywhere in the future.   
     
     Reverse bowden tubes do have some advantages though, as they constrain the distance between their mounting point at the frame and the extruder. When the extruder is pushing back filament, the risk of tangling filament which then might be caught by the moving printhead therefore is reduced.  
     
-    However, I personally would recommend to change the stock reverse bowden tube with a better Capricorn XS tibe, as they have a lower overall friction due to their special coating/recipe.  
+    However, I personally would recommend to change the stock reverse bowden tube to a better Capricorn XS tube, as they have a lower overall friction due to their special coating/recipe.  
     
     If you're interested in this topic, maybe read this article written by Thomas Sanladerer (and/or watch his video about it): [Should you use a Reverse Bowden](https://toms3d.org/2022/09/06/should-you-use-a-reverse-bowden/). 
 
