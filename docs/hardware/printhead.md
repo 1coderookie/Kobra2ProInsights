@@ -5,20 +5,20 @@
 | Specifications |
 |:---------------|
 | **Feeder system**: Direct drive, dual gear, 4:1 ratio |
-| **Thermistor**: 24V, 100k NTC, ATC Semitec 104GT-2/104NT-4-R025H42G type, capsuled, dimensions 3x6mm, ~150cm wire length, two pinned JST XH 2.54 connector |
-| **Heater Cartridge**: 24V, 40W, ~14.5Ohm, dimensions 6x18mm, ~150cm wire length, two pinned JST VH 3.96 connector |
+| **Thermistor**: 24V, 100k NTC (probably ATC Semitec 104GT-2/104NT-4-R025H42G type as usual), capsuled, dimensions ?x?mm, ~??cm wire length, two pinned JST XH 2.54 connector |
+| **Heater Cartridge**: 24V, 40W, ~14.5 Ohm, dimensions 6x18mm, ~??cm wire length, two pinned JST VH 3.96 connector |
 | **Nozzle**: proprietary Volcano-like nozzle (*not* compatible with Volcano!) |
 | **Heater Block**: Volcano-like type |
 | **Heatbreak**: M6 thread (to fit in the heater block), overall length ??mm, ?mm OD / ?mm ID, PTFE tube inliner |  
 | **PTFE tube**: <br> **Hotend**: ??mm inliner for the heatbreak, ~4mm OD / ~2mm ID bore <br> **Between filament runout sensor and printhead**: ~???mm <br> *Both PTFE tubes can/should be replaced with a "Capricorn XS" tube (for 1.75mm filament).* |  
-| **Silicone Sock**: ?? type |
+| **Silicone Sock**: Volcano-style type |
 | **Part Cooling Fan**: 24V, 0.14A, 50x50x20mm, model "Coolcox BF5020H24D"  |
 | **Heatsink Cooling Fan**: 24V, ?A, ?x?x?mm, model "???"  |
-| **ABL sensor**: PNP-NO type (imho!), connection: brown = VCC 24VDC; blue = GND; black = LEVEL/signal |  
+| **ABL sensor**: PNP-NO type (imho!), connection: brown = VCC 24VDC; blue = GND; black = LEVEL/signal (seems to be the same one as being used at the 'old' regular Kobra) |  
 
 ---
 
-The printhead of the **Kobra 2 Pro** includes the direct drive feeder gear system, the hotend, the heatsink and part cooling fans, the ABL sensor and the motion sensor for measuring the vibrances.   
+The printhead of the **Kobra 2 Pro** includes the direct drive feeder gear system, the distribution board for connecting the electronic components, the hotend, the heatsink and part cooling fans, the ABL sensor and the motion sensor for measuring the vibrances.   
 
 ![Printhead](../assets/images/head_K2Pro_web.jpg)  
 
@@ -77,9 +77,22 @@ The following picture shows the whole metal plate where the feeder construction 
 
 ---
 
+## Distribution Board  
+
+There's a PCB located at the printhead where the electronic components (e.g. thermistor, cartridge heater, ABL sensor etc.) are connected to which I call "distribution board".     
+
+![Distribution board](../assets/images/head_K2Pro_distribution-board_web.jpg)  
+
+The connection between the mainboard and this distribution board is then accomplished by a ribbon cable. The following picture shows the connector at the head and a part of that ribbon cable.  
+
+![Ribbon cable](../assets/images/head_K2Pro_ribbon-cable.jpg)  
+
+
+---
+
 ## ABL Sensor
 The printer comes with an inductive proximity sensor for automatic bed levelling (ABL) which detects the metal of the spring steel PEI plate.  
-The ABL sensor is the part with that round orange tip whic is located at the ??? hand side when looking at the printhead from the front.  
+The ABL sensor is the part with that round orange tip whic is located at the right hand side when looking at the printhead from the front.  
 
 The sensor itself seems to be the same as the one being used at the regular Kobra, so if you need a replacement and can't find it for this specific model, look out for the one of the Kobra as well.  
 In a German 3d forum someone measured the sensor of the regular Kobra and it gives +24VDC on the black signal wire when the LED lights up, so imho that's a PNP-NO type then (as the level is HIGH then).  
@@ -168,7 +181,7 @@ See the expandable textbox below for further instructions.
 ---  
   
 ## Extruder / Feeder Gear System
-The **Kobra 2 Pro** is using a direct drive, double gear extruder/feeder system (4:1 ratio).  
+This machine is using a direct drive, double gear extruder/feeder system (4:1 ratio).  
 
 ??? tip "Can't Load New Filament?!"
 
@@ -248,7 +261,7 @@ If that doesn't work, see the expandable textbox below for further instructions 
 
 The assembled hotend is shown in the following picture.  
   
-![Hotend](../assets/images/head_neo_hotend-new_web.jpg)  
+![Hotend](../assets/images/head_K2Pro_hotend_web.jpg)  
     
 
 
