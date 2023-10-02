@@ -5,61 +5,48 @@
 
 | Specifications |
 |:---------------|
-| **X- & Y-Axis Belt**: GT-2, 6mm width, length between crimped ends ~767mm |
-| **Belt Tensioner Pulley**: 16mm OD / 3mm ID / 20 teeth (for 6mm wide belt) | 
-| **Z-Axis Lead Screw**: T8x8 (8mm diameter, 8mm lead, 2mm pitch, 4 starts), 350mm length  |
-| **Anti-Backlash Nut**: POM, spring loaded, 8mm inner diameter, 20mm distance between mounting screws (18mm will fit as well due to elongated holes at the bracket!) |
-| **V-Slot Wheels**: POM, ~24x10.2mm with 6mm width at the tip of the "V", 625 type ball bearing with 5mm inner diameter |
-| **X- & Y-Axis Motor**: 42x48 Nema17, 1.8°, 200 steps, 5mm shaft with 16 OD / 5mm ID / 20 teeth pulley attached (for 6mm wide belt) |
+| **X- & Y-Axis Belt**: GT-2, 6mm width, length between crimped ends ~??mm |
+| **X- & Y-Axis Belt Tensioner Pulley**: 16mm OD / 3mm ID / 20 teeth (for 6mm wide belt) | 
+| **X- & Y-Axis Metal Wheels**: SG15 bearings |
+| **X-Axis Motor**: 42x34 Nema17, 1.8°, 200 steps, 5mm shaft with 16 OD / 5mm ID / 20 teeth pulley attached (for 6mm wide belt) |
+| **Y-Axis Motor**: 42x48 Nema17, 1.8°, 200 steps, 5mm shaft with 16 OD / 5mm ID / 20 teeth pulley attached (for 6mm wide belt) |
+| **Z-Axis Lead Screws**: T8x8 (8mm diameter, 8mm lead, 2mm pitch, 4 starts), 350mm length, belt-driven dual z  |
+| **Z-Axis Belt**: GT-2, 6mm width, length between crimped ends ~??mm |
+| **Z-Axis Lead Screw Pulleys**: 16mm OD / 3mm ID / 20 teeth (for 6mm wide belt) |
+| **Z-Axis Anti-Backlash Nut**: POM, spring loaded, 8mm inner diameter, 20mm distance between mounting screws (18mm will fit as well due to elongated holes at the bracket!) |
+| **Z-Axis V-Slot Wheels**: POM, ~24x10.2mm with 6mm width at the tip of the "V", 625 type ball bearing with 5mm inner diameter |
 | **Z-Axis Motor**: 42x34 Nema17, 1.8°, 200 steps, 5mm shaft |
 | **Limit Switches**: x- & y-axis = mechanical, NO ; z-axis = optical, NC |
 
 ---
 
-Both the **Go** and the **Neo** are so called 'bed slingers'. Means, the bed moves along the y-axis (back and forth).  
+This printer is a so called 'bed slinger'. Means, the bed moves along the y-axis (back and forth).  
 The printhead moves along the x-axis (left and right) and is attached to the x-axis gantry.  
 The x-axis gantry moves along the z-axis (up and down).  
 
 The endstop/limit switches of the axes are located at the *minimum* endposition of each axis and are triggered when either axis reaches its limit. The switches of the x- and y-axes are mechanical switches, the one at the z-axis is an optical switch.    
-So if you notice that e.g. the motor of the y-axis doesn't stop when the bed reaches the end then you should check if the belonging switch is faulty. 
+So if you notice that e.g. the motor of the y-axis doesn't stop when the bed reaches the end then you should check if the belonging switch is being triggered and/or if it's faulty. 
 
---- 
-  
-## Frame And Axes
+??? warning "Check And Tram The Frame!"  
 
-Before going into the details of each axis, let me emphasize how important it is to set up and tram the whole frame correctly and check everything twice before you proceed with assembling the rest of the printer and actually using it.  
+    Before going into the details of each axis, let me emphasize once again how important it is to set up and tram the whole [frame](frame.md) correctly and check everything twice before you proceed with assembling the rest of the printer and actually using it.  
 
-To give you a first impression, let me show you how the y-axis of one of my Neos looked like when it came preassembled from the manufacturer.  
+    Imagine a frame that is mounted crooked as shown in the section ["Frame"](frame.md) and you're trying to get almost perfect prints or at least somewhat good prints out of it. No matter how much you tweak settings, adjust the belt tensions, adjust the v-slot wheel positions - you won't be able to get the desired outcome.  
 
-![Y-axis crooked from manufacturer](../assets/images/axes_y-axis-crooked_web.jpg)  
+    Hopefully you realize how important it is to start with the most important part of the whole printer first - the base frame.  
+    *This is the construction everything else relies on.*  
+    If the base frame is already mounted crooked, if parts aren't perpendicular, parallel and/or equidistant to each other - how should everything else that is running along these structures or is built upon them work as intended?  
 
-I think that picture speaks for itself.  
-
-The next two pictures show you the amount of play you have when actually mounting the frame. I tilted the y-axis to the maximum possible positions, the inner aluminum frame part where the y-axis is mounted to rotates along those two screwholes of the side frames.  
-
-![Y-axis crooked 1](../assets/images/baseframe_y-crooked1_web.jpg)  
-
-![Y-axis crooked 2](../assets/images/baseframe_y-crooked2_web.jpg)  
-
-I didn't take a picture of it yet, but it's also possible to mount the aluminum frame of the z-axis tilted, even though there are precut areas where the parts should rest in.  
-
-So now imagine a frame that is mounted crooked and you're trying to get almost perfect prints out of it. No matter how much you tweak settings, adjust the belt tensions, adjust the v-slot wheel positions - you won't be able to get the desired outcome.  
-
-Hopefully you realize how important it is to start with the most important part of the whole printer first - the base frame.  
-*This is the construction everything else relies on.*  
-If the base frame is already mounted crooked, if parts aren't perpendicular, parallel and/or equidistant to each other - how should everything else that is running along these structures or is built upon them work as intended?  
-
-So, please, grab the sufficient tools, take some time and pay close attention when building up the printer.  
-If you got yourself the Neo, don't trust the preassembled parts, disassemble them and reassemble them in the correct way - at least check if everything is set up as it should be.  
-Once you've done all that, you'll not only know your printer much better already, but you also created the fundament for a reliably working machine.  
-
+    So, please, grab the sufficient tools, take some time and pay close attention when building up the printer.  
+    If you got yourself the Neo, don't trust the preassembled parts, disassemble them and reassemble them in the correct way - at least check if everything is set up as it should be.  
+    Once you've done all that, you'll not only know your printer much better already, but you also created the fundament for a reliably working machine.  
 ---
 
 ## X-Axis
-The x-axis of both the **Go** and the **Neo** is represented by the printhead moving along the x-axis gantry. The moving bracket (where the printed is mounted onto) is belt driven, the motor which drives the belt (6mm wide, GT-2 type) is located at the left side.   
+The x-axis is represented by the printhead moving along the x-axis gantry. The moving bracket (where the printed is mounted onto) is belt driven, the motor which drives the belt (6mm wide, GT-2 type) is located at the left side.   
 You can adjust the tension of the belt by using the knob at the right side of the aluminum profile where the printhead is guided onto.  
   
-![X-axis knob](../assets/images/x-axis_knob_web.jpg)
+![X-axis knob](../assets/images/x-axis_knob_K2Pro_web.jpg)
 
 ---
 
@@ -112,7 +99,7 @@ My 'rule of thumb' here is: if you can bend the belt down a bit by applying some
 
 The following picture shows the belt tensioner located at the front of the y-axis aluminum frame.  
 
-![X-axis knob](../assets/images/x-axis_knob_web.jpg)
+![X-axis knob](../assets/images/x-axis_knob_K2Pro_web.jpg)
 
 You adjust the tension of the belt by turning it clockwise for increasing the tension and turning it counter-clockwise for decreasing it.  
 
@@ -144,7 +131,8 @@ You adjust the tension of the belt by turning it clockwise for increasing the te
 ---
 
 ### X-Axis Motor
-The motor of the x-axis is a 42-34 Nema 17 stepper motor with a 20 teeth pulley being attached to the 5mm motor shaft. It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at each steps, and therefore it's doing 200 steps for one full 360° rotation.  
+The motor of the x-axis is a 42-34 Nema 17 stepper motor with a 20 teeth pulley being attached to the 5mm motor shaft.  
+It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at each steps, and therefore it's doing 200 steps for one full 360° rotation.  
 
 As there aren't any specifications and replacement motors from Anycubic being available, you can either use a motor with the beforementioned specs or get yourself a motor from a Creality Ender 3 (or one that's advertised to fit that printer). The following picture shows the original stepper motor being mounted and the belonging Creality model laying next to it at the right hand side (right now the following picture shows the y-axis motor compared to the Creality motor, but the motors are actually the same - I'll add the belonging picture of the x-axis motor soon though).  
 
@@ -189,11 +177,11 @@ As there aren't any specifications and replacement motors from Anycubic being av
 
 ---
 
-### V-Slot Wheels Position
-The wheels of the printhead's mounting plate are leading the printhead along the aluminum profile of the x-axis (the so-called "x-axis gantry").  
-The wheels run in the V-slot of the profile and therefore they should sit in an optimal position.    
+### SG15 Bearings Position
+The metal wheels of the printhead's mounting plate, the SG15 bearings, are leading the printhead along the aluminum profile of the x-axis (the so-called "x-axis gantry").  
+These bearings run along a round-shaped metal rail and therefore they should sit in an optimal position.    
 
-*You can adjust the position and therefore the overall pressure of the wheels against the aluminum profile of only ***one*** wheel by turning the eccentric nut which moves the wheel either towards or away from the aluminum profile.*   
+*You can adjust the position and therefore the overall pressure of the bearings against the metal rail of only ***one*** bearing by turning the eccentric nut which moves the bearing either towards or away from the metal rail.*   
 The following picture shows an eccentric nut which I painted to make the special shape of it more visible.  
 
 ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
@@ -215,17 +203,21 @@ See the following picture where you can clearly see a *heavy* wear and tear. Acc
     
 ---
   
-### V-Slot Wheels Maintenance  
+### SG15 Bearings Maintenance  
 
-As the wheels will suffer from running on the aluminum and debris can build up, clean the aluminum and the wheels itself from time to time. 
+As the bearings will suffer from running along the metal rail and debris can build up, clean the rails and the bearings from time to time. After that, add a slight coating of lubrification to reduce the wear and tear due to the fact that metal is running on metal.  
 
-If you see debris building up pretty quick, it's most likely because the wheels are running too tight in the v-slot of the aluminum and therefore it's too much friction which leads to a quick wearout.  
-Another factor is a possible misalignment here, so that they aren't running well along in the slot, so check the position of the wheels as well.  
+??? example "Lubricating The SG15 Bearings"  
 
-See the following picture where you can clearly see a heavy wear and tear. According to the user who took this picture, this is the state after three days of usage - which is absolutely *not* "normal".   
+    As the metal SG15 bearings are running along metal rods, it's advisable to clean and lubrificate the system from time to time.  
+    
+    I personally would suggest to use some sort of dry lubrification, such as PTFE spray, graphite spray or silicone spray.  
+    If you don't have any of this, use a light to medium machine oil.  
+    A thin coating of white or lithium grease might also work well.  
+    I didn't experiment with different sorts of lubrification at this point yet, so this isn't a 'direct' advise but more a general thought about what should be good to be used in this special case.  
 
-![Wheels wear & tear](../assets/images/axes_wheels-weartear_web.jpeg)
-          
+    However, make sure to not use too much lubrification and to not spill any onto the bed or the PSU. Also, clean off any old lubrification before adding new one.    
+        
 
 
 ---
@@ -257,7 +249,7 @@ The x-axis gantry is the aluminum profile (plus the corresponding parts) where t
 ---
 
 ### V-Slot Wheels Position
-The x-axis gantry is moved along the z-axis aluminum profile driven by the z-axis lead screw, guided by v-slot wheels. They run in the v-slot of the z-axis profiles and therefore they should sit in a good position. Means, they shouldn't sit too tight in the V-slot but also not too loose - they should be able to roll and move freely, but they shouldn't be too far away from the profile which would lead to instability.  
+The x-axis gantry is moved along the z-axis aluminum profile driven by the z-axis lead screws, guided by v-slot wheels. They run in the v-slot of the z-axis profiles and therefore they should sit in a good position. Means, they shouldn't sit too tight in the V-slot but also not too loose - they should be able to roll and move freely, but they shouldn't be too far away from the profile which would lead to instability.  
 
 *You can adjust the roller tension by turning the eccentric nut of the wheel which moves the wheels either towards or away from the aluminum profile.*    
 The following picture shows an eccentric nut which I painted to make the special shape of it more visible.  
@@ -407,16 +399,16 @@ Please see the expandable textbox below for further instructions about how to tr
 ---
 
 ## Y-Axis
-The y-axis of both the **Go** and the **Neo** is belt driven (GT-2 type, 6mm wide).  
+The y-axis is belt driven (GT-2 type, 6mm wide).  
 The motor which drives the belt is positioned at the back of the printer.  
   
-![Y-axis motor](../assets/images/y-axis_motor_web.jpg)
+![Y-axis motor](../assets/images/y-axis_motor_K2Pro_web.jpg)
 
 You can adjust the tension of the belt by using the knob at the front side of the aluminum profile where the bed is guided onto.   
 The x-shaped plate for the bedmount itself has v-slot wheels which are running in the v-slot of the aluminum profile.  
 The following picture shows the aluminum profile of the y-axis with the knob for adjusting the belt tension at the front.   
   
-![Y-axis knob](../assets/images/y-axis_knob_web.jpg)
+![Y-axis knob](../assets/images/y-axis_knob_K2Pro_web.jpg)
   
 ---
 
@@ -500,7 +492,8 @@ You adjust the tension of the belt by turning it clockwise for increasing the te
 ---
 
 ### Y-Axis Motor
-The motor of the y-axis is a 42-34 Nema 17 stepper motor with a 20 teeth pulley being attached to the 5mm motor shaft. It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at each steps, and therefore it's doing 200 steps for one full 360° rotation.  
+The motor of the y-axis is a 42-48 Nema 17 stepper motor with a 20 teeth pulley being attached to the 5mm motor shaft.  
+It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at each steps, and therefore it's doing 200 steps for one full 360° rotation.  
 
 As there aren't any specifications and replacement motors from Anycubic being available, you can either use a motor with the beforementioned specs or get yourself a motor from a Creality Ender 3 (or one that's advertised to fit that printer). The following picture shows the original stepper motor being mounted and the belonging Creality model laying next to it at the right hand side.  
 
@@ -546,23 +539,26 @@ As there aren't any specifications and replacement motors from Anycubic being av
 
 ---
     
-### V-Slot Wheels Position
-The wheels are leading the bed onto the aluminum profile in the middle. They run in the V-slot of the long profile in the middle underneath the bed and therefore they should sit in a good position. Means, they shouldn't sit too tight in the V-slot but also not too loose - they should be able to roll and move freely, but they shouldn't be too far away from the profile which would lead to instability.  
+### SG15 Bearings Position
+The metal wheels of the bed's gantry, the SG15 bearings, are leading the bed along the aluminum profile of the y-axis.  
+These bearings run along a round-shaped metal rail and therefore they should sit in an optimal position.    
 
-*You can adjust the roller tension by turning the eccentric nut which moves the wheels either towards or away from the aluminum profile.*   
+*You can adjust the position and therefore the overall pressure of the bearings against the metal rail of only ***two*** bearings by turning the eccentric nut which moves the bearing either towards or away from the metal rail.*   
 The following picture shows an eccentric nut which I painted to make the special shape of it more visible.  
 
 ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
 
 As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole wheel will be changed, either towards or away from the v-slot of the rail it's sitting at. 
 
-*Not all of the wheels have eccentric nuts though, only two of the four wheels have them as you might be able to see at the following picture.*  
-  
-![Bedmount](../assets/images/y-axis_gantry_web.jpg)
+*The wheel whose position can be adjusted is the one located at the ***bottom*** - the two wheels at the top which are running across the upper side of the x-axis gantry can't be adjusted as there aren't any eccentric nuts mounted!*  
 
-The wheels shouldn't sit too tight in the V-slot but also not too loose. They should touch the aluminum profile and sit in the slot well and they should be able to move smoothly. On the other hand, they also shouldn't be too loose or far away from the profile which would lead to instability. The bedgantry shouldn't wiggle but it has to be able to move freely.   
+![Eccentric nut at printhead mounting plate](../assets/images/eccentric-nut_mounted_web.jpg)  
+
+The wheels shouldn't sit too tight in the V-slot but also not too loose. They should touch the aluminum profile and sit in the slot well and they should be able to move smoothly. On the other hand, they also shouldn't be too loose or far away from the profile which would lead to instability. The printhead shouldn't wiggle but it has to be able to move freely.   
     
-Make sure they're assembled correctly and line up with the slot as well - if they're out of alignment and don't run correctly in the slot, you'll experience a massive wear and tear. Same goes for the wheels being too tight. See the following picture where you can clearly see a heavy wear and tear. According to the user who took this picture, this is the state after three days of usage - which is absolutely *not* "normal".   
+Make sure they're assembled correctly and line up with the slot as well - if they're out of alignment and don't run correctly in the slot, you'll experience a massive wear and tear. Same goes for the wheels being too tight.  
+
+See the following picture where you can clearly see a *heavy* wear and tear. According to the user who took this picture, this is the state after three days of usage - which is absolutely *not* "normal"!   
 
 ![Wheels wear & tear](../assets/images/axes_wheels-weartear_web.jpeg)
       
@@ -573,19 +569,24 @@ Make sure they're assembled correctly and line up with the slot as well - if the
     - Check if the bedplate itself is somehow wobbling. Not only sideways/horizontally, but also up and down/vertically. If so, not only check the v-slot wheels and maybe adjust their fitting using the eccentric nuts, also check if the screws of the gantry of the bed where the wheels are mounted to are tightened up. As an example: at my **Neo** the bed was wobbling up and down in one certain area - after checking the screws and tighten them up everything was sturdy as it should be.         
 
     
----
-  
-### V-Slot Wheels Maintenance  
+---  
 
-As the wheels will suffer from running on the aluminum and debris can build up, clean the aluminum and the wheels itself from time to time. 
+### SG15 Bearings Maintenance  
 
-If you see debris building up pretty quick, it's most likely because the wheels are running too tight in the v-slot of the aluminum and therefore it's too much friction which leads to a quick wearout.  
-Another factor is a possible misalignment here, so that they aren't running well along in the slot, so check the position of the wheels as well.  
+As the bearings will suffer from running along the metal rail and debris can build up, clean the rails and the bearings from time to time. After that, add a slight coating of lubrification to reduce the wear and tear due to the fact that metal is running on metal.  
 
-See the following picture where you can clearly see a heavy wear and tear. According to the user who took this picture, this is the state after three days of usage - which is absolutely *not* "normal".   
+??? example "Lubricating The SG15 Bearings"  
 
-![Wheels wear & tear](../assets/images/axes_wheels-weartear_web.jpeg)
-          
+    As the metal SG15 bearings are running along metal rods, it's advisable to clean and lubrificate the system from time to time.  
+    
+    I personally would suggest to use some sort of dry lubrification, such as PTFE spray, graphite spray or silicone spray.  
+    If you don't have any of this, use a light to medium machine oil.  
+    A thin coating of white or lithium grease might also work well.  
+    I didn't experiment with different sorts of lubrification at this point yet, so this isn't a 'direct' advise but more a general thought about what should be good to be used in this special case.  
+
+    However, make sure to not use too much lubrification and to not spill any onto the bed or the PSU. Also, clean off any old lubrification before adding new one.    
+        
+
 ---
 
 ### Limit Switch
@@ -607,22 +608,28 @@ The limit switch for the y-axis is mounted at the back, right on front of the mo
 ---
 
 ## Z-Axis
-The z-axis of both the **Go** and the **Neo** is driven by a single lead screw.  
-The lead screw has 8mm in diameter with 8mm lead ('distance' of one complete rotation), 2mm pitch and 4 starts and has a length of 350mm (it's actually the kind of lead screw which is used pretty much everywhere in these kind of machines).  
-This rod is mounted to the 5mm shaft of the motor by a rigid coupler at the bottom.  
-The top end of the rod is completely unguided. In between it's guided and secured by a spring loaded POM anti-backlash nut which you can see at the following picture -  it's the black plastic part mounted to the black steel bracket.  
+The z-axis is driven by two lead screws which are connectoed to each other with a belt at the very top. Therefore this system is called a dual z-axis, belt driven system.   
+
+The lead screws have 8mm in diameter with 8mm lead ('distance' of one complete rotation), 2mm pitch and 4 starts and has a length of 350mm (it's actually the kind of lead screw which is used pretty much everywhere in these kind of machines).  
+
+The rod which is directly driven by the motor is mounted to the 5mm shaft of the motor by a rigid coupler at the bottom.  
+The rod which is driven by the belt then is mounted to a ... at the bottom which holds it in place.  
+Both top ends of the rods are held in place by a bearing block where the screws stick out from at the top. At this end a pulley is attached to both screws, which are then connected by a closed loop belt. 
+
+In between it's guided and secured by a spring loaded POM anti-backlash nut which you can see at the following picture -  it's the black plastic part mounted to the black steel bracket.  
   
 ![Z-axis views](../assets/images/z-axis_neo_web.jpg)  
 
 !!! warning "Z-Axis Drives X-Axis Gantry"  
 
-    **The lead screw drives the x-axis gantry up and down along the z-axis aluminum frame parts, so check the section [x-axis gantry](#x-axis-gantry) as well for adjusting the position of the brackets the v-slot wheels are mounted to as well as for adjusting the position of the wheels!**  
+    **The lead screws drive the x-axis gantry up and down along the z-axis aluminum frame parts, so check the section [x-axis gantry](#x-axis-gantry) as well for adjusting the position of the brackets the v-slot wheels are mounted to as well as for adjusting the position of the wheels!**  
 
 ---
 
 
 ### Z-Axis Motor
-The motor of the y-axis is a 42-34 Nema 17 stepper motor with a 5mm motor shaft. It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at each steps, and therefore it's doing 200 steps for one full 360° rotation.  
+The motor of the y-axis is a 42-34 Nema 17 stepper motor with a 5mm motor shaft.  
+It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at each steps, and therefore it's doing 200 steps for one full 360° rotation.  
 
 ![Z stepper mounting](../assets/images/axes_z-stepper-mounting_web.jpg)
 
@@ -694,6 +701,7 @@ The following pictures show the disassembled limit switch, just in case you're l
     If everything looks fine here, then it's most likey that either a wire is broken or the switch itself is faulty. If you have a multimeter, you could measure if the switch itself is working as well as check the wires. When measuring the wires, move them around as it may be the case that a wire is slightly broken inside of the insulation and that it loses contact in a certain position of the wire itself.   
     If the wire is broken, fix it or install a new one. If the limit switch itself is broken, disassemble the switch from the frame and put in a new one. Wire everything up again and try again triggering it manually to see if it works now.  
 
+<!--
 ---
 
 ### MOD: Z-Axis Upgrades 
@@ -701,6 +709,7 @@ The following pictures show the disassembled limit switch, just in case you're l
 I personally recommend to do some small modifications to the whole z-axis lead screw system.  
 Start with swapping out the stock coupler and adding an Oldham Coupler as that'll already be a huge improvement.   
 You can always upgrade a second lead screw for example, but the beforementioned parts will be useful in that case as well.  
+-->  
 
 ---
   
@@ -797,64 +806,20 @@ It needs to be mounted between the bracket which holds the anti-backlash nut and
     
 You can look out for Oldham Couplers with a 18mm mounting hole distance (often they're advertised for being compatible with a Creality Ender 3) - BUT you'd have to swap out the stock anti-backlash nut and use one of the 'regular' spring loaded anti-backlash nuts with 18mm hole distance as the ones mentioned and shown in the expandable textbox "Changing The Anti-Backlash Nut" above (as the stock nut has 20mm distance between the holes which obviously doesn't match the 18mm of the Oldham Coupler).  
 
----
-
-#### MOD: Bearing Block At The Top 
-Some users stabilize the rod of the Z-axis by adding a bearing block at the top. That's basically a holder/aligner with a ball bearing in the center which sits on top of the lead screw and mount the holder to the gantry to eliminate wobbling of the lead screw. For doing so, they print a construction and add a ball bearing, there are different STL files available for this solution.  
-  
-However, as much as it may seem useful at first sight, I personally *vote against this*.  
-In my opinion it's better if the top of the lead screw can move freely to avoid putting extra pressure on the lead screw, the frame and associated parts - especially in this case where we don't have a high precision type of construction and parts. If the guidance at the top doesn't allow at least minimal movement, then this could result in shear forces and even in bending the lead screw itself which would cause jamming or banding caused by the z-axis, also the anti-backlash nut will mist likely wear out earlier.  
-  
-??? note "Analogy To Fixed Vs. Free End Of The Z-Axis"
-  
-    The reason for this is quite simple, yet it seems that people aren't aware of it, so I'll try to explain it with an analogy.  
-    Think of the z-axis lead screw like it's a pool cue which is curved like the really bad ones you have to play with in certain bars. So when you put the cue on the table and roll it - what happens? It'll bump and stutter, there won't be a smooth movement, right?  
-    So now imagine a friend is holding the top and the bottom of it in place while you're holding it somewhere at the middle for example. Your friend here is the coupler and the holder at the top of the lead screw, you're the anti-backlash nut.  
-    So when your friend tries to turn the cue by rotatin it at the bottom while both of you still hold the other two spots - what happens? Will you as the 'anti-backlash nut' feel the wiggle and the forces or will it turn smooth? Exactly, you'll feel it - depending on how much the cue is bent and where exactly you placed your hand you'll either feel it stronger or weaker.  
-    So now let's place this cue on the edge of the table, so that only the bottom part lays on it. Again you place your hand somewhere in the middle and hold the cue tight, the end of the cue is just in the air.  
-    So when your friend rotates the cue again at the bottom - what will happen? Exactly, the end of the cue will wiggle around and you won't feel the forces that strong anymore like before.  
-    Now you and your friend still hold the cue at these positions, but both of you allow a tiny bit of movement, like you allow to move your arms just a tiny bit, following the movement of the cue. Again your friend rotates the cue at the bottom while the top of the cue can still wiggle around in the air. What will happen? Exactly, you as the 'anti-backlash nut' guy won't feel pretty much any forces or stuttering anymore.  
-    I know, using analogies isn't always a good idea to explain things, but I hope it became at least a bit more clear to you why (imho) the end of the lead screw shouldn't be rigidly fixed and why I suppose to use a flexible coupler at the bottom and an Oldham coupler in the middle where the anti-backlash nut is mounted to the frame.   
   
 ---
     
-#### MOD: Dual Driven Z-Axis 
-The following mods show possibilities of adding a second lead screw and therefore avoid the potential sagging/lagging of the right part of the x-axis gantry as much as possible.  
+#### MOD: Z-Axis Driven By Two Motors
+As this machine uses the same mainboard like the Kobra 2 Max/Plus, there is one free connector at the mainboard for connecting a second z-axis motor.  
 
-Whichever solution (belt driven or two motors) you prefer, you need a different Y-shaped bracket than the one being installed for mounting the anti-backlash nut of the second lead screw to it, which then drives the x-axis gantry.  
-You can either print a bracket, buy a set where the bracket is already a part of it or make your own from a piece of metal.  
+![Free connector for 2nd z motor](../assets/images/mobo_2nd-z-connector_web.jpg)  
 
-As I personally don't like using printed parts for mechanical components and already had another lead screw and other parts laying around (and therefore didn't need to get a set), I just made a bracket from a 1.5mm steel plate myself.  
-If you want to do so as well, just unmount the existing bracket from your printer, place it on the piece of metal and mark the outlines and holes accordingly. Keep in mind that you'll need to drill the holes for mounting the anti-backlash nut at a 18mm distance (unless you want to use one of those stock anti-backlash nuts with 20mm hole distance) - or, even better, drill some elongated holes.  
-Then cut and drill everything as need and bend over that part where the anti-backlash nut will be mounted to - pay attention to bend it to the right direction in a correct 90° angle though.  
-When you're done, deburr everything and spray-paint it for a nice look.  
+Theoretically speaking, you *should* be able to get rid of the belt system and drive the second lead screw with an own motor instead by simply connecting it.  
+Mind that both motors will still be driven by the same stepper driver though, so you won't be able to use the advantages of two independent stepper drivers/motors anyway.  
 
-![Bracket raw plate](../assets/images/axes_z-bracket-raw_web.jpg)  
+However, I personally didn't do that and most likely I won't as there aren't any advantages (imho) to the belt driven system. As a matter of fact, you'll actually have disadvantages: additional load is put onto the stepper driver and the x-gantry could come out of alignment when accidentally pushing one side down. At a belt driven system this isn't a problem as both screws are connected to each other and therefore both screws will turn if you accidentally push down one side of the x-gantry.  
+But this is just my personal opinion, so if you added a second z-motor, please reach out via email (see footer) with a picture so that other users can see your solution. 
 
-![Bracket handmade vs stock](../assets/images/axes_z-bracket-done_web.jpg)  
-
----
-
-##### Driven By Two Z-Steppers
-Reddit member [DrumsticknDrumstick](https://www.reddit.com/user/DrumsticknDrumstick/) upgraded the z-axis of his **Neo** to a dual drive, the solution fits both the **Go** and the **Neo**. Check out his [reddit post: "Kobra neo/go dual Z mod"](https://www.reddit.com/r/anycubic/comments/1083sr2/kobra_neogo_dual_z_mod/) and the [files plus discussion at printables.com](https://www.printables.com/de/model/364889-anycubic-kobra-neogo-dual-z-mod).  
-
-Due to the pretty much same construction of the frame, users reported that it's possible to use mod kits that fit the Creality Ender 3.  
-
-However, depending on the stepper motor you're using, it might be necessary to switch two wires for making the motor move. See the expandable textbox in the "Motor" section about how to probe the coils and how to switch the wires accordingly.  
-
-![Neo dual z](../assets/images/axes_NeoDualZ_web.JPG)
-
-Unfortunately, when using the stock mainboard (which only has one stepper driver for the z-axis) you can't drive each stepper motor with it's own stepper driver and therefore can't use the G-Code command "G34 - Z steppers auto-alignment" or the Klipper command "Z_TILT_ADJUST".  
-
----
-
-##### Driven By A Timing Belt
-
-In this case the stock lead screw is driven by that one stock motor only, the second lead screw will then be driven by a timing belt.  
-If you go with this solution, I'd highly recommend to use additional ["Oldham Couplers"](#mod-add-an-oldham-coupler) - at least at the side where the motor is mounted. The reason is simple - at that side the lead screw is fixated at three points: the top, the bottom and the middle (which is moving). So if the lead screw is slightly bent or any vertical misalignment is given, problems like a jammed axis and artifacts in the prints (like z-banding) might occur. 
-
-- User ["chiz"](https://www.printables.com/de/@chiz_m) remixed the abovementioned solution from DrumsticknDrumstick and came up with a [timing belt driven dual z-axis](https://www.printables.com/de/model/462038-anycubic-kobra-go-dual-z-mod-with-timing-belt).  
-- User ["ntguest"](https://www.printables.com/de/@ntguest_947839) remixed the solution from DrumsticknDrumstick and chiz and came up with another solution for a [timing belt driven dual z-axis](https://www.printables.com/de/model/531742-anycubic-kobra-goneo-dual-z-axis-mod).
 
   
       
