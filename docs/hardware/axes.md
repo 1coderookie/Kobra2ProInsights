@@ -11,7 +11,7 @@
 | **X-Axis Motor**: 42x34 Nema17, 1.8°, 200 steps, 5mm shaft with 16 OD / 5mm ID / 20 teeth pulley attached (for 6mm wide belt) |
 | **Y-Axis Motor**: 42x48 Nema17, 1.8°, 200 steps, 5mm shaft with 16 OD / 5mm ID / 20 teeth pulley attached (for 6mm wide belt) |
 | **Z-Axis Lead Screws**: T8x8 (8mm diameter, 8mm lead, 2mm pitch, 4 starts), 350mm length, belt-driven dual z  |
-| **Z-Axis Belt**: GT-2, 6mm width, length between crimped ends ~??mm |
+| **Z-Axis Belt**: GT-2, 6mm width, closed loop, length ??mm |
 | **Z-Axis Lead Screw Pulleys**: 16mm OD / 3mm ID / 20 teeth (for 6mm wide belt) |
 | **Z-Axis Anti-Backlash Nut**: POM, spring loaded, 8mm inner diameter, 20mm distance between mounting screws (18mm will fit as well due to elongated holes at the bracket!) |
 | **Z-Axis V-Slot Wheels**: POM, ~24x10.2mm with 6mm width at the tip of the "V", 625 type ball bearing with 5mm inner diameter |
