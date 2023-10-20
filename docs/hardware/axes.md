@@ -5,7 +5,7 @@
 
 | Specifications |
 |:---------------|
-| **X- & Y-Axis Belt**: GT-2, 6mm width, length between crimped ends ~??mm |
+| **X- & Y-Axis Belt**: GT-2, 8mm width, length between crimped ends ~??mm |
 | **X- & Y-Axis Belt Tensioner Pulley**: 16mm OD / 3mm ID / 20 teeth (for 6mm wide belt) | 
 | **X- & Y-Axis Metal Wheels**: SG15 bearings |
 | **X-Axis Motor**: 42x34 Nema17, 1.8°, 200 steps, 5mm shaft with 16 OD / 5mm ID / 20 teeth pulley attached (for 6mm wide belt) |
@@ -43,7 +43,7 @@ So if you notice that e.g. the motor of the y-axis doesn't stop when the bed rea
 ---
 
 ## X-Axis
-The x-axis is represented by the printhead moving along the x-axis gantry. The moving bracket (where the printed is mounted onto) is belt driven, the motor which drives the belt (6mm wide, GT-2 type) is located at the left side.   
+The x-axis is represented by the printhead moving along the x-axis gantry. The moving bracket (where the printed is mounted onto) is belt driven, the motor which drives the belt (8mm wide, GT-2 type) is located at the left side.   
 You can adjust the tension of the belt by using the knob at the right side of the aluminum profile where the printhead is guided onto.  
   
 ![X-axis knob](../assets/images/x-axis_knob_K2Pro_web.jpg)
@@ -399,7 +399,7 @@ Please see the expandable textbox below for further instructions about how to tr
 ---
 
 ## Y-Axis
-The y-axis is belt driven (GT-2 type, 6mm wide).  
+The y-axis is belt driven (GT-2 type, 8mm wide).  
 The motor which drives the belt is positioned at the back of the printer.  
   
 ![Y-axis motor](../assets/images/y-axis_motor_K2Pro_web.jpg)
