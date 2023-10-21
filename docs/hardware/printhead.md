@@ -389,21 +389,25 @@ The following pictures show each hotend being disassembled. You can clearly see 
 
 ## Heatbreak
 
-The stock heatbreak is a proprietary Volcano-style one made by Anycubic. It is **not** compatible with regular E3D Volcano type nozzles!   aren't the worst out there, but they aren't the best either. So you might reach the point that you want to upgrade to one from the aftermarket.  
+The stock heatbreak is a proprietary Volcano-style one made by Anycubic. The total length is about 26mm, the outer diameter of the throat is 6mm. 
+It is **not** compatible with regular E3D Volcano type nozzles!     
 
 ??? info "Spare Part Heatbreak"
 
-    If you need a new heatbreak, you should be able to use whichever V5 compatible heatbreak you'd like to use, you just have to *pay attention to the dimensions*. It should be about the same length as the stock one, so don't buy anything significantly shorter or longer. Make sure to pay attention to the surface at the top part - that should be even and smooth, so don't get yourself the ones with the thread on the outside.   
+    If you need a new heatbreak, I personally would suggest to get a 'regular' one which is compatible with true Volcano type nozzles, instead of getting one of those proprietary stock heatbreaks which only fit the proprietary nozzles from Anycubic.  
+    You should be able to use whichever Volcano compatible heatbreak you'd like to use, you just have to *pay attention to the dimensions*. It should be about the same length as the stock one, so don't buy anything significantly shorter or longer. Make sure to pay attention to the surface at the top part - that should be even and smooth, so don't get yourself the ones with the thread on the outside.   
 
-The heatbreak of the **Neo** is plugged into the heatsink of the direct drive and secured by two screws.  
-To fit the V5 type heater block, it has an M6 thread.  
-The outer diameter of the heatbreak is 7mm at the thick part (top and bottom), at the smaller part between it's 6mm. The inner diameter is about 4.2mm.  
-The length measured from the top until the 'stop ring' before the thread is 15.5mm and the length in total is about 24.6mm.
-As this isn't a bi-metal/full metal heatbreak, there is a little PTFE-tube inside of it which goes all the way down to the nozzle, which is about 4cm long and 4mm thick with a 2mm hole inside of it to guide the 1.75mm filament.  
+The heatbreak is plugged into the heatsink of the direct drive and secured by two screws.  
+To fit the Volcano style heater block, it has an M6 thread.  
+The outer diameter of the heatbreak is 6mm at the throat. The inner diameter is about 4.2mm.  
+The length measured from the top until the 'stop ring' before the thread is about 18mm and the length in total is about 26mm.  
 
-![Neo stock heatbreak](../assets/images/head_neo_stock-heatbreak_web.jpg)
+As this isn't a bi-metal/full metal heatbreak, there is a little PTFE-tube inside of it which goes all the way down to the nozzle, which is about 41mm long and 4mm thick with a 2mm hole inside of it to guide the 1.75mm filament.  
+
+![Stock heatbreak](../assets/images/head_K2Pro_stock-heatbreak_web.jpg)
 
 ---
+<!--  
 
 #### MOD: Different Heatbreak
 
@@ -433,6 +437,7 @@ The steel one is about 27mm long, the copper bi-metal one is about 27.5mm long (
     If you've changed the PTFE tube to a Capricorn one, then you still can print PETG, as those Capricorn tubes can take slightly higher temperatures than the cheap ones. 
 
 ---
+-->  
 
 ## PTFE Tube  
 There are two PTFE tubes located at this machine:  
@@ -440,6 +445,8 @@ There are two PTFE tubes located at this machine:
 - a short PTFE tube inside of the heatbreak/hotend, called "PTFE inliner".  
 
 Both PTFE tubes have the outer diameter of ~4mm and the inner diameter of ~2mm as they're meant to be used for 1.75mm filament.  
+
+Imho it's recommendable to change the stock tubes and use original Capricorn XS tubes instead.  
 
 !!! warning "Pay Attention When Installing A New PTFE Tube" 
 
@@ -478,7 +485,7 @@ It acts as a guidance and protection for the fed filament and is clipped onto th
 ---
 
 ### PTFE Inliner
-The short PTFE tube which is located in the hotend/heatbreak is about ??mm long.  
+The short PTFE tube which is located in the hotend/heatbreak is about 41mm long.  
 Here the PTFE tube only is an inliner for the heatbreak.   
 
 When you need to cut a new inliner and you're not sure about the correct length, the best would be to actually disassemble the hotend, so that you can install the heatbreak only. Push it into the heatsink as far as you can. Then push the replacement tube into the heatbreak from the bottom, until you can't stick it in any further. Then either cut along the end of the heatbreak or mark that spot and cut it perpendicular afterwards. Then the length should fit - at least it should fit better than the stock inliner.  
@@ -792,29 +799,20 @@ Note the dent from the screw and the deformed thermistor due to an overtightened
 ## Nozzle
 Anycubic ships the printheads with a *proprietary* Volcano-like brass nozzle (0.4mm for 1.75mm filament).  
 
+![Anycubic's proprietary Volcano-like nozzle](../assets/images/head_K2Pro_nozzle-stock_web.jpg)  
+
 !!! warning "Not Compatible With Original E3D Volcano Type!"  
 
-    This nozzle is **not compatible** with the original E3D Volcano type nozzles!  
+    This stock nozzle is **not compatible** with the original E3D Volcano type nozzles!  
+    
     The end of the nozzle's throat is slightly changed by Anycubic and fits into the specific heatbreak, so you can't just use a Volcano-style nozzle!  
-    You either have to buy spare part nozzles from Anycubic or have to change the setup of the hotend (heatbreak and nozzle).  
+    The following picture shows a close-up view of the throat's end - on the left side you see the stock one, on the right side you see an original E3D Volcano one.  
+    
+    ![Stock vs Volcano throat](../assests/images/head_K2Pro_nozzle-throat-ending_web.jpg)  
+    
+    So when you need to replace the nozzle, you either have to buy spare part nozzles from Anycubic (or a 3rd party seller who sells these specific nozzles) or have to change the setup of the hotend (heatbreak and nozzle) for being able to use a true Volcano type of nozzle!  
   
-![Anycubic's proprietary Volcano-like nozzle](../assets/images/head_nozzle-e3d_web.jpg)  
 
-<!--
-So if you're looking for replacement nozzles, make sure to get yourself the correct type: it's a E3D **V6** type of nozzle!  
-I highly recommend to only use high quality nozzles, like the [**original E3D V6 nozzles**](https://e3d-online.com/products/v6-nozzles) (see the infobox below as well)!  
-
-If you're about to print *highly abrasive* types of filament, like "wood" or "glow in the dark" PLA for example, get yourself a hardened steel nozzle or a tungsten carbide nozzle, as regular brass nozzles will be worn out in no time. The following picture shows an "E3D Nozzle X" hardened steel nozzle.  
-
-![E3D Nozzle X](../assets/images/V6_nozzleX_web.jpg)  
-
-If you're planning on printing on much higher speeds and need a higher flowrate than a regular nozzle can offer in this stock hotend setup, you can get yourself a "CHT high flow" nozzle. These ones have a special designed copper inlet in the shaft of the nozzle, which splits up the filament in three parts which then results in a much higher flowrate. The following picture shows this kind of design at a cheap CHT nozzle clone.  
-
-![CHT clone](../assets/images/V6_CHTclone_web.jpg)  
-
-*Whichever kind of nozzle you decide to get - always make sure to choose an E3D ***V6*** type of nozzle!*  
-
--->  
     
 !!! warning "Nozzles: Handle With Care!" 
 
@@ -829,7 +827,7 @@ If you're planning on printing on much higher speeds and need a higher flowrate 
     - *Do yourself a favour and don't buy those cheap brass nozzles where you'll get a dozen of them for a few bucks.* It's just not worth it.  
     Remember that the nozzle is pretty much the most crucial part when it comes down to printing and achieving good results, as it's the last link in the chain of the print process and puts out the filament - so go for an established manufacturer who is known for producing quality nozzles.  
       Means, avoid those cheap sets of nozzles where you get a dozen nozzles for a few bucks. Those often lack quality: the bore might be off-center and/or might have a burr (which leads to heavy stringing), the thread might not be precise (which leads to leaking) and so on.  
-      I personally only use [**original E3D V6 nozzles**](https://e3d-online.com/products/v6-nozzles). Yes, they are a bit more expensive than the super cheap ones, but it's still a good price and it's really worth it - they last longer, they're precisely made and you'll get much better results. As long as you don't want to print special abrasive filaments, you're always good with the standard E3D V6 brass nozzles.  
+      I personally only use [**original E3D Volcano nozzles**](https://e3d-online.com/products/volcano-nozzles). Yes, they are a bit more expensive than the super cheap ones, but it's still a good price and it's really worth it - they last longer, they're precisely made and you'll get much better results. As long as you don't want to print special abrasive filaments, you're always good with the standard E3D V6 brass nozzles.  
   
     - If you want to print filaments that are more abrasive, you probably want to go with nozzles made from plated copper, stainless or hardened steel, ruby sapphire nozzles and so on. Check out the web for further and more specific information about what to choose.  
       Be aware of the fact though, that the manufacturers *clearly advise against doing cold pulls with any kind of coated nozzles*! This also involves hardened steel nozzles! Referring to them, the coating might be harmed when doing so.  
@@ -848,7 +846,49 @@ If you're planning on printing on much higher speeds and need a higher flowrate 
         - [Video: Get the benefits of a 0.6mm nozzle with a 0.4?](https://www.youtube.com/watch?v=nmigF5qyJ4M)  
           [Article: Get the benefits of a 0.6mm nozzle with a 0.4?](https://toms3d.org/2022/09/22/get-the-benefits-of-a-0-6mm-nozzle-with-a-0-4/)  
   
-  
+---
+
+### Spare Nozzles
+
+If you need to replace the nozzle, you either have to buy spare part nozzles directly from Anycubic or find a 3rd party seller who sells these specific nozzles. These ones can often be found much cheaper than the ones from Anycubic while the quality might be comparable. If you search for these kind of specific stock nozzles, you can search for e.g. "Anycubic Kobra 2 nozzle", as the same type of proprietary nozzle is being used in the regular Kobra 2 and the other models of the Kobra 2 line (like the Kobra 2 Neo, Plus and Max).  
+
+*Mind that you can NOT just get yourself regular Volcano type nozzles and use these ones instead, unless you also change the heatbreak!*  
+
+---
+
+### MOD: Volcano Nozzle  
+
+At the time of writing this, the specific type of the stock nozzles are only available in the size of 0.4mm and as a regular brass nozzle.  
+I didn't come across e.g. different nozzle sizes like 0.6mm, hardened steel nozzles or even CHT high flow nozzles with this particular throat design.  
+So you might want to change your setup for being able to use regular Volcano type nozzles.  
+
+!!! warning "You Need To Change The Heatbreak As Well!"
+
+    *The corresponding part of the stock heatbreak is shaped accordingly, so that the nozzle fits into it. That means, for using a regular Volcano type nozzle, you also need to change the heatbreak!*  
+
+The following picture shows the stock nozzle with the specific design of the throat's end at the left side and a regular E3D Volcano nozzle at the right side.  
+
+![Stock vs Volcano](../assets/images/head_K2Pro_nozzle_stock-vs-volcano_web.jpg)  
+
+The following picture shows a closeup view of the different shape of the nozzle's throat.  
+
+![Stock vs Volcano throat](../assets/images/head_K2Pro_nozzle-throat-ending_web.jpg)  
+    
+
+If you now want to use Volcano type nozzles, I highly recommend to only use high quality nozzles, like the [**original E3D Volcano nozzles**](https://e3d-online.com/products/volcano-nozzles)!  
+
+If you're about to print *highly abrasive* types of filament, like "wood" or "glow in the dark" PLA for example, get yourself a hardened steel nozzle,  a tungsten carbide nozzle or a brass nozzle with a ruby tip, as regular brass nozzles will be worn out in no time.  
+The following picture shows an "E3D Nozzle X" hardened steel nozzle (*Attention: I'm showing a V6 type here instead of a Volcano though as I currently don't have a Volcano "NozzleX" nozzle!*).  
+
+![E3D Nozzle X](../assets/images/V6_nozzleX_web.jpg)  
+
+If you're planning on printing on much higher speeds and need a higher flowrate than a regular nozzle can offer in this stock hotend setup, you can get yourself a "CHT high flow" nozzle. These ones have a special designed copper inlet in the shaft of the nozzle, which splits up the filament in three parts which then results in a much higher flowrate.  
+The following picture shows this kind of design at a cheap CHT nozzle clone (*Attention: I'm showing a V6 type here instead of a Volcano though as I currently don't have a Volcano "CHT" nozzle!*).  
+
+![CHT clone](../assets/images/V6_CHTclone_web.jpg)  
+
+*Whichever kind of nozzle you decide to get - always make sure to choose an E3D ***Volcano*** type of nozzle!*  
+ 
   
 ---  
   
