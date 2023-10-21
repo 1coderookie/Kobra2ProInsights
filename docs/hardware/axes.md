@@ -50,7 +50,7 @@ The following pictures show this mounting plate without the printhead being atta
 
 | Mounting plate front side | Mounting plate back side |  
 |:------------------------:|:-----------------------:|
-| ![Plate front side](head_K2Pro_mounting-plate-frontside_web.jpg) | ![Plate back side](head_K2Pro_mounting-plate-backside_web.jpg) |  
+| ![Plate front side](../assets/images/head_K2Pro_mounting-plate-frontside_web.jpg) | ![Plate back side](../assets/images/head_K2Pro_mounting-plate-backside_web.jpg) |  
 
 You can adjust the tension of the belt by using the knob at the right side of the aluminum profile where the printhead is guided onto.  
   
@@ -143,7 +143,7 @@ The motor of the x-axis is a 42-34 Nema 17 stepper motor with a 20 teeth pulley 
 It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at each steps, and therefore it's doing 200 steps for one full 360° rotation.  
 The motor is located at the left hand side of the x-axis gantry.  
 
-![X motor](axes_K2Pro_X-motor_back_web.jpg)  
+![X motor](../assets/images/axes_K2Pro_X-motor_back_web.jpg)  
 
 <!--
 As there aren't any specifications and replacement motors from Anycubic being available, you can either use a motor with the beforementioned specs or get yourself a motor from a Creality Ender 3 (or one that's advertised to fit that printer). The following picture shows the original stepper motor being mounted and the belonging Creality model laying next to it at the right hand side (right now the following picture shows the y-axis motor compared to the Creality motor, but the motors are actually the same - I'll add the belonging picture of the x-axis motor soon though).  
@@ -195,7 +195,7 @@ The metal wheels of the printhead's mounting plate, the SG15 bearings, are leadi
 These bearings run along a round-shaped metal rail and therefore they should sit in an optimal position.   
 The following picture shows the back side of the meatl plate the printhead is mounted to. You can see two SG15 bearings at the top and one at the bottom.  
 
-![Plate back side](head_K2Pro_mounting-plate-backside_web.jpg)
+![Plate back side](../assets/images/head_K2Pro_mounting-plate-backside_web.jpg)
 
 *You can adjust the position and therefore the overall pressure of the bearings against the metal rail of only ***one*** bearing by turning the eccentric nut which moves the bearing either towards or away from the metal rail.*   
 
