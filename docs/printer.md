@@ -40,7 +40,7 @@ The following list gives an overview of the most important specifications:
 
 ## Box Content
 
-The printer comes well packed in one big box.  
+The printer comes partially preassembled and well packed in one big box.  
 
 ![Box content](assets/images/K2Pro_package_web.jpg)  
   
