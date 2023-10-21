@@ -36,6 +36,15 @@ The following list gives an overview of the most important specifications:
 | ![Kobra 2 Pro](assets/images/printer_K2Pro_web.jpg) |  
 
 
+---
+
+## Package Content
+
+The printer comes with some additional parts, like a sample of PLA, a USB drive, some tools, a spare nozzle and so on. You can see these items in the following picture.  
+
+![Additional parts](assets/images/printer_K2Pro_additional-parts_web.jpg)  
+
+
 
 ---
 
