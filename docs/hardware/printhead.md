@@ -5,16 +5,16 @@
 | Specifications |
 |:---------------|
 | **Feeder system**: Direct drive, dual gear, 4:1 ratio |
-| **Thermistor**: 24V, 100k NTC (probably ATC Semitec 104GT-2/104NT-4-R025H42G type as usual), capsuled, dimensions ?x?mm, ~??cm wire length, two pinned JST XH 2.54 connector |
-| **Heater Cartridge**: 24V, 40W, ~14.5 Ohm, dimensions 6x18mm, ~??cm wire length, two pinned JST VH 3.96 connector |
-| **Nozzle**: proprietary Volcano-like nozzle (*not* compatible with Volcano!) |
+| **Thermistor**: 24V, 100k NTC (probably ATC Semitec 104GT-2/104NT-4-R025H42G type as usual), capsuled, dimensions 3x5mm, two pinned JST XH 2.54 (??) connector |
+| **Heater Cartridge**: 24V, 60W, ~10.5 Ohm, dimensions 6x18.5mm, two pinned JST ?? 3.5 connector |
+| **Nozzle**: proprietary Volcano-like nozzle (*not* compatible with Volcano!), 0.4mm |
 | **Heater Block**: Volcano-like type |
-| **Heatbreak**: M6 thread (to fit in the heater block), overall length ??mm, ?mm OD / ?mm ID, PTFE tube inliner |  
-| **PTFE tube**: <br> **Hotend**: ??mm inliner for the heatbreak, ~4mm OD / ~2mm ID bore <br> **Between filament runout sensor and printhead**: ~???mm <br> *Both PTFE tubes can/should be replaced with a "Capricorn XS" tube (for 1.75mm filament).* |  
+| **Heatbreak**: M6 thread (to fit in the heater block), overall length 25/26(?)mm, 6mm OD / 4mm ID, PTFE tube inliner |  
+| **PTFE tube**: <br> **Hotend**: ~41mm inliner for the heatbreak, ~4mm OD / ~2mm ID bore <br> **Between filament runout sensor and printhead**: ~???mm <br> *Both PTFE tubes can/should be replaced with a "Capricorn XS" tube (for 1.75mm filament).* |  
 | **Silicone Sock**: Volcano-style type |
 | **Part Cooling Fan**: 24V, 0.14A, 50x50x20mm, model "Coolcox BF5020H24D"  |
-| **Heatsink Cooling Fan**: 24V, ?A, ?x?x?mm, model "???"  |
-| **ABL sensor**: PNP-NO type (imho!), connection: brown = VCC 24VDC; blue = GND; black = LEVEL/signal (seems to be the same one as being used at the 'old' regular Kobra) |  
+| **Heatsink Cooling Fan**: 24V, ?A, ?x?x?mm, model "HSC"  |
+| **ABL sensor**: PNP-NO type (imho!), connection: brown = VCC 24VDC; blue = GND; black = LEVEL/signal (seems to be the same as the one being used at the 'old' regular Kobra) |  
 
 ---
 
@@ -390,7 +390,7 @@ The following pictures show each hotend being disassembled. You can clearly see 
 ## Heatbreak
 
 The stock heatbreak is a proprietary Volcano-style one made by Anycubic.  
-The total length is about 26mm, the outer diameter of the throat is 6mm.  
+The total length is about 25/26(?)mm, the outer diameter of the throat is 6mm. The length from the 'ring' (which limits how far you can stick the heatbreak into the heatsink) to the end of the throat is 17mm.     
 
 It is **not** compatible with regular E3D Volcano type nozzles!     
 
