@@ -250,9 +250,11 @@ To avoid a premature wear and tear of the components, don't position the bearing
 
 The limit switch is located inside of the blue plastic cover at the left hand side (where the motor is mounted at as well).   
 
-![X-axis limit switch frontview](../assets/images/axes_K2Pro_X-limit-switch_frontview_web.jpg)  
-  
-![X-axis limit switch backview](../assets/images/axes_K2Pro_X-limit-switch_bottomview_web.jpg)  
+The following pictures show the limit switch from two different point of views.  
+
+| Limit switch front side view | Limit switch bottom view |  
+|:----------------------------:|:------------------------:|
+| ![X-axis limit switch frontview](../assets/images/axes_K2Pro_X-limit-switch_frontview_web.jpg) | ![X-axis limit switch backview](../assets/images/axes_K2Pro_X-limit-switch_bottomview_web.jpg) |   
 
 ??? example "Checking The Switches (And Wires)"
 
