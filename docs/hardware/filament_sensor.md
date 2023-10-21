@@ -12,7 +12,7 @@
 The filament runout / break detection sensor is basically a switch inside a housing, which will be triggered and closes the contact when filament is fed through.  
 The switch is NO (normally open) and the connector for plugging it into the mainboard's connector is a JST-XH2.54 (male, 2 pins).  
 
-| Sensor's top side | Sensor's bottom side | Sensor's plug |
+| Sensor's top side (mounting direction) | Sensor's bottom side | Sensor's plug |
 |:--------------:|:-------------:|:-------------:|
 | ![Top side](../assets/images/fil-sens-front_web.jpg) | ![Bottom side](../assets/images/fil-sens-back_web.jpg) | ![Plug](../assets/images/fil-sens-bottomview_web.jpg) |
 
