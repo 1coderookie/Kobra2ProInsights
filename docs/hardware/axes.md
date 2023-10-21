@@ -43,10 +43,18 @@ So if you notice that e.g. the motor of the y-axis doesn't stop when the bed rea
 ---
 
 ## X-Axis
-The x-axis is represented by the printhead moving along the x-axis gantry. The moving bracket (where the printed is mounted onto) is belt driven, the motor which drives the belt (8mm wide, GT-2 type) is located at the left side.   
+The x-axis is represented by the printhead moving along the x-axis gantry.  
+The metal plate where the printed is mounted onto is belt driven, the motor which drives the belt (8mm wide, GT-2 type) is located at the left side.   
+
+The following pictures show this mounting plate without the printhead being attached, so that you can see the parts better.  
+
+| Mounting plate front side | Mounting plate back side |  
+|:------------------------:|:-----------------------:|
+| ![Plate front side](head_K2Pro_mounting-plate-frontside_web.jpg) | ![Plate back side](head_K2Pro_mounting-plate-backside_web.jpg) |  
+
 You can adjust the tension of the belt by using the knob at the right side of the aluminum profile where the printhead is guided onto.  
   
-![X-axis knob](../assets/images/x-axis_knob_K2Pro_web.jpg)
+![X-axis knob](../assets/images/axes_K2Pro_X-tensioner_web.jpg)
 
 ---
 
@@ -97,9 +105,9 @@ My 'rule of thumb' here is: if you can bend the belt down a bit by applying some
 
 ### Belt Tensioner
 
-The following picture shows the belt tensioner located at the front of the y-axis aluminum frame.  
+The following picture shows the belt tensioner located at the right hand side of the x-axis gantry.  
 
-![X-axis knob](../assets/images/x-axis_knob_K2Pro_web.jpg)
+![X-axis knob](../assets/images/axes_K2Pro_X-tensioner_web.jpg)
 
 You adjust the tension of the belt by turning it clockwise for increasing the tension and turning it counter-clockwise for decreasing it.  
 
@@ -133,7 +141,11 @@ You adjust the tension of the belt by turning it clockwise for increasing the te
 ### X-Axis Motor
 The motor of the x-axis is a 42-34 Nema 17 stepper motor with a 20 teeth pulley being attached to the 5mm motor shaft.  
 It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at each steps, and therefore it's doing 200 steps for one full 360° rotation.  
+The motor is located at the left hand side of the x-axis gantry.  
 
+![X motor](axes_K2Pro_X-motor_back_web.jpg)  
+
+<!--
 As there aren't any specifications and replacement motors from Anycubic being available, you can either use a motor with the beforementioned specs or get yourself a motor from a Creality Ender 3 (or one that's advertised to fit that printer). The following picture shows the original stepper motor being mounted and the belonging Creality model laying next to it at the right hand side (right now the following picture shows the y-axis motor compared to the Creality motor, but the motors are actually the same - I'll add the belonging picture of the x-axis motor soon though).  
 
 ![Stock vs Creality y-motor](../assets/images/axes_y-motor_stock-creality_web.jpg)  
@@ -143,6 +155,7 @@ As there aren't any specifications and replacement motors from Anycubic being av
     As the connections of the stock vs a 'Creality'-type motor are different due to different pinouts of the coils, you need to make sure you connect it correctly!  
     Therefore you need to switch the position of two wires, best would be to check the coils with a multimeter first!  
     Please read the expandable textbox below for further information.
+-->  
 
 ??? example "Identifying The Coils And Connections"  
 
@@ -179,33 +192,44 @@ As there aren't any specifications and replacement motors from Anycubic being av
 
 ### SG15 Bearings Position
 The metal wheels of the printhead's mounting plate, the SG15 bearings, are leading the printhead along the aluminum profile of the x-axis (the so-called "x-axis gantry").  
-These bearings run along a round-shaped metal rail and therefore they should sit in an optimal position.    
+These bearings run along a round-shaped metal rail and therefore they should sit in an optimal position.   
+The following picture shows the back side of the meatl plate the printhead is mounted to. You can see two SG15 bearings at the top and one at the bottom.  
+
+![Plate back side](head_K2Pro_mounting-plate-backside_web.jpg)
 
 *You can adjust the position and therefore the overall pressure of the bearings against the metal rail of only ***one*** bearing by turning the eccentric nut which moves the bearing either towards or away from the metal rail.*   
+
+*The bearing whose position can be adjusted is the one located at the ***bottom*** - the two wheels at the top which are running across the upper side of the x-axis gantry can't be adjusted as there aren't any eccentric nuts mounted!*  
+
+![Eccentric nut at printhead mounting plate](../assets/images/axes_K2Pro_X-plate_eccentric-nut_bottomview_web.jpg)  
+
+
 The following picture shows an eccentric nut which I painted to make the special shape of it more visible.  
 
 ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
 
 As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole wheel will be changed, either towards or away from the v-slot of the rail it's sitting at. 
 
-*The wheel whose position can be adjusted is the one located at the ***bottom*** - the two wheels at the top which are running across the upper side of the x-axis gantry can't be adjusted as there aren't any eccentric nuts mounted!*  
-
-![Eccentric nut at printhead mounting plate](../assets/images/eccentric-nut_mounted_web.jpg)  
-
-The wheels shouldn't sit too tight in the V-slot but also not too loose. They should touch the aluminum profile and sit in the slot well and they should be able to move smoothly. On the other hand, they also shouldn't be too loose or far away from the profile which would lead to instability. The printhead shouldn't wiggle but it has to be able to move freely.   
+The bearings shouldn't sit too tight at the rail but also not too loose.  
+They should touch the rail and should sit in place well without any sort of wobbling and they should be able to move smoothly.  
+On the other hand, they also shouldn't be too loose or far away from the rail which would lead to instability.  
+The printhead shouldn't wiggle but it has to be able to move freely.   
     
-Make sure they're assembled correctly and line up with the slot as well - if they're out of alignment and don't run correctly in the slot, you'll experience a massive wear and tear. Same goes for the wheels being too tight.  
+Make sure they're assembled correctly and line up with the rail as well - if they're out of alignment and don't run correctly along the rail, you'll experience a massive wear and tear. Same goes for the bearings being too tight.  
 
+<!--
 See the following picture where you can clearly see a *heavy* wear and tear. According to the user who took this picture, this is the state after three days of usage - which is absolutely *not* "normal"!   
 
 ![Wheels wear & tear](../assets/images/axes_wheels-weartear_web.jpeg)
-      
+-->      
     
 ---
   
 ### SG15 Bearings Maintenance  
 
 As the bearings will suffer from running along the metal rail and debris can build up, clean the rails and the bearings from time to time. After that, add a slight coating of lubrification to reduce the wear and tear due to the fact that metal is running on metal.  
+
+To avoid a premature wear and tear of the components, don't position the bearings being too tight.  
 
 ??? example "Lubricating The SG15 Bearings"  
 
@@ -226,9 +250,9 @@ As the bearings will suffer from running along the metal rail and debris can bui
 
 The limit switch is located inside of the blue plastic cover at the left hand side (where the motor is mounted at as well).   
 
-![X-axis limit switch frontview](../assets/images/axes_x-limit-switch_web.jpg)  
+![X-axis limit switch frontview](../assets/images/axes_K2Pro_X-limit-switch_frontview_web.jpg)  
   
-![X-axis limit switch backview](../assets/images/axes_x-axis-limit-switch_web.jpg)  
+![X-axis limit switch backview](../assets/images/axes_K2Pro_X-limit-switch_bottomview_web.jpg)  
 
 ??? example "Checking The Switches (And Wires)"
 
@@ -245,6 +269,7 @@ The limit switch is located inside of the blue plastic cover at the left hand si
 
 ## X-Axis Gantry
 The x-axis gantry is the aluminum profile (plus the corresponding parts) where the printhead is actually running onto.  
+You already read the information about the belonging parts of the x-axis in the chapter above, in the following you'll find the information about the parts of the x-axis gantry which are moving along the z-axis frame. Plus, you'll find information about how to tram the x-axis gantry.  
  
 ---
 
@@ -292,7 +317,7 @@ See the following picture where you can clearly see a heavy wear and tear. Accor
 
 ### Tramming The X-Axis Gantry
 
-!!! warning "'Tramming' vs. 'Leveling' The Gantry"  
+??? warning "'Tramming' vs. 'Leveling' The Gantry"  
 
     Because I got attacked, harrassed, insulted and called names for using the correct term "tramming" instead of the misleading and technically wrong term "leveling", let me make something clear at this point.  
     
@@ -316,7 +341,7 @@ See the following picture where you can clearly see a heavy wear and tear. Accor
 
 It's advisable to tram the x-axis gantry to either the bed itself or the frame, depending on the type of spacers of the bedmount. By doing so, you make sure that the bed and the gantry are parallel to each other and therefore the distance of the nozzle to the plate is pretty much the same all along the x-axis.  
   
-As the printers come with rigid spacers (the black plastic pieces between the bedplate and the bed gantry), you aren't really able to "tram" the bed unless you replace the stock spacers with [adjustable ones](bed.md#different-spacers).    
+As the printers come with rigid spacers (the cylindirc metal pieces between the bedplate and the bed gantry), you aren't really able to "tram" the bed unless you replace the stock spacers with [adjustable ones](bed.md#different-spacers).    
 The problem with those rigid stock spacers is, that they most likely aren't all of the same length/height - so I'd recommend to at least dismount them, check if they're all of the same height and if they aren't, sand them down to an equal height. By doing so you can at least make sure that you won't have a tilted or warped bed caused by spacers of different legth. See the section ["Tramming The Bed"](bed.md#tramming-the-bed) for further information and instructions.   
 *Make sure to take care of this before actually starting to tram the x-axis gantry, as you'll tram it in relation to the bed.*  
    
@@ -402,7 +427,7 @@ Please see the expandable textbox below for further instructions about how to tr
 The y-axis is belt driven (GT-2 type, 8mm wide).  
 The motor which drives the belt is positioned at the back of the printer.  
   
-![Y-axis motor](../assets/images/y-axis_motor_K2Pro_web.jpg)
+![Y-axis motor](../assets/images/axes_K2Pro_Y-motor_web.jpg)  
 
 You can adjust the tension of the belt by using the knob at the front side of the aluminum profile where the bed is guided onto.   
 The x-shaped plate for the bedmount itself has v-slot wheels which are running in the v-slot of the aluminum profile.  
@@ -495,6 +520,11 @@ You adjust the tension of the belt by turning it clockwise for increasing the te
 The motor of the y-axis is a 42-48 Nema 17 stepper motor with a 20 teeth pulley being attached to the 5mm motor shaft.  
 It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at each steps, and therefore it's doing 200 steps for one full 360° rotation.  
 
+![Y-axis motor](../assets/images/axes_K2Pro_Y-motor_web.jpg)  
+
+![Y-axis motor number](../assets/images/axes_K2Pro_Y-motor_back_web.jpg)  
+
+<!--  
 As there aren't any specifications and replacement motors from Anycubic being available, you can either use a motor with the beforementioned specs or get yourself a motor from a Creality Ender 3 (or one that's advertised to fit that printer). The following picture shows the original stepper motor being mounted and the belonging Creality model laying next to it at the right hand side.  
 
 ![Stock vs Creality y-motor](../assets/images/axes_y-motor_stock-creality_web.jpg)  
@@ -504,6 +534,7 @@ As there aren't any specifications and replacement motors from Anycubic being av
     As the connections of the stock vs a 'Creality'-type motor are different due to different pinouts of the coils, you need to make sure you connect it correctly!  
     Therefore you need to switch the position of two wires, best would be to check the coils with a multimeter first!  
     Please read the expandable textbox below for further information.
+-->  
 
 ??? example "Identifying The Coils And Connections"  
 
@@ -591,13 +622,10 @@ As the bearings will suffer from running along the metal rail and debris can bui
 
 ### Limit Switch
 
-The limit switch for the y-axis is mounted at the back, right on front of the motor. The bed gantry triggers the switch when moved completely to the back.  
+The limit switch for the y-axis is mounted to the metal bracket of the motor at the back. The bed gantry triggers the switch when moved completely to the back.  
 
-![Y-axis limit switch](../assets/images/axes_Y-limit-switch_mounted_web.jpg)  
+![Y-axis limit switch](../assets/images/axes_K2Pro_Y-limitswitch_web.jpg)  
 
-![Y-axis limit switch front](../assets/images/axes_Y-limit-switch_bare_front_web.jpg)  
-
-![Y-axis limit switch back](../assets/images/axes_Y-limit-switch_bare_back_web.jpg)  
 
 ??? example "Checking The Switches (And Wires)"
 
@@ -608,13 +636,13 @@ The limit switch for the y-axis is mounted at the back, right on front of the mo
 ---
 
 ## Z-Axis
-The z-axis is driven by two lead screws which are connectoed to each other with a belt at the very top. Therefore this system is called a dual z-axis, belt driven system.   
+The z-axis is driven by two lead screws which are connected to each other with a timingbelt at the very top. One lead screw is attached and driven by the z-axis motor, the other one is then driven by the timingbelt. Therefore this system is called a dual z-axis, timingbelt driven system.   
 
 The lead screws have 8mm in diameter with 8mm lead ('distance' of one complete rotation), 2mm pitch and 4 starts and has a length of 350mm (it's actually the kind of lead screw which is used pretty much everywhere in these kind of machines).  
 
 The rod which is directly driven by the motor is mounted to the 5mm shaft of the motor by a rigid coupler at the bottom.  
-The rod which is driven by the belt then is mounted to a ... at the bottom which holds it in place.  
-Both top ends of the rods are held in place by a bearing block where the screws stick out from at the top. At this end a pulley is attached to both screws, which are then connected by a closed loop belt. 
+The rod which is driven by the belt then is mounted to a bearing block at the bottom which holds it in place.  
+Both top ends of the rods are held in place by a bearing block at the top. At this end, right underneath the bearing block, a pulley is attached to both screws, which are then connected by a closed loop belt. 
 
 In between it's guided and secured by a spring loaded POM anti-backlash nut which you can see at the following picture -  it's the black plastic part mounted to the black steel bracket.  
   
@@ -626,18 +654,37 @@ In between it's guided and secured by a spring loaded POM anti-backlash nut whic
 
 ---
 
+### Lead Screws  
+
+
+---
+
+### Timing Belt  
+
+
+---
+
+### Bearing Blocks   
+
+
+---
+
+### Pulleys
+
+
+---
 
 ### Z-Axis Motor
 The motor of the y-axis is a 42-34 Nema 17 stepper motor with a 5mm motor shaft.  
 It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at each steps, and therefore it's doing 200 steps for one full 360° rotation.  
 
-![Z stepper mounting](../assets/images/axes_z-stepper-mounting_web.jpg)
+The following pictures show the motor with the mounting bracket.  
 
-![Z- stepper underside](../assets/images/axes_Z-motor_underside_web.jpg)  
-
-Pay attention to the mounting of the motor. It's only mounted with that little bracket using two screws - the back and the base of the motor are actually not supported as you can see in the picture above.  
-That most likely leads to the fact that the whole motor can bend a little bit due to the axial load of the lead screw system, so it's a good idea to actually support the motor by putting something sufficient underneath and/or between the motor and the aluminum frame where it's actually mounted to. I personally added a big/wide nylon shim underneath it.   
-
+| Z-motor back side view | Z-motor side view |
+|:----------------------:|:-----------------:|
+| ![Z stepper mounting](../assets/images/axes_K2Pro_Z-motor_backsideview_web.png) | ![Z- stepper underside](../assets/images/axes_K2Pro_Z-motor_sideview_web.png) |   
+ 
+<!--
 As there aren't any specifications and replacement motors from Anycubic being available, you can either use a motor with the beforementioned specs or get yourself a motor from a Creality Ender 3 (or one that's advertised to fit that printer).  
 
 !!! warning "Attention When Connecting The 'Creality'-Type Motor!"  
@@ -645,6 +692,7 @@ As there aren't any specifications and replacement motors from Anycubic being av
     As the connections of the stock vs a 'Creality'-type motor are different due to different pinouts of the coils, you need to make sure you connect it correctly!  
     Therefore you need to switch the position of two wires, best would be to check the coils with a multimeter first!  
     Please read the expandable textbox below for further information.
+-->  
 
 ??? example "Identifying The Coils And Connections"  
 
@@ -817,7 +865,8 @@ As this machine uses the same mainboard like the Kobra 2 Max/Plus, there is one 
 Theoretically speaking, you *should* be able to get rid of the belt system and drive the second lead screw with an own motor instead by simply connecting it.  
 Mind that both motors will still be driven by the same stepper driver though, so you won't be able to use the advantages of two independent stepper drivers/motors anyway.  
 
-However, I personally didn't do that and most likely I won't as there aren't any advantages (imho) to the belt driven system. As a matter of fact, you'll actually have disadvantages: additional load is put onto the stepper driver and the x-gantry could come out of alignment when accidentally pushing one side down. At a belt driven system this isn't a problem as both screws are connected to each other and therefore both screws will turn if you accidentally push down one side of the x-gantry.  
+However, I personally didn't do that and most likely I won't as there aren't any advantages (imho) to the timingbelt driven system.  
+As a matter of fact, you'll actually have disadvantages: additional load is put onto the stepper driver and the x-gantry could come out of alignment when accidentally pushing one side down. At a timingbelt driven system this isn't a problem as both screws are connected to each other and therefore both screws will turn if you accidentally push down one side of the x-gantry.  
 But this is just my personal opinion, so if you added a second z-motor, please reach out via email (see footer) with a picture so that other users can see your solution. 
 
 
