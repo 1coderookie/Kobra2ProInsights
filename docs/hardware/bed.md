@@ -157,11 +157,13 @@ The following picture shows the magnetic foil that Anycubic shipped together wit
 ## PEI Plate
         
 The bed uses a removable 230x230mm PEI-coated spring steel plate which makes it easy to remove the printed object.  
+
+![PEI plate](../assets/images/bed_K2Pro_PEI-plate_web.jpg)  
+
 The plate that comes with the printer is textured on one side.    
-  
 The following picture shows the surface of the textured side which you're supposed to print on from a close-up view.  
   
-![Close-up view of the PEI-coated plate](../assets/images/bed_closeup_web.jpg)  
+![Close-up view of the PEI-coated plate](../assets/images/bed_K2Pro_PEI-plate_closeup_web.jpg)  
 
 
 !!! warning "Attention: PEI Plate Size"  
