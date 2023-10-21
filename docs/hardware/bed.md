@@ -157,12 +157,9 @@ The following picture shows the magnetic foil that Anycubic shipped together wit
 ## PEI Plate
         
 The bed uses a removable 230x230mm PEI-coated spring steel plate which makes it easy to remove the printed object.  
-The plate that comes with the printer is  
-
-- one-sided coated at the **Go** and  
-- double-sided coated at the **Neo**.  
+The plate that comes with the printer is textured on one side.    
   
-The following picture shows the surface of the coated plate of the **Neo** from a close-up view.  
+The following picture shows the surface of the textured side which you're supposed to print on from a close-up view.  
   
 ![Close-up view of the PEI-coated plate](../assets/images/bed_closeup_web.jpg)  
 
@@ -195,6 +192,11 @@ The following picture shows the surface of the coated plate of the **Neo** from 
 ## Spacers / Bushings Of The Bedmount
 
 The bedplate is mounted onto the gantry with 4mm countersunk screws and rigid plastic spacers between the bedplate itself and the gantry.  
+
+The following picture shows the two spacers of the right side while being mounted between the bedplate and the gantry.  
+
+![Spacers mounted](../assets/images/bed_K2Pro_spacers-mounted_web.jpg) 
+
 Even though this is a somewhat rigid construction (if the material of the bed gantry would be thicker..), the culprit of this solution is that you can't manually tram the bedplate if needed. Besides that, a huge problem is that the stock spacers aren't all of equal height.  
 
 So it's very advisable to dismount the bed, take the stock spacers out and check if they're all of the same height. I'd suggest to use a digital caliper for doing so, but it you don't have one, you can also place them next to each other onto a *flat* surface and place something thin and straight ((e.g. a ruler) onto them to check and compare the height.  
@@ -204,6 +206,13 @@ You could also try to shim it out of course, but especially if the differences a
 ---
 
 ### MOD: Adjustable Spacers 
+
+!!! warning "Maybe Better Don't Use Adjustable Spacers"  
+
+    The following sections about adjustable spacers are meant as an information for those who want to swap out the rigid stock ones.  
+    Regarding the fact that this printer is designed for printing speeds up to 500mm/s with accelerations up to 20.000mm/s², I personally would **not** recommend using adjustable spacers, just to not add a possible source for instability.  
+        If the rigid stock spacers are all of the same height/length, the bedgantry isn't somehow bent and the x-gantry is trammed in relation to the rigid bed, the ABL should successfully take care of any minor height deviances that still might occur.  
+    
 
 Because you can't tram the bed itself due to this rigid construction, you may want to replaced the stock spacers with springs or silicone spacers which allows tramming of the bed itself.  
 It's advisable to make sure that the bolt can't turn itself loose due to the vibration, so add some sort of nut acting as a lock nut (like a nylon lock nut, a regular counter nut, a wingnut or so) to the tip of the screw underneath the bed gantry as well.  
@@ -270,6 +279,7 @@ The y-axis limit switch is being triggered by the gantry when it's moving comple
     - Check if the screws are all tightened up. Be careful though to not overtighten the screws of the Bedplate as you may compress the little spacers underneath it and therefore the plate may become warped. On the other hand, if you see that your bed is warped somehow or that the bed is much more off in certain areas or at one side, you can check if the screws in that area might be too tightened up or too loose.  
     - Check if the bedplate itself is somehow wobbling. Not only sideways (horizontally), but also up and down (vertically). If so, not only check the v-slot wheels and maybe adjust their fitting using the eccentric nuts, also check if the screws of the gantry of the bed where the wheels are mounted to are tightened up.     
 
+<!--
 ---
 
 ### MOD: 3 Point Bed Mount 
@@ -327,13 +337,13 @@ As you can see, there is still some room for finetuning, like lowering the front
 
 Conclusion: so, will I do this mod at my second Neo as well and can I recommend it? Yes, absolutely.  
 I might try to get a gantry from the aftermarket which already offers the option for this kind of 3 point mounting system and which is (hopefully) more rigid overall though, as the whole gantry itself really appears pretty flimsy to me. I'm not sure about that yet though, as I like to tinker and modify it with spending the less money I can - but if I'll end up buying such a gantry, I'll add pictures here and let you know how it went.  
-
+-->
   
 ---    
 
-## Anycubic LeviQ - Automatic Bed 'Leveling' Function
+## Anycubic LeviQ 2.0 - Automatic Bed 'Leveling' Function
 
-The printers come with an automatic 25 point bed 'leveling' function called "Anycubic LeviQ".  
+The printer comes with an automatic 25 point bed 'leveling' function called "Anycubic LeviQ 2.0".  
 This function measures the distance of the inductive [ABL sensor](printhead.md#abl-sensor) to the PEI plate in a 5x5 grid, therefore at 25 points.  
 The data will then be used to compensate any deviations in the distance of the surface which then (in a perfect setup and under perfect conditions) during printing by moving the printhead up and down along the z-axis.  
 
