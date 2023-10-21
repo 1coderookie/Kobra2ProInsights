@@ -389,7 +389,9 @@ The following pictures show each hotend being disassembled. You can clearly see 
 
 ## Heatbreak
 
-The stock heatbreak is a proprietary Volcano-style one made by Anycubic. The total length is about 26mm, the outer diameter of the throat is 6mm. 
+The stock heatbreak is a proprietary Volcano-style one made by Anycubic.  
+The total length is about 26mm, the outer diameter of the throat is 6mm.  
+
 It is **not** compatible with regular E3D Volcano type nozzles!     
 
 ??? info "Spare Part Heatbreak"
