@@ -163,12 +163,30 @@ If you encounter *this* degree of wear and tear, especially after only a short t
 Most likely you are running them with *too much pressure* against the rails, means, you need to slightly adjust the position using the eccentric nuts and turn the belonging wheels a tiny bit away from the rail.  
 The other possible cause is a misalignment of the wheels. As the wheels are running along that v-slot, heavy wear and tear occurs if they aren't positioned correctly and if they're running a bit slanted in the slots. This can happen if something went wrong when installing them initially. In that case inspect the position as well and check if the bolts, spacers and eccentric nuts are mounted correctly.  
 
+---
+
+## Debris On The SG15 Bearings And Rails  
+Debris of the bearings and rails can be considered as being normal - *to a certain degree*.  
+
+As both parts are made out of metal, wear and tear does occur.  
+
+Imho three main causes can be mentioned:  
+- The bearings are running too tight along the rails.
+- The bearings are misaligned.
+- The bearings and rails aren't lubed.  
+
+For avoiding this as much as possible, do maintenance regularly, which means cleaning and lubricating the parts. Also check the position of the bearings - if they're running too tight along the rails, an increased amount of wear and tear will be caused. 
+
+See the following picture where you can clearly see a wear and tear, in this case of the rail's surface. According to the user who took this picture, this is the state after printing about one spool of filament - which is absolutely not "normal"!
+
+(add pic rails wear & tear)  
+
+The reason for this was most likely the bearings being positioned too tight to the rail. Insufficient lubrification also plays a role as mentioned, but in this case the user did apply lube.   
 
 ---
 
 ## Wrong Temperature Is Read
-If an obviously wrong temperature is read (like e.g. 10° for the bed when you have 25° room temperature or even a negative temperature when it's obvously not *that* cold), then it's most likely that you face a faulty wire. The wires inside of the wires tend to break due to the movement and poor quality, and when only a few wires are left, the resistance becomes bigger - which results in an obviously faulty reading.  
-See the section ["Err: MINTEMP/MAXTEMP/THERMAL RUNAWAY"](#err-mintempmaxtempthermal-runaway) and the reasons listed there as well as the possible solutions for further information.   
+If an obviously wrong temperature is read (like e.g. 10° for the bed when you have 25° room temperature or even a negative temperature when it's obvously not *that* cold), then it's most likely that you face a faulty wire. The starnds inside of the wires tend to break due to the movement and poor quality, and when only a few wires are left, the resistance becomes bigger - which results in an obviously faulty reading.     
 
 ---
 
@@ -212,6 +230,18 @@ If you face **movement problems** of
 
 ## Error Messages 
 In the following I'll list some of the error messages that might appear on the screen of the control unit.  
+
+*As I personally didn't come across many error messages yet, please reach out via email (address can be found in the footer of the page) when you face an error message that isn't listed here! Thanks!*
+
+### The Module Is Abnormal
+
+When attempting to level and calibrate the z-offset of the printer, you might come across the following error message:  
+**"The module is abnormal. Please calibrate the position of the nozzle and module."**  
+
+This message can be triggered when the z-offset sensor isn't working or hasn't been triggered successfully.  
+(..add description & solution..)  
+
+<!--- 
 
 ### Err: MINTEMP/MAXTEMP/THERMAL RUNAWAY  
 
@@ -366,6 +396,7 @@ Try to reformat the card as FAT32 (full format, not fast format). If that still 
 
 However, it might happen that you'll have to try more than one card, as the printer somehow seems to be a bit picky - I personally had to try five(!) different cards, until it finally accepted one. The reason for this is unknown to me..  
 
+-->
 
 ---
 
