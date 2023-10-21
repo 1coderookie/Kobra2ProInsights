@@ -204,7 +204,7 @@ The following picture shows the back side of the meatl plate the printhead is mo
 ![Eccentric nut at printhead mounting plate](../assets/images/axes_K2Pro_X-plate_eccentric-nut_bottomview_web.jpg)  
 
 
-The following picture shows an eccentric nut which I painted to make the special shape of it more visible.  
+The following picture shows an eccentric nut (in this case mounted to a POM wheel) which I painted to make the special shape of it more visible.  
 
 ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
 
@@ -217,11 +217,12 @@ The printhead shouldn't wiggle but it has to be able to move freely.
     
 Make sure they're assembled correctly and line up with the rail as well - if they're out of alignment and don't run correctly along the rail, you'll experience a massive wear and tear. Same goes for the bearings being too tight.  
 
-<!--
-See the following picture where you can clearly see a *heavy* wear and tear. According to the user who took this picture, this is the state after three days of usage - which is absolutely *not* "normal"!   
+See the following picture where you can clearly see a wear and tear, in this case of the surface of the rails of the y-axis. According to the user who took this picture, this is the state after printing about one spool of filament - which is absolutely *not* "normal"!   
 
-![Wheels wear & tear](../assets/images/axes_wheels-weartear_web.jpeg)
--->      
+![Rails wear & tear](../assets/images/axes_K2Pro_rails-weartear_web.jpeg)
+
+The reason for this is most likely the bearings being positioned too tight to the rail.  
+Insufficient lubrification also plays a role, but in this case the user did apply lube.        
     
 ---
   
@@ -271,14 +272,15 @@ The following pictures show the limit switch from two different point of views.
 
 ## X-Axis Gantry
 The x-axis gantry is the aluminum profile (plus the corresponding parts) where the printhead is actually running onto.  
+
 You already read the information about the belonging parts of the x-axis in the chapter above, in the following you'll find the information about the parts of the x-axis gantry which are moving along the z-axis frame. Plus, you'll find information about how to tram the x-axis gantry.  
  
 ---
 
 ### V-Slot Wheels Position
-The x-axis gantry is moved along the z-axis aluminum profile driven by the z-axis lead screws, guided by v-slot wheels. They run in the v-slot of the z-axis profiles and therefore they should sit in a good position. Means, they shouldn't sit too tight in the V-slot but also not too loose - they should be able to roll and move freely, but they shouldn't be too far away from the profile which would lead to instability.  
+The x-axis gantry is moving along the z-axis aluminum profile driven by the z-axis lead screws, guided by v-slot wheels. They run in the v-slot of the z-axis profiles and therefore they should sit in a good position. Means, they shouldn't sit too tight in the V-slot but also not too loose - they should be able to roll and move freely, but they shouldn't be too far away from the profile which would lead to instability.  
 
-*You can adjust the roller tension by turning the eccentric nut of the wheel which moves the wheels either towards or away from the aluminum profile.*    
+*You can adjust the roller tension by turning the eccentric nut of the inner wheels which moves the wheels either towards or away from the aluminum profile.*    
 The following picture shows an eccentric nut which I painted to make the special shape of it more visible.  
 
 ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
@@ -311,7 +313,7 @@ As the wheels will suffer from running on the aluminum and debris can build up, 
 If you see debris building up pretty quick, it's most likely because the wheels are running too tight in the v-slot of the aluminum and therefore it's too much friction which leads to a quick wearout.  
 Another factor is a possible misalignment here, so that they aren't running well along in the slot, so check the position of the wheels as well.  
 
-See the following picture where you can clearly see a heavy wear and tear. According to the user who took this picture, this is the state after three days of usage - which is absolutely *not* "normal".   
+See the following picture where you can clearly see a heavy wear and tear. The picture is taken from the mounting plate of the printhead of a Kobra Neo, but the wear and tear will be the same at POM wheels located at different spots as well. According to the user who took this picture, this is the state after three days of usage - which is absolutely *not* "normal".   
 
 ![Wheels wear & tear](../assets/images/axes_wheels-weartear_web.jpeg)
           
@@ -343,8 +345,8 @@ See the following picture where you can clearly see a heavy wear and tear. Accor
 
 It's advisable to tram the x-axis gantry to either the bed itself or the frame, depending on the type of spacers of the bedmount. By doing so, you make sure that the bed and the gantry are parallel to each other and therefore the distance of the nozzle to the plate is pretty much the same all along the x-axis.  
   
-As the printers come with rigid spacers (the cylindirc metal pieces between the bedplate and the bed gantry), you aren't really able to "tram" the bed unless you replace the stock spacers with [adjustable ones](bed.md#different-spacers).    
-The problem with those rigid stock spacers is, that they most likely aren't all of the same length/height - so I'd recommend to at least dismount them, check if they're all of the same height and if they aren't, sand them down to an equal height. By doing so you can at least make sure that you won't have a tilted or warped bed caused by spacers of different legth. See the section ["Tramming The Bed"](bed.md#tramming-the-bed) for further information and instructions.   
+As the printer comes with rigid spacers (the cylindirc metal pieces between the bedplate and the bed gantry), you aren't really able to "tram" the bed unless you replace the stock spacers with [adjustable ones](bed.md#different-spacers) (which I personally *won't* suggest to do, regarding the high speed and accelerations this machine is running).    
+The problem with those rigid stock spacers is, that they might not be all of the same length/height - so I'd recommend to at least dismount them, check if they're all of the same height and if they aren't, sand them down to an equal height. By doing so you can at least make sure that you won't have a tilted or warped bed caused by spacers of different legth. See the section ["Tramming The Bed"](bed.md#tramming-the-bed) for further information and instructions.   
 *Make sure to take care of this before actually starting to tram the x-axis gantry, as you'll tram it in relation to the bed.*  
    
 After taking care of the spacers (either the stock ones or after getting yourself new adjustable ones), reassemble everything. Now you can proceed tramming the x-axis gantry:  
@@ -366,7 +368,8 @@ Please see the expandable textbox below for further instructions about how to tr
       After that, tram the bed itself to the x-axis gantry by adjusting the height of the bed by using the screws and adjust it at the four corners to the same distance of the nozzle (e.g. 0.1mm by using a feeler gauge or a sheet of paper).  
     
     *Note: the following description is for tramming the x-axis gantry in ***relation to the bed*** itself when using the rigid stock spacers!*  
-    *If you're using adjustable spacers, the procedure is pretty much the same, you just have to put two pieces of equal height onto the frame of the printer (where the z-axis aluminum frame is mounted onto) and rest the x-axis gantry onto them instead of placing those pieces on the bed itself!*   
+    *If you're using adjustable spacers, the procedure is pretty much the same, you just have to put two pieces of equal height onto the frame of the printer (where the z-axis aluminum frame is mounted onto) and rest the x-axis gantry onto them instead of placing those pieces on the bed itself!*  
+    ***The following pictures are taken from a Kobra Neo, the principle and the locations of the screws which hold the Y-shaped brackets in place are pretty much the same to the Kobra 2 Pro though. I'll add specific pictures of the K2Pro in the (hopefully) near future though. Until then, please just look out for the locations of the belonging screws yourself.***
     
     - In order to **tram the x-axis gantry in relation to the bed**, so that both are as parallel as possible, take two parts of equal height like cans for example and place them onto the left and right side of the bed.  
     
@@ -573,34 +576,40 @@ As there aren't any specifications and replacement motors from Anycubic being av
 ---
     
 ### SG15 Bearings Position
-The metal wheels of the bed's gantry, the SG15 bearings, are leading the bed along the aluminum profile of the y-axis.  
+The metal wheels of the bed's gantry, the SG15 bearings, are leading the bed along the aluminum profiles of the y-axis.  
 These bearings run along a round-shaped metal rail and therefore they should sit in an optimal position.    
 
+(..add pic..)
+
 *You can adjust the position and therefore the overall pressure of the bearings against the metal rail of only ***two*** bearings by turning the eccentric nut which moves the bearing either towards or away from the metal rail.*   
-The following picture shows an eccentric nut which I painted to make the special shape of it more visible.  
+The following picture shows an eccentric nut (in this case mounted to a POM wheel) which I painted to make the special shape of it more visible.  
 
 ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
 
-As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole wheel will be changed, either towards or away from the v-slot of the rail it's sitting at. 
+As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole bearing will be changed, either towards or away from the rail it's sitting at. 
 
-*The wheel whose position can be adjusted is the one located at the ***bottom*** - the two wheels at the top which are running across the upper side of the x-axis gantry can't be adjusted as there aren't any eccentric nuts mounted!*  
+*The bearings whose position can be adjusted are located at the ***right hand side*** of the gantry when looking at it from the front - the two wheels at the left side of the aluminum frame can't be adjusted as there aren't any eccentric nuts mounted!*  
 
-![Eccentric nut at printhead mounting plate](../assets/images/eccentric-nut_mounted_web.jpg)  
+(..add pic..)
 
-The wheels shouldn't sit too tight in the V-slot but also not too loose. They should touch the aluminum profile and sit in the slot well and they should be able to move smoothly. On the other hand, they also shouldn't be too loose or far away from the profile which would lead to instability. The printhead shouldn't wiggle but it has to be able to move freely.   
+The bearingss shouldn't sit too tight onto the rail but also not too loose. They should touch the rail and sit on it well without any amount of play which would cause a wiggeling, but they should still be able to move smoothly. On the other hand, they also shouldn't be too loose or far away from the rail which would lead to instability. The gantry shouldn't wiggle but it has to be able to move freely and without much of a force being applied.   
     
-Make sure they're assembled correctly and line up with the slot as well - if they're out of alignment and don't run correctly in the slot, you'll experience a massive wear and tear. Same goes for the wheels being too tight.  
+Make sure they're assembled correctly and line up with the rail as well - if they're out of alignment and don't run correctly along the rail, you'll experience a massive wear and tear. Same goes for the bearings being too tight.  
 
-See the following picture where you can clearly see a *heavy* wear and tear. According to the user who took this picture, this is the state after three days of usage - which is absolutely *not* "normal"!   
+See the following picture where you can clearly see a wear and tear, in this case of the rail's surface. According to the user who took this picture, this is the state after printing about one spool of filament - which is absolutely *not* "normal"!   
 
-![Wheels wear & tear](../assets/images/axes_wheels-weartear_web.jpeg)
-      
-   
+![Rails wear & tear](../assets/images/axes_K2Pro_rails-weartear_web.jpeg)
+
+The reason for this is most likely the bearings being positioned too tight to the rail.  
+Insufficient lubrification also plays a role, but in this case the user did apply lube.        
+
+<!--
+
 ??? tip "Check The Screws Of The Bedplate And The Gantry Of The Bed"
 
-    - Check if the screws are all tightened up. Be careful though to not overtighten the screws of the Bedplate as you would compress the little spacers underneath it and therefore the plate may become warped. On the other hand, if you see that your bed is warped somehow or that the bed is much more off in certain areas or at one side, you can check if the screws in that area might be too tightened up.  
-    - Check if the bedplate itself is somehow wobbling. Not only sideways/horizontally, but also up and down/vertically. If so, not only check the v-slot wheels and maybe adjust their fitting using the eccentric nuts, also check if the screws of the gantry of the bed where the wheels are mounted to are tightened up. As an example: at my **Neo** the bed was wobbling up and down in one certain area - after checking the screws and tighten them up everything was sturdy as it should be.         
+    Check if the bedplate itself is somehow wobbling. Not only sideways/horizontally, but also up and down/vertically. If so, not only check the v-slot wheels and maybe adjust their fitting using the eccentric nuts, also check if the screws of the gantry of the bed where the wheels are mounted to are tightened up. As an example: at my **Neo** the bed was wobbling up and down in one certain area - after checking the screws and tighten them up everything was sturdy as it should be.         
 
+-->
     
 ---  
 
