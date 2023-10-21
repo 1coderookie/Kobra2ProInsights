@@ -38,9 +38,13 @@ The following list gives an overview of the most important specifications:
 
 ---
 
-## Package Content
+## Box Content
 
-The printer comes with some additional parts, like a sample of PLA, a USB drive, some tools, a spare nozzle and so on. You can see these items in the following picture.  
+The printer comes well packed in one big box.  
+
+![Box content](assets/images/K2Pro_package_web.jpg)  
+  
+Along with the printer come some additional parts, like a sample of PLA, a USB drive, some tools, a spare nozzle and so on. You can see these items in the following picture.  
 
 ![Additional parts](assets/images/printer_K2Pro_additional-parts_web.jpg)  
 
