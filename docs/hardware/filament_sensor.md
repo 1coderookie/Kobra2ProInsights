@@ -14,7 +14,7 @@ The switch is NO (normally open) and the connector for plugging it into the main
 
 | Sensor's top side | Sensor's bottom side | Sensor's plug |
 |:--------------:|:-------------:|:-------------:|
-| [Top side](../assets/images/filament_sensor2_web.jpg) | [Bottom side](../assets/images/filament_sensor1_web.jpg) | [Plug](../assets/images/filament_sensor_bottomview_web.jpg) |
+| ![Top side](../assets/images/fil-sens-front_web.jpg) | ![Bottom side](../assets/images/fil-sens-back_web.jpg) | ![Plug](../assets/images/fil-sens-bottomview_web.jpg) |
 
 
 ## Installation  
@@ -27,7 +27,7 @@ The arrow printed on the sensor's housing should point towards the bed, the plug
 
 ![Sensor mounted](../assets/images/K2Pro_fil-sens_mounted_web.jpg)
 
-After you connected and mounted the sensor, you lead the filament through it which then moves the little lever of the switch to trigger it and the electrical circuit will be closed. If the filament runs out because it broke or the spool is empty, the switch will open and the printer will pause (or only shows a warning message? I don't know yet!).  
+After you mounted and connected, you lead the filament through it which then moves the little lever of the switch to trigger it and the electrical circuit will be closed. If the filament runs out because it broke or the spool is empty, the switch will open and the printer will pause (or only shows a warning message? I don't know yet!).  
 
 
 ## Spare Part
