@@ -135,20 +135,21 @@ There are also prebuilt enclosures available as well as enclosures which I perso
 I personally ended up with getting myself two of those tent style enclosures, just because I like the idea of being able to fold it together and put it in the closet if I don't need it anymore.  
 There are quite a few of these tents available, but when taking a closer look at the various offers you'll see that most of them are actually the same, just being branded differently. I call them "generic" ones.  
 Only some of the tents available on the market seem to really differ from those "generic" ones, here the ones from Creality and SainSmart have to be mentioned as you'll most likely come across them when you're searching for these tent style enclosures.  
-I got myself one of those "generic" ones which was branded by Sunlu and one from SainSmart which I'll show in the following and mention some pros and cons I personally consider worth mentioning (pictures will be added soon).  
-I didn't get the one fromm Creality as it was the smallest among those offers (width ~47.5cm) - even though it would be sufficient and the Go and Neo would fit in there, I personally like a bit of additional space as I often get my hands on the hardware anyway and therefore don't need to always take the printer out of the enclosure.  
+I got myself one of those "generic" ones which was branded by Sunlu and one from SainSmart which I'll show in the following and mention some pros and cons I personally consider worth mentioning.  
+I didn't get the one fromm Creality as it was the narrowest among those offers (width ~47.5cm) - even though it would be sufficient and the printer would fit in there (without the spool holder being mounted to the side), I personally like a bit of additional space as I often get my hands on the hardware anyway and therefore won't need to always take the printer out of the enclosure when choosing a slightly wider tent.  
 
-**Sunlu (imho "generic")**  
+***Sunlu (imho "generic" type of tent)***  
 The size of this generic tent style enclosure one is about 55x64x74cm.  
-Due to it's height, the enclosure allows the usage of the filament spool holder mounted to the top of the frame.    
+Due to it's height, the enclosure allows the usage of a filament spool holder mounted to the top of the frame.    
 
 | Sunlu closed | Sunlu open |  
 |:------------:|:----------:|
 | ![Sunlu closed](../assets/images/enclosure_Sunlu_closed_web.jpg) | ![Sunlu open](../assets/images/enclosure_Sunlu_open_web.jpg) |
 
-When looking at the generic tent which in my case was branded by Sunlu, it hits the eye right away how thin the material is.  
+When looking at the generic tent which in my case was branded by Sunlu, it hits the eye right away how thin the material actually is.  
 The 'aluminum' is applied as some sort of sprayed on layer, there is no insulation between the outer material and the aluminum foil at the inside as there's just one layer of material.   
-If you place a lamp inside the enclosure, you can see the light shining through the material (in the picture of the closed tent above you might be able to tell the reflecting spots, this is the aluminum coating shining through the outer material!) - I think this already speaks for itself. As expected, the insulating effect on noise, temperatures and fumes therefore is only small.  
+If you place a lamp inside the enclosure, you can see the light shining through the material (in the picture of the closed tent above you can see some bright spots within the black material at the outside - this is the aluminum coating shining through the outer material!) - I think this already speaks for itself.  
+As expected, the insulating effect on noise, temperatures and fumes therefore is only small.  
 The zipper isn't covered in any way and it doesn't appear to be made of a high quality anyway.  
 The rods are made from fibreglas, the parts where the rods are being stuck into are made from plastic.  
 The following pictures show some close-up views of the material and the zipper.  
@@ -165,11 +166,14 @@ The following picture shows the left side of the enclosure with the part which c
 
 ![Sunlu left side](../assets/images/enclosure_Sunlu_left-side_web.jpg)
 
-I personally use this enclosure for the Kobra Neo I use for printing PLA. When printing, I completely open it. When not printing, this enclosure acts as a nice protection against dust and hairs of my cats.  
+I personally use this enclosure for one of my Kobra Neos which I use for only printing PLA.  
+When printing, I completely open it. When not printing, this enclosure acts as a protection against dust and hairs of my cats.  
 
-**SainSmart "Upgraded Large Volume 3D Printer Enclosure"**   
+If you're planning on using this type of tent in a really dusty environment though, like in a workshop where you also work with wood or so, I'd strongly recommend to get yourself the tent from SainSmart (see below) instead as the zipper and the whole material is made of a much better quality.   
+
+***SainSmart "Upgraded Large Volume 3D Printer Enclosure"***   
 The size of this tent style enclosure from SainSmart one is about 54x62x72cm.  
-Due to it's height, the enclosure allows the usage of the filament spool holder mounted to the top of the frame.  
+Due to it's height, the enclosure allows the usage of a filament spool holder mounted to the top of the frame.  
 
 | SainSmart closed | SainSmart open |
 |:----------------:|:--------------:|
@@ -177,10 +181,11 @@ Due to it's height, the enclosure allows the usage of the filament spool holder 
 
 
 When looking at the tent, you can tell the much better quality right away.  
-The material itself isn't only thicker and more dense, it also consists different layers. There is the outer material, then you have some sort of foam insulation and an aluminum foil covering the inside. This results in a much better reduction of the noise and fumes and traps the heat inside the enclosure better as well. The risk of a fire hazard should be reduced much more significantly than at the generic tent, as we have a 'real' aluminum layer here instead of just some sort of sprayed-on aluminum-looking substance.   
+The material itself isn't only thicker and more dense, it also consists different layers.  
+There is the outer material, then you have some sort of foam insulation and an aluminum foil covering the inside. This results in a much better reduction of the noise and fumes and traps the heat inside the enclosure better as well. The risk of a fire hazard should be reduced much more significantly than at the generic tent, as we have a 'real' aluminum layer here instead of just some sort of sprayed-on aluminum-looking substance.   
 The zippers seem to be made of a better quality as well and they're somewhat covered.  
 The rods of the frame are made from metal, the pieces where the rods get stuck in are plastic as well though.   
-The following pictures show some close-up views of the material and the zipper. You can clearly see the foam padding.   
+The following pictures show some close-up views of the zipper and the material where you can clearly see the foam padding.   
 
 | Zipper | Material | 
 |:------:|:--------:|
@@ -194,7 +199,7 @@ On the right side there's an additional oopening as well which allows you to acc
 |:---------:|:--------:|:----------:|
 | ![Left side](../assets/images/enclosure_SainSmart_left-side_web.jpg) | ![Top side](../assets/images/enclosure_SainSmart_top-lid_web.jpg) | ![Right side](../assets/images/enclosure_SainSmart_right-side_web.jpg) |
 
-I personally use this tent for my Neo which prints other types of filament than PLA.  
+Due to the better quality, I personally use this tent for one of my Kobra Neos which only prints other types of filament than PLA.  
 
 **Final thoughts on tent style enclosures**  
 My bottom line here about these two types of tent style enclosures would be: if you plan to use the enclosure for *printing* more demanding types of filament like ABS for example and not just like using it as a better dust protection cover, then I highly recommend getting the one from SainSmart.  
