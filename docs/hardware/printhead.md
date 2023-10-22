@@ -20,16 +20,15 @@
 
 The printhead of the **Kobra 2 Pro** includes the direct drive feeder gear system, the distribution board for connecting the electronic components, the hotend, the heatsink and part cooling fans, the ABL sensor and the motion sensor for measuring the vibrances.   
 
-![Printhead](../assets/images/head_K2Pro_web.jpg)  
+The following pictures show the printhead with the blue plastic cover from various angles.  
+
+| Front side | Back side | Top side | Bottom side |
+|:----------:|:---------:|:--------:|:-----------:|
+| ![Printhead front](../assets/images/head_K2Pro_head-front_web.jpg) | ![Printhead back](../assets/images/head_K2Pro_backside_web.jpg) | ![Printhead top](../assets/images/head_K2Pro_topside_web.jpg) | ![Printhead bottom](../assets/images/head_K2Pro_underside_web.jpg) |  
 
 It is the same as the one being used at the *Kobra 2 Plus* and *Kobra 2 Max* - it is *not* the same as the one being used in the regular *Kobra 2*.  
 
 The printhead itself is running along the [x-axis gantry](axes.md#x-axis-gantry).  
-  
-The following picture shows the printhead with the plastic housing including the wiring and the longer PTFE bowden, which is mounted between the head itself and the filament runout sensor at the left hand side of the x-axis gantry. This tube acts as a guide and protection for the filament as it is fed from the left hand side of the printer.  
-  
-![Printhead wider view](../assets/images/head_K2Pro_wide_web.jpg) 
-  
 
 ---
 
@@ -50,13 +49,18 @@ Disassembling the printhead isn't really complicated. Just make sure you're care
 Whatever you want to do, like if you want to change the hotend, the heater block, the heatbreak, a fan or even want to disassemble the whole feeder system, you have to remove the plastic cover of the printhead first.  
 It's secured by two hexagon socket screws at the top of the metal back plate and a plastic clip at each side at the lower bottom as you can see at the following picture (well, you don't really see the plastic clip though but you can see the belonging notch of one of them). Be gentle and careful to not break one of the clips - the best way to get them out of their fittings is to gently push together the whole plastic cover at the bottom sides.  
   
-![Backside view of the head with mounted plastic cover](../assets/images/head_neo_complete_backside_marked_web.jpg)  
+![Backside view of the head with mounted plastic cover](../assets/images/head_K2Pro_backside_web.jpg)  
   
-After the plastic cover is gone, you can see the fans, the proximity sensor at the right side and the heater block at center down at the bottom and so on. Depending on what you want do do now, you need to follow different steps. But first let's have a look at the coverless head from different points of view, starting with the view from the front with a straight look at the little fan for cooling the printed part.  
+Inside of the plastic housing, you can see the part cooling fan with the fan duct.  
+*Mind the thin wire of the fan - you don't want to rip it off!* 
+
+![Fan parts](../assets/images/head_K2Pro_cover-open_web.jpg)  
+
+After the plastic cover is gone, you're looking at the plastic backplate of the feeder gear. Underneath it, you can see the the black heatsink with the hotend in the middle and the proximity sensor at the right side of the hotend.  
   
-![Front side view](../assets/images/head_dis-front_web.jpg) 
-![Fan parts](../assets/images/head_neo_fan-parts_web.jpg)  
-  
+![Front side view](../assets/images/head_K2Pro_no-cover_web.jpg)  
+
+<!--  
 Now we look at the left side where you can see the motor of the feeder gear. You can spot three hexagon socket screws there - two at the top and one at the bottom close to the motor housing, which are holding the entire feeder system onto the metal backplate.    
   
 ![Left side view](../assets/images/head_neo_leftside_motor_mount_marked_web.jpg)
@@ -73,6 +77,8 @@ The following picture shows the whole metal plate where the feeder construction 
   
 ![Backside view metal plate](../assets/images/head_neo_backplate_marked_web.jpg)
 
+-->
+
 *You'll find further disassembling instructions for the ABL sensor, the feeder gear system and the hotend in the specific sections.*  
 
 ---
@@ -81,7 +87,11 @@ The following picture shows the whole metal plate where the feeder construction 
 
 There's a PCB located at the printhead where the electronic components (e.g. thermistor, cartridge heater, ABL sensor etc.) are connected to which I call "distribution board".     
 
-![Distribution board](../assets/images/head_K2Pro_distribution-board_web.jpg)  
+![Distribution board](../assets/images/head_K2Pro_distri-pcb_labeled_web.jpg)  
+
+The following picture shows this distribution board from a slightly different angles, so that you can see the labels at the wires and the plugs and connectors a bit better.  
+
+![Distribution board sideview](../assets/images/head_K2Pro_distri-pcb_labels_web.jpg)  
 
 The connection between the mainboard and this distribution board is then accomplished by a ribbon cable. The following picture shows the connector at the head and a part of that ribbon cable.  
 
@@ -91,7 +101,7 @@ The connection between the mainboard and this distribution board is then accompl
 ---
 
 ## ABL Sensor
-The printer comes with an inductive proximity sensor for automatic bed levelling (ABL) which detects the metal of the spring steel PEI plate.  
+The printer comes with an inductive proximity sensor for automatic bed leveling (ABL) which detects the metal of the spring steel PEI plate.  
 The ABL sensor is the part with that round orange tip whic is located at the right hand side when looking at the printhead from the front.  
 
 The sensor itself seems to be the same as the one being used at the regular Kobra, so if you need a replacement and can't find it for this specific model, look out for the one of the Kobra as well.  
@@ -102,6 +112,7 @@ The connections are:
 - blue = GND
 - black = LEVEL/signal 
 
+<!--
 The position of the sensor (the height) should be adjusted in relation to the nozzle.  
 Therefore you can either use the ABL height gauge which sometimes comes with the printer or you can use the bigger one of the two-sided open ended wrench that comes in the toolset.  
 The following picture shows the height gauge that sometimes comes with the printer - if you don't have it and don't want to use the mentioned wrench, you can download [the gcode file](https://cdn.shopify.com/s/files/1/0245/5519/2380/files/Height_gauge.rar?v=1667814312) from Anycubic's support page and print it.  
@@ -113,12 +124,13 @@ The procedure about how to adjust the position will be described for the specifi
 
 The following picture shows the location of the ABL sensor at the printhead, looking at it from a bottom view angle - the ABL sensor is the part at the right side with the round orange tip.   
   
-![Orange tip of the ABL sensor at the right side](../assets/images/head_neo-bottom_web.jpg)
+![Orange tip of the ABL sensor at the right side](../assets/images/head_K2Pro_underside_web.jpg)
     
-The ABL sensor itself is mounted in a plastic bracket which is the mounted to the metal backplate. You can adjust the height of the position by a little spring supported screw located at the top.  
+The ABL sensor itself is mounted in a plastic bracket which is then mounted to the metal backplate.  
   
-![ABL sensor](../assets/images/head_ABL-sensor-front_web.jpg)
-  
+![ABL sensor](../assets/images/head_K2Pro_abl-sensor_web.jpg)
+
+<!--  
 ---  
       
 #### Leveling The ABL Sensor
@@ -154,34 +166,44 @@ See the expandable textbox below for further instructions.
     - If the sensor is too high or too low, adjust the height by turning the little M2 hexagon socket screw at the top of the bracket that holds the sensor.  <br> ![Screw at the top to move the sledge](../assets/images/head_ABL-sensor_top_closeup_web.jpg) <br> You're only able to move it a few milimeters by doing so though!   
     -  If you need to adjust a bigger height, you'd need to disassemble the sensor from the bracket itself first to already change it's position in the bracket (see the pictures of it in the "dismounting" section above.  
     - After completing the beforementioned steps, take the parts away from the bed, set your Z offset to zero (0) if you didn't do it yet and home all axes. Then execute the ABL process and dial in your z-offset.
+--> 
 
 ---
 
 #### Dismounting The ABL Sensor
-If you want to change the ABL sensor, it's advisable first to take off the whole printhead from the carriage of the x-axis by taking out the four hexagon socket screws at the back that hold the plate.  
+If you want to change the ABL sensor, take off the blue plastic housing of the printhead.  
+Make sure to not rip off the wires of the part cooling fan.  
+Then you'll already see the hexagon socket screw which holds the bracket of the sensor in place.  
 
 See the expandable textbox below for further instructions.  
 
 ??? example "Dismounting Procedure"
 
-    - Then loosen the two hexagon socket screws at the backplate which holds the plastic bracket in place (where the ABL sensor sits in). They are located at the left side of the back plate if you look at it from the back (see pictures above). The following picture shows the screws from a side view angle to give you a better impression about the location. At the bottom you see one of the little plastic clips - there are two of them on each side. <br> ![Screws for the ABL sensor on the left side](../assets/images/head_neo_ABL-sensor_screws_marked_web.jpg)
-    - The bracket itself is designed as a sledge which can be adjusted by turning the M2 hexagon socket screw at the very top of this construction as you can see at the following picture. <br> ![Screw at the top to move the sledge](../assets/images/head_ABL-sensor_top_closeup_web.jpg) 
-    - Be careful when you want to take out the sensor from the plastic bracket and therefore have to release the tiny plastic clips which close the bracket - don't break them! <br> ![image](../assets/images/head_ABL-sensor_clip_closeup_web.jpg) 
-    - The following picture shows once again the two plastic clips on one side - they're on both sides, but it's sufficient to unclip them at one side as the other side will come loose as well then. Just be careful when you unclip one side and move the top of the bracket as it's still clipped in at the other side, so don't be rough here. <br> Now you can replace the sensor or readjust the position in the bracket. Be aware that there is something like a tiny thread on the little plastic lip located towards the lower end of this lid of the bracket (see red mark on the picture to the right) - make sure this thread fits into the thread of the sensor. If everything sits just right you don't need much pressure to close the lid, so be aware and careful here to not break anything. <br> ![ABL sensor disassembled](../assets/images/ABL_sensor-dissambled_web.jpg)          
+    - First disconnect the belonging connector at the distribution box. Be careful to not rip off the wire nor the connector itself!  
+    - Now measure the distance between the tip of the sensor and the lower side of the bracket, so that you can install the replacement part at the exact same height later.  
+    - Now unscrew the belonging screw and take out the sensor.  
+    - Voilà - you're already done! 
     
 ??? example "Remounting Procedure"
 
-    For remounting, just follow the steps of dismounting in reverse. Make sure you're using the right screws and don't forget any of them.  
-    Don't overtighten the screws though - as my father (R.I.P.) used to say: "After tight comes loose!" (roughly translated ;) ).  
-
+    For remounting, just follow the steps of dismounting in reverse:  
+    - Place the sensor in the bracket and mind the correct position which you measured before taking the old one out.  
+    - Make sure you're using the right screw and don't overtighten it though - as my father (R.I.P.) used to say: "After tight comes loose!" (roughly translated ;) ).  
+    - Reconnect the wiring.  
+    
+    
+<!--
 !!! warning "Attention"
 
     If you dis- and remounted the ABL sensor, make sure to level the ABL sensor again and control your Z offset!  
-       
+--> 
+
 ---  
   
 ## Extruder / Feeder Gear System
 This machine is using a direct drive, double gear extruder/feeder system (4:1 ratio).  
+
+When you take off the blue plastic cover of the printehad, you can see the ..
 
 ??? tip "Can't Load New Filament?!"
 
@@ -191,7 +213,7 @@ This machine is using a direct drive, double gear extruder/feeder system (4:1 ra
     If you did so and were able to insert the filament but it seems that it's getting stuck lower down in the hotend, then you might hit the end of the nozzle with an edge of your filament. It helps when you cut the filament in a 45° angle and bend the part you're manually feeding into the hotend so that it's pretty straight.  
     If you still can't get your filament loaded, it's most likely that the PTFE tube inside of the hotend is clogged or deformed or that you have a clog in or above the nozzle somewhere. To clean, inspect and maintain it, you need to disassemble the hotend. Check the section ["Disassembling The Hotend"](#disassembling-the-hotend) further down below for more information.   
   
-
+<!--
 The following picture shows the extruder/feeder of the **Neo** with the mounted plastic cover of the printhead.  
   
 ![Direct drive of the Neo](../assets/images/head_neo_directdrive_web.jpg)
@@ -203,6 +225,7 @@ At the top in front of the little hole where the filament is inserted you find a
 You can access the inside of the feeder system by dismounting the heatsink, which is located at the right side underneath the heatsink fan. The following picture shows the inside of the system.  
 
 ![Feeder inside](../assets/images/head_neo_feeder-inside_web.jpg)  
+-->
   
 !!! warning "Retraction Settings"
 
@@ -229,6 +252,7 @@ In case you dropped something tiny like a screw or so in the holes at the top of
 
 If that doesn't work, see the expandable textbox below for further instructions about how to disassemble the gear box.   
 
+<!--
 ??? example "Disassembling Procedure"  
 
     - There is a metal part with cooling fins underneath the 'big' fan at the right side, this is the heatsink. <br> ![Metal plate with cooling fins](../assets/images/head_neo_cooling-fins_web.jpg)  
@@ -253,7 +277,7 @@ If that doesn't work, see the expandable textbox below for further instructions 
 
     For reassembling, just put everything back together by proceeding the steps of disassembling in reverse. Make sure you're using the right screws and don't forget any of them.  
     Don't overtighten the screws though - as my father (R.I.P.) used to say: "After tight comes loose!" (roughly translated ;) ).  
-
+-->
     
 ---  
   
@@ -263,8 +287,6 @@ The assembled hotend is shown in the following picture.
   
 ![Hotend](../assets/images/head_K2Pro_hotend_web.jpg)  
     
-
-
   
 !!! warning
 
@@ -282,7 +304,7 @@ The assembled hotend is shown in the following picture.
 
 ??? info "Spare Part Hotend"
 
-    - At the time of writing there isn't a spare part hotend available yet. The hotend *might* be the same as the one being used in the regular Kobra 2.    
+    - At the time of writing there are already 3rd party hotends available. Look out for "Anycubic Kobra 2 Hotend" or similar. You can find a complete hotend including the thermistor and cartrdige heater for around 15 bucks.      
     - If the old thermistor and/or cartridge heater are still good and the wires aren't harmed, you don't have to look around for getting new ones! Just take the existing ones out of the old heater block and install them into the new one.    
     - However, scroll down and check out the "Disassembling" section below to see how to dis- and reassemble it. *Maybe you don't need new parts, so try to clean up everything first and reassemble it before ordering new parts right away.*    
   
@@ -290,7 +312,7 @@ The assembled hotend is shown in the following picture.
 
     For loading new filament, you need to have the hotend heated up to the belonging temperature first - you can't load filament in a cold hotend, as it won't melt in there.  
     
-    If you can't load new filament, first of all check if you pulled the lever on the feeder gear.
+    If you can't load new filament, first of all check if you pushed the lever on the feeder gear to the right hand side.
     If you did so and were able to insert the filament but it seems that it's getting stuck lower down in the hotend, then you might hit the end of the nozzle with an edge of your filament. It helps when you cut the filament in a 45° angle and bend the part you're manually feeding into the hotend so that it's pretty straight.  
     If you still can't get your filament loaded, it's most likely that the PTFE tube inside of the hotend is clogged or deformed or that you have a clog in or above the nozzle somewhere. To clean, inspect and maintain it, you need to disassemble the hotend. Check the section ["Disassembling The Hotend"](#disassembling-the-hotend) further down below for more information.     
          
@@ -356,6 +378,7 @@ If you need to dismount the hotend from the printhead to change it or if you nee
     - Turn on the printer and heat up the nozzle to ~230-240°C. Once the temperature is reached, tighten up the nozzle with about 1.5NM force. Make sure to hold the heater block in place and strictly avoid any movement of it! Don't touch or harm any wires!  
     - Mount the plastic cover.   
 
+<!--
 ---
     
 #### MOD: Different Hotend 
@@ -385,6 +408,8 @@ The following pictures show each hotend being disassembled. You can clearly see 
 
     When using a bi-metal/all-metal heatbreak, keep an eye on your retraction distance setting. Generally speaking, you should decrease/lower that value.
      
+-->
+
 ---  
 
 ## Heatbreak
@@ -540,47 +565,56 @@ Last but not least check the height of these units and compare it to the V5 heat
 ## Silicone Sock
 The silicone sock that comes with the hotend insulates the heater block. Therefore it should stay in place and shouldn't come off, as it *might* cause the "thermal runaway" error.  
   
-The following pictures shows a Volcano-type heater block compatible silicone sock from the aftermarket on the left side and the stock sock on the right side.     
+The following pictures show the stock silicone sock from different angles.     
+
+| Sock front/side | Sock side | Sock bottom | Sock inside |
+|:---------------:|:---------:|:-----------:|:-----------:|
+| ![Sock front/side](../assets/images/head_K2Pro_sock3_web.jpg) | ![Sock side](../assets/images/head_K2Pro_sock1_web.jpg) | ![Sock bottom](../assets/images/head_K2Pro_sock2_web.jpg) | ![Sock inside](../assets/images/head_K2Pro_sock4_web.jpg) |   
   
-![Silicone socks top view](../assets/images/silisocks_K2Pro_top_web.jpg)   
-  
-Additionaly, the ones from the aftermarket also cover and therefore insulate the base of the nozzle - something that the stock ones don't do at all.  
-  
-![Silicone socks bottom view](../assets/images/silisocks_K2Pro_bottom_web.jpg)  
   
 ??? info "Spare Part Silicone Sock"  
 
-    The sock which comes with the printhead isn't the best one to use (in my opinion) as it seems to come off pretty easily. There are compatible Volcano style silicone socks at the aftermarket which I personally use and which I can highly recommend. They have a bigger lip which slips over the heater block and covers a bigger area of the top than the one which comes with the printer. Therefore they stay in place much better when they heat up and become more flexible.    
-    If you read the above and still don't know what you should look or search for, search for "silicone sock Volcano" for example as these socks are for a Volcano style heater block. You can get them pretty much everywhere, so if you use to shop at Amazon or ebay for example, you'll find many offers which are pretty much the same at the end.    
+    You should be able to use any Volcano-style silicone sock from the aftermarket as a spare part.     
   
 ---  
   
 ## Thermistor 
-The thermistor which is used is a capsuled NTC 100k. Based on the setting of the firmware it's an ATC Semitec 104GT-2/104NT-4-R025H42G (4.7k pullup).  
-The diameter is 3mm, the length should be minimum 6mm as that is the depth of the hole in the heater block and the length of the wire is about 150cm.   
+The thermistor which is used is a capsuled NTC 100k.    
+The diameter is 3mm, the length is about 5.5mm. It comes with a short wiring and the specific connector attached.  
 
 The following picture shows the stock thermistor being used.  
 
-![Stock thermistor](../assets/images/head_thermistor_stock_web.jpg)
+![Stock thermistor](../assets/images/head_K2Pro_thermistor_web.jpg)  
 
+The thermistor is plugged into the belonging hole of the heater block and is then secured by a screw. The screw which holds the thermistor in place is screwed in the block from above, the threaded hole is located right next to the thermistor's hole. 
+
+![Thermistor screwed in](../assets/images/head_K2Pro_thermistor-block_web.jpg)  
+
+The screw then taps the thermistor and holds it in place.  
+
+![Thermistor and block](../assets/images/head_K2Pro_thermistor-block-screw_web.jpg)  
+ 
+<!--
 The following picture shows the connector being used, it's a regular two pin JST XH-2.54 type.  
 
 ![Thermistor connector](../assets/images/head_thermistor-plug.png)
+--> 
 
-!!! danger "Check The Grub Screws From Time To Time"
+!!! danger "Check The Screw From Time To Time"
 
-    Check the grub screws/set screws of the heater block and the position of the cartridge heater and the thermistor from time to time!  
+    Check the screw and the position of the thermistor from time to time!  
     Due to expansion and contraction of the aluminum heater block and the vibrations that occur, those screws can come loose - which then can result in a part being slipped out!  
     *This is a serious potential of a fire hazard!*    
-    See the following picture of a user where the cartridge heater slipped out of the heater block.  
+    See the following picture of a user where the cartridge heater slipped out of the heater block (different printer though).  
     ![Slipped out cartridge heater](../assets/images/head_glowing-cartridge_web.jpg)  
 
-
+<!--
 ??? info "Spare Part Thermistor"  
 
     You should be able to find and use a compatible item from the aftermarket (which I successfully did - you just have to pay attention to the wire length actually).  
     The following picture shows the thermistor from the aftermarket I used and the specific plug which is necessary to fit in the belonging socket at the mainboard.  
     ![Thermistor and plug](../assets/images/head_plug-therm_web.jpg)  
+-->  
 
 ??? info "What Is A 100k NTC Thermistor?"
 
@@ -588,11 +622,8 @@ The following picture shows the connector being used, it's a regular two pin JST
     When the temperature drops, the resistance will become higher/bigger. When the temperature rises, the resistance will become lower/smaller.  
     As an example: at 20°C the resistance is about 125k Ohm; at 30°C the resistance is about 81k Ohm.  
     Therefore you can measure the functionality of the thermistor by measuring the given resistance with a multimeter.  
+    See the violet expandable textbox "Measuring / Checking The Thermistor" in the section "Checking And Replacing The Thermistor" below for further information.  
     
-    So when you get false readings or error reports on the temperature, check the thermistor itself (measuring directly at the contacts of the thermistor at the undersie of the bed) as well as the wiring (and the connections in general of course).  
-    The wires are made out of many single thin wires which are then covered by the insulation. If wires now start breaking due to the repeated movement at a certain spot and therefore they lose contact, the resistance will become higher in that moment - which then results in a lower temperature being read. If this occurs spontaneously while e.g. the bed is moving, the firmware will read a spontaneous drop or shift in the temperature and will most likely report a ["MINTEMP" or "thermal runaway protection" error](../troubleshooting.md#err-mintempmaxtempthermal-runaway).  
-    On the other hand, if some kind of a shortcut will appears, the resistance will become smaller and therefore the temperature will be reported higher. This will most likely cause the ["MAXTEMP" error](../troubleshooting.md#err-mintempmaxtempthermal-runaway).  
-    So by looking at the kind of error being reported, you can already guess what might be the issue.    
 
 ---
 
@@ -684,32 +715,40 @@ Note the dent from the screw and the deformed thermistor due to an overtightened
 
 ## Cartridge Heater
 
-The cartidge heater which is used is a **24V 40W** element.  
-The diameter is 6mm, the length of the original part is about 18mm, the length of the wire is about 150cm.  
+The cartidge heater which is used is a **24V 60W** element.  
+The diameter is 6mm, the length of the original part is about 18mm. The stock part comes with a short wiring and the specific connector attached.    
 
 The following picture shows the stock cartridge heater being used.  
 
-![Stock catridge heater](../assets/images/head_cart-heater_stock_web.jpg)
+![Stock catridge heater](../assets/images/head_K2Pro_cartridge-heater_solo_web.jpg)
 
+The cartridge heater is plugged into the specific hole of the block and is hold in place with a 1.5mm hex grub/set screw.  
+
+![Cartridge heater and block](../assets/images/head_K2Pro_cartridge-heater-block_web.jpg)
+
+![Cartridge heater pulled out](../assets/images/head_K2Pro_cartridge-heater-block-disass_web.jpg)  
+
+<!--
 The following picture shows the JST VH 3.96 connector which is necessary to fit into the socket at the mainboard.  
 
 ![Specific plug of the cartridge heater](../assets/images/head_cart-plug_web.jpg)
+--> 
 
 !!! danger "Check The Grub Screws From Time To Time"
 
-    Check the grub screws/set screws of the heater block and the position of the cartridge heater and the thermistor from time to time!  
+    Check the grub/set screw of the heater block and the position of the cartridge heater from time to time!  
     Due to expansion and contraction of the aluminum heater block and the vibrations that occur, those screws can come loose - which then can result in a part being slipped out!  
     *This is a serious potential of a fire hazard!*    
-    See the following picture of a user where the cartridge heater slipped out of the heater block.  
+    See the following picture of a user where the cartridge heater slipped out of the heater block (at a different printer though).  
     ![Slipped out cartridge heater](../assets/images/head_glowing-cartridge_web.jpg)  
   
-
+<!--
 ??? info "Spare Part Cartridge Heater" 
 
     You can find suitable cartridge heaters on the aftermarket. You'll probably only find some which are about 21mm long as it seems that it's a typical dimension for V5/V6 heater blocks, but that's fine, it just sticks out at both sides of the heater block at the end which shouldn't be a problem. The following picture shows the original part on the left side and a compatible part from the aftermarket I used at the right side.  
   
     ![Cartridge heaters](../assets/images/head_cart-heater_web.jpg)  
-  
+-->  
 
 !!! warning "Replacing The Cartridge Heater / Thermistor" 
 
@@ -720,9 +759,11 @@ The following picture shows the JST VH 3.96 connector which is necessary to fit 
     - If you need to install a new thermistor and/or cartridge heater, you have to unstrip the wires from the wire conduit. You can just unroll the conduit, pull out the wires from the old part while tugging in the wires of the new part. Be careful to not pull too hard to not harm any thin wires which might be wrapped around the wires of the old part. <br> ![Stripping in the new wires](../assets/images/stripping_in_wires_web.jpg)    
     - When installing the parts at the heater block and putting back on the plastic cap of the printhead, I personally avoided to bend the thin wires as it was done within the original installation. I just guided the wires along outside the plastic cover. By doing so, you minimize the risk of getting a shortcut due to a harmed or melted wire isolation at the part where the wires are bent and twisted originally. The following picture shows my new installed thermistor and cartridge heater with the wires running outside of the plastic cap. <br> ![Wires running outside of the plastic cap](../assets/images/head_neo_new-sen-therm_web.jpg)  
 
+<!--
 ??? info "Ceramic Heater Block With Inbuilt Heating Element"
 
     There are ceramic heater blocks on the market which come with M6 threads and an inbuilt heating element (24V, 55W) and a thermistor (100k, most likely it's a "Generous 3950" type). The wires usually aren't long enough for these printers and lack the belonging plugs as well, so further tinkering is necessary to get these ones installed.  
+-->  
 
 ??? tip "Execute PID Tuning"      
     
@@ -776,7 +817,7 @@ The following expandable textbox will give you some basic instructions what you 
 
     You can also check the 24V heating circuit of the cartridge heater itself. Besides inspecting it closely if any visible damages like scratches or abraded spots are visible, you can measure the continuity and resistance of the circuit as well.  
     
-    If the circuit and the cartridge heater is ok, continuity will be given and a resistance of about 14.5Ohm should be reported.  
+    If the circuit and the cartridge heater is ok, continuity will be given and a resistance of about 10.5Ohm should be reported.  
 
 ---
 
@@ -787,13 +828,16 @@ If you need to replace the cartridge heater of the hotend, see the expandable te
 *Of course always turn off the printer and unplug it from the power outlet first and then unplug the belonging connector at the mainboard before attempting replacing either component.*  
 
 When replacing the thermistor and/or the cartridge heater, *make sure you don't overtighten the tiny grub screws / set screws which hold them in place as it could harm both the thermistor and the heater cartridge!*  
+<!--
 Note the dent from the screw and the deformed thermistor due to an overtightened screw from the manufacturer at my **Neo**. <br> ![Deformed thermistor due to an overtightened screw](../assets/images/head_therm-cart-broken_web.jpg)   
- 
+-->
+
 ??? example "Replacing The Cartridge Heater"  
 
     If you need to change the cartridge heater, you should be able to do so by loosening the tiny set screw / grub screw in the heater block which holds it in place. As the screw and the thread might be blocked by hardened filament, heat up the hotend first to get it soft. Turn off the printer then and pay attention to not burn yourself when approaching to change it.  
 
     If the screw is unscrewed enough and doesn't hold the cartridge heater in place anymore, you should be able to pull it out of the heater block. If it doesn't seem to move, carefully grab the metal part with a small pair of pliers, twist it a bit and try to pull it out.  
+    ![Cartridge heater pulled out](../assets/images/head_K2Pro_cartridge-heater-block-disass_web.jpg)  
     Then insert the new cartridge heater, so that it's placed completely inside of the belonging hole and carefully tighten up the grub screw. Don't overtighten it though as you don't want to harm the cartridge heater. 
   
 ---  
@@ -949,9 +993,7 @@ The part cooling fan is a 24V, 0.14A, 50x50x20mm blower, model "Coolcox BF5020H2
 
 According to the [specifications of the manufacturer](https://www.coolcox.com/products/pdf/BF5020_a.pdf), the bearing type of this fan is a 2-ball bearing. The current is listed as 0.08A, even though the label at the fan itself states 0.14A. The fanspeed is listed with 5000rpm, Anycubic states at the product page 7000rpm though. The air flow is listed with 6.0 CFM and the noise level is listed with 34.0 dBA.  
 
-| Coolcox front side | Coolcox backside label |
-|:-------------------|:-----------------------|
-| ![Coolcox BF5020H24D front](../assets/images/head_K2Pro_part-cooling-fan-front_web.jpg) | ![Coolcox BF5020H24D label](../assets/images/head_K2Pro_part-cooling-fan-coolcox_web.jpg) |  
+![Coolcox BF5020H24D front](../assets/images/head_K2Pro_part-cooling-fan_web.jpg)  
 
 
 ---
@@ -960,29 +1002,39 @@ According to the [specifications of the manufacturer](https://www.coolcox.com/pr
 
 The fan duct for the 5020 part cooling blower fan has two outlets at the sides as the following picture shows.  
 
-![Part cooling fan duct](../assets/images/head_K2Pro_part-cooling-fanduct_web.jpg)  
+![Part cooling fan duct](../assets/images/head_K2Pro_part-cooling-fanduct_mounted_backside_web.jpg)  
 
-<!--
-As the stock fan ducts aren't very good in doing their job of part cooling, it's highly recommended to print a better one. This can be done as soon as you can print - you don't need to look out for perfect quality at this point yet. If you're only printing PLA right now, also that is ok for using it for the first enhanced fan duct.  
-Due to the way better part cooling then, it'll massively improve the quality of the printed parts as well as puts you into position to successfully print stronger materials like PETG.  
-
-Signs of improper cooling are e.g. weird molten-like patterns and prints that don't come out well in a specific area on one side of the model, mostly at the side which is opposite to the direction the stock fan duct is being positioned.   
-
-*For the final fan duct it's highly advisable to print them with PETG due to the higher temperature resistance.*
-
-In the following I'll list some of the fan duct models for the **Go** and the **Neo** I came across.  
-The list is kinda outdated right now tho, I need to look around and add the models that were made since I searched the last time. Until then, maybe just do a little research on your own at Thingiverse and Printables.. ;)
--->
+Mind the additional opening at the left handed side in the picture - it seems to be there for cooling the ABL sensor. I don't know yet if this additional opening results in a lack of part cooling at that specific side.   
 
 
 ---
 
 ## Heatsink Cooling Fan  
-The heatsink/coldend cooling fan being used is a 24V, 0.?A, ?0x?0x?0mm, model "Coolcox ??".  
+The heatsink/coldend cooling fan being used is a 24V, 0.08A, 30x30x10mm, model "HSC BCY3010D24H".  
 
-![Coolcox ???](../assets/images/head_K2Pro_fan-heatsink_web.jpg)
+![HSC BCY3010D24H](../assets/images/head_K2Pro_heatsink-fan_web.jpg)
 
+??? example "Dismounting The Heatsink Cooling Fan"  
 
+    If you need to disassemble the heatsink cooling fan, you can't do so right away as one of the screws is blocked by the metal plate where the extruder motor is mounted to.  
+    
+    ![Blocked screw](../assets/images/head_K2Pro_heatsink-fan_mounted_marked_web.jpg)  
+    
+    So for being able to unscrew the screw in the upper left corner, you need to unscrew the two screws in the front which hold the heatsink in place (you don't have to dismount the hotend though).  
+    
+    ![Screws of the heatsink](../assets/images/head_K2Pro_heatsink_dismounted_marked_web.jpg)  
+    
+    Then you can pull out the whole heatsink-hotend-setup out of the feeder gearbox and reach the necessary screws.  
+    
+    ![Both screws accessable](../assets/images/head_K2Pro_heatsink-fan-partially-dism_web.jpg)  
+    
+    Now you can unscrew the fan from the heatsink and take it off.  
+    
+    ![Fan taken off](../assets/images/head_K2Pro_heatsink-fan-dismounted_web.jpg)  
+
+??? example "Remounting The Heatsink Cooling Fan"     
+
+    For reassembling the heatsink cooling fan, just proceed with the steps of dismounting it in reverse.   
 
 ---
 
