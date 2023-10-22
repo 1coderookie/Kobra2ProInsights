@@ -126,7 +126,8 @@ The upsides though can clearly make up the beforementioned issues:
 - Your machine is protected from dust, pet hair and so on.  
 - Depending on the design of the enclosure, you'll achieve a reduction of the noises and the fumes.  
 - Printing certain types of filament will not only become easier (like PETG for example which is already pretty sensitive to a cool airstream hitting the bed), some even require the usage of an enclosure, like ABS for example.  
-- You can integrate certain security functions like a smoke detector and even a fire distinguisher, which can reduce the risk of a fire hazard massively. This is highly dependant on the material the enclosure is built from though - if you're using highly flammable material for insulating the inner parts of the enclosure of if you're building the enclosure from wood, then of course the whole enclosure itself will increase the risk as mentioned above. So make sure you're using proper material.  
+- You can integrate certain security functions like a smoke detector and even a fire distinguisher, which can reduce the risk of a fire hazard massively.  
+  This is highly dependant on the material the enclosure is built from though - if you're using highly flammable material for insulating the inner parts of the enclosure or if you're building the enclosure from wood, then of course the whole enclosure itself will increase the risk as mentioned above. So make sure you're using proper material.  
 
 When thinking about using an enclosure, you'd have to think about the design itself, the size and the materials.  
 If you have no idea to start from, you can find countless solutions as an inspiration across the web (a pretty popular and easy to build solution is the "IKEA Lack enclosure").  
