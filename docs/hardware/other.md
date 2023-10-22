@@ -6,18 +6,20 @@ Here you can find whatever didn't seem to fit in one of the other chapters.
 
 ---
   
-## MicroSD Card
-The printers are shipped with a 8GB microSD card. If you need to replace that card with a new one, make sure to format it as FAT32. Cards up to 32GB should work.  
-It might happen though that several cards won't be accepted and the error message "SD init fail" will be reported. In that case, try to completely format it again (full format, not fast format) as FAT32. If that still doesn't solve the problem, try a different card. I personally had to try five(!) different cards of different sizes until the printer finally accepted one (actually the oldest 4GB I had laying around).  
+## USB Drive
+The printer is shipped with a ??GB USB stick.  
+I didn't test another stick yet, but you should be able to use sticks up to 32GB which are formatted as FAT32.  
 
 ---
   
 ## Spool Holder
-The spool holder of both models is mounted to the top frame.  
+The spool holder is mounted to the left side of the base frame.  
 
-However, due to the construction of the frame itself, the additional weight being put on top of it, the resulting impact of the (changing) weight on vibrations while printing (especially at higher speeds) and because of the poor roll-off behavior of the spool itself I'd suppose to create a spool holder which isn't attached to the printer itself and which uses ball bearings as well.  
 
-If you don't have the space for it or want to keep the spool being attached at the top of the frame because of other reasons, then at least print a holder which uses ball bearings, so that the spool can turn better while the filament gets pulled off of it. Look around at e.g. Thingiverse, there are many models to find.  
+Some people change the position and mount the spool holder to the top of the frame (you can find models for doing so at e.g. Printables.com and Thingiverse.com).  
+However, due to the construction of the frame itself, the additional weight being put on top of it, the resulting impact of the (changing) weight on vibrations while printing (especially at this high-speed type of printer) and because of the poor roll-off behavior of the spool itself, I personally wouldn't do so.  
+If you want to get rid of the stock spool holder mounted to the side due to the additional width of the hole printer setip, I'd suppose to use a spool holder solution which isn't attached to the printer itself and which uses ball bearings as well.  
+
 
 ??? tip "Boxed Spool Holder"
 
@@ -25,7 +27,7 @@ If you don't have the space for it or want to keep the spool being attached at t
     Just print yourself one of those ball bearing spool holders where you place the spool onto, drill a hole in the side of the box and feed the filament through. Then place it next to the printer or onto a shelf above it and you're good.  
     Putting one of these cheap digital hygrometers in the box as well helps keeping an eye on the actual humidity inside of the box.  
 
-    I personally used a cakebox with a lid which I mounted to an adjustable construction to the wall (cuz I couldn't get my hands on a decent box and ran across that cheap cakebox, so I couldn't resist). The spool itself is held by a bolt with some ball bearing spool holder.  
+    I personally used a cakebox with a lid which I mounted to an adjustable construction to the wall (because I couldn't get my hands on a decent box and ran across that cheap cakebox, so I couldn't resist). The spool itself is held by a bolt with some ball bearing spool holder.  
     Of course I put a bag of desiccant and a cheap hygrometer in there as well.  
     This solution isn't as air-tight as a box with a silicone sealed lid, but it does the job in my room fine. Plus, it keeps dust and my cats away from the filament as well.  
 
@@ -33,16 +35,18 @@ If you don't have the space for it or want to keep the spool being attached at t
 
     ![Cakebox holder open](../assets/images/cakebox-holder_open_web.jpg)
 
-    ![Cakebox holder back](../assets/images/cakebox-holder_back_web.jpg)
+    ![Cakebox holder back](../assets/images/cakebox-holder_back_web.jpg)  
+
+    At the printers which are located in an enclosure, I use one of those 4l cereal containers (see the section "Filament Storage" below) with a custom lid and a spool holder mechanism to feed the filament.   
 
 ??? info "Influence Of The Spool Weight On Vibrations"  
 
-    I personally don't like the spool being attached to the top of the frame. Even though I do see the 'value' of it in saving space around the printer, I personally think that adding 1kg (or even 2kg as some people mount a second one on top as well) to this kind of construction isn't the best idea.  
+    I personally don't like the spool being attached to the top of the frame. Even though I do see the 'value' of it in saving space around the printer, I personally think that adding 1kg (or even 2kg as some people mount a second one on top as well) to this kind of construction isn't the best idea. Especially not at these high-speed style bedslingers.    
     
     The construction itself isn't the most rigid one anyway, and the higher the x-axis gantry rises along the z-axis, the stronger the vibrations become which are caused by the moving parts. Adding another kilogram or even more to the top now will enhance this effect, which will become even bigger when printing with higher speeds. Plus, the changing weight of the spool (due to the filament being used) causes a changing pattern of these vibrations.  
     
-    By using Klipper and the Input Shaper functionality, we can measure the vibrations and apply certain algorithms to compensate them. But due to the fact that the patterns of these vibrations alter with the changing weight of the spool(s), it's kinda counterproductive to mount the spool(s) on top.  
-    As I didn't had an empty and a full spool to test the vibrations for investigating this problem, a friend of mine was so kind to run these tests. Even though he uses a Creality Ender3 V2 Neo and not a Kobra Go or Neo, the results are pretty impressive and allow to assume that the behaviour will be somewhat similar due to the same constructions of the printers.  
+    By using Klipper and the Input Shaper functionality, we can measure the vibrations and apply certain algorithms to compensate them (which is somehow implemented -up to a certain degree- in the stock firmware as well). But due to the fact that the patterns of these vibrations alter with the changing weight of the spool(s), it's kinda counterproductive to mount the spool(s) on top.  
+    As I didn't had an empty and a full spool to test the vibrations for investigating this problem, a friend of mine was so kind to run these tests. Even though he uses a Creality Ender3 V2 Neo, the results are pretty impressive and allow to assume that the behaviour will be somewhat similar due to the pretty much same constructions of the printers.  
     
     I don't know *how much* this affects the outcome of the printed model in real life at the end, but as we try to eliminate factors that might have a negative effect anyway, I just wanted to show you this for making you aware of it.  
     
@@ -198,9 +202,17 @@ The difference in quality compared to the "generic" one from Sunlu shown above i
 The enclosure from SainSmart usually is a bit more expensive that the cheapest generic ones you could get, but the much better quality is worth every buck.  
 Sure, the generic one also works, and I used it for printing PETG as well (where using an enclosure isn't necessary, but it helps avoiding any cold airstream hitting the bed) as it was the first tent I got myself. When I then got the one from SainSmart and the difference in quality became obvious, I kind of did regret spending the money on the generic one though as it was only 20€ less than the one from SainSmart.  
 Judging by the product images being available, I *assume* the quality of the enclosure from Creality is comparable to the one from SainSmart, but as mentioned before the slightly smaller size of it made me not buying it.    
+
+However, due to the fact that the stock spool holder is mounted to the left side and the whole printer setup therefore gets wider, it might be the case that this setup won't fit in these tent style enclosures anymore without using a different solution for the spool holder (I didn't check that yet).  
+It *might* be that the generic tents could be used when the lid on the left side is opened and the spool sticks out of the enclosure. As the one from SainSmart has the opening on the right side, this wouldn't be possible with that one then. Doing so might be counterproductive though, as the enclosure won't be closed anymore and a cold airstream might hit the bed. This wouldn't be a problem if you're only PLA anyway, but it would become a problem when printing more demanding types of filament which are sensitive to this.  
+There are bigger tents available on the market es well, but of course that would come with the need of decent space to put them.  
+So I personally would suggest to use a solution where the spool is held by a different type of spool holder, like using one of those abovementioned 4l cereal containers where you added a mechanism to feed the filament from. This also has the advantage that the humidity inside of the container can be held down (by adding a bag of silica gel) which serves those types of filament which tend to take up moisture faster than PLA (like PETG and TPU).  
   
+
+<!--
+
 ---
-  
+
 ## Mods
 In the following I'll list mods or STL files I found which could be interesting in general. Keep in mind that they mostly should fit for both printers in general due to the identical design and contruction itself, so (right now) I don't separate them into **Go** and **Neo** like usually.    
 
@@ -210,6 +222,7 @@ In the following I'll list mods or STL files I found which could be interesting 
 - [Stellar5](https://www.printables.com/de/social/407998-stellar5) created a [purge/drip tray](https://www.printables.com/de/model/351007-anycubic-kobra-go-purgedrip-tray) which can be mounted to the frame and prevents filament from falling underneath the printer while heating up in home position.
 - [ZAch Goldberg](https://www.printables.com/de/social/457330-zach-goldberg) created a [sidemount](https://www.printables.com/de/model/334261-anycubic-kobra-go-side-mount) which can be mounted underneath the holder of the control unit and offers some mounting options for e.g. a Raspberry Pi.   
 
+-->
 
 ---
 
