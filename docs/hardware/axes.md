@@ -656,8 +656,96 @@ In between it's guided and secured by a spring loaded POM anti-backlash nut whic
 
 ### Lead Screws  
 
+  
+---
+
+### Timing Belt  
 
 ---
+
+#### MOD: Adding An Adjustable Tensioner/Idler Pulley For The Timing Belt
+
+This is probably the most important thing you should do right away: add an adjustable tensioner/idelr pulley for the timing belt!  
+My machine came with an absolutely sloppy belt, and actually every other Kobra 2 model which uses this timing belt solution that I've seen seems to have the same problem.  
+You can either get yourself one of those aluminum plates or print yourself an according bracket where you then mount a pulley to. 
+
+(..description..)
+
+---
+
+#### MOD: Z-Axis Driven By Two Motors
+As this machine uses the same mainboard like the Kobra 2 Max/Plus, there is one free connector at the mainboard for connecting a second z-axis motor.  
+
+![Free connector for 2nd z motor](../assets/images/mobo_2nd-z-connector_web.jpg)  
+
+Theoretically speaking, you *should* be able to get rid of the belt system and drive the second lead screw with an own motor instead by simply connecting it.  
+Mind that both motors will still be driven by the same stepper driver though, so you won't be able to use the advantages of two independent stepper drivers/motors anyway.  
+
+However, I personally didn't do that and most likely I won't as there aren't any advantages (imho) to the timingbelt driven system.  
+As a matter of fact, you'll actually have disadvantages: additional load is put onto the stepper driver and the x-gantry could come out of alignment when accidentally pushing one side down. At a timingbelt driven system this isn't a problem as both screws are connected to each other and therefore both screws will turn if you accidentally push down one side of the x-gantry.  
+But this is just my personal opinion, so if you added a second z-motor, please reach out via email (see footer) with a picture so that other users can see your solution.  
+
+---
+
+### Bearing Blocks   
+
+
+---
+
+### Pulleys
+
+---
+
+### Anti-Backlash Nut
+
+---
+    
+#### MOD: Changing The Anti-Backlash Nut  
+
+If the anti-backlash nut that came with the printer is worn out like shown in the picture below, you should look out for a new one.   
+    
+![Worn out nut](../assets/images/axes_worn-nut_web.jpg)  
+    
+The nut shown at the picture above is still useable though as it still sits tight on the rod.  
+However, sooner or later the debris will come off again and stick on the rod which may causes jams or stuttering of the z-axis movement.   
+These stock anti-backlash nuts used by Anycubic are pretty hard to find as a spare part though - and *if* you find them, they're most likely ridiculously overpriced.  
+    
+There are spring loaded anti-backlash nuts made of brass and POM for this kind of lead screw available as well, you can also use them. The following picture shows the stock anti-backlash nut at the left side, a spring loaded brass one in the middle and a spring loaded POM one on the right side.    
+    
+![Anti-backlash nuts](../assets/images/axes_ab-nuts_web.jpg)  
+    
+However, the distance of the threads of the stock anti-backlash nut is 20mm, the ones of the 'regular' ones being available are either 16mm or 18mm - at least I personally didn't find any of them with 20mm distance. The 16mm obviously won't fit, but as the holes of the bracket where you actually mount this nut to are a bit elongated, so nuts with a thread distance of 18mm do actually fit as the following picture shows.  
+
+![Brass anti-backlash nut mounted](../assets/images/axes_brass-ab-nut_web.jpg)
+    
+Whichever spring loaded anti-backlash nut you (re-)install, make sure that you press both parts together when putting the lead screw in. There's a little spring between the upper and the lower part of the nut which is there to prevent the backlash. This spring needs to be pushed together during the installation, so that there's tension and both parts of that nut system are being pushed away from each other when installed.  
+
+If you installed a regular nut like in the picture shown below instead of an anti-backlash nut, I suggest to use a anti-backlash nut as the ones shown above instead.  
+
+![Regular nut](../assets/images/axes_regular-nut_web.jpg)  
+
+---        
+    
+#### MOD: Add An Oldham Coupler
+    
+I highly recommend adding a so called "Oldham Coupler". An Oldham Coupler is made out of three individual parts and it allows horizontal movement of the lead screw which avoids jamming, stuttering or banding caused by the z-axis not being perfectly aligned vertically.  
+
+The following picture shows an assembled Oldham Coupler at the left side. The one at the right side isn't completely taken apart, I just moved the parts for illustrating how it looks and works.  
+
+![Oldham coupler](../assets/images/axes_oldhamcoupler_web.jpg)  
+    
+**An Oldham Coupler needs to be mounted between the bracket which holds the anti-backlash nut and the anti-backlash nut itself. So it's ***not replacing*** any part, it's an addition to the whole setup.**  
+
+(..add pic..)
+    
+You can look out for Oldham Couplers with a 18mm mounting hole distance (often they're advertised for being compatible with a Creality Ender 3) - BUT you'd have to swap out the stock anti-backlash nut and use one of the 'regular' spring loaded anti-backlash nuts with 18mm hole distance as the ones mentioned and shown in the expandable textbox "Changing The Anti-Backlash Nut" above (as the stock nut has 20mm distance between the holes which obviously doesn't match the 18mm of the Oldham Coupler).  
+
+---
+
+### Coupler
+
+---
+
   
 #### MOD: Changing The Coupler
 
@@ -709,90 +797,7 @@ The following picture shows this type of coupler - for comparing the size, the s
 
 ![Diaphragm Coupler vs Spider Coupler](../assets/images/axes_diaphragm-coupler_web.jpg)  
     
-     
----
     
-#### MOD: Changing The Anti-Backlash Nut  
-
-If the anti-backlash nut that came with the printer is worn out like shown in the picture below, you should look out for a new one.   
-    
-![Worn out nut](../assets/images/axes_worn-nut_web.jpg)  
-    
-The nut shown at the picture above is still useable though as it still sits tight on the rod.  
-However, sooner or later the debris will come off again and stick on the rod which may causes jams or stuttering of the z-axis movement.   
-These stock anti-backlash nuts used by Anycubic are pretty hard to find as a spare part though - and *if* you find them, they're most likely ridiculously overpriced.  
-    
-There are spring loaded anti-backlash nuts made of brass and POM for this kind of lead screw available as well, you can also use them. The following picture shows the stock anti-backlash nut at the left side, a spring loaded brass one in the middle and a spring loaded POM one on the right side.    
-    
-![Anti-backlash nuts](../assets/images/axes_ab-nuts_web.jpg)  
-    
-However, the distance of the threads of the stock anti-backlash nut is 20mm, the ones of the 'regular' ones being available are either 16mm or 18mm - at least I personally didn't find any of them with 20mm distance. The 16mm obviously won't fit, but as the holes of the bracket where you actually mount this nut to are a bit elongated, so nuts with a thread distance of 18mm do actually fit as the following picture shows.  
-
-![Brass anti-backlash nut mounted](../assets/images/axes_brass-ab-nut_web.jpg)
-    
-Whichever spring loaded anti-backlash nut you (re-)install, make sure that you press both parts together when putting the lead screw in. There's a little spring between the upper and the lower part of the nut which is there to prevent the backlash. This spring needs to be pushed together during the installation, so that there's tension and both parts of that nut system are being pushed away from each other when installed.  
-
-If you installed a regular nut like in the picture shown below instead of an anti-backlash nut, I suggest to use a anti-backlash nut as the ones shown above instead.  
-
-![Regular nut](../assets/images/axes_regular-nut_web.jpg)  
-
----        
-    
-#### MOD: Add An Oldham Coupler
-    
-I highly recommend adding a so called "Oldham Coupler". An Oldham Coupler is made out of three individual parts and it allows horizontal movement of the lead screw which avoids jamming, stuttering or banding caused by the z-axis not being perfectly aligned vertically.  
-
-The following picture shows an assembled Oldham Coupler at the left side. The one at the right side isn't completely taken apart, I just moved the parts for illustrating how it looks and works.  
-
-![Oldham coupler](../assets/images/axes_oldhamcoupler_web.jpg)  
-    
-**An Oldham Coupler needs to be mounted between the bracket which holds the anti-backlash nut and the anti-backlash nut itself. So it's ***not replacing*** any part, it's an addition to the whole setup.**  
-
-(..add pic..)
-    
-You can look out for Oldham Couplers with a 18mm mounting hole distance (often they're advertised for being compatible with a Creality Ender 3) - BUT you'd have to swap out the stock anti-backlash nut and use one of the 'regular' spring loaded anti-backlash nuts with 18mm hole distance as the ones mentioned and shown in the expandable textbox "Changing The Anti-Backlash Nut" above (as the stock nut has 20mm distance between the holes which obviously doesn't match the 18mm of the Oldham Coupler).  
-
-  
----
-
-### Timing Belt  
-
-
-
-
----
-
-### Bearing Blocks   
-
-
----
-
-### Pulleys
-
----
-
-#### MOD: Adding An Adjustable Tensioner/Idler Pulley For The Timing Belt
-
-This is probably the most important thing you should do right away: add an adjustable tensioner/idelr pulley for the timing belt!  
-My machine came with an absolutely sloppy belt, and actually every other Kobra 2 model which uses this timing belt solution that I've seen seems to have the same problem.  
-You can either get yourself one of those aluminum plates or print yourself an according bracket where you then mount a pulley to. 
-
-(..description..)
-
----
-    
-#### MOD: Z-Axis Driven By Two Motors
-As this machine uses the same mainboard like the Kobra 2 Max/Plus, there is one free connector at the mainboard for connecting a second z-axis motor.  
-
-![Free connector for 2nd z motor](../assets/images/mobo_2nd-z-connector_web.jpg)  
-
-Theoretically speaking, you *should* be able to get rid of the belt system and drive the second lead screw with an own motor instead by simply connecting it.  
-Mind that both motors will still be driven by the same stepper driver though, so you won't be able to use the advantages of two independent stepper drivers/motors anyway.  
-
-However, I personally didn't do that and most likely I won't as there aren't any advantages (imho) to the timingbelt driven system.  
-As a matter of fact, you'll actually have disadvantages: additional load is put onto the stepper driver and the x-gantry could come out of alignment when accidentally pushing one side down. At a timingbelt driven system this isn't a problem as both screws are connected to each other and therefore both screws will turn if you accidentally push down one side of the x-gantry.  
-But this is just my personal opinion, so if you added a second z-motor, please reach out via email (see footer) with a picture so that other users can see your solution.  
-
 ---
 
 ### Z-Axis Motor
