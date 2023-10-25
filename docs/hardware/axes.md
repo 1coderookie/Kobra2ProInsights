@@ -658,97 +658,6 @@ In between it's guided and secured by a spring loaded POM anti-backlash nut whic
 
 
 ---
-
-### Timing Belt  
-
-
----
-
-### Bearing Blocks   
-
-
----
-
-### Pulleys
-
-
----
-
-### Z-Axis Motor
-The motor of the y-axis is a 42-34 Nema 17 stepper motor with a 5mm motor shaft.  
-It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at each steps, and therefore it's doing 200 steps for one full 360° rotation.  
-
-The following pictures show the motor with the mounting bracket.  
-
-| Z-motor back side view | Z-motor side view |
-|:----------------------:|:-----------------:|
-| ![Z stepper mounting](../assets/images/axes_K2Pro_Z-motor_backsideview_web.png) | ![Z- stepper underside](../assets/images/axes_K2Pro_Z-motor_sideview_web.png) |   
- 
-<!--
-As there aren't any specifications and replacement motors from Anycubic being available, you can either use a motor with the beforementioned specs or get yourself a motor from a Creality Ender 3 (or one that's advertised to fit that printer).  
-
-!!! warning "Attention When Connecting The 'Creality'-Type Motor!"  
-
-    As the connections of the stock vs a 'Creality'-type motor are different due to different pinouts of the coils, you need to make sure you connect it correctly!  
-    Therefore you need to switch the position of two wires, best would be to check the coils with a multimeter first!  
-    Please read the expandable textbox below for further information.
--->  
-
-??? example "Identifying The Coils And Connections"  
-
-    When you want to use a different motor than the stock ones, it's most likely the case that the coils are connected to different pins of the 6 pin connector of the motor.  
-    The best would be if you take a multimeter and probe the pins to see which ones belong to a coil. So let me go over this procedure really quick - don't worry, you can't harm the motor by doing the following.  
-    
-    Take your multimeter and set it either to continuity measurement or to resistance measurement. Either one will work - if you have the option for continuity measurements, choose that one though as they often offer a little buzzer which makes a sound when continuity is given.  
-    
-    Unplug the motor (of course) and hold one of the two probes of the multimeter to one of the pins of the 6 pin connector of the motor. I personally like to start at the left side, so hold one probe onto the very left pin.  
-    Then use the other probe and touch the other pins - one after another.  
-    Make sure that both tips of your probes really make contact to the desired pins. Once you found the corresponding pin for the very left sided pin you placed your first probe onto, mark that.  
-    Then move the probe to the next pin and repeat the process.  
-    In the end you'll come up with having two 'paired' pins identified - each pair belongs to one coil.  
-    
-    Now look at the following picture and compare your findings with the marked pins of the two coils of the upper "Stock Motor" (mind that the picture shows the motor of the y-axis right now, but it's actually the same pinout and probing procedure at the z-axis motor).  
-
-    ![Marked motor pins](../assets/images/axes_y-motor_stock-creality_pinout-marked_web.jpg)  
-    
-    If the pairing of your probed pins is the same - fine, you can connect the motor right away.  
-    
-    If the pairing is different, like at the Creality motor shown in the picture, you need to pull out two wires of the connector of the motor cable (one wire of one coil each!), switch them accordingly and insert them back in the connector housing.  
-    At the shown example with the stock vs. the Creality motor, you'd just switch the position of the two inner wires here.  
-    
-    You can pull out the wires (inclduing the attached metal contacts) by pressing down a tiny metal latch of that contact.  
-    Take something like a needle or a tiny screwdriver for that. Gently press that latch down and slightly pull on the wire - the wire with the contact being attached will come out.  
-    Once you put it into the correct position, just push it back into the belonging hole - but mind the orientation! You might hear a little "click" sound, but check if the wire really got into position by looking after that latch and by pulling at the wire - it shouldn't come out.  
-    
-    After a final check if everything is still ok, connect the motor - it should work now.  
-    
-    If it happens that the polarity of the coils/wiring is wrong, you'll experience a stuttering and probably noise-making motor. In that case proceed as above and switch the wiring accordingly.  
-    
-    
----
-
-### Limit Switch
-
-There is no physical limit switch at the z-axis.  
-The probe acts as a virtual endstop.  
-
----
-
-### MOD: Z-Axis Upgrades 
-
-In the following sections I'll list some modifications you can do to the z-axis lead screw system.   
- 
----
-
-#### MOD: Adding An Adjustable Tensioner/Idler Pulley For The Timing Belt
-
-This is probably the most important thing you should do right away: add an adjustable tensioner/idelr pulley for the timing belt!  
-My machine came with an absolutely sloppy belt, and actually every other Kobra 2 model which uses this timing belt solution that I've seen seems to have the same problem.  
-You can either get yourself one of those aluminum plates or print yourself an according bracket where you then mount a pulley to. 
-
-(..description..)
-
----
   
 #### MOD: Changing The Coupler
 
@@ -845,6 +754,32 @@ You can look out for Oldham Couplers with a 18mm mounting hole distance (often t
 
   
 ---
+
+### Timing Belt  
+
+
+
+
+---
+
+### Bearing Blocks   
+
+
+---
+
+### Pulleys
+
+---
+
+#### MOD: Adding An Adjustable Tensioner/Idler Pulley For The Timing Belt
+
+This is probably the most important thing you should do right away: add an adjustable tensioner/idelr pulley for the timing belt!  
+My machine came with an absolutely sloppy belt, and actually every other Kobra 2 model which uses this timing belt solution that I've seen seems to have the same problem.  
+You can either get yourself one of those aluminum plates or print yourself an according bracket where you then mount a pulley to. 
+
+(..description..)
+
+---
     
 #### MOD: Z-Axis Driven By Two Motors
 As this machine uses the same mainboard like the Kobra 2 Max/Plus, there is one free connector at the mainboard for connecting a second z-axis motor.  
@@ -856,10 +791,67 @@ Mind that both motors will still be driven by the same stepper driver though, so
 
 However, I personally didn't do that and most likely I won't as there aren't any advantages (imho) to the timingbelt driven system.  
 As a matter of fact, you'll actually have disadvantages: additional load is put onto the stepper driver and the x-gantry could come out of alignment when accidentally pushing one side down. At a timingbelt driven system this isn't a problem as both screws are connected to each other and therefore both screws will turn if you accidentally push down one side of the x-gantry.  
-But this is just my personal opinion, so if you added a second z-motor, please reach out via email (see footer) with a picture so that other users can see your solution. 
+But this is just my personal opinion, so if you added a second z-motor, please reach out via email (see footer) with a picture so that other users can see your solution.  
 
+---
 
-  
+### Z-Axis Motor
+The motor of the y-axis is a 42-34 Nema 17 stepper motor with a 5mm motor shaft.  
+It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at each steps, and therefore it's doing 200 steps for one full 360° rotation.  
+
+The following pictures show the motor with the mounting bracket.  
+
+| Z-motor back side view | Z-motor side view |
+|:----------------------:|:-----------------:|
+| ![Z stepper mounting](../assets/images/axes_K2Pro_Z-motor_backsideview_web.png) | ![Z- stepper underside](../assets/images/axes_K2Pro_Z-motor_sideview_web.png) |   
+ 
+<!--
+As there aren't any specifications and replacement motors from Anycubic being available, you can either use a motor with the beforementioned specs or get yourself a motor from a Creality Ender 3 (or one that's advertised to fit that printer).  
+
+!!! warning "Attention When Connecting The 'Creality'-Type Motor!"  
+
+    As the connections of the stock vs a 'Creality'-type motor are different due to different pinouts of the coils, you need to make sure you connect it correctly!  
+    Therefore you need to switch the position of two wires, best would be to check the coils with a multimeter first!  
+    Please read the expandable textbox below for further information.
+-->  
+
+??? example "Identifying The Coils And Connections"  
+
+    When you want to use a different motor than the stock ones, it's most likely the case that the coils are connected to different pins of the 6 pin connector of the motor.  
+    The best would be if you take a multimeter and probe the pins to see which ones belong to a coil. So let me go over this procedure really quick - don't worry, you can't harm the motor by doing the following.  
+    
+    Take your multimeter and set it either to continuity measurement or to resistance measurement. Either one will work - if you have the option for continuity measurements, choose that one though as they often offer a little buzzer which makes a sound when continuity is given.  
+    
+    Unplug the motor (of course) and hold one of the two probes of the multimeter to one of the pins of the 6 pin connector of the motor. I personally like to start at the left side, so hold one probe onto the very left pin.  
+    Then use the other probe and touch the other pins - one after another.  
+    Make sure that both tips of your probes really make contact to the desired pins. Once you found the corresponding pin for the very left sided pin you placed your first probe onto, mark that.  
+    Then move the probe to the next pin and repeat the process.  
+    In the end you'll come up with having two 'paired' pins identified - each pair belongs to one coil.  
+    
+    Now look at the following picture and compare your findings with the marked pins of the two coils of the upper "Stock Motor" (mind that the picture shows the motor of the y-axis right now, but it's actually the same pinout and probing procedure at the z-axis motor).  
+
+    ![Marked motor pins](../assets/images/axes_y-motor_stock-creality_pinout-marked_web.jpg)  
+    
+    If the pairing of your probed pins is the same - fine, you can connect the motor right away.  
+    
+    If the pairing is different, like at the Creality motor shown in the picture, you need to pull out two wires of the connector of the motor cable (one wire of one coil each!), switch them accordingly and insert them back in the connector housing.  
+    At the shown example with the stock vs. the Creality motor, you'd just switch the position of the two inner wires here.  
+    
+    You can pull out the wires (inclduing the attached metal contacts) by pressing down a tiny metal latch of that contact.  
+    Take something like a needle or a tiny screwdriver for that. Gently press that latch down and slightly pull on the wire - the wire with the contact being attached will come out.  
+    Once you put it into the correct position, just push it back into the belonging hole - but mind the orientation! You might hear a little "click" sound, but check if the wire really got into position by looking after that latch and by pulling at the wire - it shouldn't come out.  
+    
+    After a final check if everything is still ok, connect the motor - it should work now.  
+    
+    If it happens that the polarity of the coils/wiring is wrong, you'll experience a stuttering and probably noise-making motor. In that case proceed as above and switch the wiring accordingly.  
+    
+    
+---
+
+### Limit Switch
+
+There is no physical limit switch at the z-axis.  
+The probe acts as a virtual endstop.  
       
 ---
 
