@@ -7,8 +7,11 @@
 The stock mainboard is labeled as "Trigorilla_Spe_V1.0.0".   
 
 It is a 32bit 24V mainboard with an ARM Cortex-A7 which runs at 1.2GHz and offers 8GB of internal storage capacity.  
+
 The mainboard comes with four TMC2209 silent stepper drivers (at least that's what Anycubic states - I didn't take off the heatsinks to check if these really are genuine TMC2209 chips) which are *soldered* onto the board (they can't be swapped out!).  
+
 It offers three USB-A connectors labeled as "U-EXT1", "U-EXT2" and "U-FRIMWARE" (yes, typo included ;) ).  
+
 It also offers a built in Realtek WiFi chip ([RTL8723DU](https://www.realtek.com/en/products/communications-network-ics/item/rtl8723du)) with an external antenna.  
 
 ![Mainboard TriGorilla front](../assets/images/mainboard_K2Pro_front_web.jpg)  
@@ -23,7 +26,7 @@ The USB-A connectors can be accessed from the front of the printer, you find the
 
 !!! danger "Add Ferrules To The 24V Wires!" 
 
-    The 24V wires already come with ferrules being added. If it happens that your specific machine doesn't come with ferrules but with tinned wires instead, **it's highly advisable to cut off the tinned tips of the wires without a plug (power supply and heated bed) and add ferrules to them.**  
+    The 24V wires already come with ferrules being added. If it happens that your specific machine doesn't come with ferrules but with tinned wires instead or a ferrule came off, **it's highly advisable to cut off the tinned tips of the wires without a plug (power supply and heated bed) and add ferrules to them.**  
     
     When you are screwing down the soldered tip inside the clamp, the solder will get cracked a bit and may get deformed a bit as well. When the wire gets warm due to the current and the solder gets softer, the contact may become loose which could lead to malfunction or even cause fire in the last consequence. So it's always a good idea to just use proper ferrules. <br> ![Ferrules instead of soldered tips](../assets/images/mainboard_ferrules_web.jpg)  
   
@@ -31,11 +34,10 @@ The USB-A connectors can be accessed from the front of the printer, you find the
   
     *Shortcuts coming from the cartridge heater for example can/will damage your mainboard, so be careful to never cause a shortcut somehow!*  
     
-    A common misbehaviour is to clean the nozzle with a little brass brush during the print process or while everything is heating up.  
-    Also grabbing the heater block to e.g. change the nozzle while everything is heating up and electrical current is flowing is another common mistake.  
-    When using pliers to hold the heater block, the tips of the pliers may touch the contacts of the wires at the cartridge heater and you cause a shortcut. As a result you can/will get blown up part at the mainboard, like the melted part "D4" for example as shown in the picture below. <br> ![Melted D4 caused by a shortcut](../assets/images/mainboard_melted-D4_web.jpg)  
+    A common misbehaviour is to clean the nozzle with a little brass brush during the print process or while everything is heating up. As this isn't a problem when being careful, you *might* harm the insulation of the thermistor's or cartridge heater's wiring and create a shortcut though.  
+    Also grabbing the heater block to e.g. change the nozzle while everything is heating up and electrical current is flowing is another common mistake, because when using pliers to hold the heater block, the tips of the pliers may touch the contacts of the wires at the cartridge heater and you might cause a shortcut.   
     
-    *So always turn off the whole printer first to avoid a shortcut which will destroy your mainboard!*  
+    *So just to be on the safe side, always turn off the whole printer first to avoid a shortcut which will destroy your mainboard!*  
 
     
 <!--
@@ -58,7 +60,7 @@ The USB-A connectors can be accessed from the front of the printer, you find the
     Keep in mind though that you have to pay attention that you *only* cover the 5V pin and that you have to make sure that the tape is still in place every time you plug in the cable after you unplugged it.  
 -->    
 
-<!--
+
 ??? info "Red Glue Across All Connectors"
 
     When you look at the mainboard, you'll see some red glue spread across all connectors. That's just for securing the connnection. You can get that stuff off by carefully pulling it off. It works better if you warm up that stuff *a little bit* for making it more flexible, a hair dryer is good for that. It then becomes a bit softer and easier to be pulled off. Don't heat it up too much though as it'll become too soft then!  
@@ -71,13 +73,13 @@ The USB-A connectors can be accessed from the front of the printer, you find the
     - not rip off the heatsinks of the stepper drivers!  
       This can happen really quick as they're just glued onto the stepper drivers with some thermal paste and the red glue is usually spread across the fins of the heatsinks as well!  
       So *if* you have to pull off that stuff from those connectors of the motor wiring, then *make sure that you press down the heatsink with your finger when trying to pull that stuff off!*  
--->      
+      
 
 ---
 
 ### Mainboard Fan
   
-The following picture shows the fan of the mainboard. It's a ??x??x??mm, 24V, ??A type ("???").  
+The following picture shows the fan of the mainboard. It's a 80x80x15mm, 24V, 0.06A type ("HSC BCY8015S24L").  
 
 ![MCU fan](../assets/images/fan-mainboard_K2Pro_web.jpg)  
 
@@ -88,17 +90,7 @@ It's possible to replace the stock mainboard with a different type of board, lik
 
 There haven't been reports of users who changed the mainboard yet though, so I can't show you any specific solution here at this time.  
 
-<!--
----
-### MOD: BTT SKR Pico
-Reddit user [sutabi](https://www.reddit.com/user/sutabi/) uses a BTT SKR Pico in his **Go**. You can find his post about it here: [Anycubic Kobra Go - BTT SKR Pico](https://www.reddit.com/r/anycubic/comments/13xozgu/anycubic_kobra_go_btt_skr_pico/).  
-He also offers his `printer.cfg` for the Pico in my [Klipper4KobraGoNeo repository](https://github.com/1coderookie/Klipper4KobraGoNeo) - many thanks for that!  
 
----
-
-### MOD: BTT Manta M4P + CB1
-Reddit user [Jurai_Probs](https://www.reddit.com/user/Jurai_Props/) uses a BTT Manta MP4 + CB1 in his **Go**. You can find his post about it here: [Kobra Go Klipper](https://www.reddit.com/r/anycubic/comments/14zf6m6/kobra_go_klipper/).  
--->
 
 ---
 
