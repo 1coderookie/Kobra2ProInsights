@@ -24,6 +24,10 @@ The USB-A connectors can be accessed from the front of the printer, you find the
 
 ![USB-A connectors](../assets/images/printer_K2Pro_USBA_web.jpg)  
 
+The plastic enclosure where the mainboard is located in is about 238x142mm and it's inserted in between the side rails of the base frame.  
+
+(..add pic..)
+
 !!! danger "Add Ferrules To The 24V Wires!" 
 
     The 24V wires already come with ferrules being added. If it happens that your specific machine doesn't come with ferrules but with tinned wires instead or a ferrule came off, **it's highly advisable to cut off the tinned tips of the wires without a plug (power supply and heated bed) and add ferrules to them.**  
