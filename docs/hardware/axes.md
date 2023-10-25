@@ -660,6 +660,10 @@ In between it's guided and secured by a spring loaded POM anti-backlash nut whic
 ---
 
 ### Timing Belt  
+The two lead screws are connected by a closed loop GT-2 timing belt (6mm width, ??mm length).  
+This means, that the lead screw which is driven by the motor drives the second lead screw by the timing belt.  
+
+(..add picture..)
 
 ---
 
@@ -667,6 +671,9 @@ In between it's guided and secured by a spring loaded POM anti-backlash nut whic
 
 This is probably the most important thing you should do right away: add an adjustable tensioner/idelr pulley for the timing belt!  
 My machine came with an absolutely sloppy belt, and actually every other Kobra 2 model which uses this timing belt solution that I've seen seems to have the same problem.  
+
+(..add picture..)
+
 You can either get yourself one of those aluminum plates or print yourself an according bracket where you then mount a pulley to. 
 
 (..description..)
@@ -688,15 +695,39 @@ But this is just my personal opinion, so if you added a second z-motor, please r
 ---
 
 ### Bearing Blocks   
+There are two kinds of bearing blocks at the machine: one at the top of each lead screw and one at the bottom of the lead screw which isn't connected to the motor.  
 
+(..add picture..)
+
+---
+
+#### Top Bearing Blocks
+
+(..add picture..)
+
+---
+
+#### Bottom Bearing Block
+
+(..add picture..)
 
 ---
 
 ### Pulleys
 
+(..add picture..)
+
 ---
 
 ### Anti-Backlash Nut
+The stock anti-backlash nut is made from plastic with POM in the inside where the lead screw runs along.  
+The nut is made out of two parts and is spring loaded.  
+
+(..add picture..)
+
+When receiving the machine and when dis-/mounting the lead screw, you need to make sure that you press both parts firmly together and hold them like that while screwing in the lead screw.  
+
+(..add picture..)
 
 ---
     
@@ -724,6 +755,10 @@ If you installed a regular nut like in the picture shown below instead of an ant
 
 ![Regular nut](../assets/images/axes_regular-nut_web.jpg)  
 
+??? note "Upwards Or Downwards?"  
+
+    You might have seen installations where the spring loaded anti-backlash nuts were mounted upwards, so that the nut is mounted to the topside of the bracket and the spring part is facing upwards. (..add explanation..)  (..add picture..)
+
 ---        
     
 #### MOD: Add An Oldham Coupler
@@ -740,9 +775,27 @@ The following picture shows an assembled Oldham Coupler at the left side. The on
     
 You can look out for Oldham Couplers with a 18mm mounting hole distance (often they're advertised for being compatible with a Creality Ender 3) - BUT you'd have to swap out the stock anti-backlash nut and use one of the 'regular' spring loaded anti-backlash nuts with 18mm hole distance as the ones mentioned and shown in the expandable textbox "Changing The Anti-Backlash Nut" above (as the stock nut has 20mm distance between the holes which obviously doesn't match the 18mm of the Oldham Coupler).  
 
+??? note "Lubricate The Oldham Coupler"  
+
+    As the Oldham Coupler is made out of three individual brass parts which glide along each other, you should add a bit of lubrification on the parts surfaces. You can use PTFE grease like "Super Lube" to do so.  
+
+??? info "Upwards Or Downwards?"  
+
+    You might have seen installations where the Oldham Coupler together with the loaded anti-backlash nuts were mounted upwards, so that the parts are mounted to the topside of the bracket. (..add explanation..)  (..add picture..)
+
+??? info "Additional Backlash?!"
+
+    An Oldham Coupler does add a little bit of backlash to the system, due to the fact that there needs to be a litte bit of clearance between the individual parts of the Oldham Coupler to make it work. This usually isn't a problem though and the benefits of an Oldham Coupler surely make this unwanted effect up.  
+
+
+
 ---
 
 ### Coupler
+The lead screw is mounted to the shaft of the z-axis motor with a rigid coupler.    
+
+(...)
+
 
 ---
 
