@@ -16,30 +16,19 @@
 | **Z-Axis Anti-Backlash Nut**: POM, spring loaded, 8mm inner diameter, 20mm distance between mounting screws (18mm will fit as well due to elongated holes at the bracket!) |
 | **Z-Axis V-Slot Wheels**: POM, ~24x10.2mm with 6mm width at the tip of the "V", 625 type ball bearing with 5mm inner diameter |
 | **Z-Axis Motor**: 42x34 Nema17, 1.8°, 200 steps, 5mm shaft |
-| **Limit Switches**: x- & y-axis = mechanical, NO ; z-axis = optical, NC |
+| **Limit Switches**: x- & y-axis = mechanical, NO ; z-axis = no physical switch given, probe acts as virtual endstop |
 
 ---
 
-This printer is a so called 'bed slinger'. Means, the bed moves along the y-axis (back and forth).  
+This printer is a so called 'bed slinger'.  
+Means, the bed moves along the y-axis (back and forth).  
 The printhead moves along the x-axis (left and right) and is attached to the x-axis gantry.  
 The x-axis gantry moves along the z-axis (up and down).  
 
-The endstop/limit switches of the axes are located at the *minimum* endposition of each axis and are triggered when either axis reaches its limit. The switches of the x- and y-axes are mechanical switches, the one at the z-axis is an optical switch.    
+The endstop/limit switches of the axes are located at the *minimum* endposition of each axis and are triggered when either axis reaches its limit. The switches of the x- and y-axes are mechanical switches. At the z-axis there's no physical switch, here the probe acts as a virtual endstop.    
 So if you notice that e.g. the motor of the y-axis doesn't stop when the bed reaches the end then you should check if the belonging switch is being triggered and/or if it's faulty. 
 
-??? warning "Check And Tram The Frame!"  
 
-    Before going into the details of each axis, let me emphasize once again how important it is to set up and tram the whole [frame](frame.md) correctly and check everything twice before you proceed with assembling the rest of the printer and actually using it.  
-
-    Imagine a frame that is mounted crooked as shown in the section ["Frame"](frame.md) and you're trying to get almost perfect prints or at least somewhat good prints out of it. No matter how much you tweak settings, adjust the belt tensions, adjust the v-slot wheel positions - you won't be able to get the desired outcome.  
-
-    Hopefully you realize how important it is to start with the most important part of the whole printer first - the base frame.  
-    *This is the construction everything else relies on.*  
-    If the base frame is already mounted crooked, if parts aren't perpendicular, parallel and/or equidistant to each other - how should everything else that is running along these structures or is built upon them work as intended?  
-
-    So, please, grab the sufficient tools, take some time and pay close attention when building up the printer.  
-    If you got yourself the Neo, don't trust the preassembled parts, disassemble them and reassemble them in the correct way - at least check if everything is set up as it should be.  
-    Once you've done all that, you'll not only know your printer much better already, but you also created the fundament for a reliably working machine.  
 ---
 
 ## X-Axis
@@ -740,35 +729,24 @@ As there aren't any specifications and replacement motors from Anycubic being av
 
 ### Limit Switch
 
-The optical limit switch of the z-axis is located at the bottom of the left z-axis aluminum profile.  
+There is no physical limit switch at the z-axis.  
+The probe acts as a virtual endstop.  
 
-![z-axis limit switch](../assets/images/axes_z-limitswitch_web.jpeg)  
-
-The little metal lever that triggers the switch is mounted to the left bracket of the x-axis gantry. When the gantry moves down, the lever slides into that slot of the optical switch and triggers it.   
-
-The following pictures show the disassembled limit switch, just in case you're looking out for a suitable third party manufactured replacement.  
-
-![z-axis limit switch open](../assets/images/axes_z-limit_open_web.jpg)  
-
-![z-axis limit switch, sideview](../assets/images/axes_z-limit_sideview-bare_web.jpg)  
-
-![z-axis limit switch, size](../assets/images/axes_z-limit-size-bare_web.jpg)  
-
-??? example "Checking The Switches (And Wires)"
-
-    You can check if the switch really isn't working by triggering it manually while the belonging axis is moving. If the movement doesn't stop, turn off your printer. Check the connectors at the switch and the mainboard if they're still in place.  
-    If everything looks fine here, then it's most likey that either a wire is broken or the switch itself is faulty. If you have a multimeter, you could measure if the switch itself is working as well as check the wires. When measuring the wires, move them around as it may be the case that a wire is slightly broken inside of the insulation and that it loses contact in a certain position of the wire itself.   
-    If the wire is broken, fix it or install a new one. If the limit switch itself is broken, disassemble the switch from the frame and put in a new one. Wire everything up again and try again triggering it manually to see if it works now.  
-
-<!--
 ---
 
 ### MOD: Z-Axis Upgrades 
 
-I personally recommend to do some small modifications to the whole z-axis lead screw system.  
-Start with swapping out the stock coupler and adding an Oldham Coupler as that'll already be a huge improvement.   
-You can always upgrade a second lead screw for example, but the beforementioned parts will be useful in that case as well.  
--->  
+In the following sections I'll list some modifications you can do to the z-axis lead screw system.   
+ 
+---
+
+#### MOD: Adding An Adjustable Tensioner/Idler Pulley For The Timing Belt
+
+This is probably the most important thing you should do right away: add an adjustable tensioner/idelr pulley for the timing belt!  
+My machine came with an absolutely sloppy belt, and actually every other Kobra 2 model which uses this timing belt solution that I've seen seems to have the same problem.  
+You can either get yourself one of those aluminum plates or print yourself an according bracket where you then mount a pulley to. 
+
+(..description..)
 
 ---
   
@@ -818,7 +796,7 @@ Additionally, I also added a nylon washer of the correct thickness underneath th
 There's also another type of coupler available, the so called "Diaphragm Coupling".  This one is bigger and is supposed to compensate misalignments even better.  
 However, it seems like that some additional dampening occurs, which usually isn't adviseable for the z-axis (there are motor dampeners available on the market which you mount between the motors and the frame to dampen vibrations - those ones shouldn't be added to the z-axis motor though), but I personally didn't use this type yet, so I can't really say anything further about it.  
 
-The following picture shows this type of coupler - for comaring the size, the spider coupler mentioned above is put next to it.  
+The following picture shows this type of coupler - for comparing the size, the spider coupler mentioned above is put next to it.  
 
 ![Diaphragm Coupler vs Spider Coupler](../assets/images/axes_diaphragm-coupler_web.jpg)  
     
@@ -859,7 +837,7 @@ The following picture shows an assembled Oldham Coupler at the left side. The on
 
 ![Oldham coupler](../assets/images/axes_oldhamcoupler_web.jpg)  
     
-It needs to be mounted between the bracket which holds the anti-backlash nut and the anti-backlash nut itself. So it's *not replacing* any part, it's an addition to the whole setup.  
+**An Oldham Coupler needs to be mounted between the bracket which holds the anti-backlash nut and the anti-backlash nut itself. So it's ***not replacing*** any part, it's an addition to the whole setup.**  
 
 (..add pic..)
     
