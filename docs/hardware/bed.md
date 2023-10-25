@@ -9,9 +9,9 @@
 | **PEI Plate**: 230x230mm, spring steel, textured on one side |
 | **Thermistor**: 24V, 100k NTC "EPCOS" type, AWG22 wire, two pinned JST XH 2.54 connector |
 | **PCB Heating Coil**: 24V, ~180W, ~3.2Ohm resistance, AWG14 wire |
-| **Bedmount**: 9x18mm rigid spacers/bushings, 4x25mm countersunk head screws |
-| **Silicone Block**: ?x?mm |
-| **Tool height gauge sensor (z-offset)**: ??? |
+| **Bedmount**: 7x14mm rigid spacers/bushings, 4x22mm countersunk head screws |
+| **Silicone Block**: 12x13mm, spring loaded |
+| **Tool height gauge sensor (z-offset)**: 10mm diameter (round), spring loaded |
 
 ---
 
@@ -191,9 +191,70 @@ The following picture shows the surface of the textured side which you're suppos
 
 ---
 
+## Z-Offset Sensor  
+The z-offset sensor is located at the back left hand side of the bedplate, next to the bed's wiring connector and the silicone block for wiping the nozzle.  
+
+The sensor itself is a round, spring loaded metallic piece of 10mm diameter. It's being oushed down by the nozzle which then closes a contact in the inside of the sensor's housing.  
+
+---
+
+### Adjusting The Sensor's Height
+The height of the sensor's surface should be exactly the same height as the PEI build plate.  
+You can check if this is the case by placing a flat object (like one of those open ended wrenches that came with the printer) onto the build plate, let it stick out a bit so that it reaches above the sensor and then carefully move it acros the sensor from the side as shown in the following GIF.  
+
+If the tool hits the sensor, then the sensor is too high!  
+..add pic.. 
+
+If there's a gap between the tool and the sensor, then the sensor is too low!  
+.add pic..
+
+In either case you need to adjust the sensor's height acordingly!
+Also if you change the build plate to any other plate than the stock one, you most likely have to adjust the sensor's height accordingly!   
+Read the violet expandable textbox below for some instructions about how to do so.  
+
+??? example "How To Adjust The Sensor's Height"  
+
+    ...
+
+??? info "Z-Offset Is Constantly Wrong"  
+
+    If your z-offset isn't correct but the sensor itself is working properly, you might have to adjust the sensor's height.  
+    See the violet expandable textbox above for some information about how to do so.  
+
+
+??? info "Error Message "...""  
+
+    If you receive an error message ...  
+
+
+
+
+---
+
+### Adjusting The Sensor's Spring Tension
+Sometimes it's necessary to adjust the sensor's spring tension to ensure it's working properly. Read the violet expandable textbox below for some instructions about how to do so.  
+
+??? example "How To Adjust The Sensor's Spring Tension"  
+
+    ...
+
+    
+
+---
+
+## Silicone Block (For Wiping The Nozzle)  
+The silicone block for wiping the nozzle is located at the back left hand side of the bedplate, next to the bed's wiring connector and the z-offset sensor.  
+This silicone block is about 12x13mm big and is spring loaded. Make sure it can move up and down freely.  
+
+...
+
+
+---
+
 ## Spacers / Bushings Of The Bedmount
 
-The bedplate is mounted onto the gantry with 4mm countersunk screws and rigid plastic spacers between the bedplate itself and the gantry.  
+The bedplate is mounted onto the gantry with 4mm countersunk screws and rigid metal spacers between the bedplate itself and the gantry.  
+The spacers are about 7mm outer diameter with a 5mm bore and they're about 14mm long.  
 
 The following picture shows the two spacers of the right side while being mounted between the bedplate and the gantry.  
 
