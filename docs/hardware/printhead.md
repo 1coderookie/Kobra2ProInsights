@@ -5,7 +5,7 @@
 | Specifications |
 |:---------------|
 | **Feeder system**: Direct drive, dual gear, 4:1 ratio |
-| **Thermistor**: 24V, 100k NTC (probably ATC Semitec 104GT-2/104NT-4-R025H42G type as usual), capsuled, dimensions 3x5mm, two pinned JST XH 2.54 (??) connector |
+| **Thermistor**: 24V, 100k NTC (probably ATC Semitec 104GT-2/104NT-4-R025H42G type as usual), capsuled, dimensions 3x5mm, two pinned JST PH 2.0 (??) connector |
 | **Heater Cartridge**: 24V, 60W, ~10.5 Ohm, dimensions 6x18.5mm, two pinned JST ?? 3.5 connector |
 | **Nozzle**: proprietary Volcano-like nozzle (*not* compatible with Volcano!), 0.4mm |
 | **Heater Block**: Volcano-like type |
@@ -596,7 +596,7 @@ The following pictures show the stock silicone sock from different angles.
   
 ## Thermistor 
 The thermistor which is used is a capsuled NTC 100k.    
-The diameter is 3mm, the length is about 5.5mm. It comes with a short wiring and the specific connector attached.  
+The diameter is 3mm, the length is about 5.5mm. It comes with a short wiring and the specific connector (JST PH 2.0 (?)) attached.  
 
 The following picture shows the stock thermistor being used.  
 
