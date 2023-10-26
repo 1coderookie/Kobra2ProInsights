@@ -95,7 +95,7 @@ The following picture shows this distribution board from a slightly different an
 
 The connection between the mainboard and this distribution board is then accomplished by a ribbon cable. The following picture shows the connector at the head and a part of that ribbon cable.  
 
-![Ribbon cable](../assets/images/head_K2Pro_ribbon-cable.jpg)  
+![Ribbon cable](../assets/images/head_K2Pro_ribbon-cable-connector_web.jpg)  
 
 
 ---
@@ -205,11 +205,16 @@ This machine is using a direct drive, double gear extruder/feeder system (4:1 ra
 
 When you take off the blue plastic cover of the printehad, you can see the ..
 
+
+At the right side of the printhead's plastic cover you can see a hole. In there is a screw which you have to use for adjusting the feeder gear tension.  
+![Feeder gear tensioner](../assets/images/head_K2Pro_feeder-gear-tensioner_web.jpg)  
+
 ??? tip "Can't Load New Filament?!"
 
     For loading new filament, you need to have the hotend heated up to the belonging temperature first - you can't load filament in a cold hotend, as it won't melt in there.  
     
-    If you can't load new filament, first of all check if you pulled the lever on the feeder gear.
+    If you can't load new filament, first of all check if you pushed the lever on the feeder gear all the way to the right.  
+    
     If you did so and were able to insert the filament but it seems that it's getting stuck lower down in the hotend, then you might hit the end of the nozzle with an edge of your filament. It helps when you cut the filament in a 45° angle and bend the part you're manually feeding into the hotend so that it's pretty straight.  
     If you still can't get your filament loaded, it's most likely that the PTFE tube inside of the hotend is clogged or deformed or that you have a clog in or above the nozzle somewhere. To clean, inspect and maintain it, you need to disassemble the hotend. Check the section ["Disassembling The Hotend"](#disassembling-the-hotend) further down below for more information.   
   
@@ -236,13 +241,14 @@ You can access the inside of the feeder system by dismounting the heatsink, whic
 ??? tip "Feeder Gear Pressure"
 
     When adjusting the pressure of the feeder gear, make sure you don't tighten it up too much as it could squeeze and deform the filament. On the other hand it shouldn't be too loose though as it should transport the filament reliably.  
+    The following picture shows you the location of the screw for adjusting the feeder gear tension.  
+    ![Feeder gear tensioner](../assets/images/head_K2Pro_feeder-gear-tensioner_web.jpg)  
+    
     When pulling out the filament of the extruder system, you should notice little dents on the surface of the filament from the teeth of the feeder gear, the filament itself shouldn't be squeezed and deformed though, it should still be "round" so to say. You don't want the feeder gear to "bite" too much into the filament as well though, as this may lead to inconsistentites of the filament flow. I personally like to extrude a bit so that the gear actually has to pull it in. Then I do a cold pull and check the marks of the gear on the filament itself. If you can see and feel little marks of the teeth of the gear on the surface of the filament, then it should be ok. If you don't feel and see any marks, then it's too loose. PLA is pretty hard, so the pressure can/should be a bit higher as well, but if the marks are pretty deep, then it already might be too much. If the filament is already a bit squeezed and kinda flat, then it's definitely way too much pressure (you'll most likely experience some weird artefacts, inconcisties and patterns at your prints as well then).   
     The filament should be fed reliably, which especially comes into account while retracting. So keep an eye on the shaft of the motor by looking at the back of the motor - if you notice that it's slipping while retracting, you definitely need to increase the tension.  
     As a rule of thumb you can keep in mind that the pressure should be higher when using hard filament like PLA and lower when using soft filament like TPU.  
   
-??? tip "Print A Filament Guiding Sleeve"
 
-    I printed a [filament guiding sleeve](https://www.thingiverse.com/thing:5720072) made by ["fredfeuerstein2"](https://www.thingiverse.com/fredfeuerstein2/designs) which sticks in the hole of the feeder gear system where the filament enters. It's guiding the filament and makes sure that the filament will be fed centered. <br> [!Filament guiding sleeve](../assets/images/head_neo_filguide_web.jpg) <br> It's originally designed for the regular Kobra, but it does fit and works great on the **Neo** as well.   
 
 ---
 
@@ -515,7 +521,17 @@ It acts as a guidance and protection for the fed filament and is clipped onto th
 The short PTFE tube which is located in the hotend/heatbreak is about 41mm long.  
 Here the PTFE tube only is an inliner for the heatbreak.   
 
-When you need to cut a new inliner and you're not sure about the correct length, the best would be to actually disassemble the hotend, so that you can install the heatbreak only. Push it into the heatsink as far as you can. Then push the replacement tube into the heatbreak from the bottom, until you can't stick it in any further. Then either cut along the end of the heatbreak or mark that spot and cut it perpendicular afterwards. Then the length should fit - at least it should fit better than the stock inliner.  
+The following picture shows the PTFE inliner assembled in the hotend's heatbreak.  
+
+![Hotend](../assets/images/head_K2Pro_hotend_web.jpg)  
+
+The following picture shows one of the spare PTFE inliner tubes which come with the machine.  
+
+![Spare PTFE inliner](../assets/images/head_K2Pro_spare-PTFE-inlet_web.jpg)  
+
+??? tip "Length Of PTFE Inliner"  
+
+    When you need to cut a new inliner and you're not sure about the correct length, the best would be to actually disassemble the hotend, so that you can install the heatbreak only. Push it into the heatsink as far as you can. Then push the replacement tube into the heatbreak from the bottom, until you can't stick it in any further. Then either cut along the end of the heatbreak or mark that spot and cut it perpendicular afterwards. Then the length should fit - at least it should fit better than the stock inliner.  
 
 ---
   
