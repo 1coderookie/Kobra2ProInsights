@@ -62,7 +62,7 @@ The heating coil is applied as a PCB to the underside of it as you can see in th
 
 ![Bedplate underside](../assets/images/bed_K2Pro_bedplate-underside_web.jpg)  
    
-When you look at the backside of the bed, you'll notice a black plastic cap which sticks out. Be careful to never break it by accident as it acts as a strain relief and protects the wires which are soldered to the contacts of the board at the bottom side.  
+At the left rear side of the bedplate you'll notice a black plastic cap which sticks out. Be careful to never break it by accident as it acts as a strain relief and protects the wires which are soldered to the contacts of the board at the bottom side.  
 Next to that cap the z-offset sensor and the silicone block for wiping the nozzle before probing the bed's surface are located as shown in the following picture.  
 
 ![Z-offset sensor and silicone block](../assets/images/bed_K2Pro_z-sensor_topview_web.jpg)  
@@ -70,6 +70,9 @@ Next to that cap the z-offset sensor and the silicone block for wiping the nozzl
 The following pictures show the underside view of these parts.  
   
 ![Soldered connections](../assets/images/bed_K2Pro_bedplate-connectors_web.jpg)  
+
+Here you can also see the acceleration sensor, the following picture shows it in a closeup view.  
+
 ![Closeup connector](../assets/images/bed_K2Pro_bedplate-connector-closeup_web.jpg)  
   
 When you take a look underneath the bed itself, you'll spot a little foam piece secured by Kapton tape as you can see in the following picture.  
@@ -145,7 +148,7 @@ However, I have to mention that I didn't print with higher bed temperatures than
 On top of the aluminum bedplate there's a magnetic foil applied. If you order a spare part heat bed, then you'll most likely only get the aluminum bedplate, but not the magnetic foil. So you'll have to get yourself a magnetic foil as well.  
 If you choose a foil from the aftermarket, make sure to get the correct size. The bedplate is 230x230mm, but actually most of the foils being available on the market seem to be 235x235mm. That's fine though, as you can easily cut off any pieces of foil which are exceeding the dimensions of the bedplate then. Make sure to get yourself a foil which uses 3M glue.   
 
-The following picture shows the magnetic foil that Anycubic shipped together with a replacement bedplate - the pictures show the parts of a different machine's bed (Kobra Neo), but the foil itself is pretty much the same though (the holes are just shaped slightly different).  
+The following picture shows a magnetic foil that Anycubic shipped together with a replacement bedplate - the pictures show the parts of a different machine's bed (Kobra Neo), but the foil itself is pretty much the same though (the holes are just shaped slightly different plus there are two additional holes for mounting the z-offset sensor housing).  
 
 | Magnetic Foil (Spare Part) | Backside |
 |----------|-------------|
@@ -211,29 +214,85 @@ The following picture shows the surface of the textured side which you're suppos
 ---
 
 ## Z-Offset Sensor  
-The z-offset sensor is located at the back left hand side of the bedplate, next to the bed's wiring connector and the silicone block for wiping the nozzle.  
+The z-offset sensor is located at the rear left hand side of the bedplate, next to the bed's wiring connector and the silicone block for wiping the nozzle.  
+The sensor itself is a round, spring loaded metallic piece of 10mm diameter. It's being pushed down by the nozzle and then closes a contact in the inside of the sensor's housing.  
 
-The sensor itself is a round, spring loaded metallic piece of 10mm diameter. It's being oushed down by the nozzle which then closes a contact in the inside of the sensor's housing.  
+![Z-offset sensor and silicone block](../assets/images/bed_K2Pro_z-sensor_topview_web.jpg)   
+
+In the following picture you can see the two pin connector with the red and white wires which connect the z-offset sensor to the mainboard.  
+
+![Soldered connections](../assets/images/bed_K2Pro_bedplate-connectors_web.jpg)  
+
+---
+
+### Adjusting The Sensor's Spring Tension
+The sensor is spring loaded and should move up and down freely when being triggered.  
+Make sure that it does like that and that it pops up again by itself once being released after being held down.  
+
+GIF
+
+Sometimes it's necessary to adjust the sensor's spring tension to ensure it's working properly.  
+Read the violet expandable textbox below for some instructions about how to do so.  
+
+??? example "How To Adjust The Sensor's Spring Tension"  
+
+    ![Sensor screws](../assets/images/bed_K2Pro_z-sensor_screws_labeled_web.jpg)   
+
+    
 
 ---
 
 ### Adjusting The Sensor's Height
-The height of the sensor's surface should be exactly the same height as the PEI build plate.  
-You can check if this is the case by placing a flat object (like one of those open ended wrenches that came with the printer) onto the build plate, let it stick out a bit so that it reaches above the sensor and then carefully move it acros the sensor from the side as shown in the following GIF.  
+The height of the sensor's surface should be exactly the same height as the topside of the PEI build plate.  
+*This is crucial for a proper working z-offset calculation!*  
+
+You can check if this is the case by placing a flat object (like one of those open ended wrenches that came with the printer) onto the build plate, let it stick out a bit so that it reaches above the sensor and then carefully move it across the sensor from the side as shown in the following GIF.  
+
+GIF  
+
+The following pictures show a perfectly adjusted height.  
+
+| Sensor correct height | Sensor correct height |
+|:---------------------:|:---------------------:|
+| ![Sensor correct height 1](../assets/images/bed_K2Pro_sensor-correct1_web.jpg) | ![Sensor correct height 2](../assets/images/bed_K2Pro_sensor-correct2_web.jpg) | 
 
 If the tool hits the sensor, then the sensor is too high!  
-..add pic.. 
+
+| Sensor too high | Sensor too high |
+|:---------------------:|:---------------------:|
+| ![Sensor too high 1](../assets/images/bed_K2Pro_sensor-too-high2_web.jpg) | ![Sensor too high 2)](../assets/images/bed_K2Pro_sensor-too-high-closeup_web.jpg) | 
 
 If there's a gap between the tool and the sensor, then the sensor is too low!  
-.add pic..
+
+| Sensor too low | Sensor too low |
+|:---------------------:|:---------------------:|
+| ![Sensor too high 1](../assets/images/bed_K2Pro_sensor-too-low2_web.jpg) | ![Sensor too high 2)](../assets/images/bed_K2Pro_sensor-too-low-closeup_web.jpg) | 
 
 In either case you need to adjust the sensor's height acordingly!
-Also if you change the build plate to any other plate than the stock one, you most likely have to adjust the sensor's height accordingly!   
-Read the violet expandable textbox below for some instructions about how to do so.  
+
+!!! warning "Adjust The Sensor's Position When Using A Different Build Plate"  
+
+    If you change the build plate to any other plate than the stock one, you most likely have to adjust the sensor's height accordingly as the thickness will most likely be different!     
+
+    Read the violet expandable textbox below for some instructions about how to adjust the sensor's position.  
 
 ??? example "How To Adjust The Sensor's Height"  
 
-    ...
+    - If you need to adjust the sensor's position, make sure that the sensor can freely move up and down - it *must* pop up by itself once released after being pusehd down.  
+    
+    - Now place a flat object like the two-sided open end wrench onto the build plate.  
+      Let it stick out at the end, so that it reaches across the sensor. Make sure to press down the tool firmly onto the bed, so that it's actually *really* laying flat on the build plate!  
+
+    - While holding the tool in this position across the sensor's button, now loosen the M2 hex screw which is for adjusting the sensor's height. See the following picture for identifying it's location.  
+    
+      ![Sensor screws](../assets/images/bed_K2Pro_z-sensor_screws_labeled_web.jpg)   
+
+    - If the sensor was *too low*, it should now pop up and hit the tools's underside. Make sure this is the case and retighten the M2 hex screw again.  
+    - If the sensor was *too high*, it's position changed due to the tool pressing it down. You can now retighten the M2 hex screw again.  
+
+    - *After you finished adjusting the sensor's height, check if the sensor still can move freely and if it now really has the perfect height.*  
+
+    
 
 ??? info "Z-Offset Is Constantly Wrong"  
 
@@ -248,16 +307,7 @@ Read the violet expandable textbox below for some instructions about how to do s
 
 
 
----
 
-### Adjusting The Sensor's Spring Tension
-Sometimes it's necessary to adjust the sensor's spring tension to ensure it's working properly. Read the violet expandable textbox below for some instructions about how to do so.  
-
-??? example "How To Adjust The Sensor's Spring Tension"  
-
-    ...
-
-    
 
 ---
 
@@ -267,6 +317,15 @@ This silicone block is about 12x13mm big and is spring loaded. Make sure it can 
 
 ...
 
+## Acceleration Sensor
+
+The following pictures show the underside view of these parts.  
+  
+![Soldered connections](../assets/images/bed_K2Pro_bedplate-connectors_web.jpg)  
+
+Here you can also see the acceleration sensor, the following picture shows it in a closeup view.  
+
+![Closeup connector](../assets/images/bed_K2Pro_bedplate-connector-closeup_web.jpg)  
 
 ---
 
