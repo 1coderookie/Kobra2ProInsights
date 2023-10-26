@@ -477,12 +477,13 @@ My 'rule of thumb' here is: if you can bend the belt down a bit by applying some
 
 ### Belt Tensioner
 
-The following picture shows the belt tensioner located at the front of the y-axis aluminum frame.  
+The following picture shows the belt tensioner located at the front of the y-axis aluminum rail.  
 
-![Y-axis knob](../assets/images/y-axis_knob_web.jpg)
+![Y-axis knob](../assets/images/axes_K2Pro_Y-axis-tensioner_web.jpg)
 
 You adjust the tension of the belt by turning it clockwise for increasing the tension and turning it counter-clockwise for decreasing it.  
 
+<!--
 ??? example "Disassembling The Belt Tensioner"
 
     It might happen that you have to disassemble the tensioner in order to replace a broken belt or a broken (part of the) tensioner.  
@@ -507,6 +508,7 @@ You adjust the tension of the belt by turning it clockwise for increasing the te
     Then slide the whole setup back into place where it belongs and screw in the two screws which hold the blue plastic cap into place.  
     Finally hook up the end of the belt to that notch at the bedgantry again.   
     Once everything is done, adjust the belt tension again by turning the knob clockwise.  
+-->  
 
 ---
 
@@ -622,9 +624,15 @@ As the bearings will suffer from running along the metal rail and debris can bui
 
 ### Limit Switch
 
-The limit switch for the y-axis is mounted to the metal bracket of the motor at the back. The bed gantry triggers the switch when moved completely to the back.  
+The limit switch for the y-axis is mounted to the metal bracket of the Y-axis motor at the back.  
 
 ![Y-axis limit switch](../assets/images/axes_K2Pro_Y-limitswitch_web.jpg)  
+
+The rear wheel on the left side of the bed gantry triggers the switch when moved completely to the back.  
+
+| Y-limit switch open | Y-limit switch closed |
+|:-------------------:|:---------------------:|
+| ![Y-limit switch open](../assets/images/axes_K2Pro_Y-limit-open_web.jpg) | ![Y-limit switch closed](../assets/images/axes_K2Pro_Y-limit-closed_web.jpg) | 
 
 
 ??? example "Checking The Switches (And Wires)"
