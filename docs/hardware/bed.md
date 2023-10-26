@@ -23,7 +23,7 @@ The following pictures show the bedplate (without the PEI plate) from the top an
 
 | Bedplate topside | Bedplate underside |
 |:----------------:|:------------------:|
-| ![Bedplate top](../assets/images/bed_K2Pro_bedplate-labeled_web.jpg) | ![Bedplate underside](../assets/images/bed_K2Pro_underside_web.jpg) |
+| ![Bedplate top](../assets/images/bed_K2Pro_bedplate-labeled_web.jpg) | ![Bedplate underside](../assets/images/bed_K2Pro_bedplate-underside_web.jpg) |
 
 The build volume is 220x220mm.  
 Anycubic states in the official specs that the *size* is 220x220mm as well - which is definitely wrong and misleading though, as the *physical* dimension of the bed is 230x230mm.  
@@ -60,7 +60,7 @@ The surface is covered with a protective foil, which you have to pull off before
 
 The heating coil is applied as a PCB to the underside of it as you can see in the following picture.  
 
-![Bedplate underside](../assets/images/bed_K2Pro_underside_web.jpg)  
+![Bedplate underside](../assets/images/bed_K2Pro_bedplate-underside_web.jpg)  
    
 When you look at the backside of the bed, you'll notice a black plastic cap which sticks out. Be careful to never break it by accident as it acts as a strain relief and protects the wires which are soldered to the contacts of the board at the bottom side.  
 Next to that cap the z-offset sensor and the silicone block for wiping the nozzle before probing the bed's surface are located as shown in the following picture.  
