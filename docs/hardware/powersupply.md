@@ -14,8 +14,7 @@
 
 The printer comes with a 400W power supply unit which can take 110V and 230V AC as well.  
 
-![Sticker power supply front](../assets/images/powersupply_label_web.jpg)
-![Sticker power supply itself](../assets/images/psu_label_web.jpg)  
+![Sticker power supply itself](../assets/images/psu_K2Pro_label_web.jpg)  
   
 The powerswitch and the plug are located at the left hand corner in the back at the side of the frame. There is also a fuse integrated in the powerswitch box which you can pull out and exchange if necessary. 
 
@@ -25,19 +24,40 @@ The powerswitch and the plug are located at the left hand corner in the back at 
 
     Before plugging in the powercord and switching on the printer, make sure that you set the little switch for choosing the voltage to the correct value! You can access it from the back of the printer and either set it to 110V or 230V - so make sure everything is set correctly first! <br> ![Voltage switch](../assets/images/psu_K2Pro_voltage-switch_web.jpg)  
   
-The housing of the power supply unit is mounted at the back of the base frame underneath the bed. You can spot it from the front when you move the bed completely to the back as the following picture shows.  
+The housing of the power supply unit is mounted at the back of the base frame underneath the bed. If you pull the bed to the front, you can see the metallic housing. For getting a better view, I dismounted the bedplate and the z-axis frame as shown in the following picture.  
 
-![Housing underneath the bed](../assets/images/powersupply_case-front_web.jpg)
+![Housing underneath the bed](../assets/images/frame_K2Pro_baseframe_web.jpg)
+
+!!! warning "Warning: Turn Off And Unplug The Machine Before Accessing The Connectors"  
+
+    It must be said at this point that you shouldn't access the PSU's connectors.  
+    However, *if* you have to do so, make sure that you switched it off AND that you have *unplugged it*!  
+
+??? example "Accessing The Connectors"  
+
+    - If you need to access the connectors, you have to take off the metal plate on the underside which covers the connectors by taking out three screws.  
+      ![Bottom screws](../assets/images/psu_K2Pro_underside-mounting_marked_web.jpg)  
   
-The following picture shows the location of the PSU (in the back, without the metal cover) and the mainboard (in the front, without the plastic cover) at the **Neo**.  
+The following picture shows the connectors of the PSU with the three 115V/230V AC wires on the right side (L = brown, N = blue, earth = yellow/green) and the 24VDC on the left side (V+ = red and V- = black). Mind the additional black wire that is connected to "earth" of the 115/230V AC connector.    
 
-![Location PSU](../assets/images/neo_underside_mb-psu_web.jpg)  
-  
-The following picture shows the connectors of the PSU with the three 115V/230V AC wires on the right side (L = brown, N = blue, earth = yellow/green) and the 24VDC on the left side (V+ = red and V- = black).  
+![Connectors PSU](../assets/images/PSU_connectors_labeled_web.jpg)  
 
-![Connectors PSU](../assets/images/psu_connectors_web.jpg)  
+On the very left side you can see a green LED and right next to it a white potentiometer. With this potentiometer you can adjust the output voltage - so if you probe the voltage at the 24V DC connectors and you don't have 24V there, you can adjust the voltage to the correct value.  
 
-On the very left side you can see a green LED and right next to it a white potentiometer. With this potentiometer you can adjust the output voltage - so if you measure the voltage at the 24V DC connectors and you don't have 24V there, you can adjust the voltage to the correct value.  
+
+!!! warning "Warning: Don't Open The PSU - And IF So, Don't Touch Any Parts Inside"  
+
+    It must be said at this point that you shouldn't open the PSU.  
+    However, *if* you have to do so, make sure to *not touch* any parts on the inside!  
+    **There are capacitors built in which can give you severe eletrical shocks even if the machine isn't plugged in or switched on as they store electricity!** 
+
+??? example "Dismounting The PSU"    
+
+    - If you need to dismount the PSU because you want to e.g. change the cover or have to change the fan, you need to unscrew four screws at the top which hold it in place.  
+      ![Top screws](../assets/images/psu_K2Pro_top-screws-marked_web.jpg)  
+
+    - Then you have to take off the metal plate on the underside which covers the connectors by taking out three screws.  
+      ![Bottom screws](../assets/images/psu_K2Pro_underside-mounting_marked_web.jpg)  
 
 The following picture shows the PCB of the PSU - the fan isn't plugged in, the belonging connector is the white two-pin connector in the upper left edge area of the board.    
 
@@ -63,6 +83,7 @@ I found a model for a different cover, which was actually made for using a diffe
 For making sure that nothing will get through those bigger holes, I hot-glued a piece of mosquito net to it from the inside. Instead of drilling holes for the stock fan, I just used two of the existing holes and added some washers for making the screws clamp the fan to the cover.  
 
 *You can find my version at Printables.com: [Anycubic Kobra Go/Neo PSU Cover (Stock Fan!)](https://www.printables.com/de/model/559590-anycubic-kobra-goneo-psu-cover-stock-fan)*  
+Don't be irritated by the fact that it's named "Kobra Go/Neo PSU Cover" - the PSU being used here is exactly the same as at the Kobra Go/Neo, so it just fits perfectly.  
 
 The following picture shows the stock cover plate and the 'custom' one (yes, they are the same size, it just doesn't look like that on the picture).  
 
@@ -73,7 +94,7 @@ I put a smartphone with an app for measuring the noise on the x-axis part of the
 
 The following picture shows the PSU mounted again.   
 
-![Modded PSU mounted](../assets/images/PSU_altcover-mounted_web.jpg)  
+![Modded PSU mounted](../assets/images/psu_K2Pro_custom-lid-mounted_web.jpg)  
 
 As this lid sticks out a few milimeters and the clearance is already pretty low with the stock setup, I raised the printer a bit by mounting slightly taller feet I had laying around. You can also print some risers which can be plugged onto the existing feet.   
 If you do so and you're using Klipper and resonance compensation (aka Input Shaping), keep in mind that the vibrational behaviour will change and you therefore should execute a new resonance measurement. 
