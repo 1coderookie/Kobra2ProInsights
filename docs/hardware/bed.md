@@ -256,6 +256,8 @@ This silicone block is about 12x13mm big and is spring loaded. Make sure it can 
 The bedplate is mounted onto the gantry with 4mm countersunk screws and rigid metal spacers between the bedplate itself and the gantry.  
 The spacers are about 7mm outer diameter with a 5mm bore and they're about 14mm long.  
 
+![Stock spacers](../assets/images/bed_K2Pro_stock-spacers_web.jpg)  
+
 The following picture shows the two spacers of the right side while being mounted between the bedplate and the gantry.  
 
 ![Spacers mounted](../assets/images/bed_K2Pro_spacers-mounted_web.jpg) 
