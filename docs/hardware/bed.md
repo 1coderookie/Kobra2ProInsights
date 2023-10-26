@@ -15,11 +15,15 @@
 
 ---
 
-Both printers use the same heated bed (it's actually the same bedplate which is used at the regular Kobra as well).  
-The bed consists of a 3mm aluminum [bedplate](#bedplate) with the heating coil being attached to the underside as a PCB. On the top surface there's a [magnetic foil](#magnetic-foil) glued onto it which then holds the [PEI plate](#pei-plate) in place.  
-The following picture shows the components.  
+The bed consists of a 3mm aluminum [bedplate](#bedplate) with the heating coil being attached to the underside as a PCB.  
+On the top surface there's a [magnetic foil](#magnetic-foil) glued onto it which then holds the [PEI plate](#pei-plate) in place.  
+Next to the wiring at the left rear side of the bedplate is a sensor for measuring the z-offset and a silicone block for cleaning the nozzle.  
 
-![Bed components](../assets/images/bed_spare_web.jpeg)
+The following pictures show the bedplate (without the PEI plate) from the top and the underside.  
+
+| Bedplate topside | Bedplate underside |
+|:----------------:|:------------------:|
+| ![Bedplate top](../assets/images/bed_K2Pro_bedplate-labeled_web.jpg) | ![Bedplate underside](../assets/images/bed_K2Pro_underside_web.jpg) |
 
 The build volume is 220x220mm.  
 Anycubic states in the official specs that the *size* is 220x220mm as well - which is definitely wrong and misleading though, as the *physical* dimension of the bed is 230x230mm.  
@@ -30,9 +34,9 @@ Anycubic states in the official specs that the *size* is 220x220mm as well - whi
     As it seems that most parts out there are either 220x220mm or 235x235mm, get yourself the 235x235mm version then. There is about 4mm space between the z-axis aluminum frames and the original bedplate, so if you pay attention to position e.g. the bigger PEI plate from the aftermarket correctly, then it'll fit.     
 
 The temperature of the bed should reach about ≤230°F/110°C maximum and therefore it's possible to successfully print e.g. ABS, PETG and TPU (by using a housing though) besides PLA.  
-However, it seems to be advisable to not exceed 80° bedtemp if possible, as everything above is said to be a critical temperature for the glue of the magnetic foil.   
 
-Both printers offer a 25-point automatic bed leveling which is called ["Anycubic LeviQ"](#anycubic-leviq-automatic-bed-leveling-function).  
+The machine offers a 25-point automatic bed leveling which is called ["Anycubic LeviQ 2.0"](#anycubic-leviq-automatic-bed-leveling-function).  
+In addition to only probing the bed's surface, there's a sensor located at the left rear side which is being used for determining the z-offset.  
 
 In the following I'll go into the details of each part of the whole bed construction.  
 
@@ -41,23 +45,32 @@ In the following I'll go into the details of each part of the whole bed construc
 ## Bedplate
 
 The bedplate itself is a 230x230mm aluminum plate of 3mm thickness.  
+On the top surface there's a [magnetic foil](#magnetic-foil) glued onto it which then holds the [PEI plate](#pei-plate) in place.  
+Next to the wiring at the left rear side of the bedplate is a sensor for measuring the z-offset and a silicone block for cleaning the nozzle.  
+
+![Bedplate top](../assets/images/bed_K2Pro_bedplate-labeled_web.jpg)  
+
 When buying the bedplate as a spare part, it'll come without the magnetic foil being attached as the following picture shows.  
 
+<!--
 ![Bedplate top view](../assets/images/bed_plate-new_web.jpeg)  
 
 The surface is covered with a protective foil, which you have to pull off before applying the magnetic foil.   
+-->
 
 The heating coil is applied as a PCB to the underside of it as you can see in the following picture.  
 
-![Bed underside](../assets/images/bed_underside_web.jpg)  
+![Bedplate underside](../assets/images/bed_K2Pro_underside_web.jpg)  
    
-When you look at the backside of the bed, you'll notice a black plastic cap which sticks out.  
+When you look at the backside of the bed, you'll notice a black plastic cap which sticks out. Be careful to never break it by accident as it acts as a strain relief and protects the wires which are soldered to the contacts of the board at the bottom side.  
+Next to that cap the z-offset sensor and the silicone block for wiping the nozzle before probing the bed's surface are located as shown in the following picture.  
+
+![Z-offset sensor and silicone block](../assets/images/bed_K2Pro_z-sensor_topview_web.jpg)  
+
+The following pictures show the underside view of these parts.  
   
-![Bed connector](../assets/images/bed_connector_side_web.jpg)
-  
-Be careful to never break it by accident as it acts as a strain relief and protects the wires which are soldered to the contacts of the board at the bottom side.   
-  
-![Soldered connections](../assets/images/bed_connection_web.jpg)
+![Soldered connections](../assets/images/bed_K2Pro_bedplate-connectors_web.jpg)  
+![Closeup connector](../assets/images/bed_K2Pro_bedplate-connector-closeup_web.jpg)  
   
 When you take a look underneath the bed itself, you'll spot a little foam piece secured by Kapton tape as you can see in the following picture.  
   
@@ -67,7 +80,7 @@ Don't remove that piece of foam as it protects and insulates the thermistor of t
 
 ![Bed thermistor](../assets/images/bed_thermistor_web.jpeg)
 
-The thermistor is a 100k NTC type which is soldered onto the PCB. According to the settings of the firmware, it's an EPCOS type.  
+The thermistor is a 100k NTC type which is soldered onto the PCB.    
 
 ??? info "What Is A "100k NTC" Thermistor?"
 
@@ -85,6 +98,8 @@ The thermistor is a 100k NTC type which is soldered onto the PCB. According to t
 What I personally can highly recommend is to insulate the underside of the bed.  
 You can get special insulation mats for 3d printers which meet the requirements for this (like being suited for higher temperatures and being flame retardant) for a few bucks. See the expandable textblock below for some tips about the installation.    
 Make sure you order the correct size (preferrably a bit bigger) which is 230x230mm as that's the size of the bedplate itself.  
+
+The following picture shows an insulated bedplate (not yet the one of this machine though).  
 
 ![Bed insulated](../assets/images/bed_insulated_web.jpg)
 
@@ -106,13 +121,17 @@ However, I have to mention that I didn't print with higher bed temperatures than
     Before I'll go into the steps about how to apply the insulation, I have to point out a few things first:  
     
     - *You'll need longer spacers and screws due to the thickness of the insulation (which is about 9-10mm most of the time)!*  
-    - *You'll need to raise the whole bedplate to avoid contact between the insulation and the motor mount at the back of the construction.* If you use the beforementioned 25mm springs and longer screws, you should be fine as they are longer then the stock spacers anyway. If you'll use the stock spacers or silicone spacers of about the same size, you can add bolt nuts underneath to raise the bed.  
-    - *It's also advisable to have Kapton tape on hand to cover the whole underside of the bedplate with it (before you actually apply the insulation) and to secure the edges and sides of the insulation (after applying the insulation)!*     
+    - *You'll need to raise the whole bedplate to avoid contact between the insulation and the motor mount at the back of the construction.*  
+        If you use the beforementioned 25mm springs and longer screws, you should be fine as they are longer then the stock spacers anyway.  
+        If you'll use the stock spacers or silicone spacers of about the same size, you can add bolt nuts underneath to raise the bed. However, it's advisable though to get yourself longer spacers then!   
+    - *It's also advisable to have Kapton tape on hand to cover the whole underside of the bedplate with it (before you actually apply the insulation) and to secure the edges and sides of the insulation (after applying the insulation)!*  
+        Make sure that *no bubbles* are trapped between the Kapton tape and the surface of the bed's underside then! And do a proper cleaning of the surface to avoid that the tape will (partially) come off!   
     
     - For adding the insulation, you need to dismount the bedplate from the gantry by taking out the four screws (remove the PEI coated plate first tho). Be careful with the wires when moving the plate. Put the plate onto the insulation (but don't peel off the protective layer of the adhesive yet!), align it and mark the four holes of the screws.  
     - Then place the bed upside down on a flat and clean surface - wipe the surface beforehand tho to make sure that there's no dirt or even metal chips which would press into or stick onto the magnetic surface. Now use IPA or (which I prefer) silicone remover to wipe the underside of the bed where the insulation should be applied to and clean off any dirt or grease from your fingers.  
     - Now lay down the insulation onto the bed like if you would apply it (*but still with the protective layer on the adhesive!*) and adjust the position. Mark the area where the wires are connected to the bed as well and cut away that part of the insulation. Place the spacers above the premarked holes and cut away the insulation in that area as well, so that the spacers will touch the plate later without any insulation between. I'd recommend to mark the areas that should be cut and then take the insulation away from the bedplate, so that you don't harm the surface when using a sharp knife or so.   
     - When it comes down to finally apply the insulation, *I personally would suggest to cover the whole surface of the bed with Kapton tape first,* just in case you'd have to tear off the insulation in the future. I also added two layers of Kapton tape especially above the contacts and the little piece of foam of the thermistor in the center of the bed and marked that area roughly at the insulation, just in case I'd have to replace the thermistor in the future.  
+        Note: looking back, I now would *remove* that piece of foam which covers the thermistor in the middle to make sure the insulation covers the bed without any air trapped in between! Cover that hole of the thermistor with Kapton tape though before you apply the insulation.  
     - Once everything is done and prepared, you can finally apply the insulation. Make sure you start at one side to avoid any bubbles, you want the insulation to stick on the bed equally. If some of the insulation protrudes beyond the plate, cut it off. The following picture shows the applied insulation. <br> ![Bed insulated](../assets/images/bed_insulated_web.jpg)   
     - *I highly recommend to additionally secure the insulation by using some pieces of Kapton tape as well to ensure that the edges and sides of the insulation won't come loose.* Don't skip this step, as the insulation most likely will come off sooner or later at the sides and edges (at least mine did).    
     - Then add the spacers and the screws and mount the bed onto the gantry again. Make sure that the insulation doesn't touch the construction and the motor mount at the back, the bed has to move as free as before. So move the bedplate manually to see if everything is fine and if there's enough clearance between the insulation and the other parts.  
@@ -126,7 +145,7 @@ However, I have to mention that I didn't print with higher bed temperatures than
 On top of the aluminum bedplate there's a magnetic foil applied. If you order a spare part heat bed, then you'll most likely only get the aluminum bedplate, but not the magnetic foil. So you'll have to get yourself a magnetic foil as well.  
 If you choose a foil from the aftermarket, make sure to get the correct size. The bedplate is 230x230mm, but actually most of the foils being available on the market seem to be 235x235mm. That's fine though, as you can easily cut off any pieces of foil which are exceeding the dimensions of the bedplate then. Make sure to get yourself a foil which uses 3M glue.   
 
-The following picture shows the magnetic foil that Anycubic shipped together with a replacement bedplate.  
+The following picture shows the magnetic foil that Anycubic shipped together with a replacement bedplate - the pictures show the parts of a different machine's bed (Kobra Neo), but the foil itself is pretty much the same though (the holes are just shaped slightly different).  
 
 | Magnetic Foil (Spare Part) | Backside |
 |----------|-------------|
