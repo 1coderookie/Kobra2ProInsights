@@ -215,7 +215,7 @@ The following picture shows the surface of the textured side which you're suppos
 
 ## Z-Offset Sensor  
 The z-offset sensor is located at the rear left hand side of the bedplate, next to the bed's wiring connector and the silicone block for wiping the nozzle.  
-The sensor itself is a round, spring loaded metallic piece of 10mm diameter. It's being pushed down by the nozzle and then closes a contact in the inside of the sensor's housing.  
+The sensor itself is a round, spring loaded metallic piece of 10mm diameter. It's being pushed down by the nozzle and then closes a contact in the inside of the sensor's housing (so it's actually just a switch).  
 
 ![Z-offset sensor and silicone block](../assets/images/bed_K2Pro_z-sensor_topview_web.jpg)   
 
@@ -278,20 +278,21 @@ In either case you need to adjust the sensor's height acordingly!
 
 ??? example "How To Adjust The Sensor's Height"  
 
-    - If you need to adjust the sensor's position, make sure that the sensor can freely move up and down - it *must* pop up by itself once released after being pusehd down.  
+    - If you need to adjust the sensor's position, make sure that the sensor can freely move up and down - it *must* pop up by itself once released after being pushed down.  
     
     - Now place a flat object like the two-sided open end wrench onto the build plate.  
       Let it stick out at the end, so that it reaches across the sensor. Make sure to press down the tool firmly onto the bed, so that it's actually *really* laying flat on the build plate!  
 
     - While holding the tool in this position across the sensor's button, now loosen the M2 hex screw which is for adjusting the sensor's height. See the following picture for identifying it's location.  
     
-      ![Sensor screws](../assets/images/bed_K2Pro_z-sensor_screws_labeled_web.jpg)   
+        ![Sensor screws](../assets/images/bed_K2Pro_z-sensor_screws_labeled_web.jpg)   
 
     - If the sensor was *too low*, it should now pop up and hit the tools's underside. Make sure this is the case and retighten the M2 hex screw again.  
     - If the sensor was *too high*, it's position changed due to the tool pressing it down. You can now retighten the M2 hex screw again.  
 
     - *After you finished adjusting the sensor's height, check if the sensor still can move freely and if it now really has the perfect height.*  
 
+    GIF
     
 
 ??? info "Z-Offset Is Constantly Wrong"  
@@ -315,15 +316,20 @@ In either case you need to adjust the sensor's height acordingly!
 The silicone block for wiping the nozzle is located at the back left hand side of the bedplate, next to the bed's wiring connector and the z-offset sensor.  
 This silicone block is about 12x13mm big and is spring loaded. Make sure it can move up and down freely.  
 
+![Z-offset sensor and silicone block](../assets/images/bed_K2Pro_z-sensor_topview_web.jpg)  
+
+If rests of filament are stuck on it after the nozzle has been wiped, take them off to avoid that the nozzle will catch them in an upcoming wipe procedure.  
+
 ...
 
 ## Acceleration Sensor
+There's only one acceleration sensor for measuring the vibrances. It's located at the rear side of the bed's underside, right where the z-offset sensor is located - the printhead doesn't have a sensor.   
 
-The following pictures show the underside view of these parts.  
+The following pictures show the underside view of the belonging area of the bed's underside.    
   
 ![Soldered connections](../assets/images/bed_K2Pro_bedplate-connectors_web.jpg)  
 
-Here you can also see the acceleration sensor, the following picture shows it in a closeup view.  
+The following picture shows the acceleration sensor and it's connector in a closeup view.  
 
 ![Closeup connector](../assets/images/bed_K2Pro_bedplate-connector-closeup_web.jpg)  
 
