@@ -300,12 +300,12 @@ The assembled hotend is shown in the following picture.
     - If you dismounted the hotend and you put it back into the printhead, make sure you check and adjust the position of the ABL sensor in relation to the nozzle and that you check and set your new z-offset afterwards!  
     - If you replaced your old hotend or parts of it with (a) new one(s) (regardless of whether you also replaced the thermistor and/or cartridge heater with a new one or keep using the existing ones), execute a PID tuning afterwards!  
 
-!!! danger "Check The Grub Screws From Time To Time"
+??? danger "Check The Screws From Time To Time"
 
-    Check the grub screws/set screws of the heater block and the position of the cartridge heater and the thermistor from time to time!  
+    Check the screws of the heater block and the position of the cartridge heater and the thermistor from time to time!  
     Due to expansion and contraction of the aluminum heater block and the vibrations that occur, those screws can come loose - which then can result in a part being slipped out!  
     *This is a serious potential of a fire hazard!*    
-    See the following picture of a user where the cartridge heater slipped out of the heater block.  
+    See the following picture of a user where the cartridge heater slipped out of the heater block (different type of hotend though, but the same can happen to this hotend as well).  
     ![Slipped out cartridge heater](../assets/images/head_glowing-cartridge_web.jpg)  
 
 ??? info "Spare Part Hotend"
@@ -541,12 +541,12 @@ Both the thermistor and the cartidge heater have to be plugged into the specific
   
 ![Heater block](../assets/images/head_K2Pro_block-screws-close_web.jpg)  
 
-!!! danger "Check The Grub Screws From Time To Time"
+??? danger "Check The Screws From Time To Time"
 
-    Check the grub screws/set screws of the heater block and the position of the cartridge heater and the thermistor from time to time!  
+    Check the screws of the heater block and the position of the cartridge heater and the thermistor from time to time!  
     Due to expansion and contraction of the aluminum heater block and the vibrations that occur, those screws can come loose - which then can result in a part being slipped out!  
     *This is a serious potential of a fire hazard!*    
-    See the following picture of a user where the cartridge heater slipped out of the heater block.  
+    See the following picture of a user where the cartridge heater slipped out of the heater block (different type of hotend though, but the same can happen to this hotend as well).  
     ![Slipped out cartridge heater](../assets/images/head_glowing-cartridge_web.jpg)  
 
 
@@ -616,12 +616,12 @@ The following picture shows the connector being used, it's a regular two pin JST
 ![Thermistor connector](../assets/images/head_thermistor-plug.png)
 --> 
 
-!!! danger "Check The Screw From Time To Time"
+??? danger "Check The Screws From Time To Time"
 
-    Check the screw and the position of the thermistor from time to time!  
+    Check the screws and the position of the thermistor and cartridge heater from time to time!  
     Due to expansion and contraction of the aluminum heater block and the vibrations that occur, those screws can come loose - which then can result in a part being slipped out!  
     *This is a serious potential of a fire hazard!*    
-    See the following picture of a user where the cartridge heater slipped out of the heater block (different printer though).  
+    See the following picture of a user where the cartridge heater slipped out of the heater block (different type of hotend though, but the same can happen to this hotend as well).  
     ![Slipped out cartridge heater](../assets/images/head_glowing-cartridge_web.jpg)  
 
 <!--
