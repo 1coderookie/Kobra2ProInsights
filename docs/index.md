@@ -9,7 +9,9 @@ I created this page to make it easier for users of this printers to get started,
 ***ATTENTION:***  
 ***THIS SITE IS CURRENTLY WIP, THERE'S NO REAL CONTENT IN HERE YET!***   
  
-**Fyi: I recently won a Kobra 2 Pro and I'm already preparing this infosite, I didn't even receive the printer yet though, so don't bother reading around as you won't find any information about the Kobra 2 Pro yet anyway. So please bare with me and come back another time.. ;)**
+**Fyi: I just receied my K2Pro a week ago and I'm currently working on this site.  
+So there's some specific stuff to find here already, but not all content suits the K2Pro yet!  
+So please bare with me and come back another time.. ;)**
   
 Please make sure to **mind the (expandable) textboxes** as they contain valuable information!  
 Depending on the color of the box, it's either a tip, information, instruction, question or warning you'll find in there:    
