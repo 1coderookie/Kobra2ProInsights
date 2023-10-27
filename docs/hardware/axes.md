@@ -440,16 +440,16 @@ Please see the expandable textbox below for further instructions about how to tr
 ---
 
 ## Y-Axis
-The y-axis is belt driven (GT-2 type, 8mm wide).  
-The motor which drives the belt is positioned at the back of the printer.  
-  
-![Y-axis motor](../assets/images/axes_K2Pro_Y-motor_web.jpg)  
+The following picture shows the baseframe of the machine where you can see the y-axis very well.  
+
+![Y-axis](../assets/images/frame_K2Pro_baseframe_web.jpg)  
+
+The y-axis is the long rail in the middle which reaches from the front to the back and where the gantry of the bed (the gantry is the construction where the bed is mounted onto) is running along.  
+
+The gantry of the bed is belt driven (GT-2 type, 8mm wide), the motor which drives the belt is positioned at the back of the printer.  
 
 You can adjust the tension of the belt by using the knob at the front side of the aluminum profile where the bed is guided onto.   
-The x-shaped plate for the bedmount itself has v-slot wheels which are running in the v-slot of the aluminum profile.  
-The following picture shows the aluminum profile of the y-axis with the knob for adjusting the belt tension at the front.   
-  
-![Y-axis knob](../assets/images/axes_K2Pro_Y-axis-tensioner_web.jpg)  
+The gantry for the bed itself has U-shaped SG15 rollers which are running along round-shaped rails at the side of the y-axis' aluminum profile.  
 
 ---
 
@@ -459,7 +459,7 @@ The following picture shows the belt tensioner located at the front of the y-axi
 
 ![Y-axis knob](../assets/images/axes_K2Pro_Y-axis-tensioner_web.jpg)
 
-You adjust the tension of the belt by turning it clockwise for increasing the tension and turning it counter-clockwise for decreasing it.  
+You can adjust the tension of the belt by turning it clockwise for increasing the tension and turning it counter-clockwise for decreasing it.  
 
 
 ??? example "Disassembling The Belt Tensioner"
