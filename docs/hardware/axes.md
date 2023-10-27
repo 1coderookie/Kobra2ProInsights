@@ -6,10 +6,10 @@
 | Specifications |
 |:---------------|
 | **X- & Y-Axis Belt**: GT-2, 8mm width, length between crimped ends ~??mm |
-| **X- & Y-Axis Belt Tensioner Pulley**: 16mm OD / 3mm ID / 20 teeth (for 6mm wide belt) | 
+| **X- & Y-Axis Belt Tensioner Pulley**: 16mm OD / 3mm ID / 20 teeth (for 8mm wide belt) | 
 | **X- & Y-Axis Metal Wheels**: SG15 bearings |
-| **X-Axis Motor**: 42x34 Nema17, 1.8°, 200 steps, 5mm shaft with 16 OD / 5mm ID / 20 teeth pulley attached (for 6mm wide belt) |
-| **Y-Axis Motor**: 42x48 Nema17, 1.8°, 200 steps, 5mm shaft with 16 OD / 5mm ID / 20 teeth pulley attached (for 6mm wide belt) |
+| **X-Axis Motor**: 42x34 Nema17, 1.8°, 200 steps, 5mm shaft with 16 OD / 5mm ID / 20 teeth pulley attached (for 8mm wide belt) |
+| **Y-Axis Motor**: 42x48 Nema17, 1.8°, 200 steps, 5mm shaft with 16 OD / 5mm ID / 20 teeth pulley attached (for 8mm wide belt) |
 | **Z-Axis Lead Screws**: T8x8 (8mm diameter, 8mm lead, 2mm pitch, 4 starts), 350mm length, belt-driven dual z  |
 | **Z-Axis Belt**: GT-2, 6mm width, closed loop, length ??mm |
 | **Z-Axis Lead Screw Pulleys**: 16mm OD / 3mm ID / 20 teeth (for 6mm wide belt) |
@@ -207,11 +207,13 @@ The following picture shows the back side of the meatl plate the printhead is mo
 ![Eccentric nut at printhead mounting plate](../assets/images/axes_K2Pro_X-plate_eccentric-nut_bottomview_web.jpg)  
 
 
-The following picture shows an eccentric nut (in this case mounted to a POM wheel though) which I painted to make the special shape of it more visible.  
+??? info "What Is An Eccentric Nut?"  
 
-![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
+    The following picture shows an eccentric nut (in this case mounted to a POM wheel) which I painted to make the special shape of it more visible.  
 
-As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole wheel will be changed, either towards or away from the v-slot of the rail it's sitting at. 
+    ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
+
+    As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole bearing will be changed, either towards or away from the rail it's sitting at.  
 
 The bearings shouldn't sit too tight at the rail but also not too loose.  
 They should touch the rail and should sit in place well without any sort of wobbling and they should be able to move smoothly.  
@@ -284,11 +286,14 @@ You already read the information about the belonging parts of the x-axis in the 
 The x-axis gantry is moving along the z-axis aluminum profile driven by the z-axis lead screws, guided by v-slot wheels. They run in the v-slot of the z-axis profiles and therefore they should sit in a good position. Means, they shouldn't sit too tight in the V-slot but also not too loose - they should be able to roll and move freely, but they shouldn't be too far away from the profile which would lead to instability.  
 
 *You can adjust the roller tension by turning the eccentric nut of the inner wheels which moves the wheels either towards or away from the aluminum profile.*    
-The following picture shows an eccentric nut which I painted to make the special shape of it more visible.  
 
-![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
+??? info "What Is An Eccentric Nut?"  
 
-As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole wheel will be changed, either towards or away from the v-slot of the rail it's sitting at. 
+    The following picture shows an eccentric nut (in this case mounted to a POM wheel) which I painted to make the special shape of it more visible.  
+
+    ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
+
+    As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole bearing will be changed, either towards or away from the rail it's sitting at.   
 
 *Not all of the wheels have eccentric nuts though as the following pictures show, only the two wheels (one at each side) which are facing the inner side of the frame (towards the bed) do have an eccentric nut.*  
     
@@ -599,18 +604,20 @@ The following picture shows this rail system.
 ---
     
 #### SG15 Bearings Position
-The metal wheels of the bed's gantry, the SG15 bearings, are leading the bed along the aluminum profiles of the y-axis.  
+The metal wheels of the bed's gantry, the SG15 bearings, are leading the bed along the aluminum profile of the y-axis.  
 These bearings run along a round-shaped metal rail and therefore they should sit in an optimal position.    
 
-(..add pic..)
+![Eccentric nuts Y sideview](../assets/images/bed_K2Pro_eccentric-nuts-gantry_web.jpg)  
 
 *You can adjust the position and therefore the overall pressure of the bearings against the metal rail of only ***two*** bearings by turning the eccentric nut which moves the bearing either towards or away from the metal rail.*   
 
-The following picture shows an eccentric nut (in this case mounted to a POM wheel) which I painted to make the special shape of it more visible.  
+??? info "What Is An Eccentric Nut?"  
 
-![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
+    The following picture shows an eccentric nut (in this case mounted to a POM wheel) which I painted to make the special shape of it more visible.  
 
-As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole bearing will be changed, either towards or away from the rail it's sitting at. 
+    ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
+
+    As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole bearing will be changed, either towards or away from the rail it's sitting at.  
 
 *The bearings whose position can be adjusted are located at the ***right hand side*** of the gantry when looking at it from the front - the two wheels at the left side of the aluminum frame can't be adjusted as there aren't any eccentric nuts mounted!*  
 
