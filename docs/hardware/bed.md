@@ -369,10 +369,9 @@ It's advisable to make sure that the bolt can't turn itself loose due to the vib
 The following picture shows the stock spacers on the left, springs in the middle and silicone spacers on the right.  
 ![Spacers](../assets/images/bed_different-spacers_web.jpg)
 
-!!! warning "Mind The Gap!"
+??? warning "Mind The Gap!"
 
     When using adjustable spacers, it's extremely important to keep an eye on the clearing underneath the bed while tramming the bed and therefore adjusting the height of the whole bedplate itself. You don't want to get the bed too low so that it hits or scratches the bracket of the y-axis motor mount!  
-    This is extremely important when using silicone spacers as they most likely come in about the same height (18mm) of the regular stock spacers but will compress while tramming the bed!  
     Also when adding insulation to the underside of the bed, the clearance has to be checked!  
 
 ---
@@ -385,11 +384,10 @@ However, as springs are made from metal which underlies the temperature changes 
   
 I personally used 8x25mm springs (the yellow ones shown above) and M4x40mm countersunk head screws as that allowed me to add some bigger lock nut knobs I had laying around. So if you go with regular M4 lock nuts, 35mm (or *maybe* even 30mm) screws should be fine as well I guess. Those springs were part of a bundle from Capricorn, they came together with 1m of the Capricorn tube and a cutter (and a sticker) for a really fair price (about 11€ for everything together).  
 
-!!! warning "Mind The Gap!"
+??? warning "Mind The Gap!"
 
     When using adjustable spacers, it's extremely important to keep an eye on the clearing underneath the bed while tramming the bed and therefore adjusting the height of the whole bedplate itself. You don't want to get the bed too low so that it hits or scratches the bracket of the y-axis motor mount!  
-    This is extremely important when using silicone spacers as they most likely come in about the same height (18mm) of the regular stock spacers but will compress while tramming the bed!  
-    Also when adding insulation to the underside of the bed, the clearance has to be checked!  
+    Also when adding insulation to the underside of the bed, the clearance has to be checked!   
 
 ---
 
@@ -398,40 +396,47 @@ You could also use silicone spacers of about the same length as the stock spacer
   
 Keep in mind that the silicone spacers (I used 18mm long ones shown below) compress when tramming the bed. Therefore it *might* happen that you'll get into trouble because the position of the whole bedplate will be lowered a bit, so make sure that the bedplate doesn't somehow hit the motor mount at the back of the y-axis. *Especially when adding insulation to the underside of the bed, you'll need to raise the bedplate a bit, so I highly recommend using the abovementioned 25mm springs in that case anyway!*   
   
-!!! warning "Mind The Gap!"
+??? warning "Mind The Gap!"
 
     When using adjustable spacers, it's extremely important to keep an eye on the clearing underneath the bed while tramming the bed and therefore adjusting the height of the whole bedplate itself. You don't want to get the bed too low so that it hits or scratches the bracket of the y-axis motor mount!  
-    This is extremely important when using silicone spacers as they most likely come in about the same height (18mm) of the regular stock spacers but will compress while tramming the bed!  
-    Also when adding insulation to the underside of the bed, the clearance has to be checked!   
+    Also when adding insulation to the underside of the bed, the clearance has to be checked!    
 
 ---    
 
 ## Bed Gantry
 
-The bedplate itself is mounted to the bed gantry which runs along the y-axis shown in the following picture.  
+The bedplate itself is mounted to the bed gantry which runs along the y-axis rail shown in the following pictures.  
 
-![Bed gantry](../assets/images/bed_gantry_web.jpg)
+![Bed gantry top view](../assets/images/bed_K2Pro_gantry2_web.jpg)  
 
-The v-slot wheels that run along the aluminum y-axis frame are mounted to the underside as the following picture shows.  
+As you can see, the belt is hooked into the belonging notches at the front and the rear of the H-shaped gantry.     
+The side parts of the gantry with the threaded M4 mounting holes for the screws which hold the bedplate (see the silver spacers for the locations) are bent like an L for additional stability.  
+The SG15 bearings that run along the round-shaped rails at the sides of the aluminum y-axis frame are mounted to the undersideof the gantry.  
 
-![Bed gantry underside](../assets/images/bed_gantry-bare_web.jpg)  
+![Bed gantry front view](../assets/images/bed_K2Pro_gantry1_web.jpg)  
 
-The gantry is made of 2.5mm steel - which unfortunately seems to be pretty flimsy to me. If I touch one of those arms of that X-shaped gantry and apply pressure with a finger, I can easily make it wiggle up and down a bit.  
-The screws that hold the bedplate are screwed into 4mm threads of the gantry.   
+The following picture shows the right side of the gantry from a sort of underside view to show you the positions of the eccentric nuts of the SG15 bearings.  
 
-As you can see in the picture above, also the v-slot wheels which are running along the y-axis are mounted onto that plate.  
-The belt is also attached to the gantry.  
-The y-axis limit switch is being triggered by the gantry when it's moving completely to the back.  
+![Eccentric nuts Y sideview](../assets/images/bed_K2Pro_eccentric-nuts-gantry_web.jpg) 
+
+The y-axis limit switch is being triggered by the rear left SG15 roller when the gantry is moving completely to the back.  
+
+![Y-axis limit switch](../assets/images/axes_K2Pro_Y-limitswitch_web.jpg)  
   
 !!! warning "Important: Check The Screws Of The Bedplate And The Gantry Of The Bed"
 
-    - Check if the screws are all tightened up. Be careful though to not overtighten the screws of the Bedplate as you may compress the little spacers underneath it and therefore the plate may become warped. On the other hand, if you see that your bed is warped somehow or that the bed is much more off in certain areas or at one side, you can check if the screws in that area might be too tightened up or too loose.  
-    - Check if the bedplate itself is somehow wobbling. Not only sideways (horizontally), but also up and down (vertically). If so, not only check the v-slot wheels and maybe adjust their fitting using the eccentric nuts, also check if the screws of the gantry of the bed where the wheels are mounted to are tightened up.     
+    - Check if the screws are all tightened up.    
+    - Check if the bedplate itself is somehow wobbly. Not only sidewards (horizontally), but also up and down (vertically). If so, not only check the positions of the SG15 rollers and maybe adjust their fitting using the eccentric nuts, also check if the screws of the gantry of the bed where the wheels are mounted to are tightened up.     
 
-<!--
+
 ---
 
 ### MOD: 3 Point Bed Mount 
+
+!!! note "For Demonstration Purposes Only (At This Point Of Time!)"  
+
+    The following descriptions and pictures are about a 3 point bedmount mod I made to one of my Neos.  
+    At this point this is just mentioned here for demonstration purposes only, I'm not yet recommending to modify the Kobra 2 Pro like this. This is only due to the assumption that the springs that are needed for the following mod might add some instability to the bedplate, which could negatively effect the outcome when printing at the maximum speeds of 500mm/s and 20.00mm/s² acceleration Anycubic is advertising for this machine.*   
 
 I did a bit of tinkering and modded the bedmount to a 3 point bed mount instead of the classic 4 point mount.  
 
@@ -486,7 +491,7 @@ As you can see, there is still some room for finetuning, like lowering the front
 
 Conclusion: so, will I do this mod at my second Neo as well and can I recommend it? Yes, absolutely.  
 I might try to get a gantry from the aftermarket which already offers the option for this kind of 3 point mounting system and which is (hopefully) more rigid overall though, as the whole gantry itself really appears pretty flimsy to me. I'm not sure about that yet though, as I like to tinker and modify it with spending the less money I can - but if I'll end up buying such a gantry, I'll add pictures here and let you know how it went.  
--->
+
   
 ---    
 
@@ -494,92 +499,39 @@ I might try to get a gantry from the aftermarket which already offers the option
 
 The printer comes with an automatic 25 point bed 'leveling' function called "Anycubic LeviQ 2.0".  
 This function measures the distance of the inductive [ABL sensor](printhead.md#abl-sensor) to the PEI plate in a 5x5 grid, therefore at 25 points.  
-The data will then be used to compensate any deviations in the distance of the surface which then (in a perfect setup and under perfect conditions) during printing by moving the printhead up and down along the z-axis.  
+The data will then be used to compensate any deviations in the distance of the surface to the nozzle during printing by moving the printhead up and down along the z-axis.  
 
-However, there are some limitations to this.  
-First of all, this compensation while printing isn't 100% precise due to the 5x5 grid (even though the data is interpolated). At the **Neo** this problem is even amplified due to the fact that Anycubic didn't set the y-offset for the ABL sensor in the firmware. Means, the firmware 'knows' that the ABL sensor at the **Neo** is positioned 37.5mm to the right side of the nozzle, but it doesn't know that the sensor is positioned about 4mm to the back in relation to the nozzle as well (`#define NOZZLE_TO_PROBE_OFFSET { 37.5,0, 0 }`). Therefore the compensation while printing can't be as much as accurate as possible.   
-Next, this compensation is somewhat limited by the amount of deviation and (imho) by the printing speed as well. So if you have a massively warped bed and a tilted x-axis gantry as well and you have variances of a few milimeters, you'll most likely still see a heavily imperfect initial layer.  
-So - what can you do to at least get the best results out of the measunring and compensation process? Well - make sure to set up the printer as square and perpendicular as possible, [tram your bed](#tramming-the-bed), [tram your x-axis gantry](axes.md#tramming-the-x-axis-gantry) and [level the ABL sensor in relation to the nozzle](printhead.md#abl-sensor). If you use Klipper, you can enhance the amount of probing points and (for the **Neo**) set the y-offset of the ABL sensor as well.  
+!!! warning "Clarification: What ABL Does And What It Does NOT"  
 
-So, to make this clear: **don't get misleaded by the term "automatic bed leveling" - the process does *not* level or tram your bed!**  
-It only measures and recognizes the distance towards the sensor at the 25 spots where it measures. You can *not* level/tram the bed itself without tinkering, as it's mounted directly to the bed gantry with rigid spacers/bushings.    
+    To make this clear: **don't get misleaded by the term "automatic bed leveling" - the process does *not* level or tram your bed automagically!**  
+    It only measures and recognizes the distance towards the sensor at the 25 spots where it measures!  
+    You can **not** level/tram the bed itself without tinkering, as it's mounted directly to the bed gantry with rigid spacers/bushings!   
 
+??? info "Limitations Of The ABL Functionality"  
+
+    However, there are some limitations to this.  
+    First of all, this compensation while printing isn't 100% precise due to the 5x5 grid (even though the data is interpolated).  
+    Next, this compensation is somewhat limited by the amount of deviation and (imho) by the printing speed as well. So if you have a massively warped bed and a tilted x-axis gantry as well and you have variances of a few milimeters, you'll most likely still see a heavily imperfect initial layer.  
+
+    So - what can you do to at least get the best results out of the measunring and compensation process? Well - make sure to set up the printer as square and perpendicular as possible, [tram your bed](#tramming-the-bed), [tram your x-axis gantry](axes.md#tramming-the-x-axis-gantry) and [level the ABL sensor in relation to the nozzle](printhead.md#abl-sensor).  
+
+ 
+ 
+
+<!--
 When it comes to executing the ABL function of the printer, it's advisable to initially check if the ABL sensor is leveled correctly to get the best results out of the ABL process. You can find information about how to do it for your specific model in the section ["ABL Sensor"](printhead.md#abl-sensor).     
+-->  
 
+<!--
 To make the measured values of the ABL come into account later when it comes down to printing, you should add a certain g-code command to the start g-code section of your slicer. Even though this shouldn't be necessary as we have the belonging definement in the firmware (`#define ENABLE_LEVELING_AFTER_G28`), it seems to be advisable to do so.  
 So: enter the settings in your slicer and search the place where this section is located. Then add the command `M420 S1` in a new line *after* the last `G28` command (which is the homing command) being in there. This will load the specific mesh values from the printer's EEPROM and activate the function of the ABL, so that minor height variations of the bed's surface will be compensated while printing.     
-
-*Keep in mind that every time you proceed an ABL process, you'll have to set the z-offset again!*
-     
-??? tip "Bed Level Visualization"
-
-    The display of the control unit does *not* show a meshview after you proceeded the bed level function - if you'd like to see that, you'd usually have to use additional software like the beforementioned [Octoprint](https://octoprint.org/) and an additional plugin for visualization like the [Bed Level Visualizer](https://plugins.octoprint.org/plugins/bedlevelvisualizer/).  
-    To get a visualization out of the data, you need to add some code though, otherwise you won't get that nice graphic you can always see everywhere. So I don't know if the following code is 100% correct or if there's anything obsolete in there or whatever, but at least I got the visualization done at the end (Thanks to reddit member [one-without-zero](https://www.reddit.com/user/one-without-zero/) for pointing out M503 to me!).  
-    
-    - Tab "Collection":  
-        ```
-        M140 S60 ; starting by heating the bed for nominal mesh accuracy 
-        M117 Homing all axes ; send message to printer display 
-        G28 ; home all axes 
-        M420 S0 ; Turning off bed leveling while probing, if firmware is set ; to restore after G28 
-        M104 S0 ;Turn-off hotend 
-        M117 Heating the bed ; send message to printer display 
-        M190 S60 ; waiting until the bed is fully warmed up 
-        M300 S1000 P500 ; chirp to indicate bed mesh levels is initializing 
-        M117 Creating the bed mesh levels ; send message to printer display 
-        M155 S30 ; reduce temperature reporting rate to reduce output pollution
-        @BEDLEVELVISUALIZER ; tell the plugin to watch for reported mesh 
-        G29 T ; run bilinear probing 
-        M155 S3 ; reset temperature reporting 
-        M140 S0 ; cooling down the bed 
-        M104 S0 ; cooling down extruder
-        M500 ; store mesh in EEPROM 
-        M503 ; report mesh values
-        M300 S440 P200 ; make calibration completed tones 
-        M300 S660 P250 M300 S880 P300 
-        M117 Bed mesh levels completed ; send message to printer display
-        ```
-    - Tab "Commands", click the "+ Add" button. There you create two new command scripts: "Create mesh" and "Pull latest mesh" (you can name them however you like though).  
-        "Create mesh" has the same code like at the "Collection" tab above (to be honest: I actually think this one is obsolete but because now it's working for me here and I don't want to mess around, I'll just add it here to show you my solution):  
-        ```
-        M140 S60 ; starting by heating the bed for nominal mesh accuracy 
-        M117 Homing all axes ; send message to printer display 
-        G28 ; home all axes 
-        M420 S0 ; Turning off bed leveling while probing, if firmware is set ; to restore after G28 
-        M104 S0 ;Turn-off hotend 
-        M117 Heating the bed ; send message to printer display 
-        M190 S60 ; waiting until the bed is fully warmed up 
-        M300 S1000 P500 ; chirp to indicate bed mesh levels is initializing 
-        M117 Creating the bed mesh levels ; send message to printer display 
-        M155 S30 ; reduce temperature reporting rate to reduce output pollution
-        @BEDLEVELVISUALIZER ; tell the plugin to watch for reported mesh 
-        G29 T ; run bilinear probing 
-        M155 S3 ; reset temperature reporting 
-        M140 S0 ; cooling down the bed 
-        M104 S0 ; cooling down extruder
-        M500 ; store mesh in EEPROM 
-        M503 ; report mesh values
-        M300 S440 P200 ; make calibration completed tones 
-        M300 S660 P250 M300 S880 P300 
-        M117 Bed mesh levels completed ; send message to printer display
-        ```
-        
-        "Pull latest mesh" has the following code:  
-        ```
-        @BEDLEVELVISUALIZER
-        M420 T0
-        M420 V
-        ```
-        
-    - To create a meshview now, click on the blue info-button "Update Mesh Now". This will start the probing. After it's done, click on "Pull latest mesh" and the graphic should be rendered.  
-    - To see a table with the collected data, click on the little configuration wheel again and then click on the tab "Data".  
-    - Images will come soon.. ;)
+-->
 
 ---
     
 ## Tramming The Bed  
 
-!!! warning "'Tramming' vs. 'Leveling' The Bed"  
+??? warning "'Tramming' vs. 'Leveling' The Bed"  
 
     Because I got attacked, harrassed, insulted and called names for using the correct term "tramming" instead of the misleading and technically wrong term "leveling", let me make something clear at this point.  
     
@@ -605,13 +557,13 @@ Even though "tramming" the bed isn't really possible when using the rigid stock 
 
 If you're using [adjustable spacers](#mod-adjustable-spacers), then you'll be able to actually tram the bed itself.  
 
-If necessary, you can add Kapton tape on the magnetic surface of the bed underneath the PEI plate later to equalize warped or dented areas as much as possible.  
+If necessary, you can add Kapton tape on the magnetic surface of the bed underneath the PEI plate later to equalize warped or dented areas as much as possible. If you do so, make sure to check if the z-offset sensor still has the perfect height position!    
 
-I'll describe the belonging process for each case in the following.  
+I'll describe the belonging tramming process for each case in the following.  
 
 ??? example ""Tramming" When Using The Rigid Stock Spacers"
 
-    When using the rigid stock spacers the printer came with, dismount the bedplate from the bedgantry and take out those four black spacers. Then put them next to each other on a flat surface and/or measure them using a caliper. Most likely they aren't all of the same height, which will lead to a somewhat crooked, tilted or 'warped' bed.  
+    When using the rigid stock spacers the printer came with, dismount the bedplate from the bedgantry and take out those four silver metal spacers. Then put them next to each other on a flat surface and/or measure them using a caliper. They *might* not be all of the same height, which will lead to a somewhat crooked, tilted or 'warped' bed.  
     
     Now you could either look for other spacers you might be using, put washers or other suitable material (e.g. gasket material) of the needed thickness under them when remounting or (what I'd recommend to do) *sand them down to the smallest of the four spacers for achieving an equal height*.  
     When doing so, put the sandpaper on a flat surface and carefully rub the spacers across it - *pay attention that you do this while holding the spacer absolutely perpendicular! You don't want to end up with a spacer where one end is sanded off tilted!*  
@@ -632,41 +584,39 @@ I'll describe the belonging process for each case in the following.
     Then lower the printhead manually until the nozzle or the ABL sensor just touches that object. Then move the object to the next corner and move the printhead across it. Make sure that you absolutely *don't* move the head along the z-axis by accident, so that you don't somehow change the height of it!  
     If the head is positioned too low and there isn't enough space to fit the object between the bed and the head, tighten the screw for lowering the bedplate. If there's too much space, loosen the screw a bit until the nozzle/ABL sensor touches the object again.  
     Proceed with the other corners like that. Once you're done with all four corners, do another round and check if everything still fits. Most likely it won't as it affects the other edges when adjusting the height of one edge. When you're done with this round as well, put on the PEI plate, move the lead screw manually for raising the head and place the object in the first corner again. Lower the head and check all four edges once again if everything is correct.   
-    When you're done, make sure the screws won't turn themselves loose due to the vibration, so add e.g. an additional lock nut as well.    
-    Also remember to check your z-offset as it'll most likely has to be adjusted.  
-    
-    In case you're using Klipper like me, you can use the macro ["screws_tilt_adjust with the command SCREWS_TILT_CALCULATE"](https://www.klipper3d.org/Manual_Level.html#adjusting-bed-leveling-screws-using-the-bed-probe) to finetune the tramming of the bed if necessary.  
+    When you're done, make sure the screws won't turn themselves loose due to the vibration, so add e.g. an additional lock nut as well.     
+     
 
 ---
 
-## Common Issue: Broken Wiring
+## Probable Issue: Broken Wiring
 
-There's a common issue which is worth getting it's own section: breaking wires of the bed's wiring.  
-There are two types of wires at the bed: the thin ones which are the wires for the bed's thermistor and the thicker ones which are the wires for supplying the 24V DC to the coil at the underside of the bed for heating up the bed.  
-Due to repetive motion and the design, these wires start to break over time.  
+There's a probable (upcoming) issue which is worth getting it's own section: breaking wires of the bed's wiring.  
+There are (besides the wiring for the aceleration sensor and the z-offset sensor) two types of wires at the bed: the thin ones which are the wires for the bed's thermistor and the thicker ones which are the wires for supplying the 24V DC to the coil at the underside of the bed for heating up the bed.  
+Due to repetive motion and the design, these wires might start to break over time.  
 To be more precise: the thin strands of the wires inside of the insulation start to break. Therefore the resistance of those wires will increase until the point is reached that all of the strands are broken and there's no contact given anymore.  
 
-In the beginning you'll most likely notice this when you have an error message ["ERR: MINTEMP Bed"](troubleshooting.md#err-mintempmaxtempthermal-runaway-bed) appearing. Even though you can fix this issue by replacing the wires of the thermistor as described in the next sections, sooner or later this will also happen with the thicker wires. And even though this can be fixed as well by replacing the wires, it's not as easy 'detectable' as with the wring of the thermistor, as there won't be an error message if strands of the 24V wires start to break and therefore the resistance becomes bigger.  
-Unfortunately this is a potential risk of a fire hazard though, as the wire will heat up at that particular spot where it starts to break - due to the increasing resistance and the higher current running through these wires compared to the wires of the thermistor. The more the wires break and the higher the resistance will become here, the hotter the wire will become as well - until the insulation might melt and (worst case) the whole wire starts catching fire.      
+This breaking of the wires is a common issue at the Kobra Go and Neo, but here at the Kobra 2 Pro it seems that Anycubic used slightly longer wires. So hopefully this will not be such a common issue, but I'll go a bit into detail here anyway, just in case this problem occurs.  
 
-So, besides keeping an eye on that during the regular maintenance you're doing, there are two things you can already do right away to at least lower the potential risk of breaking wires at two particular spots.  
-The first thing is to cut the cable tie which ties down the wiring to the base frame. You can see it when looking at the left hand back side of the printer. The following picture shows the cable tie I'm talking about.  
+In the beginning you'll most likely notice this when you have an error message appearing which tells you that the bedtemp is abnormal (I didn't come across the specific error message yet, so I can't tell you right now how exactly the message will be).  
+Even though you can fix this issue by replacing the wires of the thermistor as described in the next sections, sooner or later this will also happen with the thicker wires. And even though this can be fixed as well by replacing the wires, it's not as easy 'detectable' as with the wring of the thermistor, as there won't be an error message if strands of the 24V wires start to break and therefore the resistance becomes bigger.  
+Unfortunately this breaking of the 24V wires is a potential risk of a fire hazard though, as the wire will heat up at that particular spot where it starts to break - due to the increasing resistance and the higher current running through these wires compared to the wires of the thermistor. The more the wires break and the higher the resistance will become here, the hotter the wire will become as well - until the insulation might melt and (worst case) the whole wire starts catching fire.      
 
-![Cable tie bed frame](../assets/images/bed_cabletie_web.jpg)  
+So, besides keeping an eye on that during the regular maintenance you're doing, there *might* be something you could do to minimize the risk of premature breaking wires. Read the expandable textbox to see what I did to hopefully minimize the risk.  
 
-Cut that one, so that the wires can move a bit and here and won't be bent at exactly that spot over and over again.  
+??? example "Probable 'Hack' To Minimize Premature Breaking Of The Wires"  
 
-The second spot is at the black plastic cap at the left hand back side of the bed plate shown in the picture below.   
-
-![Bed cap strain relief](../assets/images/bed_connector_side_web.jpg)  
-
-This cap acts as a strain relief, but as a matter of fact, the wires will be bent again and again at the spot right behind that plastic cap.   
-
-I don't have a final solution right now as I'm still experimenting with different mods at my Neos for testing what might help here.  
-Right now three simple 'hacks' seem to work - at least a bit, as I didn't run into the problem of broken wires here yet (..knock on wood..).  
-The first one is by just wrapping some tape around the plastic cap and the fist inch or two of the wiring. By doing so, you'll stiffen up the wires a bit in that first section right behind the cap, avoiding the punctual bending. You need to make sure that the whole construction won't be too stiff as it should still be able to bend overall though, otherwise you'll provoke the same issue right after the attached tape.  
-The second and third option is actually kinda similar, but instead of using tape I used a semi-stiff spring at one of my Neos and a semi-stiff (silicone) tubing at the other one. Each of them I dragged acorss the whole wiring and attached it to the plastic cap. As with the tape method, both of these solutions still allow a slight bending of the wires, but they protect the wires of being bent right at the spot after that plastic cap.  
-For now and for the sake of simplicity, I'd suggest to go with the tape method though.   
+    I don't have a final solution right now as I'm still experimenting with different mods at my Kobra Neos (which suffer from constant breaking at the stock wire setups) for testing what might help here.  
+    Right now a simple simple 'hack' seems to work - at least a bit, as I didn't run into the problem of broken wires there yet again (..knock on wood..). Even though it seems like Anycubic is using longer wires now which should reduce the risk of breaking as quick as at the Kobra Go and Neo, I attached the following experimental solution to my Kobra 2 Pro as well.   
+    
+    First, I cut the cabletie which holds the whole wire 'package' to the black plastic cap.  
+    Then I took a piece silicone tubing which I cut at one side and placed it across that specific section of the wire 'package'.  
+    I then wrapped self-welding/sealing tape across it and secured everything again with a cabletie.  
+    You can see this 'hack' at the following picture - I have to admit though that the silicone tube I used was probably a bit too long.  
+    
+    ![Wiring harness](../assets/images/bed_K2Pro_wiring-harness_web.jpg)  
+    
+    This solution should also work without the silicone tube, so now and for the sake of simplicity, I'd suggest to just use the self-welding/sealing tape and add a few more layers if you want to try this.   
 
 If you have to replace the wirings, I'd suggest to use slightly longer (and thicker) high-flex wires, as that'll allow a slightly bigger range of motion, assuming that it'll have a positive effect on the overall bending as well. In that case you might also think about routing the wires differently.  
 Some people add wire chains, and even though it seems to be a good idea in general, you should pay attention to the bending radius of the chain as well as to the size of the chain itself. You don't want to squish the wires in there and you don't want to make them rub against each other or against the chain too much as well.  
