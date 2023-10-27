@@ -47,7 +47,45 @@ You can adjust the tension of the belt by using the knob at the right side of th
 
 ---
 
-### Belt Tension
+### Belt Tensioner
+
+The following picture shows the belt tensioner located at the right hand side of the x-axis gantry.  
+
+![X-axis knob](../assets/images/axes_K2Pro_X-tensioner_web.jpg)
+
+You adjust the tension of the belt by turning it clockwise for increasing the tension and turning it counter-clockwise for decreasing it.  
+
+??? example "Disassembling The Belt Tensioner"  
+
+    **Note: The following pictures are taken from the belt tensioner of the Kobra Neo as I didn't diassemble the tensioners at my Kobra 2 Pro yet. I'd assume that they look pretty much the same in the inside though, so at least you'll get an idea of how a belt tensioner is (most likely) built.**  
+
+    It might happen that you have to disassemble the tensioner in order to replace a broken belt or a broken (part of the) tensioner.  
+    In that case turn the knob counter-clockwise until the belt completely sags. Then unhook one end of the belt from the bedgantry (I suggest to unhook it in the front of the bed gantry). Unscrew the two screws you can see at the blue plastic cap of the belt tensioner and carefully pull it off the frame. You might have to turn the knob even more counter-clockwise if it doesn't come off right away.  
+    Once you've pulled it off, you'll see the parts as shown in the picture below (right now the picture shows the disassembled y-axis tensioner, but besides a slightly different shaped plastic cap, the interior looks the same - I'll add a belonging picture of the x-axis tensioner soo though).  
+
+    ![Belt tensioner unmounted](../assets/images/axes_y-tensioner_dis1_web.jpg)
+
+    If you have to replace certain parts, you can easily disassemble the pulley by pushing out that little shaft to one side, so that you'll have all the parts laying in front of you each by their own.  
+
+    ![Belt tensioner disassembled](../assets/images/axes_y-tensioner_dis2_web.jpg)  
+
+    The following picture shows the 20 teeth pulley which is used in this assembly.  
+
+    ![20 teeth pulley](../assets/images/axes_20teeth-pulley_web.jpg)    
+
+??? example "Reassembling The Belt Tensioner"
+
+    For reassembling, just put the pulley back into place and stick that little shaft back to where it belongs.  
+    Then route the belt through that bracket - make sure the belt isn't somehow twisted and that the teeth are gripping onto the pulley - the smooth side of the belt needs to face you when you look at it from above.  
+    Stick the setup back into the blue plastic cap and stick the screw of that knob into the belonging hole at the front. Turn the knob a few times clockwise to make the thread grip the bracket.  
+    Then slide the whole setup back into place where it belongs and screw in the two screws which hold the blue plastic cap into place.  
+    finally hook up the ends of the belt to those notches at the metal mounting plate of the printhead again.     
+    Once everything is done, adjust the belt tension again by turning the knob clockwise.  
+
+
+---
+
+#### Belt Tension
 It's kinda difficult to explain the correct belt tension, so you'd have to experiment a bit with that.  
 Generally speaking, the belt shouldn't be too tightened up and shouldn't be too loose either. If it's too tight, too much pressure will be put onto the motor shaft which will do harm, the belt can snap etc. - if it's too loose though, the belt might even slip. Either state (too tensioned and too loose) can cause artifacts.   
 
@@ -74,8 +112,8 @@ My 'rule of thumb' here is: if you can bend the belt down a bit by applying some
 
     - Check the belt tension from time to time as it might wear out and lengthen a bit. 
     - Check the teeth of the belt if they are still good looking or if they're worn out or if even some teethe are missing.
-    - Check if you can see any cracks at the belt. 
-    - Check the gear wheels of the motors which are driving the belts. Are they also looking ok? Did they become loose on the motor shaft somehow?  
+    - Check if you can see any cracks or other damage at the belt. 
+    - Check the pulleys of the motors which are driving the belts. Are they also looking ok? Did they become loose on the motor shaft somehow?  
 
 ??? example "Broken/Snapped Belt"
 
@@ -90,40 +128,6 @@ My 'rule of thumb' here is: if you can bend the belt down a bit by applying some
     Pay attention to route the belt in the correct way and not being twisted and adjust the tension of the belt once everything is reassembled.  
     
 
----
-
-### Belt Tensioner
-
-The following picture shows the belt tensioner located at the right hand side of the x-axis gantry.  
-
-![X-axis knob](../assets/images/axes_K2Pro_X-tensioner_web.jpg)
-
-You adjust the tension of the belt by turning it clockwise for increasing the tension and turning it counter-clockwise for decreasing it.  
-
-??? example "Disassembling The Belt Tensioner"
-
-    It might happen that you have to disassemble the tensioner in order to replace a broken belt or a broken (part of the) tensioner.  
-    In that case turn the knob counter-clockwise until the belt completely sags. Then unhook one end of the belt from the bedgantry (I suggest to unhook it in the front of the bed gantry). Unscrew the two screws you can see at the blue plastic cap of the belt tensioner and carefully pull it off the frame. You might have to turn the knob even more counter-clockwise if it doesn't come off right away.  
-    Once you've pulled it off, you'll see the parts as shown in the picture below (right now the picture shows the disassembled y-axis tensioner, but besides a slightly different shaped plastic cap, the interior looks the same - I'll add a belonging picture of the x-axis tensioner soo though).  
-
-    ![Belt tensioner unmounted](../assets/images/axes_y-tensioner_dis1_web.jpg)
-
-    If you have to replace certain parts, you can easily disassemble the pulley by pushing out that little shaft to one side, so that you'll have all the parts laying in front of you each by their own.  
-
-    ![Belt tensioner disassembled](../assets/images/axes_y-tensioner_dis2_web.jpg)  
-
-    The following picture shows the 20 teeth pulley which is used in this assembly.  
-
-    ![20 teeth pulley](../assets/images/axes_20teeth-pulley_web.jpg)    
-
-??? example "Reassembling The Belt Tensioner"
-
-    For reassembling, just put the pulley back into place and stick that little shaft back to where it belongs.  
-    Then route the belt through that bracket - make sure the belt isn't somehow twisted and that the teeth are gripping onto the pulley - the smooth side of the belt needs to face you when you look at it from above.  
-    Stick the setup back into the blue plastic cap and stick the screw of that knob into the belonging hole at the front. Turn the knob a few times clockwise to make the thread grip the bracket.  
-    Then slide the whole setup back into place where it belongs and screw in the two screws which hold the blue plastic cap into place.  
-    finally hook up the ends of the belt to those notches at the metal mounting plate of the printhead again.     
-    Once everything is done, adjust the belt tension again by turning the knob clockwise.  
 
 ---
 
@@ -134,17 +138,18 @@ The motor is located at the left hand side of the x-axis gantry.
 
 ![X motor](../assets/images/axes_K2Pro_X-motor_back_web.jpg)  
 
-<!--
+
 As there aren't any specifications and replacement motors from Anycubic being available, you can either use a motor with the beforementioned specs or get yourself a motor from a Creality Ender 3 (or one that's advertised to fit that printer). The following picture shows the original stepper motor being mounted and the belonging Creality model laying next to it at the right hand side (right now the following picture shows the y-axis motor compared to the Creality motor, but the motors are actually the same - I'll add the belonging picture of the x-axis motor soon though).  
 
 ![Stock vs Creality y-motor](../assets/images/axes_y-motor_stock-creality_web.jpg)  
 
-!!! warning "Attention When Connecting The 'Creality'-Type Motor!"  
+!!! warning "Attention When Connecting A 'Generic' Motor!"  
 
-    As the connections of the stock vs a 'Creality'-type motor are different due to different pinouts of the coils, you need to make sure you connect it correctly!  
-    Therefore you need to switch the position of two wires, best would be to check the coils with a multimeter first!  
-    Please read the expandable textbox below for further information.
--->  
+    As the connections of the stock vs a generic or (in this case) a 'Creality'-type motor are different due to different pinouts of the coils, you need to make sure you connect it correctly!  
+    *So, before connecting it to the mainboard though, take your multimeter and identify the coils by probing the pins of the motor's connector!*  
+    Compare your findings with the ones from the stock motor - you might have to switch the position of certain wires inside of the plug.
+    
+  
 
 ??? example "Identifying The Coils And Connections"  
 
@@ -159,7 +164,7 @@ As there aren't any specifications and replacement motors from Anycubic being av
     Then move the probe to the next pin and repeat the process.  
     In the end you'll come up with having two 'paired' pins identified - each pair belongs to one coil.  
     
-    Now look at the following picture and compare your findings with the marked pins of the two coils of the upper "Stock Motor" (right now the following picture shows the y-axis motor compared to the Creality motor, but the motors, pinouts and the procedure of probing are actually the same).  
+    For illustration purposes, the following picture shows the coils of a motor from a Kobra Neo and a Creality motor.    
 
     ![Marked motor pins](../assets/images/axes_y-motor_stock-creality_pinout-marked_web.jpg)  
     
@@ -179,7 +184,16 @@ As there aren't any specifications and replacement motors from Anycubic being av
 
 ---
 
-### SG15 Bearings Position
+### Linear Rail System
+
+The X axis has a linear rail system instead of POM wheels like other machines. It's not a 'real' linear rail like a MGN12 or MGN15 system, but it's U-shaped metal SG15 bearings running along round-shaped metal rails which are being mounted in the v-slots of the x-axis gantry's aluminum rail.  
+The following picture shows this rail system.  
+
+***..add pic..***
+
+---
+
+#### SG15 Bearings Position
 The metal wheels of the printhead's mounting plate, the SG15 bearings, are leading the printhead along the aluminum profile of the x-axis (the so-called "x-axis gantry").  
 These bearings run along a round-shaped metal rail and therefore they should sit in an optimal position.   
 The following picture shows the back side of the meatl plate the printhead is mounted to. You can see two SG15 bearings at the top and one at the bottom.  
@@ -193,7 +207,7 @@ The following picture shows the back side of the meatl plate the printhead is mo
 ![Eccentric nut at printhead mounting plate](../assets/images/axes_K2Pro_X-plate_eccentric-nut_bottomview_web.jpg)  
 
 
-The following picture shows an eccentric nut (in this case mounted to a POM wheel) which I painted to make the special shape of it more visible.  
+The following picture shows an eccentric nut (in this case mounted to a POM wheel though) which I painted to make the special shape of it more visible.  
 
 ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
 
@@ -215,7 +229,7 @@ Insufficient lubrification also plays a role, but in this case the user did appl
     
 ---
   
-### SG15 Bearings Maintenance  
+#### SG15 Bearings Maintenance  
 
 As the bearings will suffer from running along the metal rail and debris can build up, clean the rails and the bearings from time to time. After that, add a slight coating of lubrification to reduce the wear and tear due to the fact that metal is running on metal.  
 
@@ -262,7 +276,7 @@ The following pictures show the limit switch from two different point of views.
 ## X-Axis Gantry
 The x-axis gantry is the aluminum profile (plus the corresponding parts) where the printhead is actually running onto.  
 
-You already read the information about the belonging parts of the x-axis in the chapter above, in the following you'll find the information about the parts of the x-axis gantry which are moving along the z-axis frame. Plus, you'll find information about how to tram the x-axis gantry.  
+You already read the information about the belonging parts of the x-axis in the chapter above, in the following you'll find the information about the parts of the x-axis gantry which are moving along the z-axis frame. Plus, you'll find information about how to tram the x-axis gantry, which is crucial for a good and reliable outcome.  
  
 ---
 
@@ -276,23 +290,26 @@ The following picture shows an eccentric nut which I painted to make the special
 
 As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole wheel will be changed, either towards or away from the v-slot of the rail it's sitting at. 
 
-*Not all of the wheels have eccentric nuts though as the following picture shows, only the two wheels (one at each side) which are facing the inner side of the frame (towards the bed) do have an eccentric nut.* 
+*Not all of the wheels have eccentric nuts though as the following pictures show, only the two wheels (one at each side) which are facing the inner side of the frame (towards the bed) do have an eccentric nut.*  
     
-![](../assets/images/x-axis_left-side-nut_web.jpg)
+![Eccentric nut left side](../assets/images/axes_K2Pro_x-ecc-nut-left_web.jpg)
   
 Here you can see clearly that only the inner wheel on the left side in the following picture has an eccentric nut, the red circle at the outer wheel on the right side marks the round spacer.  
 
-![](../assets/images/x-axis_knob_nut_web.jpg)
+![Eccentric nut right side](../assets/images/axes_K2Pro_x-ecc-nut-right_web.jpp)
   
 However, you might face the problem that you just can't get all of the three wheels at each side to touch the aluminum frame as they should.  
 So if you need to adjust the position of the wheels using the eccentric nuts, you might encouter the problem that e.g. the inner wheel and the lower wheel on the outside may sit in the v-slot really nice, but that the third wheel (the upper one on the outside in this example) isn't even touching the aluminum and can be spinned in the air. This also leads to a wobbly and sagging/lagging x-axis gantry at the unsupported right side, as you'll most likely be able to move the right part (the side without the lead screw) up and down a bit.   
 Whatever you'll try with the eccentric nut of the wheel of the inside (because there's only this one), you won't be able to achieve that all of the three wheels touch the aluminum and sit in the slot like they should, as the eccentric nut only changes the position of the inner wheel towards the frame.  
 So - what to do?  
 Well, there's a 'trick': you need to align those Y-shaped metal brackets where the wheels are mounted to - which directly leads us to the process of [tramming the x-axis gantry](#tramming-the-x-axis-gantry).   
-Let me show you a picture of that Y-shaped brackets I'm referring to first though. They're mounted to each end of the x-axis gantry, but I took it off so that you can see it clearly.  
+
+The following picture shows one of those Y-shaped brackets I'm referring to - in this case it's the one from the Kobra Neo (as I didn't disassemble the x-gantry at my Kobra 2 Neo yet), but the principle is the same.  
+They're mounted to each end of the x-axis gantry.  
 
 ![Y-shaped bracket](../assets/images/axes_Y-bracket_web.jpg)  
-          
+
+
 ---
   
 ### V-Slot Wheels Maintenance  
@@ -302,9 +319,13 @@ As the wheels will suffer from running on the aluminum and debris can build up, 
 If you see debris building up pretty quick, it's most likely because the wheels are running too tight in the v-slot of the aluminum and therefore it's too much friction which leads to a quick wearout.  
 Another factor is a possible misalignment here, so that they aren't running well along in the slot, so check the position of the wheels as well.  
 
-See the following picture where you can clearly see a heavy wear and tear. The picture is taken from the mounting plate of the printhead of a Kobra Neo, but the wear and tear will be the same at POM wheels located at different spots as well. According to the user who took this picture, this is the state after three days of usage - which is absolutely *not* "normal".   
+See the following picture where you can clearly see a heavy wear and tear.  
+The picture is taken from the mounting plate of the printhead of a Kobra Neo, but the wear and tear will be the same at POM wheels located at different spots.  
+According to the user who took this picture, this is the state after three days of usage - which is absolutely *not* "normal".   
 
-![Wheels wear & tear](../assets/images/axes_wheels-weartear_web.jpeg)
+![Wheels wear & tear](../assets/images/axes_wheels-weartear_web.jpeg)  
+
+So if your wheels look like this, check the position of the wheels!  
           
 ---
 
@@ -334,7 +355,7 @@ See the following picture where you can clearly see a heavy wear and tear. The p
 
 It's advisable to tram the x-axis gantry to either the bed itself or the frame, depending on the type of spacers of the bedmount. By doing so, you make sure that the bed and the gantry are parallel to each other and therefore the distance of the nozzle to the plate is pretty much the same all along the x-axis.  
   
-As the printer comes with rigid spacers (the cylindirc metal pieces between the bedplate and the bed gantry), you aren't really able to "tram" the bed unless you replace the stock spacers with [adjustable ones](bed.md#different-spacers) (which I personally *won't* suggest to do, regarding the high speed and accelerations this machine is running).    
+As the printer comes with rigid spacers (the cylindric metal pieces between the bedplate and the bed gantry), you aren't really able to "tram" the bed unless you replace the stock spacers with [adjustable ones](bed.md#different-spacers) - which I personally *won't* suggest to do at this machine, regarding the high speed and accelerations this machine is running.    
 The problem with those rigid stock spacers is, that they might not be all of the same length/height - so I'd recommend to at least dismount them, check if they're all of the same height and if they aren't, sand them down to an equal height. By doing so you can at least make sure that you won't have a tilted or warped bed caused by spacers of different legth. See the section ["Tramming The Bed"](bed.md#tramming-the-bed) for further information and instructions.   
 *Make sure to take care of this before actually starting to tram the x-axis gantry, as you'll tram it in relation to the bed.*  
    
@@ -358,6 +379,7 @@ Please see the expandable textbox below for further instructions about how to tr
     
     *Note: the following description is for tramming the x-axis gantry in ***relation to the bed*** itself when using the rigid stock spacers!*  
     *If you're using adjustable spacers, the procedure is pretty much the same, you just have to put two pieces of equal height onto the frame of the printer (where the z-axis aluminum frame is mounted onto) and rest the x-axis gantry onto them instead of placing those pieces on the bed itself!*  
+    
     ***The following pictures are taken from a Kobra Neo, the principle and the locations of the screws which hold the Y-shaped brackets in place are pretty much the same to the Kobra 2 Pro though. I'll add specific pictures of the K2Pro in the (hopefully) near future though. Until then, please just look out for the locations of the belonging screws yourself.***
     
     - In order to **tram the x-axis gantry in relation to the bed**, so that both are as parallel as possible, take two parts of equal height like cans for example and place them onto the left and right side of the bed.  
@@ -427,52 +449,8 @@ You can adjust the tension of the belt by using the knob at the front side of th
 The x-shaped plate for the bedmount itself has v-slot wheels which are running in the v-slot of the aluminum profile.  
 The following picture shows the aluminum profile of the y-axis with the knob for adjusting the belt tension at the front.   
   
-![Y-axis knob](../assets/images/y-axis_knob_K2Pro_web.jpg)
-  
----
+![Y-axis knob](../assets/images/axes_K2Pro_Y-axis-tensioner_web.jpg)  
 
-### Belt Tension
-It's kinda difficult to explain the correct belt tension, so you'd have to experiment a bit with that.  
-Generally speaking, the belt shouldn't be too tightened up and shouldn't be too loose either. If it's too tight, too much pressure will be put onto the motor shaft which will do harm, the belt can snap etc. - if it's too loose though, the belt might even slip. Either state (too tensioned and too loose) can cause artifacts.   
-
-My 'rule of thumb' here is: if you can bend the belt down a bit by applying some pressure with your finger onto it but you still feel a good amount of resistance, then it's a good sign that you're in the right area of tension. So start from there and if you feel or need to do so, play around with different belt tensions while printing the same bject over and over again for finding the best tension for your setup.   
-
-??? info "Some Notes On Belt Tension"  
-
-    People often recommend "Tighten your belts!", but that's actually not always the solution if artifacts like layer shifts occur.  
-    As a matter of fact, I made many different tests with my Neos and evaluated the different influences of factors like belt tension, wheel position, quality of ball bearings of the wheels, a trammed vs. untrammed frame/printer setup and so on. And to be honest: a belt being too loose in terms of being the cause for severe problems only occured when it was really *that* loose that even someone who has no experience at all with this would notice it. If a belt is sagging, I'd assume that a user would notice that and realizes that this can't be good.   
-
-    Don't get me wrong - *of course* different tensions of the belts *do* have a certain influence of the quality of the print, and it might be worth to finetune the tension for getting the last little amount of perfection out of your print.  
-    And yes, of course, if a belt is too loose, then it can slip or it can cause layer shifts due to a slight 'lag' which occurs when the motors start to drive the belt or when a sudden change of the direction occurs.  
-    But: a belt being too tight can cause artifacts as well. Not only that - it can and actually will harm the hardware. Users reported not only snapped belts or harmed motors, one even reported a bent bracket where the motor of the Y-axis was mount to. So, believe me or not: even though there are people in forums and on YouTube who claim that a belt can't be too tight - it definitely can.  
-
-    Using the abovementioned 'method' of roughly setting your belt tension to a 'medium' value, I found that other factors have a much bigger impact on the print quality and the reliability and well-functioning of the whole printer.  
-    Let me give you two short examples to show you what I mean:  
-    
-    - If your wheels are too tight, of course you also need to increase the belt tension - but in that case it's not the belt tension what's causing the issue in the first place, it's the wrong position of the wheels.  
-    - If you have bad ball bearings at the wheels (which is actually most likely the case due to the cheap parts being used), then those may cause an irregular/inconsistent movement of the wheels and you can feel regular 'hiccups' while moving the belonging part (like the bedgantry or the printhead). You can *feel* how you have to apply more force at certain spots when moving the part manually by hand, as it feels like it's getting stuck at certain spots. So a belt being too loose isn't the cause of the problem here and therefore tightening up your belt isn't the solution - replacing the bad bearings with some quality ones is.  
-
-    So, use your brain and don't always follow the typical answers like "Tighten you belts!" when you're experiencing issues like layer shifts for example. Instead, look at your printer more 'holistic' and see the different parts which are working together in the end. Pay attention to each of them, once again starting by inspecting the frame and making sure everything is still trammed and set up well here. Due to vibrations and repetitive motions screws can come loose, parts can and will wear out and therefore a frame or other parts you set up a while ago can and will come out of alignment by time.
-
-??? example "Belt Maintenance"
-
-    - Check the belt tension from time to time as it might wear out and lengthen a bit. 
-    - Check the teeth of the belt if they are still good looking or if they're worn out or if even some teethe are missing.
-    - Check if you can see any cracks at the belt. 
-    - Check the gear wheels of the motors which are driving the belts. Are they also looking ok? Did they become loose on the motor shaft somehow?  
-
-??? example "Broken/Snapped Belt"
-
-    When you experience a broken/snapped/ripped belt, it's most likely caused by too much belt tension. Of course the belt itself can be physically harmed as well when grinding across sharp edges or when it gets old, but you should notice that when examining the belt every now and then when doing the regular maintenace of your printer.  
-    
-    If you encounter a snapped belt, get yourself a good quality one as a replacement - don't go with the cheapest no-name product you can get.  
-    I'd suggest to look out for an original "Gates Powergrip®" belt. You can get them in different lengths, like one or five meters.  
-    Then get yourself some of those metal clamps you have to crimp at the ends of the belts as well. If you feel insecure about how to properly add those clamps to the belt and how to actually crimp them properly, practice crimping a few to your old broken belt.  
-    
-    Crimp one of those clamps to one end of the belt, measure the belonging length of the belt and apply the other one, then cut off the rest of it.  
-    Install the belt by disassembling the belonging parts like the belt tensioners (see the notes on how to do so in the belonging sections).  
-    Pay attention to route the belt in the correct way and not being twisted and adjust the tension of the belt once everything is reassembled.  
-    
 ---
 
 ### Belt Tensioner
@@ -483,9 +461,11 @@ The following picture shows the belt tensioner located at the front of the y-axi
 
 You adjust the tension of the belt by turning it clockwise for increasing the tension and turning it counter-clockwise for decreasing it.  
 
-<!--
+
 ??? example "Disassembling The Belt Tensioner"
 
+    **Note: The following pictures are taken from the belt tensioner of the Kobra Neo as I didn't diassemble the tensioners at my Kobra 2 Pro yet. I'd assume that they look pretty much the same in the inside though, so at least you'll get an idea of how a belt tensioner is (most likely) built.**  
+    
     It might happen that you have to disassemble the tensioner in order to replace a broken belt or a broken (part of the) tensioner.  
     In that case turn the knob counter-clockwise until the belt completely sags. Then unhook one end of the belt from the bedgantry (I suggest to unhook it in the front of the bed gantry). Unscrew the two screws you can see at the blue plastic cap of the belt tensioner and carefully pull it off the frame. You might have to turn the knob even more counter-clockwise if it doesn't come off right away.  
     Once you've pulled it off, you'll see the parts as shown in the picture below.  
@@ -508,29 +488,74 @@ You adjust the tension of the belt by turning it clockwise for increasing the te
     Then slide the whole setup back into place where it belongs and screw in the two screws which hold the blue plastic cap into place.  
     Finally hook up the end of the belt to that notch at the bedgantry again.   
     Once everything is done, adjust the belt tension again by turning the knob clockwise.  
--->  
+ 
+
+  
+---
+
+#### Belt Tension
+It's kinda difficult to explain the correct belt tension, so you'd have to experiment a bit with that.  
+Generally speaking, the belt shouldn't be too tightened up and shouldn't be too loose either. If it's too tight, too much pressure will be put onto the motor shaft which will do physical harm, the belt can snap etc. - if it's too loose though, the belt might even slip. Either state (too tensioned and too loose) can cause artifacts.   
+
+My 'rule of thumb' here is: if you can bend the belt down a bit by applying some pressure with your finger onto it but you still feel a good amount of resistance, then it's a good sign that you're in the right area of tension. So start from there and if you feel or need to do so, play around with different belt tensions while printing the same bject over and over again for finding the best tension for your setup.   
+
+??? info "Some Notes On Belt Tension"  
+
+    People often recommend "Tighten your belts!", but that's actually not always the solution if artifacts like layer shifts occur.  
+    As a matter of fact, I made many different tests with my Kobra Neos and evaluated the different influences of factors like belt tension, wheel position, quality of ball bearings of the wheels, a trammed vs. untrammed frame/printer setup and so on. And to be honest: a belt being too loose in terms of being the cause for severe problems only occured when it was really *that* loose that even someone who has no experience at all with this would notice it. If a belt is sagging, I'd assume that a user would notice that and realizes that this can't be good.   
+
+    Don't get me wrong - *of course* different tensions of the belts *do* have a certain influence of the quality of the print, and it might be worth to finetune the tension for getting the last little amount of perfection out of your print.  
+    And yes, of course, if a belt is too loose, then it can slip or it can cause layer shifts due to a slight 'lag' which occurs when the motors start to drive the belt or when a sudden change of the direction occurs.  
+    But: a belt being too tight can cause artifacts as well. Not only that - it can and actually will harm the hardware. Users reported not only snapped belts or harmed motors, one even reported a bent bracket where the motor of the Y-axis was mount to. So, believe me or not: even though there are people in forums and on YouTube who claim that a belt can't be too tight - it definitely can.  
+
+    Using the abovementioned 'method' of roughly setting your belt tension to a 'medium' value, I found that other factors have a much bigger impact on the print quality and the reliability and well-functioning of the whole printer.  
+    Let me give you two short examples to show you what I mean:  
+    
+    - If your v-slot wheels or SG15 bearings are too tight, of course you also need to increase the belt tension - but in that case it's not the belt tension what's causing the issue in the first place, it's the wrong position of the wheels.  
+    - If you have bad ball bearings at the wheels (which is actually most likely the case due to the cheap parts being used) or SG15 rollers, then those may cause an irregular/inconsistent movement of the wheels and you can feel regular 'hiccups' while moving the belonging part (like the bedgantry or the printhead). You can *feel* how you have to apply more force at certain spots when moving the part manually by hand, as it feels like it's getting stuck at certain spots. So a belt being too loose isn't the cause of the problem here and therefore tightening up your belt isn't the solution - replacing the bad bearings with some quality ones is.  
+
+    So, use your brain and don't always follow the typical answers like "Tighten you belts!" when you're experiencing issues like layer shifts for example. Instead, look at your printer more 'holistic' and see the different parts which are working together in the end. Pay attention to each of them, once again starting by inspecting the frame and making sure everything is still trammed and set up well here. Due to vibrations and repetitive motions screws can come loose, parts can and will wear out and therefore a frame or other parts you set up a while ago can and will come out of alignment by time.
+
+??? example "Belt Maintenance"
+
+    - Check the belt tension from time to time as it might wear out and lengthen a bit. 
+    - Check the teeth of the belt if they are still good looking or if they're worn out or if even some teeth are missing.
+    - Check if you can see any cracks at the belt or any other damage. 
+    - Check the pulleys of the motors which are driving the belts. Are they also looking ok? Did they become loose on the motor shaft somehow?  
+
+??? example "Broken/Snapped Belt"
+
+    When you experience a broken/snapped/ripped belt, it's most likely caused by too much belt tension. Of course the belt itself can be physically harmed as well when grinding across sharp edges or when it gets old, but you should notice that when examining the belt every now and then when doing the regular maintenace of your printer.  
+    
+    If you encounter a snapped belt, get yourself a good quality one as a replacement - don't go with the cheapest no-name product you can get.  
+    I'd suggest to look out for an original "Gates Powergrip®" belt. You can get them in different lengths, like one or five meters.  
+    Then get yourself some of those metal clamps you have to crimp at the ends of the belts as well. If you feel insecure about how to properly add those clamps to the belt and how to actually crimp them properly, practice crimping a few to your old broken belt.  
+    
+    Crimp one of those clamps to one end of the belt, measure the belonging length of the belt and apply the other one, then cut off the rest of it.  
+    Install the belt by disassembling the belonging parts like the belt tensioners (see the notes on how to do so in the belonging sections).  
+    Pay attention to route the belt in the correct way and not being twisted and adjust the tension of the belt once everything is reassembled.  
+    
 
 ---
 
 ### Y-Axis Motor
 The motor of the y-axis is a 42-48 Nema 17 stepper motor with a 20 teeth pulley being attached to the 5mm motor shaft.  
-It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at each steps, and therefore it's doing 200 steps for one full 360° rotation.  
+It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at each steps, and therefore it's doing 200 steps per one full 360° rotation.  
 
 ![Y-axis motor](../assets/images/axes_K2Pro_Y-motor_web.jpg)  
 
 ![Y-axis motor number](../assets/images/axes_K2Pro_Y-motor_back_web.jpg)  
 
-<!--  
-As there aren't any specifications and replacement motors from Anycubic being available, you can either use a motor with the beforementioned specs or get yourself a motor from a Creality Ender 3 (or one that's advertised to fit that printer). The following picture shows the original stepper motor being mounted and the belonging Creality model laying next to it at the right hand side.  
+  
+  
 
-![Stock vs Creality y-motor](../assets/images/axes_y-motor_stock-creality_web.jpg)  
+!!! warning "Attention When Connecting A 'Generic' Motor!"  
 
-!!! warning "Attention When Connecting The 'Creality'-Type Motor!"  
-
-    As the connections of the stock vs a 'Creality'-type motor are different due to different pinouts of the coils, you need to make sure you connect it correctly!  
-    Therefore you need to switch the position of two wires, best would be to check the coils with a multimeter first!  
-    Please read the expandable textbox below for further information.
--->  
+    As there aren't any specifications and replacement motors from Anycubic being available, you should be able to use any 'generic' motor with the beforementioned specs.  
+    *Before connecting it to the mainboard though, take your multimeter and identify the coils by probing the pins of the motor's connector!*  
+    Compare your findings with the ones from the stock motor - you might have to switch the position of certain wires inside of the plug.  
+    
+  
 
 ??? example "Identifying The Coils And Connections"  
 
@@ -545,7 +570,7 @@ As there aren't any specifications and replacement motors from Anycubic being av
     Then move the probe to the next pin and repeat the process.  
     In the end you'll come up with having two 'paired' pins identified - each pair belongs to one coil.  
     
-    Now look at the following picture and compare your findings with the marked pins of the two coils of the upper "Stock Motor".  
+    For illustration purposes, the following picture shows the coils of a motor from a Kobra Neo and a Creality motor.    
 
     ![Marked motor pins](../assets/images/axes_y-motor_stock-creality_pinout-marked_web.jpg)  
     
@@ -562,17 +587,25 @@ As there aren't any specifications and replacement motors from Anycubic being av
     
     If it happens that the polarity of the coils/wiring is wrong, you'll experience a stuttering and probably noise-making motor. In that case proceed as above and switch the wiring accordingly.  
     
+---
 
+### Linear Rail System
+
+The Y axis has a linear rail system instead of POM wheels like other machines. It's not a 'real' linear rail like a MGN12 or MGN15 system, but it's U-shaped metal SG15 bearings running along round-shaped metal rails which are being mounted in the v-slots of the Y-axis' aluminum rail.  
+The following picture shows this rail system.  
+
+***..add pic..***
 
 ---
     
-### SG15 Bearings Position
+#### SG15 Bearings Position
 The metal wheels of the bed's gantry, the SG15 bearings, are leading the bed along the aluminum profiles of the y-axis.  
 These bearings run along a round-shaped metal rail and therefore they should sit in an optimal position.    
 
 (..add pic..)
 
 *You can adjust the position and therefore the overall pressure of the bearings against the metal rail of only ***two*** bearings by turning the eccentric nut which moves the bearing either towards or away from the metal rail.*   
+
 The following picture shows an eccentric nut (in this case mounted to a POM wheel) which I painted to make the special shape of it more visible.  
 
 ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
@@ -581,9 +614,17 @@ As you hopefully can see, the bolt isn't centered - so if you turn that eccentri
 
 *The bearings whose position can be adjusted are located at the ***right hand side*** of the gantry when looking at it from the front - the two wheels at the left side of the aluminum frame can't be adjusted as there aren't any eccentric nuts mounted!*  
 
-(..add pic..)
+![Eccentric nuts Y frontview](../assets/images/axes_K2Pro_Y-eccentric-nuts_frontview_web.jpg)  
 
-The bearingss shouldn't sit too tight onto the rail but also not too loose. They should touch the rail and sit on it well without any amount of play which would cause a wiggeling, but they should still be able to move smoothly. On the other hand, they also shouldn't be too loose or far away from the rail which would lead to instability. The gantry shouldn't wiggle but it has to be able to move freely and without much of a force being applied.   
+You can actually see them better when looking at it from the right side.  
+
+![Eccentric nuts Y sideview](../assets/images/bed_K2Pro_eccentric-nuts-gantry_web.jpg)  
+
+The bearingss shouldn't sit too tight onto the rail but also not too loose.  
+They should touch the rail and sit on it well without any amount of play which would cause a wiggeling, but they should still be able to move smoothly. 
+  
+On the other hand, they also shouldn't be too loose or far away from the rail which would lead to instability.  
+The gantry shouldn't wiggle but it has to be able to move freely and without much of a force being applied.   
     
 Make sure they're assembled correctly and line up with the rail as well - if they're out of alignment and don't run correctly along the rail, you'll experience a massive wear and tear. Same goes for the bearings being too tight.  
 
@@ -594,17 +635,17 @@ See the following picture where you can clearly see a wear and tear, in this cas
 The reason for this is most likely the bearings being positioned too tight to the rail.  
 Insufficient lubrification also plays a role, but in this case the user did apply lube.        
 
-<!--
 
 ??? tip "Check The Screws Of The Bedplate And The Gantry Of The Bed"
 
-    Check if the bedplate itself is somehow wobbling. Not only sideways/horizontally, but also up and down/vertically. If so, not only check the v-slot wheels and maybe adjust their fitting using the eccentric nuts, also check if the screws of the gantry of the bed where the wheels are mounted to are tightened up. As an example: at my **Neo** the bed was wobbling up and down in one certain area - after checking the screws and tighten them up everything was sturdy as it should be.         
-
--->
+    Check if the bedplate itself is somehow wobbling. Not only sideways/horizontally, but also up and down/vertically.  
+    If so, not only check the SG15 bearings and maybe adjust their fitting using the eccentric nuts, also check if the screws of the gantry of the bed where the wheels are mounted to are tightened up.  
+    Same goes for the screws which are being used for mounting the bedplate to the gantry itself.
+             
     
 ---  
 
-### SG15 Bearings Maintenance  
+#### SG15 Bearings Maintenance  
 
 As the bearings will suffer from running along the metal rail and debris can build up, clean the rails and the bearings from time to time. After that, add a slight coating of lubrification to reduce the wear and tear due to the fact that metal is running on metal.  
 
@@ -871,15 +912,15 @@ The following pictures show the motor with the mounting bracket.
 |:----------------------:|:-----------------:|
 | ![Z stepper mounting](../assets/images/axes_K2Pro_Z-motor_backsideview_web.png) | ![Z- stepper underside](../assets/images/axes_K2Pro_Z-motor_sideview_web.png) |   
  
-<!--
+
 As there aren't any specifications and replacement motors from Anycubic being available, you can either use a motor with the beforementioned specs or get yourself a motor from a Creality Ender 3 (or one that's advertised to fit that printer).  
 
-!!! warning "Attention When Connecting The 'Creality'-Type Motor!"  
+!!! warning "Attention When Connecting A 'Generic' Motor!"  
 
-    As the connections of the stock vs a 'Creality'-type motor are different due to different pinouts of the coils, you need to make sure you connect it correctly!  
-    Therefore you need to switch the position of two wires, best would be to check the coils with a multimeter first!  
-    Please read the expandable textbox below for further information.
--->  
+    As the connections of the stock vs a generic or (in this case) a 'Creality'-type motor are different due to different pinouts of the coils, you need to make sure you connect it correctly!  
+    *So, before connecting it to the mainboard though, take your multimeter and identify the coils by probing the pins of the motor's connector!*  
+    Compare your findings with the ones from the stock motor - you might have to switch the position of certain wires inside of the plug.
+  
 
 ??? example "Identifying The Coils And Connections"  
 
@@ -894,7 +935,7 @@ As there aren't any specifications and replacement motors from Anycubic being av
     Then move the probe to the next pin and repeat the process.  
     In the end you'll come up with having two 'paired' pins identified - each pair belongs to one coil.  
     
-    Now look at the following picture and compare your findings with the marked pins of the two coils of the upper "Stock Motor" (mind that the picture shows the motor of the y-axis right now, but it's actually the same pinout and probing procedure at the z-axis motor).  
+    For illustration purposes, the following picture shows the coils of a motor from a Kobra Neo and a Creality motor.  
 
     ![Marked motor pins](../assets/images/axes_y-motor_stock-creality_pinout-marked_web.jpg)  
     
