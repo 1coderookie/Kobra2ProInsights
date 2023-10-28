@@ -30,7 +30,7 @@ The USB-A connectors can be accessed from the front of the printer, you find the
 If you need to access the mainboard, you need to open the housing where the mainboard is located. For doing so, you need to access the underside of the printer.  
 The housing where the mainboard is located in is about 238x142mm and it's inserted in between the side rails of the base frame (see the expandable textbox below for further pictures).
 
-Once you opened the lid, you can see that there's quite a lot of space left inside of the enclosure. If one re-routes the wires, it should be possible to add an [external MOSFET](powersupply#add-an-external-mosfet-mod) for the bed here.  
+Once you opened the lid, you can see that there's quite a lot of space left inside of the enclosure. If one re-routes the wires, it should be possible to add an [external MOSFET](powersupply.md#add-an-external-mosfet-mod) for the bed here.  
 
 ![Housing opened](../assets/images/mainboard_K2Pro_mobo-in-case_web.jpg)  
 
