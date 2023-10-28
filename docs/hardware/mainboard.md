@@ -10,7 +10,7 @@ It is a 32bit 24V mainboard with an ARM Cortex-A7 which runs at 1.2GHz and offer
 
 The mainboard comes with four TMC2209 silent stepper drivers (at least that's what Anycubic states - I didn't take off the heatsinks to check if these really are genuine TMC2209 chips) which are *soldered* onto the board (they can't be swapped out!).  
 
-It offers three USB-A connectors labeled as "U-EXT1", "U-EXT2" and "U-FRIMWARE" (yes, typo included ;) ).  
+It offers three USB-A connectors labeled at the PCB as "U-EXT1", "U-EXT2" and "U-FRIMWARE" (yes, typo included ;) ).  
 
 It also offers a built in Realtek WiFi chip ([RTL8723DU](https://www.realtek.com/en/products/communications-network-ics/item/rtl8723du)) with an external antenna.  
 
@@ -125,6 +125,10 @@ Please see the expandable textbox below for further instructions and illustratio
       This can happen really quick as they're just glued onto the stepper drivers with some thermal paste and the red glue is usually spread across the fins of the heatsinks as well!  
       So *if* you have to pull off that stuff from those connectors of the motor wiring, then *make sure that you press down the heatsink with your finger when trying to pull that stuff off!*  
       
+??? info "SPI Connector On The PCB"  
+
+    As this might be interesting for someone who might try to access the mainboard for reverse engineering, I'd like to mention that there's a four pin SPI connector on the mainboard as shown in the following picture.  
+    ![SPI connector](../assets/images/mainboard_K2Pro_connectors_SPI_web.jpg)  
 
 ---
 
