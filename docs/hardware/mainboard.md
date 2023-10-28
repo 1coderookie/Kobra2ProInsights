@@ -22,11 +22,47 @@ It also offers a built in Realtek WiFi chip ([RTL8723DU](https://www.realtek.com
 
 The USB-A connectors can be accessed from the front of the printer, you find them at the right hand side of that black plastic aperture of the frame as shown in the picture below.  
 
-![USB-A connectors](../assets/images/printer_K2Pro_USBA_web.jpg)  
+![USB-A connectors](../assets/images/K2Pro_front_USB_web.jpg)  
 
-The plastic enclosure where the mainboard is located in is about 238x142mm and it's inserted in between the side rails of the base frame.  
+--- 
 
-(..add pic..)
+## Accessing The Mainboard  
+If you need to access the mainboard, you need to open the housing where the mainboard is located. For doing so, you need to access the underside of the printer.  
+The housing where the mainboard is located in is about 238x142mm and it's inserted in between the side rails of the base frame (see the expandable textbox below for further pictures).
+
+Once you opened the lid, you can see that there's quite a lot of space left inside of the enclosure. If one re-routes the wires, it should be possible to add an [external MOSFET](powersupply#add-an-external-mosfet-mod) for the bed here.  
+
+![Housing opened](../assets/images/mainboard_K2Pro_mobo-in-case_web.jpg)  
+
+Please see the expandable textbox below for further instructions and illustrations about how to actually open the housing and access the PCB.  
+
+??? example "How To Open The Mainboard's Housing"  
+
+    - When looking at the underside of the machine, you can see the housing of the mainboard being located it the front, between the outer rails of the baseframe.  
+      ![Mainboard's housing](../assets/images/mainboard_K2Pro_lid_web.jpg)  
+    - In the middle you can see two hex screws. These are holding the whole housing in place as they're screwed into the Y-rail in the middle, but they also hold down the lid. So take them out first.  
+    - After you took out the screws, you then have to 'unclip' the lid of the housing. As you can see in the following picture, there are plastic 'noses' which rest in the belonging nothes of the housing's base part. Use a thin tool like a screwdriver or a plectrum and insert it in the slot between the housing's lid and the base part.  
+      ![Lid unclipped](../assets/images/mainboard_K2Pro_lid-halfopen_web.jpg)  
+    - You then need to *carefully* bend the base part slightly away to make the lid come out. I'd suggest to start at one edge - once you have lifted that up, it's much easier to go around the rest.  
+    - Once you have released all clips, I'd recommend to unlpug the flat ribbon cable of the control unit and lead it through the belonging cutout of the lid for being able to flip the lid over.  
+    - Once you have done that, you can flip the lid over as shown in the following picture.  
+      ![Lid flipped](../assets/images/mainboard_K2Pro_lid-open_web.jpg)  
+    - Be careful and don't rip off the wire of the fan!    
+
+    That's it - you successfully opened the housing of the mainboard!  
+
+    If you need to take out the whole mainboard now, take out the four screws located in the corners of the mainboard. The lift up the PCB in the back first, as the USB connectors are positioned in those cutouts in the front of the housing. 
+    
+    For reassembling everything, just follow the steps in reverse.  
+    Pay attention to the wires though, so that they aren't positioned between the posts where the screws will be screwed through later.  
+    Also make sure to reconnect the black grounding wire at the lower right corner in case you took out the PCB.  
+
+    If you wan to maybe want to take away the whole housing to e.g. place it outside an enclosure you put the printer in, you have to take off the mount which holds the control unit and pull out the black plastic cap on the other rail. That one is just stuck in the aluminum frame, so you can pull it out. Be careful to not break those little plastic posts though which are shoved into the threads of the middle parts of the 4040 rail. See the following picture for getting an idea of how it should look like.  
+    ![Released caps](docs/assets/images/mainboard_K2Pro_open-box_underside_web.jpg)   
+    Once you have completed this step, you can then just pull out the enclosure. It's shoved in between those two outer rails of the base frame, some plastic noses are guiding it in one of the v-slots.  
+    ![Plastic nose in v-slot](../assets/images/mainboard_K2Pro_case-sliders_web.jpg)
+    
+
 
 !!! danger "Add Ferrules To The 24V Wires!" 
 
@@ -67,7 +103,9 @@ The plastic enclosure where the mainboard is located in is about 238x142mm and i
 
 ??? info "Red Glue Across All Connectors"
 
-    When you look at the mainboard, you'll see some red glue spread across all connectors. That's just for securing the connnection. You can get that stuff off by carefully pulling it off. It works better if you warm up that stuff *a little bit* for making it more flexible, a hair dryer is good for that. It then becomes a bit softer and easier to be pulled off. Don't heat it up too much though as it'll become too soft then!  
+    When you look at the mainboard, you'll see some red glue spread across all connectors.  
+    ![Red glue](../assets/images/mainboard_K2Pro_red-glue_web.jpg)  
+    That's just for securing the connnection. You can get that stuff off by carefully pulling it off. It works better if you warm up that stuff *a little bit* for making it more flexible, a hair dryer is good for that. It then becomes a bit softer and easier to be pulled off. Don't heat it up too much though as it'll become too soft then!  
     You can also use a thin screwdriver to lift up a part of that stuff and then use some tweezers to grab it.    
     
     However, be *very careful* to  
@@ -81,16 +119,26 @@ The plastic enclosure where the mainboard is located in is about 238x142mm and i
 
 ---
 
-### Mainboard Fan
+## Mainboard Fan
   
 The following picture shows the fan of the mainboard. It's a 80x80x15mm, 24V, 0.06A type ("HSC BCY8015S24L").  
 
-![MCU fan](../assets/images/fan-mainboard_K2Pro_web.jpg)  
+![MCU fan](../assets/images/mainboard_K2Pro_fan_web.jpg) 
+
+As you can see, the fan is covered with a metal grille to avoid that any wires might get caught.  
+The following picture shows the mounting direction of the fan.  
+
+![MCU fan mounting direction](../assets/images/mainboard_K2Pro_fan-mounting-direction_web.jpg)  
+
+ 
 
 ---
   
 ## MOD: Other Mainboards 
-It's possible to replace the stock mainboard with a different type of board, like e.g. a board from BigTreeTech (BTT). You just have to pay attention that it uses and provides 24V DC as well, as the PSU and the components like the fans etc. are running on 24V. Depending on the type of the board, you might have to use a different ABL sensor (and most likely a different type of control unit as well though, but I assume you'll run Klipper on it then anyway).  
+Generally speaking, it's possible to replace the stock mainboard with a different type of board, like e.g. a board from BigTreeTech (BTT) for being able to use Klipper (for example).  
+You just have to pay attention that it uses and provides 24V DC as well, as the PSU and the components like the fans etc. are running on 24V.  
+
+Depending on the type of the board, you might have to use a different ABL sensor (and most likely a different type of control unit as well though, but I assume you'll run Klipper on it then anyway) and you probably aren't able to directly connect the acceleration sensor (you'd most likely have to connect it to the RPi where you have Klipper running onto then).  
 
 There haven't been reports of users who changed the mainboard yet though, so I can't show you any specific solution here at this time.  
 
