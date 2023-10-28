@@ -49,18 +49,20 @@ Please see the expandable textbox below for further instructions and illustratio
       ![Lid flipped](../assets/images/mainboard_K2Pro_lid-open_web.jpg)  
     - Be careful and don't rip off the wire of the fan!    
 
-    That's it - you successfully opened the housing of the mainboard!  
+    **That's it - you successfully opened the housing of the mainboard!**  
 
     - If you need to take out the whole mainboard now, take out the four screws located in the corners of the mainboard.  
       Then lift up the PCB in the back first, as the USB connectors are positioned in those cutouts in the front of the housing. 
     
     For **reassembling** everything, just follow the steps in reverse.  
     In addition to that, mind the following:  
+    
     - Pay attention to the wires though, so that they aren't positioned between the posts where the screws will be screwed through later.    
     - Also mind the black ribbon cable of the control unit - don't forget to lead it through the belonging cutout of the lid and reconnect it to the control unit.  
     - Also make sure to reconnect the black grounding wire at the lower right corner in case you took out the PCB.  
 
     If you want to **take away the whole housing** to e.g. place it outside an enclosure you put the printer in, mind the following:  
+    
     - You have to take off the mount which holds the control unit.  
     - You have to pull out the black plastic cap of the face of the other side's rail. That one is just stuck in the aluminum frame, so you can pull it out. Be careful to not break those little plastic posts though which are shoved into the threads of the middle parts of the 4040 rail.  
     - See the following picture for getting an idea of how it should look like.  
