@@ -26,7 +26,7 @@ The USB-A connectors can be accessed from the front of the printer, you find the
 
 --- 
 
-## Accessing The Mainboard  
+### Accessing The Mainboard  
 If you need to access the mainboard, you need to open the housing where the mainboard is located. For doing so, you need to access the underside of the printer.  
 The housing where the mainboard is located in is about 238x142mm and it's inserted in between the side rails of the base frame (see the expandable textbox below for further pictures).
 
@@ -73,7 +73,7 @@ Please see the expandable textbox below for further instructions and illustratio
     
 
 
-!!! danger "Add Ferrules To The 24V Wires!" 
+??? danger "Add Ferrules To The 24V Wires!" 
 
     The 24V wires already come with ferrules being added. If it happens that your specific machine doesn't come with ferrules but with tinned wires instead, **it's highly advisable to cut off the tinned tips of the wires without a plug (power supply and heated bed) and add ferrules to them.**  
     Same goes for the case that a ferrule comes off - in that case, **add a new one** instead of just inserting the wire or tinning the end of it.     
@@ -105,34 +105,9 @@ Please see the expandable textbox below for further instructions and illustratio
     ![SPI connector](../assets/images/mainboard_K2Pro_connectors_SPI_web.jpg)  
 
     
-<!--
-
-!!! warning "Use A USB Power Blocker"  
-
-    When connecting the printer to a computer or a Raspberry Pi, it is highly recommended to use an additional USB power blocker.  
-    By doing so, you make sure that neither the computer nor the mainboard will draw power through the USB-C connector from the other device. If you don't do so, it can harm your mainboard as well as your computer.  
-    
-    As it's an fast and easy solution, you can get a device called "USB power blocker" for a few bucks. Attention: make sure to *not* get a "USB *data* blocker" though, it *has* to be a *power* blocker!  
-    This device will then be plugged between the USB connector of the computer and the actual USB-C cable. It still allows data to be transferred, but the 5V line isn't existent. The following pictures show such a device and how it's installed.  
-
-    ![USB power blocker](../assets/images/USB_powerblocker_web.jpg)  
-
-    ![USB power blocker installed](../assets/images/USB_powerblocker_2_web.jpg)  
-
-    However, you don't *have* to spend money on this item, as there are other ways to interrupt the 5V power line. For example, you can cut the 5V wire of your USB cable, you can solder a male and a female USB connector onto a little PCB and avoid making the 5V line connection or you can simply use some electric or Kapton tape and cover the belonging pin at the USB connector of the cable like shown in the following picture.  
-
-    ![USB pin tape attached](../assets/images/USB_taped5V_web.jpg)  
-
-    Keep in mind though that you have to pay attention that you *only* cover the 5V pin and that you have to make sure that the tape is still in place every time you plug in the cable after you unplugged it.  
-
--->    
-
-
-
-
 ---
 
-## Mainboard Fan
+## Mainboard Cooling Fan
   
 The following picture shows the fan of the mainboard. It's a 80x80x15mm, 24V, 0.06A type ("HSC BCY8015S24L").  
 
@@ -147,7 +122,7 @@ The following picture shows the mounting direction of the fan.
 
 ---
   
-## MOD: Other Mainboards 
+## MOD: Different Mainboard 
 Generally speaking, it's possible to replace the stock mainboard with a different type of board, like e.g. a board from BigTreeTech (BTT) for being able to use Klipper (for example).  
 You just have to pay attention that it uses and provides 24V DC as well, as the PSU and the components like the fans etc. are running on 24V.  
 
