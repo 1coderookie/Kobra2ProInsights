@@ -320,7 +320,7 @@ This silicone block is about 12x13mm big and is spring loaded. Make sure it can 
 
 If rests of filament are stuck on it after the nozzle has been wiped, take them off to avoid that the nozzle will catch them in an upcoming wipe procedure.  
 
-...
+---
 
 ## Acceleration Sensor
 There's only one acceleration sensor for measuring the vibrances. It's located at the rear side of the bed's underside, right where the z-offset sensor is located - the printhead doesn't have a sensor.   
@@ -348,7 +348,7 @@ The following picture shows the two spacers of the right side while being mounte
 
 Even though this is a somewhat rigid construction (if the material of the bed gantry would be thicker..), the culprit of this solution is that you can't manually tram the bedplate if needed. Besides that, a huge problem is that the stock spacers aren't all of equal height.  
 
-So it's very advisable to dismount the bed, take the stock spacers out and check if they're all of the same height. I'd suggest to use a digital caliper for doing so, but it you don't have one, you can also place them next to each other onto a *flat* surface and place something thin and straight ((e.g. a ruler) onto them to check and compare the height.  
+So it's very advisable to dismount the bed, take the stock spacers out and check if they're all of the same height. I'd suggest to use a digital caliper for doing so, but it you don't have one, you can also place them next to each other onto a *flat* surface and place something thin and straight (e.g. a ruler) onto them to check and compare the height.  
 Most likely they're not of equal height, which leads to a somewhat warped bed then. If you encounter this problem, I'd suggest to sand them down to the height of the shortest one. If you do so, pay attention to sand them down perpendicular - you don't want to end up with a tilted surface/spacer.  
 You could also try to shim it out of course, but especially if the differences are pretty small, then this can be a real hassle.  
 
@@ -452,45 +452,50 @@ So seeing all those bedslingers having the bed mounted to the gantry using four 
 Maybe it was a 4 point mounting because of the bed being heated up? Maybe it was because the plate was pretty thin? But then the effect of heating it up and tramming it by tightening 4 screws in a somewhat 'pattern' must result in a weird warped surface withe the effect and outcome would be pretty much unpredictable!?  
 So I did a bit of a research and thankfully discovered an [article where exactly this circumstance is being described and explained](https://drmrehorst.blogspot.com/2017/07/3-point-print-bed-leveling-vs-4-point.html) for 3d printers. *I highly recommend reading it!*  
 
-So, long story short: I decided trying to mod my printer's gantry and bedmount to a 3 point system.  
-I gathered through my workshop and found an aluminum pofile which seemed to be useful for this attempt. I cut two pieces and drilled the belonging holes (the distance was about 164mm and I used a 5mm drill which gave me a bit of a play while installing it): one at each end for mounting the profiles to the bedplate and the gantry using the existing holes and threads, and one in the exact middle for the screw which then would be my 'roll' mounting point. The holes in the middle had to have a bit of an offset to each other as I used L-shaped aluminum profiles for better stability, so that the profiles won't hit each other when lowering the bed.    
+So, long story short: I decided trying to mod my printer's gantry and bedmount to a 3 point system.   
+To keep this section 'short', please see the expandable textbox below for the further description.  
 
-![Aluminum parts](../assets/images/bed_3pt-parts_web.jpg)  
+??? experiment "3 Point Bed Mount Mod"  
 
-After mounting a screw to the middle of the part which will be attached to the bedplate, I then mounted the parts to the bedgantry and the bed itself.  
-As I have insulation added to the bedplate, I had to use bushings/spacers so that the insulation won't be compressed at the two mounting holes. I used some slightly too short spacers here first, which immediately lead to a bent bedplate due to the insulation pushing against the bed, especially in the middle section. After swapping out those spacers and using longer ones, everything worked out fine.  
-Of course I didn't found screws with the perfect length, but as I didn't want to drive t o the hardware store just for two screws and I didn't want to cut the original screws, I ended up using those. I also drilled the existing holes in the bedplate a tiny bit bigger for allowing a bit of movement which should take care of the expanding material while heating up.   
-After adding a spring to that screw in the middle, I then mounted everything together.  
+    I gathered through my workshop and found an aluminum pofile which seemed to be useful for this attempt. I cut two pieces and drilled the belonging holes (the distance was about 164mm and I used a 5mm drill which gave me a bit of a play while installing it): one at each end for mounting the profiles to the bedplate and the gantry using the existing holes and threads, and one in the exact middle for the screw which then would be my 'roll' mounting point. The holes in the middle had to have a bit of an offset to each other as I used L-shaped aluminum profiles for better stability, so that the profiles won't hit each other when lowering the bed.    
 
-![Construction sideview right](../assets/images/bed_3pt-right-sideview_web.jpg)
+    ![Aluminum parts](../assets/images/bed_3pt-parts_web.jpg)  
 
-![Construction sideview left](../assets/images/bed_3pt-left-sideview_web.jpg)
+    After mounting a screw to the middle of the part which will be attached to the bedplate, I then mounted the parts to the bedgantry and the bed itself.  
+    As I have insulation added to the bedplate, I had to use bushings/spacers so that the insulation won't be compressed at the two mounting holes. I used some slightly too short spacers here first, which immediately lead to a bent bedplate due to the insulation pushing against the bed, especially in the middle section. After swapping out those spacers and using longer ones, everything worked out fine.  
+    Of course I didn't found screws with the perfect length, but as I didn't want to drive t o the hardware store just for two screws and I didn't want to cut the original screws, I ended up using those. I also drilled the existing holes in the bedplate a tiny bit bigger for allowing a bit of movement which should take care of the expanding material while heating up.   
+    After adding a spring to that screw in the middle, I then mounted everything together.  
 
-![Construction frontview closeup](../assets/images/bed_3pt-frontview_web.jpg)
+    ![Construction sideview right](../assets/images/bed_3pt-right-sideview_web.jpg)
 
-This is how it looks like in total from the front. I took the picture with the construction being untrammed to show the tilt (which will be adjusted by the 'roll' then) of the right side better.  
+    ![Construction sideview left](../assets/images/bed_3pt-left-sideview_web.jpg)
 
-![Construction frontview full](../assets/images/bed_frontview-complete_tilted_web.jpg)
+    ![Construction frontview closeup](../assets/images/bed_3pt-frontview_web.jpg)
 
-Right now I still have to take off the PEI plate (or at least lift the left front corner) for accessing and adjusting the screw for the pitch (because that one is still screwed into the thread of the gantry) which I chose the front left screw should be (the back left screw is my reference), the screw for the roll (which is now the screw in the middle at the right side) I can access from underneath the bed though which makes it easy to adjust. I'll probably end up changing the setup for the screw of the pitch as well. 
+    This is how it looks like in total from the front. I took the picture with the construction being untrammed to show the tilt (which will be adjusted by the 'roll' then) of the right side better.  
 
-I then continued with a rough tramming without the PEI plate being applied, adjusting only the 'pitch' and then the 'roll' after having the 'reference' set to the desired height.  
-After that, I put on the pEI plate and excetuted the probing for a bedmesh (7x7 grid using Klipper) with the bed being cold - the result looked promising.  
+    ![Construction frontview full](../assets/images/bed_frontview-complete_tilted_web.jpg)
 
-![Bedmesh 3point cold](../assets/images/bedmesh_3pt_cold_web.jpg)
+    Right now I still have to take off the PEI plate (or at least lift the left front corner) for accessing and adjusting the screw for the pitch (because that one is still screwed into the thread of the gantry) which I chose the front left screw should be (the back left screw is my reference), the screw for the roll (which is now the screw in the middle at the right side) I can access from underneath the bed though which makes it easy to adjust. I'll probably end up changing the setup for the screw of the pitch as well. 
 
-Then I heated up the bed and *immediately* did a new bedmesh - and I was actually kinda shocked, as I've never seen a heavily warped bed like that before. The promising thing though was, that the warp was somewhat consistent - it looked like a wave instead of a crooked pillow like before when being mounted at the 4 points.  
+    I then continued with a rough tramming without the PEI plate being applied, adjusting only the 'pitch' and then the 'roll' after having the 'reference' set to the desired height.  
+    After that, I put on the pEI plate and excetuted the probing for a bedmesh (7x7 grid using Klipper) with the bed being cold - the result looked promising.  
 
-![Bedmesh 3point just heated up](../assets/images/bedmesh_3pt_just-heated-up_web.jpg)
+    ![Bedmesh 3point cold](../assets/images/bedmesh_3pt_cold_web.jpg)
 
-I then let it settle for about 10-15min before executing another probing sequence.  
+    Then I heated up the bed and *immediately* did a new bedmesh - and I was actually kinda shocked, as I've never seen a heavily warped bed like that before. The promising thing though was, that the warp was somewhat consistent - it looked like a wave instead of a crooked pillow like before when being mounted at the 4 points.  
 
-![Bedmesh 3point settled](../assets/images/bedmesh_3pt_settled_web.jpg)
+    ![Bedmesh 3point just heated up](../assets/images/bedmesh_3pt_just-heated-up_web.jpg)
 
-As you can see, there is still some room for finetuning, like lowering the front by adjusting the pitch and adding some Kapton tape to certain spots as well for getting the bed as flat as possible overall, but as I was too lazy at that point and had stuff to print, I didn't do it then.  
+    I then let it settle for about 10-15min before executing another probing sequence.  
 
-Conclusion: so, will I do this mod at my second Neo as well and can I recommend it? Yes, absolutely.  
-I might try to get a gantry from the aftermarket which already offers the option for this kind of 3 point mounting system and which is (hopefully) more rigid overall though, as the whole gantry itself really appears pretty flimsy to me. I'm not sure about that yet though, as I like to tinker and modify it with spending the less money I can - but if I'll end up buying such a gantry, I'll add pictures here and let you know how it went.  
+    ![Bedmesh 3point settled](../assets/images/bedmesh_3pt_settled_web.jpg)
+
+    As you can see, there is still some room for finetuning, like lowering the front by adjusting the pitch and adding some Kapton tape to certain spots as well for getting the bed as flat as possible overall, but as I was too lazy at that point and had stuff to print, I didn't do it then.  
+
+    Conclusion: so, will I do this mod at my other Neos as well and can I recommend it?  
+    Yes, absolutely.  
+    I might try to get a gantry from the aftermarket which already offers the option for this kind of 3 point mounting system and which is (hopefully) more rigid overall though, as the whole gantry itself really appears pretty flimsy to me. I'm not sure about that yet though, as I like to tinker and modify it with spending the less money I can - but if I'll end up buying such a gantry, I'll add pictures here and let you know how it went.  
 
   
 ---    
