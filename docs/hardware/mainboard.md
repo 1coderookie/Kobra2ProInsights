@@ -18,7 +18,14 @@ It also offers a built in Realtek WiFi chip ([RTL8723DU](https://www.realtek.com
   
 ![Mainboard TriGorilla back](../assets/images/mainboard_K2Pro_backside_web.jpg)  
 
+At the following picture I added labels of the connectors.  
+
 ![Mainboard labeled](../assets/images/mainboard_K2Pro_labeled_web.jpg)
+
+The pinout of the 7 pin connector of the acceleration sensor is printed onto the PCB itself (same with some other pinouts of connectors in that row), but I'll list it here again, just in case you can't read it on your mainboard and when zooming in the picture shown above.  
+So when you're looking at the connector in the direction of the picture above, the pinout (from left to right) is:  
+| 5V | GND | CS | SCK | MISO | MOSI | GND |  
+
 
 The USB-A connectors can be accessed from the front of the printer, you find them at the right hand side of that black plastic aperture of the frame as shown in the picture below.  
 
