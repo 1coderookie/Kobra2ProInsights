@@ -42,25 +42,32 @@ Please see the expandable textbox below for further instructions and illustratio
       ![Mainboard's housing](../assets/images/mainboard_K2Pro_lid_web.jpg)  
     - In the middle you can see two hex screws. These are holding the whole housing in place as they're screwed into the Y-rail in the middle, but they also hold down the lid. So take them out first.  
     - After you took out the screws, you then have to 'unclip' the lid of the housing. As you can see in the following picture, there are plastic 'noses' which rest in the belonging nothes of the housing's base part. Use a thin tool like a screwdriver or a plectrum and insert it in the slot between the housing's lid and the base part.  
-      ![Lid unclipped](../assets/images/mainboard_K2Pro_lid-halfopen_web.jpg)  
-    - You then need to *carefully* bend the base part slightly away to make the lid come out. I'd suggest to start at one edge - once you have lifted that up, it's much easier to go around the rest.  
-    - Once you have released all clips, I'd recommend to unlpug the flat ribbon cable of the control unit and lead it through the belonging cutout of the lid for being able to flip the lid over.  
+      You then need to *carefully* bend the base part slightly away to make the lid come out. I'd suggest to start at one edge like show in the picture below - once you have lifted that up, it's much easier to go around the rest.  
+      ![Lid unclipped](../assets/images/mainboard_K2Pro_lid-halfopen_web.jpg) 
+    - Once you have released all clips, I'd recommend to unplug the flat ribbon cable of the control unit and lead it through the belonging cutout of the lid for being able to flip the lid over.  
     - Once you have done that, you can flip the lid over as shown in the following picture.  
       ![Lid flipped](../assets/images/mainboard_K2Pro_lid-open_web.jpg)  
     - Be careful and don't rip off the wire of the fan!    
 
     That's it - you successfully opened the housing of the mainboard!  
 
-    If you need to take out the whole mainboard now, take out the four screws located in the corners of the mainboard. The lift up the PCB in the back first, as the USB connectors are positioned in those cutouts in the front of the housing. 
+    - If you need to take out the whole mainboard now, take out the four screws located in the corners of the mainboard.  
+      Then lift up the PCB in the back first, as the USB connectors are positioned in those cutouts in the front of the housing. 
     
-    For reassembling everything, just follow the steps in reverse.  
-    Pay attention to the wires though, so that they aren't positioned between the posts where the screws will be screwed through later.  
-    Also make sure to reconnect the black grounding wire at the lower right corner in case you took out the PCB.  
+    For **reassembling** everything, just follow the steps in reverse.  
+    In addition to that, mind the following:  
+    - Pay attention to the wires though, so that they aren't positioned between the posts where the screws will be screwed through later.    
+    - Also mind the black ribbon cable of the control unit - don't forget to lead it through the belonging cutout of the lid and reconnect it to the control unit.  
+    - Also make sure to reconnect the black grounding wire at the lower right corner in case you took out the PCB.  
 
-    If you wan to maybe want to take away the whole housing to e.g. place it outside an enclosure you put the printer in, you have to take off the mount which holds the control unit and pull out the black plastic cap on the other rail. That one is just stuck in the aluminum frame, so you can pull it out. Be careful to not break those little plastic posts though which are shoved into the threads of the middle parts of the 4040 rail. See the following picture for getting an idea of how it should look like.  
-    ![Released caps](docs/assets/images/mainboard_K2Pro_open-box_underside_web.jpg)   
-    Once you have completed this step, you can then just pull out the enclosure. It's shoved in between those two outer rails of the base frame, some plastic noses are guiding it in one of the v-slots.  
-    ![Plastic nose in v-slot](../assets/images/mainboard_K2Pro_case-sliders_web.jpg)
+    If you want to **take away the whole housing** to e.g. place it outside an enclosure you put the printer in, mind the following:  
+    - You have to take off the mount which holds the control unit.  
+    - You have to pull out the black plastic cap of the face of the other side's rail. That one is just stuck in the aluminum frame, so you can pull it out. Be careful to not break those little plastic posts though which are shoved into the threads of the middle parts of the 4040 rail.  
+    - See the following picture for getting an idea of how it should look like.  
+      ![Released caps](../assets/images/mainboard_K2Pro_open-box_underside_web.jpg)   
+    - Once you have completed this step, you can then just pull out the enclosure.  
+      It's shoved in between those two outer rails of the base frame, some plastic noses are guiding it in one of the v-slots.  
+      ![Plastic nose in v-slot](../assets/images/mainboard_K2Pro_case-sliders_web.jpg)
     
 
 
