@@ -65,7 +65,8 @@ Please see the expandable textbox below for further instructions and illustratio
     
     - You have to take off the mount which holds the control unit.  
     - You have to pull out the black plastic cap of the face of the other side's rail. That one is just stuck in the aluminum frame, so you can pull it out. Be careful to not break those little plastic posts though which are shoved into the threads of the middle parts of the 4040 rail.  
-    - See the following picture for getting an idea of how it should look like.  
+      ![Released cap](../assets/images/frame_K2Pro_cap-rail_web.jpg)  
+    - See the following picture for getting an idea of how it should look like when all parts are dismounted for taking away the housing.  
       ![Released caps](../assets/images/mainboard_K2Pro_open-box_underside_web.jpg)   
     - Once you have completed this step, you can then just pull out the enclosure.  
       It's shoved in between those two outer rails of the base frame, some plastic noses are guiding it in one of the v-slots.  
