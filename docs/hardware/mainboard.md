@@ -14,11 +14,11 @@ It offers three USB-A connectors labeled at the PCB as "U-EXT1", "U-EXT2" and "U
 
 It also offers a built in Realtek WiFi chip ([RTL8723DU](https://www.realtek.com/en/products/communications-network-ics/item/rtl8723du)) with an external antenna which is glued to the left front side of the black plastic aperture from the inside of the housing (the position is about where the label "Kobra 2 Pro" is located).   
 
-![Mainboard TriGorilla front](../assets/images/mainboard_K2Pro_front_web.jpg)  
+![Mainboard TriGorilla front](../assets/images/mainboard_K2Pro_frontside_web.jpg)  
   
-![Mainboard TriGorilla back](../assets/images/mainboard_K2Pro_back_web.jpg)  
+![Mainboard TriGorilla back](../assets/images/mainboard_K2Pro_backside_web.jpg)  
 
-![Mainboard labeled](../assets/images/mainboard_K2Pro_complete_labeled_web.jpg)
+![Mainboard labeled](../assets/images/mainboard_K2Pro_labeled_web.jpg)
 
 The USB-A connectors can be accessed from the front of the printer, you find them at the right hand side of that black plastic aperture of the frame as shown in the picture below.  
 
@@ -108,7 +108,7 @@ Please see the expandable textbox below for further instructions and illustratio
     
 ---
 
-## Mainboard Cooling Fan
+### Mainboard Cooling Fan
   
 The following picture shows the fan of the mainboard. It's a 80x80x15mm, 24V, 0.06A type ("HSC BCY8015S24L").  
 
