@@ -167,8 +167,9 @@ The following picture shows the left side of the enclosure with the part which c
 
 ![Sunlu left side](../assets/images/enclosure_Sunlu_left-side_web.jpg)
 
-I personally use this enclosure for one of my Kobra Neos which I use for only printing PLA.  
-When printing, I completely open it. When not printing, this enclosure acts as a protection against dust and hairs of my cats.  
+I personally used this enclosure for one of my Kobra Neos which I use for only printing PLA.  
+When printing, I completely opened it. When not printing, this enclosure acted as a protection against dust and hairs of my cats.  
+However, due to the fact that the following enclosure from SainSmart is just so much better, I ended up getting more of those and stowed away this thin generic one in my closet.
 
 If you're planning on using this type of tent in a really dusty environment though, like in a workshop where you also work with wood or so, I'd strongly recommend to get yourself the tent from SainSmart (see below) instead as the zipper and the whole material is made of a much better quality.   
 
@@ -183,7 +184,7 @@ Due to it's height, the enclosure allows the usage of a filament spool holder mo
 
 When looking at the tent, you can tell the much better quality right away.  
 The material itself isn't only thicker and more dense, it also consists different layers.  
-There is the outer material, then you have some sort of foam insulation and an aluminum foil covering the inside. This results in a much better reduction of the noise and fumes and traps the heat inside the enclosure better as well. The risk of a fire hazard should be reduced much more significantly than at the generic tent, as we have a 'real' aluminum layer here instead of just some sort of sprayed-on aluminum-looking substance.   
+There is the outer material, then you have some sort of foam insulation and an aluminum foil covering the inside. This results in a *much better* reduction of the noise and fumes and traps the heat inside the enclosure better as well. The risk of a fire hazard should be reduced much more significantly than at the generic tent, as we have a 'real' aluminum layer here instead of just some sort of sprayed-on aluminum-looking substance.   
 The zippers seem to be made of a better quality as well and they're somewhat covered.  
 The rods of the frame are made from metal, the pieces where the rods get stuck in are plastic as well though.   
 The following pictures show some close-up views of the zipper and the material where you can clearly see the foam padding.   
@@ -200,16 +201,16 @@ On the right side there's an additional oopening as well which allows you to acc
 |:---------:|:--------:|:----------:|
 | ![Left side](../assets/images/enclosure_SainSmart_left-side_web.jpg) | ![Top side](../assets/images/enclosure_SainSmart_top-lid_web.jpg) | ![Right side](../assets/images/enclosure_SainSmart_right-side_web.jpg) |
 
-Due to the better quality, I personally use this tent for one of my Kobra Neos which only prints other types of filament than PLA.  
+Due to the better quality, I personally used this tent for one of my Kobra Neos which only prints other types of filament than PLA in the first place.  
+But because the quality is just so much better than the quality of the generic one mentioned above, I ended up getting more of these enclosure from SainSmart and only use these ones now. Compared to the generic one, it's really impressive how much quieter the printer is and how much better the fumes are being kept iniside.  
 
 **Final thoughts on tent style enclosures**  
 My bottom line here about these two types of tent style enclosures would be: if you plan to use the enclosure for *printing* more demanding types of filament like ABS for example and not just like using it as a better dust protection cover, then I highly recommend getting the one from SainSmart.  
-The difference in quality compared to the "generic" one from Sunlu shown above is like day and night.  
+The difference in quality compared to the "generic" one from Sunlu shown above is like day and night and it's really impressive how much quieter the printer is and how much better the fumes are being kept inside with the enclosure from SainSmart compared to the generic one.    
 The enclosure from SainSmart usually is a bit more expensive that the cheapest generic ones you could get, but the much better quality is worth every buck.  
 Sure, the generic one also works, and I used it for printing PETG as well (where using an enclosure isn't necessary, but it helps avoiding any cold airstream hitting the bed) as it was the first tent I got myself. When I then got the one from SainSmart and the difference in quality became obvious, I kind of did regret spending the money on the generic one though as it was only 20€ less than the one from SainSmart.  
-Judging by the product images being available, I *assume* the quality of the enclosure from Creality is comparable to the one from SainSmart, but as mentioned before the slightly smaller size of it made me not buying it.    
 
-However, due to the fact that the stock spool holder is mounted to the left side and the whole printer setup therefore gets wider, it might be the case that this setup won't fit in these tent style enclosures anymore without using a different solution for the spool holder (I didn't check that yet).  
+However, due to the fact that the stock spool holder is mounted to the left side and the whole printer setup therefore gets wider, it most likely won't fit in these tent style enclosures anymore without using a different solution for the spool holder (I didn't check that yet as I'm not using the stock spool holder).  
 It *might* be that the generic tents could be used when the lid on the left side is opened and the spool sticks out of the enclosure. As the one from SainSmart has the opening on the right side, this wouldn't be possible with that one then. Doing so might be counterproductive though, as the enclosure won't be closed anymore and a cold airstream might hit the bed. This wouldn't be a problem if you're only PLA anyway, but it would become a problem when printing more demanding types of filament which are sensitive to this.  
 There are bigger tents available on the market es well, but of course that would come with the need of decent space to put them.  
 So I personally would suggest to use a solution where the spool is held by a different type of spool holder, like using one of those abovementioned 4l cereal containers where you added a mechanism to feed the filament from. This also has the advantage that the humidity inside of the container can be held down (by adding a bag of silica gel) which serves those types of filament which tend to take up moisture faster than PLA (like PETG and TPU).  
