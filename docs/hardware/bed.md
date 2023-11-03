@@ -613,24 +613,71 @@ Unfortunately this breaking of the 24V wires is a potential risk of a fire hazar
 
 So, besides keeping an eye on that during the regular maintenance you're doing, there *might* be something you could do to minimize the risk of premature breaking wires. Read the expandable textbox to see what I did to hopefully minimize the risk.  
 
-??? example "Probable 'Hack' To Minimize Premature Breaking Of The Wires"  
-
-    I don't have a final solution right now as I'm still experimenting with different mods at my Kobra Neos (which suffer from constant breaking at the stock wire setups) for testing what might help here.  
-    Right now a simple simple 'hack' seems to work - at least a bit, as I didn't run into the problem of broken wires there yet again (..knock on wood..). Even though it seems like Anycubic is using longer wires now which should reduce the risk of breaking as quick as at the Kobra Go and Neo, I attached the following experimental solution to my Kobra 2 Pro as well.   
-    
-    First, I cut the cabletie which holds the whole wire 'package' to the black plastic cap.  
-    Then I took a piece silicone tubing which I cut at one side and placed it across that specific section of the wire 'package'.  
-    I then wrapped self-welding/sealing tape across it and secured everything again with a cabletie.  
-    You can see this 'hack' at the following picture - I have to admit though that the silicone tube I used was probably a bit too long.  
-    
-    ![Wiring harness](../assets/images/bed_K2Pro_wiring-harness_web.jpg)  
-    
-    This solution should also work without the silicone tube, so now and for the sake of simplicity, I'd suggest to just use the self-welding/sealing tape and add a few more layers if you want to try this.   
-
 If you have to replace the wirings, I'd suggest to use slightly longer (and thicker) high-flex wires, as that'll allow a slightly bigger range of motion, assuming that it'll have a positive effect on the overall bending as well. In that case you might also think about routing the wires differently.  
 Some people add wire chains, and even though it seems to be a good idea in general, you should pay attention to the bending radius of the chain as well as to the size of the chain itself. You don't want to squish the wires in there and you don't want to make them rub against each other or against the chain too much as well.  
 
 See the following sections for how to fix this problem.  
+
+---
+
+### MOD: Wiring Harness Support
+
+The problem of breaking wires here is caused by the wires being too short in the first place, causing the effect that the wires will bend right behind that black plastic cap.  
+So the first and best solution would be to either extend the existing wires or e.g. add an [external MOSFET](powersupply.md#add-an-external-mosfet-mod) to the back of the printer's frame which then indirectly elongates the wiring as well.  
+
+However, even then the wires are prone to still start bending right behind the black plastic cap as well, even though the bending won't be as much 'hard' with longer wires than it would originally be.  
+
+To minimize this effect, I experimented with different solutions. The main goal for me here was to extend the bending area. As cablechains are having/causing different issues, I didn't go with those but experimented with some solutions you can easily make up yourself.  
+I don't have *that* one and only final solution right now as I'm still experimenting with different mods at my Neos for testing what might be the best here.  
+However, right now three simple 'hacks' seem to work - at least a bit, as I didn't run into the problem of broken wires here yet (..knock on wood..).  
+To keep this section as short as possible, I'll go over each of them in an expandable textbox as usual.  
+
+??? experiment "Duct-Tape"  
+
+    The first 'hack' is to actually just wrap some layers of duct tape around the plastic cap and the first inch or two of the wiring.  
+    By doing so, you'll stiffen up the wires a bit in that first section right behind the cap, avoiding the punctual bending. You need to make sure that the whole construction won't be too stiff as it should still be able to bend overall though, otherwise you'll provoke the same issue right after the attached tape.  
+    As I'm using my printers in an enclosure, this solution didn't last long though. The heat inside the enclosure made the glue of the tape warm and it lost contact to the black plastic cap. So I personally can't recommend this one.  
+
+??? experiment "Self-Sealing/Welding Tape"  
+
+    The second 'hack' is actually kind of the same like the duct tape method, but instead of wrapping the self-sealing tape around the outside of the plastic cap, you wrap it around the wires.  
+    I forgot to take a picture of it, but it's fairly simple, so let me explain it a bit.  
+    - You cut the cabletie which holds the wire inside that plastic cap and take the whole wire harness thing out.  
+    - Then you wrap self-sealing tape around it, also in the area which will be inside of that cap later. So I'd say cover an area of about 2-3 inches with several layers, while applying more layers in the front part (towards that soldered contacts).  
+      Make sure the wire is still able to easily bend in that area, you don't want to have it too stiff which would just lead to the circumstance that the sharp bending would occur right behind the taped area.
+    - Now fiddle that wire back into place at the plastic cap like it was before and secure the position with a new cabletie.  
+    - That's it :)  
+
+    For the sake of simplicity, I'd recommend this solution as it's easy to apply, even with the stock setup.  
+    If you don't know or have self-sealing / self-welding tape yet, give it a try. It's really great and comes in handy in several cases.   
+
+??? experiment "Self-Sealing/Welding Tape And A Silicone Tube"
+
+    The third option I tried is actually kind of similar to the one being previously mentioned, but instead of only using self-sealing tape, I used a piece of silicone tube in addition.   
+    - First, I cut the cabletie which holds the whole wire 'package' to the black plastic cap.  
+    - Then I took a piece silicone tubing which I cut at one side and placed it across that specific section of the wire.  
+    - I then wrapped self-welding/sealing tape across it and secured everything again with a cabletie.  
+      You can see this 'hack' at the following picture.      
+      ![Wiring harness](../assets/images/bed_K2Pro_wiring-harness_web.jpg)  
+
+    I have to admit though that I probably exxagerated it as the additional silicone tube made it quite stiff. So if you want to go with this solution, keep an eye on the thickness and stiffness of the tube as well as how many layers of tape you apply.    
+
+??? experiment "Spring And Heat Shrink Tubings"
+
+    The last method I'd like to mention is the one using a semi-stiff spring and some heat shrink tubings.  
+
+    - Disconnect the wires and pull the whole wiring harness through a semi-stiff spring as shown in the following picture.  
+      ![Step 1](../assets/images/bed_wires-springmod1_web.jpg)  
+    - Then pull the wiring harness through a heat shrink tube which then goes in between the wires and the spring to avoid that the spring rubs on the wires and harms the insulation.  
+      ![Protection](../assets/images/bed_wires-springmod3_web.jpg)
+    - Place the spring with the wires in the plastic cap and add a cabletie to hold it in place.  
+      ![Step 2](../assets/images/bed_wires-springmod2_web.jpg)
+    - Now pull the wires through a bigger heat shrink tube and place that one across the end of the spring and the wires that come out of it, to secure everything here. By doing so, you'll reduce the motion of the wires in the spring itself and stabilize the wire a bit. When the wires will be pulled/moved, they won't be bent at the spot right after the spring and won't be moved around in the spring as well.  
+      The following picture shows the final asssembly.  
+      ![Final](../assets/images/bed_wires-springmod4_web.jpg)  
+
+    This is actually my preferred solution, BUT: you have to pay attention to use a spring which isn't too stiff! I had one laying around in my drawers at my workshop, so I can't give you any further specs. Best would be to check at a hardware shop and bend the spring to make sure it bends easily. You don't want to stiffen it up too much, you just want it to act as a guide for when the wires are being bent.  
+    
 
 ---
     
