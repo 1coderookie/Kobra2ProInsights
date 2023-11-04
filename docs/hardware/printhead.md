@@ -543,8 +543,9 @@ The steel one is about 27mm long, the copper bi-metal one is about 27.5mm long (
 
 ## PTFE Tube  
 There are two PTFE tubes located at this machine:  
-- a longer PTFE bowden tube which is located between the printehad and the filament runout sensor, called "reverse bowden", and
-- a short PTFE tube inside of the heatbreak/hotend, called "PTFE inliner".  
+
+- A longer PTFE bowden tube which is located between the printehad and the filament runout sensor, called "reverse bowden".
+- A short PTFE tube inside of the heatbreak/hotend, called "PTFE inliner".  
 
 Both PTFE tubes have the outer diameter of ~4mm and the inner diameter of ~2mm as they're meant to be used for 1.75mm filament.  
 
@@ -592,7 +593,7 @@ Here the PTFE tube only is an inliner for the heatbreak.
 
 The following picture shows the PTFE inliner assembled in the hotend's heatbreak.  
 
-![Hotend](../assets/images/head_K2Pro_hotend_web.jpg)  
+![PTFE inliner assembled](../assets/images/head_K2Pro_hotend_PTFE-inliner-assembled_web.jpg)  
 
 The following picture shows one of the spare PTFE inliner tubes which come with the machine.  
 
