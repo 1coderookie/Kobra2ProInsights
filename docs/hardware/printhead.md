@@ -26,7 +26,7 @@ The following pictures show the printhead with the blue plastic cover from vario
 |:----------:|:---------:|:--------:|:-----------:|
 | ![Printhead front](../assets/images/head_K2Pro_head-front_web.jpg) | ![Printhead back](../assets/images/head_K2Pro_backside_web.jpg) | ![Printhead top](../assets/images/head_K2Pro_topside_web.jpg) | ![Printhead bottom](../assets/images/head_K2Pro_underside_web.jpg) |  
 
-It is the same as the one being used at the *Kobra 2 Plus* and *Kobra 2 Max* - it is *not* the same as the one being used in the regular *Kobra 2*.  
+It is the same as the one being used at the *Kobra 2 Plus* and *Kobra 2 Max* - it is *not* the same as the one being used in the regular *Kobra 2* and the *Kobra 2 Neo* though.  
 
 The printhead itself is running along the [x-axis gantry](axes.md#x-axis-gantry).  
 
@@ -83,17 +83,18 @@ The following picture shows the whole metal plate where the feeder construction 
 
 ---
 
-## Distribution Board  
+## Breakout Board  
 
-There's a PCB located at the printhead where the electronic components (e.g. thermistor, cartridge heater, ABL sensor etc.) are connected to which I call "distribution board".     
+There's a PCB located at the printhead where the electronic components (e.g. thermistor, cartridge heater, ABL sensor etc.) are connected to which I call (for the sake of simplicity) "breakout board".    
+The more 'formal' name for this is "..".
 
 ![Distribution board](../assets/images/head_K2Pro_distri-pcb_labeled_web.jpg)  
 
-The following picture shows this distribution board from a slightly different angles, so that you can see the labels at the wires and the plugs and connectors a bit better.  
+The following picture shows this breakout board from a slightly different angles, so that you can see the labels at the wires and the plugs and connectors a bit better.  
 
 ![Distribution board sideview](../assets/images/head_K2Pro_distri-pcb_labels_web.jpg)  
 
-The connection between the mainboard and this distribution board is then accomplished by a ribbon cable. The following picture shows the connector at the head and a part of that ribbon cable.  
+The connection between the mainboard and this breakout board is then accomplished by a ribbon cable. The following picture shows the connector at the head and a part of that ribbon cable.  
 
 ![Ribbon cable](../assets/images/head_K2Pro_ribbon-cable-connector_web.jpg)  
 
@@ -234,8 +235,9 @@ You can access the inside of the feeder system by dismounting the heatsink, whic
   
 !!! warning "Retraction Settings"
 
-    Make sure that you set the retraction distance and speed to the correct values for a direct drive!  
-    In general, it's supposed to be something around 1mm retraction distance for direct drive systems like the **Neo**. The profile from Anycubic has this setting set to 6mm though, which is *way* too much for the direct drive! If you set the distance to a value which is too high (e.g. the default 6mm for the **Go** as a bowden drive), the melted filament might be pulled back too far and reaches the PTFE tube which might get clogged then.  
+    Make sure that you set the retraction distance and speed to the correct values for a direct drive in conjuction with a Volcano nozzle!  
+    In general, it's supposed to be something around 1mm retraction *distance* for direct drive systems, when using a Volcano nozzle you should be fine going up to 2mm. A bit more might work well also, but you don't want to risk pulling the hot and melted filament up in the cold zone of the heatbreak, so don't exxagerate increasing the retraction distance.  
+    Play around with the retraction *speed* as well, as the speed which is being used to actually retract the filament plays an important role as well.  
     You can find some more information about this topic in the section ["Retraction Settings"](../calibration.md#retraction-settings).
   
 ??? tip "Feeder Gear Pressure"
@@ -321,16 +323,18 @@ The assembled hotend is shown in the following picture.
     If you can't load new filament, first of all check if you pushed the lever on the feeder gear to the right hand side.
     If you did so and were able to insert the filament but it seems that it's getting stuck lower down in the hotend, then you might hit the end of the nozzle with an edge of your filament. It helps when you cut the filament in a 45° angle and bend the part you're manually feeding into the hotend so that it's pretty straight.  
     If you still can't get your filament loaded, it's most likely that the PTFE tube inside of the hotend is clogged or deformed or that you have a clog in or above the nozzle somewhere. To clean, inspect and maintain it, you need to disassemble the hotend. Check the section ["Disassembling The Hotend"](#disassembling-the-hotend) further down below for more information.     
-         
+<!--         
 ??? example "Large Clump Of Melted Filament Built Up"
 
-    Sometimes it may happen that melted filament builds up on top of the heater block to a large clump. The reason for that is that the heatbreak isn't screwed into the heater block tight enough so that the melted fiolament can squeeze out. It also may be caused by bad and cheap parts where the thread isn't just as good as it should be. <br> ![Blob](../assets/images/head_blob_web.jpg) <br> So if you encouter this problem, here is what I recommend to do (based on my own experience with this dilemma).  
+    Sometimes it may happen that melted filament builds up on top of the heater block to a large clump. The reason for that is that the heatbreak and the end of the nozzle don't touch tight enough, so that the melted filament can squeeze out. It also may be caused by bad and cheap parts where the threads aren't just as good as they should be. <br> ![Blob](../assets/images/head_blob_web.jpg) <br> So if you encouter this problem, here is what I recommend to do (based on my own experience with this dilemma).  
     
     - Take off the plastic cover first to get better access to the whole area.  
-    - Heat up everthing - I did this by using the preherat function for PLA at the control unit.
-    - Once the filament starts to melt and gets soft, grab a wooden stick and take away as much as possible carefully. *Don't* use a screwdriver or something like that to do so as you might harm the wires and/or cause a shortcut at e.g. the contacts of the cartridge heater. <br> *Be really careful when taking away the clumps to not harm or rip off any of the wires!* You can also use a cloth to wipe off the melted filament from the heater block and so on, just make sure you don't burn yourself!  
+    - Heat up everthing.
+    - Once the filament starts to melt and became soft, I'd suppose to turn off the printer, just to make you don't cause any shortcuts in case you harm the wires.  
+    - Then grab a wooden stick and take away as much as possible carefully. *Don't* use a screwdriver or something like that to do so as you might harm the wires and/or cause a shortcut at e.g. the contacts of the cartridge heater.  
+    *Be really careful when taking away the clumps to not harm or rip off any of the wires!* You can also use a cloth to wipe off the melted filament from the heater block and so on, just make sure you don't burn yourself!  
     - For the next steps you need to be a bit quick in proceeding them, so if this is the first time you're diassembling the hotend, take a look at the sections here at the page and read them first so you'll know where the screws are located and which steps you need to take. Then proceed with the following steps.
-    - So, once everything is as clean as possible, turn off the printer and loosen the grub screws inside the heater block to take out the thermistor and the cartridge heater. Give it a quick wipe with the cloth if they're covered by a lot of filament, too (but don't waste too much time here as the filament is becoming hard again now pretty quick!). 
+    - So, once everything is as clean as possible, heat everything up again. The turn off the printer and loosen the two grub screws inside the heater block to take out the thermistor and the cartridge heater. Give it a quick wipe with the cloth if they're covered by a lot of filament, too (but don't waste too much time here as the filament is becoming hard again now pretty quick!). 
     - Then take out the nozzle from the heater block and unscrew the heater block from the hotend. Pay attention if you can feel that the heatbreak was loose in the heater block to check if that was the reason for the filament being able to squeeze out and build up. 
     - Dismount the fan on the right side and loosen the two hexagon socket screws which are holding the heatbreak in place. If it doesn't fall out by itself, pull it out. When using the **Neo**, make sure the little PTFE tube also comes out, take it out of the heatbreak.  
     - If you were using a cheap nozzle and have a spare one, just throw away the old one. If it's a good or your only nozzle, try to get it back to work again by giving it a proper cleaning and doing some cold pulls when it's installed again. 
@@ -343,7 +347,7 @@ The assembled hotend is shown in the following picture.
     - If so (I hope it will be!), don't start printing right away - execute a PID tuning for the hotend first.  
     - Also check if you need to re-level the ABL sensor in relation to the nozzle due to a probably different position of the hotend now.  
     - Execute an ABL and take care of your Z-offset, most likely the position of your nozzle will be different due to a different position of the whole hotend.  
-  
+-->  
   
 ---
 
@@ -353,19 +357,23 @@ If you need to dismount the hotend from the printhead to change it or if you nee
 !!! warning  
 
     - When pulling out the hotend, *make sure the PTFE tube placed in the heatbreak comes out, too!*  
-    - Inspect the PTFE tube if it's burned, deformed  or clogged - if so, get a new one as a replacement (I'd recommend using a Capricorn bowden tube). Make sure the filament runs through the tube nice and easy and without any friction.   
+    - Inspect the PTFE tube if it's burned, deformed  or clogged - if so, get a new one as a replacement (I'd recommend using a Capricorn XS bowden tube). Make sure the filament runs through the tube nice and easy and without any friction.   
     - When pulling out the hotend, *be careful to not break any wires or rip them off from the sensor and heater catridge* - so better unscrew the tiny hex screws a bit and take out the thermistor and the heating cartridge first as mentioned above. 
     - Check the wires and contacts if they aren't harmed and if everything is ok. 
-    - ***Never try to unscrew the heatbreak and/or the nozzle from the heater block while the parts are cold!*** 
+    - ***Never try to unscrew the heatbreak and/or the nozzle from the heater block while the parts are cold!***  
       Melted filament or some kind of screw lock glue might make it hard or even impossible to unscrew these parts and you risk to shear them off!  
 
 !!! danger  
 
     *If you can see bare wire shining through the isolation of the wires of either the thermistor or the cartridge heater, I'd strongly recommend to replace the component to not risk a shortcut and therefore a broken mainboard!*   
-  
+
+<!--  
 ??? example "Disassembling Procedure"  
 
-    - Before you start to disassemble the hotend, heat it up to about 220-230°C first. Once it reached the temperature, turn off the printer.  
+    When I need to disassemble the hotend, I first take off the blue plastic cover (including the part cooling fan which you have to disconnect from the breakout board) of the printhead.  
+    Then I heat it up to about 240° while everything is still in place.  
+    In the next step 
+    - Before you start to disassemble the hotend, heat it up to about 230-240°C first. Once it reached the temperature, turn off the printer.  
     - Loosen up the screws which hold the thermistor and the cartridge heater in place and pull them out of the heater block. <br> ![Screws heater block](../assets/images/head_block-screws-close_web.jpg) <br> Be careful to not rip any wires!  
     - Loosen the nozzle and the heatbreak. You can already take out the nozzle completely and unscrew the heater block from the heatbreak as well - just make sure you don't burn yourself.   
     - Disassemble the fan on the right side by taking out the two hexagon socket screws at the top and bottom of the fan frame. <br> ![Disassemble the fan on the right side](../assets/images/head_neo_rightside_marked_web.jpg)  
@@ -383,6 +391,7 @@ If you need to dismount the hotend from the printhead to change it or if you nee
     - Then tighten up the two hexagon socket screws at the heatsink which hold the heatbreak in place, so that the hotend doesn't turn or wiggle anymore (but don't overtighten the screws though) and mount the heatsink fan back into place.  
     - Turn on the printer and heat up the nozzle to ~230-240°C. Once the temperature is reached, tighten up the nozzle with about 1.5NM force. Make sure to hold the heater block in place and strictly avoid any movement of it! Don't touch or harm any wires!  
     - Mount the plastic cover.   
+-->  
 
 <!--
 ---
@@ -421,24 +430,35 @@ The following pictures show each hotend being disassembled. You can clearly see 
 ## Heatbreak
 
 The stock heatbreak is a proprietary Volcano-style one made by Anycubic.  
-The total length is about 25/26(?)mm, the outer diameter of the throat is 6mm. The length from the 'ring' (which limits how far you can stick the heatbreak into the heatsink) to the end of the throat is 17mm.     
-
-It is **not** compatible with regular E3D Volcano type nozzles!     
-
-??? info "Spare Part Heatbreak"
-
-    If you need a new heatbreak, I personally would suggest to get a 'regular' one which is compatible with true Volcano type nozzles, instead of getting one of those proprietary stock heatbreaks which only fit the proprietary nozzles from Anycubic.  
-    You should be able to use whichever Volcano compatible heatbreak you'd like to use, you just have to *pay attention to the dimensions*. It should be about the same length as the stock one, so don't buy anything significantly shorter or longer. Make sure to pay attention to the surface at the top part - that should be even and smooth, so don't get yourself the ones with the thread on the outside.   
+The total length is about 26mm, the outer diameter of the throat is 6mm. The length from the 'ring' (which limits how far you can stick the heatbreak into the heatsink) to the end of the throat is 17mm.     
 
 The heatbreak is plugged into the heatsink of the direct drive and secured by two screws.  
 To fit the Volcano style heater block, it has an M6 thread.  
-The outer diameter of the heatbreak is 6mm at the throat. The inner diameter is about 4.2mm.  
+The outer diameter of the heatbreak is 6mm at the throat. The inner diameter is about 4.2mm to take the PTFE tube.  
 The length measured from the top until the 'stop ring' before the thread is about 18mm and the length in total is about 26mm.  
 
 As this isn't a bi-metal/full metal heatbreak, there is a little PTFE-tube inside of it which goes all the way down to the nozzle, which is about 41mm long and 4mm thick with a 2mm hole inside of it to guide the 1.75mm filament.  
 
 ![Stock heatbreak](../assets/images/head_K2Pro_stock-heatbreak_web.jpg)
 
+??? warning "Probably Incompatible With True Volcano Nozzles"  
+
+    It is said that the stock heatbreak is **not** compatible with regular E3D Volcano type nozzles!  
+    However, looking at the design of it, it actually seems to be the same heatbreak like the one being used at e.g. the Kobra Go. It has a ~4mm bore over the whole length where the PTFE tube runs down to hot the end of the nozzle's throat.  
+    This works fine with e.g. the Kobra Go, but one has to pay attention that the PTFE tube really sits flush against the nozzle's end.  
+    Here at the Kobra 2 Pro we have the specific design of the nozzle with the end of the nozzle's throat being thinner than the rest of the threaded part. Means, that area sticks into the heatbreak where then the PTFE tube hits the end of the nozzle.  
+    So *imho* this is the only difference and I don't see a reason yet why this heatbreak shouldn't work with regular Volcano nozzles like it works with regular V5 nozzles at the beforementioned Kobra Go.  
+    I have to verify this though, so until now it's just an assumption!  
+
+??? info "Spare Part Heatbreak"
+
+    If you need a new heatbreak, you should be able to use whichever heatbreak you'd like to use, you just have to *pay attention to the dimensions*.  
+    It should be of the same length as the stock one, so don't buy anything significantly shorter or longer.  
+    Same goes for the outer dimensions of the throat - that has to be 6mm in diameter. Make sure to pay attention to the surface of that throat - that should be even and smooth, so don't get yourself the ones with the thread on the outside which you would have to screw into an according heater block.  
+    Of course the threaded part that goes into the heater block has to be M6 as well, but that's common.     
+
+    However, you'll most likely only find bi-metal or full-metal heatbreaks. If you're *only* printing PLA, this might cause some issues. Anyway, when using a bi-metal/all-metal hotend, you usually should lower the retraction *distance* setting! 
+    
 ---
 <!--  
 
@@ -479,13 +499,13 @@ There are two PTFE tubes located at this machine:
 
 Both PTFE tubes have the outer diameter of ~4mm and the inner diameter of ~2mm as they're meant to be used for 1.75mm filament.  
 
-Imho it's recommendable to change the stock tubes and use original Capricorn XS tubes instead.  
+*Imho it's recommendable to change the stock tubes and use original Capricorn XS tubes instead.*  
 
 !!! warning "Pay Attention When Installing A New PTFE Tube" 
 
     When installing a new PTFE tube inliner in the heatbreak/hotend, make sure it runs down through the heatbreak to the end of the nozzle and touches it.  
     *Pay special attention to make a clean and perpendicular cut at a 90° angle to avoid any small gaps between the nozzle and the end of the tube!*  
-    You can use a special cutter that comes in certain sets with a Capricorn XS tube, print one of the many available cutting guides or just cut along the end of the heatbreak, using it as a guide for the knife.  
+    You can use a special cutter that comes in certain sets with a Capricorn XS tube, print one of the many available cutting guides or just cut along the end of the heatbreak, using it as a guide for the cutting blade.  
       
 
 ??? info "Spare Part PTFE Bowden Tube"
@@ -532,6 +552,7 @@ The following picture shows one of the spare PTFE inliner tubes which come with 
 ??? tip "Length Of PTFE Inliner"  
 
     When you need to cut a new inliner and you're not sure about the correct length, the best would be to actually disassemble the hotend, so that you can install the heatbreak only. Push it into the heatsink as far as you can. Then push the replacement tube into the heatbreak from the bottom, until you can't stick it in any further. Then either cut along the end of the heatbreak or mark that spot and cut it perpendicular afterwards. Then the length should fit - at least it should fit better than the stock inliner.  
+    
 
 ---
   
@@ -602,19 +623,15 @@ The following picture shows the stock thermistor being used.
 
 ![Stock thermistor](../assets/images/head_K2Pro_thermistor_web.jpg)  
 
-The thermistor is plugged into the belonging hole of the heater block and is then secured by a screw. The screw which holds the thermistor in place is screwed in the block from above, the threaded hole is located right next to the thermistor's hole. 
-
-![Thermistor screwed in](../assets/images/head_K2Pro_thermistor-block_web.jpg)  
-
-The screw then taps the thermistor and holds it in place.  
+The thermistor is plugged into the belonging hole of the heater block and is then secured by a screw as you can see in the following picture.  
 
 ![Thermistor and block](../assets/images/head_K2Pro_thermistor-block-screw_web.jpg)  
- 
-<!--
-The following picture shows the connector being used, it's a regular two pin JST XH-2.54 type.  
 
-![Thermistor connector](../assets/images/head_thermistor-plug.png)
---> 
+
+The following picture shows the connector being used, it's a two pin JST PH-2.0 (?) type.  
+
+![Thermistor connector](../assets/images/head_K2Pro_thermistor-plug.jpg)
+
 
 ??? danger "Check The Screws From Time To Time"
 
@@ -624,21 +641,21 @@ The following picture shows the connector being used, it's a regular two pin JST
     See the following picture of a user where the cartridge heater slipped out of the heater block (different type of hotend though, but the same can happen to this hotend as well).  
     ![Slipped out cartridge heater](../assets/images/head_glowing-cartridge_web.jpg)  
 
-<!--
+
 ??? info "Spare Part Thermistor"  
 
-    You should be able to find and use a compatible item from the aftermarket (which I successfully did - you just have to pay attention to the wire length actually).  
-    The following picture shows the thermistor from the aftermarket I used and the specific plug which is necessary to fit in the belonging socket at the mainboard.  
-    ![Thermistor and plug](../assets/images/head_plug-therm_web.jpg)  
--->  
+    It might be difficult to find this specific thermistor as an individual spare part (especially from a 3rd party manufacturer) at this point of time. You might be successful when you search for "Kobra 2 thermistor" instead though.  
+    However, there are already complete hotends available from 3rd party manufacturers which aren't that expensive, so if you have to get a replacement thermistor, maybe just get yourself a whole new hotend as you'll have a spare cartridge heater (and other parts) then as well. Search for "Kobra 2 hotend" as those are the same being used.   
+ 
 
 ??? info "What Is A 100k NTC Thermistor?"
 
     A thermistor is an electronical part which changes resistances depending on the given temperature, the resistance will then be interpreted as a temperature reading. The thermistor being used is a 100k Ohm NTC type. That means, that it has a resistance of about *100k Ohm at 25°C* temperature.  
-    When the temperature drops, the resistance will become higher/bigger. When the temperature rises, the resistance will become lower/smaller.  
+    When the temperature drops, the resistance will become higher/bigger.  
+    When the temperature rises, the resistance will become lower/smaller.  
     As an example: at 20°C the resistance is about 125k Ohm; at 30°C the resistance is about 81k Ohm.  
     Therefore you can measure the functionality of the thermistor by measuring the given resistance with a multimeter.  
-    See the violet expandable textbox "Measuring / Checking The Thermistor" in the section "Checking And Replacing The Thermistor" below for further information.  
+    See the violet expandable textbox "Measuring / Checking The Thermistor" in the section ["Checking And Replacing The Thermistor"](#checking-and-replacing-the-thermistor) below for further information.  
     
 
 ---
@@ -669,25 +686,24 @@ The following expandable textboxes will give you some basic instructions what yo
   
 ??? example "Measuring / Checking The Wiring"  
 
-    Before attempting any measurements, do a visual check if the insulation of both the thermistor and the cartridge heater is still intact. 
+    Before attempting any measurements, do a visual check if the insulation of the thermistor's wires is still intact. 
     
     *If you can see bare wire shing through due to a melted and/or displaced insulation, change the part immediately!*  
     
     Don't try to cover it up with some kind of insulation, even though Kapton tape should stand the heat. You'll risk a shortcut which then will harm your motherboard and might even cause more severe damage!  
     
-    Just to show you that I'm not exxagerating at all, the following picture shows my mainboard with a blewn up component due to a shortcut.  
-    ![Melted D4](../assets/images/mainboard_melted-D4_web.jpg)
+    Generally speaking, you can check the wiring of the thermistor by measuring the electrical continuity of the wires. If your multimeter doesn't have this function, you can measure the resistance instead.  
+    However, *it's advisable to measure the resistance, even though your multimeter offers the function of probing for continuity,* because it might be the case that a wire still passes the check for continuity, but that individual strands of the wire are broken. This causes problems if those strands lose contact permanently or during movement of the bed, as it leads to a higher resistance and therefore a wrong temperature being reported.  
     
-    You can check the wiring of both the 24V line and the thermistor by measuring the electrical continuity of the wires. If your multimeter doesn't have this function, you can measure the resistance instead.  
-    
-    However, *it's advisable to measure the resistance, even though your multimeter offers the function of probing for continuity,* because it might be the case that a wire still passes the check for continuity, but that individual strands of the wire are broken. This causes problems if those strands lose contact permanently or during movement of the bed, as it leads to a higher resistance.  
-    
-    - At the 24V wires this can lead to the circumstance that the wire will get hot at that spot, that the insulation will melt, that a shortcut might occur and it might even occur that it causes a fire.   
-    - At the thermistor wires this can cause the [ERR: MINTEMP](../troubleshooting.md#err-mintempmaxtempthermal-runaway) error message. When the problem of breaking strands starts to occur, you'll experience the upcoming of this error message when the head is moving and reaches a certain position. In that case those broken strands lose contact, which leads to a suddenly changing resistance value. As the temperature is interpreted by the reisistance value of the thermistor, a suddenly changing resistance is interpreted as a sudden change in the temperature. If this change is 'big' enough, the belonging error message will be triggered.      
+    The difficulty here though is to actually measure one wire by itself, because you can only access one end of the wire (at the connector), the other end is inside of the thermistor's capsule. So if you measure the resistance probing at both contacts of the two wires, you already measure the thermistor itself as well.   
+    However, by doing so you could still be able to tell if the wiring is faulty when you move the wires around while probing and see if the resistance value will spontaneously change. It actually wouldn't really help you in the end though to know if it's either the wiring or the thermistor itself, as you can't just change the wiring. Due to the construction of the thermistor and it's wiring, you'd have to replace the whole unit anyway though.  
+     
 
 ??? example "Measuring / Checking The Thermistor"  
 
-    You can check if a thermistor is working or if it's broken by measuring the resistance of it using a multimeter. As described above, at a temperature of 25°C the resistance should be ~100k Ohm (nominal restistance: R<sup>25°C</sup> = 100 kΩ ± 1%). If the temperature is lower, the resistance value will be higher; if the temperature is higher, the resistance value will be lower.  
+    You can check if a thermistor is working or if it's somehow broken by measuring the resistance of it using a multimeter.  
+    As mentioned above, at a temperature of 25°C the resistance should be ~100k Ohm (nominal restistance: R<sup>25°C</sup> = 100 kΩ ± 1%).  
+    If the temperature is lower, the resistance value will be higher; if the temperature is higher, the resistance value will be lower.  
     The following table gives you some typical resistance values of a 100K thermistor type 3950 (generic) for temperatures around room temperature. The values might slightly vary from the one you'll get, but they should be pretty close.  
     
     | Temperature in °C | Resistance in kΩ (kilo Ohm) |  
@@ -700,32 +716,36 @@ The following expandable textboxes will give you some basic instructions what yo
 
     *Set your multimeter to resistance testing for a higher Ohm range - in most cases the multimeters have different settings, usually 200/2000/20K/200K/20M -> use the setting "200K" here.*  
     
-    You can measure by probing the belonging wires at the plug of the mainboard (unplug it!), that would be the black connector labeled as "T0" with the two white wires (see the chapter ["Mainboard" -> "TriGorilla V_3.0.6 (Stock)"](mainboard.md#trigorilla-v_306-stock) for a picture of the location). Keep in mind though that by doing so you also measure the wiring itself. Means, if there are e.g. broken wires, the thermistor won't work even if the thermistor itself is still fine.    
+    You can measure by probing the belonging wires at the plug of the [breakout board](#breakout-board) (unplug it!), that would be the connector labeled as "T0".  
+    Keep in mind though that by doing so you also measure the wiring itself. Means, if there are e.g. broken wires, the thermistor won't work even if the thermistor itself is still fine. Due to the construction of the thermistor and it's wiring, you'd have to replace the whole unit anyway though.     
     
-    
-    - Keep in mind though that by probing at the connector, you also measure the wiring itself, which would be needed if you want to check if you maybe have a broken wiring. Means, if there are e.g. broken wires, the thermistor won't work even if the thermistor itself is still fine.  
-    - If you don't want to check the wiring, you could measure at the soldering joints right at the bed - in this case you also check the conductor path of the PCB itself (keep in mind that some glue across the solder pad area might prevent a successful measurement, so make sure you really make contact to the solder joints!).  
-    - If you really want to *only* measure the thermistor itself (which is advisable if you're in doubt and are thinking about changing the thermistor), then you'd have to pull off the little foamy piece in the middle of the underside of the bed and measure the resistance right at the soldering joints or legs of the thermistor itself.
-    
-    You can measure by probing the belonging wires at the plug of the mainboard (unplug it!), that would be the black connector labeled as "T0" with the two white wires (see the chapter ["Mainboard" -> "TriGorilla V_3.0.6 (Stock)"](mainboard.md#trigorilla-v_306-stock) for a picture of the location). Keep in mind though that by doing so you also measure the wiring itself. Means, if there are e.g. broken wires, the thermistor won't work even if the thermistor itself is still fine.      
+  
 
 ---
 
 **How To Replace The Thermistor**
 
-If you need to replace the cartridge heater and/or the thermistor of the hotend, see the expandable textboxes below for further instructions.  
+If you need to replace the thermistor of the hotend, see the expandable textbox below for further instructions.  
 
 *Of course always turn off the printer and unplug it from the power outlet first and then unplug the belonging connector at the mainboard before attempting replacing either component.*  
 
-When replacing the thermistor, *make sure you don't overtighten the tiny grub screws / set screws which hold them in place as it could harm both the thermistor and the heater cartridge!*  
-Note the dent from the screw and the deformed thermistor due to an overtightened screw from the manufacturer at my **Neo**. <br> ![Deformed thermistor due to an overtightened screw](../assets/images/head_therm-cart-broken_web.jpg)   
+!!! danger "Don't Pinch The Wires"  
+
+    When replacing the thermistor, *make sure you don't pinch and harm the thin wires with the head of the screw which is holding the thermistor in place!*  
+ 
 
 ??? example "Replacing The Thermistor"
 
-    If you need to change the thermistor, you should be able to do so by loosening the tiny set screw / grub screw in the heater block which holds it in place. As the screw and the thread might be blocked by hardened filament, heat up the hotend first to get it soft. Turn off the printer then and pay attention to not burn yourself when approaching to change it.  
-
-    If the screw is unscrewed enough and doesn't hold the thermistor in place anymore, you should be able to pull it out of the heater block. If it doesn't seem to move, carefully grab the metal part with a small pair of pliers, twist it a bit and try to pull it out.  
-    Then insert the new thermistor until it won't slide into the belonging hole anymore and carefully tighten up the grub screw. Don't overtighten it though as you don't want to harm the thermistor.  
+    - If you need to change the thermistor, take off the blue plastic housing of the head first (including the part cooling fan - don't rip off it's wires!).  
+    - It's advisable to already disconnect the connectors of *both* the thermistor and the heater cartridge at the [breakout board](#breakout-board), labeled as "T0" (thermistor) and "H" (cartridge heater).  
+    - Then you need to take out the hotend from the heatsink by loosening those two grub screws in the center of the front of the heatsink which hold the heatbreak in place for being able to actually reach the screw which holds the thermistor in place.  
+      ![Heatsink screws](../assets/images/head_K2Pro_heatsink-heatbreak-screws_marked_web.jpg)  
+    - So loosen those two screws and take out the whole hotend - be careful when pulling it out to not rip off any wires if you didn't disconnect them already.  
+    - Once you took the hotend out, you can already spot the black head of the hex screw which taps the thermistor and holds it in place.  
+      ![Thermistor and block](../assets/images/head_K2Pro_thermistor-block-screw_web.jpg)    
+    - Take out that black hex screw completely and you can pull out the thermistor.  
+      ![Thermistor screwed in](../assets/images/head_K2Pro_thermistor-block_web.jpg)  
+    - Now take your new thermistor and repeat the steps in reverse for reassemble everything. Make sure to not pinch the thin wires of the thermistor with the head of the black hex screw and to connect the wires back to the breakout board once you installed the hotend back into the heabreak.  
 
 ---
 
