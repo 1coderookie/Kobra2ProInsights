@@ -518,7 +518,7 @@ The following picture shows the heatbreak (together with the PTFE inliner) being
     - You will now have the whole hotend in front of you.  
       ![Hotend](../assets/images/head_K2Pro_hotend_web.jpg)  
     - If you now have to dismount the heatbreak from the heater block, hold the heater block in place using an adjustable wrench or an adjustable pair of pliers and grab the heatbreak with another pair of (adjustable) pliers. It might be a good idea to put a piece of cloth between the jaws of the pliers and the metal parts to avoid scratching them as much as possible.   
-      *Be careful to not grab the block where the wires of the heater cartridge are located to not harm them!*  
+      *Be careful to not harm any wires by accident!*  
     - Now unscrew the heatbreak from the heater block by turning it counter-clockwise.  
          
      
