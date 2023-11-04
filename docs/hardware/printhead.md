@@ -475,17 +475,16 @@ The following pictures show each hotend being disassembled. You can clearly see 
 
 ## Heatbreak
 
-The stock heatbreak is a proprietary Volcano-style one made by Anycubic.  
-The total length is about 26mm, the outer diameter of the throat is 6mm. The length from the 'ring' (which limits how far you can stick the heatbreak into the heatsink) to the end of the throat is 17mm.     
-
-The heatbreak is plugged into the heatsink of the direct drive and secured by two screws.  
+The heatbreak is plugged into the heatsink, being secured by two grub screws.   
 To fit the Volcano style heater block, it has an M6 thread.  
-The outer diameter of the heatbreak is 6mm at the throat. The inner diameter is about 4.2mm to take the PTFE tube.  
+The inner diameter is about 4.2mm to take the PTFE tube.  
 The length measured from the top until the 'stop ring' before the thread is about 18mm and the length in total is about 26mm.  
 
-As this isn't a bi-metal/full metal heatbreak, there is a little PTFE-tube inside of it which goes all the way down to the nozzle, which is about 41mm long and 4mm thick with a 2mm hole inside of it to guide the 1.75mm filament.  
+As this isn't a bi-metal/full metal heatbreak, there is a little PTFE tube (aka "inliner") inside of it which goes all the way down to the nozzle, which is about 41mm long and 4mm thick with a 2mm hole inside of it to guide the 1.75mm filament.  
 
-![Stock heatbreak](../assets/images/head_K2Pro_stock-heatbreak_web.jpg)
+The following picture shows the heatbreak (together with the PTFE inliner) being screwed into the heater block.  
+
+![Stock heatbreak](../assets/images/head_K2Pro_hotend_PTFE-inliner-assembled_web.jpg)
 
 ??? warning "Probably Incompatible With True Volcano Nozzles"  
 
@@ -507,6 +506,20 @@ As this isn't a bi-metal/full metal heatbreak, there is a little PTFE-tube insid
     Of course the threaded part that goes into the heater block has to be M6 as well, but that's common.     
 
     However, you'll most likely only find bi-metal or full-metal heatbreaks. If you're *only* printing PLA, this might cause some issues. Anyway, when using a bi-metal/all-metal hotend, you usually should lower the retraction *distance* setting! 
+
+??? example "Dismounting The Heatbreak"  
+
+    - Before dismounting the heatbreak from the heater block, I personally use to heat up the hotend to ~240°C with the plastic cover (including the part cooling fan - don't rip off it's wires!) of the printhead already being taken off.  
+      Once it reached the final temperature, turn off the machine and disconnect the connectors of *both* the thermistor and the heater cartridge at the [breakout board](#breakout-board), labeled as "T0" (thermistor) and "H" (cartridge heater).  
+    - Then you need to take out the hotend from the heatsink by loosening those two grub screws in the center of the front of the heatsink which hold the heatbreak in place for being able to actually reach the screw which holds the thermistor in place.  
+      ![Heatsink screws](../assets/images/head_K2Pro_heatsink-heatbreak-screws_marked_web.jpg)  
+      **Attention:**  
+      *Be very careful when doing so, as the heatbreak will slip out of the heatsink and the whole hotend will fall down immediately! As these parts are heated up, you can severly harm yourself and the surrounding! So better use a decent pair of adjustable pliers and/or some thick leather gloves to hold the hotend in place and avoid that it's falling down!*  
+    - If you now have to dismount the heatbreak from the heater block, hold the heater block in place using an adjustable wrench or an adjustable pair of pliers and grab the heatbreak with another pair of (adjustable) pliers. It might be a good idea to put a piece of cloth between the jaws of the pliers and the metal parts to avoid scratching them as much as possible.   
+      *Be careful to not grab the block where the wires of the heater cartridge are located to not harm them!*  
+    - Now unscrew the heatbreak from the heater block by turning it counter-clockwise.  
+         
+     
     
 ---
 <!--  
