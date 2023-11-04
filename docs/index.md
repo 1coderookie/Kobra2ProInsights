@@ -1,10 +1,10 @@
 <link rel=”manifest” href=”docs/manifest.webmanifest”>
 
 # Welcome  
-to my infopage about Anycubic's **Kobra 2 Pro**.   
+to my infosite about Anycubic's **Kobra 2 Pro**.   
   
 Here you'll find specific information about this specific printer model as well as more general kind of information.  
-I created this page to make it easier for users of this printers to get started, as well as to provide specific information on e.g. how to maintain the printer.    
+I created this site to make it easier for users of this printer to get started, as well as to provide specific information on e.g. how to maintain the printer.    
 
 ---
 
