@@ -6,43 +6,48 @@ to my infopage about Anycubic's **Kobra 2 Pro**.
 Here you'll find specific information about this specific printer model as well as more general kind of information.  
 I created this page to make it easier for users of this printers to get started, as well as to provide specific information on e.g. how to maintain the printer.    
 
+---
+
 ***ATTENTION:***  
 ***This site is still WIP, certain content is still missing!***   
 
+---
+  
 A few tips for browsing this site:    
+Please make sure to **mind the (expandable) textboxes** as they contain valuable information!  
+Depending on the color of the box, it's either a tip, information, instruction, question or warning you'll find in there:    
 
-- Please make sure to **mind the (expandable) textboxes** as they contain valuable information!  
-  Depending on the color of the box, it's either a tip, information, instruction, question or warning you'll find in there:    
+??? tip "Tip"  
 
-  ??? tip "Tip"  
+    Like "Level the position of the ABL sensor in relation to the nozzle."
 
-      Like "Level the position of the ABL sensor in relation to the nozzle."
+??? info "Information" 
 
-  ??? info "Information" 
+    Like "Information about nozzles in general." 
 
-      Like "Information about nozzles in general." 
+??? example "Instruction"
 
-  ??? example "Instruction"
+    Like "How to disassemble the hotend."
 
-      Like "How to disassemble the hotend."
+??? question "Question"
 
-  ??? question "Question"
+    Like "Have a **Kobra 2 Pro** and wanna contribute?"
 
-      Like "Have a **Kobra 2 Pro** and wanna contribute?"
+??? warning "Warning"
 
-  ??? warning "Warning"
-
-      Textboxes which contain a warning will often be displayed being already extended to make sure the warning won't be overseen.
+    Textboxes which contain a warning will often be displayed being already extended to make sure the warning won't be overseen.
     
-  ??? danger "Danger"
+??? danger "Danger"
 
-      Textboxes which contain a warning about a dangerous circumstance will often be displayed being already extended to make sure the warning won't be overseen.
+    Textboxes which contain a warning about a dangerous circumstance will often be displayed being already extended to make sure the warning won't be overseen.
 
-- Please mind the icon in the header for toggling between the bright and the dark mode of this site.
-- Please **mind the search field** in the header - it might come in handy.  
-- **Please take your time and read attentively.**    
+Please mind the **search field** in the header as well as the icon in the header for toggling between the bright and the dark mode of this site.
+
+Last but not least:  
+**Please take your time and read attentively.**    
   
 ***Happy tinkering and printing!***  
+
 
 ---
   
