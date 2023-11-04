@@ -9,36 +9,38 @@ I created this page to make it easier for users of this printers to get started,
 ***ATTENTION:***  
 ***This site is still WIP, certain content is still missing!***   
 
-  
-Please make sure to **mind the (expandable) textboxes** as they contain valuable information!  
-Depending on the color of the box, it's either a tip, information, instruction, question or warning you'll find in there:    
+A few tips for browsing this site:    
 
-??? tip "Tip"  
+- Please make sure to **mind the (expandable) textboxes** as they contain valuable information!  
+  Depending on the color of the box, it's either a tip, information, instruction, question or warning you'll find in there:    
 
-    Like "Level the position of the ABL sensor in relation to the nozzle."
+  ??? tip "Tip"  
 
-??? info "Information" 
+      Like "Level the position of the ABL sensor in relation to the nozzle."
 
-    Like "Information about nozzles in general." 
+  ??? info "Information" 
 
-??? example "Instruction"
+      Like "Information about nozzles in general." 
 
-    Like "How to disassemble the hotend."
+  ??? example "Instruction"
 
-??? question "Question"
+      Like "How to disassemble the hotend."
 
-    Like "Have a **Kobra 2 Pro** and wanna contribute?"
+  ??? question "Question"
 
-??? warning "Warning"
+      Like "Have a **Kobra 2 Pro** and wanna contribute?"
 
-    Textboxes which contain a warning will often be displayed being already extended to make sure the warning won't be overseen.
+  ??? warning "Warning"
+
+      Textboxes which contain a warning will often be displayed being already extended to make sure the warning won't be overseen.
     
-??? danger "Danger"
+  ??? danger "Danger"
 
-    Textboxes which contain a warning about a dangerous circumstance will often be displayed being already extended to make sure the warning won't be overseen.
+      Textboxes which contain a warning about a dangerous circumstance will often be displayed being already extended to make sure the warning won't be overseen.
 
- 
-**Please take your time and read attentively.**    
+- Please mind the icon in the header for toggling between the bright and the dark mode of this site.
+- Please **mind the search field** in the header - it might come in handy.  
+- **Please take your time and read attentively.**    
   
 ***Happy tinkering and printing!***  
 
