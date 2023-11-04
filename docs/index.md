@@ -51,17 +51,18 @@ Last but not least:
 
 ---
   
-*If you want to ***contribute*** an e.g. modification (aka "MOD") you did or an important information you found, please send me an [email](mailto:3dneo@quantentunnel.de) - please don't use Pull Requests for that! Thanks!* 
-  
-*If you find this infosite useful, please consider ***recommending it*** to others. This will make the community aware of this page and help other users. If you own a GitHub account, please consider ***starring*** [this repository](https://github.com/1coderookie/Kobra2ProInsights). Thanks!*  
-
 *If you want to ***support my work***, you can do so by ***donating*** a small amount to [my ko-fi account](https://ko-fi.com/U6U5NPB51). Thanks!*  
 
+*If you find this infosite useful, please consider ***recommending it*** to others. This will make the community aware of this page and help other users. If you own a GitHub account, please consider ***starring*** [this repository](https://github.com/1coderookie/Kobra2ProInsights). Thanks!* 
+
+*If you want to ***contribute*** an e.g. modification (aka "MOD") you did or an important information you found, please send me an [email](mailto:3dneo@quantentunnel.de) - please don't use Pull Requests for that! Thanks!* 
+  
 ---
  
   
 ??? info "Thanks To The Supporters And Contributers!"
 
+    - *Thanks a lot to the **kind people who supported my work with a donation** to [my ko-fi account](https://ko-fi.com/U6U5NPB51)!*
     - *Thanks to the **stargazers** at GitHub for starring this repository!* 
     - Thanks to **[Due-Telephone-6817](https://www.reddit.com/user/Due-Telephone-6817)** for taking those pictures of the spider coupler and the diaphragm coupler!  
     - Thanks to **[felixna](https://forum.drucktipps3d.de/user/6880-felixna/)** for allowing me to use his circuit drawing of how to add a step-down converter for PWM controlled fans!  
