@@ -3,15 +3,12 @@
 # Welcome  
 to my infopage about Anycubic's **Kobra 2 Pro**.   
   
-Here you'll find specific information about this specific Kobra 2 model as well as more general kind of information.  
+Here you'll find specific information about this specific printer model as well as more general kind of information.  
 I created this page to make it easier for users of this printers to get started, as well as to provide specific information on e.g. how to maintain the printer.    
 
 ***ATTENTION:***  
-***THIS SITE IS CURRENTLY WIP, THERE'S NO REAL CONTENT IN HERE YET!***   
- 
-**Fyi: I just receied my K2Pro a week ago and I'm currently working on this site.  
-So there's some specific stuff to find here already, but not all content suits the K2Pro yet!  
-So please bare with me and come back another time.. ;)**
+***This site is still WIP, certain content is still missing!***   
+
   
 Please make sure to **mind the (expandable) textboxes** as they contain valuable information!  
 Depending on the color of the box, it's either a tip, information, instruction, question or warning you'll find in there:    
@@ -34,11 +31,11 @@ Depending on the color of the box, it's either a tip, information, instruction, 
 
 !!! warning "Warning"
 
-    Textboxes which contain a warning will be displayed extended already to make sure the warning won't be overseen.
+    Textboxes which contain a warning will often be displayed being already extended to make sure the warning won't be overseen.
     
 !!! danger "Danger"
 
-    Textboxes which contain a warning about a dangerous circumstance will be displayed extended already to make sure the warning won't be overseen.
+    Textboxes which contain a warning about a dangerous circumstance will often be displayed being already extended to make sure the warning won't be overseen.
 
  
 **Please take your time and read attentively.**    
@@ -49,16 +46,25 @@ Depending on the color of the box, it's either a tip, information, instruction, 
   
 *If you want to ***contribute*** an e.g. modification (aka "MOD") you did or an important information you found, please send me an [email](mailto:3dneo@quantentunnel.de) - please don't use Pull Requests for that! Thanks!* 
   
-*If you find this page useful, please consider ***recommending it*** to others. This will make the community aware of this page and help other users. Thanks!*  
+*If you find this infosite useful, please consider ***recommending it*** to others. This will make the community aware of this page and help other users. If you own a GitHub account, please consider ***starring*** [this repository](https://github.com/1coderookie/Kobra2ProInsights). Thanks!*  
 
-*If you want to ***support my work***, please consider ***starring*** [this repository at GitHub](https://github.com/1coderookie/Kobra2ProInsights) (if you do have a GitHub account) and ***donating*** a small amount to [my ko-fi account](https://ko-fi.com/U6U5NPB51). Thanks!*  
+*If you want to ***support my work***, you can do so by ***donating*** a small amount to [my ko-fi account](https://ko-fi.com/U6U5NPB51). Thanks!*  
 
 ---
  
   
 ??? info "Thanks To The Supporters And Contributers!"
 
-    Nobody contributed yet, be the first one to do so! ;) 
+    - *Thanks to all the **stargazers** at GitHub for starring this repository!* 
+    - Thanks to **[Due-Telephone-6817](https://www.reddit.com/user/Due-Telephone-6817)** for taking those pictures of the spider coupler and the diaphragm coupler!  
+    - Thanks to **[felixna](https://forum.drucktipps3d.de/user/6880-felixna/)** for allowing me to use his circuit drawing of how to add a step-down converter for PWM controlled fans!  
+    - Thanks to **[GruesomeJeans](https://www.reddit.com/user/GruesomeJeans)** for taking pictures of the bed's magnetic foil and the ruby-tip nozzle!  
+    - Thanks to **[Imaginary_Gift_8533](https://www.reddit.com/user/Imaginary_Gift_8533/)** for allowing me to use his picture of the wear & tear of his wheels!  
+    - Thanks to **[Island-Strange](https://www.reddit.com/user/Island-Strange/)** for taking a picture of his shortcut bed!  
+    - Thanks to **[Jaximus](https://www.reddit.com/user/Jaximus)** for allowing me to use the picture of the slipped out cartridge heater!  
+    - Thanks to **[mowerheimen](https://www.reddit.com/user/mowerheimen)** for allowing me to use the picture of the crooked x-axis gantry!
+    - Thanks to **[the-transponster](https://www.reddit.com/user/the-transponster)** for allowing me to use the picture of his clumped hotend!
+    - Thanks to **[Yoriko_Rayne_](https://www.reddit.com/user/Yoriko_Rayne_)** for allowing me to use the picture of how to use the ABL height gauge!  
 
     
 ---
