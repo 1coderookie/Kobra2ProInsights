@@ -5,7 +5,7 @@
 | Specifications |
 |:---------------|
 | **Feeder system**: Direct drive, dual gear, 4:1 ratio |
-| **Thermistor**: 24V, 100k NTC (probably ATC Semitec 104GT-2/104NT-4-R025H42G type as usual), capsuled, dimensions 3x5mm, two pinned JST PH 2.0 (??) connector |
+| **Thermistor**: 24V, 100k NTC (probably ATC Semitec 104GT-2/104NT-4-R025H42G type as usual), capsuled, dimensions 3x5.5mm, two pinned JST PH 2.0 (??) connector |
 | **Heater Cartridge**: 24V, 60W, ~10.5 Ohm, dimensions 6x18.5mm, two pinned JST ?? 3.5 connector |
 | **Nozzle**: proprietary Volcano-like nozzle (*not* compatible with Volcano!), 0.4mm |
 | **Heater Block**: Volcano-like type |
@@ -286,6 +286,52 @@ If that doesn't work, see the expandable textbox below for further instructions 
     For reassembling, just put everything back together by proceeding the steps of disassembling in reverse. Make sure you're using the right screws and don't forget any of them.  
     Don't overtighten the screws though - as my father (R.I.P.) used to say: "After tight comes loose!" (roughly translated ;) ).  
 -->
+
+---
+
+## Heatsink  
+The heatsink is located underneath the housing of the extruder/feeder gearbox. It's screwed against it with two hex screws.  
+The heatsink takes in the heatbreak of the hotend and cools it down.  
+Two grub screws located in the middle at the front are holding the heatbreak in place, at the backside of the heatsink you can find the heat sink cooling fan.  
+The following picture shows the heatsink with it's fins from the frontview after you took off the plastic housing of the printhead.  
+
+![Heatsink](../assets/images/head_K2Pro_no-cover_heatsink_web.jpg)  
+  
+??? example "Dismounting The Heatsink"  
+
+    If you need to dismount the heatsink, you need to take out the two screws which are holding it to the gearbox.  
+    After doing so, you can just take it out - make sure to also get out the PTFE tube which is stuck into the heatbreak!  
+    ![Heatsink dismounted](../assets/images/head_K2Pro_heatsink_dismounted_marked_web.jpg)  
+
+---
+
+### Heatsink Cooling Fan  
+The heatsink/coldend cooling fan being used is a 24V, 0.08A, 30x30x10mm, model "HSC BCY3010D24H".  
+
+![HSC BCY3010D24H](../assets/images/head_K2Pro_heatsink-fan_web.jpg)
+
+??? example "Dismounting The Heatsink Cooling Fan"  
+
+    If you need to dismount the heatsink cooling fan, you can't do so right away as one of the screws is blocked by the metal plate where the extruder motor is mounted to.  
+    
+    ![Blocked screw](../assets/images/head_K2Pro_heatsink-fan_mounted_marked_web.jpg)  
+    
+    So for being able to unscrew the screw in the upper left corner, you need to unscrew the two screws in the front which hold the heatsink in place (you don't have to dismount the hotend though).  
+    
+    ![Screws of the heatsink](../assets/images/head_K2Pro_heatsink_dismounted_marked_web.jpg)  
+    
+    Then you can pull out the whole heatsink-hotend-setup out of the feeder gearbox and reach the necessary screws.  
+    
+    ![Both screws accessable](../assets/images/head_K2Pro_heatsink-fan-partially-dism_web.jpg)  
+    
+    Now you can unscrew the fan from the heatsink and take it off.  
+    
+    ![Fan taken off](../assets/images/head_K2Pro_heatsink-fan-dismounted_web.jpg)  
+
+??? example "Remounting The Heatsink Cooling Fan"     
+
+    For reassembling the heatsink cooling fan, just proceed with the steps of dismounting it in reverse.   
+
     
 ---  
   
@@ -446,9 +492,12 @@ As this isn't a bi-metal/full metal heatbreak, there is a little PTFE-tube insid
     It is said that the stock heatbreak is **not** compatible with regular E3D Volcano type nozzles!  
     However, looking at the design of it, it actually seems to be the same heatbreak like the one being used at e.g. the Kobra Go. It has a ~4mm bore over the whole length where the PTFE tube runs down to hot the end of the nozzle's throat.  
     This works fine with e.g. the Kobra Go, but one has to pay attention that the PTFE tube really sits flush against the nozzle's end.  
-    Here at the Kobra 2 Pro we have the specific design of the nozzle with the end of the nozzle's throat being thinner than the rest of the threaded part. Means, that area sticks into the heatbreak where then the PTFE tube hits the end of the nozzle.  
+    Here at the Kobra 2 Pro we have the specific design of the nozzle with the end of the nozzle's throat being thinner than the rest of the threaded part. The following picture shows a close-up view of the throat's end - on the left side you see the stock one, on the right side you see an original E3D Volcano one.  
+    ![Stock vs Volcano throat](../assests/images/head_K2Pro_nozzle-throat-ending_web.jpg)  
+    Means, that area sticks into the heatbreak where then the PTFE tube hits the end of the nozzle.  
+    
     So *imho* this is the only difference and I don't see a reason yet why this heatbreak shouldn't work with regular Volcano nozzles like it works with regular V5 nozzles at the beforementioned Kobra Go.  
-    I have to verify this though, so until now it's just an assumption!  
+    *I have to verify this though, so until now it's just an assumption!*  
 
 ??? info "Spare Part Heatbreak"
 
@@ -693,7 +742,7 @@ The following expandable textboxes will give you some basic instructions what yo
     Don't try to cover it up with some kind of insulation, even though Kapton tape should stand the heat. You'll risk a shortcut which then will harm your motherboard and might even cause more severe damage!  
     
     Generally speaking, you can check the wiring of the thermistor by measuring the electrical continuity of the wires. If your multimeter doesn't have this function, you can measure the resistance instead.  
-    However, *it's advisable to measure the resistance, even though your multimeter offers the function of probing for continuity,* because it might be the case that a wire still passes the check for continuity, but that individual strands of the wire are broken. This causes problems if those strands lose contact permanently or during movement of the bed, as it leads to a higher resistance and therefore a wrong temperature being reported.  
+    However, *it's advisable to measure the resistance, even though your multimeter offers the function of probing for continuity,* because it might be the case that a wire still passes the check for continuity, but that individual strands of the wire are broken. This causes problems if those strands lose contact permanently or during movement of the head, as it leads to a higher resistance and therefore a wrong temperature being reported.  
     
     The difficulty here though is to actually measure one wire by itself, because you can only access one end of the wire (at the connector), the other end is inside of the thermistor's capsule. So if you measure the resistance probing at both contacts of the two wires, you already measure the thermistor itself as well.   
     However, by doing so you could still be able to tell if the wiring is faulty when you move the wires around while probing and see if the resistance value will spontaneously change. It actually wouldn't really help you in the end though to know if it's either the wiring or the thermistor itself, as you can't just change the wiring. Due to the construction of the thermistor and it's wiring, you'd have to replace the whole unit anyway though.  
@@ -745,7 +794,8 @@ If you need to replace the thermistor of the hotend, see the expandable textbox 
       ![Thermistor and block](../assets/images/head_K2Pro_thermistor-block-screw_web.jpg)    
     - Take out that black hex screw completely and you can pull out the thermistor.  
       ![Thermistor screwed in](../assets/images/head_K2Pro_thermistor-block_web.jpg)  
-    - Now take your new thermistor and repeat the steps in reverse for reassemble everything. Make sure to not pinch the thin wires of the thermistor with the head of the black hex screw and to connect the wires back to the breakout board once you installed the hotend back into the heabreak.  
+    - Now take your new thermistor and repeat the steps in reverse for reassemble everything.  
+      Make sure to not pinch the thin wires of the thermistor with the head of the black hex screw and to connect the wires back to the breakout board once you installed the hotend back into the heabreak.  
 
 ---
 
@@ -762,15 +812,13 @@ The cartridge heater is plugged into the specific hole of the block and is hold 
 
 ![Cartridge heater and block](../assets/images/head_K2Pro_cartridge-heater-block_web.jpg)
 
-![Cartridge heater pulled out](../assets/images/head_K2Pro_cartridge-heater-block-disass_web.jpg)  
 
-<!--
-The following picture shows the JST VH 3.96 connector which is necessary to fit into the socket at the mainboard.  
+The following picture shows the ??? connector which is necessary to fit into the socket at the mainboard.  
 
-![Specific plug of the cartridge heater](../assets/images/head_cart-plug_web.jpg)
---> 
+![Specific plug of the cartridge heater](../assets/images/head_K2Pro_cart-plug_web.jpg)
+ 
 
-!!! danger "Check The Grub Screws From Time To Time"
+??? danger "Check The Grub Screws From Time To Time"
 
     Check the grub/set screw of the heater block and the position of the cartridge heater from time to time!  
     Due to expansion and contraction of the aluminum heater block and the vibrations that occur, those screws can come loose - which then can result in a part being slipped out!  
@@ -778,38 +826,34 @@ The following picture shows the JST VH 3.96 connector which is necessary to fit 
     See the following picture of a user where the cartridge heater slipped out of the heater block (at a different printer though).  
     ![Slipped out cartridge heater](../assets/images/head_glowing-cartridge_web.jpg)  
   
-<!--
+
 ??? info "Spare Part Cartridge Heater" 
 
-    You can find suitable cartridge heaters on the aftermarket. You'll probably only find some which are about 21mm long as it seems that it's a typical dimension for V5/V6 heater blocks, but that's fine, it just sticks out at both sides of the heater block at the end which shouldn't be a problem. The following picture shows the original part on the left side and a compatible part from the aftermarket I used at the right side.  
-  
-    ![Cartridge heaters](../assets/images/head_cart-heater_web.jpg)  
--->  
+    It might be difficult to find this specific cartridge heater as an individual spare part (especially from a 3rd party manufacturer) at this point of time. You might be successful when you search for "Kobra 2 cartridge heater" instead though.  
+    However, there are already complete hotends available from 3rd party manufacturers which aren't that expensive, so if you have to get a replacement thermistor, maybe just get yourself a whole new hotend as you'll have a spare thermistor (and other parts) then as well. Search for "Kobra 2 hotend" as those are the same being used.  
+ 
 
 !!! warning "Replacing The Cartridge Heater / Thermistor" 
 
     See the section ["Checking The Cartridge Heater And The Thermistor"](#checking-the-cartridge-heater-and-the-thermistor) at the end of this chapter for further instructions about how to check and replace those components. 
    
-??? tip "General Tips" 
-
-    - If you need to install a new thermistor and/or cartridge heater, you have to unstrip the wires from the wire conduit. You can just unroll the conduit, pull out the wires from the old part while tugging in the wires of the new part. Be careful to not pull too hard to not harm any thin wires which might be wrapped around the wires of the old part. <br> ![Stripping in the new wires](../assets/images/stripping_in_wires_web.jpg)    
-    - When installing the parts at the heater block and putting back on the plastic cap of the printhead, I personally avoided to bend the thin wires as it was done within the original installation. I just guided the wires along outside the plastic cover. By doing so, you minimize the risk of getting a shortcut due to a harmed or melted wire isolation at the part where the wires are bent and twisted originally. The following picture shows my new installed thermistor and cartridge heater with the wires running outside of the plastic cap. <br> ![Wires running outside of the plastic cap](../assets/images/head_neo_new-sen-therm_web.jpg)  
 
 <!--
 ??? info "Ceramic Heater Block With Inbuilt Heating Element"
 
     There are ceramic heater blocks on the market which come with M6 threads and an inbuilt heating element (24V, 55W) and a thermistor (100k, most likely it's a "Generous 3950" type). The wires usually aren't long enough for these printers and lack the belonging plugs as well, so further tinkering is necessary to get these ones installed.  
--->  
+ 
 
 ??? tip "Execute PID Tuning"      
     
     After successful installation of the new thermistor and/or cartridge heater, execute a [PID tuning](calibration.md#pid-tuning) using e.g. Octoprint!  
-    
+-->  
+
 ---
 
 ### Checking And Replacing The Cartridge Heater 
 
-If problems occur with the electric circuit or the thermistor, you can check each of them for localizing the cause of the error.  
+If problems occur with the electric circuit or the cartride heater, you can check each of them for localizing the cause of the error.  
 You'll need a [multimeter](../tools.md#multimeter) for doing so.  
 Basic knowledge of how to use a multimeter is sufficient - if you don't know how to use a multimeter, please do a web research. If you don't know how to measure resistance, you can start by reading [this article](https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-measure-resistance) for example which describes the process.    
 
@@ -829,31 +873,29 @@ Basic knowledge of how to use a multimeter is sufficient - if you don't know how
 
 **How To Check The Cartridge Heater**
 
-The following expandable textbox will give you some basic instructions what you can do to check the electric circuits of the 24V catridge heater.  
+The following expandable textbox will give you some basic instructions what you can do to check the electric circuits of the 24V cartridge heater.  
   
 ??? example "Measuring / Checking The Wiring"  
 
-    Before attempting any measurements, do a visual check if the insulation of both the thermistor and the cartridge heater is still intact. 
+    Before attempting any measurements, do a visual check if the insulation of the cartridge heater is still intact. 
     
     *If you can see bare wire shing through due to a melted and/or displaced insulation, change the part immediately!*  
     
     Don't try to cover it up with some kind of insulation, even though Kapton tape should stand the heat. You'll risk a shortcut which then will harm your motherboard and might even cause more severe damage!  
     
-    Just to show you that I'm not exxagerating at all, the following picture shows my mainboard with a blewn up component due to a shortcut.  
-    ![Melted D4](../assets/images/mainboard_melted-D4_web.jpg)
-    
-    You can check the wiring of both the 24V line and the thermistor by measuring the electrical continuity of the wires. If your multimeter doesn't have this function, you can measure the resistance instead.  
-    
-    However, *it's advisable to measure the resistance, even though your multimeter offers the function of probing for continuity,* because it might be the case that a wire still passes the check for continuity, but that individual strands of the wire are broken. This causes problems if those strands lose contact permanently or during movement of the bed, as it leads to a higher resistance.  
-    
-    - At the 24V wires this can lead to the circumstance that the wire will get hot at that spot, that the insulation will melt, that a shortcut might occur and it might even occur that it causes a fire.   
-    - At the thermistor wires this can cause the [ERR: MINTEMP](../troubleshooting.md#err-mintempmaxtempthermal-runaway) error message. When the problem of breaking strands starts to occur, you'll experience the upcoming of this error message when the head is moving and reaches a certain position. In that case those broken strands lose contact, which leads to a suddenly changing resistance value. As the temperature is interpreted by the reisistance value of the thermistor, a suddenly changing resistance is interpreted as a sudden change in the temperature. If this change is 'big' enough, the belonging error message will be triggered.      
+    Generally speaking, you can check the wiring of the 24V line by measuring the electrical continuity of the wires. If your multimeter doesn't have this function, you can measure the resistance instead.      
+    However, *it's advisable to measure the resistance, even though your multimeter offers the function of probing for continuity,* because it might be the case that a wire still passes the check for continuity, but that individual strands of the wire are broken. This causes problems if those strands lose contact permanently or during movement of the head, as it leads to a higher resistance.  
+    At the 24V wires this can lead to the circumstance that the wire will get hot at that spot, that the insulation will melt, that a shortcut might occur and it might even occur that it causes a fire.   
+
+    The difficulty here though is to actually measure one wire by itself, because you can only access one end of the wire (at the connector), the other end is inside of the hetaer cartridge's capsule. So if you measure the resistance probing at both contacts of the two wires, you already measure the cartridge heater itself as well.  
+    However, by doing so you could still be able to tell if the wiring is faulty when you move the wires around while probing and see if the resistance value will spontaneously change. It actually wouldn't really help you in the end though to know if it's either the wiring or the cartridge heater itself, as you can't just change the wiring. Due to the construction of the cartridge heater and it's wiring, you'd have to replace the whole unit anyway though. 
+        
 
 ??? example "Checking The 24V Heating Circuit Of The Cartridge Heater"  
 
-    You can also check the 24V heating circuit of the cartridge heater itself. Besides inspecting it closely if any visible damages like scratches or abraded spots are visible, you can measure the continuity and resistance of the circuit as well.  
+    You can check the 24V heating circuit of the cartridge heater itself. Besides inspecting it closely if any visible damages like scratches or abraded spots are visible, you can measure the continuity and resistance of the circuit as well.  
     
-    If the circuit and the cartridge heater is ok, continuity will be given and a resistance of about 10.5Ohm should be reported.  
+    If the circuit and the cartridge heater is ok, continuity will be given and a resistance of about 10.5 Ohm should be reported.  
 
 ---
 
@@ -863,18 +905,22 @@ If you need to replace the cartridge heater of the hotend, see the expandable te
 
 *Of course always turn off the printer and unplug it from the power outlet first and then unplug the belonging connector at the mainboard before attempting replacing either component.*  
 
-When replacing the thermistor and/or the cartridge heater, *make sure you don't overtighten the tiny grub screws / set screws which hold them in place as it could harm both the thermistor and the heater cartridge!*  
-<!--
-Note the dent from the screw and the deformed thermistor due to an overtightened screw from the manufacturer at my **Neo**. <br> ![Deformed thermistor due to an overtightened screw](../assets/images/head_therm-cart-broken_web.jpg)   
--->
+When replacing the cartridge heater, *make sure you don't overtighten the tiny grub screws / set screws which holds it in place as it could harm the heater cartridge!*  
+
 
 ??? example "Replacing The Cartridge Heater"  
 
-    If you need to change the cartridge heater, you should be able to do so by loosening the tiny set screw / grub screw in the heater block which holds it in place. As the screw and the thread might be blocked by hardened filament, heat up the hotend first to get it soft. Turn off the printer then and pay attention to not burn yourself when approaching to change it.  
-
-    If the screw is unscrewed enough and doesn't hold the cartridge heater in place anymore, you should be able to pull it out of the heater block. If it doesn't seem to move, carefully grab the metal part with a small pair of pliers, twist it a bit and try to pull it out.  
-    ![Cartridge heater pulled out](../assets/images/head_K2Pro_cartridge-heater-block-disass_web.jpg)  
-    Then insert the new cartridge heater, so that it's placed completely inside of the belonging hole and carefully tighten up the grub screw. Don't overtighten it though as you don't want to harm the cartridge heater. 
+    - If you need to change the thermistor, take off the blue plastic housing of the head first (including the part cooling fan - don't rip off it's wires!).  
+    - It's advisable to already disconnect the connectors of *both* the thermistor and the heater cartridge at the [breakout board](#breakout-board), labeled as "T0" (thermistor) and "H" (cartridge heater).  
+    - Then you need to take out the hotend from the heatsink by loosening those two grub screws in the center of the front of the heatsink which hold the heatbreak in place for being able to actually reach the screw which holds the thermistor in place.  
+      ![Heatsink screws](../assets/images/head_K2Pro_heatsink-heatbreak-screws_marked_web.jpg)  
+    - So loosen those two screws and take out the whole hotend - be careful when pulling it out to not rip off any wires if you didn't disconnect them already.  
+    - Once you took the hotend out, loosen the 1.5mm hex grub/set screw at the heater block which holds the cartride heater in place.  
+      ![Cartridge heater and block](../assets/images/head_K2Pro_cartridge-heater-block_web.jpg)    
+    - Now you can take out the cartridge heater.  
+      ![Cartridge heater pulled out](../assets/images/head_K2Pro_cartridge-heater-block-disass_web.jpg)  
+    - Now take your new cartridge heater and repeat the steps in reverse for reassemble everything.  
+      Make sure to screw the grub screw in tight but not too tight (as you don't want to harm the unit) and to connect the wires back to the breakout board once you installed the hotend back into the heabreak.  
   
 ---  
   
@@ -883,26 +929,18 @@ Anycubic ships the printheads with a *proprietary* Volcano-like brass nozzle (0.
 
 ![Anycubic's proprietary Volcano-like nozzle](../assets/images/head_K2Pro_nozzle-stock_web.jpg)  
 
-!!! warning "Not Compatible With Original E3D Volcano Type!"  
+??? warning "Probably Incompatible With True Volcano Nozzles"  
 
-    This stock nozzle is **not compatible** with the original E3D Volcano type nozzles!  
+    It is said that the stock heatbreak is **not** compatible with regular E3D Volcano type nozzles!  
+    However, looking at the design of it, it actually seems to be the same heatbreak like the one being used at e.g. the Kobra Go. It has a ~4mm bore over the whole length where the PTFE tube runs down to hot the end of the nozzle's throat.  
+    This works fine with e.g. the Kobra Go, but one has to pay attention that the PTFE tube really sits flush against the nozzle's end.  
+    Here at the Kobra 2 Pro we have the specific design of the nozzle with the end of the nozzle's throat being thinner than the rest of the threaded part. The following picture shows a close-up view of the throat's end - on the left side you see the stock one, on the right side you see an original E3D Volcano one.  
+    ![Stock vs Volcano throat](../assests/images/head_K2Pro_nozzle-throat-ending_web.jpg) 
+    Means, that area of the specific nozzle made by Anycubic sticks into the heatbreak where then the PTFE tube hits the end of the nozzle.  
     
-    The end of the nozzle's throat is slightly changed by Anycubic and fits into the specific heatbreak, so you can't just use a Volcano-style nozzle!  
-    The following picture shows a close-up view of the throat's end - on the left side you see the stock one, on the right side you see an original E3D Volcano one.  
+    So *imho* this is the only difference and I don't see a reason yet why this heatbreak shouldn't work with regular Volcano nozzles like it works with regular V5 nozzles at the beforementioned Kobra Go.  
+    *I have to verify this though, so until now it's just an assumption!*    
     
-    ![Stock vs Volcano throat](../assests/images/head_K2Pro_nozzle-throat-ending_web.jpg)  
-    
-    So when you need to replace the nozzle, you either have to buy spare part nozzles from Anycubic (or a 3rd party seller who sells these specific nozzles) or have to change the setup of the hotend (heatbreak and nozzle) for being able to use a true Volcano type of nozzle!  
-  
-
-    
-!!! warning "Nozzles: Handle With Care!" 
-
-    - *Be careful to NOT touch and harm the wires and contacts of the thermistor and the heating cartridge with at brass brush or the wrench!* <br> You may either harm the insulation, break the wire or even cause a shortcut which can result in a broken mainboard once you powered the printer up again. 
-    - If you want to change the nozzle (*check out the expandable admonition below!*) and need to grab the heater block with a wrench, make sure you really just grab the heater block and never get any wires up in between - preferably grab the heater block from that sides where the wires don't come out.   
-    - If you want to clean the nozzle using a brass brush for example, *never* do it when the printer is powered up and the heating process of the extruder is in progress to avoid causing a shortcut by touching the contacs with the brush.  
-    - *Make sure you DON'T turn the heater block!* In case you want to change the nozzle, you don't want to loosen the heater block from the hotend, so just hold the heater block in place without turning it.     
-    - *Don't do cold pulls for cleaning a nozzle when using any kind of coated nozzles!* This also involves hardened steel nozzles! Referring to the manufacturers, the coating might be harmed when doing so.   
     
 ??? info "About Nozzles In General" 
 
@@ -934,8 +972,6 @@ Anycubic ships the printheads with a *proprietary* Volcano-like brass nozzle (0.
 
 If you need to replace the nozzle, you either have to buy spare part nozzles directly from Anycubic or find a 3rd party seller who sells these specific nozzles. These ones can often be found much cheaper than the ones from Anycubic while the quality might be comparable. If you search for these kind of specific stock nozzles, you can search for e.g. "Anycubic Kobra 2 nozzle", as the same type of proprietary nozzle is being used in the regular Kobra 2 and the other models of the Kobra 2 line (like the Kobra 2 Neo, Plus and Max).  
 
-*Mind that you can NOT just get yourself regular Volcano type nozzles and use these ones instead, unless you also change the heatbreak!*  
-
 ---
 
 ### MOD: Volcano Nozzle  
@@ -944,9 +980,17 @@ At the time of writing this, the specific type of the stock nozzles are only ava
 I didn't come across e.g. different nozzle sizes like 0.6mm, hardened steel nozzles or even CHT high flow nozzles with this particular throat design.  
 So you might want to change your setup for being able to use regular Volcano type nozzles.  
 
-!!! warning "You Need To Change The Heatbreak As Well!"
+??? warning "Probably Incompatible With True Volcano Nozzles"  
 
-    *The corresponding part of the stock heatbreak is shaped accordingly, so that the nozzle fits into it. That means, for using a regular Volcano type nozzle, you also need to change the heatbreak!*  
+    It is said that the stock heatbreak is **not** compatible with regular E3D Volcano type nozzles!  
+    However, looking at the design of it, it actually seems to be the same heatbreak like the one being used at e.g. the Kobra Go. It has a ~4mm bore over the whole length where the PTFE tube runs down to hot the end of the nozzle's throat.  
+    This works fine with e.g. the Kobra Go, but one has to pay attention that the PTFE tube really sits flush against the nozzle's end.  
+    Here at the Kobra 2 Pro we have the specific design of the nozzle with the end of the nozzle's throat being thinner than the rest of the threaded part. The following picture shows a close-up view of the throat's end - on the left side you see the stock one, on the right side you see an original E3D Volcano one.  
+    ![Stock vs Volcano throat](../assests/images/head_K2Pro_nozzle-throat-ending_web.jpg) 
+    Means, that area of the specific nozzle made by Anycubic sticks into the heatbreak where then the PTFE tube hits the end of the nozzle.  
+    
+    So *imho* this is the only difference and I don't see a reason yet why this heatbreak shouldn't work with regular Volcano nozzles like it works with regular V5 nozzles at the beforementioned Kobra Go.  
+    *I have to verify this though, so until now it's just an assumption!* 
 
 The following picture shows the stock nozzle with the specific design of the throat's end at the left side and a regular E3D Volcano nozzle at the right side.  
 
@@ -1002,10 +1046,11 @@ A harmed tip or worn out nozzle may also cause artefacts like stringing for exam
 ### Changing The Nozzle
 If you need to change the nozzle, mind the warnings from above and check out the following steps in the expandable block below.
      
-!!! warning  
+!!! warning  "Heat Up The Hotend First!"
         
-    - ***Never try to unscrew the nozzle from the heater block while the parts are cold!*** <br> Melted filament or some kind of screw lock glue will make it hard or even impossible to unscrew it and you risk to shear off the nozzle!  
-    - Make sure you're holding the heater block tight to avoid *any* movement and don't overtighten the nozzle when installing it! <br> Reddit user [I_Sells_Drugs](https://www.reddit.com/user/I_Sells_Drugs/) was so kind to allow me to show pictures of [his attempt to tighten up the nozzle even more](https://www.reddit.com/r/anycubic/comments/10rf58m/does_this_mean_i_need_to_replace_entire_hotend/) as he got irritated by the little gap between the head of the nozzle and the heater block. He managed to shear off the heatbreak from the heater block as the following picture shows. <br> ![sheared off heatbreak](../assets/images/sheared-off-heatbreak_web.jpg)      
+    - ***Never try to unscrew the nozzle from the heater block while the parts are cold!***  
+      Melted filament or some kind of screw lock glue will make it hard or even impossible to unscrew it and you risk to shear off the nozzle! So always heat up the hotend to ~240°C before attempting to unscrew the nozzle from the block!     
+    - Make sure you're holding the heater block tight and in place to avoid *any* movement and don't overtighten the nozzle when installing it!        
      
 ??? example "Changing The Nozzle"  
 
@@ -1034,7 +1079,7 @@ According to the [specifications of the manufacturer](https://www.coolcox.com/pr
 
 ---
 
-## Fan Duct
+### Fan Duct
 
 The fan duct for the 5020 part cooling blower fan has two outlets at the sides as the following picture shows.  
 
@@ -1043,34 +1088,6 @@ The fan duct for the 5020 part cooling blower fan has two outlets at the sides a
 Mind the additional opening at the left handed side in the picture - it seems to be there for cooling the ABL sensor. I don't know yet if this additional opening results in a lack of part cooling at that specific side.   
 
 
----
-
-## Heatsink Cooling Fan  
-The heatsink/coldend cooling fan being used is a 24V, 0.08A, 30x30x10mm, model "HSC BCY3010D24H".  
-
-![HSC BCY3010D24H](../assets/images/head_K2Pro_heatsink-fan_web.jpg)
-
-??? example "Dismounting The Heatsink Cooling Fan"  
-
-    If you need to disassemble the heatsink cooling fan, you can't do so right away as one of the screws is blocked by the metal plate where the extruder motor is mounted to.  
-    
-    ![Blocked screw](../assets/images/head_K2Pro_heatsink-fan_mounted_marked_web.jpg)  
-    
-    So for being able to unscrew the screw in the upper left corner, you need to unscrew the two screws in the front which hold the heatsink in place (you don't have to dismount the hotend though).  
-    
-    ![Screws of the heatsink](../assets/images/head_K2Pro_heatsink_dismounted_marked_web.jpg)  
-    
-    Then you can pull out the whole heatsink-hotend-setup out of the feeder gearbox and reach the necessary screws.  
-    
-    ![Both screws accessable](../assets/images/head_K2Pro_heatsink-fan-partially-dism_web.jpg)  
-    
-    Now you can unscrew the fan from the heatsink and take it off.  
-    
-    ![Fan taken off](../assets/images/head_K2Pro_heatsink-fan-dismounted_web.jpg)  
-
-??? example "Remounting The Heatsink Cooling Fan"     
-
-    For reassembling the heatsink cooling fan, just proceed with the steps of dismounting it in reverse.   
 
 ---
 
