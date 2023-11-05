@@ -747,7 +747,7 @@ Basic knowledge of how to use a multimeter is sufficient - if you don't know how
 
 ---
 
-**How To Check The Thermistor**
+#### How To Check The Thermistor
 
 The following expandable textboxes will give you some basic instructions what you can do to check the electric circuits of the thermistor.  
   
@@ -790,7 +790,7 @@ The following expandable textboxes will give you some basic instructions what yo
 
 ---
 
-**How To Replace The Thermistor**
+#### How To Replace The Thermistor
 
 If you need to replace the thermistor of the hotend, see the expandable textbox below for further instructions.  
 
@@ -890,7 +890,7 @@ Basic knowledge of how to use a multimeter is sufficient - if you don't know how
 
 ---
 
-**How To Check The Cartridge Heater**
+#### How To Check The Cartridge Heater
 
 The following expandable textbox will give you some basic instructions what you can do to check the electric circuits of the 24V cartridge heater.  
   
@@ -918,7 +918,7 @@ The following expandable textbox will give you some basic instructions what you 
 
 ---
 
-**How To Replace The Cartridge Heater**
+#### How To Replace The Cartridge Heater
 
 If you need to replace the cartridge heater of the hotend, see the expandable textboxes below for further instructions.  
 
