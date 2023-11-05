@@ -256,9 +256,7 @@ You can access the inside of the feeder system by dismounting the heatsink, whic
 
 #### Disassembling The Feeder Gear
 
-In case you dropped something tiny like a screw or so in the holes at the top of the feeder or if you need to check the feeder gear system due to problems like stuck filament or a bad gear, it's probably sufficient to disassemble the system from the metal backplate by taking out the three hexagon socket screws and shake the whole thing around a bit. There are enough holes and openings at the back where you also could try to reach the lost thing using a pair of tweezers.  
-
-If that doesn't work, see the expandable textbox below for further instructions about how to disassemble the gear box.   
+(..needs to be added..)   
 
 <!--
 ??? example "Disassembling Procedure"  
@@ -496,6 +494,10 @@ The following picture shows the heatbreak (together with the PTFE inliner) being
     Means, that area sticks into the heatbreak where then the PTFE tube hits the end of the nozzle.  
     
     So *imho* this is the only difference and I don't see a reason yet why this heatbreak shouldn't work with regular Volcano nozzles like it works with regular V5 nozzles at the beforementioned Kobra Go.  
+    
+    *Attention:*  
+    You'd have to cut a new and **longer** piece of PTFE tube for the inliner if trying this, as the Volcano nozzle won't slip into the beatbreak and therefore the PTFE inliner needs to be longer!    
+    
     *I have to verify this though, so until now it's just an assumption!*  
 
 ??? info "Spare Part Heatbreak"
@@ -810,6 +812,7 @@ If you need to replace the thermistor of the hotend, see the expandable textbox 
       ![Thermistor and block](../assets/images/head_K2Pro_thermistor-block-screw_web.jpg)    
     - Take out that black hex screw completely and you can pull out the thermistor.  
       ![Thermistor screwed in](../assets/images/head_K2Pro_thermistor-block_web.jpg)  
+      *Attention: be careful when trying to loosen that screw, it might be that it won't come loose unless you heated up the hotend first!*  
     - Now take your new thermistor and repeat the steps in reverse for reassemble everything.  
       Make sure to not pinch the thin wires of the thermistor with the head of the black hex screw and to connect the wires back to the breakout board once you installed the hotend back into the heabreak.  
 
@@ -933,6 +936,7 @@ When replacing the cartridge heater, *make sure you don't overtighten the tiny g
     - So loosen those two screws and take out the whole hotend - be careful when pulling it out to not rip off any wires if you didn't disconnect them already.  
     - Once you took the hotend out, loosen the 1.5mm hex grub/set screw at the heater block which holds the cartride heater in place.  
       ![Cartridge heater and block](../assets/images/head_K2Pro_cartridge-heater-block_web.jpg)    
+      *Attention: be careful when trying to loosen that screw, it might be that it won't come loose unless you heated up the hotend first!*  
     - Now you can take out the cartridge heater.  
       ![Cartridge heater pulled out](../assets/images/head_K2Pro_cartridge-heater-block-disass_web.jpg)  
     - Now take your new cartridge heater and repeat the steps in reverse for reassemble everything.  
@@ -955,6 +959,10 @@ Anycubic ships the printheads with a *proprietary* Volcano-like brass nozzle (0.
     Means, that area of the specific nozzle made by Anycubic sticks into the heatbreak where then the PTFE tube hits the end of the nozzle.  
     
     So *imho* this is the only difference and I don't see a reason yet why this heatbreak shouldn't work with regular Volcano nozzles like it works with regular V5 nozzles at the beforementioned Kobra Go.  
+
+    *Attention:*  
+    You'd have to cut a new and **longer** piece of PTFE tube for the inliner if trying this, as the Volcano nozzle won't slip into the beatbreak and therefore the PTFE inliner needs to be longer!  
+    
     *I have to verify this though, so until now it's just an assumption!*    
     
     
@@ -969,18 +977,13 @@ Anycubic ships the printheads with a *proprietary* Volcano-like brass nozzle (0.
       Be aware of the fact though, that the manufacturers *clearly advise against doing cold pulls with any kind of coated nozzles*! This also involves hardened steel nozzles! Referring to them, the coating might be harmed when doing so.  
     
     - When it comes down to choose the right nozzle size, it all depends on what you want to print and how detailed it should be. The standard size of 0.4mm the printers come with is a good starting point.  
-      However, you may find yourself in the situation that you want to print more detailed objects or objects which should be more sturdy or where it doesn't matter if the surface doesn't look as clean and flat as possible, so you probably should adjust the size and switch to a smaller oder bigger diameter like 0.2-0.3mm for high detailed objects and 0.6mm for the 'rougher' prints.   
+      However, you may find yourself in the situation that you want to print more detailed objects or objects which should be more sturdy or where it doesn't matter if the surface doesn't look as clean and flat as possible, so you probably should adjust the size and switch to a smaller oder bigger diameter like 0.2mm for high detailed objects and 0.6mm for the 'rougher' prints.   
       Keep in mind though that the printing time usually increases by choosing a smaller diameter and it decreases when you're using a bigger diameter.  
       The printing time as well as the quality also depends on the [layer height](../calibration.md#layer-height) you're using, so by choosing a smaller layer height you can also get detailed and great looking prints with a 0.6mm nozzle.  
       Last but not least a smaller nozzle bore is more likely to clog and some filaments even have a sticker on the spool saying that e.g. it should be printed with minimum a 0.4mm nozzle. So choose wisely if you really want to use a nozzle with a 0.2mm bore for example.  
       Search the web for more specific information about finding and choosing the right nozzle size for your project. You may want to start with this article from [All3DP: The Best 3D Printer Nozzle Types, Sizes & Materials](https://www.all3dp.com/2/3d-printer-nozzle-size-material-what-to-know-which-to-buy). 
   
-    - In case you're using *Cura* as a slicer, make sure you update to the current version v5.x (Note: It doesn't run at Ubuntu versions below 20.x though) as it uses the new Arachne engine and offers better quality as a result of that. In case you never heard of that, I recommend to watch the following videos from [Thomas Sanladerer](https://www.youtube.com/channel/UCb8Rde3uRL1ohROUVg46h1A) or read the articles at his page [https://toms3d.org/](https://toms3d.org/) where he shows the result of using a 0.6mm nozzle with Cura v5.x comparing to a 0.4 nozzle using Cura 4.x (SPOILER: you barely can see a difference).  
-  
-        - [Video: 0.4mm nozzles just became obsolete](https://www.youtube.com/watch?v=WgXM2zPusXo)  
-          [Article: 0.4mm nozzles just became obsolete](https://toms3d.org/2022/07/28/arachne-in-prusaslicer-0-4mm-nozzles-just-became-obsolete/)  
-        - [Video: Get the benefits of a 0.6mm nozzle with a 0.4?](https://www.youtube.com/watch?v=nmigF5qyJ4M)  
-          [Article: Get the benefits of a 0.6mm nozzle with a 0.4?](https://toms3d.org/2022/09/22/get-the-benefits-of-a-0-6mm-nozzle-with-a-0-4/)  
+    
   
 ---
 
@@ -1006,6 +1009,10 @@ So you might want to change your setup for being able to use regular Volcano typ
     Means, that area of the specific nozzle made by Anycubic sticks into the heatbreak where then the PTFE tube hits the end of the nozzle.  
     
     So *imho* this is the only difference and I don't see a reason yet why this heatbreak shouldn't work with regular Volcano nozzles like it works with regular V5 nozzles at the beforementioned Kobra Go.  
+
+    *Attention:*  
+    You'd have to cut a new and **longer** piece of PTFE tube for the inliner if trying this, as the Volcano nozzle won't slip into the beatbreak and therefore the PTFE inliner needs to be longer!  
+    
     *I have to verify this though, so until now it's just an assumption!* 
 
 The following picture shows the stock nozzle with the specific design of the throat's end at the left side and a regular E3D Volcano nozzle at the right side.  
@@ -1019,17 +1026,41 @@ The following picture shows a closeup view of the different shape of the nozzle'
 
 If you now want to use Volcano type nozzles, I highly recommend to only use high quality nozzles, like the [**original E3D Volcano nozzles**](https://e3d-online.com/products/volcano-nozzles)!  
 
-If you're about to print *highly abrasive* types of filament, like "wood" or "glow in the dark" PLA for example, get yourself a hardened steel nozzle,  a tungsten carbide nozzle or a brass nozzle with a ruby tip, as regular brass nozzles will be worn out in no time.  
+---
+
+### MOD: Special Kind Of Nozzles
+
+In the following I'll mention some nozzles which are made from different material than the regular nozzles which are made from 100% brass.  
+
+---
+
+#### Hardened Steel / Tungsten Carbide 
+If you're about to print *highly abrasive* types of filament, like "wood" or "glow in the dark" PLA for example, get yourself a hardened steel nozzle,  a tungsten carbide nozzle, as regular brass nozzles will be worn out in no time.  
 The following picture shows an "E3D Nozzle X" hardened steel nozzle (*Attention: I'm showing a V6 type here instead of a Volcano though as I currently don't have a Volcano "NozzleX" nozzle!*).  
 
 ![E3D Nozzle X](../assets/images/V6_nozzleX_web.jpg)  
 
+!!! warning "Don't Do Cold Pulls"
+
+    When using this kind of nozzle, it's said by the manufacturers that one shouldn't do cold pulls for cleaning the nozzle as that might harm the coating in the inside of the nozzle!  
+
+
+---
+
+### Ruby Tip Nozzles 
+Ruby tip nozzles can also be used for highly abrasive filament. They're still made from brass, but they have a tiny ruby at the tip which is harder and therefore doesn't wear out.  
+
+(..pic..)  
+
+---
+
+#### CHT High Flow Nozzles
 If you're planning on printing on much higher speeds and need a higher flowrate than a regular nozzle can offer in this stock hotend setup, you can get yourself a "CHT high flow" nozzle. These ones have a special designed copper inlet in the shaft of the nozzle, which splits up the filament in three parts which then results in a much higher flowrate.  
 The following picture shows this kind of design at a cheap CHT nozzle clone (*Attention: I'm showing a V6 type here instead of a Volcano though as I currently don't have a Volcano "CHT" nozzle!*).  
 
 ![CHT clone](../assets/images/V6_CHTclone_web.jpg)  
 
-*Whichever kind of nozzle you decide to get - always make sure to choose an E3D ***Volcano*** type of nozzle!*  
+ 
  
   
 ---  
