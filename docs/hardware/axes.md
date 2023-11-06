@@ -721,17 +721,52 @@ This means, that the lead screw which is driven by the motor drives the second l
 
 (..add picture..)
 
+!!! warning "Sloppy Timing Belt"
+
+    My machine came with an absolutely sloppy belt, and actually every other Kobra 2 model which uses this timing belt solution that I've seen seems to have the same problem.  
+    The following picture shows that sloppy state of the timing belt - I didn't apply *any* further force with that flimsy cotton swab to it than pushing it slightly to the front!  
+    ![Loose timing belt](../assets/images/axes_K2Pro_timing-belt_loose1_web.jpg)  
+    Please see the violet expandable textbox below for some instructions how to tension the belt.  
+
+??? example "Sloppy Belt? Check The Position Of The Top Bearing Blocks"
+
+    When you experience a sloppy timing belt, you might be tempted to add an adjustable tensioner/idler pulley for being able to tension it. This is most likely *unnecessary* though!  
+    Chances are high that the positions of the top bearing blocks weren't perfectly adjusted during the preassembling process. At least at my machine it was the case, and after adjusting the positions the belt had a sufficient tension - which makes me assume that the length of the belt itself which is being used is actually correct.  
+    So before adding a tensioner pulley to the top, I'd suggest to do the following in the first place:  
+
+    - Measure the inner distance between the two lead screws at the bottom, right above the coupler and the bottom bearing block. I measure between the sides of the threaded part which are facing towards the bed. At my Kobra 2 Pro the distance was about 274mm.  
+    - Now measure the distance similarly at the very top. In my case the distance was 2mm less.  
+    - Now measure the distance of each screw towards the outer (or inner) side of the Z-frame rail, again by starting at the very bottom. I suggest doing this to see if only one screw is out of vertical alignment or both.  
+    - Once you got the results, you now loosen the two screws of the belonging top bearing block. While pulling it into position and hold it that way, tighten up the screws again.    
+    - After doing so, repeat the measuring mentioned before to check if your adjustments were correct. You want to achieve equal values and make sure that each lead screw is as much vertically aligned as possible.  
+      I my case I had to mainly adjust the position of the top bearing block at the side which is driven by the motor. After adjusting it, the distance of each screw towards the side of the rail was the same at the top and the bottom as well as the distance between the screws itself was equal. Well, to be honest: actually the screws are still about 0.2mm too close towards each other at the very top than they are at the bottom, but I wasn't able to apply more force with one hand while tightening up the screws with the other hand due to the belt being tensioned already, so I'll leave it like that. 
+    - Check the tension of the belt then, it should be fine now.  
+
+    Btw: I drove the x-gantry all the way up to the top in the first place as I was hoping/assuming that it might push the screws in the somewhat correct position already when doing so and just loosening the screws of the top bearing blocks. That didn't really work out though as the anti-backlash nut do allow a bit of a sidewards movement (which is good!). So I *strongly* recommend to go with the measuring routine as described above.  
+    Sure, you could also just loosen the top bearings, pull them apart and tighten them up again, but that might let you end up with one or both lead screws being out of vertical alignment even more, which isn't something we want to achieve.   
+
+    The following pictures show the state of the belt before and after adjusting everything - again I'm just pushing the belt slightly to the front with that flimsy cotton swab.  
+    
+    | Before | After |
+    |:------:|:-----:|
+    | ![Before](../assets/images/axes_K2Pro_timing-belt_loose1_web.jpg) | ![After]() |
+    
+
 ---
 
 #### MOD: Adding An Adjustable Tensioner/Idler Pulley For The Timing Belt
 
-This is probably the most important thing you should do right away: add an adjustable tensioner/idler pulley for the timing belt!  
-My machine came with an absolutely sloppy belt, and actually every other Kobra 2 model which uses this timing belt solution that I've seen seems to have the same problem.  
-The following picture shows that sloppy state of the timing belt - I didn't apply *any* further force to it than pushing it slightly to the front!  
+!!! warning "Most Likely Unnecessary!"  
 
-![Loose timing belt](../assets/images/axes_K2Pro_timing-belt_loose1_web.jpg)  
+    It's actually unlikely that you have to do the mod I'll mention in this section, because **if** the screws are set up and in place perfectly, then the belt does have the correct length!  
+    
+    So before doing this mod to tension the timing belt, check the distance of the lead screws towards each other at the bottom and the top in the first place!  
+    Most likely they aren't perfectly preassembled and are slightly closer towards each other at the top which you can and should adjust by the position(s) of the top bearing block(s).  
+    *See the vioelet expandable textbox "Sloppy Belt? Check The Position Of The Top Bearing Blocks" in the section above for further details!*  
 
-You can either get yourself one of those aluminum plates or print yourself an according bracket where you then mount a pulley to.  
+If you think the timing belt doesn't have the correct tension *even though the bearing blocks are adjusted and the lead screws do have the exact same distance towards each other*, you can add an adjustable tensioner/idler pulley for the timing belt.    
+
+You can either get yourself one of those aluminum plates or print yourself an according bracket where you then mount a pulley to. The mounting plate itself can then be mounted by screwing two screws into the two threads located at the blue plastic bar at the top.    
 
 (add link to models)
 
@@ -775,6 +810,36 @@ Both lead screws are held in position with a bearing block at the top.
     | ![Missing screws](../assets/images/axes_K2Pro_z-top-bearing-holder_left_web.jpg) | ![Screws added](../assets/images/axos_K2Pro_top-bearing-screws-added_web.jpg) |  
     
 
+??? warning "Sloppy Timing Belt"
+
+    My machine came with an absolutely sloppy belt, and actually every other Kobra 2 model which uses this timing belt solution that I've seen seems to have the same problem.  
+    The following picture shows that sloppy state of the timing belt - I didn't apply *any* further force with that flimsy cotton swab to it than pushing it slightly to the front!  
+    ![Loose timing belt](../assets/images/axes_K2Pro_timing-belt_loose1_web.jpg)  
+    Please see the violet expandable textbox below for some instructions how to tension the belt.  
+
+??? example "Sloppy Belt? Check The Position Of The Top Bearing Blocks"
+
+    When you experience a sloppy timing belt, you might be tempted to add an adjustable tensioner/idler pulley for being able to tension it. This is most likely *unnecessary* though!  
+    Chances are high that the positions of the top bearing blocks weren't perfectly adjusted during the preassembling process. At least at my machine it was the case, and after adjusting the positions the belt had a sufficient tension - which makes me assume that the length of the belt itself which is being used is actually correct.  
+    So before adding a tensioner pulley to the top, I'd suggest to do the following in the first place:  
+
+    - Measure the inner distance between the two lead screws at the bottom, right above the coupler and the bottom bearing block. I measure between the sides of the threaded part which are facing towards the bed. At my Kobra 2 Pro the distance was about 274mm.  
+    - Now measure the distance similarly at the very top. In my case the distance was 2mm less.  
+    - Now measure the distance of each screw towards the outer (or inner) side of the Z-frame rail, again by starting at the very bottom. I suggest doing this to see if only one screw is out of vertical alignment or both.  
+    - Once you got the results, you now loosen the two screws of the belonging top bearing block. While pulling it into position and hold it that way, tighten up the screws again.    
+    - After doing so, repeat the measuring mentioned before to check if your adjustments were correct. You want to achieve equal values and make sure that each lead screw is as much vertically aligned as possible.  
+      I my case I had to mainly adjust the position of the top bearing block at the side which is driven by the motor. After adjusting it, the distance of each screw towards the side of the rail was the same at the top and the bottom as well as the distance between the screws itself was equal. Well, to be honest: actually the screws are still about 0.2mm too close towards each other at the very top than they are at the bottom, but I wasn't able to apply more force with one hand while tightening up the screws with the other hand due to the belt being tensioned already, so I'll leave it like that. 
+    - Check the tension of the belt then, it should be fine now.  
+
+    Btw: I drove the x-gantry all the way up to the top in the first place as I was hoping/assuming that it might push the screws in the somewhat correct position already when doing so and just loosening the screws of the top bearing blocks. That didn't really work out though as the anti-backlash nut do allow a bit of a sidewards movement (which is good!). So I *strongly* recommend to go with the measuring routine as described above.  
+    Sure, you could also just loosen the top bearings, pull them apart and tighten them up again, but that might let you end up with one or both lead screws being out of vertical alignment even more, which isn't something we want to achieve.   
+
+    The following pictures show the state of the belt before and after adjusting everything - again I'm just pushing the belt slightly to the front with that flimsy cotton swab.  
+    
+    | Before | After |
+    |:------:|:-----:|
+    | ![Before](../assets/images/axes_K2Pro_timing-belt_loose1_web.jpg) | ![After]() |
+    
     
 ---
 
