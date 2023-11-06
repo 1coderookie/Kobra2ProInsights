@@ -725,14 +725,19 @@ This means, that the lead screw which is driven by the motor drives the second l
 
 #### MOD: Adding An Adjustable Tensioner/Idler Pulley For The Timing Belt
 
-This is probably the most important thing you should do right away: add an adjustable tensioner/idelr pulley for the timing belt!  
+This is probably the most important thing you should do right away: add an adjustable tensioner/idler pulley for the timing belt!  
 My machine came with an absolutely sloppy belt, and actually every other Kobra 2 model which uses this timing belt solution that I've seen seems to have the same problem.  
+The following picture shows that sloppy state of the timing belt - I didn't apply *any* further force to it than pushing it slightly to the front!  
 
-(..add picture..)
+![Loose timing belt](../assets/images/axes_K2Pro_timing-belt_loose1_web.jpg)  
 
-You can either get yourself one of those aluminum plates or print yourself an according bracket where you then mount a pulley to. 
+You can either get yourself one of those aluminum plates or print yourself an according bracket where you then mount a pulley to.  
 
-(..description..)
+(add link to models)
+
+I'd suggest to add a teethed pulley to the inner side of the belt. Of course you can also use a pulley with no teeth and place it on the outer side where the belt doesn't have teeth, but in that case the belt will be bent against it's usual bending direction, which *might* affect the lifespan of it negatively.  
+
+(add pic)
 
 ---
 
@@ -753,25 +758,40 @@ But this is just my personal opinion, so if you added a second z-motor, please r
 ### Bearing Blocks   
 There are two kinds of bearing blocks at the machine: one at the top of each lead screw and one at the bottom of the lead screw which isn't connected to the motor.  
 
-(..add picture..)
-
 ---
 
 #### Top Bearing Blocks
 
-(..add picture..)
+Both lead screws are held in position with a bearing block at the top.  
 
+![Bearing block top](../assets/images/axes_K2Pro_z-top-bearing-holder_left_web.jpg)  
+
+??? tip "Add Screws"  
+
+    As you can see in the picture, it seems like Anycubic forgot to add screws to hold the bearing in place. The holes are threaded, so I'd suggest to grab some M? screws and put them in.  
+
+    | Missing screws | Screws added |
+    |:--------------:|:-------------|
+    | ![Missing screws](../assets/images/axes_K2Pro_z-top-bearing-holder_left_web.jpg) | ![Screws added](../assets/images/axos_K2Pro_top-bearing-screws-added_web.jpg) |  
+    
+
+    
 ---
 
 #### Bottom Bearing Block
 
-(..add picture..)
+The lead screw which is driven by the timing belt is mounted to the frame by a bearing block at the bottom.  
+You can see the bearing block in the following picture, it's the plastic part at the very *bottom* (the part above is the anti-backlash nut).  
+
+![Bearing block bottom](../assets/images/axes_K2Pro_Z-bottom-bearing-mount_web.jpg)   
 
 ---
 
 ### Pulleys
 
-(..add picture..)
+Underneath the bearing blocks at the top, each lead screw has a pulley mounted to it where the timing belt runs across.  
+
+![Pulley top](../assets/images/axes_K2Pro_Z-screw-top-pulley_web.jpg)  
 
 ---
 
