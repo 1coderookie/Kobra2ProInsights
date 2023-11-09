@@ -969,7 +969,8 @@ The coupler is 5mm ID for taking the 5mm shaft of the motor and the 5mm shaft/un
     *Make sure to get the correct size of coupler when replacing them!*  
 
 It's a good idea to change the 'rigid' coupler to a somewhat flexible one, as the one which comes with the printer doesn't compensate any misalignement of the motor shaft and the lead screw. So if they aren't in a perfect vertical alignment, it will result in shear forces, increased wear of the anti-backlash nut and even may cause jamming.  
-The following picture shows the stock coupler that is mounted (again: mind the different size of the upper bore in this case, this picture is just for illustrating the general type of a rigid coupler that is being used!).  
+
+The following picture shows the stock coupler that is mounted.    
     
 ![Coupler](../assets/images/axes_stock-coupler_web.jpg)   
 
