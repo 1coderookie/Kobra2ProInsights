@@ -846,9 +846,13 @@ Both lead screws are held in position with a bearing block at the top where the 
 
     The following pictures show the state of the belt before and after adjusting everything - again I'm just pushing the belt slightly to the front with that flimsy cotton swab.  
     
-    | Before | After |
-    |:------:|:-----:|
-    | ![Before](../assets/images/axes_K2Pro_timing-belt_loose1_web.jpg) | ![After]() |
+    | Before tensioning, how the printer came preassembled | 
+    |:-----:|
+    | ![Before](../assets/images/axes_K2Pro_timing-belt_loose1_web.jpg) | 
+    
+    | After tensioning by adjusting the position of the top bearing blocks |
+    |:------:|
+    | ![After](../assets/images/axes_K2Pro_timing-belt-tensioned_web.jpg) |
     
     
 ---
