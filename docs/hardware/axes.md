@@ -860,7 +860,7 @@ You can see the bearing block being mounted to the frame in the following pictur
 
 ![Bearing block bottom](../assets/images/axes_K2Pro_Z-bottom-bearing-mount_web.jpg)   
 
-The following pictures show the bottom bearing block being dismounted from different angles.  
+The following pictures show the bottom bearing block from different angles.  
 
 | Frontview | Sideview | Topview |
 |:---------:|:--------:|:-------:|
