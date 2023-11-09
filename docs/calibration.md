@@ -45,12 +45,9 @@ Using certain tools makes it easier to calibrate your printer. It'll allow you t
 
 - **Cura**  
   If you're using Cura, you might want to check out the plugin ["Calibration Shapes"](https://marketplace.ultimaker.com/app/cura/plugins/5axes/CalibrationShapes) which gives you access to different STL models you can use for calibration.  
-  Before slicing and printing, make sure you're reading the specific notes about the models at the [wiki page of the creator](https://github.com/5axes/Calibration-Shapes/wiki) and to add the additional code to the generated STL files when necessary.
-  
+  Before slicing and printing, make sure you're reading the specific notes about the models at the [wiki page of the creator](https://github.com/5axes/Calibration-Shapes/wiki) and to add the additional code to the generated STL files when necessary.  
   Another plugin is ["AutoTowers Generator"](https://marketplace.ultimaker.com/app/cura/plugins/Kartchnb/AutoTowersGenerator).  
 
-- **OctoPrint**  
-  If you're using OctoPrint, you might want to check out the plugin ["Marlin Calibration Tools"](https://plugins.octoprint.org/plugins/CalibrationTools/) which allows you to easily execute different calibration procedures.
 
 ---
 
@@ -100,36 +97,38 @@ See the section [Tramming The X-Axis Gantry](hardware/axes.md#tramming-the-x-axi
 
 ---
 
-### ABL
-There are two things you should take care of when it comes down to use the ABL function: you need to make sure that the tip of the sensor is at the correct height (in relation to the tip of the nozzle) and that the ABL function is activated before attempting to print.  
-
-#### Level The ABL Sensor 
+### Level The ABL Sensor 
 You also should level the ABL sensor in relation to the nozzle, so that you have a defined distance between the tip of the sensor and the tip of the nozzle. Every time you change the hotend or parts of it, you should check that distance again to make sure it's the same like before.  
 
 See the belonging section for your specific model in the section ["ABL Sensor"](hardware/printhead.md#abl-sensor) for further information and instructions about how to do so.  
 
-#### Activate The ABL Function
-The ABL function should already be active, even though you might came across the fact that it's often said that you have to add the `M420 S1` after the last `G28` command in the start g-code of your slicer to activate it and have the bedmesh loaded. In the firmware there's the setting `#define ENABLE_LEVELING_AFTER_G28`, which activates the ABL after G28 (homing) was called. This will load the specific mesh values from the printer's EEPROM and activate the function of the ABL, so that minor height variations of the bed's surface will be compensated while printing. So there should be no need to add the `M420 S1` command. As a matter of fact, adding it might even cause irregularities.  
+---
 
-However, it seems that sometimes it *is* necessary to add that command to the start g-code though. In that case you can try if it really makes a change if you add it, or if it might even cause problems (like a wrong compensation). In that case enter your slicer's configuration settings, search for the start g-code section and add the command `M420 S1` in a new line right after the last `G28` command (which is the homing command) being in there.  
+### Check The Z-Offset Sensor
 
+There are two things you want to do before starting the calibration procedure and determining the z-offset using the control unit:  
+
+- check if the sensor comes back up again when being pushed down and
+- check if the sensor's height is correct.  
 
 ---
 
-### Fan Duct
-Even though this isn't really a 'calibration', let me mention it at this point while you're going through the steps of tuning in your printer.  
+#### Check If The Sensor Comes Up
+The button of the z-offset sensor/switch is spring loaded. Check if the metal button can move freely and comes back up when you push it down with your finger and release it.  
 
-The stock fan ducts of both the **Go** and the **Neo**, which are only cooling from one side, are (imho) actually pretty bad. So I highly recommend to print a better one as soon as you're able to somehow print.  
-This first one doesn't have to be perfect yet, but it'll most likely already have a big impact on the outcome, which allows you to tune in the settings even better and therefore finally print another fan duct.  
-  
-I linked to some STL files for both the **Go** and the **Neo** in the section ["Mods"](hardware/printhead.md#mods) of the chapter "Printhead", but you'll probably find other models as well. 
-  
-If you're printing PETG, then this would be the material you want to end up using for this as it's more heat resistant than PLA.  
-If you're only printing PLA (yet), then at least give it a try and see if it lasts or if it deforms due to the heat of the hotend or the bed. If you're only printing PLA with 60°C bed temperature, you'll most likely will be able to use a fan duct printed from PLA, but as soon as you raise the bed temperature, it'll most likely start to deform and sag.   
+See the section ["Adjusting The Sensor's Spring Tension"](hardware/bed.md#adjusting-the-sensors-spring-tension) for further information.  
 
 ---
 
-## Other Calibration
+#### Check The Height Of The Sensor
+The upper side of the button of the z-offset sensor/switch must align with the upper side of the PEI plate. If the metal button is either too high or too low, you need to adjust the height accordingly.  
+
+See the section ["Adjusting The Sensor's Height"](hardware/bed.md#adjusting-the-sensors-height) for further information.
+
+---
+
+## Other Calibration  
+
 In the following I'll list some of the calibrations which are necessary. The list isn't completed yet, mostly I'll list calibrations where certain things come into account for these specific printer models. If you don't find a specific calibration mentioned here, please refer to other sources like the abovementioned calibration guides I linked to.  
   
 Keep in mind that it may take some time until you found the best suitable settings. And even then it might occur that you'll have to adjust certain settings later when finally printing 'real' models. So maybe try to see it more like a process instead of the struggle of a search for the 'perfect' settings which must out there somewhere..  
@@ -142,13 +141,13 @@ Also keep in mind that you'll have to do certain calibrations again when using d
 The z-offset is the distance between the nozzle and the bed/plate you're printing on. It comes into account when printing the first layer of a model and therefore it's crucial and absolutely important that you dial in your z-offset to get your first layer as perfect as possible.  
 If the nozzle is too far up above the plate, you'll experience that the print doesn't stay onto the bed or (if it's way too far up) that it'll just produce 'spaghetti' while printing up in the air.  
 If it's too close to the plate and therefore the filament will be squished into the plate too much, then it'll either be difficult to remove the object or (if the nozzle is way too close) it'll provoke clogging as the filament won't be able to come out of the nozzle. Worst case would be that the nozzle scrapes across the plate and that you damage the hardware itself.  
+
+Even though the z-offset will be somewhat calculated by the printer itself by probing the z-offset switch, you might need to finetune the setting on the fly while printing an inital layer of a model.  
+The perfect z-offset can also change when using different types of filament, means, you might have to adjust it when using e.g. PETG instead of PLA.  
   
 *To determine the perfect first layer, I'd recommend to have a look at [this handy guide](https://i.imgur.com/hIcGr8U.png) from [Billie Ruben](https://www.billieruben.info/) first to get an impression how you can judge if the first layer (and therefore the z-offset) is good or not and how it should look like.*  
     
-!!! warning "Proceed An ABL Sequence Before, Not After Setting The Z-Offset"  
-
-    Before adjusting the z-offset, I recommend to execute an ABL sequence first - with an already [leveled ABL sensor](hardware/printhead.md#abl-sensor) as well as an already [trammed x-axis gantry](hardware/axes.md#tramming-the-x-axis-gantry) and [trammed bed](hardware/bed.md#tramming-the-bed).  
-    If you execute an ABL *after* you dialed in your z-offset, then you'll have to set the z-offset *again* as it seems that the ABL procedure somehow 'resets' the setting.  
+<!--
     
 When it comes down to describe the actual process of how to determine and set the z-offset correctly, I have to mention that right now the following step-by-step instruction here about how to proceed is written from my memory how I did it when using the stock firmware. I'm using Klipper now and probably don't remember 100% how I proceeded when using the stock firmware, so please keep that in mind.   
 However, from what I do remember right now you (roughly) do it this way:  
@@ -159,8 +158,9 @@ However, from what I do remember right now you (roughly) do it this way:
 - Take a 0.1mm feeler gauge (or a piece of paper if you don't have a feeler gauge) and place it under the nozzle.  
 - Then enter "Leveling" -> "Z-Offset" in the control unit and lower the printhead *carefully step by step* until the nozzle touches the gauge/paper. *You want to be able to still move the gauge/paper without any force, but you should feel a tiny bit of resistance to make sure the nozzle touches the gauge/paper.*   
 - Once you found the sweet spot, save the value.  
+-->  
 
-Then start a print job and verify that the first layer came out perfect. Compare the look of it with the abovementioned poster from Billie Ruben to check if it really is perfect or if you need a bit of adjustment.  
+After initiating the probing and calibration sequence using the control unit, start a print job and verify that the first layer came out perfect. Compare the look of it with the abovementioned poster from Billie Ruben to check if it really is perfect or if you need a bit of adjustment.  
 If you need to adjust the height, you don't need to execute an ABL sequence again, just correct the z-offset setting. You can also adjust it 'on the fly' while printing a (larger) first layer and look at the outcome - this is often even better as you'll see the effect right away.    
 
 ??? info "Don't Rely On The "Paper Method""
@@ -216,31 +216,21 @@ The correct settings will mostly avoid stringing. There are various aspects whic
 #### Retraction Distance
 The retraction *distance* is a crucial setting one has to take care about. The retraction *distance* is the setting how *far* the feeder gear will pull back the filament when retracting.      
 
-!!! warning "**Neo:** Don't Use Anycubic's Profile Right Away!"  
-
-    This one is really important for the **Neo**: watch out if you're going to use the profile of Anycubic, the retraction distance is set to 6mm there, which is way too much for the direct drive system of the **Neo** as mentioned above! So change that setting to max. 1mm and go from there.   
-    Always make sure to check this setting in general when using preconfigured profiles! 
 
 Finding the correct retraction distance setting can be difficult and might take a few iterations, as it depends on various other settings and variables, so there isn't a general one-fits-all setting one could use.  
-However, there is a rule of thumb though one should be aware of: if you're using a bowden drive feeder gear system like the one of the **Go**, the retraction distance is higher than when using a direct drive system like the **Neo**. This is because of the slack of the bowden drive system, where the feeder gear is about 30-40cm away from the hotend. So as a general rule it's said that at bowden drives the retraction distance is something around 6mm, at direct drives it should be max. 1mm.   
-  
-For finding out the correct retraction distance setting, you can print retraction distance towers, where different retraction distance values are applied at certain heights (kinda the same like when printing temperature towers). Before doing so, you should have figured out the correct printing temperature though. I'd suppose to start with the following settings as *maximum* retraction distance values:  
 
-- **Go** as a bowden drive system: 6mm retraction distance
-- **Neo** as a direct drive system: 1mm retraction distance  
+  As this is a direct drive system, you need to go with small retraction distance settings. Due to the Volcano-like nozzle and the longer melting zone, you can try up to 2mm and still should be safe. Start with the smallest settings though!
+  
+For finding out the correct retraction distance setting, you can print retraction distance towers, where different retraction distance values are applied at certain heights (kinda the same like when printing temperature towers). Before doing so, you should have figured out the correct printing temperature though.   
+
     
 ---
 
 #### Retraction Speed
 Retraction *speed* is the setting how *fast* the feeder gear will pull back the filament when retracting. It plays together with the setting of the retraction distance, and both settings affect each other.  
 In general it seems that you can say that the higher the *speed*, the lower the *distance* can be - but like with every 'rule of thumb', this is just a 'rough' guide and you'll need to find out the optimum setting for your specific setup by your own. You might also find out that things work out much better and that you get better results when using a lower retraction speed.    
-
-There is a little problem though with both the **Go** and the **Neo**: the retraction speed is limited in the firmware by default to *25mm/s*!   
-This means that every higher value you set in your sclicer will just be ignored and reduced to 25mm/s as that's the encoded limit.  
-Means, when you're starting to print retraction speed towers with higher vales than 25mm/s, those speeds will be 'ignored' so to say as the speed is actually capped to 25mm/s.   
-However, there is a way you can change the default setting of the maximum retraction speed. Please see the chapter [Stock Firmware (Marlin Based)](firmware/fw_marlin.md), scroll down to the section "Limited Retraction Speed" for your specific model and read the expandable box "Setting A Higher Maximum Value For Retraction Speed".  
   
-It has to be mentioned though that a high(er) retraction speed isn't always the key - it can also be the case that using a lower speed than e.g. the default maximum 25mm/s is necessary for getting the best results. This also depends on the type and quality of the filament as well.  
+It has to be mentioned though that a high(er) retraction speed isn't always the key - it can also be the case that using a lower speed is necessary for getting the best results. This also depends on the type and quality of the filament as well.  
   
   
 ---  
