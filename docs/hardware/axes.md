@@ -10,7 +10,7 @@
 | **X- & Y-Axis Metal Wheels**: SG15 bearings |
 | **X-Axis Motor**: 42x34 Nema17, 1.8°, 200 steps, 5mm shaft with 16 OD / 5mm ID / 20 teeth pulley attached (for 8mm wide belt) |
 | **Y-Axis Motor**: 42x48 Nema17, 1.8°, 200 steps, 5mm shaft with 16 OD / 5mm ID / 20 teeth pulley attached (for 8mm wide belt) |
-| **Z-Axis Lead Screws**: T8x8 (8mm diameter, 8mm lead, 2mm pitch, 4 starts), 350mm length, belt-driven dual z  |
+| **Z-Axis Lead Screws**: T8x8 (8mm diameter, 8mm lead, 2mm pitch, 4 starts), 350mm length, 10mm and ~23mm unthreaded 5mm OD shaft, belt-driven dual z  |
 | **Z-Axis Belt**: GT-2, 6mm width, closed loop, length ??mm |
 | **Z-Axis Lead Screw Pulleys**: 16mm OD / 3mm ID / 20 teeth (for 6mm wide belt) |
 | **Z-Axis Anti-Backlash Nut**: POM, spring loaded, 8mm inner diameter, 20mm distance between mounting screws (18mm will fit as well due to elongated holes at the bracket!) |
@@ -694,11 +694,13 @@ The rear wheel on the left side of the bed gantry triggers the switch when moved
 ## Z-Axis
 The z-axis is driven by two lead screws which are connected to each other with a timingbelt at the very top. One lead screw is attached and driven by the z-axis motor, the other one is then driven by the timingbelt. Therefore this system is called a dual z-axis, timingbelt driven system.   
 
-The lead screws have 8mm in diameter with 8mm lead ('distance' of one complete rotation), 2mm pitch and 4 starts and has a length of 350mm (it's actually the kind of lead screw which is used pretty much everywhere in these kind of machines).  
+The lead screws have 8mm in diameter with 8mm lead ('distance' of one complete rotation), 2mm pitch and 4 starts and has a length of 350mm.  
+At the bottom part of the lead screw there's a 10mm long unthreaded part and at the top this part is 20mm long, the outer diameter of these shafts is 5mm.  
 
 The rod which is directly driven by the motor is mounted to the 5mm shaft of the motor by a rigid coupler at the bottom.  
 The rod which is driven by the belt then is mounted to a bearing block at the bottom which holds it in place.  
-Both top ends of the rods are held in place by a bearing block at the top. At this end, right underneath the bearing block, a pulley is attached to both screws, which are then connected by a closed loop belt. 
+Both top ends of the rods are held in place by a bearing block at the top. At this end, right underneath the bearing block, a pulley is attached to both screws, which are then connected by a closed loop belt.  
+All these bearings where the lead screws sit in, the pulleys as well as the coupler to the motor are 5mm in diameter to take up the unthreaded part of the rods.
 
 In between it's guided and secured by a spring loaded POM anti-backlash nut which you can see at the following picture -  it's the black plastic part mounted to the black steel bracket.  
   
@@ -711,7 +713,12 @@ In between it's guided and secured by a spring loaded POM anti-backlash nut whic
 ---
 
 ### Lead Screws  
+The lead screws have 8mm in diameter with 8mm lead ('distance' of one complete rotation), 2mm pitch and 4 starts and has a length of 350mm.  
+At the bottom part of the lead screw there's a 10mm long unthreaded part and at the top this part is ~23mm long, the outer diameter of these shafts is 5mm. Means, you can *not* just get one of those typical lead screws which have the thread going all along the whole length of the rod if you need a replacement!   
 
+The following picture shows the unthreaded part at the bottom which is 10mm long - the part at the top is ~23mm long.  
+
+![Unthreaded part](../assets/images/axes_K2Pro_z-rod-shaft_web.jpg)  
   
 ---
 
@@ -747,9 +754,13 @@ This means, that the lead screw which is driven by the motor drives the second l
 
     The following pictures show the state of the belt before and after adjusting everything - again I'm just pushing the belt slightly to the front with that flimsy cotton swab.  
     
-    | Before | After |
-    |:------:|:-----:|
-    | ![Before](../assets/images/axes_K2Pro_timing-belt_loose1_web.jpg) | ![After]() |
+    | Before tensioning, how the printer came preassembled | 
+    |:-----:|
+    | ![Before](../assets/images/axes_K2Pro_timing-belt_loose1_web.jpg) | 
+    
+    | After tensioning by adjusting the position of the top bearing blocks |
+    |:------:|
+    | ![After](../assets/images/axes_K2Pro_timing-belt-tensioned_web.jpg) |
     
 
 ---
@@ -772,7 +783,6 @@ You can either get yourself one of those aluminum plates or print yourself an ac
 
 I'd suggest to add a teethed pulley to the inner side of the belt. Of course you can also use a pulley with no teeth and place it on the outer side where the belt doesn't have teeth, but in that case the belt will be bent against it's usual bending direction, which *might* affect the lifespan of it negatively.  
 
-(add pic)
 
 ---
 
@@ -797,7 +807,7 @@ There are two kinds of bearing blocks at the machine: one at the top of each lea
 
 #### Top Bearing Blocks
 
-Both lead screws are held in position with a bearing block at the top.  
+Both lead screws are held in position with a bearing block at the top where the 5mm OD shaft rests in. So the hole in the bearing has 5mm ID as well.   
 
 ![Bearing block top](../assets/images/axes_K2Pro_z-top-bearing-holder_left_web.jpg)  
 
@@ -807,7 +817,7 @@ Both lead screws are held in position with a bearing block at the top.
 
     | Missing screws | Screws added |
     |:--------------:|:-------------|
-    | ![Missing screws](../assets/images/axes_K2Pro_z-top-bearing-holder_left_web.jpg) | ![Screws added](../assets/images/axos_K2Pro_top-bearing-screws-added_web.jpg) |  
+    | ![Missing screws](../assets/images/axes_K2Pro_z-top-bearing-holder_left_web.jpg) | ![Screws added](../assets/images/axes_K2Pro_z-top-bearing-block_screws-added_web.jpg) |  
     
 
 ??? warning "Sloppy Timing Belt"
@@ -845,10 +855,16 @@ Both lead screws are held in position with a bearing block at the top.
 
 #### Bottom Bearing Block
 
-The lead screw which is driven by the timing belt is mounted to the frame by a bearing block at the bottom.  
-You can see the bearing block in the following picture, it's the plastic part at the very *bottom* (the part above is the anti-backlash nut).  
+The lead screw which is driven by the timing belt is mounted to the frame by a bearing block at the bottom where the 5mm OD shaft of the lead screw rests in. Therefore the hole of the bearing has 5mm ID as well.    
+You can see the bearing block being mounted to the frame in the following picture, it's the plastic part at the very *bottom* (the part above is the anti-backlash nut).  
 
 ![Bearing block bottom](../assets/images/axes_K2Pro_Z-bottom-bearing-mount_web.jpg)   
+
+The following pictures show the bottom bearing block being dismounted from different angles.  
+
+| Frontview | Sideview | Topview |
+|:---------:|:--------:|:-------:|
+| ![Frontview](../assets/images/axes_K2Pro_z-bottom-bearing-block_front_web.jpg) | ![Sideview](../assets/images/axes_K2Pro_z-bottom-bearing-block_side_web.jpg) | ![Topview](../assets/images/axes_K2Pro_z-bottom-bearing-block_solo_web.jpg) |
 
 ---
 
