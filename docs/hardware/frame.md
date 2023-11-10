@@ -36,7 +36,8 @@ After mounting both parts together, you'll already have the printer standing in 
 
     I always see people putting the whole construction on the side, with the printer resting on the side of the baseframe and the according site of the z-frame (or, to be more precise, only certain parts of it touching the desk!). Then they insert the screws and tighten them up, turn the printer around on the other side and do the same there. But by doing so, you'll risk that the z-fame won't be mounted perpendicular to the baseframe.  
     
-    So what I'd recommend is to put the printer to the edge of a table, letting one side stick out a bit where you want to put in the screws. Now put the z-fame on top of the base frame and make sure that the z-frame really is perpendicular to the base frame using a carpenter's square while tightneing up the screws as shown in the following picture.  
+    So what I'd recommend is to put the printer to the edge of a table, letting one side stick out a bit where you want to put in the screws.  
+    Now put the z-fame on top of the base frame and make sure that the z-frame really is perpendicular to the base frame using a carpenter's square while tightening up the screws as shown in the following picture.  
 
     ![Mounting](../assets/images/frame_assembly-tip_web.jpg)  
     
