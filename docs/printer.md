@@ -4,7 +4,7 @@
 The Anycubic [**Kobra 2 Pro**](https://www.anycubic.com/products/kobra-2-pro) is a high speed FDM bedslinger style printer.  
 It comes pre-assembled, you only have to mount a few parts like the 'upstanding' frame onto the base frame.  
   
-See [Anycubic's support page](https://www.anycubic.com/pages/firmware-software) of the Kobra 2 series to find manuals, firmware, video tutorials and more of **Kobra 2 Pro**.    
+See [Anycubic's support page](https://www.anycubic.com/pages/firmware-software) of the Kobra 2 series to find manuals, firmware, video tutorials and more.    
   
 The following list gives an overview of the most important specifications:    
 
@@ -31,9 +31,9 @@ The following list gives an overview of the most important specifications:
 - Filament run-out detection sensor  
 
   
-| Kobra 2 Pro |  
-|--------------|
-| ![Kobra 2 Pro](assets/images/printer_K2Pro_web.jpg) |  
+| Kobra 2 Pro frontview | Kobra 2 Pro backview |  
+|:---------------------:|:--------------------:| 
+| ![Kobra 2 Pro front](assets/images/printer_K2Pro_front2_web.jpg) |  ![Kobra 2 Pro back](assets/images/printer_K2Pro_back_web.jpg) | 
 
 
 ---
