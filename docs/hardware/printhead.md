@@ -111,6 +111,15 @@ The connection between the mainboard and this breakout board is then accomplishe
 ![Ribbon cable](../assets/images/head_K2Pro_ribbon-cable-connector_web.jpg)  
 
 
+??? example "Assembling The Cap"
+
+    When you try to assemble that cap (which is attached to the ribbon cable) onto the plug once you put it into the connector, you might have a hard time doing so - at least I had in the beginning.  
+    So there's a little trick to get everything together - it's kinda difficult for me to explain it properly, but I'll try:  
+    After you plugged the plug into the connector, *bend that ribbon cable* where that textile tape (or whatever that is) is located *a bit downwards*.  
+    Pay attention that those levers at the sides of the connector are clipped into the plug's side.  
+    Then carefully push down that cap while paying attention that it really goes across the plug in the back as well.  
+    Once everything looks fine so far, push down the cap until it finally goes over the plug and clips onto it. Don't try to force it too much - you do need a bit of force, but you have to make sure that everything is in place.  
+
 ---
 
 ## ABL Sensor
