@@ -10,7 +10,7 @@ When it comes down to tinkering, the fun factor and the results raise and fall w
 
 ---
 
-!!! warning "Smoke Detector And Fire Extinguisher"
+!!! warning "Get A Smoke Detector And Fire Extinguisher"
 
     As this is really important, I'll mention these two in an extra admonition box - get yourself a proper **smoke detector** and a **fire extinguisher**!  
 
