@@ -28,7 +28,19 @@ The following pictures show the printhead with the blue plastic cover from vario
 
 It is the same as the one being used at the *Kobra 2 Plus* and *Kobra 2 Max* - it is *not* the same as the one being used in the regular *Kobra 2* and the *Kobra 2 Neo* though.  
 
-The printhead itself is running along the [x-axis gantry](axes.md#x-axis-gantry).  
+--- 
+
+### Mounting
+
+The printhead itself is mounted to a metal plate which is running along the [x-axis gantry](axes.md#x-axis-gantry).  
+
+| Mounting plate front side | Mounting plate back side |  
+|:------------------------:|:-----------------------:|
+| ![Plate front side](../assets/images/head_K2Pro_mounting-plate-frontside_web.jpg) | ![Plate back side](../assets/images/head_K2Pro_mounting-plate-backside_web.jpg) |  
+
+The following picture shows the four screws which are being used to mount the printhead onto the plate.  
+
+![Mounting screws](../assets/images/head_K2Pro_head-back_mounting-screws-marked_web.jpg)  
 
 ---
 
