@@ -5,7 +5,7 @@ The printer comes with a 4.3" touch display.
 It's mounted to the front right edge of the baseframe.  
 There's no additional microSD card slot located at this panel.  
 
-![Display mounted](../assets/images/display_K2Pro_mounted.jpg)  
+![Display mounted](../assets/images/display_K2Pro_front2_web.jpg)  
 
 At the backside of the control unit is a connector where the flat ribbon cable must be plugged in accordingly.  
 
