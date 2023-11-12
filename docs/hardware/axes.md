@@ -34,18 +34,15 @@ So if you notice that e.g. the motor of the y-axis doesn't stop when the bed rea
 
 ## X-Axis
 The x-axis is represented by the printhead moving along the x-axis gantry.  
-The metal plate where the printed is mounted onto is belt driven, the motor which drives the belt (8mm wide, GT-2 type) is located at the left side.   
 
-The following pictures show this mounting plate without the printhead being attached, so that you can see the parts better.  
+![X axis](../assets/images/axes_K2Pro_X-gantry_web.jpg)  
 
-| Mounting plate front side | Mounting plate back side |  
-|:------------------------:|:-----------------------:|
-| ![Plate front side](../assets/images/head_K2Pro_mounting-plate-frontside_web.jpg) | ![Plate back side](../assets/images/head_K2Pro_mounting-plate-backside_web.jpg) |  
+The metal plate where the printhead is mounted onto is belt driven, the motor which drives the belt (8mm wide, GT-2 type) is located at the left side.   
 
 You can adjust the tension of the belt by using the knob at the right side of the aluminum profile where the printhead is guided onto.  
-  
-![X-axis knob](../assets/images/axes_K2Pro_X-tensioner_web.jpg)
 
+See the belonging sections for further pictures and descriptions of the parts.  
+  
 ---
 
 ### Belt Tensioner
@@ -137,16 +134,16 @@ The motor of the x-axis is a 42-34 Nema 17 stepper motor with a 20 teeth pulley 
 It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at each steps, and therefore it's doing 200 steps for one full 360° rotation.  
 The motor is located at the left hand side of the x-axis gantry.  
 
-![X motor](../assets/images/axes_K2Pro_X-motor_back_web.jpg)  
+![X motor](../assets/images/axes_K2Pro_X-motor_web.jpg)  
 
 
-As there aren't any specifications and replacement motors from Anycubic being available, you can either use a motor with the beforementioned specs or get yourself a motor from a Creality Ender 3 (or one that's advertised to fit that printer). The following picture shows the original stepper motor being mounted and the belonging Creality model laying next to it at the right hand side (right now the following picture shows the y-axis motor compared to the Creality motor, but the motors are actually the same - I'll add the belonging picture of the x-axis motor soon though).  
+??? info "Spare Part Motor"  
 
-![Stock vs Creality y-motor](../assets/images/axes_y-motor_stock-creality_web.jpg)  
+    As there aren't any specifications and replacement motors from Anycubic being available, you can either use a motor with the beforementioned specs or get yourself a motor from a Creality Ender 3 (or one that's advertised to fit that printer).  
 
-!!! warning "Attention When Connecting A 'Generic' Motor!"  
+??? warning "Attention When Connecting A 'Generic' Motor!"  
 
-    As the connections of the stock vs a generic or (in this case) a 'Creality'-type motor are different due to different pinouts of the coils, you need to make sure you connect it correctly!  
+    As the connections of the stock vs a generic or a 'Creality'-type motor are/might be different due to different pinouts of the coils, you need to make sure you connect it correctly!  
     *So, before connecting it to the mainboard though, take your multimeter and identify the coils by probing the pins of the motor's connector!*  
     Compare your findings with the ones from the stock motor - you might have to switch the position of certain wires inside of the plug.
     
@@ -187,10 +184,11 @@ As there aren't any specifications and replacement motors from Anycubic being av
 
 ### Linear Rail System
 
-The X axis has a linear rail system instead of POM wheels like other machines. It's not a 'real' linear rail like a MGN12 or MGN15 system, but it's U-shaped metal SG15 bearings running along round-shaped metal rails which are being mounted in the v-slots of the x-axis gantry's aluminum rail.  
-The following picture shows this rail system.  
+The X axis has a linear rail motion system instead of POM wheels like many other machines.  
+It's not a 'real' linear rail like a MGN12 system for example though - instead, Acnycubic is using U-shaped metal SG15 bearings running along round-shaped metal rails which are being mounted in the v-slots of the x-axis gantry's aluminum rail.  
+The following picture shows this rail system (without the printhead being mounted to the plate).  
 
-***..add pic..***
+![X rail system](../assets/images/axes_K2Pro_X-rail-system-nohead_web.jpg)  
 
 ---
 
@@ -223,12 +221,36 @@ The printhead shouldn't wiggle but it has to be able to move freely.
     
 Make sure they're assembled correctly and line up with the rail as well - if they're out of alignment and don't run correctly along the rail, you'll experience a massive wear and tear. Same goes for the bearings being too tight.  
 
-See the following picture where you can clearly see a wear and tear, in this case of the surface of the rails of the y-axis. According to the user who took this picture, this is the state after printing about one spool of filament - which is absolutely *not* "normal"!   
+!!! warning "Wear And Tear"  
 
-![Rails wear & tear](../assets/images/axes_K2Pro_rails-weartear_web.jpeg)
+    Wear and tear does occur at this kind of linear rail system as well, as metal bearings are running along a metal rod.  
+    In the beginning you'll probably notice some black dust coming off the rail and the shiny coating isn't that shiny anymore as shown in the following picture.     
 
-The reason for this is most likely the bearings being positioned too tight to the rail.  
-Insufficient lubrification also plays a role, but in this case the user did apply lube.        
+    ![Rails wear & tear](../assets/images/axes_K2Pro_rails-weartear_web.jpeg)
+
+    When things get worse, you'll see the chrome coating coming off which releases the brass the rods are actually made of as shown in the following picture.  
+
+    ![Rails harmed](../assets/images/axes_K2Pro_rails-harmed_web.jpg)  
+
+    There are (imho) three main reasons which cause this issue and which highly affect how fast this damage occurs:  
+    
+    1. First to mention would be an insufficient lubrification.  
+       So make sure to clean off old grease and apply fresh grease regularly. The more you're using the machine, the more often you have to do this maintenance!  
+    2. Second to mention is improper alignment and running the bearings too tight onto the rail.  
+       So make sure you position the SG15 bearings correctly.  
+    3. Third is the common behaviour of placing and printing smaller parts in the center of the build plate.  
+       So place smaller parts in different areas of the bed instead of always locating them right in the center. The more the bearings are running across a specific section of the rails, the more the abrasion will occur in that area.  
+       
+??? example "Replacing The Linear Rods"  
+
+    If it happens that the rods of this linear rail system got harmed, you can actually push them out of the aluminum rail's v.slot, turn them a bit and push them back in.  
+    This might take some effort, but it's possible to do so.  
+    If you have to do this procedure, make sure you can access both ends of the aluminum rail freely. Means, dismount any caps, belt tensioner, motors or whatever is in the way.  
+    Then take a hammer and something like a wide flathead screwdriver or (even better) a bolt or so. Place the bolt onto the end of the rod you want to push out and *carefully* use the hammer on the bolt. By doing so you can push out the rod.  
+    
+    *Make sure to not deform the end of the rod! Don't hit the bolt too hard as well, you want to hit it light and careful - just enough to make the rod move out of the v-slot!*  
+
+    After rotating the rod a bit, push it back in.     
     
 ---
   
@@ -279,7 +301,10 @@ The following pictures show the limit switch from two different point of views.
 ## X-Axis Gantry
 The x-axis gantry is the aluminum profile (plus the corresponding parts) where the printhead is actually running onto.  
 
-You already read the information about the belonging parts of the x-axis in the chapter above, in the following you'll find the information about the parts of the x-axis gantry which are moving along the z-axis frame. Plus, you'll find information about how to tram the x-axis gantry, which is crucial for a good and reliable outcome.  
+![X gantry](d../assets/images/axes_K2Pro_X-gantry_web.jpg)  
+
+You already read the information about the belonging parts of the x-axis in the chapter above, in the following you'll find the information about the parts of the x-axis gantry which are moving along the z-axis frame.  
+Plus, you'll find information about *how to tram the x-axis gantry, which is crucial for a good and reliable outcome*.  
  
 ---
 
@@ -393,8 +418,8 @@ Please see the expandable textbox below for further instructions about how to tr
     - Lower the x-axis gantry until the aluminum frame of it touches the can(s).  
       Make sure to have the cans positioned as far to the sides of the bed as possible, but only *that* far that *only the aluminum frame of the gantry touches them!*  
       This is crucial - you *don't* want those y-shaped metal brackets touch the cans at all!  
-      The following picture shows the crooked gantry resting on one can (the right one), where there's a noticeable gap between it and the left can.  
-      ![Crooked gantry on cans](../assets/images/axes_NEO_untrammed-x-gantry_marked_web.jpeg)  
+      The following picture shows the crooked gantry resting on one can (the left one), where there's a noticeable gap between it and the can on the right side.  
+      ![Crooked gantry on cans](docs/assets/images/axes_K2Pro_X-gantry_untrammed_marked_web.jpg)  
       
     - Loosen the coupler between the z-axis motor shaft and the lead screw at one side. I'd suppose to loosen the upper side where the lead screw is mounted into. Then turn the lead screw manually by hand counter clockwise to get it lifted up outside of the coupler.  
       By doing so you achieve that there isn't any kind of force being added to that side of the gantry which will lead to a false result.  
@@ -404,8 +429,8 @@ Please see the expandable textbox below for further instructions about how to tr
      
     - Now loosen the two hexagon socket screws at each side of the aluminum frame of the gantry which are holding each of the Y-shaped metal plates (where the wheels are mounted onto, at the backside so to say) against it. Don't take them out (!), just loosen them a bit.  
       You need to turn the printer around for being able to actually get access to those screws. The following pictures show the locations of those screws.  
-      ![Gantry screws left](../assets/images/axes_gantry_screw-position_left-marked_web.jpg)  
-      ![Gantry screws right](../assets/images/axes_gantry_screw-position_right-marked_web.jpg)  
+      ![Gantry screws left](../assets/images/axes_K2Pro_gantry-bracket-screws-marked2_web.jpg)  
+      ![Gantry screws right](../assets/images/axes_K2Pro_gantry-bracket-screws-marked1_web.jpg)  
 
     - The goal now is to bring these brackets into position so that the rail of this x-gantry completely rests on those cans like the following picture shows.  
       ![X-axis gantry](../assets/images/tramming_x-gantry_web.jpg)   
@@ -456,6 +481,8 @@ The gantry of the bed is belt driven (GT-2 type, 8mm wide), the motor which driv
 
 You can adjust the tension of the belt by using the knob at the front side of the aluminum profile where the bed is guided onto.   
 The gantry for the bed itself has U-shaped SG15 rollers which are running along round-shaped rails at the side of the y-axis' aluminum profile.  
+
+Please see the belonging sections for further pictures and descriptions of the parts.  
 
 ---
 
@@ -597,10 +624,12 @@ It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at eac
 
 ### Linear Rail System
 
-The Y axis has a linear rail system instead of POM wheels like other machines. It's not a 'real' linear rail like a MGN12 or MGN15 system, but it's U-shaped metal SG15 bearings running along round-shaped metal rails which are being mounted in the v-slots of the Y-axis' aluminum rail.  
+The Y-axis has a linear rail motion system instead of POM wheels like many other machines.  
+It's not a 'real' linear rail like a MGN12 system for example though - instead, Acnycubic is using U-shaped metal SG15 bearings running along round-shaped metal rails which are being mounted in the v-slots of the Y-axis gantry's aluminum rail.  
+
 The following picture shows this rail system.  
 
-***..add pic..***
+![Y rail system](../assets/images/axes_K2Pro_Y-rail-system_web.jpg)  
 
 ---
     
@@ -608,17 +637,7 @@ The following picture shows this rail system.
 The metal wheels of the bed's gantry, the SG15 bearings, are leading the bed along the aluminum profile of the y-axis.  
 These bearings run along a round-shaped metal rail and therefore they should sit in an optimal position.    
 
-![Eccentric nuts Y sideview](../assets/images/bed_K2Pro_eccentric-nuts-gantry_web.jpg)  
-
-*You can adjust the position and therefore the overall pressure of the bearings against the metal rail of only ***two*** bearings by turning the eccentric nut which moves the bearing either towards or away from the metal rail.*   
-
-??? info "What Is An Eccentric Nut?"  
-
-    The following picture shows an eccentric nut (in this case mounted to a POM wheel) which I painted to make the special shape of it more visible.  
-
-    ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
-
-    As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole bearing will be changed, either towards or away from the rail it's sitting at.  
+You can adjust the position and therefore the overall pressure of the bearings against the metal rail of only *two* bearings by turning the eccentric nut which moves the bearing either towards or away from the metal rail.   
 
 *The bearings whose position can be adjusted are located at the ***right hand side*** of the gantry when looking at it from the front - the two wheels at the left side of the aluminum frame can't be adjusted as there aren't any eccentric nuts mounted!*  
 
@@ -628,20 +647,50 @@ You can actually see them better when looking at it from the right side.
 
 ![Eccentric nuts Y sideview](../assets/images/bed_K2Pro_eccentric-nuts-gantry_web.jpg)  
 
-The bearingss shouldn't sit too tight onto the rail but also not too loose.  
-They should touch the rail and sit on it well without any amount of play which would cause a wiggeling, but they should still be able to move smoothly. 
-  
-On the other hand, they also shouldn't be too loose or far away from the rail which would lead to instability.  
-The gantry shouldn't wiggle but it has to be able to move freely and without much of a force being applied.   
+??? info "What Is An Eccentric Nut?"  
+
+    The following picture shows an eccentric nut (in this case mounted to a POM wheel) which I painted to make the special shape of it more visible.  
+
+    ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
+
+    As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole bearing will be changed, either towards or away from the rail it's sitting at.  
+
+The bearings shouldn't sit too tight onto the rail but also not too loose.  
+On the other hand, they also shouldn't be too loose or far away from the rail which would lead to instability - the gantry shouldn't wiggle but it has to be able to move freely and without much of a force being applied.   
+So, in a summary: the SG15 bearings should touch the rail and sit on it well without any noticeable amount of play which would cause a wiggeling, but they should still be able to move smoothly.  
     
 Make sure they're assembled correctly and line up with the rail as well - if they're out of alignment and don't run correctly along the rail, you'll experience a massive wear and tear. Same goes for the bearings being too tight.  
 
-See the following picture where you can clearly see a wear and tear, in this case of the rail's surface. According to the user who took this picture, this is the state after printing about one spool of filament - which is absolutely *not* "normal"!   
+!!! warning "Wear And Tear"  
 
-![Rails wear & tear](../assets/images/axes_K2Pro_rails-weartear_web.jpeg)
+    Wear and tear does occur at this kind of linear rail system as well, as metal bearings are running along a metal rod.  
+    In the beginning you'll probably notice some black dust coming off the rail and the shiny coating isn't that shiny anymore as shown in the following picture.     
 
-The reason for this is most likely the bearings being positioned too tight to the rail.  
-Insufficient lubrification also plays a role, but in this case the user did apply lube.        
+    ![Rails wear & tear](../assets/images/axes_K2Pro_rails-weartear_web.jpeg)
+
+    When things get worse, you'll see the chrome coating coming off which releases the brass the rods are actually made of as shown in the following picture.  
+
+    ![Rails harmed](../assets/images/axes_K2Pro_rails-harmed_web.jpg)  
+
+    There are (imho) three main reasons which cause this issue and which highly affect how fast this damage occurs:  
+    
+    1. First to mention would be an insufficient lubrification.  
+       So make sure to clean off old grease and apply fresh grease regularly. The more you're using the machine, the more often you have to do this maintenance!  
+    2. Second to mention is improper alignment and running the bearings too tight onto the rail.  
+       So make sure you position the SG15 bearings correctly.  
+    3. Third is the common behaviour of placing and printing smaller parts in the center of the build plate.  
+       So place smaller parts in different areas of the bed instead of always locating them right in the center. The more the bearings are running across a specific section of the rails, the more the abrasion will occur in that area.  
+       
+??? example "Replacing The Linear Rods"  
+
+    If it happens that the rods of this linear rail system got harmed, you can actually push them out of the aluminum rail's v.slot, turn them a bit and push them back in.  
+    This might take some effort, but it's possible to do so.  
+    If you have to do this procedure, make sure you can access both ends of the aluminum rail freely. Means, dismount any caps, belt tensioner, motors or whatever is in the way.  
+    Then take a hammer and something like a wide flathead screwdriver or (even better) a bolt or so. Place the bolt onto the end of the rod you want to push out and *carefully* use the hammer on the bolt. By doing so you can push out the rod.  
+    
+    *Make sure to not deform the end of the rod! Don't hit the bolt too hard as well, you want to hit it light and careful - just enough to make the rod move out of the v-slot!*  
+
+    After rotating the rod a bit, push it back in.  
 
 
 ??? tip "Check The Screws Of The Bedplate And The Gantry Of The Bed"
@@ -693,7 +742,12 @@ The rear wheel on the left side of the bed gantry triggers the switch when moved
 ---
 
 ## Z-Axis
-The z-axis is driven by two lead screws which are connected to each other with a timingbelt at the very top. One lead screw is attached and driven by the z-axis motor, the other one is then driven by the timingbelt. Therefore this system is called a dual z-axis, timingbelt driven system.   
+The z-axis is driven by two lead screws which are connected to each other with a timingbelt at the very top.  
+One lead screw is attached and driven by the z-axis motor, the other one is then driven by the timingbelt.  
+Therefore this system is called a dual z-axis, timingbelt driven system.   
+The following picture shows the upper part where you can see the the top bearing blocks both lead screws rest in, the pulleys and the timing belt which connects both lead screws.  
+
+![Timing belt](../assets/images/axes_K2Pro_timing-belt_web.jpg)
 
 The lead screws have 8mm in diameter with 8mm lead ('distance' of one complete rotation), 2mm pitch and 4 starts and has a length of 350mm.  
 At the bottom part of the lead screw there's a 10mm long unthreaded part and at the top this part is 20mm long, the outer diameter of these shafts is 5mm.  
