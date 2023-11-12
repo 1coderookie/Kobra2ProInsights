@@ -301,7 +301,7 @@ The following pictures show the limit switch from two different point of views.
 ## X-Axis Gantry
 The x-axis gantry is the aluminum profile (plus the corresponding parts) where the printhead is actually running onto.  
 
-![X gantry](d../assets/images/axes_K2Pro_X-gantry_web.jpg)  
+![X gantry](../assets/images/axes_K2Pro_X-gantry_web.jpg)  
 
 You already read the information about the belonging parts of the x-axis in the chapter above, in the following you'll find the information about the parts of the x-axis gantry which are moving along the z-axis frame.  
 Plus, you'll find information about *how to tram the x-axis gantry, which is crucial for a good and reliable outcome*.  
@@ -411,7 +411,7 @@ Please see the expandable textbox below for further instructions about how to tr
     *Note: the following description is for tramming the x-axis gantry in ***relation to the bed*** itself when using the rigid stock spacers!*  
     *If you're using adjustable spacers, the procedure is pretty much the same, you just have to put two pieces of equal height onto the frame of the printer (where the z-axis aluminum frame is mounted onto) and rest the x-axis gantry onto them instead of placing those pieces on the bed itself!*  
     
-    ***The following pictures are taken from a Kobra Neo, the principle and the locations of the screws which hold the Y-shaped brackets in place are pretty much the same to the Kobra 2 Pro though. I'll add specific pictures of the K2Pro in the (hopefully) near future though. Until then, please just look out for the locations of the belonging screws yourself.***
+    ***The following description is written for a Kobra Neo, the principle is pretty much the same to the Kobra 2 Pro though. At the Kobra 2 Pro you only have to additionally loosen the pulleys at the top of the leadscrews, but I'll add the specific description asap.***
     
     - In order to **tram the x-axis gantry in relation to the bed**, so that both are as parallel as possible, take two parts of equal height like cans for example and place them onto the left and right side of the bed.  
     
@@ -419,7 +419,7 @@ Please see the expandable textbox below for further instructions about how to tr
       Make sure to have the cans positioned as far to the sides of the bed as possible, but only *that* far that *only the aluminum frame of the gantry touches them!*  
       This is crucial - you *don't* want those y-shaped metal brackets touch the cans at all!  
       The following picture shows the crooked gantry resting on one can (the left one), where there's a noticeable gap between it and the can on the right side.  
-      ![Crooked gantry on cans](docs/assets/images/axes_K2Pro_X-gantry_untrammed_marked_web.jpg)  
+      ![Crooked gantry on cans](../assets/images/axes_K2Pro_X-gantry_untrammed_marked_web.jpg)  
       
     - Loosen the coupler between the z-axis motor shaft and the lead screw at one side. I'd suppose to loosen the upper side where the lead screw is mounted into. Then turn the lead screw manually by hand counter clockwise to get it lifted up outside of the coupler.  
       By doing so you achieve that there isn't any kind of force being added to that side of the gantry which will lead to a false result.  
@@ -429,11 +429,10 @@ Please see the expandable textbox below for further instructions about how to tr
      
     - Now loosen the two hexagon socket screws at each side of the aluminum frame of the gantry which are holding each of the Y-shaped metal plates (where the wheels are mounted onto, at the backside so to say) against it. Don't take them out (!), just loosen them a bit.  
       You need to turn the printer around for being able to actually get access to those screws. The following pictures show the locations of those screws.  
-      ![Gantry screws left](../assets/images/axes_K2Pro_gantry-bracket-screws-marked2_web.jpg)  
-      ![Gantry screws right](../assets/images/axes_K2Pro_gantry-bracket-screws-marked1_web.jpg)  
+      ![Gantry screws left](../assets/images/axes_K2Pro_gantry-bracket-screws-marked2_web.jpg) | ![Gantry screws right](../assets/images/axes_K2Pro_gantry-bracket-screws-marked1_web.jpg)  
 
     - The goal now is to bring these brackets into position so that the rail of this x-gantry completely rests on those cans like the following picture shows.  
-      ![X-axis gantry](../assets/images/tramming_x-gantry_web.jpg)   
+      ![X-axis gantry](../assets/images/axes_K2Pro_X-gantry_trammed_web.jpg)   
       For achieving this, you now might have to move the brackets a bit up or down to get everything aligned up well, so follow the next steps.  
     
     - The following picture illustrates the following steps for achieving the perfect position.   
@@ -759,7 +758,7 @@ All these bearings where the lead screws sit in, the pulleys as well as the coup
 
 In between it's guided and secured by a spring loaded POM anti-backlash nut which you can see at the following picture -  it's the black plastic part mounted to the black steel bracket.  
   
-![Z-axis views](../assets/images/z-axis_neo_web.jpg)  
+![Z-axis views](../assets/images/z-axis_K2Pro_web.jpg)  
 
 !!! warning "Z-Axis Drives X-Axis Gantry"  
 
@@ -781,7 +780,7 @@ The following picture shows the unthreaded part at the bottom which is 10mm long
 The two lead screws are connected by a closed loop GT-2 timing belt (6mm width, ??mm length).  
 This means, that the lead screw which is driven by the motor drives the second lead screw by the timing belt.  
 
-(..add picture..)
+![Timing belt](../assets/images/axes_K2Pro_timing-belt_web.jpg)
 
 !!! warning "Sloppy Timing Belt"
 
@@ -930,6 +929,7 @@ The following pictures show the bottom bearing block from different angles.
 ### Pulleys
 
 Underneath the bearing blocks at the top, each lead screw has a pulley mounted to it where the timing belt runs across.  
+The dimensions of the pulleys are 16mm OD / 5mm ID with 20 teeth.   
 
 ![Pulley top](../assets/images/axes_K2Pro_Z-screw-top-pulley_web.jpg)  
 
