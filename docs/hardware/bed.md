@@ -326,8 +326,8 @@ If rests of filament are stuck on it after the nozzle has been wiped, take them 
 
 ---
 
-## Acceleration Sensor
-There's only one acceleration sensor for measuring the vibrances. It's located at the rear side of the bed's underside, right where the z-offset sensor is located - the printhead doesn't have a sensor.   
+## ADXL Acceleration Sensor
+There's an ADXL acceleration sensor for measuring the vibrances. It's located at the rear side of the bed's underside, right where the z-offset sensor is located.   
 
 The following pictures show the underside view of the belonging area of the bed's underside.    
   
@@ -355,6 +355,15 @@ Even though this is a somewhat rigid construction (if the material of the bed ga
 So it's very advisable to dismount the bed, take the stock spacers out and check if they're all of the same height. I'd suggest to use a digital caliper for doing so, but it you don't have one, you can also place them next to each other onto a *flat* surface and place something thin and straight (e.g. a ruler) onto them to check and compare the height.  
 Most likely they're not of equal height, which leads to a somewhat warped bed then. If you encounter this problem, I'd suggest to sand them down to the height of the shortest one. If you do so, pay attention to sand them down perpendicular - you don't want to end up with a tilted surface/spacer.  
 You could also try to shim it out of course, but especially if the differences are pretty small, then this can be a real hassle.  
+
+---
+
+### MOD: Longer Spacers  
+If you want to insulate the bedplate, you'd have to use longer spacers to raise the bedplate. Otherwise the insulation would hit the mounting bracket of the Y-axis' motor.  
+
+I personally used 20mm long aluminum spacers with a 5mm bore as shown in the following picture.  
+
+![Stock vs longer spacers](../assets/images/bed_K2Pro_stock-spacer-vs-longer_web.jpg)
 
 ---
 
