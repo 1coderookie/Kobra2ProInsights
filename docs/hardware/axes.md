@@ -106,12 +106,7 @@ My 'rule of thumb' here is: if you can bend the belt down a bit by applying some
 
     So, use your brain and don't always follow the typical answers like "Tighten you belts!" when you're experiencing issues like layer shifts for example. Instead, look at your printer more 'holistic' and see the different parts which are working together in the end. Pay attention to each of them, once again starting by inspecting the frame and making sure everything is still trammed and set up well here. Due to vibrations and repetitive motions screws can come loose, parts can and will wear out and therefore a frame or other parts you set up a while ago can and will come out of alignment by time.
 
-??? example "Belt Maintenance"
 
-    - Check the belt tension from time to time as it might wear out and lengthen a bit. 
-    - Check the teeth of the belt if they are still good looking or if they're worn out or if even some teethe are missing.
-    - Check if you can see any cracks or other damage at the belt. 
-    - Check the pulleys of the motors which are driving the belts. Are they also looking ok? Did they become loose on the motor shaft somehow?  
 
 ??? example "Broken/Snapped Belt"
 
@@ -125,6 +120,20 @@ My 'rule of thumb' here is: if you can bend the belt down a bit by applying some
     Install the belt by disassembling the belonging parts like the belt tensioners (see the notes on how to do so in the belonging sections).  
     Pay attention to route the belt in the correct way and not being twisted and adjust the tension of the belt once everything is reassembled.  
     
+
+---
+
+#### Maintenance
+
+You should inspect the belts and the belonging parts like pulleys etc from time to time to make sure everything is in a good condition and nothing will suddenly break.  
+
+- Belt:
+  - Check the belt tension from time to time as it might wear out and lengthen a bit. 
+  - Check the teeth of the belt if they are still good looking or if they're worn out or if even some teethe are missing.
+  - Check if you can see any cracks or other damage at the belt.
+
+- Pulleys:  
+  - Check the pulleys of the motors which are driving the belts. Are they also looking ok? Did they become loose on the motor shaft somehow?  
 
 
 ---
@@ -254,25 +263,12 @@ Make sure they're assembled correctly and line up with the rail as well - if the
     
 ---
   
-#### SG15 Bearings Maintenance  
+#### Maintenance  
 
-As the bearings will suffer from running along the metal rail and debris can build up, clean the rails and the bearings from time to time. After that, add a slight coating of lubrification to reduce the wear and tear due to the fact that metal is running on metal.  
-
-To avoid a premature wear and tear of the components, don't position the bearings being too tight.  
-
-??? example "Lubricating The SG15 Bearings"  
-
-    As the metal SG15 bearings are running along metal rods, it's advisable to clean and lubrificate the system from time to time.  
-    
-    I personally would suggest to use some sort of dry lubrification, such as PTFE spray, graphite spray or silicone spray.  
-    If you don't have any of this, use a light to medium machine oil.  
-    A thin coating of white or lithium grease might also work well.  
-    I didn't experiment with different sorts of lubrification at this point yet, so this isn't a 'direct' advise but more a general thought about what should be good to be used in this special case.  
-
-    However, make sure to not use too much lubrification and to not spill any onto the bed or the PSU. Also, clean off any old lubrification before adding new one.    
+As the bearings as well as the rods will suffer from metal running on metal and debris can build up, clean the rails and the bearings from time to time.  
+Inspect all parts for any visible damage, check if the SG15 wheels are still in the correct position and if they turn well or if maybe a bearing became bad.   
+After that, add a slight coating of lubrification to reduce the wear and tear due to the fact that metal is running on metal - I personally use "Super Lube" for that.     
         
-
-
 ---
 
 ### Limit Switch 
@@ -343,7 +339,7 @@ They're mounted to each end of the x-axis gantry.
 
 ---
   
-### V-Slot Wheels Maintenance  
+### Maintenance  
 
 As the wheels will suffer from running on the aluminum and debris can build up, clean the aluminum and the wheels itself from time to time. 
 
@@ -548,12 +544,6 @@ My 'rule of thumb' here is: if you can bend the belt down a bit by applying some
 
     So, use your brain and don't always follow the typical answers like "Tighten you belts!" when you're experiencing issues like layer shifts for example. Instead, look at your printer more 'holistic' and see the different parts which are working together in the end. Pay attention to each of them, once again starting by inspecting the frame and making sure everything is still trammed and set up well here. Due to vibrations and repetitive motions screws can come loose, parts can and will wear out and therefore a frame or other parts you set up a while ago can and will come out of alignment by time.
 
-??? example "Belt Maintenance"
-
-    - Check the belt tension from time to time as it might wear out and lengthen a bit. 
-    - Check the teeth of the belt if they are still good looking or if they're worn out or if even some teeth are missing.
-    - Check if you can see any cracks at the belt or any other damage. 
-    - Check the pulleys of the motors which are driving the belts. Are they also looking ok? Did they become loose on the motor shaft somehow?  
 
 ??? example "Broken/Snapped Belt"
 
@@ -567,6 +557,20 @@ My 'rule of thumb' here is: if you can bend the belt down a bit by applying some
     Install the belt by disassembling the belonging parts like the belt tensioners (see the notes on how to do so in the belonging sections).  
     Pay attention to route the belt in the correct way and not being twisted and adjust the tension of the belt once everything is reassembled.  
     
+---
+
+#### Maintenance
+
+You should inspect the belts and the belonging parts like pulleys etc from time to time to make sure everything is in a good condition and nothing will suddenly break.  
+
+- Belt:
+  - Check the belt tension from time to time as it might wear out and lengthen a bit. 
+  - Check the teeth of the belt if they are still good looking or if they're worn out or if even some teethe are missing.
+  - Check if you can see any cracks or other damage at the belt.
+
+- Pulleys:  
+  - Check the pulleys of the motors which are driving the belts. Are they also looking ok? Did they become loose on the motor shaft somehow?  
+
 
 ---
 
@@ -701,20 +705,12 @@ Make sure they're assembled correctly and line up with the rail as well - if the
     
 ---  
 
-#### SG15 Bearings Maintenance  
+#### Maintenance  
 
-As the bearings will suffer from running along the metal rail and debris can build up, clean the rails and the bearings from time to time. After that, add a slight coating of lubrification to reduce the wear and tear due to the fact that metal is running on metal.  
+As the bearings as well as the rods will suffer from metal running on metal and debris can build up, clean the rails and the bearings from time to time.  
+Inspect all parts for any visible damage, check if the SG15 wheels are still in the correct position and if they turn well or if maybe a bearing became bad.   
+After that, add a slight coating of lubrification to reduce the wear and tear due to the fact that metal is running on metal - I personally use "Super Lube" for that.  
 
-??? example "Lubricating The SG15 Bearings"  
-
-    As the metal SG15 bearings are running along metal rods, it's advisable to clean and lubrificate the system from time to time.  
-    
-    I personally would suggest to use some sort of dry lubrification, such as PTFE spray, graphite spray or silicone spray.  
-    If you don't have any of this, use a light to medium machine oil.  
-    A thin coating of white or lithium grease might also work well.  
-    I didn't experiment with different sorts of lubrification at this point yet, so this isn't a 'direct' advise but more a general thought about what should be good to be used in this special case.  
-
-    However, make sure to not use too much lubrification and to not spill any onto the bed or the PSU. Also, clean off any old lubrification before adding new one.    
         
 
 ---
@@ -1172,6 +1168,18 @@ In the following expandable textboxes you'll find some notes and instructions ab
         It's perfectly fine for washing off old oil from the threaded rod, but it's *not* a sufficient lubrification!  
         People use to think WD-40 is the perfect solution for pretty much everything, but they aren't aware of the fact that -due to the chemical recipe it's made of- it's absolutely not sufficient for getting parts lubed mid- to longterm. Fact is, that the chemicals inside of it will even wash off any grease or oil, it can harm POM and rubber and so on.  
         As an example: So let's say you want to lubricate your bike chain and use WD-40 to do so, you'll basically *wash away* the existent lubrification  which is inside the chain - therefore the chain will be worn out pretty quick. You'll also harm the sealings. If you don't believe me, make a little test by yourself: take an air baloon, pump it up, spray WD-40 onto it and wait..  
+
+??? example "Timing Belt Maintenace"
+
+    You should inspect the timing belt and the belonging parts like pulleys and bearing blocks etc from time to time to make sure everything is in a good condition and nothing will suddenly break.  
+
+    - Belt:
+      - Check the belt tension from time to time as it might wear out and lengthen a bit. 
+      - Check the teeth of the belt if they are still good looking or if they're worn out or if even some teethe are missing.
+      - Check if you can see any cracks or other damage at the belt.
+
+    - Pulleys:  
+      - Check the pulleys at the top which are driving the timing belt. Are they also looking ok? Did the grub/set screws become loose?  
    
 ??? example "Disassembling The Lead Screw System"   
 
