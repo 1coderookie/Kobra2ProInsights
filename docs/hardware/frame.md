@@ -28,9 +28,6 @@ On there you mount the z-axis frame which is shown in the following pictures (fr
 
 ![Z-axis frame](../assets/images/axes_K2Pro_z-frame-back_web.jpg)   
 
-After mounting both parts together, you'll already have the printer standing in front of you.  
-
-![Printer]()  
 
 !!! warning "Don't Put It On The Side For Mounting"
 
@@ -41,6 +38,11 @@ After mounting both parts together, you'll already have the printer standing in 
 
     ![Mounting](../assets/images/frame_assembly-tip_web.jpg)  
     
+After mounting both parts together, you'll already have the printer standing in front of you.  
+
+| Kobra 2 Pro frontview | Kobra 2 Pro backview |  
+|:---------------------:|:--------------------:| 
+| ![Kobra 2 Pro front](assets/images/printer_K2Pro_front2_web.jpg) |  ![Kobra 2 Pro back](assets/images/printer_K2Pro_back_web.jpg) | 
 
 ---
 
