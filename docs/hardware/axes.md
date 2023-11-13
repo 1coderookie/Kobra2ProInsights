@@ -228,7 +228,7 @@ Make sure they're assembled correctly and line up with the rail as well - if the
 
     ![Rails wear & tear](../assets/images/axes_K2Pro_rails-weartear_web.jpeg)
 
-    When things get worse, you'll see the chrome coating coming off which releases the brass the rods are actually made of as shown in the following picture.  
+    When things get worse, you'll see the chrome coating coming off completely as shown in the following picture.  
 
     ![Rails harmed](../assets/images/axes_K2Pro_rails-harmed_web.jpg)  
 
@@ -667,7 +667,7 @@ Make sure they're assembled correctly and line up with the rail as well - if the
 
     ![Rails wear & tear](../assets/images/axes_K2Pro_rails-weartear_web.jpeg)
 
-    When things get worse, you'll see the chrome coating coming off which releases the brass the rods are actually made of as shown in the following picture.  
+    When things get worse, you'll see the chrome coating coming off completely as shown in the following picture.  
 
     ![Rails harmed](../assets/images/axes_K2Pro_rails-harmed_web.jpg)  
 
