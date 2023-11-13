@@ -1,6 +1,13 @@
 <link rel=”manifest” href=”docs/manifest.webmanifest”>
 
 # Printserver
+
+!!! warning "You Can't Connect Locally Yet"
+
+    Right now it's not possible to connect to the Kobra 2 Pro, Plus and Max models locally. Means, you can't e.g. set up a host which is running OctoPrint or Pronterface and use it to access or monitor the printer.  
+    However, I'm still hoping that someone will sooner or later come up with a workaround for that. If not, then you might reach the point that you want to use a different mainboard for being able to connect to the machine and also run native Klipper on it.  
+    So, even though you can't connect to a local host/printserver with the stock mainboard yet, I still list some hardware below which can be used as a printserver - just in case.. ;) 
+
 Sooner or later you'll come to the point that you want to use additional software like OctoPrint to control your printer.    
 Yes, it's not necessary as you can control it directly using the printers control unit and it's advisable to stay in the same room and monitor the printing process to be able to intervene as soon as something is going wrong - but we all know how it is..  
   
