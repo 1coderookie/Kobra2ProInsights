@@ -107,6 +107,22 @@ My 'rule of thumb' here is: if you can bend the belt down a bit by applying some
     So, use your brain and don't always follow the typical answers like "Tighten you belts!" when you're experiencing issues like layer shifts for example. Instead, look at your printer more 'holistic' and see the different parts which are working together in the end. Pay attention to each of them, once again starting by inspecting the frame and making sure everything is still trammed and set up well here. Due to vibrations and repetitive motions screws can come loose, parts can and will wear out and therefore a frame or other parts you set up a while ago can and will come out of alignment by time.
 
 
+---
+
+#### Maintenance
+
+You should inspect the belts and the belonging parts like pulleys etc from time to time to make sure everything is in a good condition and nothing will suddenly break.  
+
+**Belt**
+
+- Check the belt tension from time to time as it might wear out and lengthen a bit. 
+- Check the teeth of the belt if they are still good looking or if they're worn out or if even some teethe are missing.
+- Check if you can see any cracks or other damage at the belt.
+
+**Pulleys**  
+
+- Check the pulleys of the motors which are driving the belts. Are they also looking ok? Did they become loose on the motor shaft somehow?  
+
 
 ??? example "Broken/Snapped Belt"
 
@@ -120,21 +136,6 @@ My 'rule of thumb' here is: if you can bend the belt down a bit by applying some
     Install the belt by disassembling the belonging parts like the belt tensioners (see the notes on how to do so in the belonging sections).  
     Pay attention to route the belt in the correct way and not being twisted and adjust the tension of the belt once everything is reassembled.  
     
-
----
-
-#### Maintenance
-
-You should inspect the belts and the belonging parts like pulleys etc from time to time to make sure everything is in a good condition and nothing will suddenly break.  
-
-- Belt:
-  - Check the belt tension from time to time as it might wear out and lengthen a bit. 
-  - Check the teeth of the belt if they are still good looking or if they're worn out or if even some teethe are missing.
-  - Check if you can see any cracks or other damage at the belt.
-
-- Pulleys:  
-  - Check the pulleys of the motors which are driving the belts. Are they also looking ok? Did they become loose on the motor shaft somehow?  
-
 
 ---
 
@@ -230,6 +231,15 @@ The printhead shouldn't wiggle but it has to be able to move freely.
     
 Make sure they're assembled correctly and line up with the rail as well - if they're out of alignment and don't run correctly along the rail, you'll experience a massive wear and tear. Same goes for the bearings being too tight.  
 
+
+---
+  
+#### Maintenance  
+
+As the bearings as well as the rods will suffer from metal running on metal and debris can build up, clean the rails and the bearings from time to time.  
+Inspect all parts for any visible damage, check if the SG15 wheels are still in the correct position and if they turn well or if maybe a bearing became bad.   
+After that, add a slight coating of lubrification to reduce the wear and tear due to the fact that metal is running on metal - I personally use "Super Lube" for that.     
+
 !!! warning "Wear And Tear"  
 
     Wear and tear does occur at this kind of linear rail system as well, as metal bearings are running along a metal rod.  
@@ -261,13 +271,6 @@ Make sure they're assembled correctly and line up with the rail as well - if the
 
     After rotating the rod a bit, push it back in.     
     
----
-  
-#### Maintenance  
-
-As the bearings as well as the rods will suffer from metal running on metal and debris can build up, clean the rails and the bearings from time to time.  
-Inspect all parts for any visible damage, check if the SG15 wheels are still in the correct position and if they turn well or if maybe a bearing became bad.   
-After that, add a slight coating of lubrification to reduce the wear and tear due to the fact that metal is running on metal - I personally use "Super Lube" for that.     
         
 ---
 
@@ -544,6 +547,21 @@ My 'rule of thumb' here is: if you can bend the belt down a bit by applying some
 
     So, use your brain and don't always follow the typical answers like "Tighten you belts!" when you're experiencing issues like layer shifts for example. Instead, look at your printer more 'holistic' and see the different parts which are working together in the end. Pay attention to each of them, once again starting by inspecting the frame and making sure everything is still trammed and set up well here. Due to vibrations and repetitive motions screws can come loose, parts can and will wear out and therefore a frame or other parts you set up a while ago can and will come out of alignment by time.
 
+---
+
+#### Maintenance
+
+You should inspect the belts and the belonging parts like pulleys etc from time to time to make sure everything is in a good condition and nothing will suddenly break.  
+
+**Belt**  
+
+- Check the belt tension from time to time as it might wear out and lengthen a bit. 
+- Check the teeth of the belt if they are still good looking or if they're worn out or if even some teethe are missing.
+- Check if you can see any cracks or other damage at the belt.
+
+**Pulleys**
+
+- Check the pulleys of the motors which are driving the belts. Are they also looking ok? Did they become loose on the motor shaft somehow?  
 
 ??? example "Broken/Snapped Belt"
 
@@ -557,20 +575,6 @@ My 'rule of thumb' here is: if you can bend the belt down a bit by applying some
     Install the belt by disassembling the belonging parts like the belt tensioners (see the notes on how to do so in the belonging sections).  
     Pay attention to route the belt in the correct way and not being twisted and adjust the tension of the belt once everything is reassembled.  
     
----
-
-#### Maintenance
-
-You should inspect the belts and the belonging parts like pulleys etc from time to time to make sure everything is in a good condition and nothing will suddenly break.  
-
-- Belt:
-  - Check the belt tension from time to time as it might wear out and lengthen a bit. 
-  - Check the teeth of the belt if they are still good looking or if they're worn out or if even some teethe are missing.
-  - Check if you can see any cracks or other damage at the belt.
-
-- Pulleys:  
-  - Check the pulleys of the motors which are driving the belts. Are they also looking ok? Did they become loose on the motor shaft somehow?  
-
 
 ---
 
@@ -663,6 +667,15 @@ On the other hand, they also shouldn't be too loose or far away from the rail wh
 So, in a summary: the SG15 bearings should touch the rail and sit on it well without any noticeable amount of play which would cause a wiggeling, but they should still be able to move smoothly.  
     
 Make sure they're assembled correctly and line up with the rail as well - if they're out of alignment and don't run correctly along the rail, you'll experience a massive wear and tear. Same goes for the bearings being too tight.  
+             
+    
+---  
+
+#### Maintenance  
+
+As the bearings as well as the rods will suffer from metal running on metal and debris can build up, clean the rails and the bearings from time to time.  
+Inspect all parts for any visible damage, check if the SG15 wheels are still in the correct position and if they turn well or if maybe a bearing became bad.   
+After that, add a slight coating of lubrification to reduce the wear and tear due to the fact that metal is running on metal - I personally use "Super Lube" for that.  
 
 !!! warning "Wear And Tear"  
 
@@ -694,24 +707,12 @@ Make sure they're assembled correctly and line up with the rail as well - if the
     *Make sure to not deform the end of the rod! Don't hit the bolt too hard as well, you want to hit it light and careful - just enough to make the rod move out of the v-slot!*  
 
     After rotating the rod a bit, push it back in.  
-
-
+        
 ??? tip "Check The Screws Of The Bedplate And The Gantry Of The Bed"
 
     Check if the bedplate itself is somehow wobbling. Not only sideways/horizontally, but also up and down/vertically.  
     If so, not only check the SG15 bearings and maybe adjust their fitting using the eccentric nuts, also check if the screws of the gantry of the bed where the wheels are mounted to are tightened up.  
     Same goes for the screws which are being used for mounting the bedplate to the gantry itself.
-             
-    
----  
-
-#### Maintenance  
-
-As the bearings as well as the rods will suffer from metal running on metal and debris can build up, clean the rails and the bearings from time to time.  
-Inspect all parts for any visible damage, check if the SG15 wheels are still in the correct position and if they turn well or if maybe a bearing became bad.   
-After that, add a slight coating of lubrification to reduce the wear and tear due to the fact that metal is running on metal - I personally use "Super Lube" for that.  
-
-        
 
 ---
 
@@ -783,7 +784,8 @@ This means, that the lead screw which is driven by the motor drives the second l
     My machine came with an absolutely sloppy belt, and actually every other Kobra 2 model which uses this timing belt solution that I've seen seems to have the same problem.  
     The following picture shows that sloppy state of the timing belt - I didn't apply *any* further force with that flimsy cotton swab to it than pushing it slightly to the front!  
     ![Loose timing belt](../assets/images/axes_K2Pro_timing-belt_loose1_web.jpg)  
-    Please see the violet expandable textbox below for some instructions how to tension the belt.  
+    Please see the violet expandable textbox in the next section for some instructions how to tension the belt.  
+
 
 ??? example "Sloppy Belt? Check The Position Of The Top Bearing Blocks"
 
@@ -940,6 +942,7 @@ The nut is made out of two parts and is spring loaded.
 When receiving the machine and when dis-/mounting the lead screw, you need to make sure that you press both parts firmly together and hold them like that while screwing in the lead screw.  
 
 (..add picture..)
+
 
 ---
     
