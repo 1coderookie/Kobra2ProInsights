@@ -69,9 +69,9 @@ You should inspect the wheels and belts and the belonging parts like pulleys etc
 **SG15 Rods**
 
 - Check if you can see any debris or black dust built up on the rails like shown in the following picture.  
-  ![Rails wear & tear](assets/images/axes_K2Pro_rail-wear&tear_web.jpg)
-  If so, check how severe the damage already is - canyou already see the chrome coating coming off completely as shown in the following picture?  
-  ![Rails harmed](assets/images/axes_K2Pro_rail-heavy-wear&tear_web.jpeg) 
+  ![Rails wear & tear](assets/images/axes_K2Pro_rail-wear&tear_web.jpg)  
+  If so, check how severe the damage already is - can you already see the chrome coating coming off completely as shown in the following picture?  
+  ![Rails harmed](assets/images/axes_K2Pro_rail-heavy-wear&tear_web.jpeg)  
 - Clean the rods and apply new lube.  
 - If the rods are severly damaged, consider getting new ones.  
 
