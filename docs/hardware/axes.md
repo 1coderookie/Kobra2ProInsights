@@ -226,11 +226,11 @@ Make sure they're assembled correctly and line up with the rail as well - if the
     Wear and tear does occur at this kind of linear rail system as well, as metal bearings are running along a metal rod.  
     In the beginning you'll probably notice some black dust coming off the rail and the shiny coating isn't that shiny anymore as shown in the following picture.     
 
-    ![Rails wear & tear](../assets/images/axes_K2Pro_rails-weartear_web.jpeg)
+    ![Rails wear & tear](../assets/images/axes_K2Pro_rail-wear&tear_web.jpg)
 
     When things get worse, you'll see the chrome coating coming off completely as shown in the following picture.  
 
-    ![Rails harmed](../assets/images/axes_K2Pro_rails-harmed_web.jpg)  
+    ![Rails harmed](../assets/images/axes_K2Pro_rail-heavy-wear&tear_web.jpeg)  
 
     There are (imho) three main reasons which cause this issue and which highly affect how fast this damage occurs:  
     
@@ -665,11 +665,11 @@ Make sure they're assembled correctly and line up with the rail as well - if the
     Wear and tear does occur at this kind of linear rail system as well, as metal bearings are running along a metal rod.  
     In the beginning you'll probably notice some black dust coming off the rail and the shiny coating isn't that shiny anymore as shown in the following picture.     
 
-    ![Rails wear & tear](../assets/images/axes_K2Pro_rails-weartear_web.jpeg)
+    ![Rails wear & tear](../assets/images/axes_K2Pro_rail-wear&tear_web.jpg)
 
     When things get worse, you'll see the chrome coating coming off completely as shown in the following picture.  
 
-    ![Rails harmed](../assets/images/axes_K2Pro_rails-harmed_web.jpg)  
+    ![Rails harmed](../assets/images/axes_K2Pro_rail-heavy-wear&tear_web.jpeg)  
 
     There are (imho) three main reasons which cause this issue and which highly affect how fast this damage occurs:  
     
