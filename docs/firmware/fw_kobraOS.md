@@ -33,7 +33,7 @@ In the following I'll list the (imho) most important settings from the `../sourc
 
 ## Settings
 The specific settings of the machine are -due to the fact that it's closed source now- 'unknown'.  
-However, now that the first `update.swu` file is available, it's possible to investigate that one which will then reveal the files `printer.cfg` and `unmodifiable.cfg` (besides others).  
+However, now that the first `update.swu` file is available, it's possible to investigate that one.  
 
 ??? info "Special Thanks To @[lpi](https://github.com/lpi)!"  
 
@@ -41,20 +41,19 @@ However, now that the first `update.swu` file is available, it's possible to inv
     I won't share the files, but I'll add the content of the two config files here in the following.  
     However, if you want to access the files by your own, you can do so by unzipping the file `update.swu` and then mount the main directory with `squashfs`.  
 
----
 
-### Config Files
-
-So there are two config files that can be found after mounting the unzipped `update.swu` file using `squashfs`:  
+There are two Klipper-specific config files that can be found:  
 
 - the file `printer.cfg` which contains the pin assignments and specific settings for the Klipper configuration and
 - the file `unmodifiable.cfg` which seems to contain additional settings for the auto leveling and the probe.
 
+I won't share any of the files, but I'll quote the content of the two config files here in the following.
+
 ---
 
-#### Printer.cfg
+### Printer.cfg
 The following lists the content of the file `printer.cfg` (I reformatted it a bit for a better visibility, but I didn't change any settings!).  
-I'll leave the settings uncommented as this point, because we can't do anything to improve the settings anyway right now.  
+I'll leave the settings uncommented as this point (even though certain settings are *really* tempting to be commented..), because we can't do anything to improve the settings anyway right now.  
 
 ```
 []
@@ -351,7 +350,7 @@ heater_bed_target_temp : 60
 
 ---
 
-#### Unmodifiable.cfg
+### Unmodifiable.cfg
 
 The following lists the content of the file `unmodifiable.cfg`.  
 
