@@ -53,7 +53,7 @@ I won't share any of the files, but I'll quote the content of the two config fil
 
 ### Printer.cfg
 The following lists the content of the file `printer.cfg` (I reformatted it a bit for a better visibility, but I didn't change any settings!).  
-I'll leave the settings uncommented as this point (even though certain settings are *really* tempting to be commented..), because we can't do anything to improve the settings anyway right now.  
+I'll leave the settings uncommented as this point (even though certain settings are *really* tempting to comment..), because we can't do anything to improve the settings anyway right now.  
 
 ```
 []
