@@ -37,7 +37,7 @@ However, now that the first `update.swu` file is available, it's possible to inv
 
 ??? info "Special Thanks To @[lpi](https://github.com/lpi)!"  
 
-    At this point I have to say a huge "Thank You!" to @[lgi](https://github.com/lpi) for providing the content of the `update.swu` file to me!  
+    At this point I have to say a huge "Thank You!" to @[lpi](https://github.com/lpi) for providing the content of the `update.swu` file to me!  
     I won't share the files, but I'll quote the two config files here in the following.  
     However, if you want to access the files by your own, you can do so by unzipping the file `update.swu` and then mount the main directory with `squashfs`.  
 
