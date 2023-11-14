@@ -1,15 +1,15 @@
 <link rel=”manifest” href=”docs/manifest.webmanifest”>
 
 # Introduction
-At the time of writing this (September 2023), nothing is really known about the stock firmware "Kobra OS" as it seems that Anycubic decided to make this system closed source. Hopefully this will change in the future..  
+Anycubic decided to choose the closed source path with the new Kobra 2 models now (Kobra 2 Neo, Pro, Plus & Max).  
+Means, especially for the models Kobra 2 Pro, Plus & Max, there isn't even a possibility to connect to the machine locally as these machines don't offer an e.g. USB-C port for doing so and the WiFi only connects to their own servers.  
 
-However, it *seems* that it's somewhat Klipper-based, as the setting for the g-code flavour in the PrusaSlicer profile offered from Anycubic for this machine is set to Klipper.  
-
-Once there is anything to share, you'll find further information about the [stock firmware](fw_kobraOS.md) of the **Kobra 2 Pro** here in the belonging section then - like how to install updates, information about specific settings and known restrictions.  
+However, Anycubic decided to develop their 'own' firmware, called "KobraOS".  
+This one is actually based on Klipper, which (imho!) therefore *should* be released as being open source due to Klipper's license.  
+However, it seems that no action has been taken yet at the time of writing this to go against this behaviour of Anycubic.  
 
 Once there were successful attempts of installing [Klipper](fw_klipper.md), you can find the information I then hopefully came across in the specific section.  
-
-*If you have any further information, either about the stock firmware or about attempts of flashing Klipper, please reach out via email (see footer)!*  
+ 
 
 ---
 
