@@ -441,13 +441,13 @@ Please see the expandable textbox below for further instructions about how to tr
       ![Crooked gantry on cans](../assets/images/axes_K2Pro_X-gantry_untrammed_marked_web.jpg)  
     - Now loosen the two hexagon socket screws at each side of the aluminum frame of the gantry which are holding each of the Y-shaped metal plates (where the wheels are mounted onto, at the backside so to say) against it. Don't take them out (!), just loosen them a bit.  
       The following pictures show the locations of those screws.  
-      ![Gantry screws left](../assets/images/axes_K2Pro_gantry-bracket-screws-marked2_web.jpg) | ![Gantry screws right](../assets/images/axes_K2Pro_gantry-bracket-screws-marked1_web.jpg)  
+      ![Gantry screws left](../assets/images/axes_K2Pro_gantry-bracket-screws-marked1_web.jpg) | ![Gantry screws right](../assets/images/axes_K2Pro_gantry-bracket-screws-marked2_web.jpg)  
 
     - The goal now is to bring these brackets into position so that the rail of this x-gantry completely rests on those cans like the following picture shows.  
       ![X-axis gantry](../assets/images/axes_K2Pro_X-gantry_trammed_web.jpg)   
       For achieving this, you now might have to wiggle and trun the brackets a bit to get everything aligned up well.  
     
-    - The following picture illustrates the following steps for achieving the perfect position of those Y-shaped brackets.   
+    - The following picture illustrates the following steps for achieving the perfect position of those Y-shaped brackets (yes, it's the Y-shaped metal bracket of the Kobra Neo, but the principle is absolutely the same).   
       ![Illustration how to adjust the brackets](../assets/images/axes_gantry_bracket-position_web.jpg)  
       *Important note: with adjusting the position of the inner wheels by turning the eccentric nut (now and later as well), you only adjust the pressure and how tight the wheels sit and run along the z-axis frame. The position of the outer wheels only can be achieved by positioning them manually as described.*  
       
