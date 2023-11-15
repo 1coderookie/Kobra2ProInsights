@@ -59,11 +59,7 @@ The following steps should be done first to ensure that you set up your printer 
 ### Correct Assembly
 Make sure that you built and set up the printer correctly and that it's trammed as best as you can.  
 **This is the most important and crucial thing, as you'll only be able to get good prints if the hardware itself is set up correctly.**   
-
-This also should be checked if you're using the **Neo** which comes pre-assembled, as you shouldn't rely on the assumption that the manufacturere built everything correctly. Just to show you *how* important that is, look at the following picture of the y-axis frame of one of my Neos how it came preassembled from the manufacturer.  
-
-![Neo crooked y-axis](assets/images/axes_y-axis-crooked_web.jpg)  
-
+The printer does come preassembled, but it's really advisable to check the preassembled parts as well! 
 
 So, please read through the hardware chapters if you didn't do it yet.  
   
@@ -73,7 +69,8 @@ In the following I'll list the most crucial points.
   Means, check if the baseframe is mounted being square, if the the z-axis aluminum parts are really mounted perpendicular onto the baseframe and so on. **As everything else relies on this, the proper alignment of the frame is the most important step!**  
   So, once again: **Set up your frame and your axes. Everything should be square, perpendicular and equidistant.**  
 - Check the [axes](hardware/axes.md)!  
-  Means, check the whole z-axis lead screw system for being assembled correctly and vertically aligned. Make sure you cleaned the old sticky 'oil' (or whatever that nasty stuff should be) off from the lead screw and applied fresh grease, assemble the anti-backlash nut correctly and so on.  
+  Means, check the whole z-axis lead screw system for being assembled correctly and vertically aligned and that the timing belt is properly tensioned.
+  Make sure you cleaned the old sticky 'oil' (or whatever that nasty stuff should be) off from the lead screw and applied fresh grease, assemble the anti-backlash nut correctly and so on.  
   Make sure that you have all wheels positioned correctly, that you don't have bad ball bearings which cause hiccups and irregular movements and that the belts of the x- and y-axis aren't too sloppy or too tight.  
 - Check if everything moves smoothly while the printer is switched off!  
   Means, *slowly* move the bed and the printhead manually across the whole range of motion and turn the lead screw by hand (across the whole range of motion as well) and check if you feel any unusual resistance in certain areas. alter the movement speeds then and see if everything still feels well.   
@@ -86,6 +83,14 @@ In the following I'll list the most crucial points.
 Even though 'tramming the bed' (aka 'leveling' the bed) isn't really possible when using the rigid stock spacers of the bedplate these printers come with, there is something one can and should do though: check if those spacers are all of the same height. *This is really important, so better don't skip this step.*  
 
 See the section ["Tramming The Bed"](hardware/bed.md#tramming-the-bed) for further information and instructions about how to do so.  
+
+
+---
+
+### Check The Z-Axis And The Timing Belt
+Checking and tramming the whole z-axis lead screw system for being vertically aligned is crucial. Especially since a timing belt is being used which will be sloppy if the screws are misaligned.  
+
+See the section [Timing Belt](hardware/axes.md#timing-belt) for further information.
 
 
 ---
