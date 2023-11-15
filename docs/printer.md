@@ -3,8 +3,27 @@
 # Printer
 The Anycubic [**Kobra 2 Pro**](https://www.anycubic.com/products/kobra-2-pro) is a high speed FDM bedslinger style printer.  
 It comes pre-assembled, you only have to mount a few parts like the 'upstanding' frame onto the base frame.  
+
+See [Anycubic's support page](https://www.anycubic.com/pages/firmware-software) of the Kobra 2 series to find manuals, firmware, video tutorials and more or use the direct links in the following.  
+
+- [Quick Start Guide](https://drive.google.com/file/d/1W63_4aYIETkF4itp7T5blioazcZqx0bY/view)
+- [User manual v1.2](https://drive.google.com/file/d/1FQqmJ4QByD2u3dPKmaZOCjRyONrfPE2q/view)
+- [Firmware v2.3.5](https://drive.google.com/file/d/1_4-X4O4sBbXfqrcOuRkRR2gYS6woGLUm/view)
+
+
+The following pictures show the machine.  
   
-See [Anycubic's support page](https://www.anycubic.com/pages/firmware-software) of the Kobra 2 series to find manuals, firmware, video tutorials and more.    
+| Kobra 2 Pro frontview | Kobra 2 Pro backview |  
+|:---------------------:|:--------------------:| 
+| ![Kobra 2 Pro front](assets/images/printer_K2Pro_front2_web.jpg) |  ![Kobra 2 Pro back](assets/images/printer_K2Pro_back_web.jpg) |  
+
+*Note: I didn't attach the filament spool holder to the left side of the machine as it should be done when taking these pictures for being able to put both pictures between each other in a decent size here.*   
+
+  
+
+--- 
+
+## Specifications  
   
 The following list gives an overview of the most important specifications:    
 
@@ -30,10 +49,6 @@ The following list gives an overview of the most important specifications:
 - Nozzle temperature: 260°C / ≤ 500 °F   
 - Filament run-out detection sensor  
 
-  
-| Kobra 2 Pro frontview | Kobra 2 Pro backview |  
-|:---------------------:|:--------------------:| 
-| ![Kobra 2 Pro front](assets/images/printer_K2Pro_front2_web.jpg) |  ![Kobra 2 Pro back](assets/images/printer_K2Pro_back_web.jpg) | 
 
 
 ---
