@@ -31,7 +31,7 @@ If you want to get rid of the stock spool holder mounted to the side due to the 
     Of course I put a bag of desiccant and a cheap hygrometer in there as well.  
     This solution isn't as air-tight as a box with a silicone sealed lid, but it does the job in my room fine. Plus, it keeps dust and my cats away from the filament as well.  
 
-    ![Cakebox holder front](../assets/images/cakebox-holder_front_web.jpg) | ![Cakebox holder open](../assets/images/cakebox-holder_open_web.jpg) | ![Cakebox holder back](../assets/images/cakebox-holder_back_web.jpg)  
+    ![Cakebox holder front](../assets/images/cakebox-holder_front_web.jpg) | ![Cakebox holder back](../assets/images/cakebox-holder_back_web.jpg)  
 
     At the printers which are located in an enclosure, I use one of those 4l cereal containers (see the section "Filament Storage" below) with a custom lid and a spool holder mechanism to feed the filament.   
     ![Cap](../assets/images/other_fil-storage_feeder-cap_web.jpg)  
