@@ -36,7 +36,7 @@ If you want to get rid of the stock spool holder mounted to the side due to the 
     At the printers which are located in an enclosure, I use one of those 4l cereal containers (see the section "Filament Storage" below) with a custom lid and a spool holder mechanism to feed the filament.   
     ![Cap](../assets/images/other_fil-storage_feeder-cap_web.jpg)  
 
-??? info "Influence Of The Spool Weight On Vibrations"  
+??? info "Influence Of The Spool's Weight On Vibrations"  
 
     I personally don't like the spool being attached to the top of the frame. Even though I do see the 'value' of it in saving space around the printer, I personally think that adding 1kg (or even 2kg as some people mount a second one on top as well) to this kind of construction isn't the best idea. Especially not at these high-speed style bedslingers.    
     
