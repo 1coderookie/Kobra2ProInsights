@@ -400,19 +400,18 @@ The assembled hotend is shown in the following picture.
     *Be really careful when taking away the clumps to not harm or rip off any of the wires!* You can also use a cloth to wipe off the melted filament from the heater block and so on, just make sure you don't burn yourself!  
     - For the next steps you need to be a bit quick in proceeding them, so if this is the first time you're diassembling the hotend, take a look at the sections here at the page and read them first so you'll know where the screws are located and which steps you need to take. Then proceed with the following steps.
     - So, once everything is as clean as possible, heat everything up again. The turn off the printer and loosen the two grub screws inside the heater block to take out the thermistor and the cartridge heater. Give it a quick wipe with the cloth if they're covered by a lot of filament, too (but don't waste too much time here as the filament is becoming hard again now pretty quick!). 
-    - Then take out the nozzle from the heater block and unscrew the heater block from the hotend. Pay attention if you can feel that the heatbreak was loose in the heater block to check if that was the reason for the filament being able to squeeze out and build up. 
-    - Dismount the fan on the right side and loosen the two hexagon socket screws which are holding the heatbreak in place. If it doesn't fall out by itself, pull it out. When using the **Neo**, make sure the little PTFE tube also comes out, take it out of the heatbreak.  
+    - Then disassemble the hotend (see description below), so take out the nozzle from the heater block and unscrew the heater block from the heatbreal. Pay attention if you can feel that the heatbreak was loose in the heater block to check if that was the reason for the filament being able to squeeze out and build up. 
     - If you were using a cheap nozzle and have a spare one, just throw away the old one. If it's a good or your only nozzle, try to get it back to work again by giving it a proper cleaning and doing some cold pulls when it's installed again. 
     - Now put all the metal parts (heatbreak, heater block and probably the nozzle) in a glass with acetone. close the lid and let it sit there for about 24hrs. The acetone won't dissolve PLA filament or so automagically like it does with ABS, but it'll make it soft and easier to clean. 
     - In the meantime you can take care of the thermistor and the cartridge heater. Scratch off the hardened filament from the metal parts by using a cutter for example, but be *really* careful to not slip off and harm any wires! I personally didn't take care of the little clump at the part where ther wires are coming out of the metal part because I didn't wanted to risk harming the wires, so I just let it sit there.  
     - When you're about to clean the meatal parts which soaked in the acetone, I'd recommend wearing disposable gloves as acteone isn't really healthy for your skin. So put on those gloves and start cleaning the parts by carefully scratching off the rest of the filament. Use a cutter, a brass brush etc., but always be careful to not really harm anything. Pay special attention to all the threads and the holes of the heater block where the thermistor and the cartridge heater will take place. If you don't get everything cleaned up at the first time, just put it back in the acetone, wait again and then repeat the cleaning steps. 
     - Once everything looks nice and clean, rinse off the acetone with clear water and let it dry. This is especially important for the inner side of the nozzle - you don't want to have acetone in there.  
-    - Then reassemble everything and put it back in place. Read the notes in the specific sections here about how to reassemble the specific parts and what to pay attention to.  
+    - Then reassemble the hotend (see description below) and put it back in place. Read the notes in the specific sections here about how to reassemble the specific parts and what to pay attention to.  
     - At the end when everything is reassembled and you heated up the hotend to finally mount the nozzle and load the filament, extrude filament to see if everything is ok. 
     - If so (I hope it will be!), don't start printing right away - execute a PID tuning for the hotend first.  
     - Also check if you need to re-level the ABL sensor in relation to the nozzle due to a probably different position of the hotend now.  
     - Execute an ABL and take care of your Z-offset, most likely the position of your nozzle will be different due to a different position of the whole hotend.  
--->  
+  
   
 ---
 
@@ -432,31 +431,38 @@ If you need to dismount the hotend from the printhead to change it or if you nee
 
     *If you can see bare wire shining through the isolation of the wires of either the thermistor or the cartridge heater, I'd strongly recommend to replace the component to not risk a shortcut and therefore a broken mainboard!*   
 
-<!--  
+
 ??? example "Disassembling Procedure"  
 
-    When I need to disassemble the hotend, I first take off the blue plastic cover (including the part cooling fan which you have to disconnect from the breakout board) of the printhead.  
-    Then I heat it up to about 240° while everything is still in place.  
-    In the next step 
-    - Before you start to disassemble the hotend, heat it up to about 230-240°C first. Once it reached the temperature, turn off the printer.  
-    - Loosen up the screws which hold the thermistor and the cartridge heater in place and pull them out of the heater block. <br> ![Screws heater block](../assets/images/head_block-screws-close_web.jpg) <br> Be careful to not rip any wires!  
-    - Loosen the nozzle and the heatbreak. You can already take out the nozzle completely and unscrew the heater block from the heatbreak as well - just make sure you don't burn yourself.   
-    - Disassemble the fan on the right side by taking out the two hexagon socket screws at the top and bottom of the fan frame. <br> ![Disassemble the fan on the right side](../assets/images/head_neo_rightside_marked_web.jpg)  
-    - Then you'll see two hexagon socket screws at the side which are holding the hotend - loosen them until you can gently pull out the hotend. <br> ![Loosen the screws to take out the hotend](../assets/images/head_neo_vent-dis-extruder_web.jpg) <br> You could've seen the heads of the screws already earlier before disassembling the fan, but you wouldn't have been able to reach them as the following picture shows. <br> ![Closeup of the screws which you want to reach](../assets/images/head_hotend-screws_closeup_web.jpg)  
-    - You can now pull out the heatbreak. Make sure the PTFE tube comes out as well.   
+    When I need to disassemble the hotend, I first take off the blue plastic cover (including the part cooling fan which you have to disconnect from the breakout board) of the printhead, so I'd suggest to do the same. Then proceed as follows.   
+
+    **Attention: you'll handle HOT parts now, so be really careful to not harm yourself by accidentally touching any parts or your surrounding by dropping any parts!**  
+    *Also make sure to be quite quick as you need to disassemble the parts while they're still hot. So make sure to read through the following steps and have the belonging tools on hand already.*  
+    
+    - Before you start to disassemble the hotend, heat it up to about 240°C first. Once it reached the temperature, turn off the printer.  
+    - Unplug the connectors at the breakout board of the heater cartridge and the thermistor.  
+    - Now I personally take out the whole hotend from the heatsink, so I'd suggest to do the same. For doing so, just loosen those two grub screws in the center of the heatsink while holding the heater block with an adjustable wrench to prevent the hotend falling down.  
+      ![Heatsink screws](../assets/images/head_K2Pro_heatsink-heatbreak-screws_marked_web.jpg)  
+    - Once you have the whole hotend in front of you, pull out the PTFE tube which is located in the heatbreak, it should come out easily. If it's somehow *not* there, you'll have to check in the extruder system later if it somehow got stuck in there.  
+    - Now loosen the nozzle by holding the heater block in place with an adjustable spanner or wrench and carefully loosen the nozzle by turning it counter-clockwise with a 7mm wrench.  
+    - Once you unscrewed the nozzle a bit, carefully grab the heatbreak then instead of the nozzle by using an adjustable wrench and turn it counter-clockwise.  
+    - Then take out both parts completely from the heater block while everything is still hot - pay attention to not burn yourself and to not drop any hot parts on a temperature sensitive surface.  
+      
 
 
 ??? example "Reassembling Procedure" 
   
     - Screw the heatbreak into the heater block to the corresponding depth and screw in the nozzle from the other side until they touch. Don't tighten up the nozzle yet!  
-    - Put back the cleaned or renewed PTFE tube.  
-    - Put the thermistor and the heater cartridge back in place and secure them by *carefully* tighten the tiny hex screw - *don't overtighten them as you could harm the thermistor and the heater cartridge!*  
+    - Put back the new PTFE tube in the heatbreak.  
+    - If you took them out, put the thermistor and the heater cartridge back in place and secure them by carefully tighten the belonging screws. Don't overtighten the grub screw of the cartridge heater and don't pich the thin wiring of the thermistor.    
     - Then push the heatbreak back into the specific hole of the heatsink - make sure you push it deep enough (I personally push it as far into it as it goes).  
     - Turn the hotend so that the wires which are coming from the heater block are hanging freely and aren't bent too much.  
-    - Then tighten up the two hexagon socket screws at the heatsink which hold the heatbreak in place, so that the hotend doesn't turn or wiggle anymore (but don't overtighten the screws though) and mount the heatsink fan back into place.  
-    - Turn on the printer and heat up the nozzle to ~230-240°C. Once the temperature is reached, tighten up the nozzle with about 1.5NM force. Make sure to hold the heater block in place and strictly avoid any movement of it! Don't touch or harm any wires!  
-    - Mount the plastic cover.   
--->  
+    - Then tighten up the two grub screws at the heatsink which hold the heatbreak in place, so that the hotend doesn't turn or wiggle anymore (but don't overtighten the screws though).  
+    - Plug in the cartidge heater and thermistor back into their corresponding connectors.  
+    - Turn on the printer and heat up the nozzle to ~230-240°C. Once the temperature is reached, tighten up the nozzle with about 1.5NM force.  
+      **Make sure to hold the heater block in place with an adjustable wrench or spanner and strictly avoid any movement of it - make sure to not pinch or harm any wires while doing so!**  
+    - Once everything is done, reconnect the part cooling fan to the breakout board and mount the plastic cover.   
+ 
 
 <!--
 ---
@@ -1080,7 +1086,7 @@ The following picture shows an "E3D Nozzle X" hardened steel nozzle (*Attention:
 
 ---
 
-### Ruby Tip Nozzles 
+#### Ruby Tip Nozzles 
 If you're about to print *highly abrasive* types of filament, like "wood" or "glow in the dark" PLA for example, you can also get yourself a ruby tipped nozzle as shown in the following pictures, as regular brass nozzles will be worn out in no time. They're still made from brass, but they have a tiny ruby at the tip which is harder and therefore doesn't wear out.  
 
 | Normal brass vs ruby tip nozzle | Normal brass vs ruby tip nozzle |
