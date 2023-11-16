@@ -388,7 +388,7 @@ The assembled hotend is shown in the following picture.
     If you can't load new filament, first of all check if you pushed the lever on the feeder gear to the right hand side.
     If you did so and were able to insert the filament but it seems that it's getting stuck lower down in the hotend, then you might hit the end of the nozzle with an edge of your filament. It helps when you cut the filament in a 45° angle and bend the part you're manually feeding into the hotend so that it's pretty straight.  
     If you still can't get your filament loaded, it's most likely that the PTFE tube inside of the hotend is clogged or deformed or that you have a clog in or above the nozzle somewhere. To clean, inspect and maintain it, you need to disassemble the hotend. Check the section ["Disassembling The Hotend"](#disassembling-the-hotend) further down below for more information.     
-<!--         
+       
 ??? example "Large Clump Of Melted Filament Built Up"
 
     Sometimes it may happen that melted filament builds up on top of the heater block to a large clump. The reason for that is that the heatbreak and the end of the nozzle don't touch tight enough, so that the melted filament can squeeze out. It also may be caused by bad and cheap parts where the threads aren't just as good as they should be. <br> ![Blob](../assets/images/head_blob_web.jpg) <br> So if you encouter this problem, here is what I recommend to do (based on my own experience with this dilemma).  
@@ -637,6 +637,16 @@ The following picture shows one of the spare PTFE inliner tubes which come with 
 
 ![Spare PTFE inliner](../assets/images/head_K2Pro_spare-PTFE-inlet_web.jpg)  
 
+!!! warning "Check The PTFE Inliner"
+
+    If you start to have issues whith filament being fed or extruded incorrectly, take out the assembled hotend from the heatsink to access the PTFE inliner.  
+    You can simply pull this little tube out, you shouldn't have to use much force to do so - if you can't get the tube out easily, then it's already a clear sign that there's an issue.  
+    If you can't get it out *at all*, then you need to heat up the hotend to the degree that you can pull it out. In this case it's advisable to take apart the whole hotend (unscrew the nozzle and the heatbreak) and do a proper cleaning of all components first. 
+    
+    Once you took the tube out, inspect the lower part of the tube and see if you can spot any deformations or clogs there, also if the tube got brown it's a sign of being burnt and deformed already. Look closely as it might be hard to see. If so, replace the tube.  
+    
+      
+    
 ??? tip "Length Of PTFE Inliner"  
 
     When you need to cut a new inliner and you're not sure about the correct length, the best would be to actually disassemble the hotend, so that you can install the heatbreak only. Push it into the heatsink as far as you can. Then push the replacement tube into the heatbreak from the bottom, until you can't stick it in any further. Then either cut along the end of the heatbreak or mark that spot and cut it perpendicular afterwards. Then the length should fit - at least it should fit better than the stock inliner.  
@@ -1051,7 +1061,9 @@ If you now want to use Volcano type nozzles, I highly recommend to only use high
 
 ### MOD: Special Kind Of Nozzles
 
-In the following I'll mention some nozzles which are made from different material than the regular nozzles which are made from 100% brass.  
+In the following I'll mention some special kind of nozzles.  
+
+*As I don't own these types of nozzles in a Volcano type yet, I'll show pictures of an E3D ***V6*** type. Please mind that these specific ones shown in the following won't fit, so don't get irritated by the different length! The principle (material, ruby, CHT insert) is the same though, so they can still serve for illustration purposes.*   
 
 ---
 
@@ -1069,9 +1081,15 @@ The following picture shows an "E3D Nozzle X" hardened steel nozzle (*Attention:
 ---
 
 ### Ruby Tip Nozzles 
-Ruby tip nozzles can also be used for highly abrasive filament. They're still made from brass, but they have a tiny ruby at the tip which is harder and therefore doesn't wear out.  
+If you're about to print *highly abrasive* types of filament, like "wood" or "glow in the dark" PLA for example, you can also get yourself a ruby tipped nozzle as shown in the following pictures, as regular brass nozzles will be worn out in no time. They're still made from brass, but they have a tiny ruby at the tip which is harder and therefore doesn't wear out.  
 
-(..pic..)  
+| Normal brass vs ruby tip nozzle | Normal brass vs ruby tip nozzle |
+|:-------------------------------:|:-------------------------------:|
+| ![Ruby 1](../assets/images/head_ruby-nozzle1_web.jpeg) | ![Ruby 2](../assets/images/head_ruby-nozzle2_web.jpeg) |  
+
+!!! warning "Ruby Tip Nozzle Might Be Slightly Longer"  
+
+    Mind that the ruby tip nozzle (at least the one which has been used here) is or might be slightly longer than a regular brass nozzle, so **adjust your z-offset accordingly before starting a print** to not have your nozzle being driven into the build plate!  
 
 ---
 
