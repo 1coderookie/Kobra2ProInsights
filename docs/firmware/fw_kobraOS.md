@@ -6,7 +6,7 @@ Even though it's based on Klipper, sources haven't been published yet.
 
 ---
 
-## Updating
+## Update Procedure
 
 For updating the firmware, you can either 
 
@@ -14,20 +14,7 @@ For updating the firmware, you can either
 - update via Anycubic's online service.  
       
 
-<!--  
-## Update Procedure
-
-To update the firmware of your printer, copy the file `firmware.bin` onto the microSD card.  
-Turn off the printer and plug the card into the cardreader which is located at the front of the frame (next to the USB connector). The card must be inserted with the contacs facing upwards.  
-Then turn on your printer. You'll see a black screen with "Updating Firmware..." displayed.  
-After a certain time the Anycubic logo will appear and shortly after that the regular main screen will appear.  
-Shut down the printer again and take out the card (push it in a bit to unlock it and make it come out a bit, then just pull it out).  
-Turn on the printer again, go to "Menu" and then "About" and check if the correct firmware version is displayed.  
-If so, everything is fine. If not, check if you really copied the correct version onto the card and proceed the update again.   
-   
-## Default Settings 
-In the following I'll list the (imho) most important settings from the `../source/Marlin/Configuration.h` and `../source/Marlin/Configuration_adv.h`. You can find these files at the GitHub repositories for the specific model (see links below).  
--->
+To update the firmware of your printer locally using the file `update.swu`, copy the file into a folder named "update" onto the USB drive.  
 
 ---
 
