@@ -264,7 +264,7 @@ As I didn't check yet if the control unit offers this function, I can't give you
 This isn't really a calibration you need to do, but it's something you should be aware of and take into account when choosing the layer height for your print settings and therefore I'd like to mention it at this point. So when deciding for a layer height, you probably think "well, I can just choose whatever I want" - and yes, of course you can do so. But there's a "magic number" you should actually take into account when making your decision: **0.04mm**.  
 This is the distance the head travels up and down along the z-axis for each *full step* of the z-axis motor and therefore it's advisable to always choose layer heights which can be fully divided by / which are multiples of *0.04mm*.  
 
-You can find a bit more information about the 'maths' behind it in the expandable info textbox [here](hardware/axes.md#z-axis).  
+You can find a bit more information about the 'maths' behind it in the expandable info textbox "Choosing A Layer Height: The "Magic Number"" [here](hardware/axes.md#z-axis).  
 
     
 ---
