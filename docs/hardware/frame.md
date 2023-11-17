@@ -42,7 +42,7 @@ After mounting both parts together, you'll already have the printer standing in 
 
 | Kobra 2 Pro frontview | Kobra 2 Pro backview |  
 |:---------------------:|:--------------------:| 
-| ![Kobra 2 Pro front](assets/images/printer_K2Pro_front2_web.jpg) |  ![Kobra 2 Pro back](assets/images/printer_K2Pro_back_web.jpg) | 
+| ![Kobra 2 Pro front](../assets/images/printer_K2Pro_front2_web.jpg) |  ![Kobra 2 Pro back](../assets/images/printer_K2Pro_back_web.jpg) | 
 
 ---
 
