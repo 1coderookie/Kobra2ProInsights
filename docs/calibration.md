@@ -68,7 +68,7 @@ In the following I'll list the most crucial points.
 - Set up the frame correctly!  
   Means, check if the baseframe is mounted being square, if the the z-axis aluminum parts are really mounted perpendicular onto the baseframe and so on. **As everything else relies on this, the proper alignment of the frame is the most important step!**  
   So, once again: **Set up your frame and your axes. Everything should be square, perpendicular and equidistant.**  
-- Check the [axes](hardware/axes.md)!  
+- Check the **[axes](hardware/axes.md)**!  
   Means, check the whole z-axis lead screw system for being assembled correctly and vertically aligned and that the timing belt is properly tensioned.
   Make sure you cleaned the old sticky 'oil' (or whatever that nasty stuff should be) off from the lead screw and applied fresh grease, assemble the anti-backlash nut correctly and so on.  
   Make sure that you have all wheels positioned correctly, that you don't have bad ball bearings which cause hiccups and irregular movements and that the belts of the x- and y-axis aren't too sloppy or too tight.  
@@ -80,7 +80,7 @@ In the following I'll list the most crucial points.
 ---
 
 ### Tram The Bed
-Even though 'tramming the bed' (aka 'leveling' the bed) isn't really possible when using the rigid stock spacers of the bedplate these printers come with, there is something one can and should do though: check if those spacers are all of the same height. *This is really important, so better don't skip this step.*  
+Even though tramming the bed (aka 'leveling' the bed) isn't really possible when using the rigid stock spacers of the bedplate these printers come with, there is something one can and should do though: check if those spacers are all of the same height.  
 
 See the section ["Tramming The Bed"](hardware/bed.md#tramming-the-bed) for further information and instructions about how to do so.  
 
@@ -134,11 +134,11 @@ See the section ["Adjusting The Sensor's Height"](hardware/bed.md#adjusting-the-
 
 ## Other Calibration  
 
-In the following I'll list some of the calibrations which are necessary. The list isn't completed yet, mostly I'll list calibrations where certain things come into account for these specific printer models. If you don't find a specific calibration mentioned here, please refer to other sources like the abovementioned calibration guides I linked to.  
+In the following I'll list some of the calibrations which are necessary. The list isn't completed yet, mostly I'll list calibrations where certain things come into account for this specific printer model. If you don't find a specific calibration mentioned here, please refer to other sources like the abovementioned calibration guides I linked to.  
   
-Keep in mind that it may take some time until you found the best suitable settings. And even then it might occur that you'll have to adjust certain settings later when finally printing 'real' models. So maybe try to see it more like a process instead of the struggle of a search for the 'perfect' settings which must out there somewhere..  
+Keep in mind that it may take some time until you found the best suitable settings. And even then it might occur that you'll have to adjust certain settings later when finally printing 'real' models. So maybe try to see it more like a process instead of the struggle of a search for the 'perfect' settings which must be out there somewhere..  
 
-Also keep in mind that you'll have to do certain calibrations again when using different kinds of filament. This doesn't only comes into account when printing a differenty type like ABS or PETG instead of PLA, but it also most likely will be the case when using the same type of filament but made from another manufaturer. Even the same type and brand of filament from the same manufacturer might need some slightly different settings like the temperature for example, when you're using a new spool or a different colour!  
+Also keep in mind that you'll have to do certain calibrations again when using different kinds of filament. This doesn't only comes into account when printing a differenty type like ABS or PETG instead of PLA, but it also most likely will be the case when using the same type of filament but made from another manufaturer. Even the same type and brand of filament from the same manufacturer might need some slightly different settings like the temperature for example, when you're using a new spool or a different colour.  
 
 ---    
 
@@ -166,7 +166,7 @@ However, from what I do remember right now you (roughly) do it this way:
 -->  
 
 After initiating the probing and calibration sequence using the control unit, start a print job and verify that the first layer came out perfect. Compare the look of it with the abovementioned poster from Billie Ruben to check if it really is perfect or if you need a bit of adjustment.  
-If you need to adjust the height, you don't need to execute an ABL sequence again, just correct the z-offset setting. You can also adjust it 'on the fly' while printing a (larger) first layer and look at the outcome - this is often even better as you'll see the effect right away.    
+If you need to adjust the height, you don't need to execute an ABL sequence again, just correct the z-offset setting. You can also adjust it 'on the fly' using the control unit while printing a (larger) first layer and look at the outcome - this is often even better as you'll see the effect right away.    
 
 ??? info "Don't Rely On The "Paper Method""
 
@@ -196,10 +196,6 @@ When it clearly broke between two layers, inspect the next floor with the higher
 
 Once you're done and decided to go with a specific temperature, continue with other calibrations like printing retraction towers, calibrating the e-steps and so on. At the end I'd recommend to print another temperature tower once again for being able to compare the output to the first one you printed. You don't have to print such a 'large' and wide ranged temperature tower though, maybe just print a tower with the 'final' settings and temperature you decided to use and add a floor with 5° higher and 5° lower temperature.   
   
-!!! warning "Slightly Lower Temperatures Seem To Be Reported"
-
-    I'd like to mention a finding I made after switching to the Klipper firmware instead of the stock firmware. In the stock firmware the type of temperature sensor for the hotend is set as an "ATC Semitec" type (see the chapter ["Stock Firmware (Marlin Based)"](firmware/fw_marlin.md) for further information). After switching to Klipper, I set different sensor types and inspected the reported temperature. It turned out that with the setting "Generic 3950" the reported temperature seemed to be more accurate than with the "ATC Semitec" type of sensor being set in the stock firmware, which seems to report slightly *lower* temperatures than actually being present at the hotend.   
-    Even though this doesn't really affect the usage at the end, as you'll determine the best printing temperature by the abovementioned outcome in terms of look and bonding quality anyway instead of judging by the sheer temperature value, it is something you should keep in the back of your mind though.  
   
 ---
   
@@ -224,7 +220,7 @@ The retraction *distance* is a crucial setting one has to take care about. The r
 
 Finding the correct retraction distance setting can be difficult and might take a few iterations, as it depends on various other settings and variables, so there isn't a general one-fits-all setting one could use.  
 
-  As this is a direct drive system, you need to go with small retraction distance settings. Due to the Volcano-like nozzle and the longer melting zone, you can try up to 2mm and still should be safe. Start with the smallest settings though!
+As this is a direct drive system, you need to go with small retraction distance settings. Due to the Volcano-like nozzle and the longer melting zone, you can try up to 2mm and still should be safe (imho). Start with the smallest settings though!
   
 For finding out the correct retraction distance setting, you can print retraction distance towers, where different retraction distance values are applied at certain heights (kinda the same like when printing temperature towers). Before doing so, you should have figured out the correct printing temperature though.   
 
@@ -238,54 +234,16 @@ In general it seems that you can say that the higher the *speed*, the lower the 
 It has to be mentioned though that a high(er) retraction speed isn't always the key - it can also be the case that using a lower speed is necessary for getting the best results. This also depends on the type and quality of the filament as well.  
   
   
----  
-  
-### Layer Height
-This isn't really a calibration you need to do, but it's something you should be aware of and take into account when choosing the layer height for your print settings and therefore I'd like to mention it a this point. So when deciding for a layer height, you probably think "well, I can just choose whatever I want" - and yes, of course you can do so. But there's a "magic number" you should actually take into account when making your decision: **0.04mm**.  
-
-Let me explain it a bit: when moving along the z-axis which is done by the lead screw, it's smart to choose your layer heights in a way that for each layer full motor steps are taken. *One* step is 0.04mm, so it's better to set e.g. 0.2mm layer height (which is 5 full steps) instead of e.g. 0.18mm (which is 4.5 steps).  
-
-Here's the 'math' behind it:  
-
-- The lead screw is 8mm in diameter.  
-- There are 4 starts (= thread paths) at the lead screw.  
-- The lead screw has 2mm pitch.  
-- 4 starts multiplied by 2mm pitch is 8mm lead per one *full* rotation of the lead screw.   
-- The stepper motor of the z-axis does 200 steps per revolution.  
-- Means: 8mm lead divided by 200 steps per revolution is *0.04mm movement per step*.  
-
-Doing the math, you'll realize that e.g. 0.2mm l.h. = 5 steps, 0.24mm l.h. = 6 steps, 0.28mm l.h. = 7 steps and so on.  
-So when choosing a l.h. like e.g. 0.15mm or 0.3mm, the motor has to do 3.75 or 7.5 steps which isn't smart and won't be as accurate and reliable as doing full steps.  
-
-So: always choose layer heights which can be 'fully' divided by 0.04mm.
 
 ---
 
 ### Calibrating E-Steps
 You've probably already came along the sentence "calibrate your e-steps" and maybe you wonder what it is, what you'd have to do and why you should do so. It's actually pretty simple: the "e-steps" are the steps of the motor of your extruder (so "e-steps" stands for "extruder-steps") and therefore they determine how much filament will be extruded with a certain amount of motor steps.  
-Depending on how accurate this setting is (means, how well you calibrated the e-steps), you'll either have some pretty perfect prints (in the meaning of the amount of filament of each layer) or you'll see signs of more or less severe under- or overextrusion. Some people try to adjust or get rid of this problem by setting different extrusion multipliers in the slicer, but that's not the best/correct way (imho). You always should have the hardware tuned in as much as possible before trying to tweak software settings for better results.   
+Depending on how accurate this setting is (means, how well you calibrated the e-steps), you'll either have some pretty perfect prints (in the meaning of the amount of filament of each layer) or you'll see signs of more or less severe under- or overextrusion.  
+Now some people try to adjust or get rid of this problem by setting different extrusion multipliers in the slicer without touching this setting, but that's not the best/correct way (imho), as you always should have the hardware tuned in as much as possible before trying to tweak software settings for better results.   
+However, due to the fact that KobraOS is based on Klipper where you'd have to change the e-steps (which are called rotation distance in Klipper) in the file `printer.cfg` and that we don't have access to this file as KobraOS is closed-source, we can't actually adjust the setting. So one has to go with adjusting the flowrate in the slicer.
 
-Even though the e-steps of both the **Go** and the **Neo** don't seem to be way off when it comes from the manufacturer with the default firmware settings, it's advisable to calibrate them.  
-This whole procedure really isn't a big deal and doesn't take long, so make sure to do this calibration!   
-  
-However, you need an additional software like OctoPrint or Pronterface for being able to send the specific g-code commands to the printer. As you most likely don't have that installed yet when you just started with 3d printing, I'm mentioning this calibration not as one of the first things to do, even though one should do it as soon and early as possible, as it effects the outcome overall.   
-  
-The actual process of how to calibrate the e-steps is described in many articles see the abovementioned and videos already, so right now I won't go into the final details here. Please see the links in the section ["Calibration Guides"](#calibration-guides) above.   
 
-So, basically what you'll do is measure e.g. 100mm and 120mm of filament right above the printhead where the filament enters and mark those two spots. Then you heat up your system to your regular printing temperature, extrude 100mm and measure the distance between the printhead (where the filament enters) and the 100mm and 120mm marks once the extrusion is done.  
-If e.g. the 100mm mark is right at the spot where the filament enters - great, no calibration necessary!  
-But if either more or less than the 100mm got extruded, then you'd have to do a little math using a formula and the measured values of the distance to the marks for determining the final value of the e-steps. The calculated value has to be set and saved to the firmware then.  
-After doing so, repeat this process for verifying that the new setting is correct.  
-  
-Some guides say that you should do it without a nozzle, some guides say you should do it with the nozzle. I personally found it most precise when doing the calibration using the final print setup, so these are my personal suggestions when it comes down to execute this procedure:  
-
-- Determine the correct printing temperature for the filament you're using.   
-- Use the nozzle you're going to use for printing as well - so don't calibrate the e-steps with e.g. a 0.4mm nozzle, when you're printing with a 0.6mm nozzle later. 
-- Make sure the pressure of the feeder gear is correct and it's (mostly) the setting you'll use later on as well. So don't calibrate with a sloppy feeder gear and crank up the tension later and vice versa. 
-- *Make sure to use a fine lined, waterproof pen for marking the filament, so don't use a fat marker which aleady draws a 1mm or 2mm wide line!* You want to be as precise as possible here! 
-- *Make sure to use a precise ruler or a sliding gauge for being able to actually really measure 100mm!* You'd be suprised how bad certain measurement tools actually are and how big deviations can actually be, so make sure to use a sufficient measuring tool.  
-- Calibrate the e-steps whenever you use different type of filament, even different spools of the same type. The process doesn't take long, but it's crucial that the e-steps are calibrated. So better take the little time to check if everything is still fine after changing the filament.  
-    
 ---
   
 ### PID Tuning
@@ -294,117 +252,19 @@ By executing a PID tuning, the printer heats up the desired heating element (ext
 
 It's advisable to execute a PID tuning for both the extruder and the bed before you want to use your printer for the first time.  
 Also after you changed something at the hotend (like installed a new nozzle or heatbreak) and especially if you changed the cartridge heater or a thermistor (or even the position of it when removing and reinserting it) or installed a new bed, you should execute a PID tuning.  
+
+Again, as this KobraOS is based on Klipper, one would usually do that with two specific commands for the hotend and the heated bed - but as there's no way to connect to the machine locally through a webinterface like Mainsail or Fluidd (as there's no Moonraker API implementation given here), we can't execute PID tunings this way.   
+
+As I didn't check yet if the control unit offers this function, I can't give you further information right now if this calibration process can actually be initialized. I'll update this section as soon as I investigated this.  
+
+---  
   
-The best way to execute a PID tuning is by simply using certain G-code commands and send them to your printer. To do so, I'll show you an example of how to do it using OctoPrint - but you can do it with any other program that allows you to send G-code commands directly also.  
-  
-PID tuning needs to be done in two steps: one for the extruder and one for the bed.
+### Layer Height
+This isn't really a calibration you need to do, but it's something you should be aware of and take into account when choosing the layer height for your print settings and therefore I'd like to mention it at this point. So when deciding for a layer height, you probably think "well, I can just choose whatever I want" - and yes, of course you can do so. But there's a "magic number" you should actually take into account when making your decision: **0.04mm**.  
+This is the distance the head travels up and down along the z-axis for each *full step* of the z-axis motor and therefore it's advisable to always choose layer heights which can be fully divided by / which are multiples of *0.04mm*.  
 
----
+You can find a bit more information about the 'maths' behind it [here]() *(not yet done, need to add that section)*.  
 
-#### Extruder PID Tuning
-Because I use to print at 220°C, I want to use this temperature for the PID tuning of the extruder.  
-I want the printer to execute seven cycles - the more the better the result will be.  
-
-The belonging G-code is  
-`M303 E0 S220 C7`  
-where `M303` is the PID tune, `E0` is the extruder, `S220` is the temperature of 220°C and `C7` means seven cycles.  
-      
-After sending this command, the printer will reply and start the process:  
-```
-Send: M303 E0 S220 C7  
-Recv: PID Autotune start
-```
-    
-The printer will then display the process and values for each cycle. You don't need that later, but just that you saw that once I'll show you an output of one of those cycles:  
-```
-Recv:  T:219.87 /0.00 (244.63) B:47.71 /0.00 (3646.75) @:101 B@:0
-Recv:  T:218.31 /0.00 (252.13) B:47.62 /0.00 (3648.25) @:101 B@:0
-Recv:  T:216.46 /0.00 (261.00) B:47.55 /0.00 (3649.25) @:101 B@:0
-Recv:  T:215.44 /0.00 (265.88) B:47.43 /0.00 (3651.13) @:101 B@:0
-Recv:  T:214.66 /0.00 (269.63) B:47.34 /0.00 (3652.50) @:101 B@:0
-Recv:  T:214.71 /0.00 (269.38) B:47.21 /0.00 (3654.38) @:101 B@:0
-Recv:  T:215.13 /0.00 (267.38) B:47.07 /0.00 (3656.50) @:101 B@:0
-Recv:  T:216.17 /0.00 (262.38) B:47.06 /0.00 (3656.75) @:101 B@:0
-Recv:  T:217.55 /0.00 (255.75) B:46.99 /0.00 (3657.75) @:101 B@:0
-Recv:  T:219.04 /0.00 (248.63) B:46.91 /0.00 (3659.00) @:101 B@:0
-Recv:  T:220.84 /0.00 (240.63) B:46.86 /0.00 (3659.75) @:0 B@:0
-Recv:  T:223.09 /0.00 (231.63) B:46.72 /0.00 (3661.88) @:0 B@:0
-Recv:  T:224.44 /0.00 (226.25) B:46.62 /0.00 (3663.38) @:0 B@:0
-Recv:  T:225.22 /0.00 (223.13) B:46.50 /0.00 (3665.25) @:0 B@:0
-Recv:  T:225.78 /0.00 (220.88) B:46.44 /0.00 (3666.13) @:0 B@:0
-Recv:  T:225.19 /0.00 (223.25) B:46.28 /0.00 (3666.63) @:0 B@:0
-Recv:  T:224.50 /0.00 (226.00) B:46.24 /0.00 (3669.13) @:0 B@:0
-Recv:  T:223.53 /0.00 (229.88) B:46.16 /0.00 (3670.38) @:0 B@:0
-Recv:  T:222.34 /0.00 (234.63) B:46.08 /0.00 (3671.63) @:0 B@:0
-Recv:  T:220.34 /0.00 (242.63) B:46.00 /0.00 (3672.75) @:0 B@:0
-Recv:  bias: 101 d: 101 min: 214.48 max: 225.78 Ku: 22.76 Tu: 38.85
-Recv:  Classic PID
-Recv:  Kp: 13.65 Ki: 0.70 Kd: 66.31
-```
-As you can see looking at the first value "T:" which is the temperature of the extruder, it fluctuates around the desired 220°C, so the printer heats it up and let it cool down around the 220°C.  
-  
-You can see the process by looking at the temperature graph as shown below.  
-![PID tuning extruder](assets/images/pid-tune-extruder.png)
-
-After finishing the seven cycles, you'll receive a summarized output like the one below:  
-``` 
-Recv: PID Autotune finished! Put the last Kp, Ki and Kd constants from below into Configuration.h
-Recv: #define DEFAULT_Kp 20.84
-Recv: #define DEFAULT_Ki 1.86
-Recv: #define DEFAULT_Kd 58.26
-Recv: ok
-```
-You can see the values for P = Kp, I = Ki and D = Kd - these have to be sent to the printer.  
-To do so, we take the values from above and send the following `M301` command, the printer will answer with a "received" message:  
-```
-Send: M301 P20.84 I1.86 D58.26
-Recv: echo: p:20.84 i:1.86 d:58.26
-Recv: ok
-```
-Now we need to save everything by sending the `M500` command:
-```
-Send: M500 
-Recv: echo:Settings Stored (735 bytes; crc 9159)
-Recv: ok
-```
-That's it!  
-Congratulations, you just did the PID tuning for your extruder!
-    
----    
-    
-#### Bed PID Tuning
-Now you want to do the same for your heated bed, but you have to use a different command.  
-Because I use to print at a bed temperature of 60°C, I want to execute the PID tuning at that temperature also. Again it should be done seven times.  
-
-The belonging code is  
-`M303 E-1 S60 C7`
-where `M303` is the PID tune, `E-1` is the bed, `S60` is the temperature of 60°C and `C7` means seven cycles.  
-     
-Because you already know the steps now, I'll just write down the commands and answers from the printer:  
-```
-Send: M303 E-1 S60 C7
-Recv: PID Autotune start
-(...)
-Recv: PID Autotune finished! Put the last Kp, Ki and Kd constants from below into Configuration.h
-Recv: #define DEFAULT_bedKp 124.24
-Recv: #define DEFAULT_bedKi 21.69
-Recv: #define DEFAULT_bedKd 474.49
-Recv: ok
-(...)
-Send: M304 P124.24 I21.69 D474.49
-Recv: echo: p:124.24 i:21.69 d:474.49
-Recv: ok
-(...)
-Send: M500
-Recv: echo:Settings Stored (735 bytes; crc 54612)
-Recv: ok
-```
-That's it!  
-Congratulations, you just did the PID tuning for your bed!
-
-??? tip "Insulate The Bedplate"  
-
-    Insulating the bedplate with sufficient material has a great effect on the stability and the behaviour while heating up and cooling down. It'll minimize temperature fluctuations and saves electrical energy as well. Check out the section [Insulating the Bed](hardware/bed.md#insulating-the-bed) for further information.  
     
 ---
 
