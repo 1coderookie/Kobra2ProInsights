@@ -68,13 +68,14 @@ In the following I'll list the most crucial points.
 - Set up the frame correctly!  
   Means, check if the baseframe is mounted being square, if the the z-axis aluminum parts are really mounted perpendicular onto the baseframe and so on. **As everything else relies on this, the proper alignment of the frame is the most important step!**  
   So, once again: **Set up your frame and your axes. Everything should be square, perpendicular and equidistant.**  
-- Check the **[axes](hardware/axes.md)**!  
+- Check the axes!  
   Means, check the whole z-axis lead screw system for being assembled correctly and vertically aligned and that the timing belt is properly tensioned.
-  Make sure you cleaned the old sticky 'oil' (or whatever that nasty stuff should be) off from the lead screw and applied fresh grease, assemble the anti-backlash nut correctly and so on.  
-  Make sure that you have all wheels positioned correctly, that you don't have bad ball bearings which cause hiccups and irregular movements and that the belts of the x- and y-axis aren't too sloppy or too tight.  
+  Make sure the lead screws are lubed, that the anti-backlash nuts are installed correctly, that the coupler between the motorshaft and the lead screw is tight, that the pulleys are mounted tightly and so on.  
+  At the x- and y-axes, make sure that you have all wheels positioned correctly (neither too tight nor too loose), that you don't have bad bearings which cause hiccups and irregular movements and that the belts aren't sloppy or too tight.
+  So the best would be to go through the chapter ["Axes"](hardware/axes.md) and check all mentioned parts step by step.  
 - Check if everything moves smoothly while the printer is switched off!  
-  Means, *slowly* move the bed and the printhead manually across the whole range of motion and turn the lead screw by hand (across the whole range of motion as well) and check if you feel any unusual resistance in certain areas. alter the movement speeds then and see if everything still feels well.   
-  Parts being attached to the axes and running along them like the printhead and the bed shouldn't wiggle as well (never mind the top of the z-axis lead screw though - it's fine that it might wiggle a bit, as it isn't and shouldn't be fixated at the top).  
+  Means, *slowly* move the bed and the printhead manually across the whole range of motion and turn the lead screw by hand (across the whole range of motion as well) and check if you feel any unusual resistance in certain areas. Alter the movement speeds then and see if everything still feels well.   
+  Parts being attached to the axes and running along them like the printhead and the bed shouldn't wiggle as well.  
   When everything looks and feels good, you can move the bed, the printhead and the position of the x-axis gantry to about the middle of the range of motion, then turn on the printer and home all axes using the control unit to see if the endstops are working.
 
 ---
