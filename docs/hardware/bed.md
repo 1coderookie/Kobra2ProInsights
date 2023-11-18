@@ -7,7 +7,7 @@
 | **Bedplate**: 230x230mm, 3mm thick aluminum plate with PCB heating coil |
 | **Magnetic Foil**: 230x230mm |
 | **PEI Plate**: 230x230mm, spring steel, textured on one side |
-| **Thermistor**: 24V, 100k NTC "EPCOS" type, AWG22 wire, two pinned JST XH 2.54 connector |
+| **Thermistor**: 24V, 100k NTC "ATC Semitec 104GT-2" type, AWG22 wire, two pinned JST XH 2.54 connector |
 | **PCB Heating Coil**: 24V, ~180W, ~3.2Ohm resistance, AWG14 wire |
 | **Bedmount**: 7x14mm rigid spacers/bushings, 4x22mm countersunk head screws |
 | **Silicone Block**: 12x13mm, spring loaded |
@@ -83,7 +83,7 @@ Don't remove that piece of foam as it protects and insulates the thermistor of t
 
 ![Bed thermistor](../assets/images/bed_thermistor_web.jpeg)
 
-The thermistor is a 100k NTC type which is soldered onto the PCB.    
+The thermistor is a 100k NTC "ATC Semitec 104GT-2" type which is soldered onto the PCB.    
 
 ??? info "What Is A "100k NTC" Thermistor?"
 
