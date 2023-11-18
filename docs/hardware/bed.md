@@ -233,14 +233,16 @@ In the following picture you can see the two pin connector with the red and whit
 The sensor is spring loaded and should move up and down freely when being triggered.  
 Make sure that it does like that and that it pops up again by itself once being released after being held down.  
 
-GIF
+![Checking spring tension](../assets/images/Z-sensor_spring2.gif)  
 
 Sometimes it's necessary to adjust the sensor's spring tension to ensure it's working properly.  
 Read the violet expandable textbox below for some instructions about how to do so.  
 
 ??? example "How To Adjust The Sensor's Spring Tension"  
 
+    If you need to adjust the sensor's spring tension, you can do so by turning the belonging hex head screw.  
     ![Sensor screws](../assets/images/bed_K2Pro_z-sensor_screws_labeled_web.jpg)   
+    Turning it counter-clockwise decreases the tension, turning it clockwise increases the tension. When *increasing*, push the allen key slightly upwards while turning the screw.  
 
     
 
@@ -252,7 +254,7 @@ The height of the sensor's surface should be exactly the same height as the tops
 
 You can check if this is the case by placing a flat object (like one of those open ended wrenches that came with the printer) onto the build plate, let it stick out a bit so that it reaches above the sensor and then carefully move it across the sensor from the side as shown in the following GIF.  
 
-GIF  
+![Checking sensor height](../assets/images/Z-sensor_height.gif)   
 
 The following pictures show a perfectly adjusted height.  
 
@@ -294,9 +296,8 @@ In either case you need to adjust the sensor's height acordingly!
     - If the sensor was *too low*, it should now pop up and hit the tools's underside. Make sure this is the case and retighten the M2 hex screw again.  
     - If the sensor was *too high*, it's position changed due to the tool pressing it down. You can now retighten the M2 hex screw again.  
 
-    - *After you finished adjusting the sensor's height, check if the sensor still can move freely and if it now really has the perfect height.*  
+    - *After you finished adjusting the sensor's height, check again if the sensor still can move freely and if it now really has the perfect height.*  
 
-    GIF
     
 
 ??? info "Z-Offset Is Constantly Wrong"  
@@ -327,7 +328,7 @@ If rests of filament are stuck on it after the nozzle has been wiped, take them 
 ---
 
 ## ADXL Acceleration Sensor
-There's an ADXL acceleration sensor for measuring the vibrances. It's located at the rear side of the bed's underside, right where the z-offset sensor is located.   
+There's an ADXL acceleration sensor for measuring the vibrances installed at the rear side of the bed's underside, right where the z-offset sensor is located.   
 
 The following pictures show the underside view of the belonging area of the bed's underside.    
   
