@@ -242,7 +242,8 @@ Read the violet expandable textbox below for some instructions about how to do s
 
     If you need to adjust the sensor's spring tension, you can do so by turning the belonging hex head screw.  
     ![Sensor screws](../assets/images/bed_K2Pro_z-sensor_screws_labeled_web.jpg)   
-    Turning it counter-clockwise decreases the tension, turning it clockwise increases the tension. When *increasing*, push the allen key slightly upwards while turning the screw.  
+    Turning it counter-clockwise decreases the tension, turning it clockwise increases the tension.  
+    When *increasing* the tension (= turning it clockwise), push the allen key together with the screw slightly upwards while turning the screw.  
 
     
 
