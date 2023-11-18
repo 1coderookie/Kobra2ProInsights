@@ -132,6 +132,7 @@ start_y : 20
 line_length : 150.000000
 line_space : 5.000000
 step_distance : 0.01
+
 [tmc2209 stepper_x]
 tx_pin : PE4
 uart_pin : PE5
