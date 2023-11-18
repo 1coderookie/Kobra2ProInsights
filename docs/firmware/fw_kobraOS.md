@@ -36,6 +36,11 @@ There are two Klipper-specific config files that can be found:
 
 I won't share any of the files, but I'll quote the content of the two config files here in the following.
 
+??? info "Files For The Kobra 2 Plus & Max"  
+
+    Just in case you own a Kobra 2 Plus or Max, you can find the content of the belonging files quoted in expandable textboxes below.   
+
+
 ---
 
 ### Printer.cfg
@@ -337,7 +342,7 @@ extruder_target_temp : 230
 heater_bed_target_temp : 60
 ```
 
-??? info "Printer.cfg Of The Kobra 2 **Plus**"  
+??? info "Printer.cfg Of The Kobra 2 Plus"  
 
     ```
     []
@@ -606,7 +611,7 @@ heater_bed_target_temp : 60
     heater_bed_target_temp : 60
     ```
 
-??? info "Printer.cfg Of The Kobra 2 **Max**"  
+??? info "Printer.cfg Of The Kobra 2 Max"  
 
     ```
     []
@@ -890,7 +895,7 @@ target_spot_y : 243.800000
 z_offset_adjust : 0.25
 ```
 
-??? info "Unmodifiable.cfg For Kobra 2 **Plus**" 
+??? info "Unmodifiable.cfg Of The Kobra 2 Plus" 
 
     ```
     [auto_leveling]
@@ -900,7 +905,7 @@ z_offset_adjust : 0.25
     z_offset_adjust : 0.2
     ```
     
-??? info "Unmodifiable.cfg For Kobra 2 **Max**"  
+??? info "Unmodifiable.cfg Of The Kobra 2 Max"  
 
     ```
     []
