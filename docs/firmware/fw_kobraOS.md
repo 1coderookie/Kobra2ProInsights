@@ -22,7 +22,7 @@ To update the firmware of your printer locally using the file `update.swu`, copy
 The specific settings of the machine are -due to the fact that it's closed source now- 'unknown'.  
 However, now that the first `update.swu` file is available, it's possible to investigate that one.  
 
-??? info "Special Thanks To @[lpi](https://github.com/lpi)!"  
+??? info "Special Thanks To [lpi](https://github.com/lpi)!"  
 
     At this point I have to say a huge "Thank You!" to @[lpi](https://github.com/lpi) for providing the content of the `update.swu` file to me!  
     I won't share the files, but I'll quote the two config files here in the following.  
@@ -36,7 +36,7 @@ There are two Klipper-specific config files that can be found:
 
 I won't share any of the files, but I'll quote the content of the two config files here in the following.
 
-??? info "Files For The Kobra 2 Plus & Max"  
+??? info "Files Of The Kobra 2 Plus & Max"  
 
     Just in case you own a Kobra 2 Plus or Max, you can find the content of the belonging files quoted in expandable textboxes below.   
 
