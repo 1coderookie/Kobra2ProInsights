@@ -767,9 +767,11 @@ The rod which is driven by the belt then is mounted to a bearing block at the bo
 Both top ends of the rods are held in place by a bearing block at the top. At this end, right underneath the bearing block, a pulley is attached to both screws, which are then connected by a closed loop belt.  
 All these bearings where the lead screws sit in, the pulleys as well as the coupler to the motor are 5mm in diameter to take up the unthreaded part of the rods.
 
-In between it's guided and secured by a spring loaded POM anti-backlash nut which you can see at the following picture -  it's the black plastic part mounted to the black steel bracket.  
+In between the lead screws are guided by a spring loaded POM anti-backlash nut which is mounted to the x-axis gantry. When the lead screws turn, it the drives the x-axis gantry up and down accordingly.    
+
+In the following picture you can see the bottom part of the lead screw which is driven directly by the motor. From the bottom to the top you can see the motor, the coupler, a part of the lead screw and the anti-backlash nut which is mounted to the x-axis gantry.  
   
-![Z-axis views](../assets/images/z-axis_K2Pro_web.jpg)  
+![Z-axis views](../assets/images/axes_K2Pro_Z-setup_bottom_web.jpg)  
 
 !!! warning "Z-Axis Drives X-Axis Gantry"  
 
