@@ -988,14 +988,17 @@ The dimensions of the pulleys are 16mm OD / 5mm ID with 20 teeth.
 
 ### Anti-Backlash Nut
 The stock anti-backlash nut is made from plastic with POM in the inside where the lead screw runs along.  
-The nut is made out of two parts and is spring loaded.  
+The nut is made out of two parts which are spring loaded and it's mounted to the x-axis gantry as shown in the following picture.  
 
-(..add picture..)
+![Mounted nut](../assets/images/axes_ab-nut_mounted_web.jpg)  
 
-When receiving the machine and when dis-/mounting the lead screw, you need to make sure that you press both parts firmly together and hold them like that while screwing in the lead screw.  
+When receiving the machine and when dis-/mounting the lead screw, you need to make sure that the anit-backlash nut is installed being pressed together, so that the spring is loaded. The following pictures show you the unloaded anti-backlash nut and the nut being pressed together.    
 
-(..add picture..)
+| Nut with unloaded spring | Nut being pressed together |
+|:------------:|:----------------------:|
+| ![Unloaded](../assets/images/axes_ab-nut_web.jpg) | ![Loaded](../assets/images/axes_ab-nut_pressed-together_web.jpg) |
 
+So as you can see in the first picture of the mounted nut, it looks like it hasn't been pushed together while being installed. To be safe, it's advisable to take out the lead screw in this case, press the nut together and put the screw back in while holding the nut being pressed together.  
 
 ---
     
@@ -1064,6 +1067,8 @@ You can look out for Oldham Couplers with a 18mm mounting hole distance (often t
 ### Coupler
 The lead screw is mounted to the shaft of the z-axis motor with a rigid coupler.    
 The coupler is 5mm ID for taking the 5mm shaft of the motor and the 5mm shaft/unthreaded part of the lead screw.  
+
+![Coupler](../assets/images/axes_K2Pro_coupler_web.jpg)  
 
 ---
 
