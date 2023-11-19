@@ -553,24 +553,13 @@ The following picture shows the heatbreak (together with the PTFE inliner) being
      
     
 ---
-<!--  
 
-#### MOD: Different Heatbreak
+### MOD: Different Heatbreak
+You can swap out the stock heatbreak and use a bi-metal/full-metal one instead. Just get yourself one with the specific dimensions (M6 thread, 6mm OD throat, overall length 26mm).  
+You can search for a bi-metal heatbreak which is compatible for the *Vyper*, as that one has the same dimensions (as soon as mine will arrive, I'll add a picture of it here..).    
 
-The following picture shows two heatbreaks next to the stock one from third party manufacturers which I use in my **Neos**.  
-The steel one is about 27mm long, the copper bi-metal one is about 27.5mm long (overall).      
+*Mind that you'd have to change the stock nozzle to true Volcano-type nozzles then though!*
 
-![3 heatbreaks](../assets/images/head_neo_3heatbreaks_web.jpg)
-
-![3 heatbreaks top view](../assets/images/head_neo_3heatbreaks_top_web.jpg)
-
-![3 heatbreaks bottom view](../assets/images/head_neo_3heatbreaks_bottom_web.jpg)
-
-!!! warning "Adjust The Position Of The Part Cooling Fan Duct (Outlet)"  
-
-    If you're going to use a heatbreak which is longer than the stock one, pay attention to the part cooling fan duct / fan duct outlet. As the whole hotend setup will be slightly longer and the nozzle will be positioned a bit lower, you need to adjust the position of the fan duct (outlet), so that it doesn't point the airstream onto the nozzle, but onto the printed part.  
-    As the fan duct models being available at Thingiverse, Printables etc are made for the stock setup, you'll have to modify the design, so that the outlet will come lower.  
-    I did this for two models, but as I want to finetune that a bit and don't have an account there yet, I didn't put those modified version online yet. Once I did that, I'll link to them, so that you can just print them without the need of extra modification.  
 
 !!! warning "Lower Your Retraction Distance When Using A Bi-Metal/All-Metal Heatbreak"
 
@@ -583,7 +572,7 @@ The steel one is about 27mm long, the copper bi-metal one is about 27.5mm long (
     If you've changed the PTFE tube to a Capricorn one, then you still can print PETG, as those Capricorn tubes can take slightly higher temperatures than the cheap ones. 
 
 ---
--->  
+
 
 ## PTFE Tube  
 There are two PTFE tubes located at this machine:  
