@@ -817,7 +817,7 @@ In the following picture you can see the bottom part of the lead screw which is 
 ---
 
 ### Lead Screws  
-The lead screws have 8mm in diameter with 8mm lead ('distance' of one complete rotation), 2mm pitch and 4 starts and has a length of 350mm.  
+The lead screws are T8x8 type of lead screws, means they are 8mm in diameter with 8mm lead ('distance' of one complete rotation), 2mm pitch and 4 starts. The total length is 350mm.  
 At the bottom part of the lead screw there's a 10mm long unthreaded part and at the top this part is ~23mm long, the outer diameter of these shafts is 5mm. Means, you can *not* just get one of those typical lead screws which have the thread going all along the whole length of the rod if you need a replacement!   
 
 The following picture shows the unthreaded part at the bottom which is 10mm long - the part at the top is ~23mm long.  
@@ -1002,7 +1002,7 @@ So as you can see in the first picture of the mounted nut, it looks like it hasn
 
 ---
     
-#### MOD: Changing The Anti-Backlash Nut  
+#### MOD: Different Anti-Backlash Nut  
 
 If the anti-backlash nut that came with the printer is worn out like shown in the picture below, you should look out for a new one.   
     
@@ -1030,37 +1030,6 @@ If you installed a regular nut like in the picture shown below instead of an ant
 
     You might have seen installations where the spring loaded anti-backlash nuts were mounted upwards, so that the nut is mounted to the topside of the bracket and the spring part is facing upwards. (..add explanation..)  (..add picture..)
 
----        
-    
-#### MOD: Add An Oldham Coupler
-    
-I highly recommend adding a so called "Oldham Coupler". An Oldham Coupler is made out of three individual parts and it allows horizontal movement of the lead screw which avoids jamming, stuttering or banding caused by the z-axis not being perfectly aligned vertically.  
-
-The following picture shows an assembled Oldham Coupler at the left side. The one at the right side isn't completely taken apart, I just moved the parts for illustrating how it looks and works.  
-
-![Oldham coupler](../assets/images/axes_oldhamcoupler_web.jpg)  
-    
-!!! warning "An Oldham Coupler Is Additional Part"  
-
-    *An Oldham Coupler needs to be mounted between the bracket which holds the anti-backlash nut and the anti-backlash nut itself. So it's ***not replacing*** any part, it's an addition to the whole setup!*  
-
-    (..add pic..)  
-    
-You can look out for Oldham Couplers with a 18mm mounting hole distance (often they're advertised for being compatible with a Creality Ender 3) - BUT you'd have to swap out the stock anti-backlash nut and use one of the 'regular' spring loaded anti-backlash nuts with 18mm hole distance as the ones mentioned and shown in the expandable textbox "Changing The Anti-Backlash Nut" above (as the stock nut has 20mm distance between the holes which obviously doesn't match the 18mm of the Oldham Coupler).  
-
-??? note "Lubricate The Oldham Coupler"  
-
-    As the Oldham Coupler is made out of three individual brass parts which glide along each other, you should add a bit of lubrification on the parts surfaces. You can use PTFE grease like "Super Lube" to do so.  
-
-??? info "Upwards Or Downwards?"  
-
-    You might have seen installations where the Oldham Coupler together with the loaded anti-backlash nuts were mounted upwards, so that the parts are mounted to the topside of the bracket. (..add explanation..)  (..add picture..)
-
-??? info "Additional Backlash?!"
-
-    An Oldham Coupler does add a little bit of backlash to the system, due to the fact that there needs to be a litte bit of clearance between the individual parts of the Oldham Coupler to make it work. This usually isn't a problem though and the benefits of an Oldham Coupler surely make this unwanted effect up.  
-
-
 
 ---
 
@@ -1073,7 +1042,7 @@ The coupler is 5mm ID for taking the 5mm shaft of the motor and the 5mm shaft/un
 ---
 
   
-#### MOD: Changing The Coupler
+#### MOD: Different Coupler
 
 !!! warning "Important Note"  
 
@@ -1095,14 +1064,14 @@ Besides that, using a clamp mechanism makes sure that the shaft and the lead scr
 
 ---
 
-##### Spider Coupler  
+##### MOD: Spider Coupler  
 Spider couplers are made out of two metal parts with an elastic part in between as you can see at the following picture.  
 
 ![Spider coupler](../assets/images/axes_spider-coupler_web.jpg)
 
 ---
 
-##### Spring(y) Coupler
+##### MOD: Spring(y) Coupler
 The next picture shows the type of coupler you probably com earound instantly when searching for "flex coupler" - I call it "spring(y) coupler" as it's shaped like a spring and it actually behaves like one as well.   
         
 ![Flex coupler](../assets/images/axes_flexcoupler_web.jpg)   
@@ -1121,7 +1090,7 @@ Additionally, I also added a nylon washer of the correct thickness underneath th
 
 ---
 
-##### Diaphragm Coupler 
+##### MOD: Diaphragm Coupler 
 
 There's also another type of coupler available, the so called "Diaphragm Coupling".  This one is bigger and is supposed to compensate misalignments even better.  
 However, it seems like that some additional dampening occurs, which usually isn't adviseable for the z-axis (there are motor dampeners available on the market which you mount between the motors and the frame to dampen vibrations - those ones shouldn't be added to the z-axis motor though), but I personally didn't use this type yet, so I can't really say anything further about it.  
@@ -1193,7 +1162,43 @@ The probe acts as a virtual endstop.
       
 ---
 
-### Z-Axis System: Maintenance   
+### Further MODs  
+In the following I'll list some further which I find recommendable or other common modifications I might come across. 
+
+---        
+    
+#### MOD: Add An Oldham Coupler
+    
+I'd recommend adding a so called "Oldham Coupler". An Oldham Coupler is made out of three individual parts and it allows horizontal movement of the lead screw which avoids jamming, stuttering or banding caused by the z-axis not being perfectly aligned vertically.  
+
+The following picture shows an assembled Oldham Coupler at the left side. The one at the right side isn't completely taken apart, I just moved the parts for illustrating how it looks and works.  
+
+![Oldham coupler](../assets/images/axes_oldhamcoupler_web.jpg)  
+    
+!!! warning "An Oldham Coupler Is Additional Part"  
+
+    *An Oldham Coupler needs to be mounted between the bracket which holds the anti-backlash nut and the anti-backlash nut itself. So it's ***not replacing*** any part, it's an addition to the whole setup!*  
+
+    (..add pic..)  
+    
+You can look out for Oldham Couplers with a 18mm mounting hole distance (often they're advertised for being compatible with a Creality Ender 3) - BUT you'd have to swap out the stock anti-backlash nut and use one of the 'regular' spring loaded anti-backlash nuts with 18mm hole distance as the ones mentioned and shown in the expandable textbox "Changing The Anti-Backlash Nut" above (as the stock nut has 20mm distance between the holes which obviously doesn't match the 18mm of the Oldham Coupler).  
+
+??? note "Lubricate The Oldham Coupler"  
+
+    As the Oldham Coupler is made out of three individual brass parts which glide along each other, you should add a bit of lubrification on the parts surfaces. You can use PTFE grease like "Super Lube" to do so.  
+
+??? info "Upwards Or Downwards?"  
+
+    You might have seen installations where the Oldham Coupler together with the loaded anti-backlash nuts were mounted upwards, so that the parts are mounted to the topside of the bracket. (..add explanation..)  (..add picture..)
+
+??? info "Additional Backlash?!"
+
+    An Oldham Coupler does add a little bit of backlash to the system, due to the fact that there needs to be a litte bit of clearance between the individual parts of the Oldham Coupler to make it work. This usually isn't a problem though and the benefits of an Oldham Coupler surely make this unwanted effect up.  
+
+
+---
+
+### Maintenance   
 
 Maintenance of the whole z-axis system (means, the whole lead screw setup *and* the belonging parts of the x-axis gantry) is crucial for a well operating printer.  
 Especially the initial cleaning (getting rid of the old and sticky 'oil') and lubrification plus the necessary vertical alignment of the lead screw system is *really* important!  
