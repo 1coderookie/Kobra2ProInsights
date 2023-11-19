@@ -48,11 +48,9 @@ This is the repo where you can find all the necessary information: [RPi-Zero-W-W
     By doing so, you make sure that neither the RPi nor the mainboard will draw power through the USB-C connector from the other device. If you don't do so, it can harm your mainboard as well as your computer.  
     
     As it's an fast and easy solution, you can get a device called "USB power blocker" for a few bucks. Attention: make sure to *not* get a "USB *data* blocker" though, it *has* to be a *power* blocker!  
-    This device will then be plugged between the USB connector of the computer and the actual USB-C cable. It still allows data to be transferred, but the 5V line isn't existent. The following pictures show such a device and how it's installed.  
+    This device will then be plugged between the USB connector of the computer and the actual USB-C cable. It still allows data to be transferred, but the 5V line isn't existent. The following picture shows such a device - it's just plugged in between the printer's USB and the USB cable.  
 
     ![USB power blocker](../assets/images/USB_powerblocker_web.jpg)  
-
-    ![USB power blocker installed](../assets/images/USB_powerblocker_2_web.jpg)  
 
     However, you don't *have* to spend money on this item, as there are other ways to interrupt the 5V power line.  
     For example, you can cut the 5V wire of your USB cable, you can solder a male and a female USB connector onto a little PCB and avoid making the 5V line connection.  
