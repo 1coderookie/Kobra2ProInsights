@@ -769,7 +769,7 @@ All these bearings where the lead screws sit in, the pulleys as well as the coup
 
 In between the lead screws are guided by a spring loaded POM anti-backlash nut which is mounted to the x-axis gantry. When the lead screws turn, it the drives the x-axis gantry up and down accordingly.    
 
-In the following picture you can see the bottom part of the lead screw which is driven directly by the motor. From the bottom to the top you can see the motor, the coupler, a part of the lead screw and the anti-backlash nut which is mounted to the x-axis gantry.  
+In the following picture you can see the bottom part of the lead screw which is driven directly by the motor. From the bottom to the top you can see the motor being mounted to the rail of the z-axis frame, the coupler which connects the shaft of the motor and the lead screw, a part of the lead screw and the anti-backlash nut which is mounted to the x-axis gantry.  
   
 ![Z-axis views](../assets/images/axes_K2Pro_Z-setup_bottom_web.jpg)  
 
