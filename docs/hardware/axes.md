@@ -5,10 +5,12 @@
 
 | Specifications |
 |:---------------|
-| **X- & Y-Axis Belt**: GT-2, 8mm width, length between crimped ends ~??mm |
-| **X- & Y-Axis Belt Tensioner Pulley**: 16mm OD / 3mm ID / 20 teeth (for 8mm wide belt) | 
+| **X-Axis Belt**: GT-2, 6mm width, length between crimped ends ~??mm |
+| **X-Axis Belt Tensioner Pulley**: 16mm OD / 3mm ID / 20 teeth (for 6mm wide belt) (--> need to check specs again!) | 
+| **Y-Axis Belt**: GT-2, 8mm width, length between crimped ends ~??mm |
+| **Y-Axis Belt Tensioner Pulley**: 16mm OD / 3mm ID / 20 teeth (for 8mm wide belt) (--> need to check specs again!) |
 | **X- & Y-Axis Metal Wheels**: SG15 bearings |
-| **X-Axis Motor**: 42x34 Nema17, 1.8°, 200 steps, 5mm shaft with 16 OD / 5mm ID / 20 teeth pulley attached (for 8mm wide belt) |
+| **X-Axis Motor**: 42x34 Nema17, 1.8°, 200 steps, 5mm shaft with 16 OD / 5mm ID / 20 teeth pulley attached (for 6mm wide belt) |
 | **Y-Axis Motor**: 42x48 Nema17, 1.8°, 200 steps, 5mm shaft with 16 OD / 5mm ID / 20 teeth pulley attached (for 8mm wide belt) |
 | **Z-Axis Lead Screws**: T8x8 (8mm diameter, 8mm lead, 2mm pitch, 4 starts), 350mm length, 10mm and ~23mm unthreaded 5mm OD shaft, belt-driven dual z  |
 | **Z-Axis Timing Belt**: GT-2, 6mm width, closed loop, length ??mm |
