@@ -359,9 +359,12 @@ The heatsink/coldend cooling fan being used is a 24V, 0.08A, 30x30x10mm, model "
 The assembled hotend is shown in the following picture.  
   
 ![Hotend](../assets/images/head_K2Pro_hotend_web.jpg)  
-    
+
+!!! warning "Stock Setup NOT Comaptible With Regular Volcano Nozzles!"  
+
+    I added warnings and notes about this in the belonging sections (heatbreak & nozzle), but I already wanna give you a clear warning here: if you want to get yourself true Volcano-style nozzles, you *have* to change the heatbreak as well! The stock heatbreak is NOT compatible with true Volcano-style nozzles!
   
-!!! warning
+!!! warning "General Advices"
 
     - Too high temperatures may harm the PTFE tube - it may become deformed!   
     - If you dismounted the hotend and you put it back into the printhead, make sure you check and adjust the position of the ABL sensor in relation to the nozzle and that you check and set your new z-offset afterwards!  
@@ -511,21 +514,10 @@ The following picture shows the heatbreak (together with the PTFE inliner) being
 
 ![Stock heatbreak](../assets/images/head_K2Pro_hotend_PTFE-inliner-assembled_web.jpg)
 
-??? warning "Probably Incompatible With True Volcano Nozzles"  
+!!! warning "Incompatible With True Volcano Nozzles"  
 
-    It is said that the stock heatbreak is **not** compatible with regular E3D Volcano type nozzles!  
-    However, looking at the design of it, it actually seems to be the same heatbreak like the one being used at e.g. the Kobra Go. It has a ~4mm bore over the whole length where the PTFE tube runs down to hot the end of the nozzle's throat.  
-    This works fine with e.g. the Kobra Go, but one has to pay attention that the PTFE tube really sits flush against the nozzle's end.  
-    Here at the Kobra 2 Pro we have the specific design of the nozzle with the end of the nozzle's throat being thinner than the rest of the threaded part. The following picture shows a close-up view of the throat's end - on the left side you see the stock one, on the right side you see an original E3D Volcano one.  
-    ![Stock vs Volcano throat](../assests/images/head_K2Pro_nozzle-throat-ending_web.jpg)  
-    Means, that area sticks into the heatbreak where then the PTFE tube hits the end of the nozzle.  
-    
-    So *imho* this is the only difference and I don't see a reason yet why this heatbreak shouldn't work with regular Volcano nozzles like it works with regular V5 nozzles at the beforementioned Kobra Go.  
-    
-    *Attention:*  
-    You'd have to cut a new and **longer** piece of PTFE tube for the inliner if trying this, as the Volcano nozzle won't slip into the beatbreak and therefore the PTFE inliner needs to be longer!    
-    
-    *I have to verify this though, so until now it's just an assumption!*  
+    If you want to use true Volcano-style nozzles instead of the proprietary stock Volcano-like nozzle, you also have to change the heatbreak! The stock heatbreak is NOT comaptible with regular Volcano-like nozzles!  
+    (pictures to add)
 
 ??? info "Spare Part Heatbreak"
 
@@ -533,6 +525,8 @@ The following picture shows the heatbreak (together with the PTFE inliner) being
     It should be of the same length as the stock one, so don't buy anything significantly shorter or longer.  
     Same goes for the outer dimensions of the throat - that has to be 6mm in diameter. Make sure to pay attention to the surface of that throat - that should be even and smooth, so don't get yourself the ones with the thread on the outside which you would have to screw into an according heater block.  
     Of course the threaded part that goes into the heater block has to be M6 as well, but that's common.     
+    You can look out for heatbreaks which are being advertised to fit the Anycubic Vyper - those ones fit perfectly.  
+    (add picture)
 
     However, you'll most likely only find bi-metal or full-metal heatbreaks. If you're *only* printing PLA, this might cause some issues. Anyway, when using a bi-metal/all-metal hotend, you usually should lower the retraction *distance* setting! 
 
@@ -558,7 +552,7 @@ The following picture shows the heatbreak (together with the PTFE inliner) being
 You can swap out the stock heatbreak and use a bi-metal/full-metal one instead. Just get yourself one with the specific dimensions (M6 thread, 6mm OD throat, overall length 26mm).  
 You can search for a bi-metal heatbreak which is compatible for the *Vyper*, as that one has the same dimensions (as soon as mine will arrive, I'll add a picture of it here..).    
 
-*Mind that you'd have to change the stock nozzle to true Volcano-type nozzles then though!*
+*Mind that you'd have to change the stock nozzle to true Volcano-type nozzles then as well though!*
 
 
 !!! warning "Lower Your Retraction Distance When Using A Bi-Metal/All-Metal Heatbreak"
@@ -975,21 +969,9 @@ Anycubic ships the printheads with a *proprietary* Volcano-like brass nozzle (0.
 
 ![Anycubic's proprietary Volcano-like nozzle](../assets/images/head_K2Pro_nozzle-stock_web.jpg)  
 
-??? warning "Probably Incompatible With True Volcano Nozzles"  
+!!! warning "Incompatible With True Volcano Nozzles"  
 
-    It is said that the stock heatbreak is **not** compatible with regular E3D Volcano type nozzles!  
-    However, looking at the design of it, it actually seems to be the same heatbreak like the one being used at e.g. the Kobra Go. It has a ~4mm bore over the whole length where the PTFE tube runs down to hot the end of the nozzle's throat.  
-    This works fine with e.g. the Kobra Go, but one has to pay attention that the PTFE tube really sits flush against the nozzle's end.  
-    Here at the Kobra 2 Pro we have the specific design of the nozzle with the end of the nozzle's throat being thinner than the rest of the threaded part. The following picture shows a close-up view of the throat's end - on the left side you see the stock one, on the right side you see an original E3D Volcano one.  
-    ![Stock vs Volcano throat](../assests/images/head_K2Pro_nozzle-throat-ending_web.jpg) 
-    Means, that area of the specific nozzle made by Anycubic sticks into the heatbreak where then the PTFE tube hits the end of the nozzle.  
-    
-    So *imho* this is the only difference and I don't see a reason yet why this heatbreak shouldn't work with regular Volcano nozzles like it works with regular V5 nozzles at the beforementioned Kobra Go.  
-
-    *Attention:*  
-    You'd have to cut a new and **longer** piece of PTFE tube for the inliner if trying this, as the Volcano nozzle won't slip into the beatbreak and therefore the PTFE inliner needs to be longer!  
-    
-    *I have to verify this though, so until now it's just an assumption!*    
+    The stock nozzle and heatbreak Anycubic is using is NOT comaptible with true Volcano-style nozzles. So if you want to use regular Volcano nozzles, you also HAVE to swap out the stock heatbreak and get yourself a different one!   
     
     
 ??? info "About Nozzles In General" 
@@ -1017,6 +999,10 @@ Anycubic ships the printheads with a *proprietary* Volcano-like brass nozzle (0.
 
 If you need to replace the nozzle, you either have to buy spare part nozzles directly from Anycubic or find a 3rd party seller who sells these specific nozzles. These ones can often be found much cheaper than the ones from Anycubic while the quality might be comparable. If you search for these kind of specific stock nozzles, you can search for e.g. "Anycubic Kobra 2 nozzle", as the same type of proprietary nozzle is being used in the regular Kobra 2 and the other models of the Kobra 2 line (like the Kobra 2 Neo, Plus and Max).  
 
+Anycubic only sells 0.4mm nozzles and also in the `printer.cfg` the nozzle size is set to 0.4mm.  
+However, there are 3rd party manufacturers though who already offer this specific nozzle design in different sizes.  
+*If you're going to use a different size than 0.4mm, make sure to set the according nozzle size in your slicer then!*
+
 ---
 
 ### MOD: Volcano Nozzle  
@@ -1025,21 +1011,9 @@ At the time of writing this, the specific type of the stock nozzles are only ava
 I didn't come across e.g. different nozzle sizes like 0.6mm, hardened steel nozzles or even CHT high flow nozzles with this particular throat design.  
 So you might want to change your setup for being able to use regular Volcano type nozzles.  
 
-??? warning "Probably Incompatible With True Volcano Nozzles"  
+!!! warning "Incompatible With True Volcano Nozzles"  
 
-    It is said that the stock heatbreak is **not** compatible with regular E3D Volcano type nozzles!  
-    However, looking at the design of it, it actually seems to be the same heatbreak like the one being used at e.g. the Kobra Go. It has a ~4mm bore over the whole length where the PTFE tube runs down to hot the end of the nozzle's throat.  
-    This works fine with e.g. the Kobra Go, but one has to pay attention that the PTFE tube really sits flush against the nozzle's end.  
-    Here at the Kobra 2 Pro we have the specific design of the nozzle with the end of the nozzle's throat being thinner than the rest of the threaded part. The following picture shows a close-up view of the throat's end - on the left side you see the stock one, on the right side you see an original E3D Volcano one.  
-    ![Stock vs Volcano throat](../assests/images/head_K2Pro_nozzle-throat-ending_web.jpg) 
-    Means, that area of the specific nozzle made by Anycubic sticks into the heatbreak where then the PTFE tube hits the end of the nozzle.  
-    
-    So *imho* this is the only difference and I don't see a reason yet why this heatbreak shouldn't work with regular Volcano nozzles like it works with regular V5 nozzles at the beforementioned Kobra Go.  
-
-    *Attention:*  
-    You'd have to cut a new and **longer** piece of PTFE tube for the inliner if trying this, as the Volcano nozzle won't slip into the beatbreak and therefore the PTFE inliner needs to be longer!  
-    
-    *I have to verify this though, so until now it's just an assumption!* 
+    The stock nozzle and heatbreak Anycubic is using is NOT comaptible with true Volcano-style nozzles. So if you want to use regular Volcano nozzles, you also HAVE to swap out the stock heatbreak and get yourself a different one!  
 
 The following picture shows the stock nozzle with the specific design of the throat's end at the left side and a regular E3D Volcano nozzle at the right side.  
 
