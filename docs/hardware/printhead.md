@@ -532,7 +532,7 @@ When screwed together inside of the heater block, both parts fit perfectly.
 
     If you want to use true Volcano-style nozzles instead of the proprietary stock Volcano-like nozzle, you also have to change the heatbreak! The stock heatbreak is NOT comaptible with regular Volcano-like nozzles as the following pictures show!  
 
-    ![Stock vs bimetal](../assets/images/head_K2Pro_stock-vs-bimetal-heatbreak2_web.jpg)
+    ![Stock vs bimetal](../assets/images/head_K2Pro_stock-vs-bimetal-heatbreak2_web.jpg)  
     ![Stock vs bimetal](../assets/images/head_K2Pro_stock-vs-bimetal-setup_web.jpg)
 
     
