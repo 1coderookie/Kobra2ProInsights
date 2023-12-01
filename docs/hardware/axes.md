@@ -5,9 +5,9 @@
 
 | Specifications |
 |:---------------|
-| **X-Axis Belt**: GT-2, 6mm width, length between crimped ends ~??mm |
+| **X-Axis Belt**: GT-2, 6mm width, ~790mm total length |
 | **X-Axis Belt Tensioner Pulley**: 16mm OD / 3mm ID / 20 teeth (for 6mm wide belt) (--> need to check specs again!) | 
-| **Y-Axis Belt**: GT-2, 8mm width, length between crimped ends ~??mm |
+| **Y-Axis Belt**: GT-2, 8mm width, ~770mm total length |
 | **Y-Axis Belt Tensioner Pulley**: 16mm OD / 3mm ID / 20 teeth (for 8mm wide belt) (--> need to check specs again!) |
 | **X- & Y-Axis Linear Rail System**: SG15 bearings, chrome-plated stainless steel rods, ??mm OD (--> need to check specs again!) |
 | **X-Axis Motor**: 42x34 Nema17, 1.8°, 200 steps, 5mm shaft with 16 OD / 5mm ID / 20 teeth pulley attached (for 6mm wide belt) |
