@@ -508,26 +508,44 @@ To fit the Volcano style heater block, it has an M6 thread.
 The inner diameter is about 4.2mm to take the PTFE tube.  
 The length measured from the top until the 'stop ring' before the thread is about 18mm and the length in total is about 26mm.  
 
-As this isn't a bi-metal/full metal heatbreak, there is a little PTFE tube (aka "inliner") inside of it which goes all the way down to the nozzle, which is about 41mm long and 4mm thick with a 2mm hole inside of it to guide the 1.75mm filament.  
+![Stock heatbreak](../assets/images/head_K2Pro_stock-heatbreak1_web.jpg)  
 
+As this isn't a bi-metal/full metal heatbreak, there is a little PTFE tube (aka "inliner") inside of it which goes all the way down to the nozzle, which is about 41mm long and 4mm thick with a 2mm hole inside of it to guide the 1.75mm filament.  
 The following picture shows the heatbreak (together with the PTFE inliner) being screwed into the heater block.  
 
-![Stock heatbreak](../assets/images/head_K2Pro_hotend_PTFE-inliner-assembled_web.jpg)
+![Stock heatbreak](../assets/images/head_K2Pro_hotend_PTFE-inliner-assembled_web.jpg)  
+
+What's special about this stock heatbreak is the specific shape of the throat's end as you can see in the followng picture.  
+
+![Stock heatbreak throat](../assets/images/head_K2Pro_stock-heatbreak2_web.jpg)  
+
+As you can see, there's a cylindrical recess to take the corresponding part of the stock nozzle.  
+
+![Special shape](../assets/images/head_K2Pro_stock-nozzleheatbreak_web.jpg)  
+
+When screwed together inside of the heater block, both parts fit perfectly.  
+
+![Stock fits](../assets/images/head_K2Pro_stock-nozzleheatbreak_fits_web.jpg)
+
 
 !!! warning "Incompatible With True Volcano Nozzles"  
 
-    If you want to use true Volcano-style nozzles instead of the proprietary stock Volcano-like nozzle, you also have to change the heatbreak! The stock heatbreak is NOT comaptible with regular Volcano-like nozzles!  
-    (pictures to add)
+    If you want to use true Volcano-style nozzles instead of the proprietary stock Volcano-like nozzle, you also have to change the heatbreak! The stock heatbreak is NOT comaptible with regular Volcano-like nozzles as the following pictures show!  
 
+    ![Stock vs bimetal](../assets/images/head_K2Pro_stock-vs-bimetal-heatbreak2_web.jpg)
+    ![Stock vs bimetal](../assets/images/head_K2Pro_stock-vs-bimetal-setup_web.jpg)
+
+    
 ??? info "Spare Part Heatbreak"
 
     If you need a new heatbreak, you should be able to use whichever heatbreak you'd like to use, you just have to *pay attention to the dimensions*.  
     It should be of the same length as the stock one, so don't buy anything significantly shorter or longer.  
     Same goes for the outer dimensions of the throat - that has to be 6mm in diameter. Make sure to pay attention to the surface of that throat - that should be even and smooth, so don't get yourself the ones with the thread on the outside which you would have to screw into an according heater block.  
-    Of course the threaded part that goes into the heater block has to be M6 as well, but that's common.     
-    You can look out for heatbreaks which are being advertised to fit the Anycubic Vyper - those ones fit perfectly.  
-    (add picture)
+    Of course the threaded part that goes into the heater block has to be M6 as well.     
+    You can look out for heatbreaks which are being advertised to fit the Anycubic Vyper - those ones fit perfectly. The following picture shows a bimetal heatbreak being advertised to fit the Vyper and the stock heatbreak.    
 
+    ![Spare](../assets/images/head_K2Pro_stock-vs-bimetal-heatbreak_web.jpg)
+    
     However, you'll most likely only find bi-metal or full-metal heatbreaks. If you're *only* printing PLA, this might cause some issues. Anyway, when using a bi-metal/all-metal hotend, you usually should lower the retraction *distance* setting! 
 
 ??? example "Dismounting The Heatbreak"  
@@ -550,17 +568,30 @@ The following picture shows the heatbreak (together with the PTFE inliner) being
 
 ### MOD: Different Heatbreak
 You can swap out the stock heatbreak and use a bi-metal/full-metal one instead. Just get yourself one with the specific dimensions (M6 thread, 6mm OD throat, overall length 26mm).  
-You can search for a bi-metal heatbreak which is compatible for the *Vyper*, as that one has the same dimensions (as soon as mine will arrive, I'll add a picture of it here..).    
+You can search for a bi-metal heatbreak which is compatible for the *Vyper*, as that one has the same dimensions as the folloing picture shows.  
 
-*Mind that you'd have to change the stock nozzle to true Volcano-type nozzles then as well though!*
+![Spare](../assets/images/head_K2Pro_stock-vs-bimetal-heatbreak_web.jpg)  
+![Spare](../assets/images/head_K2Pro_bimetal-heatbreak2_web.jpg)  
 
 
-!!! warning "Lower Your Retraction Distance When Using A Bi-Metal/All-Metal Heatbreak"
+!!! warning "Only Compatible With 'True' Volcano-type Nozzle!"  
+
+    ***Mind that you'd have to change the stock nozzle to true Volcano-type nozzles as well, as the end of the heatbreak's throat is shaped different than the one of the stock heatbreak as you can clearly see at the following pictures!***  
+
+    ![Stock vs bimetal](../assets/images/head_K2Pro_stock-vs-bimetal-heatbreak2_web.jpg)
+    ![Stock vs bimetal](../assets/images/head_K2Pro_stock-vs-bimetal-setup_web.jpg)
+
+    The following pictures show how these 'regular Volcano-type' heatbreak and nozzle touch each other perfectly when being installed in the heater block.  
+    ![Both parts](../assets/images/head_K2Pro_bimetal-nozzleheatbreak_web.jpg)
+    ![Fits](../assets/images/head_K2Pro_bimetal-nozzleheatbreak_fits_web.jpg)
+
+
+??? warning "Lower Your Retraction Distance When Using A Bi-Metal/All-Metal Heatbreak"
 
     When using a bi-metal/all-metal heatbreak, keep an eye on your retraction distance setting. Generally speaking, you should decrease/lower that value.
      
 
-!!! warning "Bi-Metal/All-Metal Heatbreak And PLA"
+??? warning "Bi-Metal/All-Metal Heatbreak And PLA"
 
     When using a bi-metal or all-metal heatbreak, it may cause and increase clogging problems when printing PLA. So up to me always go with a heatbreak that uses a PTFE inliner all the way down to the nozzle in case you're only or mostly printing PLA.  
     If you've changed the PTFE tube to a Capricorn one, then you still can print PETG, as those Capricorn tubes can take slightly higher temperatures than the cheap ones. 
@@ -645,9 +676,11 @@ The following picture shows one of the spare PTFE inliner tubes which come with 
   
 ## Heater Block
 The machine uses a Volcano-style heater block.  
-Both the thermistor and the cartidge heater have to be plugged into the specific holes and should be fixed with at tiny grub screw (HEX 1.5).  
+Both the thermistor and the cartidge heater have to be plugged into the specific holes and fixated with the according screws.  
   
-![Heater block](../assets/images/head_K2Pro_block-screws-close_web.jpg)  
+| Heater block top/side | Heater block side | Heater block top |
+|:---------------:|:---------:|:-----------:|
+| ![Heater block top/side](../assets/images/head_K2Pro_block1_web.jpg) | ![Heater block side](../assets/images/head_K2Pro_block3_web.jpg) | ![Heater block top](../assets/images/head_K2Pro_block2_web.jpg) |    
 
 ??? danger "Check The Screws From Time To Time"
 
@@ -658,7 +691,6 @@ Both the thermistor and the cartidge heater have to be plugged into the specific
     ![Slipped out cartridge heater](../assets/images/head_glowing-cartridge_web.jpg)  
 
 
----
 <!--
 ### MOD: Different Heater Block
 
@@ -707,6 +739,8 @@ The thermistor which is used is a capsuled 100k NTC "EPCOS 100K B57560G104F" typ
 The diameter is 3mm, the length is about 5.5mm. It comes with a short wiring and the specific connector (JST PH 2.0 (?)) attached.  
 
 The following picture shows the stock thermistor being used.  
+
+![Stock thermistor](../assets/images/head_K2Pro_thermistor-complete_web.jpg)  
 
 ![Stock thermistor](../assets/images/head_K2Pro_thermistor_web.jpg)  
 
@@ -844,6 +878,8 @@ The cartidge heater which is used is a **24V 60W** element.
 The diameter is 6mm, the length of the original part is about 18mm. The stock part comes with a short wiring and the specific connector attached.    
 
 The following picture shows the stock cartridge heater being used.  
+
+![Stock cartridge heater](../assets/images/head_K2Pro_cart-heater-complete_web.jpg)  
 
 ![Stock catridge heater](../assets/images/head_K2Pro_cartridge-heater_solo_web.jpg)
 
@@ -1013,7 +1049,8 @@ So you might want to change your setup for being able to use regular Volcano typ
 
 !!! warning "Incompatible With True Volcano Nozzles"  
 
-    The stock nozzle and heatbreak Anycubic is using is NOT comaptible with true Volcano-style nozzles. So if you want to use regular Volcano nozzles, you also HAVE to swap out the stock heatbreak and get yourself a different one!  
+    **Both the stock nozzle and heatbreak Anycubic is using are NOT comaptible with true Volcano-type nozzles! So if you want to use regular Volcano nozzles, you also HAVE to swap out the stock heatbreak and get yourself a different one!**    
+    Please see the section ["MOD: Different Heatbreak"](#mod-different-heatbreak) for further information.  
 
 The following picture shows the stock nozzle with the specific design of the throat's end at the left side and a regular E3D Volcano nozzle at the right side.  
 
@@ -1022,7 +1059,10 @@ The following picture shows the stock nozzle with the specific design of the thr
 The following picture shows a closeup view of the different shape of the nozzle's throat.  
 
 ![Stock vs Volcano throat](../assets/images/head_K2Pro_nozzle-throat-ending_web.jpg)  
-    
+
+The following pictur shows you the specific setups: Volcano-type bi-metal heatbreak and nozzle at the top versus the stock parts at the botttom.  
+
+![Stock vs Volcano type](../assets/images/head_K2Pro_stock-vs-bimetal-setup_web.jpg)
 
 If you now want to use Volcano type nozzles, I highly recommend to only use high quality nozzles, like the [**original E3D Volcano nozzles**](https://e3d-online.com/products/volcano-nozzles)!  
 
