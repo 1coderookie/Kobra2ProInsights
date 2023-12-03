@@ -6,7 +6,7 @@
 |:---------------|
 | **Feeder system**: Direct drive, dual gear, 4:1 ratio |
 | **Thermistor**: 24V, 100k NTC "EPCOS 100K B57560G104F" type, capsuled, dimensions 3x5.5mm, two pinned JST PH 2.0 (?) connector |
-| **Heater Cartridge**: 24V, 60W, ~10.5 Ohm, dimensions 6x18.5mm, two pinned [Molex Micro-Fit 3.0 (item-no. 43645-0200)](https://www.molex.com/en-us/products/part-detail/436450200) connector |
+| **Heater Cartridge**: 24V, 60W, ~10.5 Ohm, dimensions 6x18.5mm, two pinned Molex Micro-Fit 3.0 (item-no. 43645-0200) connector |
 | **Nozzle**: proprietary Volcano-like nozzle (*not* compatible with Volcano!), 0.4mm |
 | **Heater Block**: Volcano-like type |
 | **Heatbreak**: M6 thread (to fit in the heater block), overall length 25/26(?)mm, 6mm OD / 4mm ID, PTFE tube inliner |  
