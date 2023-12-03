@@ -628,6 +628,13 @@ Both PTFE tubes have the outer diameter of ~4mm and the inner diameter of ~2mm a
 The reverse bowden tube, which is the PTFE tube between the printhead and the filament runout sensor, is about ??mm long.  
 It acts as a guidance and protection for the fed filament and is clipped onto the wiring of the printhead.    
 
+(add pic)  
+
+??? example "How To Get The Reverse Bowden Out"
+
+    If you need to get the reverse bowden tube out of the PC-4 couplers, you need to push down the black plastic part towards the metal part of the coupler.  
+    At the printhead's coupler there's an additional blue plastic clip in between the metal and the black plastic part - make sure to remove that one first and don't lose it. Once you're done with dis- and reassembling of the tube, put that clip back in place.   
+
 ??? info "Thoughts About The Reverse Bowden"
 
     You might change the position of the filament spool and ask yourself if you then should also change the position of the reverse bowden accordingly or just get rid of it.  
