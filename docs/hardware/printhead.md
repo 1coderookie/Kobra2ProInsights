@@ -674,7 +674,8 @@ The following picture shows one of the spare PTFE inliner tubes which come with 
     
 ??? example "How To Access And Replace The PTFE Inliner"
 
-    For accessing the PTFE tube in order to inspect and/or replace it, you need to take out the whole hotend from the heatsink. It's not a complicated task, you literally only need to loosen two screws (well, and you have to take off the plastic cover from the printhead in the first place). 
+    For accessing the PTFE tube in order to inspect and/or replace it, you need to take out the whole hotend from the heatsink. It's not a complicated task, you literally only need to loosen two screws (well, and you have to take off the plastic cover from the printhead in the first place).  
+    
     - Take off the plastic cover of the printhead first of all. Pay attention to not rip off the wires of the part cooling fan, and unplug the connector from the breakout board.      
     - Disconnect the connectors of *both* the thermistor and the heater cartridge at the [breakout board](#breakout-board), labeled as "T0" (thermistor) and "H" (cartridge heater). You might be able to take out the hotend with those wires still being attached, but you don't want to risk ripping any wires off, so better disconnect them completely.    
     - Then you need to take out the hotend from the heatsink by loosening those two grub screws in the center of the front of the heatsink which hold the heatbreak in place for being able to actually reach the screw which holds the thermistor in place.  
