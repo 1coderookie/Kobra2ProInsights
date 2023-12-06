@@ -672,7 +672,22 @@ The following picture shows one of the spare PTFE inliner tubes which come with 
     
     Once you took the tube out, inspect the lower part of the tube and see if you can spot any deformations or clogs there, also if the tube got brown it's a sign of being burnt and deformed already. Look closely as it might be hard to see. If so, replace the tube.  
     
-      
+??? example "How To Access And Replace The PTFE Inliner"
+
+    For accessing the PTFE tube in order to inspect and/or replace it, you need to take out the whole hotend from the heatsink. It's not a complicated task, you literally only need to loosen two screws (well, and you have to take off the plastic cover from the printhead in the first place). 
+    - Take off the plastic cover of the printhead first of all. Pay attention to not rip off the wires of the part cooling fan, and unplug the connector from the breakout board.      
+    - Disconnect the connectors of *both* the thermistor and the heater cartridge at the [breakout board](#breakout-board), labeled as "T0" (thermistor) and "H" (cartridge heater). You might be able to take out the hotend with those wires still being attached, but you don't want to risk ripping any wires off, so better disconnect them completely.    
+    - Then you need to take out the hotend from the heatsink by loosening those two grub screws in the center of the front of the heatsink which hold the heatbreak in place for being able to actually reach the screw which holds the thermistor in place.  
+      ![Heatsink screws](../assets/images/head_K2Pro_heatsink-heatbreak-screws_marked_web.jpg)  
+      **Attention:**  
+      *Be very careful when doing so, as the heatbreak will slip out of the heatsink and the whole hotend will fall down immediately!*  
+    - You will now have the whole hotend in front of you.  
+      ![Hotend](../assets/images/head_K2Pro_hotend_web.jpg)  
+    - Now you can pull out the PTFE inliner from the heatbreak. Usually it comes out without any problems. *If* it doesn't come out, it might already be deformed, melted or somehow 'glued' due to molten filament - in this case you need to connect the thermistor and the cartridge heater again and heat up the hotend. Be careful to not harm yourself!  
+    - Once you pulled the inliner out, inspect it and replace it with a new one. It's advisable to use Capricorn XS tubing here.  
+    - If you had trouble getting out the inliner, you might have to clean the heatbreak in the inside as well. Therefore you'd have to unscrew the heatbreak from the heater block. To do so, you have to heat up the hotend to minimum 220°C - pay attention to not harm yourself!  
+      Refer to the section about the [heatbreak](#heatbreak) and read the tips and the violet expandable textbox there as well for further instructions.  
+       
     
 ??? tip "Length Of PTFE Inliner"  
 
