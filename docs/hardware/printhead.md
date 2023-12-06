@@ -10,10 +10,10 @@
 | **Nozzle**: proprietary Volcano-like nozzle (*not* compatible with Volcano!), 0.4mm |
 | **Heater Block**: Volcano-like type |
 | **Heatbreak**: M6 thread (to fit in the heater block), overall length 25/26(?)mm, 6mm OD / 4mm ID, PTFE tube inliner |  
-| **PTFE tube**: <br> **Hotend**: ~41mm inliner for the heatbreak, ~4mm OD / ~2mm ID bore <br> **Between filament runout sensor and printhead**: ~???mm <br> *Both PTFE tubes can/should be replaced with a "Capricorn XS" tube (for 1.75mm filament).* |  
+| **PTFE tube**: <br> **Hotend**: ~41mm inliner for the heatbreak, ~4mm OD / ~2mm ID bore <br> **Reverse bowden tube** (between filament runout sensor and printhead: ~???mm <br> *Both PTFE tubes can/should be replaced with a "Capricorn XS" tube (for 1.75mm filament).* |  
 | **Silicone Sock**: Volcano-style type |
 | **Part Cooling Fan**: 24V, 0.14A, 50x50x20mm, model "Coolcox BF5020H24D"  |
-| **Heatsink Cooling Fan**: 24V, ?A, ?x?x?mm, model "HSC"  |
+| **Heatsink Cooling Fan**: 24V, 0.08A, 30x30x10mm, model "HSC BCY3010D24H"  |
 | **ABL sensor**: PNP-NO type (imho!), connection: brown = VCC 24VDC; blue = GND; black = LEVEL/signal (seems to be the same as the one being used at the 'old' regular Kobra) |  
 
 ---
