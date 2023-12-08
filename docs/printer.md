@@ -8,7 +8,7 @@ See [Anycubic's support page](https://www.anycubic.com/pages/firmware-software) 
 
 - [Quick Start Guide](https://drive.google.com/file/d/1W63_4aYIETkF4itp7T5blioazcZqx0bY/view)
 - [User manual v1.2](https://drive.google.com/file/d/1FQqmJ4QByD2u3dPKmaZOCjRyONrfPE2q/view)
-- [Firmware v2.3.5](https://drive.google.com/file/d/1_4-X4O4sBbXfqrcOuRkRR2gYS6woGLUm/view)
+
 
 
 The following pictures show the machine.  
