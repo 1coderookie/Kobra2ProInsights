@@ -73,7 +73,7 @@ Please mind the **search field** in the header as well as the icon in the header
     - Thanks to **[lpi](https://github.com/lpi)** for providing the content of the update.swu file to me!
     - Thanks to **[mowerheimen](https://www.reddit.com/user/mowerheimen)** for allowing me to use the picture of the crooked x-axis gantry!
     - Thanks to **[Relative_Distance445](https://www.reddit.com/user/Relative_Distance445/)** for allowing me to use his picture of the heavy wear&tear of the linear rail rod!
-    - Thanks to **[the-transponster](https://www.reddit.com/user/the-transponster)** for allowing me to use the picture of his clumped hotend!
+    - Thanks to **[Fabulous-View-5862](https://www.reddit.com/user/Fabulous-View-5862)** for allowing me to use the picture of his clumped hotend!    
     - Thanks to **[Yoriko_Rayne_](https://www.reddit.com/user/Yoriko_Rayne_)** for allowing me to use the picture of how to use the ABL height gauge!  
 
     
