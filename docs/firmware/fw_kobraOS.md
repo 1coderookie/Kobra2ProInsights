@@ -10,7 +10,8 @@ Even though it's based on Klipper, sources haven't been published yet.
 
 For updating the firmware, you can either 
 
-- download the necessary `update.swu` file at [Anycubic's firmware & software page](https://www.anycubic.com/pages/firmware-software) for the [Kobra 2 Pro](https://drive.google.com/file/d/1_4-X4O4sBbXfqrcOuRkRR2gYS6woGLUm/view) or   
+- ~~download the necessary `update.swu` file at [Anycubic's firmware & software page](https://www.anycubic.com/pages/firmware-software)~~
+  **UPDATE: Anycubic decided to not offer the `update.swu` files anymore - means, one can't do an offline update anymore! So you HAVE to use the online services..**      
 - update via Anycubic's online service.  
       
 
