@@ -30,20 +30,9 @@ You can always set up your own custom profile in your slicer. Just pay attention
 
 The following list links to the specific profiles from [Anycubic's firmware page](https://www.anycubic.com/pages/firmware-software): 
  
- - [Profile for PrusaSlicer](https://drive.google.com/file/d/1ADX_Y6oFosKwoohzcw0gUPFc67n_XUub/view)
- - [Profile for Cura](https://drive.google.com/file/d/1L8HTHHBkxd_eSJz3WYGwNHNZeaziyqqY/view)  https://drive.google.com/file/d/1yfL37414oz0F4p-yFsYAbx0iMnToSfJM/view
+ - [Profile for PrusaSlicer](https://drive.google.com/file/d/1ADX_Y6oFosKwoohzcw0gUPFc67n_XUub/view)  
+ - [Profile for Cura](https://drive.google.com/file/d/1yfL37414oz0F4p-yFsYAbx0iMnToSfJM/view?usp=share_link)  
 
-<!--  
-!!! warning "Don't Use Anycubic's Profile Right Away!"
-
-    Watch out if you're going to use the profile of Anycubic, the *retraction distance is set to 6mm there*, which is *way* too much for the direct drive system of the **Neo**!  
-    6mm is more a setting for a bowden drive like the **Go**, direct drive systems are supposed to be used with retraction distance settings around/up to 1mm! Using 6mm will lead to clogging!  
-    *Always make sure to check this setting in general when using preconfigured profiles!*   
-  
-!!! warning "Better Don't Print The Owl.gcode!"  
-
-    It's advisable to *not* print the owl.gcode example with the **Neo** which Anycubic provides. In there the retraction distance is also set to 6mm, which is *way* too much for the direct drive of the **Neo**! Even tho people reported a great quality of this owl when they printed it, it'll most likely lead to clogging.  
--->
     
 ---
 
