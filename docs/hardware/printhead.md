@@ -394,7 +394,7 @@ The assembled hotend is shown in the following picture.
        
 ??? example "Large Clump Of Melted Filament Built Up"
 
-    Sometimes it may happen that melted filament builds up on top of the heater block to a large clump. The reason for that is that the heatbreak and the end of the nozzle don't touch tight enough, so that the melted filament can squeeze out. It also may be caused by bad and cheap parts where the threads aren't just as good as they should be. <br> ![Blob](../assets/images/head_blob_web.jpg) <br> So if you encouter this problem, here is what I recommend to do (based on my own experience with this dilemma).  
+    Sometimes it may happen that melted filament builds up on top of the heater block to a large clump. The reason for that is that the heatbreak and the end of the nozzle don't touch tight enough, so that the melted filament can squeeze out. It also may be caused by bad and cheap parts where the threads aren't just as good as they should be. <br> ![Blob](../assets/images/head_K2_blob_web.jpg) <br> So if you encouter this problem, here is what I recommend to do (based on my own experience with this dilemma).  
     
     - Take off the plastic cover first to get better access to the whole area.  
     - Heat up everthing.
