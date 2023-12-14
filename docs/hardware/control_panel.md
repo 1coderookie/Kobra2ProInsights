@@ -36,8 +36,8 @@ After doing so, when you want to select the file you want to print, you can then
 
 --- 
 
-### MOD: RPi Zero W As WiFi USB Drive
-[mrfenyx](https://github.com/mrfenyx/) came up with an imho brilliant solution to avoid using a USB drive which you'd have to swap back and forth between your computer and your printer: he uses a Raspberry Pi Zero W which as a USB drive and which can then be accessed through your local network using WiFi. By doing so, you can just copy/save the sliced file to the RPi and then select it at the printer using the control unit.  
+### MOD: RPi Zero(2)W As WiFi USB Drive
+[mrfenyx](https://github.com/mrfenyx/) came up with an imho brilliant solution to avoid using a USB drive which you'd have to swap back and forth between your computer and your printer: he uses a Raspberry Pi Zero(2)W as a USB drive and which can then be accessed through your local network using WiFi. By doing so, you can just send (= copy/save) the sliced file to the RPi and then select it at the printer using the control unit.  
 I personally didn't test it yet, but I'll definitely do so.  
 
 This is the repo where you can find all the necessary information: [RPi-Zero-W-WiFi-USB](https://github.com/mrfenyx/RPi-Zero-W-WiFi-USB/)  
