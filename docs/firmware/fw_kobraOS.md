@@ -11,11 +11,14 @@ Even though it's based on Klipper, sources haven't been published yet.
 For updating the firmware, you can either 
 
 - ~~download the necessary `update.swu` file at [Anycubic's firmware & software page](https://www.anycubic.com/pages/firmware-software)~~
-  **UPDATE: Anycubic decided to not offer the `update.swu` files anymore - means, one can't do an offline update anymore! So you HAVE to use the online services..**      
+  **UPDATE: Anycubic decided to not offer the `update.swu` files on their support page anymore.**
+  (See the expandable textbox below though if you're looking for those offline files.. ;) )      
 - update via Anycubic's online service.  
       
+??? info "Firmware Files For Executing Offline Updates"  
 
-To update the firmware of your printer locally using the file `update.swu`, copy the file into a folder named "update" onto the USB drive.  
+    A kind user created a repository where he offers all `update.swu` files for the Kobra 2 Pro, Plus and Max that have been released by Anycubic. You can find it [here](https://github.com/ultimateshadsform/Anycubic-Kobra-2-Series-Firmware/tree/main/firmwares).  
+    To update the firmware of your printer locally using the file `update.swu`, copy the file into a folder named "update" onto the USB drive.  
 
 ---
 
