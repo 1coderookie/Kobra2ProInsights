@@ -25,7 +25,7 @@ The sensor is supposed to be mounted to the belonging bracket at the left hand s
 
 The arrow printed on the sensor's housing should point towards the bed, the plug will face the back of the printer.  
 
-![Sensor mounted](../assets/images/K2Pro_fil-sens_mounted_web.jpg)
+![Sensor mounted](../assets/images/fil-sens_K2Pro_installed_web.jpg)
 
 After you mounted and connected, you lead the filament through it which then moves the little lever of the switch to trigger it and the electrical circuit will be closed. If the filament runs out because it broke or the spool is empty, the switch will open and the printer will pause (or only shows a warning message? I don't know yet!).  
 
