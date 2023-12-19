@@ -10,8 +10,8 @@ Even though it's based on Klipper, sources haven't been published yet.
 
 For updating the firmware, you can either 
 
-- ~~download the necessary `update.swu` file at [Anycubic's firmware & software page](https://www.anycubic.com/pages/firmware-software)~~
-  **UPDATE: Anycubic decided to not offer the `update.swu` files on their support page anymore.**
+- ~~download the necessary `update.swu` file at [Anycubic's firmware & software page](https://www.anycubic.com/pages/firmware-software)~~  
+  **UPDATE: Anycubic decided to not offer the `update.swu` files on their support page anymore.**  
   (See the expandable textbox below though if you're looking for those offline files.. ;) )      
 - update via Anycubic's online service.  
       
