@@ -17,7 +17,7 @@ For updating the firmware, you can either
       
 ??? info "Firmware Files For Executing Offline Updates"  
 
-    A kind user created a repository where he offers all `update.swu` files for the Kobra 2 Pro, Plus and Max that have been released by Anycubic. You can find it [here](https://github.com/ultimateshadsform/Anycubic-Kobra-2-Series-Firmware/tree/main/firmwares).  
+    User [ultimateshadsform](https://github.com/ultimateshadsform) created a repository where he offers all `update.swu` files for the Kobra 2 Pro, Plus and Max that have been released by Anycubic. You can find the files [here](https://github.com/ultimateshadsform/Anycubic-Kobra-2-Series-Firmware/tree/main/firmwares).  
     To update the firmware of your printer locally using the file `update.swu`, copy the file into a folder named "update" onto the USB drive.  
 
 ---
