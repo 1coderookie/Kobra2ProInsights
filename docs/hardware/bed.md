@@ -50,13 +50,8 @@ Next to the wiring at the left rear side of the bedplate is a sensor for measuri
 
 ![Bedplate top](../assets/images/bed_K2Pro_bedplate-labeled_web.jpg)  
 
-When buying the bedplate as a spare part, it'll come without the magnetic foil being attached as the following picture shows.  
-
-<!--
-![Bedplate top view](../assets/images/bed_plate-new_web.jpeg)  
-
-The surface is covered with a protective foil, which you have to pull off before applying the magnetic foil.   
--->
+When buying the bedplate as a spare part, it'll come without the magnetic foil being attached, so you have to get yourself the magnetic foil/sticker as well.  
+The surface of the plate is covered with a protective foil, which you have to pull off before applying the magnetic foil.   
 
 The heating coil is applied as a PCB to the underside of it as you can see in the following picture.  
 
