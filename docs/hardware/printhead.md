@@ -134,15 +134,14 @@ The connections are:
 - blue = GND
 - black = LEVEL/signal 
 
-<!--
+
 The position of the sensor (the height) should be adjusted in relation to the nozzle.  
 Therefore you can either use the ABL height gauge which sometimes comes with the printer or you can use the bigger one of the two-sided open ended wrench that comes in the toolset.  
 The following picture shows the height gauge that sometimes comes with the printer - if you don't have it and don't want to use the mentioned wrench, you can download [the gcode file](https://cdn.shopify.com/s/files/1/0245/5519/2380/files/Height_gauge.rar?v=1667814312) from Anycubic's support page and print it.  
 
 ![ABL height gauge](../assets/images/abl-gauge_web.jpg)
 
-The procedure about how to adjust the position will be described for the specific printer model in the following sections as well. 
--->  
+The procedure about how to adjust the position will be described in the following section. 
 
 The following picture shows the location of the ABL sensor at the printhead, looking at it from a bottom view angle - the ABL sensor is the part at the right side with the round orange tip.   
   
@@ -152,12 +151,14 @@ The ABL sensor itself is mounted in a plastic bracket which is then mounted to t
   
 ![ABL sensor](../assets/images/head_K2Pro_abl-sensor_web.jpg)
 
-<!--  
+
 ---  
       
 #### Leveling The ABL Sensor
 
-Check if you need to level your ABL sensor in relation to the nozzle (which should be done after every maintenance at the hotend as well as when you got the printer brandnew from the manufacturer).  
+The tip of the ABL sensor should be ~2mm higher than the tip of the nozzle.  
+If it's too high, the sensor won't be able to detect the spring steel PEI plate and your nozzle will be driven into the build plate.    
+So check if you need to level your ABL sensor in relation to the nozzle - this should be done after every maintenance at the hotend as well as when you got the printer brandnew from the manufacturer.  
 
 !!! warning "Attention"  
 
@@ -167,7 +168,7 @@ The following picture shows a sensor that should/has to be leveled (don't mind t
 
 ![This sensor needs to be leveld](../assets/images/head_neo_ABL2level_web.jpg)
 
-As I didn't get the plastic heihght gauge from Anycubic with my printers, I used the bigger one of those two-sided open ended wrenches. Check the parts that came with your printer, maybe you got the gauge shown in the following picture.  
+As I didn't get the plastic height gauge from Anycubic with my printer, I used the bigger one of those two-sided open ended wrenches. Check the parts that came with your printer, maybe you got the gauge shown in the following picture.  
 
 ![ABL height gauge](../assets/images/abl-gauge_web.jpg)
 
@@ -177,18 +178,17 @@ See the expandable textbox below for further instructions.
 
 ??? example "Leveling Procedure"  
 
-    - To adjust the height of the ABL sensor and level it, check out the video from Anycubic ["Leveling Operation for Anycubic Kobra Neo"](https://www.youtube.com/watch?v=25x84AaiUpQ) how to do so. However, I'll also list the steps in the following.  
     - Take the [height gauge](https://cdn.shopify.com/s/files/1/0245/5519/2380/files/Height_gauge.rar?v=1667814312) from Anycubic.  
       If you don't have the height gauge, take a sheet of paper and the bigger two-sided open-end wrench that came with your printer.  
-      If you also don't have that, take something with a flat surface that is 1.95mm thick as this is the thickness of the wrench that came with the printer (2mm will be fine also I guess).
-    - Put on the spring steel plate on the heater bed and place the printhead about the center of the bed.
+      If you also don't have that, take something with a flat surface that is ~2mm thick.
+    - Put on the spring steel plate on the heated bed and place the printhead about the center of the bed.
     - If you're using the height gauge, put it under the printhead and lower the head by turning the z axis rod manually. The nozzle should then touch the lower/thinner part of the gauge while the proximity sensor should touch the higher/thicker part of it as the following picture illustrates.  
       ![ABL height gauge how-to](../assets/images/ABL-height-gauge_web.jpeg)   
     - If you don't have/use the height gauge, place a sheet of paper under the printhead now. Then lower the head to make the nozzle touch the sheet of paper. You should still be able to move the paper but you should feel a minimum amount of resistance as a sign that the nozzle is touching it. <br> Now place the wrench flat under the ABL sensor. The sensor should touch the wrench.  
-    - If the sensor is too high or too low, adjust the height by turning the little M2 hexagon socket screw at the top of the bracket that holds the sensor.  <br> ![Screw at the top to move the sledge](../assets/images/head_ABL-sensor_top_closeup_web.jpg) <br> You're only able to move it a few milimeters by doing so though!   
-    -  If you need to adjust a bigger height, you'd need to disassemble the sensor from the bracket itself first to already change it's position in the bracket (see the pictures of it in the "dismounting" section above.  
-    - After completing the beforementioned steps, take the parts away from the bed, set your Z offset to zero (0) if you didn't do it yet and home all axes. Then execute the ABL process and dial in your z-offset.
---> 
+    - If the sensor is too high or too low, you need to adjust the position of the sensor. Therefore you need to loosen the screw which clamps down that plastic bracket which holds the ABL sensor: <br>  
+      ![ABL sensor](../assets/images/head_K2Pro_abl-sensor_web.jpg)  
+    - Once you loosened the screw enough, pull that plastic bracket slightly apart and adjust the position of the sensor by moving it up or down. When you found the correct position, tighten up the screw of that bracket again.   
+    - After completing the beforementioned steps, take all parts off the bed and start a calibration process for having the z-offset and the new bedmesh generated. Keep an eye on your first layer and adjust the z-offset on the fly if necessary.  
 
 ---
 
@@ -209,16 +209,15 @@ See the expandable textbox below for further instructions.
 ??? example "Remounting Procedure"
 
     For remounting, just follow the steps of dismounting in reverse:  
+    
     - Place the sensor in the bracket and mind the correct position which you measured before taking the old one out.  
     - Make sure you're using the right screw and don't overtighten it though - as my father (R.I.P.) used to say: "After tight comes loose!" (roughly translated ;) ).  
     - Reconnect the wiring.  
     
     
-<!--
 !!! warning "Attention"
 
     If you dis- and remounted the ABL sensor, make sure to level the ABL sensor again and control your Z offset!  
---> 
 
 ---  
   
