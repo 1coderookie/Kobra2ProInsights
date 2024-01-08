@@ -27,22 +27,22 @@ The following pictures show the machine.
   
 The following list gives an overview of the most important specifications:    
 
-- Printing dimension: 250 x 220 x 220 mm / 9.8 x 8.7 x 8.7 inches (HxWxD) 
-- Printing platform: 220 x 220mm / 8.7 x 8.7 inches (*Attention: the physical dimensions of the bed and the PEI plate are 230x230mm!*) 
-- Machine dimensions: 486 x 435 x 463 mm / 19.1 x 17.1 x 18.2 inches (HxWxD) (plus filament holder mounted to the left side of the base frame) 
-- Machine weight: approx. 8.4 kg
-- Printing volume: 12.1 l / 3.2 gal
+- Printing dimension: 400 x 320 x 320 mm / 15.75 x 12.6 x 12.6 inches (HxWxD) 
+- Printing platform: 320 x 320mm / 8.7 x 8.7 inches (*Attention: the physical dimensions of the bed and the PEI plate are 330x330mm!*) 
+- Machine dimensions: 630 x 605 x 564 mm / 24.8 x 23.8 x 22.2 inches (HxWxD) (plus filament holder mounted to the left side of the base frame) 
+- Machine weight: approx. 13 kg
+- Printing volume: 40.9 l / 10.8 gal
 - Aluminum frame  
 - X-axis and Y-axis: belt driven (belt tension can be adjusted by knobs), "dual-shaft core" with SG15 bearings/metal rollers (no POM wheels)   
-- Z-axis: double threaded rod  
+- Z-axis: double threaded rod, two motors  
 - Printing speed: 500 mm/s (maximum speed), 300mm/s (typical/average speed)
 - Control panel: 4.3" LCD touchscreen  
 - Mainboard: TriGorilla Spe V1.0.0, 1.2GHz Cortex-A7, 32bit, 24V, TMC2209 silent stepper drivers (soldered), WiFi, 3x USB-A connectors 
 - Extruder / feeder system: direct drive, double gears  
-- Heated aluminum bed with a magnetic foil glued onto it, comes with a removable, single side PEI-coated spring steel plate; *physical dimensions: 230x230mm*  
-- Hot bed temperature: 110 °C / ≤ 230 °F  
-- Automatic leveling: "Anycubic LeviQ2.0" (which is a 25-point bed level measuring process) and "smart Z-offset" 
-- Power supply: 400W, 24V DC output, suitable for 110V/230V AC input (set the correct voltage with a switch before using it!)
+- Heated aluminum bed with a magnetic foil on the top surface and an insulation at the underside glued onto it, comes with a removable, single side PEI-coated spring steel plate; *physical dimensions: 330x330mm*  
+- Hot bed temperature: 90 °C / ≤ 190 °F  
+- Automatic leveling: "Anycubic LeviQ2.0" (which is a 49-point bed level measuring process) and "smart Z-offset" 
+- Power supply: 400W, 24V DC output, suitable for 110V/230V AC input (**Set the correct voltage with a switch before using it!**)
 - Printing material: PLA / ABS / PETG & TPU (optional housing recommended for certain material)  
 - Single nozzle in a proprietary Volcano-type hotend, filament diameter 1.75 mm  
 - Comes with a proprietary Volcano-like 0.4 mm brass nozzle which is replaceable  
