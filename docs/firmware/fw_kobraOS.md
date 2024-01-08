@@ -11,7 +11,7 @@ Even though it's based on Klipper, sources haven't been published yet.
 For updating the firmware, you can either 
 
 - ~~download the necessary `update.swu` file at [Anycubic's firmware & software page](https://www.anycubic.com/pages/firmware-software)~~  
-  **UPDATE: Anycubic decided to not offer the `update.swu` files on their support page anymore.**  
+  **UPDATE: Anycubic decided to not offer the update files on their support page anymore.**  
   (See the expandable textbox below though if you're looking for those offline files.. ;) )      
 - update via Anycubic's online service.  
       
@@ -24,7 +24,13 @@ For updating the firmware, you can either
 
 ## Settings
 The specific settings of the machine are -due to the fact that it's closed source now- 'unknown'.  
-However, now that the first `update.swu` file is available, it's possible to investigate that one.  
+However, when the first `update.swu` file became available, it was possible to investigate that one.  
+
+??? info "Investigating The `update.swu` File Is Only Possible Up To FW v3.0.3"  
+
+    Anycubic decided to change certain parts of the firmware (?) and with firmware v3.0.5 they now use precompiled binary files called `firmware.bin` instead of the `update.swu` files as before.  
+    So now it's not possible anymore (afaik!) to investigate the settings as easy as it was when SWU-files had been used.  
+
 
 ??? info "Special Thanks To [lpi](https://github.com/lpi)!"  
 
