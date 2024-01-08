@@ -19,7 +19,7 @@
 | **Z-Axis V-Slot Wheels**: POM, ~24x10.2mm with 6mm width at the tip of the "V", 625 type ball bearing with 5mm inner diameter |
 | **Z-Axis Motor**: 42x34 Nema17, 1.8°, 200 steps, 5mm shaft |
 | **Z-Axis Motor Coupler**: rigid coupler, 5mm bore at both sides |
-| **Limit Switches**: x- & y-axis = mechanical, NO ; z-axis = no physical switch given, probe acts as virtual endstop |
+| **Limit Switches**: x- & y-axis = mechanical, NO (= normally open) ; z-axis = no physical switch given, probe acts as virtual endstop |
 
 ---
 
