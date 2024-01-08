@@ -164,7 +164,7 @@ So check if you need to level your ABL sensor in relation to the nozzle - this s
 
     After adjusting the height of the ABL sensor, adjust your Z offset before starting to print!  
 
-The following picture shows a sensor that should/has to be leveled (don't mind the tiny rest of filament at the tip of the nozzle which touches the paper instead of the nozzle itself though, I chipped it away before leveling everything).      
+The following picture shows a sensor of a different printermodel that should/has to be leveled (don't mind the tiny rest of filament at the tip of the nozzle which touches the paper instead of the nozzle itself though, I chipped it away before leveling everything).      
 
 ![This sensor needs to be leveld](../assets/images/head_neo_ABL2level_web.jpg)
 
@@ -182,7 +182,7 @@ See the expandable textbox below for further instructions.
       If you don't have the height gauge, take a sheet of paper and the bigger two-sided open-end wrench that came with your printer.  
       If you also don't have that, take something with a flat surface that is ~2mm thick.
     - Put on the spring steel plate on the heated bed and place the printhead about the center of the bed.
-    - If you're using the height gauge, put it under the printhead and lower the head by turning the z axis rod manually. The nozzle should then touch the lower/thinner part of the gauge while the proximity sensor should touch the higher/thicker part of it as the following picture illustrates.  
+    - If you're using the height gauge, put it under the printhead and lower the head by turning the z axis rod manually. The nozzle should then touch the lower/thinner part of the gauge while the proximity sensor should touch the higher/thicker part of it as the following picture of a different printer model illustrates.  
       ![ABL height gauge how-to](../assets/images/ABL-height-gauge_web.jpeg)   
     - If you don't have/use the height gauge, place a sheet of paper under the printhead now. Then lower the head to make the nozzle touch the sheet of paper. You should still be able to move the paper but you should feel a minimum amount of resistance as a sign that the nozzle is touching it. <br> Now place the wrench flat under the ABL sensor. The sensor should touch the wrench.  
     - If the sensor is too high or too low, you need to adjust the position of the sensor. Therefore you need to loosen the screw which clamps down that plastic bracket which holds the ABL sensor: <br>  
