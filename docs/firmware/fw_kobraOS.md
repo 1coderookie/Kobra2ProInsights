@@ -49,7 +49,7 @@ I won't share any of the files, but I'll quote the content of the two config fil
 ??? info "Files Of The Kobra 2 Plus & Max"  
 
     Just in case you own a Kobra 2 Plus or Max, you can find the content of the belonging files quoted in expandable textboxes below.   
-
+    Besides that, if you own a Kobra 2 Plus, check out my comprehensive [Kobra2Plus Insights](https://1coderookie.github.io/Kobra2PlusInsights/) infosite instead.   
 
 ---
 
@@ -365,6 +365,7 @@ heater_bed_target_temp : 60
     max_z_accel : 3000.000000
     minimum_z_position : -20.000000
     square_corner_velocity : 15.000000
+    
     [stepper_x]
     step_pin : PE1
     dir_pin : PE0
@@ -380,6 +381,7 @@ heater_bed_target_temp : 60
     second_homing_speed : 15.000000
     homing_retract_dist : 10
     virtrual_endstop : 0
+    
     [stepper_y]
     step_pin : PG11
     dir_pin : !PE11
@@ -395,6 +397,7 @@ heater_bed_target_temp : 60
     second_homing_speed : 15.000000
     homing_retract_dist : 10
     virtrual_endstop : 0
+    
     [stepper_z]
     step_pin : PG15
     dir_pin : !PG14
@@ -410,6 +413,7 @@ heater_bed_target_temp : 60
     homing_retract_dist : 8
     second_homing_speed : 4.000000
     virtrual_endstop : 0
+    
     [extruder]
     step_pin : PC1
     dir_pin : PC0
@@ -429,12 +433,14 @@ heater_bed_target_temp : 60
     min_temp : -200
     max_temp : 275
     pressure_advance : 0.020000
+    
     [flow_calibration]
     start_x : 20
     start_y : 20
     line_length : 150.000000
     line_space : 5.000000
     step_distance : 0.01
+    
     [tmc2209 stepper_x]
     tx_pin : PE4
     uart_pin : PE5
@@ -446,6 +452,7 @@ heater_bed_target_temp : 60
     run_current : 1.4
     hold_current : 0.7
     stealthchop_threshold : 0
+    
     [tmc2209 stepper_y]
     tx_pin : PE4
     uart_pin : PE5
@@ -457,6 +464,7 @@ heater_bed_target_temp : 60
     microsteps : 16
     driver_sgthrs : 105
     stealthchop_threshold : 0
+    
     [tmc2209 stepper_z]
     tx_pin : PE4
     uart_pin : PE5
@@ -468,6 +476,7 @@ heater_bed_target_temp : 60
     microsteps : 16
     driver_sgthrs : 100
     stealthchop_threshold : 99999
+    
     [tmc2209 extruder]
     tx_pin : PE4
     uart_pin : PE5
@@ -479,6 +488,7 @@ heater_bed_target_temp : 60
     microsteps : 16
     driver_sgthrs : 10
     stealthchop_threshold : 99999
+    
     [heater_bed]
     heater_pin : PG17
     sensor_pin : PB14
@@ -489,22 +499,27 @@ heater_bed_target_temp : 60
     pid_Kd : 1103.999942
     min_temp : -200
     max_temp : 105
+    
     [verify_heater extruder]
     max_error : 120
     check_gain_time : 20
     hysteresis : 5
     heating_gain : 1
+    
     [verify_heater heater_bed]
     max_error : 120
     check_gain_time : 180
     hysteresis : 5
     heating_gain : 1
+    
     [fan]
     pin : PG13
+    
     [heater_fan hotend_cooling_fan]
     pin : PG6
     heater_temp : 50
     fan_speed : 1
+    
     [controller_fan board_cooling_fan]
     pin : PG10
     stepper : stepper_x,stepper_y,stepper_z,extruder
@@ -512,15 +527,20 @@ heater_bed_target_temp : 60
     idle_speed : 0
     idle_timeout : 30
     heater : extruder,heater_bed
+    
     [gcode_arcs]
+    
     [pause_resume]
+    
     [mcu]
     mem_interface : mem_interface_DSP
+    
     [input_shaper]
     shaper_type_x : mzv
     shaper_freq_x : 60.200000
     shaper_type_y : 2hump_ei
     shaper_freq_y : 49.200000
+    
     [resonance_tester]
     probe_points : 165,165,50
     accel_chip_x : adxl345 X
@@ -530,18 +550,21 @@ heater_bed_target_temp : 60
     accel_per_hz : 150.000000
     hz_per_sec : 1.000000
     max_smoothing : 0.000000
+    
     [adxl345 X]
     spi_speed : 1000000
     spi_bus : spi1
     adxl_type : lis2dw12
     axes_map : x,y,z
     rate : 1600
+    
     [adxl345 Y]
     spi_speed : 1000000
     spi_bus : spi0
     adxl_type : lis2dw12
     axes_map : x,y,z
     rate : 1600
+    
     [bed_mesh]
     speed : 60.0
     horizontal_move_z : 5.0
@@ -550,6 +573,7 @@ heater_bed_target_temp : 60
     probe_count : 7,7
     mesh_pps : 3,3
     algorithm : lagrange
+    
     [auto_leveling]
     bed_mesh_temp : 60.0
     extruder_temp : 210.0
@@ -564,6 +588,7 @@ heater_bed_target_temp : 60
     extruder_pullback_speed : 30.0
     extruder_cool_down_temp : 140.0
     lifting_after_completion : 15.0
+    
     [safe_z_home]
     home_x_position : 40.00000
     home_y_position : 280.00000
@@ -571,6 +596,7 @@ heater_bed_target_temp : 60
     z_lift : 10
     z_hop : 15.0
     z_hop_speed : 8.0
+    
     [probe]
     pin : PB8
     deactivate_on_each_sample : True
@@ -587,6 +613,7 @@ heater_bed_target_temp : 60
     samples_tolerance_retries : 2
     move_after_each_sample : -2.0
     z_offset_adjust : 0.2
+    
     [bed_mesh_probe]
     pin : PG9
     deactivate_on_each_sample : True
@@ -600,6 +627,7 @@ heater_bed_target_temp : 60
     samples_result : weighted
     samples_tolerance : 0.1
     samples_tolerance_retries : 2
+    
     [system]
     language : 0
     boot : 0
@@ -616,6 +644,7 @@ heater_bed_target_temp : 60
     material_breakage_interval : 3
     device_model : Anycubic kobra 2 Plus
     print_size : 320*320*400mm
+    
     [pid_calibrate]
     test_points : 100,100,5
     extruder_target_temp : 230
@@ -634,6 +663,7 @@ heater_bed_target_temp : 60
     max_z_accel : 3000.000000
     minimum_z_position : -20.000000
     square_corner_velocity : 15.000000
+    
     [stepper_x]
     step_pin : PE1
     dir_pin : PE0
@@ -649,6 +679,7 @@ heater_bed_target_temp : 60
     second_homing_speed : 15.000000
     homing_retract_dist : 10
     virtrual_endstop : 0
+    
     [stepper_y]
     step_pin : PG11
     dir_pin : PE11
@@ -664,6 +695,7 @@ heater_bed_target_temp : 60
     second_homing_speed : 15.000000
     homing_retract_dist : 10
     virtrual_endstop : 0
+    
     [stepper_z]
     step_pin : PG15
     dir_pin : !PG14
@@ -679,6 +711,7 @@ heater_bed_target_temp : 60
     homing_retract_dist : 8
     second_homing_speed : 4.000000
     virtrual_endstop : 0
+    
     [extruder]
     step_pin : PC1
     dir_pin : PC0
@@ -698,12 +731,14 @@ heater_bed_target_temp : 60
     min_temp : -200
     max_temp : 275
     pressure_advance : 0.020000
+    
     [flow_calibration]
     start_x : 20
     start_y : 20
     line_length : 150.000000
     line_space : 5.000000
     step_distance : 0.01
+    
     [tmc2209 stepper_x]
     tx_pin : PE4
     uart_pin : PE5
@@ -715,6 +750,7 @@ heater_bed_target_temp : 60
     run_current : 1.4
     hold_current : 0.7
     stealthchop_threshold : 0
+    
     [tmc2209 stepper_y]
     tx_pin : PE4
     uart_pin : PE5
@@ -726,6 +762,7 @@ heater_bed_target_temp : 60
     microsteps : 16
     driver_sgthrs : 105
     stealthchop_threshold : 0
+    
     [tmc2209 stepper_z]
     tx_pin : PE4
     uart_pin : PE5
@@ -737,6 +774,7 @@ heater_bed_target_temp : 60
     microsteps : 16
     driver_sgthrs : 100
     stealthchop_threshold : 99999
+    
     [tmc2209 extruder]
     tx_pin : PE4
     uart_pin : PE5
@@ -748,6 +786,7 @@ heater_bed_target_temp : 60
     microsteps : 16
     driver_sgthrs : 10
     stealthchop_threshold : 99999
+    
     [heater_bed]
     heater_pin : PG17
     sensor_pin : PB14
@@ -758,22 +797,27 @@ heater_bed_target_temp : 60
     pid_Kd : 1361.219778
     min_temp : -200
     max_temp : 105
+    
     [verify_heater extruder]
     max_error : 120
     check_gain_time : 20
     hysteresis : 5
     heating_gain : 1
+    
     [verify_heater heater_bed]
     max_error : 120
     check_gain_time : 180
     hysteresis : 5
     heating_gain : 1
+    
     [fan]
     pin : PG13
+    
     [heater_fan hotend_cooling_fan]
     pin : PG6
     heater_temp : 50
     fan_speed : 1
+    
     [controller_fan board_cooling_fan]
     pin : PG10
     stepper : stepper_x,stepper_y,stepper_z,extruder
@@ -781,8 +825,11 @@ heater_bed_target_temp : 60
     idle_speed : 0
     idle_timeout : 30
     heater : extruder,heater_bed
+    
     [gcode_arcs]
+    
     [pause_resume]
+    
     [mcu]
     mem_interface : mem_interface_DSP
     [input_shaper]
@@ -790,6 +837,7 @@ heater_bed_target_temp : 60
     shaper_freq_x : 54.600000
     shaper_type_y : 2hump_ei
     shaper_freq_y : 49.400000
+    
     [resonance_tester]
     probe_points : 215,215,50
     accel_chip_x : adxl345 X
@@ -799,18 +847,21 @@ heater_bed_target_temp : 60
     accel_per_hz : 150.000000
     hz_per_sec : 1.000000
     max_smoothing : 0.000000
+    
     [adxl345 X]
     spi_speed : 1000000
     spi_bus : spi1
     adxl_type : lis2dw12
     axes_map : x,y,z
     rate : 1600
+    
     [adxl345 Y]
     spi_speed : 1000000
     spi_bus : spi0
     adxl_type : lis2dw12
     axes_map : x,y,z
     rate : 1600
+    
     [bed_mesh]
     speed : 60.0
     horizontal_move_z : 5.0
@@ -819,6 +870,7 @@ heater_bed_target_temp : 60
     probe_count : 7,7
     mesh_pps : 3,3
     algorithm : lagrange
+    
     [auto_leveling]
     bed_mesh_temp : 60.0
     extruder_temp : 210.0
@@ -833,6 +885,7 @@ heater_bed_target_temp : 60
     extruder_pullback_speed : 30.0
     extruder_cool_down_temp : 140.0
     lifting_after_completion : 15.0
+    
     [safe_z_home]
     home_x_position : 371.000000
     home_y_position : 361.000000
@@ -840,6 +893,7 @@ heater_bed_target_temp : 60
     z_lift : 10
     z_hop : 15.0
     z_hop_speed : 8.0
+    
     [probe]
     pin : PB8
     deactivate_on_each_sample : True
@@ -856,6 +910,7 @@ heater_bed_target_temp : 60
     samples_tolerance_retries : 2
     move_after_each_sample : -2.0
     z_offset_adjust : 0.2
+    
     [bed_mesh_probe]
     pin : PG9
     deactivate_on_each_sample : True
@@ -869,6 +924,7 @@ heater_bed_target_temp : 60
     samples_result : weighted
     samples_tolerance : 0.1
     samples_tolerance_retries : 2
+    
     [system]
     language : 0
     boot :0
@@ -885,6 +941,7 @@ heater_bed_target_temp : 60
     material_breakage_interval : 3
     device_model : Anycubic kobra 2 Max
     print_size : 420*420*500mm
+    
     [pid_calibrate]
     test_points : 100,100,5
     extruder_target_temp : 230
@@ -902,6 +959,7 @@ The following lists the content of the file `unmodifiable.cfg`.
 [auto_leveling]
 target_spot_x : 61.200000
 target_spot_y : 243.800000
+
 [probe]
 z_offset_adjust : 0.25
 ```
@@ -912,6 +970,7 @@ z_offset_adjust : 0.25
     [auto_leveling]
     target_spot_x : 64.300000
     target_spot_y : 339.200000
+    
     [probe]
     z_offset_adjust : 0.2
     ```
@@ -923,6 +982,7 @@ z_offset_adjust : 0.25
     [auto_leveling]
     target_spot_x : 394.200000
     target_spot_y : 440.100000
+    
     [probe]
     z_offset_adjust : 0.2
     ```
