@@ -162,7 +162,8 @@ So check if you need to level your ABL sensor in relation to the nozzle - this s
 
 !!! warning "Attention"  
 
-    After adjusting the height of the ABL sensor, adjust your Z offset before starting to print!  
+    After adjusting the height of the ABL sensor, execute a new calibration procedure for having your new z-offset and bedmesh generated!  
+    Keep an eye on your first layer and adjust the z-offset on the fly if necessary.  
 
 The following picture shows a sensor of a different printermodel that should/has to be leveled (don't mind the tiny rest of filament at the tip of the nozzle which touches the paper instead of the nozzle itself though, I chipped it away before leveling everything).      
 
