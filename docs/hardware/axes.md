@@ -831,7 +831,7 @@ The following picture shows the unthreaded part at the bottom which is 10mm long
 ---
 
 ### Timing Belt  
-The two lead screws are connected by a closed loop GT-2 timing belt (6mm width, ??mm length).  
+The two lead screws are connected by a closed loop GT-2 timing belt (6mm width, 600mm length).  
 This means, that the lead screw which is driven by the motor drives the second lead screw by the timing belt.  
 
 ![Timing belt](../assets/images/axes_K2Pro_timing-belt_web.jpg)
