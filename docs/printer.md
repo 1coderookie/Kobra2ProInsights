@@ -44,8 +44,8 @@ The following list gives an overview of the most important specifications:
 - Automatic leveling: "Anycubic LeviQ2.0" (which is a 25-point bed level measuring process) and "smart Z-offset" 
 - Power supply: 400W, 24V DC output, suitable for 110V/230V AC input (set the correct voltage with a switch before using it!)
 - Printing material: PLA / ABS / PETG & TPU (optional housing recommended for certain material)  
-- Single nozzle in a E3D **V5** type hotend, filament diameter 1.75 mm  
-- Comes with a E3D V6 compatible 0.4 mm brass nozzle which is replaceable  
+- Single nozzle in a proprietary Volcano-type hotend, filament diameter 1.75 mm  
+- Comes with a proprietary Volcano-like 0.4 mm brass nozzle which is replaceable  
 - Nozzle temperature: 260°C / ≤ 500 °F   
 - Filament run-out detection sensor  
 
