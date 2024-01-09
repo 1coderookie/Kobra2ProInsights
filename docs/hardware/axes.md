@@ -1107,7 +1107,7 @@ The following picture shows this type of coupler - for comparing the size, the s
 ---
 
 ### Z-Axis Motor
-The motor of the y-axis is a 42-34 Nema 17 stepper motor with a 5mm motor shaft.  
+The motor of the z-axis is a 42-34 Nema 17 stepper motor with a 5mm motor shaft.  
 It seems to be a regular 1.8° stepper, which means the shaft turns 1.8° at each steps, and therefore it's doing 200 steps for one full 360° rotation.  
 
 The following pictures show the motor with the mounting bracket.  
