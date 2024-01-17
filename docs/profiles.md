@@ -14,10 +14,6 @@ The USB drive shipped with your printer should contain Cura and PrusaSlicer prof
 However, these profiles most likely need individual tweaking. The settings like print speed, retraction settings, extruder and bed temperature etc. also depend on the type of material you want to use (e.g. PLA/ABS/PETG/TPU). But also for the same type of filament material like PLA the settings often need to be adjusted again if you're using filament of a different manufacturer or even just another spool or colour of the same brand.  
 There are countless guides about this topic in general, so I'd recommend to dig into it deeper using your preferred sites or specific videos.   
 
-<!--  
-There are users who offer their profiles for the Go and Neo, so that beginners have a better starting point if the stock ones don't seem to work for them. In the following I'll list them as far as I'm aware of them. Be aware though that you still have to check the settings and finetune them for your device.   
--->  
-
 You can always set up your own custom profile in your slicer. Just pay attention to the general machine settings, like the bed size and so on.  
   
 ??? tip "Set Up Filament Specific Profiles"
@@ -70,9 +66,8 @@ PrusaSlicer (initially based on "Slic3r") and it derivates like SuperSlicer and 
 
 If you need it, you can find [Anycubic's PrusaSlicer Usage Instructions V1.1 here](https://cdn.shopify.com/s/files/1/0245/5519/2380/files/PrusaSlicer_Usage_Instructions_V1.1_EN.pdf?v=1685695259).
 
-You can set the G-code flavor depending on the firmware of the printer (menu "Printer Settings"), so set it to "Klipper" as shown in the screenshot of SuperSlicer below, so it's already everything set up correctly within the G-code of the sliced files.  
-  
-![SuperSlicer firmware](../assets/images/klipperfw_superslicer-flavor.png)
+You can set the G-code flavor depending on the firmware of the printer, so set it to "Klipper". In PrusaSlicer you can find this setting under "Printer Settings" -> "General" -> "Firmware" (you need to have "Expert" mode activated to get access to that option!). The following screenshot shows that setting.  
+    ![G-code flavour](assets/images/g-code_flavour.png)  
   
 Of course all slicers have many functionalities to finetune and control the output - you can even choose between different patterns for the top layer finish. They're all pretty identical overall, yet they differ in certain functions. One of them being worth mentioned is a *handy set of calibration tools that comes with SuperSlicer and OrcaSlicer*. This function actually guides you step by step through the calibration process and allows you to generate calibration models like temperature or retraction towers with individual settings by just a few clicks.  
 
