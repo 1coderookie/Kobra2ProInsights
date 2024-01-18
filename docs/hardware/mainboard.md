@@ -43,6 +43,10 @@ Once you opened the lid, you can see that there's quite a lot of space left insi
 
 Please see the expandable textbox below for further instructions and illustrations about how to actually open the housing and access the PCB.  
 
+As this might be interesting for someone who might try to access the mainboard for reverse engineering, I'd like to mention that there's a four pin SPI/UART connector on the mainboard as shown in the following picture.  
+
+![SPI connector](../assets/images/mainboard_K2Pro_connectors_SPI_web.jpg)  
+
 ??? example "How To Open The Mainboard's Housing"  
 
     - When looking at the underside of the machine, you can see the housing of the mainboard being located it the front, between the outer rails of the baseframe.  
@@ -149,21 +153,20 @@ User [anjomro](https://github.com/anjomro) did some reverse engineering and crea
 By doing so you can then access the machine locally to a certain degree.  
 
 This neat solution is called ["Kobra Unleashed"](https://github.com/anjomro/kobra-unleashed).  
-
-You need to get root shell access to the machine for using this solution for which you have to connect to the mainboard using the UART connector on the mainboard which you'll see being mentioned here further down below.  
-
----
-    
-### SPI/UART Connector On The PCB  
-
-As this might be interesting for someone who might try to access the mainboard for reverse engineering, I'd like to mention that there's a four pin SPI/UART connector on the mainboard as shown in the following picture.  
-
-![SPI connector](../assets/images/mainboard_K2Pro_connectors_SPI_web.jpg)  
-
     
 ---
+  
+### MOD: Different Mainboard 
+Generally speaking, it's possible to replace the stock mainboard with a different type of board, like e.g. a board from BigTreeTech (BTT) for being able to use Klipper (for example).  
+You just have to pay attention that it uses and provides 24V DC as well, as the PSU and the components like the fans etc. are running on 24V.  
 
-### Mainboard Cooling Fan
+Depending on the type of the board, you might have to use a different ABL sensor (and most likely a different type of control unit as well though, but I assume you'll run Klipper on it then anyway) and you probably aren't able to directly connect the acceleration sensor (you'd most likely have to connect it to the RPi where you have Klipper running onto then).  
+
+There haven't been reports of users who changed the mainboard yet though, so I can't show you any specific solution here at this time.  
+
+---
+
+## Mainboard Cooling Fan
   
 The following picture shows the fan of the mainboard. It's a 80x80x15mm, 24V, 0.06A type ("HSC BCY8015S24L").  
 
@@ -175,18 +178,6 @@ The following picture shows the mounting direction of the fan.
 ![MCU fan mounting direction](../assets/images/mainboard_K2Pro_fan-mounting-direction_web.jpg)  
 
  
-
----
-  
-## MOD: Different Mainboard 
-Generally speaking, it's possible to replace the stock mainboard with a different type of board, like e.g. a board from BigTreeTech (BTT) for being able to use Klipper (for example).  
-You just have to pay attention that it uses and provides 24V DC as well, as the PSU and the components like the fans etc. are running on 24V.  
-
-Depending on the type of the board, you might have to use a different ABL sensor (and most likely a different type of control unit as well though, but I assume you'll run Klipper on it then anyway) and you probably aren't able to directly connect the acceleration sensor (you'd most likely have to connect it to the RPi where you have Klipper running onto then).  
-
-There haven't been reports of users who changed the mainboard yet though, so I can't show you any specific solution here at this time.  
-
-
 
 ---
 
