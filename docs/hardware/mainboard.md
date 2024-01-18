@@ -109,6 +109,51 @@ Please see the expandable textbox below for further instructions and illustratio
       
 ---
 
+### Connecting To The Printer / Mainboard
+
+Anycubic doesn't allow any local access to the machine, neither via USB or via the inbuilt WiFi. So if you want to get access, you need to use their cloud service and APP.  
+
+However, there are some approaches and/or solutions being worth mentioned at this point which I'll list as MODs in the following. As soon as I come across further ones, I'll add them here as well.  
+
+---
+
+#### MOD: RPi Zero(2)W As WiFi USB Drive
+[mrfenyx](https://github.com/mrfenyx/) came up with an imho brilliant solution to avoid using a USB drive which you'd have to swap back and forth between your computer and your printer: he uses a Raspberry Pi Zero(2)W as a USB drive and which can then be accessed through your local network using WiFi. By doing so, you can just send (= copy/save) the sliced file to the RPi and then select it at the printer using the control unit.  
+I personally didn't test it yet, but I'll definitely do so.  
+
+This is the repo where you can find all the necessary information: [RPi-Zero-W-WiFi-USB](https://github.com/mrfenyx/RPi-Zero-W-WiFi-USB/)  
+
+??? warning "Use A USB Power Blocker"
+
+    When connecting the Raspberry Pi to the printer, make sure to use an additional USB power blocker.  
+    By doing so, you make sure that neither the RPi nor the mainboard will draw power through the USB-C connector from the other device. If you don't do so, it can harm your mainboard as well as your computer.  
+    
+    As it's an fast and easy solution, you can get a device called "USB power blocker" for a few bucks. Attention: make sure to *not* get a "USB *data* blocker" though, it *has* to be a *power* blocker!  
+    This device will then be plugged between the USB connector of the computer and the actual USB-C cable. It still allows data to be transferred, but the 5V line isn't existent. The following picture shows such a device - it's just plugged in between the printer's USB and the USB cable.  
+
+    ![USB power blocker](../assets/images/USB_powerblocker_web.jpg)  
+
+    However, you don't *have* to spend money on this item, as there are other ways to interrupt the 5V power line.  
+    For example, you can cut the 5V wire of your USB cable, you can solder a male and a female USB connector onto a little PCB and avoid making the 5V line connection.  
+    You can also simply use some electric or Kapton tape and cover the belonging pin at the USB connector of the cable like shown in the following picture.  
+
+    ![USB pin tape attached](../assets/images/USB_taped5V_web.jpg)  
+
+    Keep in mind though that you have to pay attention that you *only* cover the 5V pin and that you have to make sure that the tape is still in place every time you plug in the cable after you unplugged it.  
+
+---
+
+#### MOD: Own Server And Webinterface  
+
+User [anjomro](https://github.com/anjomro) did some reverse engineering and created a solution where you basically set up your own server where the machine then connects to via WiFi. You then use a webinterface anjomro created, which uses the interface of the printer's firmware.  
+By doing so you can then access the machine locally to a certain degree.  
+
+This neat solution is called ["Kobra Unleashed"](https://github.com/anjomro/kobra-unleashed).  
+
+You need to get root shell access to the machine for using this solution for which you have to connect to the mainboard using the UART connector on the mainboard which you'll see being mentioned here further down below.  
+
+---
+    
 ### SPI/UART Connector On The PCB  
 
 As this might be interesting for someone who might try to access the mainboard for reverse engineering, I'd like to mention that there's a four pin SPI/UART connector on the mainboard as shown in the following picture.  
