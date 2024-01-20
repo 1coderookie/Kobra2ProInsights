@@ -26,7 +26,10 @@ The following pictures show the printhead with the blue plastic cover from vario
 |:----------:|:---------:|:--------:|:-----------:|
 | ![Printhead front](../assets/images/head_K2Pro_head-front_web.jpg) | ![Printhead back](../assets/images/head_K2Pro_backside_web.jpg) | ![Printhead top](../assets/images/head_K2Pro_topside_web.jpg) | ![Printhead bottom](../assets/images/head_K2Pro_underside_web.jpg) |  
 
-It is the same as the one being used at the *Kobra 2 Plus* and *Kobra 2 Max* - it is *not* the same as the one being used in the regular *Kobra 2* and the *Kobra 2 Neo* though.  
+!!! warning
+
+    The printhead being used is the same as the one being used at the *Kobra 2 Plus* and *Kobra 2 Max* - but it is **not** the same as the one being used at the regular *Kobra 2* and the *Kobra 2 Neo*!  
+    So you can't get yourself one of those and use it at your Kobra 2 Pro!  
 
 --- 
 
