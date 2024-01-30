@@ -191,6 +191,8 @@ However, due to the fact that the following enclosure from SainSmart is just so 
 
 If you're planning on using this type of tent in a really dusty environment though, like in a workshop where you also work with wood or so, I'd strongly recommend to get yourself the tent from SainSmart (see below) instead as the zipper and the whole material is made of a much better quality.   
 
+UPDATE: I gave this one away to a friend and got myself some more of the SainSmart enclosures when they were on sale. The quality is just outstanding compared to the 'generic' one I showed. 
+
 ***SainSmart "Upgraded Large Volume 3D Printer Enclosure"***   
 The size of this tent style enclosure from SainSmart one is about 54x62x72cm.  
 Due to it's height, the enclosure allows the usage of a filament spool holder mounted to the top of the frame.  
@@ -221,6 +223,10 @@ On the right side there's an additional oopening as well which allows you to acc
 
 Due to the better quality, I personally used this tent for one of my Kobra Neos which only prints other types of filament than PLA in the first place.  
 But because the quality is just so much better than the quality of the generic one mentioned above, I ended up getting more of these enclosure from SainSmart and only use these ones now. Compared to the generic one, it's really impressive how much quieter the printer is and how much better the fumes are being kept iniside.  
+
+UPDATE: I gave the 'generic' one away to a friend and got myself some more of the SainSmart enclosures when they were on sale. The quality is just outstanding compared to the 'generic' one I showed. I even got myself more than I actually needed - just in case I'll get another machine. My cat loves them as well - she immediately seized the packages when I was setting up a new one..  
+
+![Even my cat loves em](../assets/images/SainSmart_catsy.jpg)  
 
 **Final thoughts on tent style enclosures**  
 My bottom line here about these two types of tent style enclosures would be: if you plan to use the enclosure for *printing* more demanding types of filament like ABS for example and not just like using it as a better dust protection cover, then I highly recommend getting the one from SainSmart.  
