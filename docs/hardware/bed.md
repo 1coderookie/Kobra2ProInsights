@@ -12,6 +12,7 @@
 | **Bedmount**: 7x14mm rigid spacers/bushings, 4x22mm countersunk head screws |
 | **Silicone Block**: 12x13mm, spring loaded |
 | **Tool height gauge sensor (z-offset)**: 10mm diameter (round), spring loaded |
+| **Acceleration sensor**: LIS2DW12 | 
 
 ---
 
@@ -323,8 +324,8 @@ If rests of filament are stuck on it after the nozzle has been wiped, take them 
 
 ---
 
-## ADXL Acceleration Sensor
-There's an ADXL acceleration sensor for measuring the vibrances installed at the rear side of the bed's underside, right where the z-offset sensor is located.   
+## Acceleration Sensor
+There's an acceleration sensor (type LIS2DW12) for measuring the vibrances installed at the rear side of the bed's underside, right where the z-offset sensor is located.   
 
 The following pictures show the underside view of the belonging area of the bed's underside.    
   
