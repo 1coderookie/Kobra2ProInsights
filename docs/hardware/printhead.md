@@ -15,6 +15,8 @@
 | **Part Cooling Fan**: 24V, 0.14A, 50x50x20mm, model "Coolcox BF5020H24D"  |
 | **Heatsink Cooling Fan**: 24V, 0.08A, 30x30x10mm, model "HSC BCY3010D24H"  |
 | **ABL sensor**: PNP-NO type (imho!), connection: brown = VCC 24VDC; blue = GND; black = LEVEL/signal (seems to be the same as the one being used at the 'old' regular Kobra) |  
+| **Acceleration sensor**: LIS2DW12 | 
+| **Breakout board**: V1.0.1 |
 
 ---
 
@@ -103,6 +105,9 @@ The following picture shows the whole metal plate where the feeder construction 
 There's a PCB located at the printhead where the electronic components (e.g. thermistor, cartridge heater, ABL sensor etc.) are connected to which I call (for the sake of simplicity) "breakout board".    
 The more 'formal' name for this is "Hot End Nozzle Adapter Board Breakout Module" - so I'll stick with "breakout board".. ;)
 
+The board's version is v1.0.1 - it's *not* the same as the one being used at the printhead of the Kobra 2 and the Kobra 2 Neo!
+
+
 ![Breakout board](../assets/images/head_K2Pro_distri-pcb_labeled_web.jpg)  
 
 The following picture shows this breakout board from a slightly different angles, so that you can see the labels at the wires and the plugs and connectors a bit better.  
@@ -122,6 +127,13 @@ The connection between the mainboard and this breakout board is then accomplishe
     Pay attention that those levers at the sides of the connector are clipped into the plug's side.  
     Then carefully push down that cap while paying attention that it really goes across the plug in the back as well.  
     Once everything looks fine so far, push down the cap until it finally goes over the plug and clips onto it. Don't try to force it too much - you do need a bit of force, but you have to make sure that everything is in place.  
+
+---
+
+## Acceleration Sensor
+There's an acceleration sensor located at the breakout board (component "U1"), the type of sensor is a LIS2DW12.  
+This one is being used for measuring the vibrances during the calibration process.
+
 
 ---
 
