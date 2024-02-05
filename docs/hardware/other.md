@@ -157,6 +157,13 @@ Only some of the tents available on the market seem to really differ from those 
 I got myself one of those "generic" ones which was branded by Sunlu and one from SainSmart which I'll show in the following and mention some pros and cons I personally consider worth mentioning.  
 I didn't get the one fromm Creality as it was the narrowest among those offers (width ~47.5cm) - even though it would be sufficient and the printer would fit in there (without the spool holder being mounted to the side), I personally like a bit of additional space as I often get my hands on the hardware anyway and therefore won't need to always take the printer out of the enclosure when choosing a slightly wider tent.  
 
+!!! info "Spool Holder"  
+
+    With the regular sized tents like the ones being shown in the following, you can't use the stock spool holder being mounted to the left side of the frame.  
+    However, there's enough space to either put the spool on a custom spool holder you printed and placed next to the printer or you can also mount the spool to the top of the frame. The latter isn't really adviseable though, especially if you want to print with high speeds, as the additional and changing weight at the top does have an altering influence on the vibrations.
+
+---
+
 ***Sunlu (imho "generic" type of tent)***  
 The size of this generic tent style enclosure one is about 55x64x74cm.  
 Due to it's height, the enclosure allows the usage of a filament spool holder mounted to the top of the frame.    
@@ -193,6 +200,8 @@ If you're planning on using this type of tent in a really dusty environment thou
 
 UPDATE: I gave this one away to a friend and got myself some more of the SainSmart enclosures when they were on sale. The quality is just outstanding compared to the 'generic' one I showed. 
 
+---
+
 ***SainSmart "Upgraded Large Volume 3D Printer Enclosure"***   
 The size of this tent style enclosure from SainSmart one is about 54x62x72cm.  
 Due to it's height, the enclosure allows the usage of a filament spool holder mounted to the top of the frame.  
@@ -227,6 +236,8 @@ But because the quality is just so much better than the quality of the generic o
 UPDATE: I gave the 'generic' one away to a friend and got myself some more of the SainSmart enclosures when they were on sale. The quality is just outstanding compared to the 'generic' one I showed. I even got myself more than I actually needed - just in case I'll get another machine. My cat loves them as well - she immediately seized the packages when I was setting up a new one..  
 
 ![Even my cat loves em](../assets/images/SainSmart_catsy.jpg)  
+
+---
 
 **Final thoughts on tent style enclosures**  
 My bottom line here about these two types of tent style enclosures would be: if you plan to use the enclosure for *printing* more demanding types of filament like ABS for example and not just like using it as a better dust protection cover, then I highly recommend getting the one from SainSmart.  
