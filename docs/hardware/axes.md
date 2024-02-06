@@ -39,7 +39,7 @@ The x-axis is represented by the printhead moving along the x-axis gantry.
 
 ![X axis](../assets/images/axes_K2Pro_X-gantry_web.jpg)  
 
-The metal plate where the printhead is mounted onto is belt driven, the motor which drives the belt (8mm wide, GT-2 type) is located at the left side.   
+The metal plate where the printhead is mounted onto is belt driven, the motor which drives the belt (6mm wide, GT-2 type) is located at the left side.   
 
 You can adjust the tension of the belt by using the knob at the right side of the aluminum profile where the printhead is guided onto.  
 
