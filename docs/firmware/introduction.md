@@ -11,7 +11,10 @@ However, it seems that no action has been taken yet at the time of writing this 
 Investigations are currently being made by members of the community and there already have been successful approaches to hack the closed stock firmware. One can now already decrypt certain logs, get root access or even change settings by using specific commands.  
 However, I won't go deeper into this right now and just link to the corresponding thread in the Klipper discourse group instead, so you can read around yourself: [Klipper Discourse Group: Printer.cfg for Anycubic Kobra 2 Plus/Pro/Max](https://klipper.discourse.group/t/printer-cfg-for-anycubic-kobra-2-plus-pro-max/11658)  
 
+There is also a solution which allows you to upload files to a wireless storage device you connected to the machine as well as a solution where you set up your own server and webinterface which then uses the interface of the printer's firmware. You can find these one being mentioned in the chapter ["Mainboard"](../hardware/mainboard.md#connecting-to-the-printer-mainboard).  
+
 Once there were successful attempts of installing Klipper, you can find the necessary information (which I'll then hopefully come across) in the specific [Klipper chapter](fw_klipper.md).  
+ 
  
 
 ---
