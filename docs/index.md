@@ -9,8 +9,7 @@ I created this site to make it easier for users of this printer to get started, 
 
 ---
 
-***ATTENTION:***  
-***This site is still WIP, certain content is still missing!***   
+***ATTENTION: This site is still WIP, certain content is still missing!***   
 
 ---
   
