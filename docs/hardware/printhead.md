@@ -141,6 +141,15 @@ This one is being used for measuring the vibrances during the calibration proces
 The printer comes with an inductive proximity sensor for automatic bed leveling (ABL) which detects the metal of the spring steel PEI plate.  
 The ABL sensor is the part with that round orange tip whic is located at the right hand side when looking at the printhead from the front.  
 
+The following picture shows the location of the ABL sensor at the printhead, looking at it from a bottom view angle - the ABL sensor is the part at the right side with the round orange tip.   
+  
+![Orange tip of the ABL sensor at the right side](../assets/images/head_K2Pro_underside_web.jpg)
+    
+The ABL sensor itself is mounted in a plastic bracket which is then mounted to the metal backplate.  
+  
+![ABL sensor](../assets/images/head_K2Pro_abl-sensor_web.jpg)
+
+
 The sensor itself seems to be the same as the one being used at the regular Kobra, so if you need a replacement and can't find it for this specific model, look out for the one of the Kobra as well.  
 In a German 3d forum someone measured the sensor of the regular Kobra and it gives +24VDC on the black signal wire when the LED lights up, so imho that's a PNP-NO type then (as the level is HIGH then).  
 The connections are:  
@@ -151,25 +160,12 @@ The connections are:
 
 
 The position of the sensor (the height) should be adjusted in relation to the nozzle.  
-Therefore you can either use the ABL height gauge which sometimes comes with the printer or you can use the bigger one of the two-sided open ended wrench that comes in the toolset.  
-The following picture shows the height gauge that sometimes comes with the printer - if you don't have it and don't want to use the mentioned wrench, you can download [the gcode file](https://cdn.shopify.com/s/files/1/0245/5519/2380/files/Height_gauge.rar?v=1667814312) from Anycubic's support page and print it.  
-
-![ABL height gauge](../assets/images/abl-gauge_web.jpg)
-
-The procedure about how to adjust the position will be described in the following section. 
-
-The following picture shows the location of the ABL sensor at the printhead, looking at it from a bottom view angle - the ABL sensor is the part at the right side with the round orange tip.   
-  
-![Orange tip of the ABL sensor at the right side](../assets/images/head_K2Pro_underside_web.jpg)
-    
-The ABL sensor itself is mounted in a plastic bracket which is then mounted to the metal backplate.  
-  
-![ABL sensor](../assets/images/head_K2Pro_abl-sensor_web.jpg)
+The procedure about how to adjust the position will be described for the specific printer model in the following section as well. 
 
 
 ---  
       
-#### Leveling The ABL Sensor
+### Leveling The ABL Sensor
 
 The tip of the ABL sensor should be ~2mm higher than the tip of the nozzle.  
 If it's too high, the sensor won't be able to detect the spring steel PEI plate and your nozzle will be driven into the build plate.    
@@ -184,11 +180,10 @@ The following picture shows a sensor of a different printermodel that should/has
 
 ![This sensor needs to be leveld](../assets/images/head_neo_ABL2level_web.jpg)
 
-As I didn't get the plastic height gauge from Anycubic with my printer, I used the bigger one of those two-sided open ended wrenches. Check the parts that came with your printer, maybe you got the gauge shown in the following picture.  
+Therefore you can either use the ABL height gauge which sometimes comes with the printer or you can use the bigger one of the two-sided open ended wrench that comes in the toolset.  
+The following picture shows the height gauge that sometimes comes with the printer - if you don't have it and don't want to use the mentioned wrench, you can download [the gcode file](https://cdn.shopify.com/s/files/1/0245/5519/2380/files/Height_gauge.rar?v=1667814312) from Anycubic's support page and print it.  
 
 ![ABL height gauge](../assets/images/abl-gauge_web.jpg)
-
-If you didn't get this tool, you can also print yourself one: [ABL height gauge](https://cdn.shopify.com/s/files/1/0245/5519/2380/files/Height_gauge.rar?v=1667814312).  
 
 See the expandable textbox below for further instructions.  
 
@@ -208,7 +203,7 @@ See the expandable textbox below for further instructions.
 
 ---
 
-#### Dismounting The ABL Sensor
+### Dismounting The ABL Sensor
 If you want to change the ABL sensor, take off the blue plastic housing of the printhead.  
 Make sure to not rip off the wires of the part cooling fan.  
 Then you'll already see the hexagon socket screw which holds the bracket of the sensor in place.  
@@ -240,11 +235,17 @@ See the expandable textbox below for further instructions.
 ## Extruder / Feeder Gear System
 This machine is using a direct drive, double gear extruder/feeder system (4:1 ratio).  
 
-When you take off the blue plastic cover of the printehad, you can see the ..
+At the right side of the printhead's plastic cover you can see a hole with an arrow around it and the word "Tighten" next to it. In that hole there is a screw located which you have to use for adjusting the feeder gear tension.  
 
+| Right side | Closeup view screw location | 
+|:----------:|:---------:|
+| ![Printhead right](../assets/images/head_K2_side-right_web.jpg) | ![Closeup view screw](../assets/images/head_K2Pro_feeder-gear-tensioner_web.jpg) | 
 
-At the right side of the printhead's plastic cover you can see a hole. In there is a screw which you have to use for adjusting the feeder gear tension.  
-![Feeder gear tensioner](../assets/images/head_K2Pro_feeder-gear-tensioner_web.jpg)  
+When you take off the blue plastic cover of the printhead, you can see the extruder gearbox above the black metal heatsink. The following picture shows the gearbox with the three corresponding screws being marked.  
+
+![Feeder gearbox](../assets/images/head_K2_extruder-screws-marked_web.jpg)  
+
+Please see the next section if you have to disassemble the feeder gear.  
 
 ??? tip "Can't Load New Filament?!"
 
@@ -255,21 +256,9 @@ At the right side of the printhead's plastic cover you can see a hole. In there 
     If you did so and were able to insert the filament but it seems that it's getting stuck lower down in the hotend, then you might hit the end of the nozzle with an edge of your filament. It helps when you cut the filament in a 45° angle and bend the part you're manually feeding into the hotend so that it's pretty straight.  
     If you still can't get your filament loaded, it's most likely that the PTFE tube inside of the hotend is clogged or deformed or that you have a clog in or above the nozzle somewhere. To clean, inspect and maintain it, you need to disassemble the hotend. Check the section ["Disassembling The Hotend"](#disassembling-the-hotend) further down below for more information.   
   
-<!--
-The following picture shows the extruder/feeder of the **Neo** with the mounted plastic cover of the printhead.  
-  
-![Direct drive of the Neo](../assets/images/head_neo_directdrive_web.jpg)
-  
-At the top in front of the little hole where the filament is inserted you find a little lever for manual release of the tension while loading/unloading the filament. The screw in the front adjusts the pressure of the feeder gear which is brought onto the filament. The following picture shows the mechanism without the plastic cover.  
-  
-![Feeder top view](../assets/images/head_feeder_topview_web.jpg)
-  
-You can access the inside of the feeder system by dismounting the heatsink, which is located at the right side underneath the heatsink fan. The following picture shows the inside of the system.  
 
-![Feeder inside](../assets/images/head_neo_feeder-inside_web.jpg)  
--->
   
-!!! warning "Retraction Settings"
+??? info "Retraction Settings"
 
     Make sure that you set the retraction distance and speed to the correct values for a direct drive in conjuction with a Volcano nozzle!  
     In general, it's supposed to be something around 1mm retraction *distance* for direct drive systems, when using a Volcano nozzle you should be fine going up to 2mm. A bit more might work well also, but you don't want to risk pulling the hot and melted filament up in the cold zone of the heatbreak, so don't exxagerate increasing the retraction distance.  
@@ -290,36 +279,39 @@ You can access the inside of the feeder system by dismounting the heatsink, whic
 
 ---
 
-#### Disassembling The Feeder Gear
+### Disassembling The Feeder Gear
 
-(..needs to be added..)   
+If problems with the feeder gear occur, you have to open the feeder gear box or even disassemble the whole system for cleaning, further inspections or replacing certain parts.  
+Especially when printing soft material like TPU, it can happen that filament gets wind up and jammed in the feeder gear which you then can't pull out.  
+Besides that, residues or abrasion can build up in the feeder gear system, so it's good to check this and do a proper cleaning when facing extrusion issues.   
 
-<!--
+Please see the expandable textbox below for further instructions about how to open the feeder gear box to get access to the interior parts.  
+
 ??? example "Disassembling Procedure"  
 
-    - There is a metal part with cooling fins underneath the 'big' fan at the right side, this is the heatsink. <br> ![Metal plate with cooling fins](../assets/images/head_neo_cooling-fins_web.jpg)  
-    - This heatsink is secured by three screws as you can see at the following picture. <br> ![The three screws holding the metal plate](../assets/images/head_neo_screws-cooling-plate_marked_web.jpg)  
-    - If you unscrew those three hexagon socket screws and take the heatsink off, you can get a closer look at the gears of the feeder system. <br> ![Neo feeder gear system](../assets/images/head_neo_feeder-inside_web.jpg)  
-    - The following picture shows the feeder gear properly assembled. <br> ![Feeder gear assembled](../assets/images/head_neo_feedergear-assembled_web.jpg)  
-    - The following picture shows the feeder gear being completely disassembled with the parts arranged at their (approximately) position where they belong. <br> ![Feeder gear disassembled](../assets/images/head_neo_feedergear-disass_web.jpg)  
-    - The following picture shows the disassembled feeder gear, the heatsink fan and the ABL sensor next to each other with the belonging screws placed at the (roughly) belonging position of the components. <br> ![Feeder gear and parts](../assets/images/head_neo_feeder-and-parts_web.jpg) <br> So from right to left this is how it'll look when you disassemble the belonging parts. The two little screws below the heatsink are the ones which hold the heatbreak in place. Mind the three long screws for that heatsink - the two longer ones are used at the left side, the slightly shorter one is used in the bottom right corner.
+    - When you take off the blue plastic cover of the printhead (Attention: disconnect the part cooling fan cable when taking off the head's cover!), you can see the extruder gearbox above the black metal heatsink. The following picture shows the gearbox with the three corresponding screws being marked.  
+      ![Feeder gearbox](../assets/images/head_K2_extruder-screws-marked_web.jpg)   
+    - If you're really careful to not rip off any wires, you can leave everything besides the ABL probe connected and leave the breakout board in it's location as well.  
+    - Unscrew those three screws and carefully take off the corresponding lid of the feeder gear box as shown in the following picture. When doing so, be careful to neither lose any parts nor rip off any wires or connectors!  
+      ![Feeder gearbox open](../assets/images/head_K2_extruder-open_web.jpg)  
+    - Now you can see the interior. The following pictures show some close-up views of the parts, starting with the lid where you can also see the lever and the corresponding spring.  
+      ![Feeder gearbox lid](../assets/images/head_K2_gearbox-lid_web.jpg)  
+      ![Feeder gearbox lid gear](../assets/images/head_K2_gearbox-lid-closeup_web.jpg)  
+      ![Feeder gearbox base](../assets/images/head_K2_gearbox-base_web.jpg)  
+      ![Feeder gearbox base gear](../assets/images/head_K2_gearbox-base-middle_web.jpg)  
+      
+    *Whatever you now have to do about further disassembling, pay special attention to the location of the parts before taking apart anything and make sure to not lose anything!*  
+   
 
-    ??? info "Dimensions Of The Spring"
-
-        As the question arised about the dimensions of the spring being used which applies the tension to the feeder gear (in case you lost it and need to find a suitable replacement), here are the dimensions of it:  
-    
-        - overall length: ~12-12.5mm
-        - length completely compressed: hard to tell as it's pretty stiff, I'd say around 6-7mm
-        - spring steel thickness: 1mm
-        - windings (except the 'closed' loops at both ends): 4
-        - outer diameter: ~7.1mm
-        - inner diameter: ~5.1mm
   
 ??? example "Reassembling Procedure"
 
-    For reassembling, just put everything back together by proceeding the steps of disassembling in reverse. Make sure you're using the right screws and don't forget any of them.  
-    Don't overtighten the screws though - as my father (R.I.P.) used to say: "After tight comes loose!" (roughly translated ;) ).  
--->
+    For reassembling, just put everything back together by proceeding the steps of disassembling in reverse.  
+    Make sure that everything is in the correct location and that everything aligns how it should.  
+    When putting on the lid, make sure it really sits in the correct position and that there's no gap when putting in the three screws to secure the lid.   
+    When screwing in the screws that hold the lid in place, don't overtighten the screws - as my father (R.I.P.) used to say: "After tight comes loose!" (roughly translated ;) ).  
+
+
 
 ---
 
