@@ -115,6 +115,7 @@ The following picture shows this breakout board from a slightly different angles
 ![Breakout board sideview](../assets/images/head_K2Pro_distri-pcb_labels_web.jpg)  
 
 The connection between the mainboard and this breakout board is then accomplished by a ribbon cable. The following picture shows the connector at the head and a part of that ribbon cable.  
+**As all connectors, this connector is coded - means, it only fits in ONE specific direction! Make sure to mind those 'noses' and notches and to plug it in correctly!**  
 
 ![Ribbon cable](../assets/images/head_K2Pro_ribbon-cable-connector_web.jpg)  
 
