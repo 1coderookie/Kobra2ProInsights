@@ -67,8 +67,9 @@ In the following I'll list the most crucial points.
 
 - Set up the frame correctly!  
   Means, check if the baseframe is mounted being square, if the the z-axis aluminum parts are really mounted perpendicular onto the baseframe and so on. **As everything else relies on this, the proper alignment of the frame is the most important step!**  
-  So, once again: **Set up your frame and your axes. Everything should be square, perpendicular and equidistant.**  
-- Check the axes!  
+  So, once again: **Set up your frame and your axes. Everything should be square, perpendicular and equidistant.**
+- Check if all screws, bolts and nuts are tight.     
+- **Check the axes!**  
   Means, check the whole z-axis lead screw system for being assembled correctly and vertically aligned and that the timing belt is properly tensioned.
   Make sure the lead screws are lubed, that the anti-backlash nuts are installed correctly, that the coupler between the motorshaft and the lead screw is tight, that the pulleys are mounted tightly and so on.  
   At the x- and y-axes, make sure that you have all wheels positioned correctly (neither too tight nor too loose), that you don't have bad bearings which cause hiccups and irregular movements and that the belts aren't sloppy or too tight.
@@ -130,6 +131,22 @@ See the section ["Adjusting The Sensor's Spring Tension"](hardware/bed.md#adjust
 The upper side of the button of the z-offset sensor/switch must align with the upper side of the PEI plate. If the metal button is either too high or too low, you need to adjust the height accordingly.  
 
 See the section ["Adjusting The Sensor's Height"](hardware/bed.md#adjusting-the-sensors-height) for further information.
+
+---
+
+### Check The Belts
+Make sure the belts of the axes are properly tensioned. Don't go with sloppy belts, but don't tension them up too much as well. Please refer to the according sections for further information.  
+
+---
+
+### Check The Wheels
+Make sure the v-slot wheels are all fine and that they aren't harmed or indented. The wheels should turn nice and smooth.  
+Same goes for the SG15 bearings - if you see any cracks or irregularities at the surface of the wheels, better change them right away.  
+If you feel any reoccuring hiccups during movements or when turning a wheel and can't see any damage of the wheel itself, you might have a bad bearing.  
+If any wheels or bearings seem to be damaged or faulty, get yourself new ones and install them.  
+ 
+Also pay attention to the correct positions of the V-slot wheels and the SG15 bearings. They should sit in the v-slot of the rails / on the metal rod of the rails perfectly and they shouldn't run too loose nor too tight. Please refer to the according sections for further information. 
+
 
 ---
 
