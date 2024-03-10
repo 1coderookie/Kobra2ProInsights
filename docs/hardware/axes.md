@@ -309,18 +309,18 @@ Plus, you'll find information about *how to tram the x-axis gantry, which is cru
  
 ---
 
-### V-Slot Wheels Position
+### V-Slot Wheels 
 The x-axis gantry is moving along the z-axis aluminum profile driven by the z-axis lead screws, guided by v-slot wheels. They run in the v-slot of the z-axis profiles and therefore they should sit in a good position. Means, they shouldn't sit too tight in the V-slot but also not too loose - they should be able to roll and move freely, but they shouldn't be too far away from the profile which would lead to instability.  
 
+---
+
+#### Position
 *You can adjust the roller tension by turning the eccentric nut of the inner wheels which moves the wheels either towards or away from the aluminum profile.*    
+The following picture shows an eccentric nut (in this case mounted to a POM wheel) which I painted to make the special shape of it more visible.  
 
-??? info "What Is An Eccentric Nut?"  
+![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
 
-    The following picture shows an eccentric nut (in this case mounted to a POM wheel) which I painted to make the special shape of it more visible.  
-
-    ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
-
-    As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole bearing will be changed, either towards or away from the rail it's sitting at.   
+As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole bearing will be changed, either towards or away from the rail it's sitting at.   
 
 *Not all of the wheels have eccentric nuts though as the following pictures show, only the two wheels (one at each side) which are facing the inner side of the frame (towards the bed) do have an eccentric nut.*  
     
@@ -340,7 +340,7 @@ They're mounted to each end of the x-axis gantry.
 
 ---
   
-### Maintenance  
+#### Maintenance  
 
 As the wheels will suffer from running on the aluminum and debris can build up, clean the aluminum and the wheels itself from time to time. 
 
