@@ -324,11 +324,7 @@ The x-axis gantry is moving along the z-axis aluminum profile driven by the z-ax
 
 *Not all of the wheels have eccentric nuts though as the following pictures show, only the two wheels (one at each side) which are facing the inner side of the frame (towards the bed) do have an eccentric nut.*  
     
-![Eccentric nut left side](../assets/images/axes_K2Pro_x-ecc-nut-left_web.jpg)
-  
-Here you can see clearly that only the inner wheel on the left side in the following picture has an eccentric nut, the red circle at the outer wheel on the right side marks the round spacer.  
-
-![Eccentric nut right side](../assets/images/axes_K2Pro_x-ecc-nut-right_web.jpp)
+![ecc nuts positions](../assets/images/axes_x-ecc-nuts_web.jpg)  
   
 However, you might face the problem that you just can't get all of the three wheels at each side to touch the aluminum frame as they should.  
 So if you need to adjust the position of the wheels using the eccentric nuts, you might encouter the problem that e.g. the inner wheel and the lower wheel on the outside may sit in the v-slot really nice, but that the third wheel (the upper one on the outside in this example) isn't even touching the aluminum and can be spinned in the air. This also leads to a wobbly and sagging/lagging x-axis gantry at the unsupported right side, as you'll most likely be able to move the right part (the side without the lead screw) up and down a bit.   
