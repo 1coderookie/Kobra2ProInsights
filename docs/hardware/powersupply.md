@@ -75,7 +75,7 @@ The fan is a 60x60x15mm, 24V, 0.10A type ("Cheng Liang CHA6024RL-15B").
 
 ---
 
-## Change The Cover Of The PSU Housing (MOD)
+## MOD: Change The Cover Of The PSU Housing 
 
 !!! warning "Warning: Don't Open The PSU - And IF So, Don't Touch Any Parts Inside"  
 
@@ -113,9 +113,23 @@ The following picture shows the PSU mounted again.
 As this lid sticks out a few milimeters and the clearance is already pretty low with the stock setup, I raised the printer a bit by mounting slightly taller feet I had laying around. You can also print some risers which can be plugged onto the existing feet.   
 If you do so and you're using Klipper and resonance compensation (aka Input Shaping), keep in mind that the vibrational behaviour will change and you therefore should execute a new resonance measurement. 
 
+
+**UPDATE:**  
+*Since most people apparently don't use the mosquito net and don't use additional washers to mount the fan, I made a new remix of the model where I added struts in the hexagon cutouts as well as two holes for mounting the stock fan.*  
+***This is the link of the new model: [Kobra 2 series PSU cover/lid (for stock fan and/or Noctua 6025) ](https://www.printables.com/model/783591-kobra-2-series-psu-coverlid-for-stock-fan-andor-no)*** 
+
+The following picture shows the different versions.  
+
+![New vs old vs stock](../assets/images/PSU_cover_v2_mounted_web.jpg)  
+
+The following picture shows the new version mounted.  
+
+![New version mounted](../assets/images/PSU_covers_v1-v2-stock_web.jpg)  
+
+
 --- 
 
-## How To Add A Step-Down Converter For Using 12V Fans (MOD)
+## MOD: How To Add A Step-Down Converter For Using 12V Fans 
 
 When you want to add components which need a different voltage than the 24VDC the PSU offers, you can do so by using a step-down converter (or a step-up converter if you need a higher voltage than 24VDC). Simply connect the IN of the converter to one of the free 24VDC connectors of the PSU, dial in the voltage you need and then connect the belonging part to the OUT of the converter.  
 The following picture shows a typical "LM2596S" type step-down converter which can be used.  
@@ -138,7 +152,7 @@ However, when you want to use e.g. 12V fans which speeds are usually controlled 
 
 ---
 
-## Add Additional Fuses To The 24V DC Wiring (MOD)
+## MOD: Add Additional Fuses To The 24V DC Wiring 
 
 It is highly recommended to add a fuse or a fusebox to each of the 24V lines. Pay attention to choose the correct 'size' of the fuse for the belonging part (ampere rating).  
 Doing so can save you from burning down your house if components fail or if the wires somehow overheat and start to burn due to broken strands (which causes a higher resistance) or a shortcut.  
@@ -147,9 +161,9 @@ Doing so can save you from burning down your house if components fail or if the 
 
 ---
 
-## Add An External MOSFET (MOD) 
+## MOD: Add An External MOSFET 
 
-It's adviseable to add an external MOSFET for driving the heated bed (if you like, you can also add one for the heater cartridge as well of course). Even though the MOSFET on the mainboard is sufficient, it's an upgrade worth doing as it not only leads to the fact that the bed will be heated up slightly faster, but it also increases the security of the hole printer.  
+It's advisable to add an external MOSFET for driving the heated bed (if you like, you can also add one for the heater cartridge as well of course). Even though the MOSFET on the mainboard is sufficient, it's an upgrade worth doing as it not only leads to the fact that the bed will be heated up slightly faster, but it also increases the security of the hole printer.  
 The MOSFET of the mainboard doesn't have a heatsink and it *may* caused by overheating due to an excessive amount of current being drawn, especially when using higher bed temperatures. Due to the low clearance between the fan of the moainboard and the ground the printer stands on, the cooling isn't the best as well. When using an enclosure which then heats up as well, cooling gets even worse.  
 If the board's MOSTFET dies, you most likely have to get a whole new mainboard then. Even though it's possible to solder a new one onto the board (if you're skilled to do that), additional components might have been harmed.  
 To avoid that, it's therefore adviseable to add an external MOSFET which then takes the load - the one on the mainboard only acts as a signal for the external one to switch.  
