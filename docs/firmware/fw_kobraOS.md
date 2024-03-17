@@ -23,14 +23,8 @@ For updating the firmware, you can either
 ---
 
 ## Settings
-The specific settings of the machine are -due to the fact that it's closed source now- 'unknown'.  
-However, when the first `update.swu` file became available, it was possible to investigate that one.  
-
-??? info "Investigating The `update.swu` File Is Only Possible Up To FW v3.0.3"  
-
-    Anycubic decided to change certain parts of the firmware (?) and with firmware v3.0.5 they now use precompiled binary files called `firmware.bin` instead of the `update.swu` files as before.  
-    So now it's not possible anymore (afaik!) to investigate the settings as easy as it was when SWU-files had been used.  
-
+The specific settings of the machine are -due to the fact that it's closed source now- supposed to be 'unknown'.  
+However, when the first `update.swu` file became available, it was possible to access and investigate the files `printer.cfg` and `unmodifiable.cfg`.  
 
 ??? info "Special Thanks To [lpi](https://github.com/lpi)!"  
 
@@ -988,10 +982,38 @@ z_offset_adjust : 0.25
     ```
 ---
 
-### MOD: Change Settings
+### MOD: Modify Firmware And Settings  
+Due to the great work of various community members, it is now possible to acess and modify the firmware as well as the settings.  
+I'll list the solutions I'm aware of in the following - if you came across further solutions which aren't listed here, please reach out and let me know, so that I can add them here.  
+
+**Thanks to everyone who took the time and effort to make this happen!**
+
+---
+
+#### Changing Settings 
 Due to the work of [daksimpson](https://klipper.discourse.group/u/daksimpson) it's possible to change settings in the abovementioned files `printer.cfg` and `unmodifiable.cfg`.  
+For this, no root access is necessary.  
 Please read [this post in the Klipper discourse group](https://klipper.discourse.group/t/printer-cfg-for-anycubic-kobra-2-plus-pro-max/11658/107) for further instructions!
 
+---
+
+#### Various Tools For Modifying KobraOS
+The following repository offers various tools for accessing, rooting and modiying the stock firmware.  
+Please read the according descriptions at the repository about what can be done.  
+
+[Anycubic Kobra 2 Series Tools](https://github.com/ultimateshadsform/Anycubic-Kobra-2-Series-Tools) by [ultimateshadsform](https://github.com/ultimateshadsform)
+
+---
+
+#### Custom Webserver
+
+Tools and code which is needed to build a custom webserver: [Anycubic Kobra 2 Custom Webserver](https://github.com/AGG2017/ACK2-Webserver) by [AGG2017](https://github.com/AGG2017) 
+
+---
+
+#### Custom Webserver & Webinterface
+
+Webinterface which uses the interface of the KobraOS and a custom webserver: [Kobra Unleashed](https://github.com/anjomro/kobra-unleashed) by [anjomro](https://github.com/anjomro)
     
 ---
 
