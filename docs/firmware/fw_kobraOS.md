@@ -988,20 +988,32 @@ I'll list the solutions I'm aware of in the following - if you came across furth
 
 **Thanks to everyone who took the time and effort to make this happen!**
 
+!!! warning "Backup The Stock Settings And Be Careful About Changing Settings!"  
+
+    Even though this should be a no-brainer, make a backup of the stock settings before attempting to change anything!  
+    Besides, be very careful when changing any settings - changing the wrong settings could do harm and might result in a non-booting device!  
+    If you don't know what you're doing, don't play around!  
+    Don't assume the tools listed in the following are foolproof!   
+    Read the Klipper documentation attentively to understand the settings and if in doubt, better don't change anything!
+
+---
+
+#### Various Tools For Modifying KobraOS
+The following repository offers various tools for accessing, rooting and modifying the stock firmware.  
+Please read the according descriptions at the repository about what can be done.  
+
+[Anycubic Kobra 2 Series Tools](https://github.com/ultimateshadsform/Anycubic-Kobra-2-Series-Tools) by [ultimateshadsform](https://github.com/ultimateshadsform)
+
 ---
 
 #### Changing Settings 
 Due to the work of [daksimpson](https://klipper.discourse.group/u/daksimpson) it's possible to change settings in the abovementioned files `printer.cfg` and `unmodifiable.cfg`.  
 For this, no root access is necessary.  
-Please read [this post in the Klipper discourse group](https://klipper.discourse.group/t/printer-cfg-for-anycubic-kobra-2-plus-pro-max/11658/107) for further instructions!
 
----
-
-#### Various Tools For Modifying KobraOS
-The following repository offers various tools for accessing, rooting and modiying the stock firmware.  
-Please read the according descriptions at the repository about what can be done.  
-
-[Anycubic Kobra 2 Series Tools](https://github.com/ultimateshadsform/Anycubic-Kobra-2-Series-Tools) by [ultimateshadsform](https://github.com/ultimateshadsform)
+**Warning:**  
+**This way of changing settings in the `printer.cfg` still seems to work, but you have to know what you're doing! This solution is not foolproof at all! Changing the wrong setting can leave you with a bricked unit!**  
+ 
+Please read [this post in the Klipper discourse group](https://klipper.discourse.group/t/printer-cfg-for-anycubic-kobra-2-plus-pro-max/11658/107) for further instructions!  
 
 ---
 
