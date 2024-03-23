@@ -154,15 +154,6 @@ By doing so you can then access the machine locally to a certain degree.
 
 This neat solution is called ["Kobra Unleashed"](https://github.com/anjomro/kobra-unleashed).  
     
----
-  
-### MOD: Different Mainboard 
-Generally speaking, it's possible to replace the stock mainboard with a different type of board, like e.g. a board from BigTreeTech (BTT) for being able to use Klipper (for example).  
-You just have to pay attention that it uses and provides 24V DC as well, as the PSU and the components like the fans etc. are running on 24V.  
-
-Depending on the type of the board, you might have to use a different ABL sensor (and most likely a different type of control unit as well though, but I assume you'll run Klipper on it then anyway) and you probably aren't able to directly connect the acceleration sensor (you'd most likely have to connect it to the RPi where you have Klipper running onto then).  
-
-There haven't been reports of users who changed the mainboard yet though, so I can't show you any specific solution here at this time.  
 
 ---
 
@@ -177,7 +168,155 @@ The following picture shows the mounting direction of the fan.
 
 ![MCU fan mounting direction](../assets/images/mainboard_K2Pro_fan-mounting-direction_web.jpg)  
 
+
 ---
+  
+
+## MOD: Different Mainboard
+
+Since we can't run a native Klipper on the stock mainboard, we have to use a different mainboard if we want to do so.  
+Generally speaking, you can use pretty much any generic mainboard, like from BTT or MKS, you just need to make sure that it can use 24V DC.   
+
+In the following, I'll list which kind of connectors you most likely will need - of course you have to check the according connectors at the specific maninboard you want to use.  
+
+Since the stock wiring for both the main cable which connects to the printhead ("E-CON") as well as for the cable which connects to the X-axis setup ("X-CON") come with specific connectors, you can either get yourself the corresponding connectors or just cut the given ones and retrofit the specific connectors which are needed for the mainboard you have chosen.  
+You need a **14pin** and a **24pin PHB 2.0 male** connector. These connectors for the two main ribbon cables might be hard to find - I didn't find them at all in any store in Germany, but luckily *one seller* at AliExpress ("YANDONG store", store/912016358) had them (the 24pin connector was the one which was hard to find). The mentioned seller offers an already wired up connector with a male and a female plug, so you can just cut off the female connector and add the specific connectors.  
+The following picture shows the wired 24pin version as well as a 14pin version you'd have to crimp yourself.  
+![PHB 2.0 connectors](../assets/images/PHB20_web.jpg)   
+ 
+Further on, you need a  
+- **7pin **XH 2.54 male** connector for the Y-axis setup cable,  
+- **7pin PH 2.0 male** connector for the acceleration sensor of the bed,  
+- **2pin PH 2.0 male** connector for the z-offset switch.  
+
+You most likely will need **2/3/4pin XH 2.54 female** connectors  and a decent crimping tool for setting up most of the wiring.  
+You also might need some **DuPont** connectors and a **10pin IDC female** connector (the latter one only if you want to use the ESP2 connector for connecting the acceleration sensors to SPI1 how I did it).  
+In addition to that, you might need some wires, a soldering iron, heat shrink tubes, button connectors, ferrules and a crimping tool, M3 screws and nuts and last but not least a *multimeter*. See the chapter ["Tools"](../tools.md) for further information and pictures.     
+  
+
+**You can find schematics of the stock connector's pinouts at the follwing GitHub repository:** [Reverse engineering the Kobra 2 Pro](https://github.com/codexnovus/reverse-engineering-the-kobra2-pro)  
+
+
+!!! warning "Double-check The Wiring!"  
+
+    It can't be pointed out strongly enough:  
+    - **Make sure you make the correct connections** and  
+    - **double-check the wiring before connecting anything to the mainboard**!  
+    - **Probe the pins and according wires** with a multimeter to make sure you picked the correct ones.  
+    - When done with setting up the wiring, **check the quality of the connection with your multimeter** as well - make sure there are no loose connections (especially when crimping any connector and when using those button connectors) and no cold solder joints (when soldering). If you soldered the wires, make sure to add heatshrink tubes!   
+    
+---      
+<!--
+### MOD: MKS Robin Nano v3.1
+Since I already had MKS TMC2208 v2.0 stepper drivers in my spare parts drawer, I chose the MKS Robin Nano v3.1 which I found for 25€ at AliEx.  
+I won't go over the specs of the board here - you can find all necessary documentations for this particular board at MKS' GitHub repositories and their Wiki:  
+- Main GitHub repository: ["MKS-Robin-Nano-V3.X"](https://github.com/makerbase-mks/MKS-Robin-Nano-V3.X).  
+- [Hardware section for the v3.1](https://github.com/makerbase-mks/MKS-Robin-Nano-V3.X/tree/main/hardware/MKS%20Robin%20Nano%20V3.1_001) with all the schematics.  
+- [Wiki for the v3.x](https://github.com/makerbase-mks/MKS-Robin-Nano-V3.X/wiki)  
+
+They also offer an outdated `klipper.bin` file for flashing the mainboard as well as an generic `printer.cfg` example in their repo ["Klipper-for-MKS-Boards/MKS Robin Nano V3.x/"](https://github.com/makerbase-mks/Klipper-for-MKS-Boards/tree/main/MKS%20Robin%20Nano%20V3.x).   
+
+If you like, you can also find my `klipper.bin` file (Klipper version 12...) as well as my specific `printer.cfg` in the according subfolders of my GitHub repository "Klipper4Kobra2series" [here](https//:github.com/1coderookie/Klipper4Kobra2series/).  
+
+In the following, I'll add some notes about some specific steps.  
+The wiring and according pin assignments can be looked up at the mentioned documentations of the MKS board and the GitHub repo with the pinouts of the stock hardware, I'll just add some notes about my specific setup. You can also look up the pin assignments at my `printer.cfg` (see link above).  
+
+---
+
+#### Housing
+  
+I decided to use the stock housing and designed an adapter plate for a comfortable mounting which you can find here: [Kobra 2 Pro/Plus/Max adapter plate MKS Nano v3.1](https://www.printables.com/..)  
+
+You have two options of mounting the MKS board:  
+- 'horizontally' where the longer side of the mainboard is parallel to the longer side of the housing, and  
+- 'vertically', where the longer side of the maiboard is parallel to the shorter side of the housing.  
+
+If you mount the board 'horizontally', you mount the mainboard to the adapterplate only, and then you mount the adapter plate to the four stock mounting, then you should be able to use a regular USB-A to USB-B cable. Then you can carefully lead the USB-A plug through one of the cutouts.  
+In this case mount the mainboard to the adapter plate using all four mounting holes of the adapter plate, and then mount the plate itself to the housing using the four mounting holes of the stock mainboard.   
+
+If you mount the KMS board 'vertically', the arrangement is a bit 'tight' and you'd need a 90° angled USB-B adapter due to the fact that the mainboard is quite close to the housing's wall.  
+You can also *not* access the USB port or the microSD card reader once everything is built in. When using this mounting solution, you'll have a bit more space for stowing away the cables though.  
+![Adapter plate vertical](../assets/images/mobo_MKS-adapterplate-vertical_web.jpg)  
+
+When mounting the board this way, you screw the mainboard onto the adapter plate with two screws only and then finally mount the plate and the mainboard using the four mounting points of the stock mainboard. You have to slightly elongate one specific hole though to make it fit the stock mounting points as shown in the following pictures.  
+| ![Elongated hole](../assets/images/mobo_MKS-mod-elongated-hole_web.jpg) | ![Elongated hole mount](../assets/images/mobo_MKS-mod-elongated-hole-mount_web.jpg) |
+
+Since I mounted the MKS board 'vertically' and pretty close to the housing's wall, I had to use an angled USB adaptercable as mentioned. I had a USB-B male to USB-B female cable already, so I used that.  
+Since I couldn't lead any of the connectors through the cutouts of the USB connectors at the front of the housing, I simply drilled a 4mm hole into a corner of the lid, cut away the plastic to make it a slot and lead the cable through there. The following picture shows the assembled setup.  
+
+---
+
+#### Mainboard Cooling Fan
+  
+Due to the stepper drivers having sockets at the MKS mainboard instead of being soldered onto the board, the clearance between the heatsinks of the stepper drivers and the lid of the stock housing is pretty limited.  
+When using my adapterplate (which is 3mm thick) for mounting the MKS board into the stock housing, then it most likely won't fit (I actually didn't test it, I just eyeballed it).  
+So I decided to mount the stock fan for the mainboard on the outside of the housing/lid.  
+For doing so, just take a 2mm drill first of all and lead it through the existing holes of the lid's fan mounts. Make sure to not touch and harm the threads! Carefully drill through the lid.  
+Once done, take a 3mm drill, flip the lid around and *carefully* enlargen the 2mm holes you just drilled (from the 'outside' so to say). Pay attention to just drill through the material, which is about 2-3mm thick - you don *not* want to drill all the way down and harm the threads!  
+Now mount the fan to the outside. You can use the stock screws for that. Make sure the fan is *pushing* the air into the housing (the scoops should face the lid/inner side of the housing). Also mount the metal grill. Once done, you can lead the fan's wire through the slot of the lid where usually the ribbon cable of the control unit runs through.   
+The following picture shows the fan being mounted as described.   
+
+![Fan mounted to the outside](../assets/images/mobo_MKS-fan-outside_web.jpg)  
+
+**Attention:**  
+**When doing so, you have to use risers for the feet though, to lift up the whole machine!**  
+
+---
+
+#### Wiring And Pin Assignment  
+
+Since I prefer to keep the stock connectors (just in case I have to test anything with the stock mainboard later), I decided to make adapter cables, so I got myself the according connectors listed in the section above.  
+![Adapter cable](../assets/images/mobo_MKS-mod-adaptercables_web.jpg)  
+
+
+For wiring everything up, just look up the pinout schemes at [Reverse engineering the Kobra 2 Pro](https://github.com/codexnovus/reverse-engineering-the-kobra2-pro) for the K2 Pro/Plus/Max (they're all the same). 
+If you want to see which specific components I connected to which specific connectors at the MKS board (besides the ones I'll mentioned down below), just have a look at the `printer.cfg` I'm offering. 
+
+However, there are a few things I'd like to point out.  
+
+1. **Wiring Up The Motors**  
+    At the mentioned pinout scheme for the K2 Pro/Plus/Max, the four motor pins are called A1, A2, B1, B2.  
+    At the scheme of the MKS board though, they're called 1A, 1B, 2A, 2B.  
+    So when assembling the connectors of the motor wiring, you have to make sure to connect it as shown in the following table.  
+
+    | Anycubic Pinout | MKS Pinout |
+    |:-------:|:----------:|
+    | A1 | 1A | 
+    | A2 | 1B | 
+    | B1 | 2A |
+    | B2 | 2B |
+
+    *Don't connect A1 to 1A and then A2 to 2A - that won't work and will result in a non-functional motor setup and an error message at Klipper later.*  
+
+2. **Acceleration Sensors**
+    I decided to connect both of the acceleration sensors (printhead & bed) to the same SPI bus.  
+    Since I don't use an additional screen for the MKS board, I used the EXP2 connector (you either need a 10pin female IDC connector or just some female DuPont connectors) which is SPI1.  
+
+    If you want to use an additional screen, you can't use this connector though, so you'd have to use a different SPI bus instead.  
+    In my opinion it should be possible to use the connector for the optional WiFi module which would be SPI3.  
+    If that doesn't work and you don't use the 5th stepper driver E1 for driving a second z-axis motor independently, you can also use that one - make sure to set the jumper for SPI mode accordingly.  
+
+    Whichever SPI bus you'll use in the end, just connect the MISO, MOSI, SCLK, GND and 5V VCC of both sensors parallel to the according pins.  
+    *Every CS pin of each sensor has to be connected to it's own pin then though.* This is crucial - you can *not* connect the CS pins of the y- and the x-axis acceleration sensor to the same pin!  
+    I decided to connect the CS pin of the x-axis' acceleration sensor (printhead) to the SPI1's "CS" pin = PA8; for the CS pin of the y-axis' sensor (bed) I used the pin PA11.     
+
+
+3. **Z-Offset Sensor**  
+    I also connectected the z-offset sensor, even though I probably won't use it. Since I plan on adding an optical minimum limit switch for the z-axis (which I'll connect to "Z-" = PC8), I connected the z-offset sensor to "Z +" = ^PC4 (I *think* you need to have the `^` in front since that activates the pullup for that pin). I'll probably not use it, but I like to have it connected - just in case..   
+
+---
+
+#### Assembly  
+For assembling the whole setup, I'd suggest to first flash the `klipper.bin` onto the mainboard.  
+For doing so, you need to rename the `klipper.bin` to `Robin_nano_v3.bin`, copy it to a FAT32 formatted microSD card and put it in the cardreader and connect the mainboard to your 24V DC power supply. Then switch on the power supply and wait about 5-10min for the flashing procedure to be done.   
+Once done, turn off the power again and disconnect the mainboard from the power supply. Take out the microSD card as well.  
+
+Now mount the MKS board to the adapterplate. I'd suggest to *not* mount the adapterplate into the housing yet.  
+Make all the connections - *pay close attention to connect the wiring correctly*!  
+When done, double-check the wiring and make sure every connector sits tight and won't come off. When using DuPont connectors, I'd suggest to add a bit of hot glue to secure the connector.  
+Now carefully put everything inside the housing and mount the adapterplate to the stock mounting points. Place the lid next to the housing and connect the fan accordingly. Now try to organize the wiring as best as you can and make sure no wires will be harmed when finally installing the lid.  
+-->
+---  
 
 ## MOD: Add An External MOSFET  
 
