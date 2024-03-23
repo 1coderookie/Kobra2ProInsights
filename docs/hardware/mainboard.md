@@ -185,11 +185,11 @@ The following picture shows the wired 24pin version as well as a 14pin version y
 ![PHB 2.0 connectors](../assets/images/PHB20_web.jpg)   
  
 Further on, you need a  
-- **7pin **XH 2.54 male** connector for the Y-axis setup cable,  
+- **7pin XH 2.54 male** connector for the Y-axis setup cable,  
 - **7pin PH 2.0 male** connector for the acceleration sensor of the bed,  
 - **2pin PH 2.0 male** connector for the z-offset switch.  
 
-You most likely will need **2/3/4pin XH 2.54 female** connectors  and a decent crimping tool for setting up most of the wiring.  
+You most likely will need **2pin, 3pin and 4pin XH 2.54 female** connectors  and a decent crimping tool for setting up most of the wiring.  
 You also might need some **DuPont** connectors and a **10pin IDC female** connector (the latter one only if you want to use the ESP2 connector for connecting the acceleration sensors to SPI1 how I did it).  
 In addition to that, you might need some wires, a soldering iron, heat shrink tubes, button connectors, ferrules and a crimping tool, M3 screws and nuts and last but not least a *multimeter*. See the chapter ["Tools"](../tools.md) for further information and pictures.     
   
