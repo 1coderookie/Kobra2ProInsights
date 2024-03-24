@@ -206,9 +206,13 @@ In addition to that, you might need some wires, a soldering iron, heat shrink tu
     - When done with setting up the wiring, **check the quality of the connection with your multimeter** as well - make sure there are no loose connections (especially when crimping any connector and when using those button connectors) and no cold solder joints (when soldering). If you soldered the wires, make sure to add heatshrink tubes!   
     
 ---      
-<!--
+
 ### MOD: MKS Robin Nano v3.1
 Since I already had MKS TMC2208 v2.0 stepper drivers in my spare parts drawer, I chose the MKS Robin Nano v3.1 which I found for 25€ at AliEx.  
+
+The following picture shows the stock mainboard on the left and the MKS board on the right.  
+![Stock vs MKS](../assets/images/mobo_ACstock-vs-MKSNano31_web.jpg)  
+
 I won't go over the specs of the board here - you can find all necessary documentations for this particular board at MKS' GitHub repositories and their Wiki:  
 - Main GitHub repository: ["MKS-Robin-Nano-V3.X"](https://github.com/makerbase-mks/MKS-Robin-Nano-V3.X).  
 - [Hardware section for the v3.1](https://github.com/makerbase-mks/MKS-Robin-Nano-V3.X/tree/main/hardware/MKS%20Robin%20Nano%20V3.1_001) with all the schematics.  
@@ -216,7 +220,7 @@ I won't go over the specs of the board here - you can find all necessary documen
 
 They also offer an outdated `klipper.bin` file for flashing the mainboard as well as an generic `printer.cfg` example in their repo ["Klipper-for-MKS-Boards/MKS Robin Nano V3.x/"](https://github.com/makerbase-mks/Klipper-for-MKS-Boards/tree/main/MKS%20Robin%20Nano%20V3.x).   
 
-If you like, you can also find my `klipper.bin` file (Klipper version 12...) as well as my specific `printer.cfg` in the according subfolders of my GitHub repository "Klipper4Kobra2series" [here](https//:github.com/1coderookie/Klipper4Kobra2series/).  
+**If you like, you can also find specific `printer.cfg` in the according subfolder of my GitHub repository "Klipper4Kobra2series" [here](https://github.com/1coderookie/Klipper4Kobra2series/blob/main/Kobra2Pro/MKS/Robin_Nano_v3.1/K2Pro_printer.cfg).**  
 
 In the following, I'll add some notes about some specific steps.  
 The wiring and according pin assignments can be looked up at the mentioned documentations of the MKS board and the GitHub repo with the pinouts of the stock hardware, I'll just add some notes about my specific setup. You can also look up the pin assignments at my `printer.cfg` (see link above).  
@@ -259,7 +263,12 @@ The following picture shows the fan being mounted as described.
 ![Fan mounted to the outside](../assets/images/mobo_MKS-fan-outside_web.jpg)  
 
 **Attention:**  
-**When doing so, you have to use risers for the feet though, to lift up the whole machine!**  
+**When doing so, you have to use risers for the feet though, to elevate up the whole machine!**  
+
+The following pictures show the printer with the risers for the feet.  
+
+![Machine elevated](../assets/images/mobo_MKS-mod_elevated-machine_wide_web.jpg)  
+![MAchine elevated closeup](../assets/images/mobo_MKS-mod_elevated-machine_web.jpg)
 
 ---
 
@@ -314,8 +323,13 @@ Once done, turn off the power again and disconnect the mainboard from the power 
 Now mount the MKS board to the adapterplate. I'd suggest to *not* mount the adapterplate into the housing yet.  
 Make all the connections - *pay close attention to connect the wiring correctly*!  
 When done, double-check the wiring and make sure every connector sits tight and won't come off. When using DuPont connectors, I'd suggest to add a bit of hot glue to secure the connector.  
-Now carefully put everything inside the housing and mount the adapterplate to the stock mounting points. Place the lid next to the housing and connect the fan accordingly. Now try to organize the wiring as best as you can and make sure no wires will be harmed when finally installing the lid.  
--->
+Now carefully put everything inside the housing and mount the adapterplate to the stock mounting points. Place the lid next to the housing and connect the fan accordingly.  
+Try to organize the wiring as best as you can and make sure no wires will be harmed when finally installing the lid.  
+
+The following picture shows the MKS being assembled and mounted vertically (mind the 90° angled USB-B cable at the left side). The 'creative mess' with the pretty much unorganized wirings is due to the fact that I chose the length of the adapter cable's wiring slightly too short - if those would've been a bit longer, I would have been able to organize everything much better - so maybe keep that in mind if you're going for the same solution.  
+
+![MKS board assembled](../assets/images/mobo_MKS-mod_assembled_web.jpg)
+
 ---  
 
 ## MOD: Add An External MOSFET  
