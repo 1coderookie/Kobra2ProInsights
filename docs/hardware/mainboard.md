@@ -229,7 +229,7 @@ The wiring and according pin assignments can be looked up at the mentioned docum
 
 #### Housing
   
-I decided to use the stock housing and designed an adapter plate for a comfortable mounting which you can find here: [Kobra 2 Pro/Plus/Max adapter plate MKS Nano v3.1](https://www.printables.com/..)  
+I decided to use the stock housing and designed an adapter plate for a comfortable mounting which you can find here: [Kobra 2 Pro/Plus/Max: MKS Robin Nano v3.1 Adapter Plate For Stock Housing](https://www.printables.com/model/817843-kobra-2-proplusmax-mks-robin-nano-v31-adapter-plat)  
 
 You have two options of mounting the MKS board:  
 - 'horizontally' where the longer side of the mainboard is parallel to the longer side of the housing, and  
