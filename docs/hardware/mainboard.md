@@ -220,7 +220,7 @@ I won't go over the specs of the board here - you can find all necessary documen
 
 They also offer an outdated `klipper.bin` file for flashing the mainboard as well as an generic `printer.cfg` example in their repo ["Klipper-for-MKS-Boards/MKS Robin Nano V3.x/"](https://github.com/makerbase-mks/Klipper-for-MKS-Boards/tree/main/MKS%20Robin%20Nano%20V3.x).   
 
-**If you like, you can also find specific `printer.cfg` in the according subfolder of my GitHub repository "Klipper4Kobra2series" [here](https://github.com/1coderookie/Klipper4Kobra2series/blob/main/Kobra2Pro/MKS/Robin_Nano_v3.1/K2Pro_printer.cfg).**  
+**If you like, you can also find specific `printer.cfg` in the according subfolder of my GitHub repository "Klipper4Kobra2series" [here](https://github.com/1coderookie/Klipper4Kobra2series/blob/main/Kobra2Pro/MKS/Robin_Nano_v3.1/MKS-Nano-v31_K2Pro_printer.cfg).**  
 
 In the following, I'll add some notes about some specific steps.  
 The wiring and according pin assignments can be looked up at the mentioned documentations of the MKS board and the GitHub repo with the pinouts of the stock hardware, I'll just add some notes about my specific setup. You can also look up the pin assignments at my `printer.cfg` (see link above).  
@@ -297,7 +297,7 @@ However, there are a few things I'd like to point out.
 
     *Don't connect A1 to 1A and then A2 to 2A - that won't work and will result in a non-functional motor setup and an error message at Klipper later.*  
 
-2. **Acceleration Sensors**
+2. **Acceleration Sensors**  
     I decided to connect both of the acceleration sensors (printhead & bed) to the same SPI bus.  
     Since I don't use an additional screen for the MKS board, I used the EXP2 connector (you either need a 10pin female IDC connector or just some female DuPont connectors) which is SPI1.  
 
