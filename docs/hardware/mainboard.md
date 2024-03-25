@@ -220,10 +220,22 @@ I won't go over the specs of the board here - you can find all necessary documen
 
 They also offer an outdated `klipper.bin` file for flashing the mainboard as well as an generic `printer.cfg` example in their repo ["Klipper-for-MKS-Boards/MKS Robin Nano V3.x/"](https://github.com/makerbase-mks/Klipper-for-MKS-Boards/tree/main/MKS%20Robin%20Nano%20V3.x).   
 
-**If you like, you can also find specific `printer.cfg` in the according subfolder of my GitHub repository "Klipper4Kobra2series" [here](https://github.com/1coderookie/Klipper4Kobra2series/blob/main/Kobra2Pro/MKS/Robin_Nano_v3.1/MKS-Nano-v31_K2Pro_printer.cfg).**  
-
 In the following, I'll add some notes about some specific steps.  
 The wiring and according pin assignments can be looked up at the mentioned documentations of the MKS board and the GitHub repo with the pinouts of the stock hardware, I'll just add some notes about my specific setup. You can also look up the pin assignments at my `printer.cfg` (see link above).  
+
+---
+
+#### Klipper.bin And Printer.cfg  
+
+**Compiling The Klipper.bin File**  
+Referring to the notes in the example printer.cfg file MKS offers, you have to choose the following settings for compiling the `klipper.bin` file:   
+
+![Compile config](../assets/images/MKS_Nano_v31_bin-cfg.jpg)  
+
+After you compiled the bin file, you need to *rename the file to `Robin_nano_v3.bin`, copy it onto a microSD card (FAT32 formatted, completely empty) and insert it into the microSD cardreader while board is *not* powered on. Then power on the board and wait about 5-10min to complete the flashing procedure. Turn off the power again, take out the card and connect the board to your Klipper host via USB cable.    
+
+**Obtaining The Printer.cfg File**  
+If you like, you can find the specific `printer.cfg` I set up in the according subfolder of my GitHub repository "Klipper4Kobra2series" **[here](https://github.com/1coderookie/Klipper4Kobra2series/blob/main/Kobra2Pro/MKS/Robin_Nano_v3.1/MKS-Nano-v31_K2Pro_printer.cfg).**  
 
 ---
 
