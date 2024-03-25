@@ -296,7 +296,26 @@ If you want to see which specific components I connected to which specific conne
 
 However, there are a few things I'd like to point out.  
 
-1. **Wiring Up The Motors**  
+1. **Connections Of 24V, H+/H-, LOGIC GND, CHASSIS_GND**  
+    When you look at the pinouts of the stock wiring, you'll notice that at the main ribbon cable that connects to the printhead (called "E-CON") there are the pins LOGIC GND, CHASSIS GND, 24V and H+/H- given.  
+    
+    Basically the *24V* and the *LOGIC GND* are lead to the breakout board PCB of the printhead, from there the belonging components get the according connection. So you can can connect those ones to one of the two connectors of the MKS board which deliver the 24V continously - I personally used connector "J5" for that.  
+    *Make sure to NOT connect CHASSIS GND as well here (see further down below)!*   
+    When you then make the connections for the individual parts like the printhead's fans, the thermistor and so on, look at the pinout and check the according pin assignment. Since you already connected 24V and LOGIC GND, you then only have to connect the according signal pin to the MKS board.  
+    As an example: fan F0 (part cooling fan) needs 24V and 'F0', which is the signal (to be more precise: it's the individual PWM driven GND connection). Since it already gets the 24V from the head's breakout board where it's connected to and you already connected 24V to J5, you only need to connect 'F0' to the according connection at the MKS board - I used 'FAN1' = PC14 for that.  
+    The thermistor of the hotend (called 'Heat probe' at the pinout schematic) on the other hand connects to 'T0' and LOGIC GND. Since you already connected LOGIC GND to J5 and the thermistor gets that connection from the head's breakout board, you only have to connect 'T0' to the according pin at the MKS board - I used 'TH1' = PC1 for that.
+   
+    Then we have the *CHASSIS GND* at both the E-CON and X-CON ribbon cable connectors. Basically this is protective earth (if that's the correct English term).  
+    At the stock mainboard, we have copper plated mounting holes, where one wire is being connected to which then connects to the protective earth of the power supply. Since we don't have these copper plated mounting holes at the MKS board, you can just connect all CHASSIS GND wirings together with the wire that's running to the protective erath of the PSU.
+
+    Then we have three *H+* and *H-* connectors at the E-CON ribbon cable. These are the 24V connections for the heater cartridge.  
+    *DON'T connect them together with the 24V and LOGIC GND connections mentioned above!*    
+    Due to the higher current that will flow when heating up the cartridge heater for the hotend and the thin wires being used at the E-CON ribbon cable, we have three wires/connections for each *H+* and *H-* here.  
+    You now have to bundle the *H+* wires and connect them to an individual *thicker* wire.
+    Same with the *H-* wires - bundle them up and connect an individual *thicker* wire to them.  
+    These two thicker wires now have to be connected to the according connector at the MKS board - I used 'HE0' = PE5 for that. Connect *H+* to *HE0+* and *H-* to *HE0-*.  
+   
+3. **Wiring Up The Motors**  
     At the mentioned pinout scheme for the K2 Pro/Plus/Max, the four motor pins are called A1, A2, B1, B2.  
     At the scheme of the MKS board though, they're called 1A, 1B, 2A, 2B.  
     So when assembling the connectors of the motor wiring, you have to make sure to connect it as shown in the following table.  
@@ -310,7 +329,7 @@ However, there are a few things I'd like to point out.
 
     *Don't connect A1 to 1A and then A2 to 2A - that won't work and will result in a non-functional motor setup and an error message at Klipper later.*  
 
-2. **Acceleration Sensors**  
+4. **Acceleration Sensors**  
     I decided to connect both of the acceleration sensors (printhead & bed) to the same SPI bus.  
     Since I don't use an additional screen for the MKS board, I used the EXP2 connector (you either need a 10pin female IDC connector or just some female DuPont connectors) which is SPI1.  
 
@@ -320,11 +339,16 @@ However, there are a few things I'd like to point out.
 
     Whichever SPI bus you'll use in the end, just connect the MISO, MOSI, SCLK, GND and 5V VCC of both sensors parallel to the according pins.  
     *Every CS pin of each sensor has to be connected to it's own pin then though.* This is crucial - you can *not* connect the CS pins of the y- and the x-axis acceleration sensor to the same pin!  
-    I decided to connect the CS pin of the x-axis' acceleration sensor (printhead) to the SPI1's "CS" pin = PA8; for the CS pin of the y-axis' sensor (bed) I used the pin PA11.     
+    I decided to connect the CS pin of the x-axis' acceleration sensor (printhead) to the SPI1's "CS" pin = PA8; for the CS pin of the y-axis' sensor (bed) I used the pin PA11.
+    GND can be connected to the LOGIC GND as well, or just connect it to GND at the corresponding connection you end up using for the SPI connection.  
+    You then have to connect the 5V pin of the acceleration sensors to an according 5V pin at the MKS board - I used the 5V pin of the BLTOUCH connector for that.  
 
+5. **Z-Offset Sensor**  
+    I also connectected the z-offset sensor, even though I probably won't use it. Since I plan on adding an optical minimum limit switch for the z-axis (which I'll connect to "Z-" = PC8), I connected the z-offset sensor to "Z +" = ^PC4 (I *think* you need to have the `^` in front since that activates the pullup for that pin). I'll probably not use it, but I like to have it connected - just in case..
 
-3. **Z-Offset Sensor**  
-    I also connectected the z-offset sensor, even though I probably won't use it. Since I plan on adding an optical minimum limit switch for the z-axis (which I'll connect to "Z-" = PC8), I connected the z-offset sensor to "Z +" = ^PC4 (I *think* you need to have the `^` in front since that activates the pullup for that pin). I'll probably not use it, but I like to have it connected - just in case..   
+6. **Inductive Proximity Sensor / ABL Probe**  
+    The inductive proximity sensor is conencted to 24V, LOGIC GND and the according signal pin (labeled as 'LEVEL' at the pinout scheme) at the printhead's breakout board. Since you already connected 24V and LOGIC GND, you only have to connect the signal pin 'LEVEL' to the MKS board - I used the BLTOUCH connector = PA8 for that.  
+    Don't worry about the 24V and the signal - due to the electronic circuit of the head's breakout board, the signal level will be just fine and won't harm the according connection of the MKS board.    
 
 ---
 
