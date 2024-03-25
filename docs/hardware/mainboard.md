@@ -208,6 +208,7 @@ In addition to that, you might need some wires, a soldering iron, heat shrink tu
 ---      
 
 ### MOD: MKS Robin Nano v3.1
+
 Since I already had MKS TMC2208 v2.0 stepper drivers in my spare parts drawer, I chose the MKS Robin Nano v3.1 which I found for 25€ at AliEx.  
 
 The following picture shows the stock mainboard on the left and the MKS board on the right.  
@@ -255,7 +256,7 @@ You can also *not* access the USB port or the microSD card reader once everythin
 ![Adapter plate vertical](../assets/images/mobo_MKS-adapterplate-vertical_web.jpg)  
 
 When mounting the board this way, you screw the mainboard onto the adapter plate with two screws only and then finally mount the plate and the mainboard using the four mounting points of the stock mainboard. You have to slightly elongate one specific hole though to make it fit the stock mounting points as shown in the following pictures.  
-| ![Elongated hole](../assets/images/mobo_MKS-mod-elongated-hole_web.jpg) | ![Elongated hole mount](../assets/images/mobo_MKS-mod-elongated-hole-mount_web.jpg) |
+![Elongated hole](../assets/images/mobo_MKS-mod_elongated_holes_web.jpg)  
 
 Since I mounted the MKS board 'vertically' and pretty close to the housing's wall, I had to use an angled USB adaptercable as mentioned. I had a USB-B male to USB-B female cable already, so I used that.  
 Since I couldn't lead any of the connectors through the cutouts of the USB connectors at the front of the housing, I simply drilled a 4mm hole into a corner of the lid, cut away the plastic to make it a slot and lead the cable through there. The following picture shows the assembled setup.  
@@ -280,7 +281,7 @@ The following picture shows the fan being mounted as described.
 The following pictures show the printer with the risers for the feet.  
 
 ![Machine elevated](../assets/images/mobo_MKS-mod_elevated-machine_wide_web.jpg)  
-![MAchine elevated closeup](../assets/images/mobo_MKS-mod_elevated-machine_web.jpg)
+![Machine elevated closeup](../assets/images/mobo_MKS-mod_elevated-machine_web.jpg)
 
 ---
 
@@ -328,6 +329,7 @@ However, there are a few things I'd like to point out.
 ---
 
 #### Assembly  
+
 For assembling the whole setup, I'd suggest to first flash the `klipper.bin` onto the mainboard.  
 For doing so, you need to rename the `klipper.bin` to `Robin_nano_v3.bin`, copy it to a FAT32 formatted microSD card and put it in the cardreader and connect the mainboard to your 24V DC power supply. Then switch on the power supply and wait about 5-10min for the flashing procedure to be done.   
 Once done, turn off the power again and disconnect the mainboard from the power supply. Take out the microSD card as well.  
