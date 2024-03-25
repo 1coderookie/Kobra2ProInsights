@@ -348,7 +348,11 @@ However, there are a few things I'd like to point out.
 
 6. **Inductive Proximity Sensor / ABL Probe**  
     The inductive proximity sensor is conencted to 24V, LOGIC GND and the according signal pin (labeled as 'LEVEL' at the pinout scheme) at the printhead's breakout board. Since you already connected 24V and LOGIC GND, you only have to connect the signal pin 'LEVEL' to the MKS board - I used the BLTOUCH connector = PA8 for that.  
-    Don't worry about the 24V and the signal - due to the electronic circuit of the head's breakout board, the signal level will be just fine and won't harm the according connection of the MKS board.    
+    Don't worry about the 24V and the signal - due to the electronic circuit of the head's breakout board, the signal level will be just fine and won't harm the according connection of the MKS board.
+
+7. **Fans**  
+    The MKS board has two fan connectors which can be PWM controlled: FAN1 (= PC14) and FAN2 (=PB1). I connected the *part cooling fan* to FAN 1 and the *heatsink cooling fan of the hotend* to FAN2.  
+    I then connected the *mainboard cooling fan* to the 24V connector "J4" - that one provides 24V continously, so the mainboard cooling fan will run as soon as you switch on the printer.      
 
 ---
 
