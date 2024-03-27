@@ -41,7 +41,7 @@ When you need to change certain parts or you need to fix them, check out the [An
 Anycubic doesn't seem to offer many parts though, especially not for this particular machine at the time of writing this, so you might want to look through Anycubic's store at AliExpress as well.  
   
 There are also vendors who sell compatible or even original spare parts, so just do a bit of a research.  
-If you're located in Europe, I can recommend looking at the shop of [3D Jake](www.3djake.com).  
+If you're located in Europe, I can recommend looking at the shop of [3D Jake](https://www.3djake.com).  
   
 Also many parts from third party manufacturers can be used as many of the parts are common components of these kinds of machines.    
 So if you're looking for parts like v-slot wheels, belts, anti-backlash nuts or even a new lead screw or motor for example, keep in mind that those aren't 'specific' parts most of the time - they're pretty much regular components.   
