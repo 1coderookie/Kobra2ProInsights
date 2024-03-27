@@ -588,7 +588,7 @@ I'll describe the belonging tramming process for each case in the following.
 
 ??? example "Tramming When Using Adjustable Spacers"
   
-    You could also use [adjustable spacers](hardware/bed.md#different-spacers) like silicone spacers or springs instead of those rigid spacers. That'll put you in the position of really being able to tram the bed.  
+    You could also use [adjustable spacers](#different-spacers) like silicone spacers or springs instead of those rigid spacers. That'll put you in the position of really being able to tram the bed.  
     However, if doing so you not only need to be precise when tramming the bed, but you should *proceed with [tramming the x-axis gantry](axes.md#tramming-the-x-axis-gantry) in relation to the frame first*. This is really important as it will ensure that the x-axis gantry is parallel to the base frame.  
     Once this step is done, you can proceed with tramming the bed itself.     
     
