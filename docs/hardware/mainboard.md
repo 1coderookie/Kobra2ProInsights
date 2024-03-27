@@ -315,7 +315,7 @@ However, there are a few things I'd like to point out.
     Same with the *H-* wires - bundle them up and connect an individual *thicker* wire to them.  
     These two thicker wires now have to be connected to the according connector at the MKS board - I used 'HE0' = PE5 for that. Connect *H+* to *HE0+* and *H-* to *HE0-*.  
    
-3. **Wiring Up The Motors**  
+2. **Wiring Up The Motors**  
     At the mentioned pinout scheme for the K2 Pro/Plus/Max, the four motor pins are called A1, A2, B1, B2.  
     At the scheme of the MKS board though, they're called 1A, 1B, 2A, 2B.  
     So when assembling the connectors of the motor wiring, you have to make sure to connect it as shown in the following table.  
@@ -327,20 +327,20 @@ However, there are a few things I'd like to point out.
     | B1 | 2A |
     | B2 | 2B |
 
-    *Don't connect A1 to 1A and then A2 to 2A - that won't work and will result in a non-functional motor setup and an error message at Klipper later.*
-    
-4. **Z-Offset Sensor**  
+    *Don't connect A1 to 1A and then A2 to 2A - that won't work and will result in a non-functional motor setup and an error message at Klipper later.*  
+
+3. **Z-Offset Sensor**  
     I also connectected the z-offset sensor, even though I probably won't use it. Since I plan on adding an optical minimum limit switch for the z-axis (which I'll connect to "Z-" = PC8), I connected the z-offset sensor to "Z +" = ^PC4 (I *think* you need to have the `^` in front since that activates the pullup for that pin). I'll probably not use it, but I like to have it connected - just in case..
 
-5. **Inductive Proximity Sensor / ABL Probe**  
+4. **Inductive Proximity Sensor / ABL Probe**  
     The inductive proximity sensor is conencted to 24V, LOGIC GND and the according signal pin (labeled as 'LEVEL' at the pinout scheme) at the printhead's breakout board. Since you already connected 24V and LOGIC GND, you only have to connect the signal pin 'LEVEL' to the MKS board - I used the BLTOUCH connector = PA8 for that.  
     Don't worry about the 24V and the signal - due to the electronic circuit of the head's breakout board, the signal level will be just fine and won't harm the according connection of the MKS board.
 
-6. **Fans**  
+5. **Fans**  
     The MKS board has two fan connectors which can be PWM controlled: FAN1 (= PC14) and FAN2 (=PB1). I connected the *part cooling fan* to FAN 1 and the *heatsink cooling fan of the hotend* to FAN2.  
     I then connected the *mainboard cooling fan* to the 24V connector "J4" - that one provides 24V continously, so the mainboard cooling fan will run as soon as you switch on the printer.
 
-7. **Acceleration Sensors**  
+6. **Acceleration Sensors**  
     I decided to connect both of the acceleration sensors (printhead & bed) to the same SPI bus.  
     Since I don't use an additional screen for the MKS board, I used the EXP2 connector (you either need a 10pin female IDC connector or just some female DuPont connectors) which is SPI1.  
 
