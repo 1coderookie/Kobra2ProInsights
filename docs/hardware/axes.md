@@ -921,9 +921,6 @@ This means, that the lead screw which is driven by the motor drives the second l
 If you think the timing belt doesn't have the correct tension *even though the bearing blocks are adjusted and the lead screws do have the exact same distance towards each other*, you can add an adjustable tensioner/idler pulley for the timing belt.    
 
 You can either get yourself one of those aluminum plates or print yourself an according bracket where you then mount a pulley to. The mounting plate itself can then be mounted by screwing two screws into the two threads located at the blue plastic bar at the top.    
-
-(add link to models)
-
 I'd suggest to add a teethed pulley to the inner side of the belt. Of course you can also use a pulley with no teeth and place it on the outer side where the belt doesn't have teeth, but in that case the belt will be bent against it's usual bending direction, which *might* affect the lifespan of it negatively.  
 
 
@@ -931,15 +928,9 @@ I'd suggest to add a teethed pulley to the inner side of the belt. Of course you
 
 #### MOD: Z-Axis Driven By Two Motors
 As this machine uses the same mainboard like the Kobra 2 Max/Plus, there is one free connector at the mainboard for connecting a second z-axis motor.  
-
-![Free connector for 2nd z motor](../assets/images/mobo_2nd-z-connector_web.jpg)  
-
-Theoretically speaking, you *should* be able to get rid of the belt system and drive the second lead screw with an own motor instead by simply connecting it.  
+Since it's done this way at the Kobra 2 Plus and Max, you could add a 2nd z-motor and connect it to the free connector.   
 Mind that both motors will still be driven by the same stepper driver though, so you won't be able to use the advantages of two independent stepper drivers/motors anyway.  
-
-However, I personally didn't do that and most likely I won't as there aren't any advantages (imho) to the timingbelt driven system.  
-As a matter of fact, you'll actually have disadvantages: additional load is put onto the stepper driver and the x-gantry could come out of alignment when accidentally pushing one side down. At a timingbelt driven system this isn't a problem as both screws are connected to each other and therefore both screws will turn if you accidentally push down one side of the x-gantry.  
-But this is just my personal opinion, so if you added a second z-motor, please reach out via email (see footer) with a picture so that other users can see your solution.  
+However, I personally didn't do that and most likely I won't as I don't see any real advantages here for a machine of this size.   
 
 ---
 
@@ -1287,7 +1278,7 @@ In the following expandable textboxes you'll find some notes and instructions ab
 
     If you need to disassemble the z-axis lead screw system, there are a few things that one should be aware of. Besides that, the necessary steps are pretty easy and self-explaing, so I'll go over them just really quick.  
     
-    - First, you should somehow fixate the gantry of the x-axis to get the load off of the lead screw. You can do so by e.g. putting two soupcans onto the bed, each on one side (left/right) and then lower the gantry until it rests onto them. Or you can move the gantry up and fixate it with some velcro straps or cable ties as shown in the picture below. <br> ![Parked x-axis gantry](../assets/images/axes_x-gantry-cableties_web.jpg)  
+    - First, you should somehow fixate the gantry of the x-axis to get the load off of the lead screw. You can do so by e.g. putting two soupcans onto the bed, each on one side (left/right) and then lower the gantry until it rests onto them. Or you can move the gantry up and fixate it with some velcro straps or cable ties to the blue plastic part at the top.  
     - Now unplug the wire from the stepper motor, just to be on the safe side. The printer itself is also switched off of course.  
     - Loosen the two screws at the coupler which conects the motor shaft and the lead screw. 
     - Now you can turn the lead screw by hand to screw it out of the anti-backlash nut. After you completely took it out, dismount the anti-backlash nut from the holder at the frame as well.  
