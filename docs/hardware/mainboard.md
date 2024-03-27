@@ -329,18 +329,18 @@ However, there are a few things I'd like to point out.
 
     *Don't connect A1 to 1A and then A2 to 2A - that won't work and will result in a non-functional motor setup and an error message at Klipper later.*
     
-5. **Z-Offset Sensor**  
+4. **Z-Offset Sensor**  
     I also connectected the z-offset sensor, even though I probably won't use it. Since I plan on adding an optical minimum limit switch for the z-axis (which I'll connect to "Z-" = PC8), I connected the z-offset sensor to "Z +" = ^PC4 (I *think* you need to have the `^` in front since that activates the pullup for that pin). I'll probably not use it, but I like to have it connected - just in case..
 
-6. **Inductive Proximity Sensor / ABL Probe**  
+5. **Inductive Proximity Sensor / ABL Probe**  
     The inductive proximity sensor is conencted to 24V, LOGIC GND and the according signal pin (labeled as 'LEVEL' at the pinout scheme) at the printhead's breakout board. Since you already connected 24V and LOGIC GND, you only have to connect the signal pin 'LEVEL' to the MKS board - I used the BLTOUCH connector = PA8 for that.  
     Don't worry about the 24V and the signal - due to the electronic circuit of the head's breakout board, the signal level will be just fine and won't harm the according connection of the MKS board.
 
-7. **Fans**  
+6. **Fans**  
     The MKS board has two fan connectors which can be PWM controlled: FAN1 (= PC14) and FAN2 (=PB1). I connected the *part cooling fan* to FAN 1 and the *heatsink cooling fan of the hotend* to FAN2.  
     I then connected the *mainboard cooling fan* to the 24V connector "J4" - that one provides 24V continously, so the mainboard cooling fan will run as soon as you switch on the printer.
 
-8. **Acceleration Sensors**  
+7. **Acceleration Sensors**  
     I decided to connect both of the acceleration sensors (printhead & bed) to the same SPI bus.  
     Since I don't use an additional screen for the MKS board, I used the EXP2 connector (you either need a 10pin female IDC connector or just some female DuPont connectors) which is SPI1.  
 
@@ -356,7 +356,7 @@ However, there are a few things I'd like to point out.
 
     The following screenshots show the results of the resonance measurements of my K2 Pro.  
     ![Resonances X-Axis](../assets/images/K2Pro_resonances_x.jpg)  
-    ![Resonances Y-Axis](../assets/images/K2Pro_resonances_Y.jpg)    
+    ![Resonances Y-Axis](../assets/images/K2Pro_resonances_y.jpg)    
 
 
 ---
