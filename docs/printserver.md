@@ -5,7 +5,7 @@
 !!! warning "You Can't Connect Locally Yet"
 
     Right now it's not possible to connect to the Kobra 2 Pro, Plus and Max models locally. Means, you can't e.g. set up a host which is running OctoPrint or Pronterface and use it to access or monitor the printer.  
-    However, I'm still hoping that someone will sooner or later come up with a workaround for that. If not, then you might reach the point that you want to use a different mainboard for being able to connect to the machine and also run native Klipper on it.  
+    However, I'm still hoping that someone will sooner or later come up with a workaround for that. If not, then you might reach the point that you want to use a different mainboard for being able to connect to the machine and also run native Klipper on it as shown [here](hardware/mainboard/#mod-different-mainboard).  
     So, even though you can't connect to a local host/printserver with the stock mainboard yet, I still list some hardware below which can be used as a printserver - just in case.. ;) 
 
 Sooner or later you'll come to the point that you want to use additional software like OctoPrint to control your printer.    
@@ -115,9 +115,6 @@ If you have a NAS or a server up and running already, you could also install the
 ### Creality Sonic Pad / BigTreeTech Pad 7
 These ones are a nice and handy solution for the **Klipper** users as these are SBC units with a touchscreen in a nice enclosure.    
 
-The Creality Sonic Pad comes with Klipper preinstalled and offers features like WiFi, a touchscreen and so on.  
-User [@mackmind](https://github.com/mackmind) was so kind to write down some [instructions about how to proceed](https://github.com/1coderookie/Klipper4KobraGoNeo/discussions/7) for getting a Sonic Pad to work with the Go/Neo.  
-
 The BTT Pad 7 is especially interesting when you want to swap out the stock mainboard and use a BTT board instead.  
 Afaik the BTT Pad 7 is also somewhat 'easier' to flash and configure than the Sonic Pad, but I didn't really do firther research on it, so maybe better check and compare yourself.  
 
@@ -136,7 +133,6 @@ However, it should be mentioned here that it seems to be a bit like gambling to 
 ??? tip "KlipperScreen On An Old Android Device" 
 
     Especially when you flashed the Klipper firmware onto your mainboard, using an old Android device as an additional screen mounted to the printer is a cheap solution for still being able to execute direct commands or having status information visible while sitting in front of your printer as the regular control unit doesn't work with the Klipper firmware anymore. Just install [KlipperScreen](https://klipperscreen.readthedocs.io/en/latest/) and you're good to go.  
-    You can see a picture of how it looks like on an old Samsung Galaxy SII in [this section](../firmware/fw_klipper.md#stock-control-unit).    
   
 ??? tip "USB OTG"
 
