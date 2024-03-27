@@ -24,7 +24,7 @@ It also displays status information like the current temperatures and the temper
 
 ![Display status screen](../assets/images/display_K2Pro_status-screen.jpg)   
   
-The display also displays error messages if any severe errors occur. See the section ["Error Messages"](../problems.md#error-messages) for further information.  
+The display also displays error messages if any severe errors occur. See the section ["Error Messages"](../troubleshooting.md#error-messages) for further information.  
   
 ---
 
