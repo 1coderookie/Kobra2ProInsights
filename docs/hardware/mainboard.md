@@ -235,7 +235,7 @@ Referring to the notes in the example printer.cfg file MKS offers, you have to c
 
 ![Compile config](../assets/images/MKS_Nano_v31_bin-cfg.jpg)  
 
-After you compiled the bin file, you need to *rename the file to `Robin_nano_v3.bin`, copy it onto a microSD card (FAT32 formatted, completely empty) and insert it into the microSD cardreader while board is *not* powered on. Then power on the board and wait about 5-10min to complete the flashing procedure. Turn off the power again, take out the card and connect the board to your Klipper host via USB cable.    
+After you compiled the `klipper.bin` file, you need to rename the file to `Robin_nano_v3.bin`, copy it onto a microSD card (FAT32 formatted, completely empty) and insert it into the microSD cardreader while board is *not* powered on. Then power on the board and wait about 5-10min to complete the flashing procedure. Turn off the power again, take out the card and connect the board to your Klipper host via USB cable.  
 
 **Obtaining The Printer.cfg File**  
 If you like, you can find the specific `printer.cfg` I set up in the according subfolder of my GitHub repository "Klipper4Kobra2series" **[here](https://github.com/1coderookie/Klipper4Kobra2series/blob/main/Kobra2Pro/MKS/Robin_Nano_v3.1/MKS-Nano-v31_K2Pro_printer.cfg).**  
@@ -297,7 +297,7 @@ For wiring everything up, just look up the pinout schemes at [Reverse engineerin
 I took the following pinout scheme from there and added the names of the according connectors - thanks to [codexnovus](https://github.com/codexnovus/) for allowing me to use his picture!  
 ![Stock mobo pinout](../assets/images/mobo_K2Pro_pinout_labeled_web.jpg)  
 
-If you want to see which specific components I connected to which specific connectors at the MKS board (besides the ones I'll mentioned down below), just have a look at the `printer.cfg` I'm offering. 
+If you want to see which specific components I connected to which specific connectors at the MKS board (besides the ones I'll mentioned down below), just have a look at the `printer.cfg` I'm offering **[here](https://github.com/1coderookie/Klipper4Kobra2series/blob/main/Kobra2Pro/MKS/Robin_Nano_v3.1/MKS-Nano-v31_K2Pro_printer.cfg)**. 
 
 However, there are a few things I'd like to point out.  
 
