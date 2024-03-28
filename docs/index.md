@@ -62,6 +62,7 @@ Please mind the **search field** in the header as well as the icon in the header
 
     - *Thanks a lot to the **kind people who supported my work with a donation** to [my ko-fi account](https://ko-fi.com/U6U5NPB51)!*
     - *Thanks to the **stargazers** at GitHub for starring this repository!* 
+    - Thanks to **[codexnovus](https://github.com/codexnovus/)** for allowing me to use his picture of the mainboard's pinout scheme!  
     - Thanks to **[debeliq1](https://www.reddit.com/user/debeliq1)** for allowing me to use his picture of the wear&tear of the linear rail rod!
     - Thanks to **[Due-Telephone-6817](https://www.reddit.com/user/Due-Telephone-6817)** for taking those pictures of the spider coupler and the diaphragm coupler!  
     - Thanks to **[felixna](https://forum.drucktipps3d.de/user/6880-felixna/)** for allowing me to use his circuit drawing of how to add a step-down converter for PWM controlled fans!  
