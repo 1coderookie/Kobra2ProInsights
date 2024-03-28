@@ -195,6 +195,8 @@ In addition to that, you might need some wires, a soldering iron, heat shrink tu
   
 
 **You can find schematics of the stock connector's pinouts at the follwing GitHub repository:** [Reverse engineering the Kobra 2 Pro](https://github.com/codexnovus/reverse-engineering-the-kobra2-pro)  
+I took the following pinout scheme from there and added the names of the according connectors - thanks to [codexnovus](https://github.com/codexnovus/) for allowing me to use his picture!  
+![Stock mobo pinout](../assets/images/mobo_K2Pro_pinout_labeled_web.jpg)  
 
 
 !!! warning "Double-check The Wiring!"  
@@ -291,7 +293,10 @@ Since I prefer to keep the stock connectors (just in case I have to test anythin
 ![Adapter cable](../assets/images/mobo_MKS-mod-adaptercables_web.jpg)  
 
 
-For wiring everything up, just look up the pinout schemes at [Reverse engineering the Kobra 2 Pro](https://github.com/codexnovus/reverse-engineering-the-kobra2-pro) for the K2 Pro/Plus/Max (they're all the same). 
+For wiring everything up, just look up the pinout schemes at [Reverse engineering the Kobra 2 Pro](https://github.com/codexnovus/reverse-engineering-the-kobra2-pro) for the K2 Pro/Plus/Max (they're all the same).  
+I took the following pinout scheme from there and added the names of the according connectors - thanks to [codexnovus](https://github.com/codexnovus/) for allowing me to use his picture!  
+![Stock mobo pinout](../assets/images/mobo_K2Pro_pinout_labeled_web.jpg)  
+
 If you want to see which specific components I connected to which specific connectors at the MKS board (besides the ones I'll mentioned down below), just have a look at the `printer.cfg` I'm offering. 
 
 However, there are a few things I'd like to point out.  
