@@ -377,19 +377,19 @@ The following table shows the wiring/connections according to *my* `printer.cfg`
 | Heatsink Cooling Fan | E-CON: F1 | FAN2 | PB1 |
 | Thermistor Hotend | E-CON: T0 | TH1 | PC1 |
 | Cartridge Heater | E-CON: H+ / H- (3x) | HE0+ / HE0- | PE5 |
+| Thermistor Bed | T1/GND | TB1 | PC0 | 
+| Heater Bed | HOTBED + / - | H-BED + / - | PA0 |
 | PE / Chassis GND | E-/X-CON: CHASSIS GND | PE-Wire PSU | (PE-Wire PSU) | 
 | Filament Runout Sensor | X-CON: FILAMENT/GND | MT_DET1 PA4/GND | !PA4 |  
 | X Limit Switch | X-CON: X LIMIT/GND | X PA15/GND | !PA15 |
 | Y Limit Switch | Y-CON: LIMIT/GND | Y PD2/GND | !PD2 |    
 | Mainboard Cooling Fan | MB-FAN + / - | J4 --> 24V + / - | (J4 --> 24V + / -) |
 | Z-Offset Sensor | CALIBRATION S/GND | Z+ PC4/GND | ^PC4 |
-| Thermistor Bed | T1/GND | TB1 | PC0 | 
-| Heater Bed | HOTBED + / - | H-BED + / - | PA0 |
 | Extruder Motor | E-CON: A1/A2/B1/B2 | E0-MOTOR: 1A/1B/2A/2B | step: PD6 / dir: PD3 / enable: !PB3 / uart: PD9 |
 | X-Axis Motor | X-CON: A1/A2/B1/B2 | X-MOTOR: 1A/1B/2A/2B | step: PE3 / dir: PE2 / enable: !PE4 / uart: PD5 |
 | Y-Axis Motor | Y-CON: A1/A2/B1/B2 | Y-MOTOR: 1A/1B/2A/2B | step: PE0 / dir: PB9 / enable: !PE1 / uart: PD7 |
 | Z-Axis Motor | ZL/ZR: A1/A2/B1/B2 | Z1-MOTOR: 1A/1B/2A/2B | step: PB5 / dir: PB4 / enable: !PB8 / uart: PD4 |  
-  
+ 
 ---
 
 #### Assembly  
