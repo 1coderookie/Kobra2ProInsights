@@ -298,23 +298,23 @@ I took the following pinout scheme from there and added the names of the accordi
 ![Stock mobo pinout](../assets/images/mobo_K2Pro_pinout_labeled_web.jpg)  
 
 If you want to see which specific components I connected to which specific connectors at the MKS board (besides the ones I'll mentioned down below), just have a look at the `printer.cfg` I'm offering **[here](https://github.com/1coderookie/Klipper4Kobra2series/blob/main/Kobra2Pro/MKS/Robin_Nano_v3.1/MKS-Nano-v31_K2Pro_printer.cfg)**. 
+To make it easier for you, I made a table where you can see the according wiring/connections I made.  
+Before showing that table here, let me point out a few things first though:   
 
-However, there are a few things I'd like to point out.  
-
-1. **Connections Of 24V, H+/H-, LOGIC GND, CHASSIS_GND**  
-    When you look at the pinouts of the stock wiring, you'll notice that at the main ribbon cable that connects to the printhead (called "E-CON") there are the pins LOGIC GND, CHASSIS GND, 24V and H+/H- given.  
+1. **Connections Of 24V, H+/H-, GND, CHASSIS_GND**  
+    When you look at the pinouts of the stock wiring, you'll notice that at the main ribbon cable that connects to the printhead (called "E-CON") there are the pins GND, CHASSIS GND, 24V and H+/H- given.  
     
-    Basically the *24V* and the *LOGIC GND* are lead to the breakout board PCB of the printhead, from there the belonging components get the according connection. So you can can connect those ones to one of the two connectors of the MKS board which deliver the 24V continously - I personally used connector "J5" for that.  
+    Basically the *24V* and the *GND* are lead to the breakout board PCB of the printhead, from there the belonging components get the according connection. So you can can connect those ones to one of the two connectors of the MKS board which deliver the 24V continously - I personally used connector "J5" for that.  
     *Make sure to NOT connect CHASSIS GND as well here (see further down below)!*   
-    When you then make the connections for the individual parts like the printhead's fans, the thermistor and so on, look at the pinout and check the according pin assignment. Since you already connected 24V and LOGIC GND, you then only have to connect the according signal pin to the MKS board.  
+    When you then make the connections for the individual parts like the printhead's fans, the thermistor and so on, look at the pinout and check the according pin assignment. Since you already connected 24V and GND, you then only have to connect the according signal pin to the MKS board.  
     As an example: fan F0 (part cooling fan) needs 24V and 'F0', which is the signal (to be more precise: it's the individual PWM driven GND connection). Since it already gets the 24V from the head's breakout board where it's connected to and you already connected 24V to J5, you only need to connect 'F0' to the according connection at the MKS board - I used 'FAN1' = PC14 for that.  
-    The thermistor of the hotend (called 'Heat probe' at the pinout schematic) on the other hand connects to 'T0' and LOGIC GND. Since you already connected LOGIC GND to J5 and the thermistor gets that connection from the head's breakout board, you only have to connect 'T0' to the according pin at the MKS board - I used 'TH1' = PC1 for that.
+    The thermistor T0 of the hotend on the other hand connects to 'T0' and GND. Since you already connected GND to J5 and the thermistor gets that connection from the head's breakout board, you only have to connect 'T0' to the according pin at the MKS board - I used 'TH1' = PC1 for that.
    
     Then we have the *CHASSIS GND* at both the E-CON and X-CON ribbon cable connectors. Basically this is protective earth (if that's the correct English term).  
     At the stock mainboard, we have copper plated mounting holes, where one wire is being connected to which then connects to the protective earth of the power supply. Since we don't have these copper plated mounting holes at the MKS board, you can just connect all CHASSIS GND wirings together with the wire that's running to the protective erath of the PSU.
 
     Then we have three *H+* and *H-* connectors at the E-CON ribbon cable. These are the 24V connections for the heater cartridge.  
-    *DON'T connect them together with the 24V and LOGIC GND connections mentioned above!*    
+    *DON'T connect them together with the 24V and GND connections mentioned above!*    
     Due to the higher current that will flow when heating up the cartridge heater for the hotend and the thin wires being used at the E-CON ribbon cable, we have three wires/connections for each *H+* and *H-* here.  
     You now have to bundle the *H+* wires and connect them to an individual *thicker* wire.
     Same with the *H-* wires - bundle them up and connect an individual *thicker* wire to them.  
@@ -338,19 +338,20 @@ However, there are a few things I'd like to point out.
     I also connectected the z-offset sensor, even though I probably won't use it. Since I plan on adding an optical minimum limit switch for the z-axis (which I'll connect to "Z-" = PC8), I connected the z-offset sensor to "Z +" = ^PC4 (I *think* you need to have the `^` in front since that activates the pullup for that pin). I'll probably not use it, but I like to have it connected - just in case..
 
 4. **Inductive Proximity Sensor / ABL Probe**  
-    The inductive proximity sensor is conencted to 24V, LOGIC GND and the according signal pin (labeled as 'LEVEL' at the pinout scheme) at the printhead's breakout board. Since you already connected 24V and LOGIC GND, you only have to connect the signal pin 'LEVEL' to the MKS board - I used the BLTOUCH connector = PA8 for that.  
+    The inductive proximity sensor is conencted to 24V, GND and the according signal pin labeled as 'LEVEL' at the pinout scheme at the printhead's breakout board. Since you already connected 24V and GND, you only have to connect the signal pin 'LEVEL' to the MKS board - I used the BLTOUCH connector = PA8 for that.  
     Don't worry about the 24V and the signal - due to the electronic circuit of the head's breakout board, the signal level will be just fine and won't harm the according connection of the MKS board.
 
 5. **Fans**  
-    The MKS board has two fan connectors which can be PWM controlled: FAN1 (= PC14) and FAN2 (=PB1). I connected the *part cooling fan* to FAN 1 and the *heatsink cooling fan of the hotend* to FAN2.  
-    I then connected the *mainboard cooling fan* to the 24V connector "J4" - that one provides 24V continously, so the mainboard cooling fan will run as soon as you switch on the printer.
+    The MKS board has two fan connectors which can be PWM controlled: FAN1 (= PC14) and FAN2 (=PB1). I connected the *part cooling fan F0* to FAN 1 and the *heatsink cooling fan of the hotend F1* to FAN2.  
+    I then connected the *mainboard cooling fan* to the 24V connector "J4" - that one provides 24V continously, so the mainboard cooling fan will run as soon as you switch on the printer.  
+    *Attention: always mind the polarity!*  
 
 6. **Acceleration Sensors**  
     I decided to connect both of the acceleration sensors (printhead & bed) to the same SPI bus.  
     Since I don't use an additional screen for the MKS board, I used the EXP2 connector (you either need a 10pin female IDC connector or just some female DuPont connectors) which is SPI1.  
 
     If you want to use an additional screen, you can't use this connector though, so you'd have to use a different SPI bus instead.  
-    In my opinion it should be possible to use the connector for the optional WiFi module which would be SPI3.  
+    In my opinion it should be possible to use the connector for the optional WiFi module which would be SPI2.  
     If that doesn't work and you don't use the 5th stepper driver E1 for driving a second z-axis motor independently, you can also use that one - make sure to set the jumper for SPI mode accordingly.  
 
     Whichever SPI bus you'll use in the end, just connect the MISO, MOSI, SCLK, GND and 5V VCC of both sensors parallel to the according pins.  
@@ -363,7 +364,32 @@ However, there are a few things I'd like to point out.
     ![Resonances X-Axis](../assets/images/K2Pro_resonances_x.jpg)  
     ![Resonances Y-Axis](../assets/images/K2Pro_resonances_y.jpg)    
 
+The following table shows the wiring/connections according to *my* `printer.cfg` - if you want to use e.g. a different SPI port for the acceleration sensors or an additional stepper driver for a 2nd z-motor, make sure to adjust the wiring/connections accordingly!  
 
+| Part | Pinout Label | MKS Connector | Pin / Pin Assignment |
+|:-----|:----------|:--------------|:---------------|
+| Probe / ABL sensor | LEVEL @E-CON | BLTOUCH | PA8 |
+| Acceleration sensor <br> @ Printhead = X | MOSI @E-CON <br> MISO @E-CON <br> SCLK @E-CON <br> CS @E-CON <br> 5V @E-CON | SPI1_MOSI @EXP2 <br> SPI1_MISO @EXP2 <br> SPI1_SCK @EXP2 <br> SPI1_CS @EXP2 <br> 5V @BLTOUCH | PA7 <br> PA6 <br> PA5 <br> PE10 <br> (5V @BLTOUCH) |            
+| Acceleration sensor <br> @ Bed = Y | MOSI @ACC-SENSOR <br> MISO @ACC-SENSOR <br> SCLK @ACC-SENSOR <br> CS @ACC-SENSOR <br> 5V @ACC-SENSOR <br> GND @ACC-SENSOR | SPI1_MOSI @EXP2 <br> SPI1_MISO @EXP2 <br> SPI1_SCK @EXP2 <br> BTN_EN2 @EXP2 <br> 5V @BLTOUCH <br> J5 -> 24V **-** | PA7 <br> PA6 <br> PA5 <br> PE11 <br> (5V @BLTOUCH) <br> (J5 -> 24V **-**) | 
+| Printhead's 24V main | 24V @E-CON | J5 -> 24V **+** | (J5 -> 24V **+**) |
+| Printhead's GND main | GND @E-CON | J5 -> 24v **-** | (J5 -> 24V **-**) |
+| Part Cooling Fan | F0 @E-CON | FAN1 | PC14 | 
+| Heatsink Cooling Fan | F1 @E-CON | FAN2 | PB1 |
+| Thermistor Hotend | T0 @E-CON | TH1 | PC1 |
+| Cartridge Heater | H+/H- @E-CON (3x) | HE0 +/- | PE5 |
+| CHASSIS GND | CHASSIS GND @E-/X-CON | PE-Wire @PSU | (PE-Wire @PSU) | 
+| Filament Runout Sensor | FILAMENT/GND @X-CON | MT_DET1 PA4/GND | !PA4 |  
+| X Limit Switch | X LIMIT/GND @X-CON | X PA15/GND | !PA15 |
+| Y Limit Switch | LIMIT/GND @Y-CON | Y PD2/GND | !PD2 |    
+| Mainboard Cooling Fan | MB-FAN +/- | J4 -> 24V +/- | (J4 -> 24V +/-) |
+| Z-Offset Sensor | CALIBRATION  S/GND | Z+ PC4/GND | ^PC4 |
+| Thermistor Bed | T1 & GND | TB1 | PC0 | 
+| Heater Bed | HOTBED +/- | H-BED +/- | PA0 |
+| Extruder Motor | A1/A2/B1/B2 @E-CON | E0-MOTOR: 1A/1B/2A/2B | step: PD6 / dir: PD3 / enable: !PB3 / uart: PD9 |
+| X-Axis Motor | A1/A2/B1/B2 @X-CON | X-MOTOR: 1A/1B/2A/2B | step: PE3 / dir: PE2 / enable: !PE4 / uart: PD5 |
+| Y-Axis Motor | A1/A2/B1/B2 @Y-CON | Y-MOTOR: 1A/1B/2A/2B | step: PE0 / dir: PB9 / enable: !PE1 / uart: PD7 |
+| Z-Axis Motor | A1/A2/B1/B2 @ZL/ZR | Z1-MOTOR: 1A/1B/2A/2B | step: PB5 / dir: PB4 / enable: !PB8 / uart: PD4 |  
+  
 ---
 
 #### Assembly  
