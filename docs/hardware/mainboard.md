@@ -408,9 +408,10 @@ The 'creative mess' with the pretty much unorganized wirings is due to the fact 
 
 Lead the USB cable out of the housing and be careful when closing the lid - you don't want to pinch any wires, neither with the mounting posts of the lid nor the edges of the lid.  
 Finally put the risers underneath the feet and connect the USB cable to the one which is connected with your Klipper host.  
-**Congratulations, you just replaced the stock mainboard** - now have fun enjoying the beauty of a native Klipper! :)  
 
 ![Machine elevated](../assets/images/mobo_MKS-mod_elevated-machine_wide_web.jpg)  
+
+**Congratulations, you just replaced the stock mainboard** - now have fun enjoying the beauty of a native Klipper! :)  
 
 !!! warning "Don't Start A Print Right Away!"  
 
