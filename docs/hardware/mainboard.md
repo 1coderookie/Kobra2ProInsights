@@ -280,9 +280,6 @@ The following picture shows the fan being mounted as described.
 **Attention:**  
 **When doing so, you have to use risers for the feet though, to elevate up the whole machine!**  
 
-The following pictures show the printer with the risers for the feet.  
-
-![Machine elevated](../assets/images/mobo_MKS-mod_elevated-machine_wide_web.jpg)  
 ![Machine elevated closeup](../assets/images/mobo_MKS-mod_elevated-machine_web.jpg)
 
 ---
@@ -404,9 +401,22 @@ When done, double-check the wiring and make sure every connector sits tight and 
 Now carefully put everything inside the housing and mount the adapterplate to the stock mounting points. Place the lid next to the housing and connect the fan accordingly.  
 Try to organize the wiring as best as you can and make sure no wires will be harmed when finally installing the lid.  
 
-The following picture shows the MKS being assembled and mounted vertically (mind the 90° angled USB-B cable at the left side). The 'creative mess' with the pretty much unorganized wirings is due to the fact that I chose the length of the adapter cable's wiring slightly too short - if those would've been a bit longer, I would have been able to organize everything much better - so maybe keep that in mind if you're going for the same solution.  
+The following picture shows the MKS being assembled and mounted vertically (mind the 90° angled USB-B cable at the left side).  
+The 'creative mess' with the pretty much unorganized wirings is due to the fact that I chose the length of the adapter cable's wiring slightly too short - if those would've been a bit longer, I would have been able to organize everything much better - so maybe keep that in mind if you're going for the same solution.  
 
 ![MKS board assembled](../assets/images/mobo_MKS-mod_assembled_web.jpg)
+
+Lead the USB cable out of the housing and be careful when closing the lid - you don't want to pinch any wires, neither with the mounting posts of the lid nor the edges of the lid.  
+Finally put the risers underneath the feet and connect the USB cable to the one which is connected with your Klipper host.  
+**Congratulations, you just replaced the stock mainboard** - now have fun enjoying the beauty of a native Klipper! :)  
+
+![Machine elevated](../assets/images/mobo_MKS-mod_elevated-machine_wide_web.jpg)  
+
+!!! warning "Don't Start A Print Right Away!"  
+
+    Since it can't be mentioned often enough - please *don't* try to start a print right away!  
+    You need to check if everything is working as expected first of all.  
+    So please follow [Klipper's "Configuration Checks"](https://www.klipper3d.org/Config_checks.html) before even trying to e.g. set the z-offset, home the machine or execute a bedmesh probing!     
 
 ---  
 
