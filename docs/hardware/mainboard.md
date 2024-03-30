@@ -370,9 +370,9 @@ The following table shows the wiring/connections according to *my* `printer.cfg`
 |:-----|:----------|:--------------|:---------------|
 | Probe / ABL sensor | E-CON: LEVEL | BLTOUCH | PA8 |
 | Acceleration sensor <br> Printhead = X <br> E-CON | E-CON: MOSI <br> E-CON: MISO <br> E-CON: SCLK <br> E-CON: CS <br> E-CON: 5V | EXP2: SPI1_MOSI <br> EXP2: SPI1_MISO <br> EXP2: SPI1_SCK <br> EXP2: SPI1_CS <br> BLTOUCH: 5V | PA7 <br> PA6 <br> PA5 <br> PE10 <br> (BLTOUCH: 5V) |            
-| Acceleration sensor <br> Bed = Y <br> ACC-SENSOR | ACC-SENSOR: MOSI <br> ACC-SENSOR: MISO <br> ACC-SENSOR: SCLK <br> ACC-SENSOR: CS <br> ACC-SENSOR: 5V <br> ACC-SENSOR: GND | EXP2: SPI1_MOSI <br> EXP2: SPI1_MISO <br> EXP2: SPI1_SCK <br> EXP2: BTN_EN2 <br> EXP2: 5V <br> J5 -> 24V **-** | PA7 <br> PA6 <br> PA5 <br> PE11 <br> (BLTOUCH: 5V) <br> (J5 -> 24V **-**) | 
-| Printhead's 24V main | E-CON: 24V | J5 -> 24V **+** | (J5 -> 24V **+**) |
-| Printhead's GND main | E-CON: GND | J5 -> 24V **-** | (J5 -> 24V **-**) |
+| Acceleration sensor <br> Bed = Y <br> ACC-SENSOR | ACC-SENSOR: MOSI <br> ACC-SENSOR: MISO <br> ACC-SENSOR: SCLK <br> ACC-SENSOR: CS <br> ACC-SENSOR: 5V <br> ACC-SENSOR: GND | EXP2: SPI1_MOSI <br> EXP2: SPI1_MISO <br> EXP2: SPI1_SCK <br> EXP2: BTN_EN2 <br> BLTOUCH: 5V <br> J5 --> 24V **-** | PA7 <br> PA6 <br> PA5 <br> PE11 <br> (BLTOUCH: 5V) <br> (J5 --> 24V **-**) | 
+| Printhead's 24V main | E-CON: 24V | J5 --> 24V **+** | (J5 --> 24V **+**) |
+| Printhead's GND main | E-CON: GND | J5 --> 24V **-** | (J5 --> 24V **-**) |
 | Part Cooling Fan | E-CON: F0 | FAN1 | PC14 | 
 | Heatsink Cooling Fan | E-CON: F1 | FAN2 | PB1 |
 | Thermistor Hotend | E-CON: T0 | TH1 | PC1 |
@@ -381,7 +381,7 @@ The following table shows the wiring/connections according to *my* `printer.cfg`
 | Filament Runout Sensor | X-CON: FILAMENT/GND | MT_DET1 PA4/GND | !PA4 |  
 | X Limit Switch | X-CON: X LIMIT/GND | X PA15/GND | !PA15 |
 | Y Limit Switch | Y-CON: LIMIT/GND | Y PD2/GND | !PD2 |    
-| Mainboard Cooling Fan | MB-FAN +/- | J4 -> 24V +/- | (J4 --> 24V +/-) |
+| Mainboard Cooling Fan | MB-FAN +/- | J4 --> 24V +/- | (J4 --> 24V +/-) |
 | Z-Offset Sensor | CALIBRATION S/GND | Z+ PC4/GND | ^PC4 |
 | Thermistor Bed | T1 & GND | TB1 | PC0 | 
 | Heater Bed | HOTBED +/- | H-BED +/- | PA0 |
