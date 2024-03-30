@@ -297,7 +297,7 @@ For wiring everything up, just look up the pinout schemes at [Reverse engineerin
 I took the following pinout scheme from there and added the names of the according connectors - thanks to [codexnovus](https://github.com/codexnovus/) for allowing me to use his picture!  
 ![Stock mobo pinout](../assets/images/mobo_K2Pro_pinout_labeled_web.jpg)  
 
-If you want to see which specific components I connected to which specific connectors at the MKS board (besides the ones I'll mentioned down below), just have a look at the `printer.cfg` I'm offering **[here](https://github.com/1coderookie/Klipper4Kobra2series/blob/main/Kobra2Pro/MKS/Robin_Nano_v3.1/MKS-Nano-v31_K2Pro_printer.cfg)**. 
+If you want to see which specific components I connected to which specific connectors at the MKS board (besides the ones I'll mentioned down below), just have a look at the `printer.cfg` I'm offering **[here](https://github.com/1coderookie/Klipper4Kobra2series/blob/main/Kobra2Pro/MKS/Robin_Nano_v3.1/MKS-Nano-v31_K2Pro_printer.cfg)**.  
 To make it easier for you, I made a table where you can see the according wiring/connections I made.  
 Before showing that table here, let me point out a few things first though:   
 
@@ -368,7 +368,7 @@ The following table shows the wiring/connections according to *my* `printer.cfg`
 
 | Part | Pinout Label | MKS Connector | Pin / Pin Assignment |
 |:-----|:----------|:--------------|:---------------|
-| Probe / ABL sensor | E-CON: LEVEL | BLTOUCH | PA8 |
+| Probe / ABL sensor | E-CON: LEVEL | BLTOUCH PA8 | PA8 |
 | Acceleration sensor <br> Printhead = X <br> E-CON | E-CON: MOSI <br> E-CON: MISO <br> E-CON: SCLK <br> E-CON: CS <br> E-CON: 5V | EXP2: SPI1_MOSI <br> EXP2: SPI1_MISO <br> EXP2: SPI1_SCK <br> EXP2: SPI1_CS <br> BLTOUCH: 5V | PA7 <br> PA6 <br> PA5 <br> PE10 <br> (BLTOUCH: 5V) |            
 | Acceleration sensor <br> Bed = Y <br> ACC-SENSOR | ACC-SENSOR: MOSI <br> ACC-SENSOR: MISO <br> ACC-SENSOR: SCLK <br> ACC-SENSOR: CS <br> ACC-SENSOR: 5V <br> ACC-SENSOR: GND | EXP2: SPI1_MOSI <br> EXP2: SPI1_MISO <br> EXP2: SPI1_SCK <br> EXP2: BTN_EN2 <br> BLTOUCH: 5V <br> J5 --> 24V **-** | PA7 <br> PA6 <br> PA5 <br> PE11 <br> (BLTOUCH: 5V) <br> (J5 --> 24V **-**) | 
 | Printhead's 24V main | E-CON: 24V | J5 --> 24V **+** | (J5 --> 24V **+**) |
@@ -376,15 +376,15 @@ The following table shows the wiring/connections according to *my* `printer.cfg`
 | Part Cooling Fan | E-CON: F0 | FAN1 | PC14 | 
 | Heatsink Cooling Fan | E-CON: F1 | FAN2 | PB1 |
 | Thermistor Hotend | E-CON: T0 | TH1 | PC1 |
-| Cartridge Heater | E-CON: H+/H- (3x) | HE0 +/- | PE5 |
+| Cartridge Heater | E-CON: H+ / H- (3x) | HE0+ / HE0- | PE5 |
 | CHASSIS GND | E-/X-CON: CHASSIS GND | PE-Wire PSU | (PE-Wire PSU) | 
 | Filament Runout Sensor | X-CON: FILAMENT/GND | MT_DET1 PA4/GND | !PA4 |  
 | X Limit Switch | X-CON: X LIMIT/GND | X PA15/GND | !PA15 |
 | Y Limit Switch | Y-CON: LIMIT/GND | Y PD2/GND | !PD2 |    
-| Mainboard Cooling Fan | MB-FAN +/- | J4 --> 24V +/- | (J4 --> 24V +/-) |
+| Mainboard Cooling Fan | MB-FAN + / - | J4 --> 24V + / - | (J4 --> 24V + / -) |
 | Z-Offset Sensor | CALIBRATION S/GND | Z+ PC4/GND | ^PC4 |
-| Thermistor Bed | T1 & GND | TB1 | PC0 | 
-| Heater Bed | HOTBED +/- | H-BED +/- | PA0 |
+| Thermistor Bed | T1/GND | TB1 | PC0 | 
+| Heater Bed | HOTBED + / - | H-BED + / - | PA0 |
 | Extruder Motor | E-CON: A1/A2/B1/B2 | E0-MOTOR: 1A/1B/2A/2B | step: PD6 / dir: PD3 / enable: !PB3 / uart: PD9 |
 | X-Axis Motor | X-CON: A1/A2/B1/B2 | X-MOTOR: 1A/1B/2A/2B | step: PE3 / dir: PE2 / enable: !PE4 / uart: PD5 |
 | Y-Axis Motor | Y-CON: A1/A2/B1/B2 | Y-MOTOR: 1A/1B/2A/2B | step: PE0 / dir: PB9 / enable: !PE1 / uart: PD7 |
