@@ -381,7 +381,7 @@ The following table shows the wiring/connections according to *my* `printer.cfg`
 | Filament Runout Sensor | X-CON: FILAMENT/GND | MT_DET1 PA4/GND | !PA4 |  
 | X Limit Switch | X-CON: X LIMIT/GND | X PA15/GND | !PA15 |
 | Y Limit Switch | Y-CON: LIMIT/GND | Y PD2/GND | !PD2 |    
-| Mainboard Cooling Fan | MB-FAN +/- | J4 -> 24V +/- | (J4 -> 24V +/-) |
+| Mainboard Cooling Fan | MB-FAN +/- | J4 -> 24V +/- | (J4 --> 24V +/-) |
 | Z-Offset Sensor | CALIBRATION S/GND | Z+ PC4/GND | ^PC4 |
 | Thermistor Bed | T1 & GND | TB1 | PC0 | 
 | Heater Bed | HOTBED +/- | H-BED +/- | PA0 |
