@@ -310,7 +310,7 @@ Before showing that table here, let me point out a few things first though:
     As an example: fan F0 (part cooling fan) needs 24V and 'F0', which is the signal (to be more precise: it's the individual PWM driven GND connection). Since it already gets the 24V from the head's breakout board where it's connected to and you already connected 24V to J5, you only need to connect 'F0' to the according connection at the MKS board - I used 'FAN1' = PC14 for that.  
     The thermistor T0 of the hotend on the other hand connects to 'T0' and GND. Since you already connected GND to J5 and the thermistor gets that connection from the head's breakout board, you only have to connect 'T0' to the according pin at the MKS board - I used 'TH1' = PC1 for that.
    
-    Then we have the *CHASSIS GND* at both the E-CON and X-CON ribbon cable connectors. Basically this is protective earth (if that's the correct English term).  
+    Then we have the *CHASSIS GND* at both the E-CON and X-CON ribbon cable connectors - basically this is protective earth.  
     At the stock mainboard, we have copper plated mounting holes, where one wire is being connected to which then connects to the protective earth of the power supply. Since we don't have these copper plated mounting holes at the MKS board, you can just connect all CHASSIS GND wirings together with the wire that's running to the protective erath of the PSU.
 
     Then we have three *H+* and *H-* connectors at the E-CON ribbon cable. These are the 24V connections for the heater cartridge.  
@@ -377,7 +377,7 @@ The following table shows the wiring/connections according to *my* `printer.cfg`
 | Heatsink Cooling Fan | E-CON: F1 | FAN2 | PB1 |
 | Thermistor Hotend | E-CON: T0 | TH1 | PC1 |
 | Cartridge Heater | E-CON: H+ / H- (3x) | HE0+ / HE0- | PE5 |
-| CHASSIS GND | E-/X-CON: CHASSIS GND | PE-Wire PSU | (PE-Wire PSU) | 
+| PE / Chassis GND | E-/X-CON: CHASSIS GND | PE-Wire PSU | (PE-Wire PSU) | 
 | Filament Runout Sensor | X-CON: FILAMENT/GND | MT_DET1 PA4/GND | !PA4 |  
 | X Limit Switch | X-CON: X LIMIT/GND | X PA15/GND | !PA15 |
 | Y Limit Switch | Y-CON: LIMIT/GND | Y PD2/GND | !PD2 |    
