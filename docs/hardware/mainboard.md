@@ -368,27 +368,27 @@ The following table shows the wiring/connections according to *my* `printer.cfg`
 
 | Part | Pinout Label | MKS Connector | Pin / Pin Assignment |
 |:-----|:----------|:--------------|:---------------|
-| Probe / ABL sensor | LEVEL @E-CON | BLTOUCH | PA8 |
-| Acceleration sensor <br> @ Printhead = X | MOSI @E-CON <br> MISO @E-CON <br> SCLK @E-CON <br> CS @E-CON <br> 5V @E-CON | SPI1_MOSI @EXP2 <br> SPI1_MISO @EXP2 <br> SPI1_SCK @EXP2 <br> SPI1_CS @EXP2 <br> 5V @BLTOUCH | PA7 <br> PA6 <br> PA5 <br> PE10 <br> (5V @BLTOUCH) |            
-| Acceleration sensor <br> @ Bed = Y | MOSI @ACC-SENSOR <br> MISO @ACC-SENSOR <br> SCLK @ACC-SENSOR <br> CS @ACC-SENSOR <br> 5V @ACC-SENSOR <br> GND @ACC-SENSOR | SPI1_MOSI @EXP2 <br> SPI1_MISO @EXP2 <br> SPI1_SCK @EXP2 <br> BTN_EN2 @EXP2 <br> 5V @BLTOUCH <br> J5 -> 24V **-** | PA7 <br> PA6 <br> PA5 <br> PE11 <br> (5V @BLTOUCH) <br> (J5 -> 24V **-**) | 
-| Printhead's 24V main | 24V @E-CON | J5 -> 24V **+** | (J5 -> 24V **+**) |
-| Printhead's GND main | GND @E-CON | J5 -> 24v **-** | (J5 -> 24V **-**) |
-| Part Cooling Fan | F0 @E-CON | FAN1 | PC14 | 
-| Heatsink Cooling Fan | F1 @E-CON | FAN2 | PB1 |
-| Thermistor Hotend | T0 @E-CON | TH1 | PC1 |
-| Cartridge Heater | H+/H- @E-CON (3x) | HE0 +/- | PE5 |
-| CHASSIS GND | CHASSIS GND @E-/X-CON | PE-Wire @PSU | (PE-Wire @PSU) | 
-| Filament Runout Sensor | FILAMENT/GND @X-CON | MT_DET1 PA4/GND | !PA4 |  
-| X Limit Switch | X LIMIT/GND @X-CON | X PA15/GND | !PA15 |
-| Y Limit Switch | LIMIT/GND @Y-CON | Y PD2/GND | !PD2 |    
+| Probe / ABL sensor | E-CON: LEVEL | BLTOUCH | PA8 |
+| Acceleration sensor <br> Printhead = X <br> E-CON | E-CON: MOSI <br> E-CON: MISO <br> E-CON: SCLK <br> E-CON: CS <br> E-CON: 5V | EXP2: SPI1_MOSI <br> EXP2: SPI1_MISO <br> EXP2: SPI1_SCK <br> EXP2: SPI1_CS <br> BLTOUCH: 5V | PA7 <br> PA6 <br> PA5 <br> PE10 <br> (BLTOUCH: 5V) |            
+| Acceleration sensor <br> Bed = Y <br> ACC-SENSOR | ACC-SENSOR: MOSI <br> ACC-SENSOR: MISO <br> ACC-SENSOR: SCLK <br> ACC-SENSOR: CS <br> ACC-SENSOR: 5V <br> ACC-SENSOR: GND | EXP2: SPI1_MOSI <br> EXP2: SPI1_MISO <br> EXP2: SPI1_SCK <br> EXP2: BTN_EN2 <br> EXP2: 5V <br> J5 -> 24V **-** | PA7 <br> PA6 <br> PA5 <br> PE11 <br> (BLTOUCH: 5V) <br> (J5 -> 24V **-**) | 
+| Printhead's 24V main | E-CON: 24V | J5 -> 24V **+** | (J5 -> 24V **+**) |
+| Printhead's GND main | E-CON: GND | J5 -> 24V **-** | (J5 -> 24V **-**) |
+| Part Cooling Fan | E-CON: F0 | FAN1 | PC14 | 
+| Heatsink Cooling Fan | E-CON: F1 | FAN2 | PB1 |
+| Thermistor Hotend | E-CON: T0 | TH1 | PC1 |
+| Cartridge Heater | E-CON: H+/H- (3x) | HE0 +/- | PE5 |
+| CHASSIS GND | E-/X-CON: CHASSIS GND | PE-Wire PSU | (PE-Wire PSU) | 
+| Filament Runout Sensor | X-CON: FILAMENT/GND | MT_DET1 PA4/GND | !PA4 |  
+| X Limit Switch | X-CON: X LIMIT/GND | X PA15/GND | !PA15 |
+| Y Limit Switch | Y-CON: LIMIT/GND | Y PD2/GND | !PD2 |    
 | Mainboard Cooling Fan | MB-FAN +/- | J4 -> 24V +/- | (J4 -> 24V +/-) |
-| Z-Offset Sensor | CALIBRATION  S/GND | Z+ PC4/GND | ^PC4 |
+| Z-Offset Sensor | CALIBRATION S/GND | Z+ PC4/GND | ^PC4 |
 | Thermistor Bed | T1 & GND | TB1 | PC0 | 
 | Heater Bed | HOTBED +/- | H-BED +/- | PA0 |
-| Extruder Motor | A1/A2/B1/B2 @E-CON | E0-MOTOR: 1A/1B/2A/2B | step: PD6 / dir: PD3 / enable: !PB3 / uart: PD9 |
-| X-Axis Motor | A1/A2/B1/B2 @X-CON | X-MOTOR: 1A/1B/2A/2B | step: PE3 / dir: PE2 / enable: !PE4 / uart: PD5 |
-| Y-Axis Motor | A1/A2/B1/B2 @Y-CON | Y-MOTOR: 1A/1B/2A/2B | step: PE0 / dir: PB9 / enable: !PE1 / uart: PD7 |
-| Z-Axis Motor | A1/A2/B1/B2 @ZL/ZR | Z1-MOTOR: 1A/1B/2A/2B | step: PB5 / dir: PB4 / enable: !PB8 / uart: PD4 |  
+| Extruder Motor | E-CON: A1/A2/B1/B2 | E0-MOTOR: 1A/1B/2A/2B | step: PD6 / dir: PD3 / enable: !PB3 / uart: PD9 |
+| X-Axis Motor | X-CON: A1/A2/B1/B2 | X-MOTOR: 1A/1B/2A/2B | step: PE3 / dir: PE2 / enable: !PE4 / uart: PD5 |
+| Y-Axis Motor | Y-CON: A1/A2/B1/B2 | Y-MOTOR: 1A/1B/2A/2B | step: PE0 / dir: PB9 / enable: !PE1 / uart: PD7 |
+| Z-Axis Motor | ZL/ZR: A1/A2/B1/B2 | Z1-MOTOR: 1A/1B/2A/2B | step: PB5 / dir: PB4 / enable: !PB8 / uart: PD4 |  
   
 ---
 
