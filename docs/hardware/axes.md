@@ -947,7 +947,7 @@ Both lead screws are held in position with a bearing block at the top where the 
 
 ??? tip "Add Screws"  
 
-    As you can see in the picture, it seems like Anycubic forgot to add screws to hold the bearing in place. The holes are threaded, so I'd suggest to grab some M? screws and put them in.  
+    As you can see in the following picture on the left, it seems like Anycubic forgot to add screws to hold the bearing in place, so I'd suggest to add some M3 screws.  
 
     | Missing screws | Screws added |
     |:--------------:|:-------------|
