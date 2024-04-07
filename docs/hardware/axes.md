@@ -224,14 +224,27 @@ The following picture shows the back side of the meatl plate the printhead is mo
 
     ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
 
+    The following picture shows an eccentric nut on it's own.  
+    ![Ecc nut solo](../assets/images/eccentric_nut2_web.jpeg)  
+
     As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole bearing will be changed, either towards or away from the rail it's sitting at.  
 
-The bearings shouldn't sit too tight at the rail but also not too loose.  
-They should touch the rail and should sit in place well without any sort of wobbling and they should be able to move smoothly.  
-On the other hand, they also shouldn't be too loose or far away from the rail which would lead to instability.  
-The printhead shouldn't wiggle but it has to be able to move freely.   
+
+For a better understanding of these parts, the following picture shows them being dismounted from the gantry with the SG15 bearing still being attached.  
+
+![Ecc nuts vs posts](../assets/images/ecc-nut_vs_bolt_web.jpeg)  
+
+
+The bearings shouldn't sit too tight onto the rail but also not too loose.  
+On the other hand, they also shouldn't be too loose or far away from the rail which would lead to instability - the gantry shouldn't wiggle but it has to be able to move freely and without much of a force being applied.   
+So, in a summary: the SG15 bearings should touch the rail and sit on it well without any noticeable amount of play which would cause a wiggeling, but they should still be able to move smoothly.  
+The following picture shows a bearing which is too far away from the rail, you can clearly see the huge gap between the rail and the grove of the bearing (circled in red). On the right you can see properly positioned bearing which sits perfectly on the rail (circled in green) - don't mind the tiny gap there, that's due to the shape of both parts which don't fit 100%.   
+
+![SG15 positioned](../assets/images/SG15_positions_web.jpg)  
+
+When adjusting the position, don't only judge by the look though, as that could lead to a bearing which is running way too tight and therefore an increased amount of friction and higher degree of wear & tear.     
     
-Make sure they're assembled correctly and line up with the rail as well - if they're out of alignment and don't run correctly along the rail, you'll experience a massive wear and tear. Same goes for the bearings being too tight.  
+Besides their position on the rail itself, make sure the bearings and the posts/nuts/bolts are assembled correctly and line up with the rail as well - if they're out of alignment and don't run correctly along the rail, you'll experience a massive wear and tear as well.  
 
 
 ---
@@ -710,13 +723,27 @@ You can actually see them better when looking at it from the right side.
 
     ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
 
+    The following picture shows an eccentric nut on it's own.  
+    ![Ecc nut solo](../assets/images/eccentric_nut2_web.jpeg)  
+
     As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole bearing will be changed, either towards or away from the rail it's sitting at.  
+
+
+For a better understanding of these parts, the following picture shows them being dismounted from the gantry with the SG15 bearing still being attached.  
+
+![Ecc nuts vs posts](../assets/images/ecc-nut_vs_bolt_web.jpeg)  
+
 
 The bearings shouldn't sit too tight onto the rail but also not too loose.  
 On the other hand, they also shouldn't be too loose or far away from the rail which would lead to instability - the gantry shouldn't wiggle but it has to be able to move freely and without much of a force being applied.   
 So, in a summary: the SG15 bearings should touch the rail and sit on it well without any noticeable amount of play which would cause a wiggeling, but they should still be able to move smoothly.  
+The following picture shows a bearing which is too far away from the rail, you can clearly see the huge gap between the rail and the grove of the bearing (circled in red). On the right you can see properly positioned bearing which sits perfectly on the rail (circled in green) - don't mind the tiny gap there, that's due to the shape of both parts which don't fit 100%.   
+
+![SG15 positioned](../assets/images/SG15_positions_web.jpg)  
+
+When adjusting the position, don't only judge by the look though, as that could lead to a bearing which is running way too tight and therefore an increased amount of friction and higher degree of wear & tear.     
     
-Make sure they're assembled correctly and line up with the rail as well - if they're out of alignment and don't run correctly along the rail, you'll experience a massive wear and tear. Same goes for the bearings being too tight.  
+Besides their position on the rail itself, make sure the bearings and the posts/nuts/bolts are assembled correctly and line up with the rail as well - if they're out of alignment and don't run correctly along the rail, you'll experience a massive wear and tear as well.  
              
     
 ---  
