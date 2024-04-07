@@ -67,6 +67,7 @@ Please mind the **search field** in the header as well as the icon in the header
     - Thanks to **[codexnovus](https://github.com/codexnovus/)** for allowing me to use his picture of the mainboard's pinout scheme!  
     - Thanks to **[debeliq1](https://www.reddit.com/user/debeliq1)** for allowing me to use his picture of the wear&tear of the linear rail rod!
     - Thanks to **[Due-Telephone-6817](https://www.reddit.com/user/Due-Telephone-6817)** for taking those pictures of the spider coupler and the diaphragm coupler!  
+    - Thanks to **[Fasthotrod](https://www.reddit.com/user/Fasthotrod)** for providing me the pics of the eccentric nut, eccentric nut vs rigid post and the mis- and well-positioned SG15 bearings!      
     - Thanks to **[felixna](https://forum.drucktipps3d.de/user/6880-felixna/)** for allowing me to use his circuit drawing of how to add a step-down converter for PWM controlled fans!  
     - Thanks to **[GruesomeJeans](https://www.reddit.com/user/GruesomeJeans)** for taking pictures of the bed's magnetic foil and the ruby-tip nozzle!  
     - Thanks to **[Imaginary_Gift_8533](https://www.reddit.com/user/Imaginary_Gift_8533/)** for allowing me to use his picture of the wear & tear of his wheels!  
