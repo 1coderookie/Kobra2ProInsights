@@ -348,6 +348,10 @@ The following picture shows an eccentric nut (in this case mounted to a POM whee
 
 ![Eccentric nut](../assets/images/eccentric-nut_web.jpg)   
 
+The following picture shows an eccentric nut on it's own.  
+
+![Ecc nut solo](../assets/images/eccentric_nut2_web.jpeg)  
+
 As you hopefully can see, the bolt isn't centered - so if you turn that eccentric nut while being mounted, the position of the bolt and therefore the whole bearing will be changed, either towards or away from the rail it's sitting at.   
 
 *Not all of the wheels have eccentric nuts though as the following pictures show, only the two wheels (one at each side) which are facing the inner side of the frame (towards the bed) do have an eccentric nut.*  
