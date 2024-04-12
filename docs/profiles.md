@@ -76,7 +76,7 @@ Make sure to enable the optional "Arachne Engine" (Print Settings -> Perimeters)
 ---
 
 ### Cura  
-Cura is probably the most commonly known slicer. If you check support page of Anycubic or if you have a look at the content of the microSD card that was shipped with the printer, you'll find an *outdated* version of Cura and some printer profiles for it. My suggestion would be: *don't* use that outdated Cura version and *don't* use the profiles Anycubic offers, at least not without inspecting them (especially Neo users!). You can find more notes on the profiles further down below.  
+Cura is probably the most commonly known slicer.  
 
 Even though Cura and Klipper work perfectly together, there are a few things to be aware of.  
 Certain classic G-code commands aren't directly supported by Klipper as it uses extended G-code and scripts for certain things. As an example the G-code command `M0` (unconditional stop) isn't recognized by Klipper, you'd have to use the extended G-code command `PAUSE` for that.  
