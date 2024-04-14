@@ -316,6 +316,7 @@ The following pictures show the limit switch from two different point of views.
 The x-axis gantry is the aluminum profile (plus the corresponding parts) where the printhead is actually running onto.  
 
 ![X gantry](../assets/images/axes_K2Pro_X-gantry_web.jpg)  
+![X-gantry back](../assets/images/axes_K2_xgantry_back_web.jpeg)  
 
 You already read the information about the belonging parts of the x-axis in the chapter above, in the following you'll find the information about the parts of the x-axis gantry which are moving along the z-axis frame.  
 Plus, you'll find information about *how to tram the x-axis gantry, which is crucial for a good and reliable outcome*.  
