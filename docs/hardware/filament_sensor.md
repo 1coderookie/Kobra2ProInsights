@@ -6,7 +6,7 @@
 |:---------------|
 | Switch: NO (normally open) |
 | Voltage: 24V DC |
-| Connector: JST-XH 2.54 (male, 2 pins) |  
+| Connector: JST-XH 2.54 |  
 
 
 The filament runout / break detection sensor is basically a switch inside a housing, which will be triggered and closes the contact when filament is fed through.  
