@@ -1,5 +1,8 @@
 <link rel=”manifest” href=”docs/manifest.webmanifest”>
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U6U5NPB51)  
+
+---  
 # Introduction
 Anycubic decided to choose the closed source path with the Kobra 2 Pro/Plus/Max models now.  
 Means, there isn't even a possibility to connect to the machine locally as these machines don't offer an e.g. USB-C port for doing so and the WiFi only connects to their own servers.  
