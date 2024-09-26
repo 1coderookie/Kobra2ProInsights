@@ -1,5 +1,8 @@
 <link rel=”manifest” href=”docs/manifest.webmanifest”>
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U6U5NPB51)  
+
+---  
 # KobraOS (Stock) 
 The official stock firmware for the **Kobra 2 Pro** is called "Kobra OS".  
 Even though it's based on Klipper, sources haven't been published yet.
