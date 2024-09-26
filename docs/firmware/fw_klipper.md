@@ -1,9 +1,16 @@
 <link rel=”manifest” href=”docs/manifest.webmanifest”>
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U6U5NPB51)  
+
+---  
+
 # Klipper (MOD)  
 
-At this time it's not yet clear if it's possible to install a native Klipper on this machine.  
-Investigations are currently being made, so cross your fingers and hope for the best.. ;)    
+**At this time it's not yet possible to install a native Klipper on the stock mainboard of this machine.**  
+
+However, if you are willing to tinker and replace the stock mainboard with a 'generic' one, then you can of course run a native Klipper. If you're interested in this, read along [here](../hardware/mainboard.md#mod-different-mainboard).   
+
+For those who are running Klipper on any mainboard with this machine, I'll probably add some information here in the future. 
 
 <!---   
 Can you run [Klipper](https://www.klipper3d.org/) on the stock mainboard of the **Go** and **Neo**?  
