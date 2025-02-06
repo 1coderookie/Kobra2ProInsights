@@ -427,6 +427,21 @@ Finally put the risers underneath the feet and connect the USB cable to the one 
 
 ---  
 
+### MOD: BTT Manta M5P  
+User [olivergregorius](https://github.com/olivergregorius) used a BTT Manta M5P in his Kobra 2 Max. You can find his GitHub repository with the according description and files [here](https://github.com/olivergregorius/kobra-2-max-with-manta-m5p).
+
+---
+
+### MOD: BTT Manta M8P v2
+User [crazybanane](https://github.com/crazybanane) used a BTT Manta M8P v2 in his Kobra 2 Plus. You can find his GitHub repository with the according description and files [here](https://github.com/crazybanane/Manta-M8P-V2-for-Kobra-2-Plus).
+
+---
+
+### MOD: Trigorilla Pro B_v1.0.2 (Kobra 2 mainboard)
+The TriGorilla PRO B_v1.0.2 is being used in the Kobra 2 (see the according chapter of the Kobra2Insights' page [here](https://1coderookie.github.io/Kobra2Insights/hardware/mainboard/#trigorilla-pro-b-v_102-stock)). With just a few modifications to the stock connectors and the wiring, [OldNKrusty](https://github.com/OldNKrusty) installed this mainboard at his Kobra 2 Max. You can find his GitHub repository with the according description and files [here](https://github.com/OldNKrusty/K2MAXKlipper).  
+
+---
+
 ## MOD: Add An External MOSFET  
 
 It's advisable to add an external MOSFET for driving the heated bed (if you like, you can also add one for the heater cartridge as well of course). Even though the MOSFET on the mainboard is sufficient, it's an upgrade worth doing as it not only leads to the fact that the bed will be heated up slightly faster, but it also increases the security of the hole printer.  
