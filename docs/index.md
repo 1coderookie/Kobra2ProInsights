@@ -12,10 +12,6 @@ Here you'll find specific information about this specific printer model as well 
 I created this site to make it easier for users of this printer to get started, as well as to provide specific information on e.g. how to maintain the printer.    
 
 ---
-
-***ATTENTION: This site is still WIP, certain content is still missing!***   
-
----
   
 Please make sure to **mind the (expandable) textboxes** as they contain valuable information!  
 Depending on the color of the box, it's either a tip, information, instruction, question or warning you'll find in there:    
@@ -78,6 +74,7 @@ Please mind the **search field** in the header as well as the icon in the header
     - Thanks to **[Island-Strange](https://www.reddit.com/user/Island-Strange/)** for taking a picture of his shortcut bed!  
     - Thanks to **[Jaximus](https://www.reddit.com/user/Jaximus)** for allowing me to use the picture of the slipped out cartridge heater!  
     - Thanks to **[lpi](https://github.com/lpi)** for providing the content of the update.swu file to me!
+    - Thanks to **[moosbewohner](https://github.com/moosbewohner)** for providing me the pics of the Trigorilla Spe B v1.0.x boards.  
     - Thanks to **[mowerheimen](https://www.reddit.com/user/mowerheimen)** for allowing me to use the picture of the crooked x-axis gantry!
     - Thanks to **[Relative_Distance445](https://www.reddit.com/user/Relative_Distance445/)** for allowing me to use his picture of the heavy wear&tear of the linear rail rod!
     - Thanks to **[Fabulous-View-5862](https://www.reddit.com/user/Fabulous-View-5862)** for allowing me to use the picture of his clumped hotend!    
