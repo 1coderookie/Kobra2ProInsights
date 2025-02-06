@@ -14,7 +14,7 @@ The important thing now is that there is a modded KobraOS of the Kobra 3 availab
 Unfortunately, I personally don't have such a mainboard and therefore I can't test it, but imho it might even be possible now to install a native Klipper on this B-revision mainboards.  
 So if you're looking for a solution to run a different type of firmware (either a modded KobraOS or a native Klipper), please mind the following infobox.  
 
-!!! warning Mind the Board Type  
+!!! warning "Mind the Board Type"  
 
     If you're not satisfied with the stock KobraOS and seek for other options, check which mainboard revision you have built in:  
     - If it's the "Spe **A**" type, then you'd have to build in a different mainboard and go with a native Klipper (see the according chapter further down below).  
@@ -68,6 +68,12 @@ The following picture shows the "Trigorilla Spe_B_v1.0.5".
 The mainboard comes with four TMC2209 silent stepper drivers (at least that's what Anycubic states - I didn't take off the heatsinks to check if these really are genuine TMC2209 chips) which are *soldered* onto the board (they can't be swapped out!).  
 It offers three USB-A connectors and WiFi.     
 
+!!! info "Modified KobraOS Available"  
+
+    For *this* type of mainboard there's a modded KobraOS version available - please see the according section in the chapter "Firmware" -> "KobraOS"
+
+
+
 --- 
 
 ## Accessing The Mainboard  
@@ -79,10 +85,11 @@ Once you opened the lid, you can see that there's quite a lot of space left insi
 ![Housing opened](../assets/images/mainboard_K2Pro_mobo-in-case_web.jpg)  
 
 Please see the expandable textbox below for further instructions and illustrations about how to actually open the housing and access the PCB.  
-
+<!--
 As this might be interesting for someone who might try to access the mainboard for reverse engineering, I'd like to mention that there's a four pin SPI/UART connector on the mainboard as shown in the following picture.  
 
 ![SPI connector](../assets/images/mainboard_K2Pro_connectors_SPI_web.jpg)  
+-->
 
 ??? example "How To Open The Mainboard's Housing"  
 
