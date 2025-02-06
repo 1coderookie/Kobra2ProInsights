@@ -6,11 +6,27 @@
 
 # Mainboard
 
-## TriGorilla_Spe_A_V1.0.0 (Stock) 
-  
-The stock mainboard is labeled as "Trigorilla_Spe_V1.0.0".   
+It has to be noticed that Anycubic apparently changed the mainboard revisions at a certain point after the Kobra 2 Pro/Plus/Max (which all used to have the same type of mainboard built in) hit the market.  
+In the 'beginning', these printers were equipped with the "Trigorilla **Spe A**_v1.0.0". This mainboard was designed to run the newly developed [KobraOS]() firmware (which isn't Marlin anymore, but Anycubic's own firmware based on Klipper; see the chapter "Firmware" for further information).     
+Probably around summer 2024, printers with "Trigorilla **Spe B**_v1.0.x" mainboards were sold - it's unclear if this only happened with a few smaller batches or if this change was permanent since then. These mainboards are equipped with a HC32F460 chip, just like other Trigorilla mainboards before that were running Marlin firmware and which could have been flashed with Klipper.  
+Also, afaik, the Kobra 3 uses the "Trigorilla **Spe B**_v1.1.x., which might be a later revision of the Spe_B-revision used in the Kobra 2 Pro/Plus/Max at a certain point. The Kobra 3 also runs KobraOS, but a different version than the one that has been used at the Kobra 2 Pro/Plus/Max printers before.  
+The important thing now is that there is a modded KobraOS of the Kobra 3 available, which not only seems to work fine with the B-revision of the mentioned mainboard, but it also offers access and enhanced functionality.  
+Unfortunately, I personally don't have such a mainboard and therefore I can't test it, but imho it might even be possible now to install a native Klipper on this B-revision mainboards.  
+So if you're looking for a solution to run a different type of firmware (either a modded KobraOS or a native Klipper), please mind the following infobox.  
 
-It is a 32bit 24V mainboard with an ARM Cortex-A7 which runs at 1.2GHz and offers 8GB of internal storage capacity.  
+!!! warning Mind the Board Type  
+
+    If you're not satisfied with the stock KobraOS and seek for other options, check which mainboard revision you have built in:  
+    - If it's the "Spe **A**" type, then you'd have to build in a different mainboard and go with a native Klipper (see the according chapter further down below).  
+    - If it's the "Spe **B**" type, then you might want to try the modded KobraOS (see the chapter "Firmware" for further information) before attempting a hardware mod.  
+
+
+
+---
+
+## Trigorilla_Spe_A_V1.0.0 (Stock) 
+  
+The "Trigorilla_Spe_**A**_V1.0.0" is a 32bit 24V mainboard with an ARM Cortex-A7 which runs at 1.2GHz and offers 8GB of internal storage capacity.  
 
 The mainboard comes with four TMC2209 silent stepper drivers (at least that's what Anycubic states - I didn't take off the heatsinks to check if these really are genuine TMC2209 chips) which are *soldered* onto the board (they can't be swapped out!).  
 
@@ -35,9 +51,26 @@ The USB-A connectors can be accessed from the front of the printer, you find the
 
 ![USB-A connectors](../assets/images/K2Pro_front_USB_web.jpg)  
 
+---
+
+## Trigorilla_Spe_B_V1.0.x (Stock, new revision) 
+  
+The "Trigorilla_Spe_**B**_V1.0.x" is a 32bit 24V mainboard with a Huada HC32F460 chip.  
+Two revisions of this mainboard have been spotted in a Kobra 2 Pro, the "Spe_B_v1.0.4" and the "Spe_B_v1.0.5".  
+The following picture shows the "Trigorilla Spe_B_v1.0.5".  
+
+![Mainboard SPE B 1.0.5](../assets/images/SPE_B_105_web.jpg)  
+
+![Mainboard SPE B revisions](../assets/images/SPE_B_labels.jpg)
+  
+![Mainboard SPE B chipset](../assets/images/chips_revB.jpg)   
+
+The mainboard comes with four TMC2209 silent stepper drivers (at least that's what Anycubic states - I didn't take off the heatsinks to check if these really are genuine TMC2209 chips) which are *soldered* onto the board (they can't be swapped out!).  
+It offers three USB-A connectors and WiFi.     
+
 --- 
 
-### Accessing The Mainboard  
+## Accessing The Mainboard  
 If you need to access the mainboard, you need to open the housing where the mainboard is located. For doing so, you need to access the underside of the printer.  
 The housing where the mainboard is located in is about 238x142mm and it's inserted in between the side rails of the base frame (see the expandable textbox below for further pictures).
 
@@ -117,7 +150,7 @@ As this might be interesting for someone who might try to access the mainboard f
       
 ---
 
-### Connecting To The Printer / Mainboard
+## Connecting To The Printer / Mainboard
 
 Anycubic doesn't allow any local access to the machine, neither via USB or via the inbuilt WiFi. So if you want to get access, you need to use their cloud service and APP.  
 
@@ -125,7 +158,7 @@ However, there are some approaches and/or solutions being worth mentioned at thi
 
 ---
 
-#### MOD: RPi Zero(2)W As WiFi USB Drive
+### MOD: RPi Zero(2)W As WiFi USB Drive
 [mrfenyx](https://github.com/mrfenyx/) came up with an imho brilliant solution to avoid using a USB drive which you'd have to swap back and forth between your computer and your printer: he uses a Raspberry Pi Zero(2)W as a USB drive and which can then be accessed through your local network using WiFi. By doing so, you can just send (= copy/save) the sliced file to the RPi and then select it at the printer using the control unit.  
 I personally didn't test it yet, but I'll definitely do so.  
 
@@ -151,7 +184,7 @@ This is the repo where you can find all the necessary information: [RPi-Zero-W-W
 
 ---
 
-#### MOD: Own Server And Webinterface  
+### MOD: Own Server And Webinterface  
 
 User [anjomro](https://github.com/anjomro) did some reverse engineering and created a solution where you basically set up your own server where the machine then connects to via WiFi. You then use a webinterface anjomro created, which uses the interface of the printer's firmware.  
 By doing so you can then access the machine locally to a certain degree.  
@@ -428,17 +461,17 @@ Finally put the risers underneath the feet and connect the USB cable to the one 
 ---  
 
 ### MOD: BTT Manta M5P  
-User [olivergregorius](https://github.com/olivergregorius) used a BTT Manta M5P in his Kobra 2 Max. You can find his GitHub repository with the according description and files [here](https://github.com/olivergregorius/kobra-2-max-with-manta-m5p).
+User [olivergregorius](https://github.com/olivergregorius) installed a BTT Manta M5P in his Kobra 2 Max. You can find his GitHub repository with the according description and files [here](https://github.com/olivergregorius/kobra-2-max-with-manta-m5p).
 
 ---
 
 ### MOD: BTT Manta M8P v2
-User [crazybanane](https://github.com/crazybanane) used a BTT Manta M8P v2 in his Kobra 2 Plus. You can find his GitHub repository with the according description and files [here](https://github.com/crazybanane/Manta-M8P-V2-for-Kobra-2-Plus).
+User [crazybanane](https://github.com/crazybanane) installed a BTT Manta M8P v2 in his Kobra 2 Plus. You can find his GitHub repository with the according description and files [here](https://github.com/crazybanane/Manta-M8P-V2-for-Kobra-2-Plus).
 
 ---
 
 ### MOD: Trigorilla Pro B_v1.0.2 (Kobra 2 mainboard)
-The TriGorilla PRO B_v1.0.2 is being used in the Kobra 2 (see the according chapter of the Kobra2Insights' page [here](https://1coderookie.github.io/Kobra2Insights/hardware/mainboard/#trigorilla-pro-b-v_102-stock)). With just a few modifications to the stock connectors and the wiring, [OldNKrusty](https://github.com/OldNKrusty) installed this mainboard at his Kobra 2 Max. You can find his GitHub repository with the according description and files [here](https://github.com/OldNKrusty/K2MAXKlipper).  
+The Trigorilla Pro B_v1.0.2 is being used in the Kobra 2 (see the according chapter of the Kobra2Insights' page [here](https://1coderookie.github.io/Kobra2Insights/hardware/mainboard/#trigorilla-pro-b-v_102-stock)). With just a few modifications to the stock connectors and the wiring, [OldNKrusty](https://github.com/OldNKrusty) installed this mainboard at his Kobra 2 Max. You can find his GitHub repository with the according description and files [here](https://github.com/OldNKrusty/K2MAXKlipper).  
 
 ---
 
