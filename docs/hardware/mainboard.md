@@ -221,6 +221,11 @@ The following picture shows the mounting direction of the fan.
 Since we can't run a native Klipper on the stock mainboard, we have to use a different mainboard if we want to do so.  
 Generally speaking, you can use pretty much any generic mainboard, like from BTT or MKS, you just need to make sure that it can use 24V DC.   
 
+You also need the according stepper drivers for the mainboard you'll chose.  
+Some mainboards have stepper drivers soldered onto them already, some come with sockets where you can plug the according stepper drivers into (often offered in bundels with according stepper drivers, most of the times TMC2209). I personally prefer the latter one, because it allows you to chose the type of stepper you want to use and it also gives you the option of swapping out a defective driver, if that ever happens to you.  
+I personally used TMC2208 drivers at my mod (Kobra 2 Pro), but just because I already had them laying around. If I'd have to get some, I'd have chosen TMC2209, just because we can run them at slightly higher currents. Imho this is even more important at the bigger models like the Kobra 2 Plus and Max, because they have to move more mass (especially along the y-axis, due to the bigger build plate). If I'd be up to mod a Kobra 2 Max, I'd most likely even go with TMC2226 drivers, at least for the Y motor.  
+Whichever stepper driver you'll end up using, make sure to adjust the `printer.cfg` accordingly. 
+
 In the following, I'll list which kind of connectors you most likely will need - of course you have to check the according connectors at the specific maninboard you want to use.  
 
 Since the stock wiring for both the main cable which connects to the printhead ("E-CON") as well as for the cable which connects to the X-axis setup ("X-CON") come with specific connectors, you can either get yourself the corresponding connectors or just cut the given ones and retrofit the specific connectors which are needed for the mainboard you have chosen.  
