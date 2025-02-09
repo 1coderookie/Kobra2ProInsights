@@ -59,11 +59,11 @@ The "Trigorilla_Spe_**B**_V1.0.x" is a 32bit 24V mainboard with a Huada HC32F460
 Two revisions of this mainboard have been spotted in a Kobra 2 Pro, the "Spe_B_v1.0.4" and the "Spe_B_v1.0.5".  
 The following picture shows the "Trigorilla Spe_B_v1.0.5".  
 
-![Mainboard SPE B 1.0.5](../assets/images/SPE_B_105_web.jpg)  
+![Mainboard SPE B 1.0.5](../assets/images/SPE_B_naked_web.jpg)  
 
 ![Mainboard SPE B revisions](../assets/images/SPE_B_labels.jpg)
   
-![Mainboard SPE B chipset](../assets/images/chips_revB.jpg)   
+![Mainboard SPE B chipset](../assets/images/SPE_B_chipset_web.jpg)   
 
 The mainboard comes with four TMC2209 silent stepper drivers (at least that's what Anycubic states - I didn't take off the heatsinks to check if these really are genuine TMC2209 chips) which are *soldered* onto the board (they can't be swapped out!).  
 It offers three USB-A connectors and WiFi.     
