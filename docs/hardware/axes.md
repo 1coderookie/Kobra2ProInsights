@@ -478,14 +478,13 @@ Please see the expandable textbox below for further instructions about how to tr
     
     - In order to **tram the x-axis gantry in relation to the bed**, so that both are as parallel as possible, take two parts of equal height like cans for example and place them onto the left and right side of the bed.  
     
-    - Lower the x-axis gantry until the aluminum frame is slightly lower than the cans (only like 5mm or so).  
-    - Now put something underneath the gantry or (imho better) tie it up to the top part of the frame to make sure it can't fall down when proceeding the next steps. 
-    - Take out the screws which attach the anti-backlash nuts to their respective mounting brackets.  
+    - Drive the x-gantry up/down until it's about 5mm lower that the cans. 
+    - Take out the two screws which attach the anti-backlash nuts to their respective mounting brackets at the x-gantry, so that you can move the x-gantry upwards without the anti-backlash nut being attached.   
     - Loosen the grub/set screws of the pulleys at the top of the screws where the timing belt runs across.  
       By doing these two steps you achieve that there isn't any kind of force being added to any side of the gantry which will lead to a false result.  
       You want the gantry to rest on the cans *only* by it's own weight!  
-    - Now lift the gantry just a little bit manually with your hand - just enough to be able slide the two cans underneath it.  
-      Don't turn the lead screws to raise the gantry.  
+    - Now lift the gantry your hand and slide the two cans underneath it.  
+      *Don't spin the lead screws to raise the gantry!*  
     - Place the cans to the very left and right side of the bedplate.  
       Make sure to have the cans positioned as far to the sides of the bed as possible. Also make sure to push them backwards so that *only the rod of the linear rail of the gantry touches them!*     
       This is crucial - you *don't* want those y-shaped metal brackets touch the cans at all!  
